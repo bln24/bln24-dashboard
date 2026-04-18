@@ -39,12 +39,12 @@
       --green-light: #F0FDF4;
       --yellow: #D97706;
       --yellow-light: #FFFBEB;
-      --surface: #F8F8FA;
+      --surface: #FFFFFF;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background: var(--surface);
+      background: #FFFFFF;
       color: var(--black);
       min-height: 100vh;
       font-size: 14px;
@@ -192,7 +192,7 @@
     td { padding: 11px 10px; border-bottom: 1px solid #F0F0F4; vertical-align: middle; }
     tr:last-child td { border-bottom: none; }
     tr.clickable { cursor: pointer; }
-    tr.clickable:hover td { background: var(--surface); }
+    tr.clickable:hover td { background: #FFFFFF; }
     .td-primary { font-size: 0.8rem; font-weight: 500; color: var(--black); }
     .td-secondary { font-size: 0.7rem; color: var(--grey); margin-top: 2px; }
     .td-value { font-size: 0.8rem; font-weight: 700; color: #92700A; white-space: nowrap; }
@@ -217,7 +217,7 @@
       padding: 8px 0; cursor: pointer; border-radius: 6px;
       transition: background 0.1s;
     }
-    .loss-bar-row:hover { background: var(--surface); margin: 0 -8px; padding: 8px 8px; }
+    .loss-bar-row:hover { background: #FFFFFF; margin: 0 -8px; padding: 8px 8px; }
     .loss-bar-label { font-size: 0.75rem; color: var(--black); width: 195px; flex-shrink: 0; font-weight: 500; }
     .loss-bar-track { flex: 1; background: var(--grey-light); border-radius: 4px; height: 7px; }
     .loss-bar-fill { height: 7px; border-radius: 4px; background: var(--gold); }
@@ -230,7 +230,7 @@
       border-radius: 6px; transition: background 0.1s;
     }
     .win-row:last-child { border-bottom: none; }
-    .win-row:hover { background: var(--surface); margin: 0 -8px; padding: 10px 8px; }
+    .win-row:hover { background: #FFFFFF; margin: 0 -8px; padding: 10px 8px; }
     .win-row-name { font-size: 0.8rem; font-weight: 500; color: var(--black); }
     .win-row-stats { font-size: 0.75rem; font-weight: 600; color: #92700A; }
 
@@ -265,7 +265,7 @@
     .modal-sub { font-size: 0.78rem; color: var(--grey); margin-bottom: 20px; }
     .modal-divider { border: none; border-top: 1px solid var(--grey-border); margin: 16px 0; }
     .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
-    .detail-field { background: var(--surface); border-radius: 8px; padding: 12px 14px; }
+    .detail-field { background: #FFFFFF; border-radius: 8px; padding: 12px 14px; }
     .detail-label { font-size: 0.62rem; font-weight: 700; color: var(--grey); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 4px; }
     .detail-value { font-size: 0.88rem; font-weight: 600; color: var(--black); }
     .detail-value.gold { color: #92700A; }
@@ -283,7 +283,7 @@
     }
     .toggle-raw:hover { border-color: var(--gold); color: #92700A; }
     .raw-data {
-      background: var(--surface); border: 1px solid var(--grey-border);
+      background: #FFFFFF; border: 1px solid var(--grey-border);
       border-radius: 8px; padding: 12px 14px;
       font-family: 'SF Mono', 'Consolas', monospace;
       font-size: 0.68rem; color: var(--grey);
@@ -613,7 +613,7 @@ function showLoss(r) {
   </div>
   <div style="margin:14px 0 8px;font-size:0.75rem;font-weight:700;color:var(--black)">Deals in this category:</div>
   <ul style="padding-left:18px;font-size:0.78rem;color:var(--grey);line-height:1.9">${item.deals.map(d=>`<li>${d}</li>`).join('')}</ul>
-  <div style="margin-top:14px;font-size:0.7rem;color:var(--grey);background:var(--surface);padding:10px 12px;border-radius:6px;">Note: Loss reasons were logged in Pipedrive by Eric Ma. Cross-referencing emails and proposals will give a more complete picture.</div>`;
+  <div style="margin-top:14px;font-size:0.7rem;color:var(--grey);background:#FFFFFF;padding:10px 12px;border-radius:6px;">Note: Loss reasons were logged in Pipedrive by Eric Ma. Cross-referencing emails and proposals will give a more complete picture.</div>`;
   openModal('Loss Reason Analysis', item.r, `${item.c} deals · ${fmt(item.v)} total TCV lost`, body, 'Pipedrive CRM (closed-lost deals) · Historical analysis as of April 2026');
 }
 
