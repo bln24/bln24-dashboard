@@ -215,6 +215,20 @@
 
 </div>
 
+
+  <!-- NEW OPPORTUNITIES -->
+  <div class="card" id="opp-card">
+    <div class="card-hdr">
+      <span class="card-title">🔍 Untracked Opportunities</span>
+      <span class="pill-live" id="opp-pill">● HigherGov · Live</span>
+    </div>
+    <div class="card-note" id="opp-note">Federal pre-solicitation &amp; solicitation opps matching BLN24 capabilities — not yet in your Pipedrive pipeline. Tap any row to view detail.</div>
+    <table id="t-opp">
+      <thead><tr><th>Opportunity</th><th>Agency</th><th>Type</th><th>Set-Aside</th><th>Est. Value</th><th>Due Date</th></tr></thead>
+      <tbody><tr><td colspan="6" class="loading">Loading opportunities...</td></tr></tbody>
+    </table>
+  </div>
+
 <footer>BLN24 Revenue Dashboard · Pipedrive CRM (live) + Historical Analysis · Rex 📈</footer>
 
 <!-- MODAL -->
@@ -237,6 +251,7 @@ function doAuth() {
     sessionStorage.setItem('bln24_auth','9025');
     document.getElementById('auth').classList.add('hidden');
     loadAll();
+    loadOpps();
   } else {
     document.getElementById('auth-err').textContent = 'Incorrect password.';
     document.getElementById('pwd').value = '';
@@ -246,6 +261,7 @@ window.addEventListener('DOMContentLoaded', function() {
   if (sessionStorage.getItem('bln24_auth') === '9025') {
     document.getElementById('auth').classList.add('hidden');
     loadAll();
+    loadOpps();
   }
 });
 
@@ -501,7 +517,167 @@ async function loadAll() {
   }
 }
 
-setInterval(function(){ if(sessionStorage.getItem('bln24_auth')==='9025') loadAll(); }, 5*60*1000);
+
+// HIGHERGOV — Untracked Opportunities
+const HG_KEY = '1a262cdcd25f40fba31836526d6e12b1';
+const HG_BASE = 'https://www.highergov.com/api-external/opportunity/';
+
+// BLN24 capability NAICS codes
+const BLN_NAICS = ['541511','541512','541519','541613','541820','541430','519130','541611'];
+
+// Rolling 30-day window
+function getDateStr(daysBack) {
+  const d = new Date();
+  d.setDate(d.getDate() - daysBack);
+  return d.toISOString().split('T')[0];
+}
+
+function fmtVal(low, high) {
+  function fv(n) {
+    if (!n) return null;
+    const v = parseFloat(n);
+    if (v >= 1e6) return '$' + (v/1e6).toFixed(1) + 'M';
+    if (v >= 1e3) return '$' + Math.round(v/1000) + 'K';
+    return '$' + v;
+  }
+  const l = fv(low), h = fv(high);
+  if (l && h) return l + ' – ' + h;
+  if (l) return '≥ ' + l;
+  if (h) return '≤ ' + h;
+  return '—';
+}
+
+function saBadge(sa) {
+  if (!sa) return '<span class="b b-grey">Open</span>';
+  const s = sa.toLowerCase();
+  if (s.includes('8a') || s.includes('8(a)')) return '<span class="b b-green">8(a)</span>';
+  if (s.includes('small business') || s === 'sba') return '<span class="b b-yellow">SB</span>';
+  if (s.includes('wosb')) return '<span class="b b-yellow">WOSB</span>';
+  if (s.includes('sdvosb')) return '<span class="b b-yellow">SDVOSB</span>';
+  return '<span class="b b-grey">' + sa.substring(0,12) + '</span>';
+}
+
+function showOpp(opp) {
+  const body = '<div class="m-grid">' +
+    '<div class="m-field"><div class="m-lbl">Agency</div><div class="m-val">' + opp.agency + '</div></div>' +
+    '<div class="m-field"><div class="m-lbl">Type</div><div class="m-val">' + opp.type + '</div></div>' +
+    '<div class="m-field"><div class="m-lbl">NAICS Code</div><div class="m-val">' + opp.naics + '</div></div>' +
+    '<div class="m-field"><div class="m-lbl">Set-Aside</div><div class="m-val">' + (opp.set_aside || 'Open Competition') + '</div></div>' +
+    '<div class="m-field"><div class="m-lbl">Est. Value</div><div class="m-val gold">' + fmtVal(opp.val_low, opp.val_high) + '</div></div>' +
+    '<div class="m-field"><div class="m-lbl">Due Date</div><div class="m-val ' + (opp.due && opp.due < getDateStr(-7) ? 'red' : '') + '">' + (opp.due || '—') + '</div></div>' +
+    '</div>' +
+    (opp.summary ? '<div style="margin:12px 0 6px;font-size:0.75rem;font-weight:700">AI Summary:</div><div style="font-size:0.76rem;color:#6B6E7A;line-height:1.6;background:#F9F9FB;padding:10px 12px;border-radius:6px">' + opp.summary + '</div>' : '') +
+    (opp.path ? '<div style="margin-top:12px"><a href="https://www.highergov.com' + opp.path + '" target="_blank" style="font-size:0.75rem;color:#0084D5;font-weight:600">View on HigherGov →</a></div>' : '');
+  openModal('Untracked Opportunity', opp.title, opp.agency, body, 'HigherGov API · SAM.gov · Not yet in Pipedrive pipeline');
+}
+
+async function loadOpps() {
+  const tbody = document.querySelector('#t-opp tbody');
+  const pill = document.getElementById('opp-pill');
+  const note = document.getElementById('opp-note');
+
+  tbody.innerHTML = '<tr><td colspan="6" class="loading">Scanning HigherGov for new opportunities...</td></tr>';
+
+  try {
+    // Get current Pipedrive pipeline titles for dedup
+    const pipelineTitles = DATA.map(d => (d.title || '').toLowerCase());
+    const pipelineOrgs = DATA.map(d => (d.org_name || '').toLowerCase());
+
+    const fromDate = getDateStr(30);
+    const GOOD_TYPES = new Set(['Presolicitation','Solicitation','Combined Synopsis/Solicitation','Sources Sought','Special Notice']);
+    const today = new Date().toISOString().split('T')[0];
+
+    let allOpps = [];
+    const seen = new Set();
+
+    for (const naics of BLN_NAICS) {
+      try {
+        const url = HG_BASE + '?api_key=' + HG_KEY + '&captured_date=' + fromDate + '&source_type=sam&naics_code=' + naics + '&page_size=100';
+        const res = await fetch(url);
+        const json = await res.json();
+        const results = Array.isArray(json) ? [] : (json.results || []);
+
+        for (const r of results) {
+          const otype = (r.opp_type || {}).description || '';
+          if (!GOOD_TYPES.has(otype)) continue;
+          const due = r.due_date || '';
+          if (due && due < today) continue;
+
+          const key = r.opp_key || r.source_id || r.title;
+          if (seen.has(key)) continue;
+          seen.add(key);
+
+          const title = r.title || '';
+          const agencyName = (r.agency || {}).agency_name || '';
+
+          // Check if already in pipeline (rough dedup by keyword overlap)
+          const titleWords = title.toLowerCase().split(/\s+/).filter(w => w.length > 4);
+          const alreadyTracked = titleWords.some(w => pipelineTitles.some(pt => pt.includes(w))) ||
+            pipelineOrgs.some(po => agencyName.toLowerCase().includes(po.substring(0,8)) && po.length > 4);
+
+          if (alreadyTracked) continue;
+
+          const sa = r.set_aside || '';
+          let vl = r.val_est_low, vh = r.val_est_high;
+          try { vl = vl ? parseFloat(vl) : null; } catch(e) { vl = null; }
+          try { vh = vh ? parseFloat(vh) : null; } catch(e) { vh = null; }
+
+          // Score relevance
+          const isFederal = ['census','irs','noaa','fema','cdc','cms','hhs','health','commerce',
+            'agriculture','usda','gsa','uspto','education','hud','army','dha','defense','epa',
+            'treasury','homeland','dhs','labor','interior','nih','fda','hrsa','state dept'].some(
+            a => agencyName.toLowerCase().includes(a));
+          const isEligible = !sa || sa.toLowerCase().includes('sba') || sa.toLowerCase().includes('8a') ||
+            sa.toLowerCase().includes('small business');
+          const is8a = sa.toLowerCase().includes('8a') || sa.toLowerCase().includes('8(a)');
+
+          allOpps.push({
+            naics, title, agency: agencyName, type: otype, set_aside: sa,
+            posted: r.posted_date || '', due: due,
+            val_low: vl, val_high: vh,
+            summary: (r.ai_summary || '').substring(0, 400),
+            path: r.path || '',
+            is_federal: isFederal, is_eligible: isEligible, is8a: is8a,
+            score: (isFederal ? 10 : 0) + (is8a ? 5 : 0) + (isEligible ? 3 : 0),
+          });
+        }
+      } catch(e) { console.warn('HG error for ' + naics, e); }
+    }
+
+    // Sort by score desc, then due date
+    allOpps.sort((a,b) => b.score - a.score || (a.due||'9').localeCompare(b.due||'9'));
+
+    // Store for modal access
+    window._opps = allOpps;
+
+    if (!allOpps.length) {
+      tbody.innerHTML = '<tr><td colspan="6" class="loading">No untracked opportunities found in the last 30 days.</td></tr>';
+      return;
+    }
+
+    note.textContent = allOpps.length + ' untracked federal opportunities found matching BLN24 capabilities (last 30 days). ' + allOpps.filter(o=>o.is8a).length + ' are 8(a) set-asides.';
+    pill.textContent = '● HigherGov · ' + allOpps.length + ' opps';
+
+    tbody.innerHTML = allOpps.slice(0,20).map((o,i) =>
+      '<tr class="row" onclick="showOpp(window._opps[' + i + '])">' +
+      '<td><div>' + o.title.substring(0,50) + (o.title.length>50?'…':'') + '</div>' +
+      (o.is_federal ? '<div class="muted">🏛 Federal</div>' : '<div class="muted">' + o.agency.substring(0,30) + '</div>') + '</td>' +
+      '<td class="muted">' + o.agency.substring(0,28) + '</td>' +
+      '<td class="muted">' + o.type.substring(0,14) + '</td>' +
+      '<td>' + saBadge(o.set_aside) + '</td>' +
+      '<td class="val">' + fmtVal(o.val_low, o.val_high) + '</td>' +
+      '<td class="' + (o.due && o.due < getDateStr(-14) ? 'warn' : 'muted') + '">' + (o.due||'—') + '</td>' +
+      '</tr>'
+    ).join('');
+
+  } catch(e) {
+    console.error('HigherGov load error:', e);
+    tbody.innerHTML = '<tr><td colspan="6" class="loading">Error loading opportunities: ' + e.message + '</td></tr>';
+    pill.textContent = '⚠ Error';
+  }
+}
+
+setInterval(function(){ if(sessionStorage.getItem('bln24_auth')==='9025') { loadAll(); loadOpps(); } }, 5*60*1000);
 </script>
 </body>
 </html>
