@@ -4,6 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BLN24 Revenue Dashboard</title>
+  <script>
+    (function() {
+      const PASS = '9025';
+      const key = 'bln24_auth';
+      if (sessionStorage.getItem(key) !== PASS) {
+        const input = prompt('BLN24 Dashboard — Enter password:');
+        if (input !== PASS) {
+          document.write('<div style="background:#0a0a0f;color:#ef4444;height:100vh;display:flex;align-items:center;justify-content:center;font-family:system-ui;font-size:1.2rem;">Access denied. Refresh to try again.</div>');
+          throw new Error('Unauthorized');
+        }
+        sessionStorage.setItem(key, PASS);
+      }
+    })();
+  <\/script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0a0a0f; color: #e8e8f0; min-height: 100vh; }
