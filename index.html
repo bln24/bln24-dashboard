@@ -17,86 +17,79 @@
         sessionStorage.setItem(key, PASS);
       }
     })();
-  <\/script>
+  </script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0a0a0f; color: #e8e8f0; min-height: 100vh; }
 
     header {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 20px 32px; border-bottom: 1px solid #1e1e2e;
-      background: #0d0d1a;
+      padding: 20px 32px; border-bottom: 1px solid #1e1e2e; background: #0d0d1a;
     }
     header h1 { font-size: 1.3rem; font-weight: 700; letter-spacing: 0.05em; color: #fff; }
     header h1 span { color: #f97316; }
     .last-updated { font-size: 0.75rem; color: #666; }
-    .refresh-btn {
-      background: #f97316; color: #fff; border: none; padding: 8px 18px;
-      border-radius: 6px; cursor: pointer; font-size: 0.8rem; font-weight: 600;
-    }
+    .refresh-btn { background: #f97316; color: #fff; border: none; padding: 8px 18px; border-radius: 6px; cursor: pointer; font-size: 0.8rem; font-weight: 600; }
     .refresh-btn:hover { background: #ea6800; }
 
     .container { padding: 28px 32px; }
 
+    /* Source badge */
+    .source-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 0.65rem; color: #666; background: #1a1a2a; border: 1px solid #2a2a3e;
+      padding: 2px 8px; border-radius: 4px; margin-left: 10px; vertical-align: middle;
+      text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .source-badge.pipedrive { border-color: #f97316; color: #f97316; background: rgba(249,115,22,0.08); }
+    .source-badge.outlook { border-color: #0078d4; color: #4aa8f7; background: rgba(0,120,212,0.08); }
+    .source-badge.analysis { border-color: #a855f7; color: #c084fc; background: rgba(168,85,247,0.08); }
+    .source-badge.static { border-color: #666; color: #888; background: rgba(100,100,120,0.1); }
+
     /* KPI Cards */
     .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
-    .kpi {
-      background: #111120; border: 1px solid #1e1e2e; border-radius: 10px;
-      padding: 20px 22px;
-    }
+    .kpi { background: #111120; border: 1px solid #1e1e2e; border-radius: 10px; padding: 20px 22px; cursor: pointer; transition: border-color 0.2s; }
+    .kpi:hover { border-color: #f97316; }
     .kpi .label { font-size: 0.72rem; color: #888; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
     .kpi .value { font-size: 2rem; font-weight: 700; color: #fff; line-height: 1; }
     .kpi .sub { font-size: 0.75rem; color: #666; margin-top: 6px; }
+    .kpi .kpi-src { margin-top: 10px; }
     .kpi.accent .value { color: #f97316; }
     .kpi.green .value { color: #22c55e; }
     .kpi.yellow .value { color: #eab308; }
     .kpi.red .value { color: #ef4444; }
 
-    /* Stage pipeline */
-    .section-title {
-      font-size: 0.75rem; color: #888; text-transform: uppercase;
-      letter-spacing: 0.1em; margin-bottom: 14px; font-weight: 600;
-    }
+    .section-title { font-size: 0.75rem; color: #888; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+
     .pipeline-stages { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 28px; }
-    .stage {
-      background: #111120; border: 1px solid #1e1e2e; border-radius: 10px;
-      padding: 16px 18px; text-align: center;
-    }
+    .stage { background: #111120; border: 1px solid #1e1e2e; border-radius: 10px; padding: 16px 18px; text-align: center; cursor: pointer; transition: border-color 0.2s; }
+    .stage:hover { border-color: #f97316; }
     .stage .stage-name { font-size: 0.7rem; color: #888; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
     .stage .stage-count { font-size: 1.8rem; font-weight: 700; color: #fff; }
     .stage .stage-value { font-size: 0.75rem; color: #f97316; margin-top: 4px; }
     .stage .stage-weighted { font-size: 0.7rem; color: #666; margin-top: 2px; }
 
-    /* Two col layout */
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 28px; }
     .full-col { margin-bottom: 28px; }
 
-    .card {
-      background: #111120; border: 1px solid #1e1e2e; border-radius: 10px;
-      padding: 20px 22px;
-    }
-    .card-title { font-size: 0.72rem; color: #888; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; font-weight: 600; }
+    .card { background: #111120; border: 1px solid #1e1e2e; border-radius: 10px; padding: 20px 22px; }
+    .card-title { font-size: 0.72rem; color: #888; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; font-weight: 600; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 
-    /* Deal table */
     table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
     th { text-align: left; padding: 8px 10px; color: #666; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #1e1e2e; }
     td { padding: 10px 10px; border-bottom: 1px solid #151525; vertical-align: top; }
     tr:last-child td { border-bottom: none; }
-    tr:hover td { background: #14141f; }
+    tr.clickable { cursor: pointer; }
+    tr.clickable:hover td { background: #16162a; }
 
-    .prob-badge {
-      display: inline-block; padding: 2px 8px; border-radius: 4px;
-      font-size: 0.7rem; font-weight: 700;
-    }
+    .prob-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; }
     .prob-high { background: rgba(34,197,94,0.15); color: #22c55e; }
     .prob-med { background: rgba(234,179,8,0.15); color: #eab308; }
     .prob-low { background: rgba(239,68,68,0.12); color: #ef4444; }
     .prob-zero { background: rgba(100,100,120,0.2); color: #666; }
 
     .alert-row td { background: rgba(239,68,68,0.04); }
-    .alert-icon { color: #ef4444; margin-right: 4px; }
 
-    /* Loss reasons */
     .loss-bars { display: flex; flex-direction: column; gap: 10px; }
     .loss-bar-row { display: flex; align-items: center; gap: 10px; }
     .loss-bar-label { font-size: 0.75rem; color: #aaa; width: 200px; flex-shrink: 0; }
@@ -104,29 +97,35 @@
     .loss-bar-fill { height: 8px; border-radius: 4px; background: #f97316; }
     .loss-bar-count { font-size: 0.75rem; color: #666; width: 60px; text-align: right; flex-shrink: 0; }
 
-    /* No activity warning */
-    .no-activity-count { font-size: 3rem; font-weight: 800; color: #ef4444; }
-
-    .tag { display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; margin-right: 4px; }
-    .tag-price { background: rgba(239,68,68,0.12); color: #ef4444; }
-    .tag-incumbent { background: rgba(168,85,247,0.12); color: #a855f7; }
-    .tag-technical { background: rgba(59,130,246,0.12); color: #3b82f6; }
-    .tag-downselect { background: rgba(234,179,8,0.12); color: #eab308; }
-    .tag-compliance { background: rgba(239,68,68,0.2); color: #f87171; }
-    .tag-pass { background: rgba(100,100,120,0.2); color: #888; }
-    .tag-other { background: rgba(100,100,120,0.15); color: #888; }
-
-    .loading { color: #666; font-size: 0.85rem; padding: 20px 0; text-align: center; }
-    .error { color: #ef4444; font-size: 0.8rem; padding: 10px 0; }
-
-    .win-agency-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #151525; }
+    .win-agency-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #151525; cursor: pointer; }
     .win-agency-row:last-child { border-bottom: none; }
+    .win-agency-row:hover { background: #16162a; margin: 0 -10px; padding: 8px 10px; border-radius: 4px; }
     .win-agency-name { font-size: 0.8rem; color: #e8e8f0; }
     .win-agency-stats { font-size: 0.75rem; color: #f97316; }
 
+    /* Modal / Drawer */
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 1000; align-items: flex-start; justify-content: center; padding: 40px 20px; overflow-y: auto; }
+    .modal-overlay.open { display: flex; }
+    .modal { background: #111120; border: 1px solid #2a2a3e; border-radius: 12px; width: 100%; max-width: 780px; padding: 28px 30px; position: relative; }
+    .modal-close { position: absolute; top: 16px; right: 20px; background: none; border: none; color: #666; font-size: 1.4rem; cursor: pointer; line-height: 1; }
+    .modal-close:hover { color: #fff; }
+    .modal h2 { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    .modal-sub { font-size: 0.78rem; color: #888; margin-bottom: 20px; }
+    .modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 20px; }
+    .modal-field { background: #0d0d1a; border: 1px solid #1e1e2e; border-radius: 8px; padding: 12px 14px; }
+    .modal-field .mf-label { font-size: 0.65rem; color: #666; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 4px; }
+    .modal-field .mf-value { font-size: 0.9rem; color: #e8e8f0; font-weight: 600; }
+    .modal-field .mf-value.orange { color: #f97316; }
+    .modal-field .mf-value.green { color: #22c55e; }
+    .modal-field .mf-value.red { color: #ef4444; }
+    .modal-source { font-size: 0.7rem; color: #555; margin-top: 16px; padding-top: 14px; border-top: 1px solid #1e1e2e; }
+    .modal-raw { background: #0a0a0f; border: 1px solid #1e1e2e; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 0.7rem; color: #888; max-height: 200px; overflow-y: auto; margin-top: 12px; white-space: pre-wrap; word-break: break-all; }
+    .toggle-raw { background: none; border: 1px solid #2a2a3e; color: #666; font-size: 0.7rem; padding: 4px 10px; border-radius: 4px; cursor: pointer; margin-top: 10px; }
+    .toggle-raw:hover { border-color: #f97316; color: #f97316; }
+
+    .loading { color: #666; font-size: 0.85rem; padding: 20px 0; text-align: center; }
     .pulse { animation: pulse 2s infinite; }
     @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.5; } }
-
     footer { text-align: center; padding: 20px; color: #333; font-size: 0.7rem; }
   </style>
 </head>
@@ -143,30 +142,49 @@
 <div class="container">
 
   <!-- KPI Row -->
-  <div class="kpis" id="kpis">
-    <div class="kpi accent"><div class="label">Open Pipeline</div><div class="value pulse" id="kpi-pipeline">—</div><div class="sub" id="kpi-deals">— deals</div></div>
-    <div class="kpi green"><div class="label">Weighted Value</div><div class="value pulse" id="kpi-weighted">—</div><div class="sub">probability-adjusted</div></div>
-    <div class="kpi yellow"><div class="label">High Prob (≥50%)</div><div class="value pulse" id="kpi-highprob">—</div><div class="sub" id="kpi-highprob-val">— in play</div></div>
-    <div class="kpi red"><div class="label">No Next Activity</div><div class="value pulse" id="kpi-noactivity">—</div><div class="sub">deals going cold</div></div>
+  <div class="section-title">Key Metrics <span class="source-badge pipedrive">⬡ Pipedrive · Live</span></div>
+  <div class="kpis">
+    <div class="kpi accent" onclick="showAllDeals()">
+      <div class="label">Open Pipeline</div>
+      <div class="value pulse" id="kpi-pipeline">—</div>
+      <div class="sub" id="kpi-deals">— deals · click to view all</div>
+      <div class="kpi-src"><span class="source-badge pipedrive">Pipedrive /deals</span></div>
+    </div>
+    <div class="kpi green" onclick="showWeightedBreakdown()">
+      <div class="label">Weighted Value</div>
+      <div class="value pulse" id="kpi-weighted">—</div>
+      <div class="sub">probability-adjusted · click to view</div>
+      <div class="kpi-src"><span class="source-badge pipedrive">Pipedrive /deals</span></div>
+    </div>
+    <div class="kpi yellow" onclick="showHighProb()">
+      <div class="label">High Prob (≥50%)</div>
+      <div class="value pulse" id="kpi-highprob">—</div>
+      <div class="sub" id="kpi-highprob-val">click to view deals</div>
+      <div class="kpi-src"><span class="source-badge pipedrive">Pipedrive /deals</span></div>
+    </div>
+    <div class="kpi red" onclick="showNoActivity()">
+      <div class="label">No Next Activity</div>
+      <div class="value pulse" id="kpi-noactivity">—</div>
+      <div class="sub">deals going cold · click to view</div>
+      <div class="kpi-src"><span class="source-badge pipedrive">Pipedrive /deals</span></div>
+    </div>
   </div>
 
   <!-- Pipeline Stages -->
-  <div class="section-title">Pipeline by Stage</div>
-  <div class="pipeline-stages" id="stageCards">
-    <div class="stage"><div class="stage-name">Loading...</div><div class="stage-count">—</div></div>
-  </div>
+  <div class="section-title">Pipeline by Stage <span class="source-badge pipedrive">⬡ Pipedrive · Live</span></div>
+  <div class="pipeline-stages" id="stageCards"></div>
 
   <!-- Top Deals + No Activity -->
   <div class="two-col">
     <div class="card">
-      <div class="card-title">🔥 Top Deals by Value</div>
+      <div class="card-title">🔥 Top Deals by Value <span class="source-badge pipedrive">Pipedrive</span></div>
       <table id="topDealsTable">
         <thead><tr><th>Opportunity</th><th>Value</th><th>Prob</th><th>Next Activity</th></tr></thead>
         <tbody><tr><td colspan="4" class="loading">Loading...</td></tr></tbody>
       </table>
     </div>
     <div class="card">
-      <div class="card-title">🚨 High-Value Deals — No Next Activity</div>
+      <div class="card-title">🚨 No Next Activity — High Value <span class="source-badge pipedrive">Pipedrive</span></div>
       <table id="noActivityTable">
         <thead><tr><th>Opportunity</th><th>Value</th><th>Last Activity</th></tr></thead>
         <tbody><tr><td colspan="3" class="loading">Loading...</td></tr></tbody>
@@ -174,10 +192,10 @@
     </div>
   </div>
 
-  <!-- High Prob Deals -->
+  <!-- High Prob -->
   <div class="full-col">
     <div class="card">
-      <div class="card-title">✅ High Probability Deals (≥ 50%)</div>
+      <div class="card-title">✅ High Probability Deals (≥ 50%) <span class="source-badge pipedrive">Pipedrive</span></div>
       <table id="highProbTable">
         <thead><tr><th>Opportunity</th><th>Agency</th><th>Value</th><th>Prob</th><th>Owner</th><th>Next Activity</th></tr></thead>
         <tbody><tr><td colspan="6" class="loading">Loading...</td></tr></tbody>
@@ -185,14 +203,16 @@
     </div>
   </div>
 
-  <!-- Win/Loss + Top Win Agencies -->
+  <!-- Win/Loss + Agencies -->
   <div class="two-col">
     <div class="card">
-      <div class="card-title">📉 Loss Reasons (Historical)</div>
+      <div class="card-title">📉 Loss Reasons <span class="source-badge analysis">Historical Analysis · Apr 2026</span></div>
+      <div style="font-size:0.72rem;color:#555;margin-bottom:12px;">Based on 43 closed-lost deals pulled from Pipedrive. Reasons logged by Eric Ma. Click a bar to see deals.</div>
       <div class="loss-bars" id="lossBars"><div class="loading">Loading...</div></div>
     </div>
     <div class="card">
-      <div class="card-title">🏆 Top Win Agencies</div>
+      <div class="card-title">🏆 Top Win Agencies <span class="source-badge analysis">Historical Analysis · Apr 2026</span></div>
+      <div style="font-size:0.72rem;color:#555;margin-bottom:12px;">Based on 32 won deals from Pipedrive. Click an agency to see their wins.</div>
       <div id="winAgencies"><div class="loading">Loading...</div></div>
     </div>
   </div>
@@ -200,7 +220,7 @@
   <!-- Recently Updated -->
   <div class="full-col">
     <div class="card">
-      <div class="card-title">🕐 Recently Updated Deals (2026)</div>
+      <div class="card-title">🕐 Recently Updated (2026) <span class="source-badge pipedrive">Pipedrive · Live</span></div>
       <table id="recentTable">
         <thead><tr><th>Updated</th><th>Opportunity</th><th>Agency</th><th>Value</th><th>Owner</th></tr></thead>
         <tbody><tr><td colspan="5" class="loading">Loading...</td></tr></tbody>
@@ -210,19 +230,30 @@
 
 </div>
 
-<footer>BLN24 · Live data via Pipedrive API · Rex 📈</footer>
+<footer>BLN24 · Data sources: Pipedrive CRM (live), Outlook email (session), historical win/loss analysis · Rex 📈</footer>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOnBg(event)">
+  <div class="modal" id="modalContent">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h2 id="modalTitle">Deal Detail</h2>
+    <div class="modal-sub" id="modalSub"></div>
+    <div id="modalBody"></div>
+    <div class="modal-source" id="modalSource"></div>
+  </div>
+</div>
 
 <script>
 const PIPEDRIVE_TOKEN = '366cfe729527d0007f68fa582b2f8c450295bd72';
-const PIPEDRIVE_DOMAIN = 'bln24';
-const BASE = `https://${PIPEDRIVE_DOMAIN}.pipedrive.com/api/v1`;
-
+const BASE = 'https://bln24.pipedrive.com/api/v1';
 const STAGE_NAMES = {38:'Identified',39:'Qualified',42:'Capture/Pre-Proposal',138:'Proposal (RFP/RFQ)',195:'Post Proposal'};
 const STAGE_ORDER = [38,39,42,138,195];
 
+let ALL_OPEN_DEALS = [];
+
 function fmt(n) {
   if (!n || n === 0) return '$0';
-  if (n >= 1e9) return '$' + (n/1e9).toFixed(1) + 'B';
+  if (n >= 1e9) return '$' + (n/1e9).toFixed(2) + 'B';
   if (n >= 1e6) return '$' + (n/1e6).toFixed(1) + 'M';
   if (n >= 1e3) return '$' + (n/1e3).toFixed(0) + 'K';
   return '$' + n.toLocaleString();
@@ -235,180 +266,288 @@ function probBadge(p) {
 
 function daysSince(dateStr) {
   if (!dateStr) return null;
-  const d = new Date(dateStr);
-  const now = new Date();
-  return Math.floor((now - d) / 86400000);
+  return Math.floor((new Date() - new Date(dateStr)) / 86400000);
 }
 
+function openModal(title, sub, bodyHTML, source) {
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalSub').textContent = sub || '';
+  document.getElementById('modalBody').innerHTML = bodyHTML;
+  document.getElementById('modalSource').innerHTML = '📡 Data source: ' + (source || 'Pipedrive CRM · pulled live at ' + new Date().toLocaleTimeString());
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+function closeModal() { document.getElementById('modalOverlay').classList.remove('open'); }
+function closeModalOnBg(e) { if (e.target === document.getElementById('modalOverlay')) closeModal(); }
+
+function dealDetailHTML(d) {
+  const days = daysSince(d.last_activity_date);
+  const daysStr = days !== null ? `${days} days ago` : 'Never';
+  const nextAct = d.next_activity_date || '<span style="color:#ef4444">⚠ None scheduled</span>';
+  const stageLabel = STAGE_NAMES[d.stage_id] || `Stage ${d.stage_id}`;
+  return `
+    <div class="modal-grid">
+      <div class="modal-field"><div class="mf-label">Agency / Org</div><div class="mf-value">${d.org_name||'—'}</div></div>
+      <div class="modal-field"><div class="mf-label">Stage</div><div class="mf-value">${stageLabel}</div></div>
+      <div class="modal-field"><div class="mf-label">Total Value</div><div class="mf-value orange">${fmt(d.value)}</div></div>
+      <div class="modal-field"><div class="mf-label">Weighted Value</div><div class="mf-value">${fmt(d.weighted_value)}</div></div>
+      <div class="modal-field"><div class="mf-label">Win Probability</div><div class="mf-value ${(d.probability||0)>=50?'green':(d.probability||0)>0?'':'red'}">${d.probability||0}%</div></div>
+      <div class="modal-field"><div class="mf-label">Owner</div><div class="mf-value">${d.owner_name||'—'}</div></div>
+      <div class="modal-field"><div class="mf-label">Last Activity</div><div class="mf-value ${days>180||days===null?'red':''}">${d.last_activity_date||'Never'} (${daysStr})</div></div>
+      <div class="modal-field"><div class="mf-label">Next Activity</div><div class="mf-value">${nextAct}</div></div>
+      <div class="modal-field"><div class="mf-label">Expected Close</div><div class="mf-value">${d.expected_close_date||'—'}</div></div>
+      <div class="modal-field"><div class="mf-label">Added to Pipedrive</div><div class="mf-value">${(d.add_time||'').substring(0,10)}</div></div>
+      <div class="modal-field"><div class="mf-label">Last Updated</div><div class="mf-value">${(d.update_time||'').substring(0,10)}</div></div>
+      <div class="modal-field"><div class="mf-label">Pipedrive ID</div><div class="mf-value">#${d.id}</div></div>
+    </div>
+    <button class="toggle-raw" onclick="toggleRaw(this, ${d.id})">Show raw data</button>
+    <div id="raw-${d.id}" style="display:none" class="modal-raw">${JSON.stringify(d, null, 2)}</div>
+  `;
+}
+
+function toggleRaw(btn, id) {
+  const el = document.getElementById('raw-' + id);
+  if (el.style.display === 'none') { el.style.display='block'; btn.textContent='Hide raw data'; }
+  else { el.style.display='none'; btn.textContent='Show raw data'; }
+}
+
+function showDeal(d) {
+  openModal(d.title || 'Deal Detail', d.org_name, dealDetailHTML(d), `Pipedrive CRM · Deal #${d.id} · pulled live at ${new Date().toLocaleTimeString()}`);
+}
+
+function dealsTableHTML(deals, cols) {
+  if (!deals.length) return '<div class="loading">No deals found.</div>';
+  return `<table>
+    <thead><tr>${cols.map(c=>`<th>${c.label}</th>`).join('')}</tr></thead>
+    <tbody>${deals.map(d=>`
+      <tr class="clickable" onclick="showDeal(window._dealMap[${d.id}])">
+        ${cols.map(c=>`<td>${c.render(d)}</td>`).join('')}
+      </tr>`).join('')}
+    </tbody>
+  </table>`;
+}
+
+function showAllDeals() {
+  const sorted = [...ALL_OPEN_DEALS].sort((a,b)=>(b.value||0)-(a.value||0));
+  const body = dealsTableHTML(sorted, [
+    {label:'Opportunity', render: d=>`<div style="font-size:0.78rem;">${(d.title||'').substring(0,50)}</div><div style="font-size:0.68rem;color:#666;">${d.org_name||''}</div>`},
+    {label:'Value', render: d=>`<span style="color:#f97316">${fmt(d.value)}</span>`},
+    {label:'Stage', render: d=>STAGE_NAMES[d.stage_id]||'?'},
+    {label:'Prob', render: d=>probBadge(d.probability||0)},
+    {label:'Owner', render: d=>`<span style="color:#888;font-size:0.75rem;">${d.owner_name||'?'}</span>`},
+  ]);
+  openModal('All Open Deals', `${sorted.length} deals · $${(sorted.reduce((s,d)=>s+(d.value||0),0)/1e6).toFixed(1)}M total · Click any row for full detail`, body);
+}
+
+function showWeightedBreakdown() {
+  const sorted = [...ALL_OPEN_DEALS].filter(d=>d.weighted_value>0).sort((a,b)=>(b.weighted_value||0)-(a.weighted_value||0));
+  const body = dealsTableHTML(sorted, [
+    {label:'Opportunity', render: d=>`<div style="font-size:0.78rem;">${(d.title||'').substring(0,50)}</div><div style="font-size:0.68rem;color:#666;">${d.org_name||''}</div>`},
+    {label:'TCV', render: d=>`<span style="color:#888;font-size:0.75rem;">${fmt(d.value)}</span>`},
+    {label:'Weighted', render: d=>`<span style="color:#22c55e">${fmt(d.weighted_value)}</span>`},
+    {label:'Prob', render: d=>probBadge(d.probability||0)},
+  ]);
+  openModal('Weighted Pipeline Breakdown', 'Probability-adjusted value. Formula: TCV × Win%. Click any row for detail.', body);
+}
+
+function showHighProb() {
+  const deals = [...ALL_OPEN_DEALS].filter(d=>(d.probability||0)>=50).sort((a,b)=>(b.probability||0)-(a.probability||0));
+  const body = dealsTableHTML(deals, [
+    {label:'Opportunity', render: d=>`<div style="font-size:0.78rem;">${(d.title||'').substring(0,50)}</div><div style="font-size:0.68rem;color:#666;">${d.org_name||''}</div>`},
+    {label:'Value', render: d=>`<span style="color:#f97316">${fmt(d.value)}</span>`},
+    {label:'Prob', render: d=>probBadge(d.probability||0)},
+    {label:'Next Activity', render: d=>d.next_activity_date||'<span style="color:#ef4444">None</span>'},
+    {label:'Owner', render: d=>`<span style="color:#888;font-size:0.75rem;">${d.owner_name||'?'}</span>`},
+  ]);
+  openModal('High Probability Deals (≥50%)', `${deals.length} deals in play · Click any row for full detail`, body);
+}
+
+function showNoActivity() {
+  const deals = [...ALL_OPEN_DEALS].filter(d=>!d.next_activity_date).sort((a,b)=>(b.value||0)-(a.value||0));
+  const body = dealsTableHTML(deals, [
+    {label:'Opportunity', render: d=>`<div style="font-size:0.78rem;">${(d.title||'').substring(0,50)}</div><div style="font-size:0.68rem;color:#666;">${d.org_name||''}</div>`},
+    {label:'Value', render: d=>`<span style="color:#f97316">${fmt(d.value)}</span>`},
+    {label:'Prob', render: d=>probBadge(d.probability||0)},
+    {label:'Last Activity', render: d=>{const days=daysSince(d.last_activity_date);return `<span style="color:${days>180||days===null?'#ef4444':'#888'}">${d.last_activity_date||'Never'} ${days!==null?'('+days+'d)':''}</span>`}},
+    {label:'Owner', render: d=>`<span style="color:#888;font-size:0.75rem;">${d.owner_name||'?'}</span>`},
+  ]);
+  openModal('Deals With No Next Activity', `${deals.length} of ${ALL_OPEN_DEALS.length} open deals have nothing scheduled · Click any row for full detail`, body);
+}
+
+function showStageDeals(stageId) {
+  const deals = [...ALL_OPEN_DEALS].filter(d=>d.stage_id===stageId).sort((a,b)=>(b.value||0)-(a.value||0));
+  const body = dealsTableHTML(deals, [
+    {label:'Opportunity', render: d=>`<div style="font-size:0.78rem;">${(d.title||'').substring(0,55)}</div><div style="font-size:0.68rem;color:#666;">${d.org_name||''}</div>`},
+    {label:'Value', render: d=>`<span style="color:#f97316">${fmt(d.value)}</span>`},
+    {label:'Prob', render: d=>probBadge(d.probability||0)},
+    {label:'Owner', render: d=>`<span style="color:#888;font-size:0.75rem;">${d.owner_name||'?'}</span>`},
+    {label:'Next Activity', render: d=>d.next_activity_date||'<span style="color:#ef4444">None</span>'},
+  ]);
+  openModal(STAGE_NAMES[stageId], `${deals.length} deals · Click any row for full detail`, body);
+}
+
+const LOSS_REASONS_STATIC = [
+  {reason:'Did Not Get Down Selected', count:11, value:56132634, deals:['USCG Media/Strategic Planning ($6M)','FDA Take Back Your Health ($15M)','Farmers.gov Web Support ($13M)','HRSA National Education Outreach ($8.5M)','Dept of State Travel.State.Gov ($9M)','DOT MMUCC Training ($4.4M)','NOAA EPIC ($0)','DHA Data Governance ($0)','Dept Commerce 2026 Census ($0)','SLED VA Foundation ($200K)','NVRC Social Marketing ($65K)']},
+  {reason:'Price', count:14, value:15219000, deals:['IRS EDI Transformation ($5.3M)','USCIS Forms Support ($2.9M)','IRS Enterprise Data Platform ($2M)','HUD Marketing Support ($2.2M)','USDA Wilderness Training ($1.2M)','NSF Data Usage Platform ($150K)','Navy NIWC Marketing ($500K)','GSA Small Business Resource Guide ($250K)','Norfolk Web Design ($250K)','SSA WCMS BPA ($0)','LOC User Research ($320K)','+ 3 more']},
+  {reason:'Inactive/Cancelled/Deleted', count:4, value:61820000, deals:['DOI BPA Marketing/Advertising ($55M)','USDA FBC Data Analytics IDIQ ($6.3M)','EAC Communications Services ($500K)','Federal Reserve Board AEM PoC ($0)']},
+  {reason:'Incumbent', count:3, value:40598702, deals:['DOL Web Content Management ($30M)','USPTO Training & Instructional Support ($10M)','ACL HHS IDIQ ICC ($600K)']},
+  {reason:'PASS / Did Not Pursue', count:2, value:42016265, deals:['DOC Patent Technical Services ($30M)','ACF Head Start Communications ($12M)']},
+  {reason:'Technical', count:4, value:6375888, deals:['IRS Redesign CP Notices ($4.3M)','NIH NIMHD Web Modernization ($2.1M)','World Bank Short-form Video ($25K)','Dept of State DelicioUS ($0)']},
+  {reason:'Non-Compliance', count:3, value:0, deals:['IRS Graphic Design Services 25-25','DOL Registered Apprenticeship Campaign','Office of Naval Intelligence IT Support']},
+  {reason:'Lack of Customer Insight', count:2, value:2150000, deals:['GSA PBS Marketing ($2.15M)','USPS OIG External Website ($0)']},
+];
+
+const WIN_AGENCIES_STATIC = [
+  {name:'IRS', wins:2, value:26252397, deals:['Customer Experience Research BPA ($22M)','IRS Human Centered Design & Research ($4.3M)']},
+  {name:'Census Bureau', wins:7, value:22754461, deals:['Digital Web Services ($8.2M)','Self-Response QA ($4.1M)','CES RFQ ($7.8M)','MAF/TIGER ($2.2M)','Photography ($400K)','Virtual Tour ($67K)','Google Analytics ($9K)']},
+  {name:'CMS', wins:1, value:16000000, deals:['CMS Marketplace Notice Production Services ($16M)']},
+  {name:'ACL / HHS', wins:1, value:5000000, deals:['HHS Administration Community Living ($5M)']},
+  {name:'MBDA', wins:1, value:4410905, deals:['MBDA Website Redesign ($4.4M)']},
+  {name:'Dept of Education', wins:2, value:3711676, deals:['ED Data Analytics Risk Management ($2.9M)','Database Administration SME ($850K)']},
+  {name:'NOAA', wins:1, value:3400000, deals:['AI for Software Modernization ($3.4M)']},
+  {name:'CDC', wins:3, value:3004538, deals:['Comms & Health Analyst ($249K)','Visual Comms Support ($2.6M)','Diabetes Digital Comms ($138K)']},
+];
+
 async function fetchDeals(status, limit=100) {
-  const url = `${BASE}/deals?api_token=${PIPEDRIVE_TOKEN}&status=${status}&limit=${limit}`;
-  const res = await fetch(url);
+  const res = await fetch(`${BASE}/deals?api_token=${PIPEDRIVE_TOKEN}&status=${status}&limit=${limit}`);
   const json = await res.json();
   return json.data || [];
 }
 
-const LOSS_REASONS_STATIC = [
-  {reason: 'Price', count: 14, value: 15219000},
-  {reason: 'Did Not Get Down Selected', count: 11, value: 56132634},
-  {reason: 'Inactive/Cancelled/Deleted', count: 4, value: 61820000},
-  {reason: 'Technical', count: 4, value: 6375888},
-  {reason: 'Non-Compliance', count: 3, value: 0},
-  {reason: 'Incumbent', count: 3, value: 40598702},
-  {reason: 'PASS / Did Not Pursue', count: 2, value: 42016265},
-  {reason: 'Lack of Customer Insight', count: 2, value: 2150000},
-];
-
-const WIN_AGENCIES_STATIC = [
-  {name:'IRS', wins:2, value:26252397},
-  {name:'Census Bureau', wins:7, value:22754461},
-  {name:'CMS', wins:1, value:16000000},
-  {name:'ACL', wins:1, value:5000000},
-  {name:'MBDA', wins:1, value:4410905},
-  {name:'Dept of Education', wins:2, value:3711676},
-  {name:'NOAA', wins:1, value:3400000},
-  {name:'CDC', wins:3, value:3004538},
-];
-
-function reasonTag(r) {
-  if (!r) return '';
-  const map = {
-    'Price':'tag-price','Incumbent':'tag-incumbent','Technical':'tag-technical',
-    'Did Not Get Down Selected':'tag-downselect','Non-Compliance':'tag-compliance',
-    'PASS / Did Not Pursue':'tag-pass'
-  };
-  const cls = map[r] || 'tag-other';
-  const short = r.length > 22 ? r.substring(0,20)+'…' : r;
-  return `<span class="tag ${cls}">${short}</span>`;
-}
-
 async function loadAll() {
   document.getElementById('lastUpdated').textContent = 'Refreshing...';
-
   try {
-    const [openDeals] = await Promise.all([fetchDeals('open')]);
+    const openDeals = await fetchDeals('open');
+    ALL_OPEN_DEALS = openDeals;
+    window._dealMap = {};
+    openDeals.forEach(d => window._dealMap[d.id] = d);
 
     // KPIs
-    const totalValue = openDeals.reduce((s,d) => s+(d.value||0), 0);
-    const totalWeighted = openDeals.reduce((s,d) => s+(d.weighted_value||0), 0);
-    const noActivity = openDeals.filter(d => !d.next_activity_date);
-    const highProb = openDeals.filter(d => (d.probability||0) >= 50);
-    const highProbVal = highProb.reduce((s,d) => s+(d.value||0), 0);
+    const totalValue = openDeals.reduce((s,d)=>s+(d.value||0),0);
+    const totalWeighted = openDeals.reduce((s,d)=>s+(d.weighted_value||0),0);
+    const noActivity = openDeals.filter(d=>!d.next_activity_date);
+    const highProb = openDeals.filter(d=>(d.probability||0)>=50);
+    const highProbVal = highProb.reduce((s,d)=>s+(d.value||0),0);
 
     document.getElementById('kpi-pipeline').textContent = fmt(totalValue);
-    document.getElementById('kpi-deals').textContent = `${openDeals.length} deals`;
+    document.getElementById('kpi-deals').textContent = `${openDeals.length} open deals · click to view all`;
     document.getElementById('kpi-weighted').textContent = fmt(totalWeighted);
     document.getElementById('kpi-highprob').textContent = highProb.length;
-    document.getElementById('kpi-highprob-val').textContent = fmt(highProbVal) + ' in play';
+    document.getElementById('kpi-highprob-val').textContent = fmt(highProbVal) + ' in play · click to view';
     document.getElementById('kpi-noactivity').textContent = noActivity.length;
-    // Remove pulse once loaded
-    document.querySelectorAll('.pulse').forEach(el => el.classList.remove('pulse'));
+    document.querySelectorAll('.pulse').forEach(el=>el.classList.remove('pulse'));
 
-    // Stage cards
+    // Stages
     const stageData = {};
-    STAGE_ORDER.forEach(id => stageData[id] = {count:0,value:0,weighted:0});
-    openDeals.forEach(d => {
-      const sid = d.stage_id;
-      if (stageData[sid]) {
-        stageData[sid].count++;
-        stageData[sid].value += d.value||0;
-        stageData[sid].weighted += d.weighted_value||0;
-      }
-    });
-    document.getElementById('stageCards').innerHTML = STAGE_ORDER.map(sid => {
-      const s = stageData[sid];
-      return `<div class="stage">
+    STAGE_ORDER.forEach(id=>stageData[id]={count:0,value:0,weighted:0});
+    openDeals.forEach(d=>{if(stageData[d.stage_id]){stageData[d.stage_id].count++;stageData[d.stage_id].value+=d.value||0;stageData[d.stage_id].weighted+=d.weighted_value||0;}});
+    document.getElementById('stageCards').innerHTML = STAGE_ORDER.map(sid=>`
+      <div class="stage" onclick="showStageDeals(${sid})">
         <div class="stage-name">${STAGE_NAMES[sid]}</div>
-        <div class="stage-count">${s.count}</div>
-        <div class="stage-value">${fmt(s.value)}</div>
-        <div class="stage-weighted">${fmt(s.weighted)} weighted</div>
-      </div>`;
-    }).join('');
+        <div class="stage-count">${stageData[sid].count}</div>
+        <div class="stage-value">${fmt(stageData[sid].value)}</div>
+        <div class="stage-weighted">${fmt(stageData[sid].weighted)} weighted</div>
+      </div>`).join('');
 
     // Top deals
-    const sorted = [...openDeals].sort((a,b) => (b.value||0)-(a.value||0));
-    document.querySelector('#topDealsTable tbody').innerHTML = sorted.slice(0,10).map(d => {
-      const nxt = d.next_activity_date ? d.next_activity_date : '<span style="color:#ef4444">None</span>';
-      const title = (d.title||'').substring(0,45) + ((d.title||'').length>45?'…':'');
-      return `<tr>
-        <td><div style="font-size:0.78rem;color:#e8e8f0;">${title}</div><div style="font-size:0.68rem;color:#666;">${d.org_name||''}</div></td>
+    const sorted = [...openDeals].sort((a,b)=>(b.value||0)-(a.value||0));
+    document.querySelector('#topDealsTable tbody').innerHTML = sorted.slice(0,10).map(d=>`
+      <tr class="clickable" onclick="showDeal(window._dealMap[${d.id}])">
+        <td><div style="font-size:0.78rem;">${(d.title||'').substring(0,45)}${(d.title||'').length>45?'…':''}</div><div style="font-size:0.68rem;color:#666;">${d.org_name||''}</div></td>
         <td style="color:#f97316;white-space:nowrap;">${fmt(d.value)}</td>
         <td>${probBadge(d.probability||0)}</td>
-        <td style="font-size:0.75rem;">${nxt}</td>
-      </tr>`;
-    }).join('');
+        <td style="font-size:0.75rem;">${d.next_activity_date||'<span style="color:#ef4444">None</span>'}</td>
+      </tr>`).join('');
 
-    // No activity (high value first)
-    const noActSorted = [...noActivity].sort((a,b) => (b.value||0)-(a.value||0));
-    document.querySelector('#noActivityTable tbody').innerHTML = noActSorted.slice(0,10).map(d => {
-      const days = daysSince(d.last_activity_date);
-      const daysStr = days !== null ? `${days}d ago` : 'Never';
-      const title = (d.title||'').substring(0,40) + ((d.title||'').length>40?'…':'');
-      const alertCls = (days === null || days > 180) ? 'alert-row' : '';
-      return `<tr class="${alertCls}">
-        <td><div style="font-size:0.78rem;">${title}</div><div style="font-size:0.68rem;color:#666;">${d.org_name||''}</div></td>
+    // No activity
+    const noActSorted = [...noActivity].sort((a,b)=>(b.value||0)-(a.value||0));
+    document.querySelector('#noActivityTable tbody').innerHTML = noActSorted.slice(0,10).map(d=>{
+      const days=daysSince(d.last_activity_date);
+      return `<tr class="clickable ${(days===null||days>180)?'alert-row':''}" onclick="showDeal(window._dealMap[${d.id}])">
+        <td><div style="font-size:0.78rem;">${(d.title||'').substring(0,40)}${(d.title||'').length>40?'…':''}</div><div style="font-size:0.68rem;color:#666;">${d.org_name||''}</div></td>
         <td style="color:#f97316;white-space:nowrap;">${fmt(d.value)}</td>
-        <td style="font-size:0.75rem;color:${days>180||days===null?'#ef4444':'#888'}">${daysStr}</td>
-      </tr>`;
-    }).join('');
+        <td style="font-size:0.75rem;color:${days>180||days===null?'#ef4444':'#888'}">${d.last_activity_date||'Never'}${days!==null?' ('+days+'d)':''}</td>
+      </tr>`;}).join('');
 
     // High prob
-    const highProbSorted = [...highProb].sort((a,b) => (b.weighted_value||0)-(a.weighted_value||0));
-    document.querySelector('#highProbTable tbody').innerHTML = highProbSorted.map(d => {
-      const nxt = d.next_activity_date || '<span style="color:#ef4444">⚠ None</span>';
-      const title = (d.title||'').substring(0,50) + ((d.title||'').length>50?'…':'');
-      return `<tr>
-        <td style="font-size:0.78rem;">${title}</td>
-        <td style="font-size:0.75rem;color:#888;">${(d.org_name||'').substring(0,30)}</td>
+    const highProbSorted = [...highProb].sort((a,b)=>(b.weighted_value||0)-(a.weighted_value||0));
+    document.querySelector('#highProbTable tbody').innerHTML = highProbSorted.map(d=>`
+      <tr class="clickable" onclick="showDeal(window._dealMap[${d.id}])">
+        <td style="font-size:0.78rem;">${(d.title||'').substring(0,50)}${(d.title||'').length>50?'…':''}</td>
+        <td style="font-size:0.75rem;color:#888;">${(d.org_name||'').substring(0,28)}</td>
         <td style="color:#f97316;">${fmt(d.value)}</td>
         <td>${probBadge(d.probability||0)}</td>
         <td style="font-size:0.75rem;color:#888;">${d.owner_name||'?'}</td>
-        <td style="font-size:0.75rem;">${nxt}</td>
-      </tr>`;
-    }).join('');
+        <td style="font-size:0.75rem;">${d.next_activity_date||'<span style="color:#ef4444">⚠ None</span>'}</td>
+      </tr>`).join('');
 
-    // Recently updated
-    const recent = openDeals.filter(d => (d.update_time||'') > '2026-01-01')
-      .sort((a,b) => (b.update_time||'').localeCompare(a.update_time||''));
-    document.querySelector('#recentTable tbody').innerHTML = recent.slice(0,12).map(d => {
-      const title = (d.title||'').substring(0,55) + ((d.title||'').length>55?'…':'');
-      return `<tr>
+    // Recent
+    const recent = openDeals.filter(d=>(d.update_time||'')>'2026-01-01').sort((a,b)=>(b.update_time||'').localeCompare(a.update_time||''));
+    document.querySelector('#recentTable tbody').innerHTML = recent.slice(0,12).map(d=>`
+      <tr class="clickable" onclick="showDeal(window._dealMap[${d.id}])">
         <td style="font-size:0.75rem;color:#888;">${(d.update_time||'').substring(0,10)}</td>
-        <td style="font-size:0.78rem;">${title}</td>
-        <td style="font-size:0.73rem;color:#888;">${(d.org_name||'').substring(0,30)}</td>
+        <td style="font-size:0.78rem;">${(d.title||'').substring(0,55)}${(d.title||'').length>55?'…':''}</td>
+        <td style="font-size:0.73rem;color:#888;">${(d.org_name||'').substring(0,28)}</td>
         <td style="color:#f97316;">${fmt(d.value)}</td>
         <td style="font-size:0.73rem;color:#888;">${d.owner_name||'?'}</td>
-      </tr>`;
-    }).join('');
+      </tr>`).join('');
 
-    // Loss reasons (static historical)
+    // Loss reasons
     const maxCount = Math.max(...LOSS_REASONS_STATIC.map(r=>r.count));
-    document.getElementById('lossBars').innerHTML = LOSS_REASONS_STATIC.map(r => {
-      const pct = (r.count / maxCount * 100).toFixed(0);
-      return `<div class="loss-bar-row">
-        <div class="loss-bar-label">${r.reason}</div>
-        <div class="loss-bar-track"><div class="loss-bar-fill" style="width:${pct}%"></div></div>
+    document.getElementById('lossBars').innerHTML = LOSS_REASONS_STATIC.map(r=>`
+      <div class="loss-bar-row" style="cursor:pointer" onclick="showLossReason('${r.reason.replace(/'/,"\'")}')">
+        <div class="loss-bar-label" title="Click to see deals">${r.reason}</div>
+        <div class="loss-bar-track"><div class="loss-bar-fill" style="width:${(r.count/maxCount*100).toFixed(0)}%"></div></div>
         <div class="loss-bar-count">${r.count} deals</div>
-      </div>`;
-    }).join('');
+      </div>`).join('');
 
-    // Win agencies (static historical)
-    document.getElementById('winAgencies').innerHTML = WIN_AGENCIES_STATIC.map(a => `
-      <div class="win-agency-row">
+    // Win agencies
+    document.getElementById('winAgencies').innerHTML = WIN_AGENCIES_STATIC.map(a=>`
+      <div class="win-agency-row" onclick="showWinAgency('${a.name}')">
         <div class="win-agency-name">${a.name}</div>
         <div class="win-agency-stats">${a.wins} win${a.wins>1?'s':''} · ${fmt(a.value)}</div>
       </div>`).join('');
 
     document.getElementById('lastUpdated').textContent = 'Last updated: ' + new Date().toLocaleTimeString();
-
   } catch(e) {
     console.error(e);
-    document.getElementById('lastUpdated').textContent = 'Error loading data — check console';
+    document.getElementById('lastUpdated').textContent = 'Error loading — check console';
   }
 }
 
-// Auto-refresh every 5 minutes
+function showLossReason(reason) {
+  const r = LOSS_REASONS_STATIC.find(x=>x.reason===reason);
+  if (!r) return;
+  const body = `
+    <div class="modal-grid">
+      <div class="modal-field"><div class="mf-label">Deals Lost</div><div class="mf-value red">${r.count}</div></div>
+      <div class="modal-field"><div class="mf-label">Total Value Lost</div><div class="mf-value orange">${fmt(r.value)}</div></div>
+    </div>
+    <div style="margin-top:14px;font-size:0.8rem;color:#aaa;font-weight:600;margin-bottom:8px;">Known deals in this category:</div>
+    <ul style="padding-left:18px;font-size:0.8rem;color:#888;line-height:1.8;">${r.deals.map(d=>`<li>${d}</li>`).join('')}</ul>
+    <div style="margin-top:14px;font-size:0.72rem;color:#555;">Note: Loss reasons were logged in Pipedrive by Eric Ma. Some may be vague — deeper analysis requires cross-referencing email and proposal docs.</div>
+  `;
+  openModal(`Loss Reason: ${reason}`, `${r.count} deals · ${fmt(r.value)} total TCV lost`, body, 'Pipedrive CRM (closed-lost deals) · Historical analysis as of April 2026');
+}
+
+function showWinAgency(name) {
+  const a = WIN_AGENCIES_STATIC.find(x=>x.name===name);
+  if (!a) return;
+  const body = `
+    <div class="modal-grid">
+      <div class="modal-field"><div class="mf-label">Total Wins</div><div class="mf-value green">${a.wins}</div></div>
+      <div class="modal-field"><div class="mf-label">Total Won Value</div><div class="mf-value orange">${fmt(a.value)}</div></div>
+    </div>
+    <div style="margin-top:14px;font-size:0.8rem;color:#aaa;font-weight:600;margin-bottom:8px;">Won contracts:</div>
+    <ul style="padding-left:18px;font-size:0.8rem;color:#888;line-height:1.8;">${a.deals.map(d=>`<li>${d}</li>`).join('')}</ul>
+  `;
+  openModal(`Wins: ${name}`, `${a.wins} contract${a.wins>1?'s':''} won · ${fmt(a.value)} total`, body, 'Pipedrive CRM (closed-won deals) · Historical analysis as of April 2026');
+}
+
 loadAll();
 setInterval(loadAll, 5 * 60 * 1000);
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 </script>
 </body>
 </html>
