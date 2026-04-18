@@ -42,7 +42,9 @@
       const key = 'bln24_auth';
       if (sessionStorage.getItem(key) !== PASS) {
         document.getElementById('auth-screen').classList.add('show');
-        document.getElementById('auth-input').focus();
+        setTimeout(function(){ document.getElementById('auth-input').focus(); }, 100);
+      } else {
+        loadAll();
       }
     }
     function submitAuth() {
@@ -779,8 +781,8 @@ async function loadAll() {
   }
 }
 
-loadAll();
-setInterval(loadAll, 5*60*1000);
+// loadAll called after auth
+setInterval(function(){ if(sessionStorage.getItem("bln24_auth")==="9025") loadAll(); }, 5*60*1000);
 </script>
 </body>
 </html>
