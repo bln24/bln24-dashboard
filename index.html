@@ -583,7 +583,7 @@ async function loadOpps() {
     const pipelineTitles = DATA.map(d => (d.title || '').toLowerCase());
     const pipelineOrgs = DATA.map(d => (d.org_name || '').toLowerCase());
 
-    const fromDate = getDateStr(30);
+    const fromDate = getDateStr(90);
     const GOOD_TYPES = new Set(['Presolicitation','Solicitation','Combined Synopsis/Solicitation','Sources Sought','Special Notice']);
     const today = new Date().toISOString().split('T')[0];
 
@@ -592,7 +592,7 @@ async function loadOpps() {
 
     for (const naics of BLN_NAICS) {
       try {
-        const url = HG_BASE + '?api_key=' + HG_KEY + '&captured_date=' + fromDate + '&source_type=sam&naics_code=' + naics + '&page_size=100';
+        const url = HG_BASE + '?api_key=' + HG_KEY + '&posted_date=' + fromDate + '&source_type=sam&naics_code=' + naics + '&page_size=100';
         const res = await fetch(url);
         const json = await res.json();
         const results = Array.isArray(json) ? [] : (json.results || []);
@@ -610,12 +610,9 @@ async function loadOpps() {
           const title = r.title || '';
           const agencyName = (r.agency || {}).agency_name || '';
 
-          // Check if already in pipeline (rough dedup by keyword overlap)
-          const titleWords = title.toLowerCase().split(/\s+/).filter(w => w.length > 4);
-          const alreadyTracked = titleWords.some(w => pipelineTitles.some(pt => pt.includes(w))) ||
-            pipelineOrgs.some(po => agencyName.toLowerCase().includes(po.substring(0,8)) && po.length > 4);
-
-          if (alreadyTracked) continue;
+          // Check if already in pipeline - flag but don't exclude
+          const titleWords = title.toLowerCase().split(/\s+/).filter(w => w.length > 5);
+          const alreadyTracked = titleWords.filter(w => pipelineTitles.some(pt => pt.includes(w))).length >= 3;
 
           const sa = r.set_aside || '';
           let vl = r.val_est_low, vh = r.val_est_high;
@@ -638,7 +635,8 @@ async function loadOpps() {
             summary: (r.ai_summary || '').substring(0, 400),
             path: r.path || '',
             is_federal: isFederal, is_eligible: isEligible, is8a: is8a,
-            score: (isFederal ? 10 : 0) + (is8a ? 5 : 0) + (isEligible ? 3 : 0),
+            alreadyTracked: alreadyTracked,
+            score: (isFederal ? 10 : 0) + (is8a ? 5 : 0) + (isEligible ? 3 : 0) + (alreadyTracked ? -20 : 0),
           });
         }
       } catch(e) { console.warn('HG error for ' + naics, e); }
@@ -661,7 +659,7 @@ async function loadOpps() {
     tbody.innerHTML = allOpps.slice(0,20).map((o,i) =>
       '<tr class="row" onclick="showOpp(window._opps[' + i + '])">' +
       '<td><div>' + o.title.substring(0,50) + (o.title.length>50?'…':'') + '</div>' +
-      (o.is_federal ? '<div class="muted">🏛 Federal</div>' : '<div class="muted">' + o.agency.substring(0,30) + '</div>') + '</td>' +
+      '<div class="muted">' + (o.is_federal ? '🏛 ' : '') + (o.alreadyTracked ? '⚠ May be tracked' : 'Not in pipeline') + '</div></td>' +
       '<td class="muted">' + o.agency.substring(0,28) + '</td>' +
       '<td class="muted">' + o.type.substring(0,14) + '</td>' +
       '<td>' + saBadge(o.set_aside) + '</td>' +
