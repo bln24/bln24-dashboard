@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BLN24 Revenue Dashboard</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0a0a0f; color: #e8e8f0; min-height: 100vh; }
+
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 32px; border-bottom: 1px solid #1e1e2e;
+      background: #0d0d1a;
+    }
+    header h1 { font-size: 1.3rem; font-weight: 700; letter-spacing: 0.05em; color: #fff; }
+    header h1 span { color: #f97316; }
+    .last-updated { font-size: 0.75rem; color: #666; }
+    .refresh-btn {
+      background: #f97316; color: #fff; border: none; padding: 8px 18px;
+      border-radius: 6px; cursor: pointer; font-size: 0.8rem; font-weight: 600;
+    }
+    .refresh-btn:hover { background: #ea6800; }
+
+    .container { padding: 28px 32px; }
+
+    /* KPI Cards */
+    .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
+    .kpi {
+      background: #111120; border: 1px solid #1e1e2e; border-radius: 10px;
+      padding: 20px 22px;
+    }
+    .kpi .label { font-size: 0.72rem; color: #888; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
+    .kpi .value { font-size: 2rem; font-weight: 700; color: #fff; line-height: 1; }
+    .kpi .sub { font-size: 0.75rem; color: #666; margin-top: 6px; }
+    .kpi.accent .value { color: #f97316; }
+    .kpi.green .value { color: #22c55e; }
+    .kpi.yellow .value { color: #eab308; }
+    .kpi.red .value { color: #ef4444; }
+
+    /* Stage pipeline */
+    .section-title {
+      font-size: 0.75rem; color: #888; text-transform: uppercase;
+      letter-spacing: 0.1em; margin-bottom: 14px; font-weight: 600;
+    }
+    .pipeline-stages { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 28px; }
+    .stage {
+      background: #111120; border: 1px solid #1e1e2e; border-radius: 10px;
+      padding: 16px 18px; text-align: center;
+    }
+    .stage .stage-name { font-size: 0.7rem; color: #888; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+    .stage .stage-count { font-size: 1.8rem; font-weight: 700; color: #fff; }
+    .stage .stage-value { font-size: 0.75rem; color: #f97316; margin-top: 4px; }
+    .stage .stage-weighted { font-size: 0.7rem; color: #666; margin-top: 2px; }
+
+    /* Two col layout */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 28px; }
+    .full-col { margin-bottom: 28px; }
+
+    .card {
+      background: #111120; border: 1px solid #1e1e2e; border-radius: 10px;
+      padding: 20px 22px;
+    }
+    .card-title { font-size: 0.72rem; color: #888; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; font-weight: 600; }
+
+    /* Deal table */
+    table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+    th { text-align: left; padding: 8px 10px; color: #666; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #1e1e2e; }
+    td { padding: 10px 10px; border-bottom: 1px solid #151525; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #14141f; }
+
+    .prob-badge {
+      display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-size: 0.7rem; font-weight: 700;
+    }
+    .prob-high { background: rgba(34,197,94,0.15); color: #22c55e; }
+    .prob-med { background: rgba(234,179,8,0.15); color: #eab308; }
+    .prob-low { background: rgba(239,68,68,0.12); color: #ef4444; }
+    .prob-zero { background: rgba(100,100,120,0.2); color: #666; }
+
+    .alert-row td { background: rgba(239,68,68,0.04); }
+    .alert-icon { color: #ef4444; margin-right: 4px; }
+
+    /* Loss reasons */
+    .loss-bars { display: flex; flex-direction: column; gap: 10px; }
+    .loss-bar-row { display: flex; align-items: center; gap: 10px; }
+    .loss-bar-label { font-size: 0.75rem; color: #aaa; width: 200px; flex-shrink: 0; }
+    .loss-bar-track { flex: 1; background: #1a1a2e; border-radius: 4px; height: 8px; }
+    .loss-bar-fill { height: 8px; border-radius: 4px; background: #f97316; }
+    .loss-bar-count { font-size: 0.75rem; color: #666; width: 60px; text-align: right; flex-shrink: 0; }
+
+    /* No activity warning */
+    .no-activity-count { font-size: 3rem; font-weight: 800; color: #ef4444; }
+
+    .tag { display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; margin-right: 4px; }
+    .tag-price { background: rgba(239,68,68,0.12); color: #ef4444; }
+    .tag-incumbent { background: rgba(168,85,247,0.12); color: #a855f7; }
+    .tag-technical { background: rgba(59,130,246,0.12); color: #3b82f6; }
+    .tag-downselect { background: rgba(234,179,8,0.12); color: #eab308; }
+    .tag-compliance { background: rgba(239,68,68,0.2); color: #f87171; }
+    .tag-pass { background: rgba(100,100,120,0.2); color: #888; }
+    .tag-other { background: rgba(100,100,120,0.15); color: #888; }
+
+    .loading { color: #666; font-size: 0.85rem; padding: 20px 0; text-align: center; }
+    .error { color: #ef4444; font-size: 0.8rem; padding: 10px 0; }
+
+    .win-agency-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #151525; }
+    .win-agency-row:last-child { border-bottom: none; }
+    .win-agency-name { font-size: 0.8rem; color: #e8e8f0; }
+    .win-agency-stats { font-size: 0.75rem; color: #f97316; }
+
+    .pulse { animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.5; } }
+
+    footer { text-align: center; padding: 20px; color: #333; font-size: 0.7rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>BLN24 <span>Revenue Dashboard</span></h1>
+  <div style="display:flex;align-items:center;gap:16px;">
+    <span class="last-updated" id="lastUpdated">Loading...</span>
+    <button class="refresh-btn" onclick="loadAll()">↻ Refresh</button>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- KPI Row -->
+  <div class="kpis" id="kpis">
+    <div class="kpi accent"><div class="label">Open Pipeline</div><div class="value pulse" id="kpi-pipeline">—</div><div class="sub" id="kpi-deals">— deals</div></div>
+    <div class="kpi green"><div class="label">Weighted Value</div><div class="value pulse" id="kpi-weighted">—</div><div class="sub">probability-adjusted</div></div>
+    <div class="kpi yellow"><div class="label">High Prob (≥50%)</div><div class="value pulse" id="kpi-highprob">—</div><div class="sub" id="kpi-highprob-val">— in play</div></div>
+    <div class="kpi red"><div class="label">No Next Activity</div><div class="value pulse" id="kpi-noactivity">—</div><div class="sub">deals going cold</div></div>
+  </div>
+
+  <!-- Pipeline Stages -->
+  <div class="section-title">Pipeline by Stage</div>
+  <div class="pipeline-stages" id="stageCards">
+    <div class="stage"><div class="stage-name">Loading...</div><div class="stage-count">—</div></div>
+  </div>
+
+  <!-- Top Deals + No Activity -->
+  <div class="two-col">
+    <div class="card">
+      <div class="card-title">🔥 Top Deals by Value</div>
+      <table id="topDealsTable">
+        <thead><tr><th>Opportunity</th><th>Value</th><th>Prob</th><th>Next Activity</th></tr></thead>
+        <tbody><tr><td colspan="4" class="loading">Loading...</td></tr></tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title">🚨 High-Value Deals — No Next Activity</div>
+      <table id="noActivityTable">
+        <thead><tr><th>Opportunity</th><th>Value</th><th>Last Activity</th></tr></thead>
+        <tbody><tr><td colspan="3" class="loading">Loading...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- High Prob Deals -->
+  <div class="full-col">
+    <div class="card">
+      <div class="card-title">✅ High Probability Deals (≥ 50%)</div>
+      <table id="highProbTable">
+        <thead><tr><th>Opportunity</th><th>Agency</th><th>Value</th><th>Prob</th><th>Owner</th><th>Next Activity</th></tr></thead>
+        <tbody><tr><td colspan="6" class="loading">Loading...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Win/Loss + Top Win Agencies -->
+  <div class="two-col">
+    <div class="card">
+      <div class="card-title">📉 Loss Reasons (Historical)</div>
+      <div class="loss-bars" id="lossBars"><div class="loading">Loading...</div></div>
+    </div>
+    <div class="card">
+      <div class="card-title">🏆 Top Win Agencies</div>
+      <div id="winAgencies"><div class="loading">Loading...</div></div>
+    </div>
+  </div>
+
+  <!-- Recently Updated -->
+  <div class="full-col">
+    <div class="card">
+      <div class="card-title">🕐 Recently Updated Deals (2026)</div>
+      <table id="recentTable">
+        <thead><tr><th>Updated</th><th>Opportunity</th><th>Agency</th><th>Value</th><th>Owner</th></tr></thead>
+        <tbody><tr><td colspan="5" class="loading">Loading...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<footer>BLN24 · Live data via Pipedrive API · Rex 📈</footer>
+
+<script>
+const PIPEDRIVE_TOKEN = '366cfe729527d0007f68fa582b2f8c450295bd72';
+const PIPEDRIVE_DOMAIN = 'bln24';
+const BASE = `https://${PIPEDRIVE_DOMAIN}.pipedrive.com/api/v1`;
+
+const STAGE_NAMES = {38:'Identified',39:'Qualified',42:'Capture/Pre-Proposal',138:'Proposal (RFP/RFQ)',195:'Post Proposal'};
+const STAGE_ORDER = [38,39,42,138,195];
+
+function fmt(n) {
+  if (!n || n === 0) return '$0';
+  if (n >= 1e9) return '$' + (n/1e9).toFixed(1) + 'B';
+  if (n >= 1e6) return '$' + (n/1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return '$' + (n/1e3).toFixed(0) + 'K';
+  return '$' + n.toLocaleString();
+}
+
+function probBadge(p) {
+  const cls = p >= 70 ? 'prob-high' : p >= 40 ? 'prob-med' : p > 0 ? 'prob-low' : 'prob-zero';
+  return `<span class="prob-badge ${cls}">${p}%</span>`;
+}
+
+function daysSince(dateStr) {
+  if (!dateStr) return null;
+  const d = new Date(dateStr);
+  const now = new Date();
+  return Math.floor((now - d) / 86400000);
+}
+
+async function fetchDeals(status, limit=100) {
+  const url = `${BASE}/deals?api_token=${PIPEDRIVE_TOKEN}&status=${status}&limit=${limit}`;
+  const res = await fetch(url);
+  const json = await res.json();
+  return json.data || [];
+}
+
+const LOSS_REASONS_STATIC = [
+  {reason: 'Price', count: 14, value: 15219000},
+  {reason: 'Did Not Get Down Selected', count: 11, value: 56132634},
+  {reason: 'Inactive/Cancelled/Deleted', count: 4, value: 61820000},
+  {reason: 'Technical', count: 4, value: 6375888},
+  {reason: 'Non-Compliance', count: 3, value: 0},
+  {reason: 'Incumbent', count: 3, value: 40598702},
+  {reason: 'PASS / Did Not Pursue', count: 2, value: 42016265},
+  {reason: 'Lack of Customer Insight', count: 2, value: 2150000},
+];
+
+const WIN_AGENCIES_STATIC = [
+  {name:'IRS', wins:2, value:26252397},
+  {name:'Census Bureau', wins:7, value:22754461},
+  {name:'CMS', wins:1, value:16000000},
+  {name:'ACL', wins:1, value:5000000},
+  {name:'MBDA', wins:1, value:4410905},
+  {name:'Dept of Education', wins:2, value:3711676},
+  {name:'NOAA', wins:1, value:3400000},
+  {name:'CDC', wins:3, value:3004538},
+];
+
+function reasonTag(r) {
+  if (!r) return '';
+  const map = {
+    'Price':'tag-price','Incumbent':'tag-incumbent','Technical':'tag-technical',
+    'Did Not Get Down Selected':'tag-downselect','Non-Compliance':'tag-compliance',
+    'PASS / Did Not Pursue':'tag-pass'
+  };
+  const cls = map[r] || 'tag-other';
+  const short = r.length > 22 ? r.substring(0,20)+'…' : r;
+  return `<span class="tag ${cls}">${short}</span>`;
+}
+
+async function loadAll() {
+  document.getElementById('lastUpdated').textContent = 'Refreshing...';
+
+  try {
+    const [openDeals] = await Promise.all([fetchDeals('open')]);
+
+    // KPIs
+    const totalValue = openDeals.reduce((s,d) => s+(d.value||0), 0);
+    const totalWeighted = openDeals.reduce((s,d) => s+(d.weighted_value||0), 0);
+    const noActivity = openDeals.filter(d => !d.next_activity_date);
+    const highProb = openDeals.filter(d => (d.probability||0) >= 50);
+    const highProbVal = highProb.reduce((s,d) => s+(d.value||0), 0);
+
+    document.getElementById('kpi-pipeline').textContent = fmt(totalValue);
+    document.getElementById('kpi-deals').textContent = `${openDeals.length} deals`;
+    document.getElementById('kpi-weighted').textContent = fmt(totalWeighted);
+    document.getElementById('kpi-highprob').textContent = highProb.length;
+    document.getElementById('kpi-highprob-val').textContent = fmt(highProbVal) + ' in play';
+    document.getElementById('kpi-noactivity').textContent = noActivity.length;
+    // Remove pulse once loaded
+    document.querySelectorAll('.pulse').forEach(el => el.classList.remove('pulse'));
+
+    // Stage cards
+    const stageData = {};
+    STAGE_ORDER.forEach(id => stageData[id] = {count:0,value:0,weighted:0});
+    openDeals.forEach(d => {
+      const sid = d.stage_id;
+      if (stageData[sid]) {
+        stageData[sid].count++;
+        stageData[sid].value += d.value||0;
+        stageData[sid].weighted += d.weighted_value||0;
+      }
+    });
+    document.getElementById('stageCards').innerHTML = STAGE_ORDER.map(sid => {
+      const s = stageData[sid];
+      return `<div class="stage">
+        <div class="stage-name">${STAGE_NAMES[sid]}</div>
+        <div class="stage-count">${s.count}</div>
+        <div class="stage-value">${fmt(s.value)}</div>
+        <div class="stage-weighted">${fmt(s.weighted)} weighted</div>
+      </div>`;
+    }).join('');
+
+    // Top deals
+    const sorted = [...openDeals].sort((a,b) => (b.value||0)-(a.value||0));
+    document.querySelector('#topDealsTable tbody').innerHTML = sorted.slice(0,10).map(d => {
+      const nxt = d.next_activity_date ? d.next_activity_date : '<span style="color:#ef4444">None</span>';
+      const title = (d.title||'').substring(0,45) + ((d.title||'').length>45?'…':'');
+      return `<tr>
+        <td><div style="font-size:0.78rem;color:#e8e8f0;">${title}</div><div style="font-size:0.68rem;color:#666;">${d.org_name||''}</div></td>
+        <td style="color:#f97316;white-space:nowrap;">${fmt(d.value)}</td>
+        <td>${probBadge(d.probability||0)}</td>
+        <td style="font-size:0.75rem;">${nxt}</td>
+      </tr>`;
+    }).join('');
+
+    // No activity (high value first)
+    const noActSorted = [...noActivity].sort((a,b) => (b.value||0)-(a.value||0));
+    document.querySelector('#noActivityTable tbody').innerHTML = noActSorted.slice(0,10).map(d => {
+      const days = daysSince(d.last_activity_date);
+      const daysStr = days !== null ? `${days}d ago` : 'Never';
+      const title = (d.title||'').substring(0,40) + ((d.title||'').length>40?'…':'');
+      const alertCls = (days === null || days > 180) ? 'alert-row' : '';
+      return `<tr class="${alertCls}">
+        <td><div style="font-size:0.78rem;">${title}</div><div style="font-size:0.68rem;color:#666;">${d.org_name||''}</div></td>
+        <td style="color:#f97316;white-space:nowrap;">${fmt(d.value)}</td>
+        <td style="font-size:0.75rem;color:${days>180||days===null?'#ef4444':'#888'}">${daysStr}</td>
+      </tr>`;
+    }).join('');
+
+    // High prob
+    const highProbSorted = [...highProb].sort((a,b) => (b.weighted_value||0)-(a.weighted_value||0));
+    document.querySelector('#highProbTable tbody').innerHTML = highProbSorted.map(d => {
+      const nxt = d.next_activity_date || '<span style="color:#ef4444">⚠ None</span>';
+      const title = (d.title||'').substring(0,50) + ((d.title||'').length>50?'…':'');
+      return `<tr>
+        <td style="font-size:0.78rem;">${title}</td>
+        <td style="font-size:0.75rem;color:#888;">${(d.org_name||'').substring(0,30)}</td>
+        <td style="color:#f97316;">${fmt(d.value)}</td>
+        <td>${probBadge(d.probability||0)}</td>
+        <td style="font-size:0.75rem;color:#888;">${d.owner_name||'?'}</td>
+        <td style="font-size:0.75rem;">${nxt}</td>
+      </tr>`;
+    }).join('');
+
+    // Recently updated
+    const recent = openDeals.filter(d => (d.update_time||'') > '2026-01-01')
+      .sort((a,b) => (b.update_time||'').localeCompare(a.update_time||''));
+    document.querySelector('#recentTable tbody').innerHTML = recent.slice(0,12).map(d => {
+      const title = (d.title||'').substring(0,55) + ((d.title||'').length>55?'…':'');
+      return `<tr>
+        <td style="font-size:0.75rem;color:#888;">${(d.update_time||'').substring(0,10)}</td>
+        <td style="font-size:0.78rem;">${title}</td>
+        <td style="font-size:0.73rem;color:#888;">${(d.org_name||'').substring(0,30)}</td>
+        <td style="color:#f97316;">${fmt(d.value)}</td>
+        <td style="font-size:0.73rem;color:#888;">${d.owner_name||'?'}</td>
+      </tr>`;
+    }).join('');
+
+    // Loss reasons (static historical)
+    const maxCount = Math.max(...LOSS_REASONS_STATIC.map(r=>r.count));
+    document.getElementById('lossBars').innerHTML = LOSS_REASONS_STATIC.map(r => {
+      const pct = (r.count / maxCount * 100).toFixed(0);
+      return `<div class="loss-bar-row">
+        <div class="loss-bar-label">${r.reason}</div>
+        <div class="loss-bar-track"><div class="loss-bar-fill" style="width:${pct}%"></div></div>
+        <div class="loss-bar-count">${r.count} deals</div>
+      </div>`;
+    }).join('');
+
+    // Win agencies (static historical)
+    document.getElementById('winAgencies').innerHTML = WIN_AGENCIES_STATIC.map(a => `
+      <div class="win-agency-row">
+        <div class="win-agency-name">${a.name}</div>
+        <div class="win-agency-stats">${a.wins} win${a.wins>1?'s':''} · ${fmt(a.value)}</div>
+      </div>`).join('');
+
+    document.getElementById('lastUpdated').textContent = 'Last updated: ' + new Date().toLocaleTimeString();
+
+  } catch(e) {
+    console.error(e);
+    document.getElementById('lastUpdated').textContent = 'Error loading data — check console';
+  }
+}
+
+// Auto-refresh every 5 minutes
+loadAll();
+setInterval(loadAll, 5 * 60 * 1000);
+</script>
+</body>
+</html>
