@@ -7,19 +7,59 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    #auth-screen {
+      display: none; position: fixed; inset: 0; background: #1A1B1F;
+      z-index: 9999; align-items: center; justify-content: center;
+    }
+    #auth-screen.show { display: flex; }
+    .auth-box {
+      background: #fff; border-radius: 14px; padding: 40px 44px;
+      width: 100%; max-width: 360px; text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+    .auth-logo { font-size: 1.2rem; font-weight: 700; color: #1A1B1F; margin-bottom: 6px; }
+    .auth-sub { font-size: 0.78rem; color: #6B6E7A; margin-bottom: 24px; }
+    .auth-input {
+      width: 100%; padding: 11px 14px; border: 1.5px solid #E4E4E8;
+      border-radius: 8px; font-size: 1rem; font-family: inherit;
+      text-align: center; letter-spacing: 0.2em; margin-bottom: 12px;
+      outline: none; transition: border-color 0.15s;
+    }
+    .auth-input:focus { border-color: #CF9F58; }
+    .auth-btn {
+      width: 100%; padding: 11px; background: #CF9F58; color: #1A1B1F;
+      border: none; border-radius: 8px; font-size: 0.88rem; font-weight: 700;
+      cursor: pointer; font-family: inherit; letter-spacing: 0.04em;
+      transition: background 0.15s;
+    }
+    .auth-btn:hover { background: #E8C07A; }
+    .auth-error { font-size: 0.75rem; color: #DC2626; margin-top: 8px; min-height: 18px; }
+  </style>
   <script>
-    (function() {
+    function checkAuth() {
       const PASS = '9025';
       const key = 'bln24_auth';
       if (sessionStorage.getItem(key) !== PASS) {
-        const input = prompt('BLN24 Dashboard — Enter password:');
-        if (input !== PASS) {
-          document.write('<div style="background:#fff;color:#dc2626;height:100vh;display:flex;align-items:center;justify-content:center;font-family:Inter,system-ui;font-size:1.1rem;">Access denied. Refresh to try again.</div>');
-          throw new Error('Unauthorized');
-        }
-        sessionStorage.setItem(key, PASS);
+        document.getElementById('auth-screen').classList.add('show');
+        document.getElementById('auth-input').focus();
       }
-    })();
+    }
+    function submitAuth() {
+      const PASS = '9025';
+      const key = 'bln24_auth';
+      const val = document.getElementById('auth-input').value;
+      if (val === PASS) {
+        sessionStorage.setItem(key, PASS);
+        document.getElementById('auth-screen').classList.remove('show');
+        loadAll();
+      } else {
+        document.getElementById('auth-error').textContent = 'Incorrect password. Try again.';
+        document.getElementById('auth-input').value = '';
+        document.getElementById('auth-input').focus();
+      }
+    }
+    document.addEventListener('DOMContentLoaded', checkAuth);
   <\/script>
   <style>
     :root {
@@ -308,6 +348,16 @@
   </style>
 </head>
 <body>
+
+<div id="auth-screen">
+  <div class="auth-box">
+    <div class="auth-logo">BLN24</div>
+    <div class="auth-sub">Revenue Dashboard · Enter password to continue</div>
+    <input class="auth-input" id="auth-input" type="password" placeholder="Password" onkeydown="if(event.key==='Enter')submitAuth()">
+    <button class="auth-btn" onclick="submitAuth()">Access Dashboard</button>
+    <div class="auth-error" id="auth-error"></div>
+  </div>
+</div>
 
 <header>
   <div class="header-left">
