@@ -577,87 +577,85 @@ async function loadOpps() {
   const pill = document.getElementById('opp-pill');
   const note = document.getElementById('opp-note');
 
-  tbody.innerHTML = '<tr><td colspan="6" class="loading">Scanning HigherGov for new opportunities...</td></tr>';
+  tbody.innerHTML = '<tr><td colspan="6" class="loading">Scanning HigherGov...</td></tr>';
+  pill.textContent = '● HigherGov · Loading';
 
   try {
-    // Get current Pipedrive pipeline titles for dedup
-    const pipelineTitles = DATA.map(d => (d.title || '').toLowerCase());
-    const pipelineOrgs = DATA.map(d => (d.org_name || '').toLowerCase());
-
-    const GOOD_TYPES = new Set(['Presolicitation','Solicitation','Combined Synopsis/Solicitation','Sources Sought','Special Notice']);
     const today = new Date().toISOString().split('T')[0];
-
+    const pipelineTitles = DATA.map(d => (d.title || '').toLowerCase());
     let allOpps = [];
     const seen = new Set();
 
     for (const search of HG_SEARCHES) {
+      const url = HG_BASE + '?api_key=' + HG_KEY + '&search_id=' + encodeURIComponent(search.id) + '&page_size=100';
+      let res, json;
       try {
-        const url = HG_BASE + '?api_key=' + HG_KEY + '&search_id=' + search.id + '&page_size=100';
-        const res = await fetch(url);
-        const json = await res.json();
-        const results = Array.isArray(json) ? [] : (json.results || []);
+        res = await fetch(url);
+        json = await res.json();
+      } catch(fetchErr) {
+        tbody.innerHTML = '<tr><td colspan="6" class="loading" style="color:#DC2626">HigherGov fetch error: ' + fetchErr.message + '</td></tr>';
+        pill.textContent = '⚠ HigherGov error';
+        return;
+      }
 
-        for (const r of results) {
-          const otype = (r.opp_type || {}).description || '';
-          if (!GOOD_TYPES.has(otype)) continue;
-          const due = r.due_date || '';
-          if (due && due < today) continue;
+      if (!res.ok || Array.isArray(json)) {
+        const errMsg = Array.isArray(json) ? json[0] : ('HTTP ' + res.status);
+        tbody.innerHTML = '<tr><td colspan="6" class="loading" style="color:#DC2626">HigherGov error: ' + errMsg + '</td></tr>';
+        pill.textContent = '⚠ API error';
+        return;
+      }
 
-          const key = r.opp_key || r.source_id || r.title;
-          if (seen.has(key)) continue;
-          seen.add(key);
+      const results = json.results || [];
+      pill.textContent = '● HigherGov · ' + results.length + ' raw results';
 
-          const title = r.title || '';
-          const agencyName = (r.agency || {}).agency_name || '';
-          const titleWords = title.toLowerCase().split(/\s+/).filter(w => w.length > 5);
-          const alreadyTracked = titleWords.filter(w => pipelineTitles.some(pt => pt.includes(w))).length >= 3;
+      for (const r of results) {
+        const otype = (r.opp_type || {}).description || '';
+        const due = r.due_date || '';
+        if (due && due < today) continue;
+        const key = r.source_id || r.title || '';
+        if (seen.has(key)) continue;
+        seen.add(key);
 
-          const sa = r.set_aside || '';
-          let vl = r.val_est_low, vh = r.val_est_high;
-          try { vl = vl ? parseFloat(vl) : null; } catch(e) { vl = null; }
-          try { vh = vh ? parseFloat(vh) : null; } catch(e) { vh = null; }
-
-          const isFederal = ['census','irs','noaa','fema','cdc','cms','hhs','health','commerce',
-            'agriculture','usda','gsa','uspto','education','hud','army','dha','defense','epa',
-            'treasury','homeland','dhs','labor','interior','nih','fda','hrsa'].some(
-            a => agencyName.toLowerCase().includes(a));
-          const is8a = sa.toLowerCase().includes('8a') || sa.toLowerCase().includes('8(a)');
-          const isEligible = !sa || sa.toLowerCase().includes('sba') || is8a ||
-            sa.toLowerCase().includes('small business') || sa.toLowerCase().includes('wosb');
-
-          allOpps.push({
-            naics: (r.naics_code || {}).naics_code || '', title, agency: agencyName,
-            type: otype, set_aside: sa, searchLabel: search.label,
-            posted: r.posted_date || '', due,
-            val_low: vl, val_high: vh,
-            summary: (r.ai_summary || '').substring(0, 400),
-            path: r.path || '',
-            is_federal: isFederal, is_eligible: isEligible, is8a,
-            alreadyTracked,
-            score: (isFederal ? 10 : 0) + (is8a ? 5 : 0) + (isEligible ? 3 : 0) + (alreadyTracked ? -20 : 0),
-          });
-        }
-      } catch(e) { console.warn('HG error for search ' + search.label, e); }
+        const title = r.title || '';
+        const agencyName = (r.agency || {}).agency_name || '';
+        const titleWords = title.toLowerCase().split(/\s+/).filter(w => w.length > 5);
+        const alreadyTracked = titleWords.filter(w => pipelineTitles.some(pt => pt.includes(w))).length >= 3;
+        const sa = r.set_aside || '';
+        let vl = r.val_est_low, vh = r.val_est_high;
+        try { vl = vl ? parseFloat(vl) : null; } catch(e) { vl = null; }
+        try { vh = vh ? parseFloat(vh) : null; } catch(e) { vh = null; }
+        const isFederal = ['census','irs','noaa','fema','cdc','cms','hhs','health','commerce',
+          'agriculture','usda','gsa','uspto','education','hud','army','dha','defense','epa',
+          'treasury','homeland','dhs','labor','interior','nih','fda','hrsa'].some(
+          a => agencyName.toLowerCase().includes(a));
+        const is8a = sa.toLowerCase().includes('8a') || sa.toLowerCase().includes('8(a)');
+        allOpps.push({
+          naics: (r.naics_code || {}).naics_code || '', title, agency: agencyName,
+          type: otype, set_aside: sa, searchLabel: search.label,
+          posted: r.posted_date || '', due, val_low: vl, val_high: vh,
+          summary: (r.ai_summary || '').substring(0, 400),
+          path: r.path || '', is_federal: isFederal, is8a, alreadyTracked,
+          score: (isFederal ? 10 : 0) + (is8a ? 5 : 0) + (alreadyTracked ? -20 : 0),
+        });
+      }
     }
 
-    // Sort by score desc, then due date
     allOpps.sort((a,b) => b.score - a.score || (a.due||'9').localeCompare(b.due||'9'));
-
-    // Store for modal access
     window._opps = allOpps;
 
     if (!allOpps.length) {
-      tbody.innerHTML = '<tr><td colspan="6" class="loading">No untracked opportunities found in the last 30 days.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="6" class="loading">No active opportunities found. All may be expired or filtered out.</td></tr>';
+      pill.textContent = '● HigherGov · 0 opps';
       return;
     }
 
-    note.textContent = allOpps.length + ' untracked federal opportunities found matching BLN24 capabilities (last 30 days). ' + allOpps.filter(o=>o.is8a).length + ' are 8(a) set-asides.';
+    note.textContent = allOpps.length + ' opportunities from HigherGov · ' + allOpps.filter(o=>o.is8a).length + ' are 8(a) set-asides · ' + allOpps.filter(o=>o.is_federal).length + ' federal. Tap any row for detail.';
     pill.textContent = '● HigherGov · ' + allOpps.length + ' opps';
 
-    tbody.innerHTML = allOpps.slice(0,20).map((o,i) =>
+    tbody.innerHTML = allOpps.slice(0,25).map((o,i) =>
       '<tr class="row" onclick="showOpp(window._opps[' + i + '])">' +
       '<td><div>' + o.title.substring(0,50) + (o.title.length>50?'…':'') + '</div>' +
-      '<div class="muted">' + (o.is_federal ? '🏛 Federal · ' : '') + (o.alreadyTracked ? '⚠ May be tracked' : '✓ Not in pipeline') + '</div></td>' +
+      '<div class="muted">' + (o.is_federal ? '🏛 ' : '') + o.agency.substring(0,32) + '</div></td>' +
       '<td class="muted">' + o.agency.substring(0,28) + '</td>' +
       '<td class="muted">' + o.type.substring(0,14) + '</td>' +
       '<td>' + saBadge(o.set_aside) + '</td>' +
