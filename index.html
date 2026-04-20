@@ -520,7 +520,7 @@ async function loadAll() {
 
 // HIGHERGOV — Untracked Opportunities
 const HG_KEY = '1a262cdcd25f40fba31836526d6e12b1';
-const HG_BASE = 'https://www.highergov.com/api-external/opportunity/';
+const HG_BASE = 'https://bln24-hg-proxy.bln24.workers.dev/';
 
 // BLN24 saved searches in HigherGov (search_id from saved searches)
 const HG_SEARCHES = [
@@ -587,7 +587,7 @@ async function loadOpps() {
     const seen = new Set();
 
     for (const search of HG_SEARCHES) {
-      const url = HG_BASE + '?api_key=' + HG_KEY + '&search_id=' + encodeURIComponent(search.id) + '&page_size=100';
+      const url = HG_BASE + '?search_id=' + encodeURIComponent(search.id) + '&page_size=100';
       let res, json;
       try {
         res = await fetch(url);
