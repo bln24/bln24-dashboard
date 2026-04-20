@@ -576,97 +576,49 @@ async function loadOpps() {
   const tbody = document.querySelector('#t-opp tbody');
   const pill = document.getElementById('opp-pill');
   const note = document.getElementById('opp-note');
-
-  tbody.innerHTML = '<tr><td colspan="6" class="loading">Scanning HigherGov...</td></tr>';
-  pill.textContent = '● HigherGov · Loading';
-
+  tbody.innerHTML = '<tr><td colspan="6" class="loading">Loading opportunities...</td></tr>';
   try {
-    const today = new Date().toISOString().split('T')[0];
+    const res = await fetch('opps.json?t=' + Date.now());
+    const data = await res.json();
+    const opps = data.opps || [];
+    const updated = data.updated ? new Date(data.updated).toLocaleString() : '?';
     const pipelineTitles = DATA.map(d => (d.title || '').toLowerCase());
-    let allOpps = [];
-    const seen = new Set();
+    const today = new Date().toISOString().split('T')[0];
 
-    for (const search of HG_SEARCHES) {
-      const url = HG_BASE + '?search_id=' + encodeURIComponent(search.id) + '&page_size=100';
-      let res, json;
-      try {
-        res = await fetch(url);
-        json = await res.json();
-      } catch(fetchErr) {
-        tbody.innerHTML = '<tr><td colspan="6" style="padding:16px"><div style="color:#DC2626;font-weight:600;margin-bottom:8px">⚠ HigherGov proxy unavailable</div><div style="font-size:0.75rem;color:#6B6E7A;line-height:1.6">The HigherGov CORS proxy (Cloudflare Worker) needs email verification to go live.<br>Check brian@bln24.com for a verification email from Cloudflare, click the link, then refresh this page.</div></td></tr>';
-        pill.textContent = '⚠ Awaiting activation';
-        return;
-      }
+    // Filter expired and flag pipeline matches
+    const active = opps.filter(o => !o.due || o.due >= today).map(o => {
+      const titleWords = (o.title||'').toLowerCase().split(/\s+/).filter(w=>w.length>5);
+      const alreadyTracked = titleWords.filter(w => pipelineTitles.some(pt=>pt.includes(w))).length >= 3;
+      return {...o, alreadyTracked, score:(o.is_federal?10:0)+(o.is8a?5:0)+(alreadyTracked?-20:0)};
+    });
+    active.sort((a,b) => b.score-a.score || (a.due||'9').localeCompare(b.due||'9'));
+    window._opps = active;
 
-      if (!res.ok || Array.isArray(json)) {
-        const errMsg = Array.isArray(json) ? json[0] : ('HTTP ' + res.status);
-        tbody.innerHTML = '<tr><td colspan="6" class="loading" style="color:#DC2626">HigherGov error: ' + errMsg + '</td></tr>';
-        pill.textContent = '⚠ API error';
-        return;
-      }
-
-      const results = json.results || [];
-      pill.textContent = '● HigherGov · ' + results.length + ' raw results';
-
-      for (const r of results) {
-        const otype = (r.opp_type || {}).description || '';
-        const due = r.due_date || '';
-        if (due && due < today) continue;
-        const key = r.source_id || r.title || '';
-        if (seen.has(key)) continue;
-        seen.add(key);
-
-        const title = r.title || '';
-        const agencyName = (r.agency || {}).agency_name || '';
-        const titleWords = title.toLowerCase().split(/\s+/).filter(w => w.length > 5);
-        const alreadyTracked = titleWords.filter(w => pipelineTitles.some(pt => pt.includes(w))).length >= 3;
-        const sa = r.set_aside || '';
-        let vl = r.val_est_low, vh = r.val_est_high;
-        try { vl = vl ? parseFloat(vl) : null; } catch(e) { vl = null; }
-        try { vh = vh ? parseFloat(vh) : null; } catch(e) { vh = null; }
-        const isFederal = ['census','irs','noaa','fema','cdc','cms','hhs','health','commerce',
-          'agriculture','usda','gsa','uspto','education','hud','army','dha','defense','epa',
-          'treasury','homeland','dhs','labor','interior','nih','fda','hrsa'].some(
-          a => agencyName.toLowerCase().includes(a));
-        const is8a = sa.toLowerCase().includes('8a') || sa.toLowerCase().includes('8(a)');
-        allOpps.push({
-          naics: (r.naics_code || {}).naics_code || '', title, agency: agencyName,
-          type: otype, set_aside: sa, searchLabel: search.label,
-          posted: r.posted_date || '', due, val_low: vl, val_high: vh,
-          summary: (r.ai_summary || '').substring(0, 400),
-          path: r.path || '', is_federal: isFederal, is8a, alreadyTracked,
-          score: (isFederal ? 10 : 0) + (is8a ? 5 : 0) + (alreadyTracked ? -20 : 0),
-        });
-      }
-    }
-
-    allOpps.sort((a,b) => b.score - a.score || (a.due||'9').localeCompare(b.due||'9'));
-    window._opps = allOpps;
-
-    if (!allOpps.length) {
-      tbody.innerHTML = '<tr><td colspan="6" class="loading">No active opportunities found. All may be expired or filtered out.</td></tr>';
-      pill.textContent = '● HigherGov · 0 opps';
+    if (!active.length) {
+      tbody.innerHTML = '<tr><td colspan="6" class="loading">No active opportunities found.</td></tr>';
+      pill.textContent = '● HigherGov · 0';
       return;
     }
 
-    note.textContent = allOpps.length + ' opportunities from HigherGov · ' + allOpps.filter(o=>o.is8a).length + ' are 8(a) set-asides · ' + allOpps.filter(o=>o.is_federal).length + ' federal. Tap any row for detail.';
-    pill.textContent = '● HigherGov · ' + allOpps.length + ' opps';
+    note.textContent = active.length + ' opportunities · ' + active.filter(o=>o.is8a).length + ' are 8(a) · ' + active.filter(o=>o.is_federal).length + ' federal · Last updated: ' + updated;
+    pill.textContent = '● HigherGov · ' + active.length + ' opps';
 
-    tbody.innerHTML = allOpps.slice(0,25).map((o,i) =>
-      '<tr class="row" onclick="showOpp(window._opps[' + i + '])">' +
-      '<td><div>' + o.title.substring(0,50) + (o.title.length>50?'…':'') + '</div>' +
-      '<div class="muted">' + (o.is_federal ? '🏛 ' : '') + o.agency.substring(0,32) + '</div></td>' +
-      '<td class="muted">' + o.agency.substring(0,28) + '</td>' +
-      '<td class="muted">' + o.type.substring(0,14) + '</td>' +
-      '<td>' + saBadge(o.set_aside) + '</td>' +
-      '<td class="val">' + fmtVal(o.val_low, o.val_high) + '</td>' +
-      '<td class="' + (o.due && o.due < getDateStr(-14) ? 'warn' : 'muted') + '">' + (o.due||'—') + '</td>' +
+    function fv(n){if(!n)return null;n=parseFloat(n);return n>=1e6?'$'+(n/1e6).toFixed(1)+'M':n>=1e3?'$'+Math.round(n/1000)+'K':null;}
+    function sab(sa){if(!sa)return'<span class="b b-grey">Open</span>';const s=sa.toLowerCase();if(s.includes('8a')||s.includes('8(a)'))return'<span class="b b-green">8(a)</span>';if(s.includes('sba')||s.includes('small'))return'<span class="b b-yellow">SB</span>';if(s.includes('wosb'))return'<span class="b b-yellow">WOSB</span>';return'<span class="b b-grey">'+sa.substring(0,10)+'</span>';}
+
+    tbody.innerHTML = active.slice(0,25).map((o,i) =>
+      '<tr class="row" onclick="showOpp(window._opps['+i+'])">' +
+      '<td><div>'+(o.title||'').substring(0,50)+((o.title||'').length>50?'…':'')+' </div>' +
+      '<div class="muted">'+(o.is_federal?'🏛 ':'')+o.agency.substring(0,32)+'</div></td>' +
+      '<td class="muted">'+o.agency.substring(0,26)+'</td>' +
+      '<td class="muted">'+o.type.substring(0,14)+'</td>' +
+      '<td>'+sab(o.set_aside)+'</td>' +
+      '<td class="val">'+(fv(o.val_low)&&fv(o.val_high)?fv(o.val_low)+' – '+fv(o.val_high):(fv(o.val_low)||fv(o.val_high)||'—'))+'</td>' +
+      '<td class="muted">'+(o.due||'—')+'</td>' +
       '</tr>'
     ).join('');
-
   } catch(e) {
-    console.error('HigherGov load error:', e);
-    tbody.innerHTML = '<tr><td colspan="6" class="loading">Error loading opportunities: ' + e.message + '</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="6" class="loading" style="color:#DC2626">Error: ' + e.message + '</td></tr>';
     pill.textContent = '⚠ Error';
   }
 }
