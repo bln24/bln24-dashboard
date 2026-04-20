@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-20T22:00:18.189Z",
+  "updated": "2026-04-20T18:08:48.831872",
   "count": 25,
   "opps": [
     {
@@ -16,34 +16,35 @@
       "summary": "Background\n The Defense Information Systems Agency (DISA) manages mobile device services for the Department of Defense (DoD) and approved non-DoD users, ensuring compliance with evolving Commercial Solutions for Classified (CSfC) standards. \n\nThe agency aims to address growing security demands while enhancing functionality and usability in a rapidly changing technological landscape. This solicitat",
       "path": "https://www.highergov.com/contract-opportunity/area-of-interest-aoi-for-secure-mobile-device-co-disa-ota-26-r-smdc-o-20c3d",
       "is8a": false,
-      "capture_score": 50,
+      "capture_score": 65,
       "win_reasons": [
-        "NAICS aligns with BLN24 capabilities",
-        "Open competition",
-        "CX/UX capability match",
-        "Strategic Comms match"
+        "Proven agency relationship (past performance / wins with this client)",
+        "Open competition \u2014 evaluate competitiveness",
+        "CX/UX/HCD scope \u2014 core BLN24 capability (Studio24)",
+        "Strategic Communications / Digital Comms \u2014 proven delivery capability"
       ],
       "win_prob": "High (40-60%)"
     },
     {
-      "naics": "541512",
-      "title": "Data Migration for Ryan White  CAREware  OIT",
-      "agency": "Colorado Department of Public Health and Environment",
-      "type": "Solicitation",
+      "naics": "541990",
+      "title": "Tactical Intelligence Platform for International Travel",
+      "agency": "FAA Headquarters",
+      "type": "Sources Sought",
       "set_aside": "",
       "searchLabel": "User Experience",
-      "posted": "2026-04-16",
-      "due": "2026-05-05",
-      "val_low": 50000,
-      "val_high": 200000,
-      "summary": "Background\n The Colorado Department of Public Health and Environment (CDPHE) is issuing this Documented Quote for Data Migration for the Ryan White CAREWare program. This project aims to migrate CAREWare client data from one data system to another, supporting the Ryan White Program contracts to track service category data and client information throughout Colorado. \n\nThe initiative will enable CDP",
-      "path": "https://www.highergov.com/sl/contract-opportunity/co-data-migration-for-ryan-white-careware-65972717",
+      "posted": "2026-04-17",
+      "due": "2026-05-15",
+      "val_low": 500000,
+      "val_high": 2000000,
+      "summary": "Background\n The Federal Aviation Administration (FAA) is conducting a market survey to gather statements of interest and capabilities from businesses that can provide a Tactical Intelligence Platform for International Travel. \n\nThe Office of Investigations & Professional Responsibility (AXI-1) oversees the International Travel Security Program (ITSP), which aims to protect FAA employees traveling ",
+      "path": "https://www.highergov.com/contract-opportunity/tactical-intelligence-platform-for-international-t-693ka9-itsp-001-r-eb2f9",
       "is8a": false,
-      "capture_score": 48,
+      "capture_score": 47,
       "win_reasons": [
-        "Past performance with this agency",
-        "NAICS aligns with BLN24 capabilities",
-        "Open competition"
+        "Proven agency relationship (past performance / wins with this client)",
+        "Open competition \u2014 evaluate competitiveness",
+        "Web / Tech Modernization \u2014 delivery track record",
+        "Contract value in BLN24 sweet spot ($500K-$30M)"
       ],
       "win_prob": "Medium (20-40%)"
     },
@@ -61,11 +62,55 @@
       "summary": "",
       "path": "https://www.highergov.com/contract-opportunity/notice-of-intent-to-consolidate-platform-one-help-p1helpdeskservicesconsolidation-s-a3b4e",
       "is8a": false,
-      "capture_score": 48,
+      "capture_score": 39,
       "win_reasons": [
-        "Past performance with this agency",
-        "NAICS aligns with BLN24 capabilities",
-        "Open competition"
+        "Proven agency relationship (past performance / wins with this client)",
+        "Open competition \u2014 evaluate competitiveness",
+        "Web / Tech Modernization \u2014 delivery track record"
+      ],
+      "win_prob": "Medium (20-40%)"
+    },
+    {
+      "naics": "561990",
+      "title": "Mobile On-site Shredding Services",
+      "agency": "Florida Department of Revenue",
+      "type": "Solicitation",
+      "set_aside": "",
+      "searchLabel": "User Experience",
+      "posted": "2026-04-14",
+      "due": "2026-05-05",
+      "val_low": 500000,
+      "val_high": 2000000,
+      "summary": "Background\n The Florida Department of Revenue (FDOR) requires secure on-site shredding services to protect confidential taxpayer and client information. \n\nThe Department aims to create an Agency Term Contract for shredding services across all counties in Florida, even if the FDOR is not currently located in those counties. This initiative is in response to the need for compliance with IRS Publicat",
+      "path": "https://www.highergov.com/sl/contract-opportunity/fl-mobile-on-site-shredding-services-65877557",
+      "is8a": false,
+      "capture_score": 35,
+      "win_reasons": [
+        "Proven agency relationship (past performance / wins with this client)",
+        "Open competition \u2014 evaluate competitiveness",
+        "Contract value in BLN24 sweet spot ($500K-$30M)"
+      ],
+      "win_prob": "Medium (20-40%)"
+    },
+    {
+      "naics": "513210",
+      "title": "Sites and Building Enterprise License",
+      "agency": "Kansas Department of Commerce",
+      "type": "Solicitation",
+      "set_aside": "",
+      "searchLabel": "User Experience",
+      "posted": "2026-04-15",
+      "due": "2026-06-02",
+      "val_low": 500000,
+      "val_high": 1500000,
+      "summary": "Background\n The Kansas Department of Commerce is issuing a Request for Proposal (RFP) for the Sites and Building Enterprise License. This initiative aims to enhance the state's ability to manage and promote sites and buildings effectively, supporting economic development efforts. The agency's mission is to foster a favorable business environment in Kansas, and this contract aligns with that goal b",
+      "path": "https://www.highergov.com/sl/contract-opportunity/ks-sites-and-building-enterprise-license-65943112",
+      "is8a": false,
+      "capture_score": 35,
+      "win_reasons": [
+        "Proven agency relationship (past performance / wins with this client)",
+        "Open competition \u2014 evaluate competitiveness",
+        "Contract value in BLN24 sweet spot ($500K-$30M)"
       ],
       "win_prob": "Medium (20-40%)"
     },
@@ -83,76 +128,33 @@
       "summary": "Background\n The Millennium Challenge Corporation (MCC) is a Federal Corporation established to provide grant assistance aimed at fostering economic growth and reducing poverty in select developing countries. \n\nThe MCC's Human and Community Development (HCD) practice group seeks a contractor to deliver technical consulting services across various sectors, including education, workforce development,",
       "path": "https://www.highergov.com/contract-opportunity/hcd-due-diligence-contract-workforce-development-a-rfp1802343-o-59706",
       "is8a": false,
-      "capture_score": 45,
+      "capture_score": 32,
       "win_reasons": [
-        "NAICS aligns with BLN24 capabilities",
-        "Small business set-aside",
-        "CX/UX capability match"
+        "Small Business set-aside \u2014 BLN24 qualifies",
+        "CX/UX/HCD scope \u2014 core BLN24 capability (Studio24)"
       ],
-      "win_prob": "Medium (20-40%)"
+      "win_prob": "Low (10-20%)"
     },
     {
-      "naics": "334516",
-      "title": "TITLE – SCIENTIFIC FREEZER",
-      "agency": "NIH Office of Logistics and Acquisition Operations",
-      "type": "Sources Sought",
-      "set_aside": "SBA",
-      "searchLabel": "User Experience",
-      "posted": "2026-04-17",
-      "due": "2026-04-24",
-      "val_low": 500000,
-      "val_high": 1200000,
-      "summary": "",
-      "path": "https://www.highergov.com/contract-opportunity/title-scientific-freezer-pca-nhlbi-03869-r-d24e1",
-      "is8a": false,
-      "capture_score": 35,
-      "win_reasons": [
-        "Past performance with this agency",
-        "Small business set-aside"
-      ],
-      "win_prob": "Medium (20-40%)"
-    },
-    {
-      "naics": "541519",
-      "title": "6515--NEW - Clinical Monitoring Solution, TheraDoc",
-      "agency": "VISN 17: Heart of Texas Health Care Network",
-      "type": "Sources Sought",
-      "set_aside": "SDVOSBC",
-      "searchLabel": "User Experience",
-      "posted": "2026-04-20",
-      "due": "2026-04-24",
-      "val_low": 40000,
-      "val_high": 90000,
-      "summary": "Background\n The Central Texas VA Health Care System (CTVHCS) in Temple, Texas is seeking Service Disabled Veteran Owned Small Business (SDVOSB), Veteran Owned Small Business (VOSB), or Small Business sources capable of providing maintenance and telephone support services for the TheraDoc system. \n\nThe goal of this contract is to ensure that CTVHCS can continue to utilize TheraDoc, a medical techno",
-      "path": "https://www.highergov.com/contract-opportunity/6515-new-clinical-monitoring-solution-theradoc-36c25726q0482-r-6b737",
-      "is8a": false,
-      "capture_score": 30,
-      "win_reasons": [
-        "NAICS aligns with BLN24 capabilities",
-        "Small business set-aside"
-      ],
-      "win_prob": "Medium (20-40%)"
-    },
-    {
-      "naics": "541511",
-      "title": "Enterprise Proactive RealProperty Interactive Space Management System Support",
-      "agency": "USACE Sacramento District",
+      "naics": "541512",
+      "title": "Data Migration for Ryan White  CAREware  OIT",
+      "agency": "Colorado Department of Public Health and Environment",
       "type": "Solicitation",
-      "set_aside": "WOSB",
+      "set_aside": "",
       "searchLabel": "User Experience",
-      "posted": "2026-04-20",
-      "due": "2026-04-24",
-      "val_low": 2000000,
-      "val_high": 6000000,
-      "summary": "Background\n The U.S. Army Corps of Engineers (USACE), specifically the Army Geospatial Center (AGC), is seeking to award a contract for technical support services to the Headquarters, Department of the Army (HQDA), Office of the Deputy Chief of Staff (DCS), G-4. \n\nThe goal of this contract is to provide support for the Enterprise Proactive Real-Property Interactive Space Management System (ePRISMS",
-      "path": "https://www.highergov.com/contract-opportunity/enterprise-proactive-realproperty-interactive-spac-rfi1806602-o-2b985",
+      "posted": "2026-04-16",
+      "due": "2026-05-05",
+      "val_low": 50000,
+      "val_high": 200000,
+      "summary": "Background\n The Colorado Department of Public Health and Environment (CDPHE) is issuing this Documented Quote for Data Migration for the Ryan White CAREWare program. This project aims to migrate CAREWare client data from one data system to another, supporting the Ryan White Program contracts to track service category data and client information throughout Colorado. \n\nThe initiative will enable CDP",
+      "path": "https://www.highergov.com/sl/contract-opportunity/co-data-migration-for-ryan-white-careware-65972717",
       "is8a": false,
-      "capture_score": 30,
+      "capture_score": 27,
       "win_reasons": [
-        "NAICS aligns with BLN24 capabilities",
-        "Small business set-aside"
+        "Proven agency relationship (past performance / wins with this client)",
+        "Open competition \u2014 evaluate competitiveness"
       ],
-      "win_prob": "Medium (20-40%)"
+      "win_prob": "Low (10-20%)"
     },
     {
       "naics": "518210",
@@ -168,115 +170,54 @@
       "summary": "Background\n The U.S. Department of Health and Human Services (HHS), Indian Health Service (IHS), is responsible for providing federal health services to American Indians and Alaska Natives. The IHS is the principal federal health care provider and health advocate for the Indian people, ensuring that comprehensive, culturally acceptable personal and public health services are available and accessib",
       "path": "https://www.highergov.com/contract-opportunity/pma-maintenance-agreement-for-network-server-ss-26-hhs-1524126-r-b4753",
       "is8a": false,
-      "capture_score": 28,
+      "capture_score": 27,
       "win_reasons": [
-        "Past performance with this agency",
-        "Open competition"
+        "Proven agency relationship (past performance / wins with this client)",
+        "Open competition \u2014 evaluate competitiveness"
       ],
       "win_prob": "Low (10-20%)"
     },
     {
-      "naics": "541380",
-      "title": "NOI- CONSULTATION AND DATA STORAGE",
-      "agency": "NIH Office of Logistics and Acquisition Operations",
-      "type": "Presolicitation",
-      "set_aside": "",
-      "searchLabel": "User Experience",
-      "posted": "2026-04-16",
-      "due": "2026-05-03",
-      "val_low": 150000,
-      "val_high": 350000,
-      "summary": "Background\n The National Eye Institute (NEI), part of the National Institutes of Health (NIH), intends to award a contract to Dr. Claire Marchal for services required to analyze and integrate diverse molecular genomic data from human and mouse retinas. This contract is being awarded without full or open competition due to the unique qualifications of the intended source.\n\nWork Details\n The contrac",
-      "path": "https://www.highergov.com/contract-opportunity/noi-consultation-and-data-storage-pcas02668-p-73446",
-      "is8a": false,
-      "capture_score": 28,
-      "win_reasons": [
-        "Past performance with this agency",
-        "Open competition"
-      ],
-      "win_prob": "Low (10-20%)"
-    },
-    {
-      "naics": "561990",
-      "title": "Mobile On-site Shredding Services",
-      "agency": "Florida Department of Revenue",
+      "naics": "541714",
+      "title": "One Comprehensive Universal Radiotherapy for Everyone (1-CURE)",
+      "agency": "National Institutes of Health",
       "type": "Solicitation",
       "set_aside": "",
       "searchLabel": "User Experience",
-      "posted": "2026-04-14",
-      "due": "2026-05-05",
-      "val_low": 500000,
-      "val_high": 2000000,
-      "summary": "Background\n The Florida Department of Revenue (FDOR) requires secure on-site shredding services to protect confidential taxpayer and client information. \n\nThe Department aims to create an Agency Term Contract for shredding services across all counties in Florida, even if the FDOR is not currently located in those counties. This initiative is in response to the need for compliance with IRS Publicat",
-      "path": "https://www.highergov.com/sl/contract-opportunity/fl-mobile-on-site-shredding-services-65877557",
+      "posted": "2026-04-16",
+      "due": "2026-05-23",
+      "val_low": null,
+      "val_high": null,
+      "summary": "Background\n The Advanced Research Projects Agency for Health (ARPA-H) is initiating an Innovative Solutions Opening (ISO) to support the One Comprehensive Universal Radiotherapy for Everyone (1-CURE) Program. The agency aims to foster innovative solutions that can transform biomedicine and improve health outcomes.\n\nMultiple Other Transaction (OT) Agreements are anticipated as a result of this anno",
+      "path": "https://www.highergov.com/contract-opportunity/one-comprehensive-universal-radiotherapy-for-every-arpa-h-sol-26-147-o-a0279",
       "is8a": false,
-      "capture_score": 28,
+      "capture_score": 27,
       "win_reasons": [
-        "Past performance with this agency",
-        "Open competition"
+        "Proven agency relationship (past performance / wins with this client)",
+        "Open competition \u2014 evaluate competitiveness"
       ],
       "win_prob": "Low (10-20%)"
     },
     {
       "naics": "513210",
-      "title": "Sources Sought / Request for Information (RFI) 26-046   Electronic Records Management System (ERMS)",
-      "agency": "Department of Energy",
+      "title": "Burial and Memorialization Electronic Directory (BMeD) Commercial Off-the-Shelf Platforms",
+      "agency": "American Battle Monuments Commission",
       "type": "Sources Sought",
       "set_aside": "",
       "searchLabel": "User Experience",
-      "posted": "2026-04-15",
-      "due": "2026-05-06",
+      "posted": "2026-04-13",
+      "due": "2026-05-09",
       "val_low": null,
       "val_high": null,
-      "summary": "Background\n Princeton Plasma Physics Laboratory (PPPL), a Department of Energy (DOE) National Laboratory, is soliciting information from qualified sources regarding Electronic Records Management System (ERMS) solutions. \n\nThe goal is to identify systems capable of supporting the compliant lifecycle management of electronic records. Interested vendors must be prepared to address functional, securit",
-      "path": "https://www.highergov.com/contract-opportunity/sources-sought-request-for-information-rfi-26-rfi-26-046-r-27440",
+      "summary": "Background\n The American Battle Monuments Commission (ABMC) is seeking industry input through this Request for Information (RFI) for market research purposes. The goal is to identify secure cloud-based commercial off-the-shelf (COTS) platforms that can replace or significantly enhance the current WeRemember.ABMC.gov environment, which manages authoritative burial and memorialization records for ap",
+      "path": "https://www.highergov.com/contract-opportunity/burial-and-memorialization-electronic-directory-b-abmcfy27-bmed-cots-rfi-r-0d7f2",
       "is8a": false,
-      "capture_score": 28,
+      "capture_score": 24,
       "win_reasons": [
-        "Past performance with this agency",
-        "Open competition"
-      ],
-      "win_prob": "Low (10-20%)"
-    },
-    {
-      "naics": "513210",
-      "title": "Sites and Building Enterprise License",
-      "agency": "Kansas Department of Commerce",
-      "type": "Solicitation",
-      "set_aside": "",
-      "searchLabel": "User Experience",
-      "posted": "2026-04-15",
-      "due": "2026-06-02",
-      "val_low": 500000,
-      "val_high": 1500000,
-      "summary": "Background\n The Kansas Department of Commerce is issuing a Request for Proposal (RFP) for the Sites and Building Enterprise License. This initiative aims to enhance the state's ability to manage and promote sites and buildings effectively, supporting economic development efforts. The agency's mission is to foster a favorable business environment in Kansas, and this contract aligns with that goal b",
-      "path": "https://www.highergov.com/sl/contract-opportunity/ks-sites-and-building-enterprise-license-65943112",
-      "is8a": false,
-      "capture_score": 28,
-      "win_reasons": [
-        "Past performance with this agency",
-        "Open competition"
-      ],
-      "win_prob": "Low (10-20%)"
-    },
-    {
-      "naics": "541519",
-      "title": "Customized Vr Simulation Game",
-      "agency": "State Fiscal Accountability Authority",
-      "type": "Solicitation",
-      "set_aside": "",
-      "searchLabel": "User Experience",
-      "posted": "2026-04-16",
-      "due": "2026-05-06",
-      "val_low": 500000,
-      "val_high": 1500000,
-      "summary": "Background\n The State Board for Technical and Comprehensive Education (SBTCE), through the South Carolina State Fiscal Accountability Authority (SFAA) Division of Procurement Services, is seeking proposals for the development of a customized Virtual Reality (VR) simulation game. This initiative aims to engage and educate South Carolina residents, particularly middle and high school students, about",
-      "path": "https://www.highergov.com/sl/contract-opportunity/sc-customized-vr-simulation-game-65954059",
-      "is8a": false,
-      "capture_score": 23,
-      "win_reasons": [
-        "NAICS aligns with BLN24 capabilities",
-        "Open competition"
+        "Proven agency relationship (past performance / wins with this client)",
+        "Open competition \u2014 evaluate competitiveness",
+        "Web / Tech Modernization \u2014 delivery track record",
+        "\u26a0 May already be tracked in Pipedrive"
       ],
       "win_prob": "Low (10-20%)"
     },
@@ -294,56 +235,56 @@
       "summary": "Background\n The District of Columbia's Office of the Chief Financial Officer is seeking a contractor to design and maintain a lottery website. \nThe goal of this contract is to enhance the online presence and functionality of the lottery system, ensuring it meets user needs and operational requirements.\n\nWork Details\n The contractor will be responsible for the following services: \n- Designing a use",
       "path": "https://www.highergov.com/sl/contract-opportunity/dc-lottery-website-design-and-maintenance-65928000",
       "is8a": false,
-      "capture_score": 23,
+      "capture_score": 22,
       "win_reasons": [
-        "NAICS aligns with BLN24 capabilities",
-        "Open competition"
+        "Open competition \u2014 evaluate competitiveness",
+        "Web / Tech Modernization \u2014 delivery track record",
+        "Contract value in BLN24 sweet spot ($500K-$30M)"
       ],
       "win_prob": "Low (10-20%)"
     },
     {
-      "naics": "541519",
-      "title": "Information Technology Infrastructure Vendors",
-      "agency": "E-470 Public Highway Authority",
+      "naics": "541211",
+      "title": "ODPS Drivers License/Identification Card System and Operations",
+      "agency": "Ohio Department of Administrative Services",
       "type": "Solicitation",
       "set_aside": "",
       "searchLabel": "User Experience",
-      "posted": "2026-04-13",
-      "due": "2026-05-11",
-      "val_low": 5000000,
-      "val_high": 15000000,
-      "summary": "Background\n The E-470 Public Highway Authority, located in Aurora, Colorado, is seeking qualified vendors to fulfill its requirements for information technology (IT) products, services, and software licenses. The Authority operates a user-financed toll highway around the Denver metropolitan area and aims to enhance customer journeys through safety and reliability.\n\nThis Request for Qualifications ",
-      "path": "https://www.highergov.com/sl/contract-opportunity/co-information-technology-infrastructure-ve-65785676",
+      "posted": "2026-04-15",
+      "due": "2026-04-24",
+      "val_low": 50000000,
+      "val_high": 150000000,
+      "summary": "Background\n The State of Ohio, through the Department of Administrative Services, Office of Procurement Services, on behalf of the Department of Public Safety, Bureau of Motor Vehicles, is issuing this Request for Proposals (RFP) to solicit proposals for the design, implementation, and operation of a next-generation Driver\u2019s License/Identification Card (DL/ID) System and Central Issuance solution.",
+      "path": "https://www.highergov.com/sl/contract-opportunity/oh-odps-drivers-license-identification-card-65913230",
       "is8a": false,
-      "capture_score": 23,
+      "capture_score": 22,
       "win_reasons": [
-        "NAICS aligns with BLN24 capabilities",
-        "Open competition"
+        "Proven agency relationship (past performance / wins with this client)",
+        "Open competition \u2014 evaluate competitiveness",
+        "Large contract \u2014 may need prime/teaming partner"
       ],
       "win_prob": "Low (10-20%)"
     },
     {
       "naics": "541511",
-      "title": "RFI - CTP Tobacco User Fee Application",
-      "agency": "Food and Drug Administration",
-      "type": "Sources Sought",
-      "set_aside": "SBA",
+      "title": "Enterprise Proactive RealProperty Interactive Space Management System Support",
+      "agency": "USACE Sacramento District",
+      "type": "Solicitation",
+      "set_aside": "WOSB",
       "searchLabel": "User Experience",
-      "posted": "2026-04-14",
+      "posted": "2026-04-20",
       "due": "2026-04-24",
-      "val_low": null,
-      "val_high": null,
-      "summary": "Background\n The U.S. Food and Drug Administration (FDA) is conducting a Request for Information (RFI) to support the Center for Tobacco Products (CTP). The goal of this RFI is to acquire services that will sustain and enhance the existing Tobacco User Fee Application (TUFA) processes, ensuring compliance with federal statutes, regulations, guidelines, and the Family Smoking Prevention and Tobacco ",
-      "path": "https://www.highergov.com/contract-opportunity/rfi-ctp-tobacco-user-fee-application-rfq1805967-r-97515",
+      "val_low": 2000000,
+      "val_high": 6000000,
+      "summary": "Background\n The U.S. Army Corps of Engineers (USACE), specifically the Army Geospatial Center (AGC), is seeking to award a contract for technical support services to the Headquarters, Department of the Army (HQDA), Office of the Deputy Chief of Staff (DCS), G-4. \n\nThe goal of this contract is to provide support for the Enterprise Proactive Real-Property Interactive Space Management System (ePRISMS",
+      "path": "https://www.highergov.com/contract-opportunity/enterprise-proactive-realproperty-interactive-spac-rfi1806602-o-2b985",
       "is8a": false,
-      "capture_score": 8,
+      "capture_score": 16,
       "win_reasons": [
-        "NAICS aligns with BLN24 capabilities",
-        "Small business set-aside",
-        "Tech Modernization match",
-        "OUT OF SCOPE signals"
+        "WOSB set-aside \u2014 check teaming",
+        "Contract value in BLN24 sweet spot ($500K-$30M)"
       ],
-      "win_prob": "Very Low (<10%)"
+      "win_prob": "Low (10-20%)"
     },
     {
       "naics": "513210",
@@ -359,89 +300,95 @@
       "summary": "Background\n The General Services Administration (GSA) is issuing this Request for Information (RFI) in support of the U.S. Office of Personnel Management (OPM). \n\nThe goal is to identify a modern recruitment platform that can effectively attract, engage, and convert early career talent, such as students and recent graduates, into applicants for Federal employment opportunities. This initiative aim",
       "path": "https://www.highergov.com/contract-opportunity/rfi-early-career-recruitment-platform-rfi-ocas-2026-001-r-b31eb",
       "is8a": false,
-      "capture_score": 3,
+      "capture_score": 14,
       "win_reasons": [
-        "Open competition"
+        "Open competition \u2014 evaluate competitiveness",
+        "Web / Tech Modernization \u2014 delivery track record"
       ],
       "win_prob": "Very Low (<10%)"
     },
     {
-      "naics": "334516",
-      "title": "Multi-Channel 12 GHz Microwave Synthesizer",
-      "agency": "National Institute of Standards and Technology",
+      "naics": "541511",
+      "title": "RFI - CTP Tobacco User Fee Application",
+      "agency": "Food and Drug Administration",
       "type": "Sources Sought",
-      "set_aside": "",
+      "set_aside": "SBA",
       "searchLabel": "User Experience",
       "posted": "2026-04-14",
       "due": "2026-04-24",
       "val_low": null,
       "val_high": null,
-      "summary": "Background\n The National Institute of Standards & Technology (NIST) is conducting market research to identify potential vendors capable of providing a multi-channel 12 GHz microwave synthesizer. \nThis initiative aims to support experiments on chip-scale atomic clocks based on atomic Cs, requiring a synthesizer with specific capabilities. \nThe goal is to determine eligible business firms that can m",
-      "path": "https://www.highergov.com/contract-opportunity/multi-channel-12-ghz-microwave-synthesizer-nb688000-26-01171-r-c970b",
+      "summary": "Background\n The U.S. Food and Drug Administration (FDA) is conducting a Request for Information (RFI) to support the Center for Tobacco Products (CTP). The goal of this RFI is to acquire services that will sustain and enhance the existing Tobacco User Fee Application (TUFA) processes, ensuring compliance with federal statutes, regulations, guidelines, and the Family Smoking Prevention and Tobacco ",
+      "path": "https://www.highergov.com/contract-opportunity/rfi-ctp-tobacco-user-fee-application-rfq1805967-r-97515",
       "is8a": false,
-      "capture_score": 3,
+      "capture_score": 12,
       "win_reasons": [
-        "Open competition"
+        "Small Business set-aside \u2014 BLN24 qualifies"
       ],
       "win_prob": "Very Low (<10%)"
     },
     {
-      "naics": "513210",
-      "title": "Burial and Memorialization Electronic Directory (BMeD) Commercial Off-the-Shelf Platforms",
-      "agency": "American Battle Monuments Commission",
+      "naics": "334516",
+      "title": "TITLE \u2013 SCIENTIFIC FREEZER",
+      "agency": "NIH Office of Logistics and Acquisition Operations",
       "type": "Sources Sought",
-      "set_aside": "",
-      "searchLabel": "User Experience",
-      "posted": "2026-04-13",
-      "due": "2026-05-09",
-      "val_low": null,
-      "val_high": null,
-      "summary": "Background\n The American Battle Monuments Commission (ABMC) is seeking industry input through this Request for Information (RFI) for market research purposes. The goal is to identify secure cloud-based commercial off-the-shelf (COTS) platforms that can replace or significantly enhance the current WeRemember.ABMC.gov environment, which manages authoritative burial and memorialization records for ap",
-      "path": "https://www.highergov.com/contract-opportunity/burial-and-memorialization-electronic-directory-b-abmcfy27-bmed-cots-rfi-r-0d7f2",
-      "is8a": false,
-      "capture_score": 3,
-      "win_reasons": [
-        "Open competition"
-      ],
-      "win_prob": "Very Low (<10%)"
-    },
-    {
-      "naics": "541990",
-      "title": "Tactical Intelligence Platform for International Travel",
-      "agency": "FAA Headquarters",
-      "type": "Sources Sought",
-      "set_aside": "",
+      "set_aside": "SBA",
       "searchLabel": "User Experience",
       "posted": "2026-04-17",
-      "due": "2026-05-15",
+      "due": "2026-04-24",
       "val_low": 500000,
-      "val_high": 2000000,
-      "summary": "Background\n The Federal Aviation Administration (FAA) is conducting a market survey to gather statements of interest and capabilities from businesses that can provide a Tactical Intelligence Platform for International Travel. \n\nThe Office of Investigations & Professional Responsibility (AXI-1) oversees the International Travel Security Program (ITSP), which aims to protect FAA employees traveling ",
-      "path": "https://www.highergov.com/contract-opportunity/tactical-intelligence-platform-for-international-t-693ka9-itsp-001-r-eb2f9",
+      "val_high": 1200000,
+      "summary": "",
+      "path": "https://www.highergov.com/contract-opportunity/title-scientific-freezer-pca-nhlbi-03869-r-d24e1",
       "is8a": false,
-      "capture_score": 3,
+      "capture_score": 10,
       "win_reasons": [
-        "Open competition"
+        "Proven agency relationship (past performance / wins with this client)",
+        "Small Business set-aside \u2014 BLN24 qualifies",
+        "Contract value in BLN24 sweet spot ($500K-$30M)",
+        "Out of scope signals: logistics"
       ],
       "win_prob": "Very Low (<10%)"
     },
     {
-      "naics": "541714",
-      "title": "One Comprehensive Universal Radiotherapy for Everyone (1-CURE)",
-      "agency": "National Institutes of Health",
+      "naics": "541519",
+      "title": "Customized Vr Simulation Game",
+      "agency": "State Fiscal Accountability Authority",
       "type": "Solicitation",
       "set_aside": "",
       "searchLabel": "User Experience",
       "posted": "2026-04-16",
-      "due": "2026-05-23",
-      "val_low": null,
-      "val_high": null,
-      "summary": "Background\n The Advanced Research Projects Agency for Health (ARPA-H) is initiating an Innovative Solutions Opening (ISO) to support the One Comprehensive Universal Radiotherapy for Everyone (1-CURE) Program. The agency aims to foster innovative solutions that can transform biomedicine and improve health outcomes.\n\nMultiple Other Transaction (OT) Agreements are anticipated as a result of this anno",
-      "path": "https://www.highergov.com/contract-opportunity/one-comprehensive-universal-radiotherapy-for-every-arpa-h-sol-26-147-o-a0279",
+      "due": "2026-05-06",
+      "val_low": 500000,
+      "val_high": 1500000,
+      "summary": "Background\n The State Board for Technical and Comprehensive Education (SBTCE), through the South Carolina State Fiscal Accountability Authority (SFAA) Division of Procurement Services, is seeking proposals for the development of a customized Virtual Reality (VR) simulation game. This initiative aims to engage and educate South Carolina residents, particularly middle and high school students, about",
+      "path": "https://www.highergov.com/sl/contract-opportunity/sc-customized-vr-simulation-game-65954059",
       "is8a": false,
-      "capture_score": 3,
+      "capture_score": 10,
       "win_reasons": [
-        "Open competition"
+        "Open competition \u2014 evaluate competitiveness",
+        "Contract value in BLN24 sweet spot ($500K-$30M)"
+      ],
+      "win_prob": "Very Low (<10%)"
+    },
+    {
+      "naics": "541519",
+      "title": "Information Technology Infrastructure Vendors",
+      "agency": "E-470 Public Highway Authority",
+      "type": "Solicitation",
+      "set_aside": "",
+      "searchLabel": "User Experience",
+      "posted": "2026-04-13",
+      "due": "2026-05-11",
+      "val_low": 5000000,
+      "val_high": 15000000,
+      "summary": "Background\n The E-470 Public Highway Authority, located in Aurora, Colorado, is seeking qualified vendors to fulfill its requirements for information technology (IT) products, services, and software licenses. The Authority operates a user-financed toll highway around the Denver metropolitan area and aims to enhance customer journeys through safety and reliability.\n\nThis Request for Qualifications ",
+      "path": "https://www.highergov.com/sl/contract-opportunity/co-information-technology-infrastructure-ve-65785676",
+      "is8a": false,
+      "capture_score": 10,
+      "win_reasons": [
+        "Open competition \u2014 evaluate competitiveness",
+        "Contract value in BLN24 sweet spot ($500K-$30M)"
       ],
       "win_prob": "Very Low (<10%)"
     },
@@ -459,31 +406,30 @@
       "summary": "Background\n The Indiana Family and Social Services Administration (FSSA) is seeking to contract with a vendor to provide a web-based Learning Management System (LMS) that meets the agency's needs for delivering federally mandated training. This LMS will support FSSA's compliance with privacy and security regulations, including CMS MARS-E, Social Security Administration, and HIPAA requirements for ",
       "path": "https://www.highergov.com/sl/contract-opportunity/in-fssa-learning-management-system-lms-bid-65968541",
       "is8a": false,
-      "capture_score": 3,
+      "capture_score": 10,
       "win_reasons": [
-        "Open competition"
+        "Open competition \u2014 evaluate competitiveness",
+        "Contract value in BLN24 sweet spot ($500K-$30M)"
       ],
       "win_prob": "Very Low (<10%)"
     },
     {
-      "naics": "541211",
-      "title": "ODPS Drivers License/Identification Card System and Operations",
-      "agency": "Ohio Department of Administrative Services",
-      "type": "Solicitation",
+      "naics": "334516",
+      "title": "Multi-Channel 12 GHz Microwave Synthesizer",
+      "agency": "National Institute of Standards and Technology",
+      "type": "Sources Sought",
       "set_aside": "",
       "searchLabel": "User Experience",
-      "posted": "2026-04-15",
+      "posted": "2026-04-14",
       "due": "2026-04-24",
-      "val_low": 50000000,
-      "val_high": 150000000,
-      "summary": "Background\n The State of Ohio, through the Department of Administrative Services, Office of Procurement Services, on behalf of the Department of Public Safety, Bureau of Motor Vehicles, is issuing this Request for Proposals (RFP) to solicit proposals for the design, implementation, and operation of a next-generation Driver’s License/Identification Card (DL/ID) System and Central Issuance solution.",
-      "path": "https://www.highergov.com/sl/contract-opportunity/oh-odps-drivers-license-identification-card-65913230",
+      "val_low": null,
+      "val_high": null,
+      "summary": "Background\n The National Institute of Standards & Technology (NIST) is conducting market research to identify potential vendors capable of providing a multi-channel 12 GHz microwave synthesizer. \nThis initiative aims to support experiments on chip-scale atomic clocks based on atomic Cs, requiring a synthesizer with specific capabilities. \nThe goal is to determine eligible business firms that can m",
+      "path": "https://www.highergov.com/contract-opportunity/multi-channel-12-ghz-microwave-synthesizer-nb688000-26-01171-r-c970b",
       "is8a": false,
-      "capture_score": -2,
+      "capture_score": 2,
       "win_reasons": [
-        "Past performance with this agency",
-        "Open competition",
-        "OUT OF SCOPE signals"
+        "Open competition \u2014 evaluate competitiveness"
       ],
       "win_prob": "Very Low (<10%)"
     },
@@ -501,11 +447,56 @@
       "summary": "Background\n The Navy is undertaking a renovation of the ADM Baker Pool Complex to address high demand and ensure safety. \nThis project is part of the mission of the CNIC Facilities and Construction Contracting office, which focuses on maintaining and improving Navy facilities.\n\nWork Details\n The project includes the following specific tasks: \n1. Upgrading the main pool to meet safety standards and",
       "path": "https://www.highergov.com/contract-opportunity/repair-adm-baker-pool-complex-navmwr-26-r-0029-o-d5932",
       "is8a": false,
-      "capture_score": -2,
+      "capture_score": 0,
       "win_reasons": [
-        "Past performance with this agency",
-        "Open competition",
-        "OUT OF SCOPE signals"
+        "Proven agency relationship (past performance / wins with this client)",
+        "Open competition \u2014 evaluate competitiveness",
+        "Contract value in BLN24 sweet spot ($500K-$30M)",
+        "Out of scope signals: construction"
+      ],
+      "win_prob": "Very Low (<10%)"
+    },
+    {
+      "naics": "541380",
+      "title": "NOI- CONSULTATION AND DATA STORAGE",
+      "agency": "NIH Office of Logistics and Acquisition Operations",
+      "type": "Presolicitation",
+      "set_aside": "",
+      "searchLabel": "User Experience",
+      "posted": "2026-04-16",
+      "due": "2026-05-03",
+      "val_low": 150000,
+      "val_high": 350000,
+      "summary": "Background\n The National Eye Institute (NEI), part of the National Institutes of Health (NIH), intends to award a contract to Dr. Claire Marchal for services required to analyze and integrate diverse molecular genomic data from human and mouse retinas. This contract is being awarded without full or open competition due to the unique qualifications of the intended source.\n\nWork Details\n The contrac",
+      "path": "https://www.highergov.com/contract-opportunity/noi-consultation-and-data-storage-pcas02668-p-73446",
+      "is8a": false,
+      "capture_score": -8,
+      "win_reasons": [
+        "Proven agency relationship (past performance / wins with this client)",
+        "Open competition \u2014 evaluate competitiveness",
+        "Out of scope signals: logistics"
+      ],
+      "win_prob": "Very Low (<10%)"
+    },
+    {
+      "naics": "513210",
+      "title": "Sources Sought / Request for Information (RFI) 26-046   Electronic Records Management System (ERMS)",
+      "agency": "Department of Energy",
+      "type": "Sources Sought",
+      "set_aside": "",
+      "searchLabel": "User Experience",
+      "posted": "2026-04-15",
+      "due": "2026-05-06",
+      "val_low": null,
+      "val_high": null,
+      "summary": "Background\n Princeton Plasma Physics Laboratory (PPPL), a Department of Energy (DOE) National Laboratory, is soliciting information from qualified sources regarding Electronic Records Management System (ERMS) solutions. \n\nThe goal is to identify systems capable of supporting the compliant lifecycle management of electronic records. Interested vendors must be prepared to address functional, securit",
+      "path": "https://www.highergov.com/contract-opportunity/sources-sought-request-for-information-rfi-26-rfi-26-046-r-27440",
+      "is8a": false,
+      "capture_score": -8,
+      "win_reasons": [
+        "Proven agency relationship (past performance / wins with this client)",
+        "Open competition \u2014 evaluate competitiveness",
+        "Out of scope signals: laboratory"
       ],
       "win_prob": "Very Low (<10%)"
     },
@@ -523,12 +514,34 @@
       "summary": "Background\n The Naval Air Systems Command (NAVAIR), specifically the Program Executive Office for Unmanned Aviation and Strike Weapons (PEO (U&W)), is conducting market research to identify capable firms for providing Integrated Product Office support services for the Weaponeering and Stores Planning (WASP) program. \n\nThis initiative aims to enhance the delivery of flight clearance information to ",
       "path": "https://www.highergov.com/contract-opportunity/weaponeering-and-stores-planning-wasp-systems-en-n00019-26-rfpreq-wpm281-0147-r-0fc74",
       "is8a": false,
-      "capture_score": -27,
+      "capture_score": -25,
       "win_reasons": [
-        "Open competition",
-        "OUT OF SCOPE signals"
+        "Open competition \u2014 evaluate competitiveness",
+        "Contract value in BLN24 sweet spot ($500K-$30M)",
+        "Out of scope signals: weapon"
+      ],
+      "win_prob": "Very Low (<10%)"
+    },
+    {
+      "naics": "541519",
+      "title": "6515--NEW - Clinical Monitoring Solution, TheraDoc",
+      "agency": "VISN 17:\u00a0Heart of Texas Health Care Network",
+      "type": "Sources Sought",
+      "set_aside": "SDVOSBC",
+      "searchLabel": "User Experience",
+      "posted": "2026-04-20",
+      "due": "2026-04-24",
+      "val_low": 40000,
+      "val_high": 90000,
+      "summary": "Background\n The Central Texas VA Health Care System (CTVHCS) in Temple, Texas is seeking Service Disabled Veteran Owned Small Business (SDVOSB), Veteran Owned Small Business (VOSB), or Small Business sources capable of providing maintenance and telephone support services for the TheraDoc system. \n\nThe goal of this contract is to ensure that CTVHCS can continue to utilize TheraDoc, a medical techno",
+      "path": "https://www.highergov.com/contract-opportunity/6515-new-clinical-monitoring-solution-theradoc-36c25726q0482-r-6b737",
+      "is8a": false,
+      "capture_score": -30,
+      "win_reasons": [
+        "Out of scope signals: clinical"
       ],
       "win_prob": "Very Low (<10%)"
     }
-  ]
+  ],
+  "intel_version": "v2_real_intel_april2026"
 }
