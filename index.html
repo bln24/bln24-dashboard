@@ -522,10 +522,11 @@ async function loadAll() {
 const HG_KEY = '1a262cdcd25f40fba31836526d6e12b1';
 const HG_BASE = 'https://www.highergov.com/api-external/opportunity/';
 
-// BLN24 capability NAICS codes
-const BLN_NAICS = ['541511','541512','541519','541613','541820','541430','519130','541611'];
+// BLN24 saved searches in HigherGov (search_id from saved searches)
+const HG_SEARCHES = [
+  { id: 'm6_juXBrDh441f0I-mD5s', label: 'User Experience' },
+];
 
-// Rolling 30-day window
 function getDateStr(daysBack) {
   const d = new Date();
   d.setDate(d.getDate() - daysBack);
@@ -583,7 +584,6 @@ async function loadOpps() {
     const pipelineTitles = DATA.map(d => (d.title || '').toLowerCase());
     const pipelineOrgs = DATA.map(d => (d.org_name || '').toLowerCase());
 
-    const fromDate = getDateStr(90);
     const GOOD_TYPES = new Set(['Presolicitation','Solicitation','Combined Synopsis/Solicitation','Sources Sought','Special Notice']);
     const today = new Date().toISOString().split('T')[0];
 
@@ -659,7 +659,7 @@ async function loadOpps() {
     tbody.innerHTML = allOpps.slice(0,20).map((o,i) =>
       '<tr class="row" onclick="showOpp(window._opps[' + i + '])">' +
       '<td><div>' + o.title.substring(0,50) + (o.title.length>50?'…':'') + '</div>' +
-      '<div class="muted">' + (o.is_federal ? '🏛 ' : '') + (o.alreadyTracked ? '⚠ May be tracked' : 'Not in pipeline') + '</div></td>' +
+      '<div class="muted">' + (o.is_federal ? '🏛 Federal · ' : '') + (o.alreadyTracked ? '⚠ May be tracked' : '✓ Not in pipeline') + '</div></td>' +
       '<td class="muted">' + o.agency.substring(0,28) + '</td>' +
       '<td class="muted">' + o.type.substring(0,14) + '</td>' +
       '<td>' + saBadge(o.set_aside) + '</td>' +
