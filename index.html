@@ -224,7 +224,7 @@
     </div>
     <div class="card-note" id="opp-note">Federal pre-solicitation &amp; solicitation opps matching BLN24 capabilities — not yet in your Pipedrive pipeline. Tap any row to view detail.</div>
     <table id="t-opp">
-      <thead><tr><th>Opportunity</th><th>Agency</th><th>Type</th><th>Set-Aside</th><th>Est. Value</th><th>Due Date</th></tr></thead>
+      <thead><tr><th>Opportunity</th><th>Agency</th><th>Set-Aside</th><th>Win Prob</th><th>Est. Value</th><th>Due</th></tr></thead>
       <tbody><tr><td colspan="6" class="loading">Loading opportunities...</td></tr></tbody>
     </table>
   </div>
@@ -559,17 +559,23 @@ function saBadge(sa) {
 }
 
 function showOpp(opp) {
-  const body = '<div class="m-grid">' +
-    '<div class="m-field"><div class="m-lbl">Agency</div><div class="m-val">' + opp.agency + '</div></div>' +
-    '<div class="m-field"><div class="m-lbl">Type</div><div class="m-val">' + opp.type + '</div></div>' +
-    '<div class="m-field"><div class="m-lbl">NAICS Code</div><div class="m-val">' + opp.naics + '</div></div>' +
-    '<div class="m-field"><div class="m-lbl">Set-Aside</div><div class="m-val">' + (opp.set_aside || 'Open Competition') + '</div></div>' +
-    '<div class="m-field"><div class="m-lbl">Est. Value</div><div class="m-val gold">' + fmtVal(opp.val_low, opp.val_high) + '</div></div>' +
-    '<div class="m-field"><div class="m-lbl">Due Date</div><div class="m-val ' + (opp.due && opp.due < getDateStr(-7) ? 'red' : '') + '">' + (opp.due || '—') + '</div></div>' +
+  var wpCls = (opp.win_prob||'').indexOf('High') >= 0 ? 'green' : (opp.win_prob||'').indexOf('Medium') >= 0 ? '' : 'red';
+  var reasons = (opp.win_reasons||[]).map(function(r){ return '<li style="margin-bottom:4px">' + r + '</li>'; }).join('');
+  var valStr = (opp.val_low && opp.val_high) ? fmtVal(opp.val_low, opp.val_high) : (fmtVal(opp.val_low, null) || fmtVal(null, opp.val_high) || '—');
+  var body = '<div class="m-grid">' +
+    '<div class="m-field"><div class="m-lbl">Agency</div><div class="m-val">' + (opp.agency||'—') + '</div></div>' +
+    '<div class="m-field"><div class="m-lbl">Win Probability</div><div class="m-val ' + wpCls + '">' + (opp.win_prob||'?') + '</div></div>' +
+    '<div class="m-field"><div class="m-lbl">NAICS Code</div><div class="m-val">' + (opp.naics||'—') + '</div></div>' +
+    '<div class="m-field"><div class="m-lbl">Set-Aside</div><div class="m-val">' + (opp.set_aside||'Open Competition') + '</div></div>' +
+    '<div class="m-field"><div class="m-lbl">Est. Value</div><div class="m-val gold">' + valStr + '</div></div>' +
+    '<div class="m-field"><div class="m-lbl">Due Date</div><div class="m-val">' + (opp.due||'—') + '</div></div>' +
+    '<div class="m-field"><div class="m-lbl">Type</div><div class="m-val">' + (opp.type||'—') + '</div></div>' +
+    '<div class="m-field"><div class="m-lbl">Capture Score</div><div class="m-val">' + (opp.capture_score||0) + ' pts</div></div>' +
     '</div>' +
+    (reasons ? '<div style="margin:14px 0 6px;font-size:0.75rem;font-weight:700">Why Consider This:</div><ul style="padding-left:18px;font-size:0.78rem;color:#1A1B1F;line-height:1.9">' + reasons + '</ul>' : '') +
     (opp.summary ? '<div style="margin:12px 0 6px;font-size:0.75rem;font-weight:700">AI Summary:</div><div style="font-size:0.76rem;color:#6B6E7A;line-height:1.6;background:#F9F9FB;padding:10px 12px;border-radius:6px">' + opp.summary + '</div>' : '') +
-    (opp.path ? '<div style="margin-top:12px"><a href="https://www.highergov.com' + opp.path + '" target="_blank" style="font-size:0.75rem;color:#0084D5;font-weight:600">View on HigherGov →</a></div>' : '');
-  openModal('Untracked Opportunity', opp.title, opp.agency, body, 'HigherGov API · SAM.gov · Not yet in Pipedrive pipeline');
+    (opp.path ? '<div style="margin-top:12px"><a href="https://www.highergov.com' + opp.path + '" target="_blank" style="font-size:0.75rem;color:#0084D5;font-weight:600">View on HigherGov</a></div>' : '');
+  openModal('Untracked Federal Opportunity', opp.title, opp.agency, body, 'HigherGov · Federal only · Scored vs BLN24 capabilities');
 }
 
 async function loadOpps() {
@@ -606,13 +612,19 @@ async function loadOpps() {
     function fv(n){if(!n)return null;n=parseFloat(n);return n>=1e6?'$'+(n/1e6).toFixed(1)+'M':n>=1e3?'$'+Math.round(n/1000)+'K':null;}
     function sab(sa){if(!sa)return'<span class="b b-grey">Open</span>';const s=sa.toLowerCase();if(s.includes('8a')||s.includes('8(a)'))return'<span class="b b-green">8(a)</span>';if(s.includes('sba')||s.includes('small'))return'<span class="b b-yellow">SB</span>';if(s.includes('wosb'))return'<span class="b b-yellow">WOSB</span>';return'<span class="b b-grey">'+sa.substring(0,10)+'</span>';}
 
+    function wpBadge(wp) {
+      if (!wp) return '<span class="b b-grey">?</span>';
+      if (wp.indexOf('High') >= 0) return '<span class="b b-green">High</span>';
+      if (wp.indexOf('Medium') >= 0) return '<span class="b b-yellow">Medium</span>';
+      return '<span class="b b-red">Low</span>';
+    }
     tbody.innerHTML = active.slice(0,25).map((o,i) =>
       '<tr class="row" onclick="showOpp(window._opps['+i+'])">' +
-      '<td><div>'+(o.title||'').substring(0,50)+((o.title||'').length>50?'…':'')+' </div>' +
-      '<div class="muted">'+(o.is_federal?'🏛 ':'')+o.agency.substring(0,32)+'</div></td>' +
-      '<td class="muted">'+o.agency.substring(0,26)+'</td>' +
-      '<td class="muted">'+o.type.substring(0,14)+'</td>' +
+      '<td><div>'+(o.title||'').substring(0,48)+((o.title||'').length>48?'…':'')+' </div>' +
+      '<div class="muted">🏛 '+(o.agency||'').substring(0,30)+'</div></td>' +
+      '<td class="muted">'+(o.agency||'').substring(0,24)+'</td>' +
       '<td>'+sab(o.set_aside)+'</td>' +
+      '<td>'+wpBadge(o.win_prob)+'</td>' +
       '<td class="val">'+(fv(o.val_low)&&fv(o.val_high)?fv(o.val_low)+' – '+fv(o.val_high):(fv(o.val_low)||fv(o.val_high)||'—'))+'</td>' +
       '<td class="muted">'+(o.due||'—')+'</td>' +
       '</tr>'
