@@ -590,9 +590,9 @@ async function loadOpps() {
     let allOpps = [];
     const seen = new Set();
 
-    for (const naics of BLN_NAICS) {
+    for (const search of HG_SEARCHES) {
       try {
-        const url = HG_BASE + '?api_key=' + HG_KEY + '&posted_date=' + fromDate + '&source_type=sam&naics_code=' + naics + '&page_size=100';
+        const url = HG_BASE + '?api_key=' + HG_KEY + '&search_id=' + search.id + '&page_size=100';
         const res = await fetch(url);
         const json = await res.json();
         const results = Array.isArray(json) ? [] : (json.results || []);
@@ -609,8 +609,6 @@ async function loadOpps() {
 
           const title = r.title || '';
           const agencyName = (r.agency || {}).agency_name || '';
-
-          // Check if already in pipeline - flag but don't exclude
           const titleWords = title.toLowerCase().split(/\s+/).filter(w => w.length > 5);
           const alreadyTracked = titleWords.filter(w => pipelineTitles.some(pt => pt.includes(w))).length >= 3;
 
@@ -619,27 +617,27 @@ async function loadOpps() {
           try { vl = vl ? parseFloat(vl) : null; } catch(e) { vl = null; }
           try { vh = vh ? parseFloat(vh) : null; } catch(e) { vh = null; }
 
-          // Score relevance
           const isFederal = ['census','irs','noaa','fema','cdc','cms','hhs','health','commerce',
             'agriculture','usda','gsa','uspto','education','hud','army','dha','defense','epa',
-            'treasury','homeland','dhs','labor','interior','nih','fda','hrsa','state dept'].some(
+            'treasury','homeland','dhs','labor','interior','nih','fda','hrsa'].some(
             a => agencyName.toLowerCase().includes(a));
-          const isEligible = !sa || sa.toLowerCase().includes('sba') || sa.toLowerCase().includes('8a') ||
-            sa.toLowerCase().includes('small business');
           const is8a = sa.toLowerCase().includes('8a') || sa.toLowerCase().includes('8(a)');
+          const isEligible = !sa || sa.toLowerCase().includes('sba') || is8a ||
+            sa.toLowerCase().includes('small business') || sa.toLowerCase().includes('wosb');
 
           allOpps.push({
-            naics, title, agency: agencyName, type: otype, set_aside: sa,
-            posted: r.posted_date || '', due: due,
+            naics: (r.naics_code || {}).naics_code || '', title, agency: agencyName,
+            type: otype, set_aside: sa, searchLabel: search.label,
+            posted: r.posted_date || '', due,
             val_low: vl, val_high: vh,
             summary: (r.ai_summary || '').substring(0, 400),
             path: r.path || '',
-            is_federal: isFederal, is_eligible: isEligible, is8a: is8a,
-            alreadyTracked: alreadyTracked,
+            is_federal: isFederal, is_eligible: isEligible, is8a,
+            alreadyTracked,
             score: (isFederal ? 10 : 0) + (is8a ? 5 : 0) + (isEligible ? 3 : 0) + (alreadyTracked ? -20 : 0),
           });
         }
-      } catch(e) { console.warn('HG error for ' + naics, e); }
+      } catch(e) { console.warn('HG error for search ' + search.label, e); }
     }
 
     // Sort by score desc, then due date
