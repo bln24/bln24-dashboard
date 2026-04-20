@@ -593,8 +593,8 @@ async function loadOpps() {
         res = await fetch(url);
         json = await res.json();
       } catch(fetchErr) {
-        tbody.innerHTML = '<tr><td colspan="6" class="loading" style="color:#DC2626">HigherGov fetch error: ' + fetchErr.message + '</td></tr>';
-        pill.textContent = '⚠ HigherGov error';
+        tbody.innerHTML = '<tr><td colspan="6" style="padding:16px"><div style="color:#DC2626;font-weight:600;margin-bottom:8px">⚠ HigherGov proxy unavailable</div><div style="font-size:0.75rem;color:#6B6E7A;line-height:1.6">The HigherGov CORS proxy (Cloudflare Worker) needs email verification to go live.<br>Check brian@bln24.com for a verification email from Cloudflare, click the link, then refresh this page.</div></td></tr>';
+        pill.textContent = '⚠ Awaiting activation';
         return;
       }
 
