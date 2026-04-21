@@ -6,7 +6,7 @@ const path = require('path');
 const HG_KEY = '1a262cdcd25f40fba31836526d6e12b1';
 const SEARCHES = [
   // Rex's searches
-  { id: 'm6_juXBrDh441f0I-mD5s', label: 'User Experience', ericAlso: false },
+  { id: 'Iup74Uz07U7NNMzBgoOGC', label: 'Brian Search (Updated)', ericAlso: false },
   // Eric's existing HigherGov saved searches (marked ericAlso: true)
   { id: 'c-DVvbqbEWlzb-MHZ3JNR',    label: 'CDC 8(a)',                  ericAlso: true },
   { id: '9O8IE4AuzgLjT6aQtZjHy',    label: 'Census Opps (BLN NAICS)',  ericAlso: true },
@@ -596,6 +596,7 @@ async function main() {
   fs.renameSync(tmpFile, OUT_FILE);
   try {
     es(`python3 /Users/t24/Desktop/T24/hg-proxy/enrich-opps.py`, { stdio: 'inherit' });
+    es(`python3 /Users/t24/Desktop/T24/hg-proxy/analyze-opps.py`, { stdio: 'inherit' });
   } catch(e) { console.log('Enrichment error:', e.message); }
 
   const output = JSON.parse(fs.readFileSync(OUT_FILE, 'utf8'));
