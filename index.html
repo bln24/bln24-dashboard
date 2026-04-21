@@ -7,160 +7,185 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --black: #1A1B1F;
-      --gold: #CF9F58;
-      --gold-dark: #92700A;
-      --gold-pale: #FBF5EA;
-      --blue: #0084D5;
-      --blue-light: #E8F4FD;
-      --grey: #6B6E7A;
-      --grey-light: #F4F4F6;
-      --border: #E4E4E8;
-      --white: #FFFFFF;
-      --red: #DC2626;
-      --red-light: #FEF2F2;
-      --green: #16A34A;
-      --green-light: #F0FDF4;
-      --yellow: #D97706;
-      --yellow-light: #FFFBEB;
+      --black:#1A1B1F; --gold:#CF9F58; --gold-dark:#92700A; --gold-pale:#FBF5EA;
+      --blue:#0084D5; --blue-light:#E8F4FD; --grey:#6B6E7A; --grey-light:#F4F4F6;
+      --border:#E4E4E8; --white:#FFFFFF; --red:#DC2626; --red-light:#FEF2F2;
+      --green:#16A34A; --green-light:#F0FDF4; --yellow:#D97706; --yellow-light:#FFFBEB;
+      --surface:#F5F5F7;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', system-ui, sans-serif; background: #F5F5F7; color: var(--black); -webkit-font-smoothing: antialiased; }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Inter',system-ui,sans-serif;background:var(--surface);color:var(--black);-webkit-font-smoothing:antialiased;}
 
     /* AUTH */
-    #auth { position: fixed; inset: 0; background: var(--black); display: flex; align-items: center; justify-content: center; z-index: 9999; }
-    #auth.hidden { display: none; }
-    .auth-box { background: var(--white); border-radius: 14px; padding: 40px 44px; width: 320px; text-align: center; }
-    .auth-box h2 { font-size: 1.4rem; font-weight: 800; color: var(--black); margin-bottom: 4px; }
-    .auth-box p { font-size: 0.82rem; color: var(--grey); margin-bottom: 24px; }
-    .auth-box input { width: 100%; padding: 12px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 1.1rem; text-align: center; letter-spacing: 0.15em; font-family: inherit; margin-bottom: 12px; outline: none; transition: border-color 0.15s; }
-    .auth-box input:focus { border-color: var(--gold); }
-    .auth-box button { width: 100%; padding: 12px; background: var(--gold); color: var(--black); border: none; border-radius: 8px; font-size: 0.9rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: background 0.15s; }
-    .auth-box button:hover { background: #B8893A; }
-    .auth-err { color: var(--red); font-size: 0.75rem; margin-top: 8px; min-height: 18px; }
+    #auth{position:fixed;inset:0;background:var(--black);display:flex;align-items:center;justify-content:center;z-index:9999;}
+    #auth.hidden{display:none;}
+    .auth-box{background:var(--white);border-radius:14px;padding:40px 44px;width:320px;text-align:center;}
+    .auth-box h2{font-size:1.4rem;font-weight:800;margin-bottom:4px;}
+    .auth-box p{font-size:0.82rem;color:var(--grey);margin-bottom:24px;}
+    .auth-box input{width:100%;padding:12px;border:1.5px solid var(--border);border-radius:8px;font-size:1.1rem;text-align:center;letter-spacing:.15em;font-family:inherit;margin-bottom:12px;outline:none;transition:border-color .15s;}
+    .auth-box input:focus{border-color:var(--gold);}
+    .auth-box button{width:100%;padding:12px;background:var(--gold);color:var(--black);border:none;border-radius:8px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:inherit;}
+    .auth-box button:hover{background:#B8893A;}
+    .auth-err{color:var(--red);font-size:.75rem;margin-top:8px;min-height:18px;}
 
     /* HEADER */
-    header { background: var(--black); height: 58px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; position: sticky; top: 0; z-index: 100; border-bottom: 2px solid var(--gold); }
-    .header-brand { color: var(--gold); font-size: 1rem; font-weight: 800; letter-spacing: 0.06em; }
-    .header-right { display: flex; align-items: center; gap: 12px; }
-    .header-ts { font-size: 0.7rem; color: rgba(255,255,255,0.4); }
-    .btn-refresh { background: rgba(207,159,88,0.15); border: 1px solid var(--gold); color: var(--gold); padding: 6px 14px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; cursor: pointer; font-family: inherit; transition: background 0.15s; }
-    .btn-refresh:hover { background: var(--gold); color: var(--black); }
+    header{background:var(--black);height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:100;border-bottom:2px solid var(--gold);}
+    .brand{color:var(--gold);font-size:1rem;font-weight:800;letter-spacing:.06em;}
+    .hdr-right{display:flex;align-items:center;gap:12px;}
+    .hdr-ts{font-size:.7rem;color:rgba(255,255,255,.4);}
+    .btn-ref{background:rgba(207,159,88,.15);border:1px solid var(--gold);color:var(--gold);padding:5px 12px;border-radius:6px;font-size:.72rem;font-weight:600;cursor:pointer;font-family:inherit;transition:background .15s;}
+    .btn-ref:hover{background:var(--gold);color:var(--black);}
 
-    /* LAYOUT */
-    .page { padding: 24px 28px; max-width: 1360px; margin: 0 auto; }
+    /* TABS */
+    .tab-bar{background:var(--black);display:flex;align-items:center;padding:0 28px;gap:0;border-bottom:1px solid rgba(255,255,255,.1);}
+    .tab{padding:14px 20px;font-size:.78rem;font-weight:600;color:rgba(255,255,255,.45);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px;transition:color .15s,border-color .15s;white-space:nowrap;}
+    .tab:hover{color:rgba(255,255,255,.7);}
+    .tab.active{color:var(--gold);border-bottom-color:var(--gold);}
+    .tab-pane{display:none;}
+    .tab-pane.active{display:block;}
+
+    /* PAGE */
+    .page{padding:24px 28px;max-width:1360px;margin:0 auto;}
 
     /* SECTION LABEL */
-    .section-label { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; margin-top: 24px; }
-    .section-title { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: var(--grey); }
-    .badge { display: inline-flex; align-items: center; gap: 4px; font-size: 0.62rem; font-weight: 700; padding: 3px 8px; border-radius: 20px; letter-spacing: 0.03em; }
-    .badge-live { background: var(--green-light); color: var(--green); }
-    .badge-live::before { content: '●'; font-size: 0.5rem; }
-    .badge-hist { background: var(--gold-pale); color: var(--gold-dark); }
-    .badge-hg { background: var(--blue-light); color: var(--blue); }
-    .badge-hg::before { content: '●'; font-size: 0.5rem; }
+    .sl{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;margin-top:22px;}
+    .sl:first-child{margin-top:0;}
+    .st{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--grey);}
+    .badge{display:inline-flex;align-items:center;gap:4px;font-size:.6rem;font-weight:700;padding:3px 8px;border-radius:20px;letter-spacing:.03em;white-space:nowrap;}
+    .b-live{background:var(--green-light);color:var(--green);}
+    .b-live::before{content:'●';font-size:.45rem;}
+    .b-hist{background:var(--gold-pale);color:var(--gold-dark);}
+    .b-hg{background:var(--blue-light);color:var(--blue);}
+    .b-hg::before{content:'●';font-size:.45rem;}
+    .b-ai{background:#F0E6FF;color:#7C3AED;}
+    .b-ai::before{content:'◆';font-size:.45rem;}
 
-    /* KPI STRIP */
-    .kpi-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 0; }
-    @media(max-width:700px){ .kpi-strip { grid-template-columns: 1fr 1fr; } }
-    .kpi { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; cursor: pointer; position: relative; overflow: hidden; transition: box-shadow 0.15s, transform 0.1s; }
-    .kpi::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
-    .kpi.gold::before { background: var(--gold); }
-    .kpi.blue::before { background: var(--blue); }
-    .kpi.green::before { background: var(--green); }
-    .kpi.red::before { background: var(--red); }
-    .kpi:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-1px); }
-    .kpi-label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--grey); margin-bottom: 8px; }
-    .kpi-value { font-size: 1.8rem; font-weight: 800; color: var(--black); line-height: 1; margin-bottom: 4px; }
-    .kpi.gold .kpi-value { color: var(--gold-dark); }
-    .kpi.blue .kpi-value { color: var(--blue); }
-    .kpi.green .kpi-value { color: var(--green); }
-    .kpi.red .kpi-value { color: var(--red); }
-    .kpi-sub { font-size: 0.68rem; color: var(--grey); }
-    .kpi-hint { font-size: 0.62rem; color: var(--blue); font-weight: 600; margin-top: 8px; }
+    /* KPI */
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+    @media(max-width:700px){.kpis{grid-template-columns:1fr 1fr;}}
+    .kpi{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:16px 18px;cursor:pointer;position:relative;overflow:hidden;transition:box-shadow .15s,transform .1s;}
+    .kpi::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
+    .kpi.gold::before{background:var(--gold);}
+    .kpi.blue::before{background:var(--blue);}
+    .kpi.green::before{background:var(--green);}
+    .kpi.red::before{background:var(--red);}
+    .kpi:hover{box-shadow:0 4px 16px rgba(0,0,0,.08);transform:translateY(-1px);}
+    .kpi-lbl{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:8px;}
+    .kpi-v{font-size:1.8rem;font-weight:800;line-height:1;margin-bottom:4px;}
+    .kpi.gold .kpi-v{color:var(--gold-dark);}
+    .kpi.blue .kpi-v{color:var(--blue);}
+    .kpi.green .kpi-v{color:var(--green);}
+    .kpi.red .kpi-v{color:var(--red);}
+    .kpi-sub{font-size:.68rem;color:var(--grey);}
+    .kpi-hint{font-size:.6rem;color:var(--blue);font-weight:600;margin-top:8px;}
+
+    /* STAGES */
+    .stages{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;}
+    @media(max-width:700px){.stages{grid-template-columns:1fr 1fr;}}
+    .stage{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px;text-align:center;cursor:pointer;transition:border-color .15s,box-shadow .15s;}
+    .stage:hover{border-color:var(--gold);box-shadow:0 3px 10px rgba(0,0,0,.06);}
+    .stage-name{font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:8px;}
+    .stage-n{font-size:1.6rem;font-weight:800;}
+    .stage-v{font-size:.7rem;font-weight:600;color:var(--gold-dark);margin-top:3px;}
+    .stage-w{font-size:.63rem;color:var(--grey);margin-top:1px;}
 
     /* CARD */
-    .card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; }
-    .card-hdr { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid var(--border); flex-wrap: wrap; gap: 8px; }
-    .card-title { font-size: 0.78rem; font-weight: 700; color: var(--black); }
-    .card-note { font-size: 0.7rem; color: var(--grey); margin-bottom: 12px; line-height: 1.5; }
-
-    /* STAGE BAR */
-    .stages { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
-    @media(max-width:700px){ .stages { grid-template-columns: 1fr 1fr; } }
-    .stage { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; text-align: center; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; }
-    .stage:hover { border-color: var(--gold); box-shadow: 0 3px 10px rgba(0,0,0,0.06); }
-    .stage-name { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--grey); margin-bottom: 8px; }
-    .stage-n { font-size: 1.6rem; font-weight: 800; color: var(--black); }
-    .stage-v { font-size: 0.72rem; font-weight: 600; color: var(--gold-dark); margin-top: 3px; }
-    .stage-w { font-size: 0.65rem; color: var(--grey); margin-top: 1px; }
+    .card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px;}
+    .card-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--border);flex-wrap:wrap;gap:8px;}
+    .card-title{font-size:.78rem;font-weight:700;}
+    .card-note{font-size:.7rem;color:var(--grey);margin-bottom:12px;line-height:1.5;}
 
     /* GRID */
-    .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    @media(max-width:750px){ .g2 { grid-template-columns: 1fr; } }
+    .g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+    @media(max-width:750px){.g2{grid-template-columns:1fr;}}
 
     /* TABLE */
-    table { width: 100%; border-collapse: collapse; }
-    th { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--grey); padding: 0 8px 10px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
-    td { padding: 10px 8px; border-bottom: 1px solid #F0F0F4; font-size: 0.78rem; vertical-align: middle; }
-    tr:last-child td { border-bottom: none; }
-    tr.row { cursor: pointer; }
-    tr.row:hover td { background: #F9F9FB; }
-    .td-title { font-size: 0.78rem; font-weight: 500; }
-    .td-sub { font-size: 0.68rem; color: var(--grey); margin-top: 2px; }
-    .td-val { font-size: 0.78rem; font-weight: 700; color: var(--gold-dark); white-space: nowrap; }
-    .td-muted { font-size: 0.72rem; color: var(--grey); }
-    .td-warn { color: var(--red); font-weight: 600; }
-    .alert td { background: #FFF9F9; }
+    table{width:100%;border-collapse:collapse;}
+    th{font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--grey);padding:0 8px 10px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;}
+    td{padding:10px 8px;border-bottom:1px solid #F0F0F4;font-size:.77rem;vertical-align:middle;}
+    tr:last-child td{border-bottom:none;}
+    tr.row{cursor:pointer;}
+    tr.row:hover td{background:#F9F9FB;}
+    .t1{font-size:.77rem;font-weight:500;}
+    .t2{font-size:.67rem;color:var(--grey);margin-top:2px;}
+    .tv{font-size:.77rem;font-weight:700;color:var(--gold-dark);white-space:nowrap;}
+    .tm{font-size:.7rem;color:var(--grey);}
+    .tw{color:var(--red);font-weight:600;}
+    .alert td{background:#FFF9F9;}
 
-    /* PILL BADGES */
-    .p { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.02em; white-space: nowrap; }
-    .p-green { background: var(--green-light); color: var(--green); }
-    .p-yellow { background: var(--yellow-light); color: var(--yellow); }
-    .p-red { background: var(--red-light); color: var(--red); }
-    .p-grey { background: var(--grey-light); color: var(--grey); }
-    .p-gold { background: var(--gold-pale); color: var(--gold-dark); }
-    .p-blue { background: var(--blue-light); color: var(--blue); }
+    /* PILL */
+    .p{display:inline-block;padding:2px 7px;border-radius:20px;font-size:.63rem;font-weight:700;white-space:nowrap;}
+    .p-green{background:var(--green-light);color:var(--green);}
+    .p-yellow{background:var(--yellow-light);color:var(--yellow);}
+    .p-red{background:var(--red-light);color:var(--red);}
+    .p-grey{background:var(--grey-light);color:var(--grey);}
+    .p-gold{background:var(--gold-pale);color:var(--gold-dark);}
+    .p-blue{background:var(--blue-light);color:var(--blue);}
+    .p-purple{background:#F0E6FF;color:#7C3AED;}
 
     /* BARS */
-    .bar-row { display: flex; align-items: center; gap: 10px; padding: 7px 0; cursor: pointer; border-radius: 6px; transition: background 0.1s; }
-    .bar-row:hover { background: var(--grey-light); margin: 0 -6px; padding: 7px 6px; }
-    .bar-lbl { font-size: 0.72rem; width: 185px; flex-shrink: 0; font-weight: 500; }
-    .bar-track { flex: 1; background: var(--border); border-radius: 3px; height: 5px; }
-    .bar-fill { height: 5px; border-radius: 3px; background: var(--gold); }
-    .bar-n { font-size: 0.68rem; color: var(--grey); width: 50px; text-align: right; flex-shrink: 0; }
+    .bar-row{display:flex;align-items:center;gap:10px;padding:7px 0;cursor:pointer;border-radius:6px;transition:background .1s;}
+    .bar-row:hover{background:var(--grey-light);margin:0 -6px;padding:7px 6px;}
+    .bar-lbl{font-size:.7rem;width:180px;flex-shrink:0;font-weight:500;}
+    .bar-track{flex:1;background:var(--border);border-radius:3px;height:5px;}
+    .bar-fill{height:5px;border-radius:3px;background:var(--gold);}
+    .bar-n{font-size:.67rem;color:var(--grey);width:50px;text-align:right;flex-shrink:0;}
 
     /* WIN ROWS */
-    .win-row { display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-bottom: 1px solid #F0F0F4; cursor: pointer; border-radius: 6px; transition: background 0.1s; }
-    .win-row:last-child { border-bottom: none; }
-    .win-row:hover { background: var(--grey-light); margin: 0 -6px; padding: 9px 6px; }
-    .win-name { font-size: 0.78rem; font-weight: 500; }
-    .win-stat { font-size: 0.72rem; font-weight: 700; color: var(--gold-dark); }
+    .wr{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #F0F0F4;cursor:pointer;border-radius:6px;transition:background .1s;}
+    .wr:last-child{border-bottom:none;}
+    .wr:hover{background:var(--grey-light);margin:0 -6px;padding:9px 6px;}
+    .wr-n{font-size:.77rem;font-weight:500;}
+    .wr-s{font-size:.7rem;font-weight:700;color:var(--gold-dark);}
+
+    /* BD AI SPECIFIC */
+    .opp-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin-bottom:14px;transition:box-shadow .15s,border-color .15s;cursor:pointer;}
+    .opp-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08);border-color:#C4C4CC;}
+    .opp-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px;}
+    .opp-title{font-size:.85rem;font-weight:700;line-height:1.3;flex:1;}
+    .opp-score{background:var(--black);color:var(--gold);font-size:.7rem;font-weight:800;padding:4px 10px;border-radius:6px;white-space:nowrap;}
+    .opp-meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+    .opp-agency{font-size:.72rem;color:var(--grey);}
+    .opp-why{font-size:.75rem;color:var(--black);line-height:1.6;background:var(--grey-light);padding:10px 12px;border-radius:7px;margin-bottom:10px;}
+    .opp-actions{display:flex;gap:8px;}
+    .btn-approve{background:var(--green);color:white;border:none;padding:7px 16px;border-radius:6px;font-size:.75rem;font-weight:700;cursor:pointer;font-family:inherit;transition:background .15s;}
+    .btn-approve:hover{background:#15803D;}
+    .btn-approve:disabled{background:#aaa;cursor:default;}
+    .btn-pass{background:none;border:1px solid var(--border);color:var(--grey);padding:7px 16px;border-radius:6px;font-size:.75rem;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s;}
+    .btn-pass:hover{border-color:var(--red);color:var(--red);}
+    .btn-pass:disabled{opacity:.5;cursor:default;}
+    .btn-detail{background:none;border:1px solid var(--border);color:var(--blue);padding:7px 14px;border-radius:6px;font-size:.75rem;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s;}
+    .btn-detail:hover{border-color:var(--blue);background:var(--blue-light);}
+    .opp-status-done{font-size:.75rem;font-weight:600;padding:7px 14px;border-radius:6px;}
+    .status-approved{background:var(--green-light);color:var(--green);}
+    .status-passed{background:var(--red-light);color:var(--red);}
 
     /* MODAL */
-    .overlay { display: none; position: fixed; inset: 0; background: rgba(26,27,31,0.5); z-index: 1000; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; backdrop-filter: blur(3px); }
-    .overlay.open { display: flex; }
-    .modal { background: var(--white); border-radius: 12px; width: 100%; max-width: 720px; padding: 26px 28px; position: relative; box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
-    .modal-x { position: absolute; top: 14px; right: 16px; background: var(--grey-light); border: none; border-radius: 50%; width: 28px; height: 28px; cursor: pointer; font-size: 1rem; color: var(--grey); display: flex; align-items: center; justify-content: center; }
-    .modal-x:hover { background: var(--border); color: var(--black); }
-    .m-eye { font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: var(--grey); margin-bottom: 4px; }
-    .m-title { font-size: 1rem; font-weight: 800; color: var(--black); margin-bottom: 4px; line-height: 1.3; }
-    .m-sub { font-size: 0.76rem; color: var(--grey); margin-bottom: 18px; }
-    .m-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
-    @media(max-width:500px){ .m-grid { grid-template-columns: 1fr; } }
-    .m-field { background: var(--grey-light); border-radius: 8px; padding: 10px 12px; }
-    .m-lbl { font-size: 0.58rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--grey); margin-bottom: 3px; }
-    .m-val { font-size: 0.85rem; font-weight: 600; color: var(--black); }
-    .m-val.gold { color: var(--gold-dark); }
-    .m-val.green { color: var(--green); }
-    .m-val.red { color: var(--red); }
-    .m-src { font-size: 0.65rem; color: var(--grey); border-top: 1px solid var(--border); padding-top: 12px; margin-top: 12px; }
-    .raw-btn { background: none; border: 1px solid var(--border); color: var(--grey); font-size: 0.68rem; padding: 4px 10px; border-radius: 5px; cursor: pointer; margin-top: 10px; font-family: inherit; }
-    .raw-btn:hover { border-color: var(--gold); color: var(--gold-dark); }
-    .raw-pre { display: none; background: var(--grey-light); border-radius: 6px; padding: 10px 12px; font-family: monospace; font-size: 0.65rem; color: var(--grey); max-height: 200px; overflow-y: auto; margin-top: 8px; white-space: pre-wrap; word-break: break-all; }
+    .overlay{display:none;position:fixed;inset:0;background:rgba(26,27,31,.5);z-index:1000;align-items:flex-start;justify-content:center;padding:40px 16px;overflow-y:auto;backdrop-filter:blur(3px);}
+    .overlay.open{display:flex;}
+    .modal{background:var(--white);border-radius:12px;width:100%;max-width:720px;padding:26px 28px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.15);}
+    .modal-x{position:absolute;top:14px;right:16px;background:var(--grey-light);border:none;border-radius:50%;width:28px;height:28px;cursor:pointer;font-size:1rem;color:var(--grey);display:flex;align-items:center;justify-content:center;}
+    .modal-x:hover{background:var(--border);color:var(--black);}
+    .m-eye{font-size:.58rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--grey);margin-bottom:4px;}
+    .m-title{font-size:1rem;font-weight:800;margin-bottom:4px;line-height:1.3;}
+    .m-sub{font-size:.76rem;color:var(--grey);margin-bottom:18px;}
+    .m-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;}
+    @media(max-width:500px){.m-grid{grid-template-columns:1fr;}}
+    .mf{background:var(--grey-light);border-radius:8px;padding:10px 12px;}
+    .mf-l{font-size:.56rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:3px;}
+    .mf-v{font-size:.84rem;font-weight:600;}
+    .mf-v.gold{color:var(--gold-dark);}
+    .mf-v.green{color:var(--green);}
+    .mf-v.red{color:var(--red);}
+    .m-src{font-size:.63rem;color:var(--grey);border-top:1px solid var(--border);padding-top:12px;margin-top:12px;}
+    .raw-btn{background:none;border:1px solid var(--border);color:var(--grey);font-size:.67rem;padding:4px 10px;border-radius:5px;cursor:pointer;margin-top:10px;font-family:inherit;}
+    .raw-btn:hover{border-color:var(--gold);color:var(--gold-dark);}
+    .raw-pre{display:none;background:var(--grey-light);border-radius:6px;padding:10px 12px;font-family:monospace;font-size:.63rem;color:var(--grey);max-height:200px;overflow-y:auto;margin-top:8px;white-space:pre-wrap;word-break:break-all;}
 
-    .empty { color: var(--grey); font-size: 0.8rem; padding: 20px 0; text-align: center; }
-    footer { text-align: center; padding: 20px 28px 32px; font-size: 0.65rem; color: var(--grey); border-top: 1px solid var(--border); background: var(--white); margin-top: 12px; }
+    .empty{color:var(--grey);font-size:.8rem;padding:20px 0;text-align:center;}
+    .asana-link{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:600;color:var(--blue);text-decoration:none;background:var(--blue-light);padding:6px 12px;border-radius:6px;}
+    .asana-link:hover{background:#d1eaf8;}
+    footer{text-align:center;padding:20px 28px 32px;font-size:.63rem;color:var(--grey);border-top:1px solid var(--border);background:var(--white);margin-top:12px;}
   </style>
 </head>
 <body>
@@ -178,150 +203,193 @@
 
 <!-- HEADER -->
 <header>
-  <div class="header-brand">BLN24 · REVENUE</div>
-  <div class="header-right">
-    <span class="header-ts" id="ts">—</span>
-    <button class="btn-refresh" onclick="loadAll()">↻ Refresh</button>
+  <div class="brand">BLN24 · REVENUE</div>
+  <div class="hdr-right">
+    <span class="hdr-ts" id="ts">—</span>
+    <button class="btn-ref" onclick="loadAll()">↻ Refresh</button>
   </div>
 </header>
 
+<!-- TABS -->
+<div class="tab-bar">
+  <div class="tab active" onclick="switchTab('pipeline',this)">📊 Pipeline</div>
+  <div class="tab" onclick="switchTab('bdai',this)">🤖 BD AI</div>
+  <div class="tab" onclick="switchTab('winloss',this)">📈 Win / Loss</div>
+</div>
+
+<!-- TAB: PIPELINE -->
+<div id="tab-pipeline" class="tab-pane active">
 <div class="page">
 
-  <!-- KPIs -->
-  <div class="section-label" style="margin-top:0">
-    <div class="section-title">Pipeline Snapshot</div>
-    <span class="badge badge-live">Pipedrive · Live</span>
+  <div class="sl" style="margin-top:0">
+    <div class="st">Pipeline Snapshot</div>
+    <span class="badge b-live">Pipedrive · Live</span>
   </div>
-  <div class="kpi-strip">
+  <div class="kpis" style="margin-bottom:16px">
     <div class="kpi gold" onclick="showAll()">
-      <div class="kpi-label">Open Pipeline</div>
-      <div class="kpi-value" id="k-pipe">—</div>
+      <div class="kpi-lbl">Open Pipeline</div>
+      <div class="kpi-v" id="k-pipe">—</div>
       <div class="kpi-sub" id="k-deals">— deals</div>
       <div class="kpi-hint">↗ View all deals</div>
     </div>
     <div class="kpi blue" onclick="showWeighted()">
-      <div class="kpi-label">Weighted Value</div>
-      <div class="kpi-value" id="k-wt">—</div>
-      <div class="kpi-sub">Probability-adjusted</div>
+      <div class="kpi-lbl">Weighted Value</div>
+      <div class="kpi-v" id="k-wt">—</div>
+      <div class="kpi-sub">Prob-adjusted</div>
       <div class="kpi-hint">↗ View breakdown</div>
     </div>
     <div class="kpi green" onclick="showHighProb()">
-      <div class="kpi-label">High Prob ≥50%</div>
-      <div class="kpi-value" id="k-hp">—</div>
+      <div class="kpi-lbl">High Prob ≥50%</div>
+      <div class="kpi-v" id="k-hp">—</div>
       <div class="kpi-sub" id="k-hp-v">— in play</div>
       <div class="kpi-hint">↗ View deals</div>
     </div>
     <div class="kpi red" onclick="showNoAct()">
-      <div class="kpi-label">No Next Activity</div>
-      <div class="kpi-value" id="k-na">—</div>
+      <div class="kpi-lbl">No Next Activity</div>
+      <div class="kpi-v" id="k-na">—</div>
       <div class="kpi-sub">Deals going cold</div>
       <div class="kpi-hint">↗ Action required</div>
     </div>
   </div>
 
-  <!-- PIPELINE BY STAGE -->
-  <div class="section-label">
-    <div class="section-title">Pipeline by Stage</div>
-    <span class="badge badge-live">Pipedrive · Live</span>
+  <div class="sl">
+    <div class="st">By Stage</div>
+    <span class="badge b-live">Pipedrive · Live</span>
   </div>
-  <div class="stages" id="stages"></div>
+  <div class="stages" style="margin-bottom:16px" id="stages"></div>
 
-  <!-- TOP DEALS + NO ACTIVITY -->
-  <div class="section-label">
-    <div class="section-title">Deal Tracker</div>
-    <span class="badge badge-live">Pipedrive · Live</span>
+  <div class="sl">
+    <div class="st">Deal Tracker</div>
+    <span class="badge b-live">Pipedrive · Live</span>
   </div>
   <div class="g2" style="margin-bottom:16px">
     <div class="card">
-      <div class="card-hdr">
-        <span class="card-title">Top Deals by Value</span>
-        <span class="badge badge-live">Live</span>
-      </div>
-      <table id="t-top">
-        <thead><tr><th>Opportunity</th><th>Value</th><th>Prob</th><th>Next Activity</th></tr></thead>
-        <tbody><tr><td colspan="4" class="empty">Loading...</td></tr></tbody>
-      </table>
+      <div class="card-hdr"><span class="card-title">Top Deals by Value</span><span class="badge b-live">Live</span></div>
+      <table id="t-top"><thead><tr><th>Opportunity</th><th>Value</th><th>Prob</th><th>Next Activity</th></tr></thead><tbody><tr><td colspan="4" class="empty">Loading...</td></tr></tbody></table>
     </div>
     <div class="card">
-      <div class="card-hdr">
-        <span class="card-title">⚠ No Next Activity</span>
-        <span class="badge badge-live">Live</span>
-      </div>
-      <table id="t-na">
-        <thead><tr><th>Opportunity</th><th>Value</th><th>Last Activity</th></tr></thead>
-        <tbody><tr><td colspan="3" class="empty">Loading...</td></tr></tbody>
-      </table>
+      <div class="card-hdr"><span class="card-title">⚠ No Next Activity</span><span class="badge b-live">Live</span></div>
+      <table id="t-na"><thead><tr><th>Opportunity</th><th>Value</th><th>Last Activity</th></tr></thead><tbody><tr><td colspan="3" class="empty">Loading...</td></tr></tbody></table>
     </div>
   </div>
 
-  <!-- HIGH PROB -->
   <div class="card" style="margin-bottom:16px">
-    <div class="card-hdr">
-      <span class="card-title">High Probability Deals (≥ 50%)</span>
-      <span class="badge badge-live">Pipedrive · Live</span>
-    </div>
-    <table id="t-hp">
-      <thead><tr><th>Opportunity</th><th>Agency</th><th>Value</th><th>Prob</th><th>Owner</th><th>Next Activity</th></tr></thead>
-      <tbody><tr><td colspan="6" class="empty">Loading...</td></tr></tbody>
-    </table>
+    <div class="card-hdr"><span class="card-title">High Probability Deals (≥ 50%)</span><span class="badge b-live">Pipedrive · Live</span></div>
+    <table id="t-hp"><thead><tr><th>Opportunity</th><th>Agency</th><th>Value</th><th>Prob</th><th>Owner</th><th>Next Activity</th></tr></thead><tbody><tr><td colspan="6" class="empty">Loading...</td></tr></tbody></table>
   </div>
 
-  <!-- UNTRACKED OPPS -->
-  <div class="section-label">
-    <div class="section-title">Untracked Federal Opportunities</div>
-    <span class="badge badge-hg">HigherGov · Scored vs BLN24 Intel</span>
-  </div>
-  <div class="card" style="margin-bottom:16px">
-    <div class="card-hdr">
-      <span class="card-title">Rex's Top Picks — Not in Your Pipeline</span>
-      <span id="opp-pill" class="badge badge-hg">Loading...</span>
-    </div>
-    <div class="card-note" id="opp-note">Federal opportunities scored against BLN24 actual proposals, past performance, and capability. Tap any row for full assessment.</div>
-    <table id="t-opp">
-      <thead><tr><th>Opportunity</th><th>Agency</th><th>Set-Aside</th><th>Win Prob</th><th>Est. Value</th><th>Due</th></tr></thead>
-      <tbody><tr><td colspan="6" class="empty">Loading...</td></tr></tbody>
-    </table>
+  <div class="card" style="margin-bottom:0">
+    <div class="card-hdr"><span class="card-title">Recently Updated (2026)</span><span class="badge b-live">Pipedrive · Live</span></div>
+    <table id="t-rec"><thead><tr><th>Updated</th><th>Opportunity</th><th>Agency</th><th>Value</th><th>Owner</th></tr></thead><tbody><tr><td colspan="5" class="empty">Loading...</td></tr></tbody></table>
   </div>
 
-  <!-- WIN/LOSS + AGENCIES -->
-  <div class="section-label">
-    <div class="section-title">Win / Loss Intelligence</div>
-    <span class="badge badge-hist">Historical · Apr 2026 · Pipedrive</span>
+</div>
+</div>
+
+<!-- TAB: BD AI -->
+<div id="tab-bdai" class="tab-pane">
+<div class="page">
+
+  <div class="sl" style="margin-top:0">
+    <div class="st">BD AI — Rex-Led Opportunity Intelligence</div>
+    <span class="badge b-ai">◆ HigherGov + SharePoint Intel</span>
   </div>
+
+  <div style="background:var(--black);border-radius:10px;padding:16px 20px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <div>
+      <div style="color:var(--gold);font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px">How This Works</div>
+      <div style="color:rgba(255,255,255,.7);font-size:.78rem;line-height:1.6;max-width:600px">Rex finds federal opportunities, scores them against BLN24's real proposals and past performance, and surfaces the best ones here. <strong style="color:white">Approve</strong> to move into active capture — Rex will create Asana tasks and brief the team. <strong style="color:white">Pass</strong> to decline.</div>
+    </div>
+    <a href="https://app.asana.com/0/1214145572732999" target="_blank" class="asana-link">View in Asana →</a>
+  </div>
+
+  <div class="sl">
+    <div class="st" id="bdai-count">Loading opportunities...</div>
+    <span class="badge b-hg">HigherGov · Scored vs BLN24 Intel</span>
+  </div>
+
+  <div id="opp-cards"><div class="empty">Loading...</div></div>
+
+</div>
+</div>
+
+<!-- TAB: WIN/LOSS -->
+<div id="tab-winloss" class="tab-pane">
+<div class="page">
+
+  <div class="sl" style="margin-top:0">
+    <div class="st">Win / Loss Analysis</div>
+    <span class="badge b-hist">Historical · 75 deals · Pipedrive</span>
+  </div>
+
+  <div class="kpis" style="margin-bottom:16px">
+    <div class="kpi gold" onclick="">
+      <div class="kpi-lbl">Total Won</div>
+      <div class="kpi-v" style="color:var(--green)">32</div>
+      <div class="kpi-sub">$89.9M TCV</div>
+    </div>
+    <div class="kpi red" onclick="">
+      <div class="kpi-lbl">Total Lost</div>
+      <div class="kpi-v">43</div>
+      <div class="kpi-sub">$224M TCV</div>
+    </div>
+    <div class="kpi blue" onclick="">
+      <div class="kpi-lbl">Win Rate</div>
+      <div class="kpi-v" style="color:var(--blue)">43%</div>
+      <div class="kpi-sub">By deal count</div>
+    </div>
+    <div class="kpi red" onclick="showNoActWL()">
+      <div class="kpi-lbl">Biggest Loss Category</div>
+      <div class="kpi-v" style="font-size:1rem;color:var(--red)">No Relationship</div>
+      <div class="kpi-sub">$56M "Not Down Selected"</div>
+      <div class="kpi-hint">↗ View details</div>
+    </div>
+  </div>
+
   <div class="g2" style="margin-bottom:16px">
     <div class="card">
-      <div class="card-hdr">
-        <span class="card-title">Loss Reasons</span>
-        <span class="badge badge-hist">43 closed-lost deals</span>
-      </div>
-      <div class="card-note">Logged by Eric Ma in Pipedrive. Tap any bar for deals in that category.</div>
+      <div class="card-hdr"><span class="card-title">Loss Reasons</span><span class="badge b-hist">43 closed-lost deals · Pipedrive</span></div>
+      <div class="card-note">Tap any bar to see which deals are in that category.</div>
       <div id="loss-bars"></div>
     </div>
     <div class="card">
-      <div class="card-hdr">
-        <span class="card-title">Top Win Agencies</span>
-        <span class="badge badge-hist">32 won deals</span>
-      </div>
-      <div class="card-note">Where BLN24 wins most. Tap an agency for their contracts.</div>
+      <div class="card-hdr"><span class="card-title">Top Win Agencies</span><span class="badge b-hist">32 won deals · Pipedrive</span></div>
+      <div class="card-note">Tap an agency to see their contracts.</div>
       <div id="win-agencies"></div>
     </div>
   </div>
 
-  <!-- RECENTLY UPDATED -->
-  <div class="card" style="margin-bottom:16px">
-    <div class="card-hdr">
-      <span class="card-title">Recently Updated Deals (2026)</span>
-      <span class="badge badge-live">Pipedrive · Live</span>
+  <div class="card" style="background:var(--gold-pale);border-color:#E8C07A">
+    <div class="card-hdr"><span class="card-title">📋 Key Findings from SharePoint Proposal Analysis</span><span class="badge b-hist">23 proposals read · Apr 2026</span></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:.78rem;line-height:1.7">
+      <div>
+        <div style="font-weight:700;margin-bottom:6px;color:var(--green)">✅ Why BLN24 Wins</div>
+        <ul style="padding-left:16px;color:var(--black)">
+          <li>8(a) set-aside — direct sole-source advantage</li>
+          <li>Repeat clients: IRS, Census, CMS, NOAA, HHS</li>
+          <li>Studio24 integrated CX + Tech pitch</li>
+          <li>Accenture + Fors Marsh JV teaming halo</li>
+          <li>Multicultural/DEI angle for health equity work</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-weight:700;margin-bottom:6px;color:var(--red)">❌ Why BLN24 Loses</div>
+        <ul style="padding-left:16px;color:var(--black)">
+          <li>Cold submissions with no relationship: $56M lost</li>
+          <li>Price: 14 losses — value story not landing</li>
+          <li>Incumbent entrenchment: DOL, USPTO, ACL</li>
+          <li>Non-compliance: 3 disqualifications (process issue)</li>
+          <li>8(a) playbook underutilized as BD weapon</li>
+        </ul>
+      </div>
     </div>
-    <table id="t-rec">
-      <thead><tr><th>Updated</th><th>Opportunity</th><th>Agency</th><th>Value</th><th>Owner</th></tr></thead>
-      <tbody><tr><td colspan="5" class="empty">Loading...</td></tr></tbody>
-    </table>
+    <div style="margin-top:12px;font-size:.72rem;color:var(--gold-dark);font-weight:600">
+      Source: 23 SharePoint proposals read by Rex (Apr 2026) · Pipedrive 75-deal win/loss history
+    </div>
   </div>
 
 </div>
-
-<footer>BLN24 Revenue Dashboard · Pipedrive (live) + HigherGov (hourly) + Historical Win/Loss Analysis · Rex 📈</footer>
+</div>
 
 <!-- MODAL -->
 <div class="overlay" id="overlay" onclick="if(event.target===this)closeModal()">
@@ -335,66 +403,50 @@
   </div>
 </div>
 
+<footer>BLN24 Revenue Dashboard · Pipeline: Pipedrive (live) · BD AI: HigherGov (hourly) + SharePoint Intel · Win/Loss: Historical Analysis · Rex 📈</footer>
+
 <script>
 // AUTH
-function doAuth() {
-  if (document.getElementById('pwd').value === '9025') {
+function doAuth(){
+  if(document.getElementById('pwd').value==='9025'){
     sessionStorage.setItem('bln24_auth','9025');
     document.getElementById('auth').classList.add('hidden');
-    loadAll(); loadOpps();
-  } else {
-    document.getElementById('auth-err').textContent = 'Incorrect password.';
-    document.getElementById('pwd').value = '';
+    loadAll();loadOpps();renderStatic();
+  }else{
+    document.getElementById('auth-err').textContent='Incorrect password.';
+    document.getElementById('pwd').value='';
   }
 }
-window.addEventListener('DOMContentLoaded', function() {
-  if (sessionStorage.getItem('bln24_auth') === '9025') {
+window.addEventListener('DOMContentLoaded',function(){
+  if(sessionStorage.getItem('bln24_auth')==='9025'){
     document.getElementById('auth').classList.add('hidden');
-    loadAll(); loadOpps();
+    loadAll();loadOpps();renderStatic();
   }
 });
 
-// UTILS
-const PD_TOKEN = '366cfe729527d0007f68fa582b2f8c450295bd72';
-const PD_BASE = 'https://bln24.pipedrive.com/api/v1';
-const STAGES = {38:'Identified',39:'Qualified',42:'Capture/Pre-Proposal',138:'Proposal (RFP/RFQ)',195:'Post Proposal'};
-const STAGE_ORDER = [38,39,42,138,195];
-let DATA = [];
+// TABS
+function switchTab(name,el){
+  document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  el.classList.add('active');
+}
 
-function fmt(n) {
-  if (!n) return '$0';
-  if (n>=1e9) return '$'+(n/1e9).toFixed(2)+'B';
-  if (n>=1e6) return '$'+(n/1e6).toFixed(1)+'M';
-  if (n>=1e3) return '$'+Math.round(n/1000)+'K';
-  return '$'+Math.round(n).toLocaleString();
-}
-function fmtVal(l,h) {
-  function fv(n){if(!n)return null;n=parseFloat(n);return n>=1e6?'$'+(n/1e6).toFixed(1)+'M':n>=1e3?'$'+Math.round(n/1000)+'K':null;}
-  var lv=fv(l),hv=fv(h);
-  return lv&&hv?lv+' – '+hv:lv||hv||'—';
-}
+// UTILS
+const PD='366cfe729527d0007f68fa582b2f8c450295bd72';
+const PDB='https://bln24.pipedrive.com/api/v1';
+const SN={38:'Identified',39:'Qualified',42:'Capture/Pre-Proposal',138:'Proposal (RFP/RFQ)',195:'Post Proposal'};
+const SO=[38,39,42,138,195];
+let DATA=[];
+const ASANA_PROJECT='https://app.asana.com/0/1214145572732999';
+const ASANA_SECTION_APPROVED='https://app.asana.com/0/1214145572732999/list';
+
+function fmt(n){if(!n)return'$0';if(n>=1e9)return'$'+(n/1e9).toFixed(2)+'B';if(n>=1e6)return'$'+(n/1e6).toFixed(1)+'M';if(n>=1e3)return'$'+Math.round(n/1000)+'K';return'$'+Math.round(n).toLocaleString();}
+function fmtV(l,h){function fv(n){if(!n)return null;n=parseFloat(n);return n>=1e6?'$'+(n/1e6).toFixed(1)+'M':n>=1e3?'$'+Math.round(n/1000)+'K':null;}var lv=fv(l),hv=fv(h);return lv&&hv?lv+' – '+hv:lv||hv||'—';}
 function age(d){return d?Math.floor((Date.now()-new Date(d))/86400000):null;}
-function probPill(p) {
-  if(p>=70) return '<span class="p p-green">'+p+'%</span>';
-  if(p>=40) return '<span class="p p-yellow">'+p+'%</span>';
-  if(p>0)   return '<span class="p p-red">'+p+'%</span>';
-  return '<span class="p p-grey">0%</span>';
-}
-function wpPill(wp) {
-  if(!wp) return '<span class="p p-grey">?</span>';
-  if(wp.indexOf('High')>=0) return '<span class="p p-green">High</span>';
-  if(wp.indexOf('Medium')>=0) return '<span class="p p-yellow">Med</span>';
-  return '<span class="p p-red">Low</span>';
-}
-function saPill(sa) {
-  if(!sa) return '<span class="p p-grey">Open</span>';
-  var s=sa.toLowerCase();
-  if(s.includes('8a')||s.includes('8(a)')) return '<span class="p p-gold">8(a)</span>';
-  if(s.includes('sba')||s.includes('small business')||s.includes('total small')) return '<span class="p p-blue">SB</span>';
-  if(s.includes('wosb')) return '<span class="p p-blue">WOSB</span>';
-  if(s.includes('sdvosb')) return '<span class="p p-blue">SDVO</span>';
-  return '<span class="p p-grey">'+sa.substring(0,8)+'</span>';
-}
+function pp(p){if(p>=70)return'<span class="p p-green">'+p+'%</span>';if(p>=40)return'<span class="p p-yellow">'+p+'%</span>';if(p>0)return'<span class="p p-red">'+p+'%</span>';return'<span class="p p-grey">0%</span>';}
+function wp(w){if(!w)return'<span class="p p-grey">?</span>';if(w.indexOf('High')>=0)return'<span class="p p-green">High</span>';if(w.indexOf('Medium')>=0)return'<span class="p p-yellow">Med</span>';return'<span class="p p-red">Low</span>';}
+function sa(s){if(!s)return'<span class="p p-grey">Open</span>';var l=s.toLowerCase();if(l.includes('8a')||l.includes('8(a)'))return'<span class="p p-gold">8(a)</span>';if(l.includes('sba')||l.includes('small business')||l.includes('total small'))return'<span class="p p-blue">SB</span>';if(l.includes('wosb'))return'<span class="p p-blue">WOSB</span>';return'<span class="p p-grey">'+s.substring(0,8)+'</span>';}
 
 // MODAL
 function openModal(eye,title,sub,body,src){
@@ -408,128 +460,202 @@ function openModal(eye,title,sub,body,src){
 function closeModal(){document.getElementById('overlay').classList.remove('open');}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
 
-// DEAL DETAIL
-function dealDetail(d) {
-  var days=age(d.last_activity_date);
+function dealDetail(d){
+  var a=age(d.last_activity_date);
   return '<div class="m-grid">'+
-    '<div class="m-field"><div class="m-lbl">Agency</div><div class="m-val">'+(d.org_name||'—')+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Stage</div><div class="m-val">'+(STAGES[d.stage_id]||'?')+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Total Value</div><div class="m-val gold">'+fmt(d.value)+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Weighted Value</div><div class="m-val">'+fmt(d.weighted_value)+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Probability</div><div class="m-val '+((d.probability||0)>=50?'green':'red')+'">'+(d.probability||0)+'%</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Owner</div><div class="m-val">'+(d.owner_name||'—')+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Last Activity</div><div class="m-val '+(days>180||days===null?'red':'')+'">'+(d.last_activity_date||'Never')+(days!==null?' ('+days+'d)':'')+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Next Activity</div><div class="m-val '+(!d.next_activity_date?'red':'')+'">'+(d.next_activity_date||'⚠ None scheduled')+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Expected Close</div><div class="m-val">'+(d.expected_close_date||'—')+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Deal ID</div><div class="m-val">#'+d.id+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Agency</div><div class="mf-v">'+(d.org_name||'—')+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Stage</div><div class="mf-v">'+(SN[d.stage_id]||'?')+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Total Value</div><div class="mf-v gold">'+fmt(d.value)+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Weighted</div><div class="mf-v">'+fmt(d.weighted_value)+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Probability</div><div class="mf-v '+((d.probability||0)>=50?'green':'red')+'">'+(d.probability||0)+'%</div></div>'+
+    '<div class="mf"><div class="mf-l">Owner</div><div class="mf-v">'+(d.owner_name||'—')+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Last Activity</div><div class="mf-v '+(a>180||a===null?'red':'')+'">'+(d.last_activity_date||'Never')+(a!==null?' ('+a+'d)':'')+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Next Activity</div><div class="mf-v '+(!d.next_activity_date?'red':'')+'">'+(d.next_activity_date||'⚠ None')+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Expected Close</div><div class="mf-v">'+(d.expected_close_date||'—')+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Deal #</div><div class="mf-v">#'+d.id+'</div></div>'+
     '</div>'+
-    '<button class="raw-btn" onclick="var e=document.getElementById(\'r'+d.id+'\');e.style.display=e.style.display===\'block\'?\'none\':\'block\';this.textContent=e.style.display===\'block\'?\'Hide raw\':\'Show raw data\'">Show raw data</button>'+
+    '<button class="raw-btn" onclick="var e=document.getElementById(\'r'+d.id+'\');e.style.display=e.style.display===\'block\'?\'none\':\'block\';this.textContent=e.style.display===\'block\'?\'Hide raw\':\'Show raw\'">Show raw</button>'+
     '<pre class="raw-pre" id="r'+d.id+'">'+JSON.stringify(d,null,2)+'</pre>';
 }
-function showDeal(id){
-  var d=DATA.find(x=>x.id===id);
-  if(!d)return;
-  openModal('Deal · Pipedrive CRM',d.title,d.org_name,dealDetail(d),'Pipedrive CRM · Deal #'+d.id+' · pulled at '+new Date().toLocaleTimeString());
-}
+function showDeal(id){var d=DATA.find(x=>x.id===id);if(!d)return;openModal('Deal · Pipedrive',d.title,d.org_name,dealDetail(d),'Pipedrive CRM · Deal #'+d.id+' · '+new Date().toLocaleTimeString());}
 
-// TABLE BUILDER
-function tbl(deals,cols,emptyMsg){
-  if(!deals.length)return'<div class="empty">'+(emptyMsg||'No data.')+'</div>';
+function tbl(deals,cols){
+  if(!deals.length)return'<div class="empty">No deals.</div>';
   return'<table><thead><tr>'+cols.map(c=>'<th>'+c.h+'</th>').join('')+'</tr></thead><tbody>'+
-    deals.map(d=>'<tr class="row" onclick="showDeal('+d.id+')">'+cols.map(c=>'<td>'+c.r(d)+'</td>').join('')+'</tr>').join('')+
-    '</tbody></table>';
+    deals.map(d=>'<tr class="row" onclick="showDeal('+d.id+')">'+cols.map(c=>'<td>'+c.r(d)+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
 }
 
-// MODAL VIEWS
 function showAll(){
   var s=[...DATA].sort((a,b)=>(b.value||0)-(a.value||0));
-  openModal('All Open Deals','Pipeline Overview',s.length+' deals · '+fmt(s.reduce((t,d)=>t+(d.value||0),0))+' total · Tap any row for detail',
-    tbl(s,[
-      {h:'Opportunity',r:d=>'<div class="td-title">'+(d.title||'').substring(0,46)+(d.title?.length>46?'…':'')+'</div><div class="td-sub">'+(d.org_name||'')+'</div>'},
-      {h:'Value',r:d=>'<span class="td-val">'+fmt(d.value)+'</span>'},
-      {h:'Stage',r:d=>'<span class="td-muted">'+(STAGES[d.stage_id]||'?')+'</span>'},
-      {h:'Prob',r:d=>probPill(d.probability||0)},
-      {h:'Owner',r:d=>'<span class="td-muted">'+(d.owner_name||'?')+'</span>'},
-    ]),'Pipedrive CRM · '+new Date().toLocaleTimeString());
+  openModal('All Open Deals','Pipeline Overview',s.length+' deals · '+fmt(s.reduce((t,d)=>t+(d.value||0),0)),
+    tbl(s,[{h:'Opportunity',r:d=>'<div class="t1">'+(d.title||'').substring(0,44)+(d.title?.length>44?'…':'')+'</div><div class="t2">'+(d.org_name||'')+'</div>'},{h:'Value',r:d=>'<span class="tv">'+fmt(d.value)+'</span>'},{h:'Stage',r:d=>'<span class="tm">'+(SN[d.stage_id]||'?')+'</span>'},{h:'Prob',r:d=>pp(d.probability||0)},{h:'Owner',r:d=>'<span class="tm">'+(d.owner_name||'?')+'</span>'}]),
+    'Pipedrive CRM · '+new Date().toLocaleTimeString());
 }
 function showWeighted(){
   var s=[...DATA].filter(d=>d.weighted_value>0).sort((a,b)=>(b.weighted_value||0)-(a.weighted_value||0));
-  openModal('Weighted Pipeline','TCV × Win Probability',''+fmt(s.reduce((t,d)=>t+(d.weighted_value||0),0))+' weighted total',
-    tbl(s,[
-      {h:'Opportunity',r:d=>'<div class="td-title">'+(d.title||'').substring(0,46)+(d.title?.length>46?'…':'')+'</div><div class="td-sub">'+(d.org_name||'')+'</div>'},
-      {h:'TCV',r:d=>'<span class="td-muted">'+fmt(d.value)+'</span>'},
-      {h:'Weighted',r:d=>'<span class="td-val">'+fmt(d.weighted_value)+'</span>'},
-      {h:'Prob',r:d=>probPill(d.probability||0)},
-    ]),'Pipedrive CRM · '+new Date().toLocaleTimeString());
+  openModal('Weighted Pipeline','TCV × Win%',fmt(s.reduce((t,d)=>t+(d.weighted_value||0),0))+' weighted',
+    tbl(s,[{h:'Opportunity',r:d=>'<div class="t1">'+(d.title||'').substring(0,44)+'..'+'</div><div class="t2">'+(d.org_name||'')+'</div>'},{h:'TCV',r:d=>'<span class="tm">'+fmt(d.value)+'</span>'},{h:'Weighted',r:d=>'<span class="tv">'+fmt(d.weighted_value)+'</span>'},{h:'Prob',r:d=>pp(d.probability||0)}]),
+    'Pipedrive CRM · '+new Date().toLocaleTimeString());
 }
 function showHighProb(){
   var s=[...DATA].filter(d=>(d.probability||0)>=50).sort((a,b)=>(b.probability||0)-(a.probability||0));
-  openModal('High Probability Deals','≥ 50% Win Probability',s.length+' deals · '+fmt(s.reduce((t,d)=>t+(d.value||0),0))+' total TCV',
-    tbl(s,[
-      {h:'Opportunity',r:d=>'<div class="td-title">'+(d.title||'').substring(0,46)+(d.title?.length>46?'…':'')+'</div><div class="td-sub">'+(d.org_name||'')+'</div>'},
-      {h:'Value',r:d=>'<span class="td-val">'+fmt(d.value)+'</span>'},
-      {h:'Prob',r:d=>probPill(d.probability||0)},
-      {h:'Next Activity',r:d=>d.next_activity_date||'<span class="td-warn">None</span>'},
-    ]),'Pipedrive CRM · '+new Date().toLocaleTimeString());
+  openModal('High Probability Deals','≥ 50% Win Probability',s.length+' deals',
+    tbl(s,[{h:'Opportunity',r:d=>'<div class="t1">'+(d.title||'').substring(0,44)+(d.title?.length>44?'…':'')+'</div><div class="t2">'+(d.org_name||'')+'</div>'},{h:'Value',r:d=>'<span class="tv">'+fmt(d.value)+'</span>'},{h:'Prob',r:d=>pp(d.probability||0)},{h:'Next',r:d=>d.next_activity_date||'<span class="tw">None</span>'}]),
+    'Pipedrive CRM · '+new Date().toLocaleTimeString());
 }
 function showNoAct(){
   var s=[...DATA].filter(d=>!d.next_activity_date).sort((a,b)=>(b.value||0)-(a.value||0));
-  openModal('No Next Activity',s.length+' Deals Going Cold',s.length+' of '+DATA.length+' open deals have nothing scheduled',
-    tbl(s,[
-      {h:'Opportunity',r:d=>'<div class="td-title">'+(d.title||'').substring(0,46)+(d.title?.length>46?'…':'')+'</div><div class="td-sub">'+(d.org_name||'')+'</div>'},
-      {h:'Value',r:d=>'<span class="td-val">'+fmt(d.value)+'</span>'},
-      {h:'Prob',r:d=>probPill(d.probability||0)},
-      {h:'Last Activity',r:d=>{var a=age(d.last_activity_date);return'<span class="'+(a>180||a===null?'td-warn':'td-muted')+'">'+(d.last_activity_date||'Never')+(a!==null?' ('+a+'d)':'')+'</span>';}},
-      {h:'Owner',r:d=>'<span class="td-muted">'+(d.owner_name||'?')+'</span>'},
-    ]),'Pipedrive CRM · '+new Date().toLocaleTimeString());
+  openModal('No Next Activity',s.length+' Deals Going Cold',s.length+' of '+DATA.length+' have nothing scheduled',
+    tbl(s,[{h:'Opportunity',r:d=>'<div class="t1">'+(d.title||'').substring(0,44)+(d.title?.length>44?'…':'')+'</div><div class="t2">'+(d.org_name||'')+'</div>'},{h:'Value',r:d=>'<span class="tv">'+fmt(d.value)+'</span>'},{h:'Prob',r:d=>pp(d.probability||0)},{h:'Last Activity',r:d=>{var a=age(d.last_activity_date);return'<span class="'+(a>180||a===null?'tw':'tm')+'">'+(d.last_activity_date||'Never')+(a!==null?' ('+a+'d)':'')+'</span>';}},{h:'Owner',r:d=>'<span class="tm">'+(d.owner_name||'?')+'</span>'}]),
+    'Pipedrive CRM · '+new Date().toLocaleTimeString());
+}
+function showNoActWL(){
+  openModal('Biggest Loss: No Relationship','Did Not Get Down Selected','11 deals · $56M TCV lost to pre-proposal relationship gaps',
+    '<div class="m-grid"><div class="mf"><div class="mf-l">Deals Lost</div><div class="mf-v red">11</div></div><div class="mf"><div class="mf-l">TCV Lost</div><div class="mf-v gold">$56.1M</div></div></div>'+
+    '<div style="margin:14px 0 6px;font-size:.72rem;font-weight:700">What this means:</div>'+
+    '<div style="font-size:.78rem;color:var(--black);line-height:1.7;background:var(--grey-light);padding:12px;border-radius:7px">BLN24 made it to the proposal stage but was not selected for the short list. This almost always means the client had already made informal decisions before the RFP dropped — and BLN24 wasn\'t in those conversations. The fix is pre-proposal relationship building, not better proposals.</div>',
+    'Pipedrive CRM · Historical analysis · 43 closed-lost deals');
 }
 function showStage(sid){
   var s=[...DATA].filter(d=>d.stage_id===sid).sort((a,b)=>(b.value||0)-(a.value||0));
-  openModal('Stage Detail',STAGES[sid],s.length+' deals · '+fmt(s.reduce((t,d)=>t+(d.value||0),0))+' TCV',
-    tbl(s,[
-      {h:'Opportunity',r:d=>'<div class="td-title">'+(d.title||'').substring(0,50)+(d.title?.length>50?'…':'')+'</div><div class="td-sub">'+(d.org_name||'')+'</div>'},
-      {h:'Value',r:d=>'<span class="td-val">'+fmt(d.value)+'</span>'},
-      {h:'Prob',r:d=>probPill(d.probability||0)},
-      {h:'Next',r:d=>d.next_activity_date||'<span class="td-warn">None</span>'},
-    ]),'Pipedrive CRM · '+new Date().toLocaleTimeString());
+  openModal('Stage Detail',SN[sid],s.length+' deals · '+fmt(s.reduce((t,d)=>t+(d.value||0),0))+' TCV',
+    tbl(s,[{h:'Opportunity',r:d=>'<div class="t1">'+(d.title||'').substring(0,50)+'</div><div class="t2">'+(d.org_name||'')+'</div>'},{h:'Value',r:d=>'<span class="tv">'+fmt(d.value)+'</span>'},{h:'Prob',r:d=>pp(d.probability||0)},{h:'Next',r:d=>d.next_activity_date||'<span class="tw">None</span>'}]),
+    'Pipedrive CRM · '+new Date().toLocaleTimeString());
 }
 
-// OPP MODAL
-function showOpp(i){
+// APPROVAL STATE
+var APPROVALS = JSON.parse(localStorage.getItem('bdai_approvals')||'{}');
+function saveApprovals(){localStorage.setItem('bdai_approvals',JSON.stringify(APPROVALS));}
+
+function approveOpp(i){
   var o=window._opps[i];
   if(!o)return;
-  var wpCls=(o.win_prob||'').indexOf('High')>=0?'green':(o.win_prob||'').indexOf('Medium')>=0?'':'red';
-  var reasons=(o.win_reasons||[]).map(r=>'<li style="margin-bottom:5px;font-size:0.78rem">'+r+'</li>').join('');
-  var body='<div class="m-grid">'+
-    '<div class="m-field"><div class="m-lbl">Agency</div><div class="m-val">'+(o.agency||'—')+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Win Probability</div><div class="m-val '+wpCls+'">'+(o.win_prob||'?')+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">NAICS</div><div class="m-val">'+(o.naics||'—')+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Set-Aside</div><div class="m-val">'+(o.set_aside||'Open Competition')+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Est. Value</div><div class="m-val gold">'+fmtVal(o.val_low,o.val_high)+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Due Date</div><div class="m-val">'+(o.due||'TBD')+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Type</div><div class="m-val">'+(o.type||'—')+'</div></div>'+
-    '<div class="m-field"><div class="m-lbl">Capture Score</div><div class="m-val">'+(o.capture_score||0)+' pts</div></div>'+
-    '</div>'+
-    (reasons?'<div style="margin:14px 0 6px;font-size:0.72rem;font-weight:700;color:var(--black)">Why BLN24 Should Consider This:</div><ul style="padding-left:18px;line-height:2">'+reasons+'</ul>':'')+
-    (o.summary?'<div style="margin:12px 0 5px;font-size:0.72rem;font-weight:700;color:var(--black)">AI Summary:</div><div style="font-size:0.76rem;color:var(--grey);line-height:1.6;background:var(--grey-light);padding:10px 12px;border-radius:6px">'+o.summary+'</div>':'')+
-    (o.path?'<div style="margin-top:12px"><a href="https://www.highergov.com'+o.path+'" target="_blank" style="font-size:0.75rem;color:var(--blue);font-weight:600">View on HigherGov →</a></div>':'');
-  openModal('Untracked Federal Opportunity',o.title,o.agency,body,'HigherGov · Federal opps only · Scored vs BLN24 proposals & past performance · '+new Date().toLocaleTimeString());
+  APPROVALS[i]='approved';
+  saveApprovals();
+  renderOppCard(i,o);
+  // Open Asana link
+  window.open(ASANA_PROJECT,'_blank');
+}
+function passOpp(i){
+  var o=window._opps[i];
+  if(!o)return;
+  APPROVALS[i]='passed';
+  saveApprovals();
+  renderOppCard(i,o);
 }
 
-// STATIC DATA
+function renderOppCard(i,o){
+  var el=document.getElementById('opp-card-'+i);
+  if(!el)return;
+  var status=APPROVALS[i];
+  var reasons=(o.win_reasons||[]).slice(0,3).map(r=>'<span style="display:inline-block;margin-right:6px;margin-bottom:4px;background:var(--grey-light);border-radius:4px;padding:2px 8px;font-size:.7rem">'+r+'</span>').join('');
+  var score=o.capture_score||0;
+  var scoreColor=score>=50?'var(--green)':score>=30?'var(--yellow)':'var(--red)';
+
+  el.innerHTML=
+    '<div class="opp-card-top">'+
+    '<div>'+
+    '<div class="opp-title">'+(o.title||'').substring(0,72)+((o.title||'').length>72?'…':'')+'</div>'+
+    '<div class="opp-agency" style="margin-top:4px">🏛 '+(o.agency||'')+'</div>'+
+    '</div>'+
+    '<div class="opp-score" style="background:'+scoreColor+';color:var(--white);min-width:60px;text-align:center">'+score+'pts</div>'+
+    '</div>'+
+    '<div class="opp-meta">'+
+    wp(o.win_prob)+sa(o.set_aside)+
+    (o.due?'<span class="p p-grey">Due: '+o.due+'</span>':'')+
+    (o.naics?'<span class="p p-grey">NAICS: '+o.naics+'</span>':'')+
+    (fmtV(o.val_low,o.val_high)!=='—'?'<span class="p p-gold">'+fmtV(o.val_low,o.val_high)+'</span>':'')+
+    '</div>'+
+    '<div class="opp-why">'+((o.win_reasons||[]).slice(0,3).map(r=>'<div style="margin-bottom:3px">✓ '+r+'</div>').join('') || 'No specific match reasons logged.')+'</div>'+
+    (o.summary?'<div style="font-size:.72rem;color:var(--grey);margin-bottom:10px;line-height:1.5">'+o.summary.substring(0,200)+(o.summary.length>200?'…':'')+'</div>':'')+
+    '<div class="opp-actions">'+
+    (status==='approved'?'<span class="opp-status-done status-approved">✓ Approved — In Asana</span>':
+     status==='passed'?'<span class="opp-status-done status-passed">✕ Passed</span>':
+     '<button class="btn-approve" onclick="event.stopPropagation();approveOpp('+i+')">✓ Approve — Start Capture</button>'+
+     '<button class="btn-pass" onclick="event.stopPropagation();passOpp('+i+')">✕ Pass</button>')+
+    '<button class="btn-detail" onclick="event.stopPropagation();showOppModal('+i+')">Details →</button>'+
+    (o.path?'<a href="https://www.highergov.com'+o.path+'" target="_blank" style="font-size:.72rem;color:var(--blue);font-weight:600;padding:7px 0;text-decoration:none">HigherGov ↗</a>':'')+
+    '</div>';
+}
+
+function showOppModal(i){
+  var o=window._opps[i];if(!o)return;
+  var wpCls=(o.win_prob||'').indexOf('High')>=0?'green':(o.win_prob||'').indexOf('Medium')>=0?'':'red';
+  var reasons=(o.win_reasons||[]).map(r=>'<li style="margin-bottom:5px;font-size:.77rem">'+r+'</li>').join('');
+  openModal('Federal Opportunity · BD AI',o.title,o.agency,
+    '<div class="m-grid">'+
+    '<div class="mf"><div class="mf-l">Agency</div><div class="mf-v">'+(o.agency||'—')+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Win Probability</div><div class="mf-v '+wpCls+'">'+(o.win_prob||'?')+'</div></div>'+
+    '<div class="mf"><div class="mf-l">NAICS</div><div class="mf-v">'+(o.naics||'—')+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Set-Aside</div><div class="mf-v">'+(o.set_aside||'Open Competition')+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Est. Value</div><div class="mf-v gold">'+fmtV(o.val_low,o.val_high)+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Due Date</div><div class="mf-v">'+(o.due||'TBD')+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Capture Score</div><div class="mf-v">'+(o.capture_score||0)+' pts</div></div>'+
+    '<div class="mf"><div class="mf-l">Type</div><div class="mf-v">'+(o.type||'—')+'</div></div>'+
+    '</div>'+
+    (reasons?'<div style="margin:14px 0 6px;font-size:.7rem;font-weight:700">Why BLN24 Should Pursue:</div><ul style="padding-left:18px;line-height:2">'+reasons+'</ul>':'')+
+    (o.summary?'<div style="margin:12px 0 5px;font-size:.7rem;font-weight:700">AI Summary:</div><div style="font-size:.75rem;color:var(--grey);line-height:1.6;background:var(--grey-light);padding:10px 12px;border-radius:6px">'+o.summary+'</div>':'')+
+    (o.path?'<div style="margin-top:12px"><a href="https://www.highergov.com'+o.path+'" target="_blank" style="font-size:.73rem;color:var(--blue);font-weight:600">View on HigherGov →</a></div>':'')+
+    (o.asana_task_gid?'<div style="margin-top:8px"><a href="https://app.asana.com/0/'+o.asana_task_gid+'" target="_blank" style="font-size:.73rem;color:#7C3AED;font-weight:600">View Asana Task →</a></div>':''),
+    'HigherGov · Federal opps only · Scored vs BLN24 proposals & past performance');
+}
+
+// LOAD OPPS
+async function loadOpps(){
+  var container=document.getElementById('opp-cards');
+  var countEl=document.getElementById('bdai-count');
+  try {
+    var res=await fetch('opps.json?t='+Date.now());
+    var data=await res.json();
+    var opps=data.opps||[];
+    var today=new Date().toISOString().split('T')[0];
+    var pipelineTitles=DATA.map(d=>(d.title||'').toLowerCase());
+
+    var active=opps.filter(o=>!o.due||o.due>=today).map(function(o,i){
+      var tw=(o.title||'').toLowerCase().split(/\s+/).filter(w=>w.length>5);
+      var tracked=tw.filter(w=>pipelineTitles.some(pt=>pt.includes(w))).length>=3;
+      return Object.assign({},o,{alreadyTracked:tracked,_idx:i});
+    }).filter(o=>!o.alreadyTracked);
+
+    active.sort((a,b)=>(b.capture_score||0)-(a.capture_score||0)||(a.due||'9').localeCompare(b.due||'9'));
+    window._opps=active;
+
+    if(!active.length){
+      container.innerHTML='<div class="empty">No untracked federal opps found. Add more HigherGov searches to expand coverage.</div>';
+      countEl.textContent='No untracked opportunities found';
+      return;
+    }
+
+    var updated=data.updated?new Date(data.updated).toLocaleString():'?';
+    countEl.textContent=active.length+' untracked federal opps · Last refreshed: '+updated;
+
+    var html='';
+    active.slice(0,20).forEach(function(o,i){
+      html+='<div class="opp-card" id="opp-card-'+i+'"></div>';
+    });
+    container.innerHTML=html;
+    active.slice(0,20).forEach(function(o,i){ renderOppCard(i,o); });
+
+  } catch(e){
+    container.innerHTML='<div class="empty" style="color:var(--red)">Error loading: '+e.message+'</div>';
+    countEl.textContent='Error';
+  }
+}
+
+// STATIC WIN/LOSS DATA
 var LOSS_DATA=[
-  {r:'Did Not Get Down Selected',c:11,v:56132634,d:['USCG Media/Strategic ($6M)','FDA Take Back Your Health ($15M)','Farmers.gov Web Support ($13M)','HRSA National Education Outreach ($8.5M)','Dept of State Travel.State.Gov ($9M)','DOT MMUCC Training ($4.4M)','NOAA EPIC','DHA Data Governance','Census 2026','SLED VA Foundation ($200K)','NVRC Social Marketing ($65K)']},
-  {r:'Price',c:14,v:15219000,d:['IRS EDI Transformation ($5.3M)','USCIS Forms Support ($2.9M)','IRS Enterprise Data Platform ($2M)','HUD Marketing Support ($2.2M)','USDA Wilderness Training ($1.2M)','Navy NIWC Marketing ($500K)','GSA Small Business Guide ($250K)','Norfolk Web Design ($250K)','SSA WCMS BPA','LOC User Research ($320K)','+ 4 more']},
+  {r:'Did Not Get Down Selected',c:11,v:56132634,d:['USCG Media/Strategic ($6M)','FDA Take Back Your Health ($15M)','Farmers.gov Web Support ($13M)','HRSA National Education Outreach ($8.5M)','Dept of State Travel.State.Gov ($9M)','DOT MMUCC Training ($4.4M)','+ 5 more']},
+  {r:'Price',c:14,v:15219000,d:['IRS EDI Transformation ($5.3M)','USCIS Forms Support ($2.9M)','IRS Enterprise Data Platform ($2M)','HUD Marketing Support ($2.2M)','+ 10 more']},
   {r:'Inactive/Cancelled',c:4,v:61820000,d:['DOI BPA Marketing ($55M)','USDA FBC Data Analytics ($6.3M)','EAC Communications ($500K)','Federal Reserve AEM PoC']},
   {r:'Incumbent',c:3,v:40598702,d:['DOL Web Content Mgmt ($30M)','USPTO Training Support ($10M)','ACL HHS IDIQ ($600K)']},
   {r:'PASS / Did Not Pursue',c:2,v:42016265,d:['DOC Patent Technical Services ($30M)','ACF Head Start Comms ($12M)']},
-  {r:'Technical',c:4,v:6375888,d:['IRS Redesign CP Notices ($4.3M)','NIH NIMHD Web Mod ($2.1M)','World Bank Video ($25K)','Dept of State DelicioUS']},
+  {r:'Technical',c:4,v:6375888,d:['IRS Redesign CP Notices ($4.3M)','NIH NIMHD Web Mod ($2.1M)','World Bank Video ($25K)','DOS DelicioUS']},
   {r:'Non-Compliance',c:3,v:0,d:['IRS Graphic Design 25-25','DOL Apprenticeship Campaign','ONI IT Support']},
   {r:'Lack of Customer Insight',c:2,v:2150000,d:['GSA PBS Marketing ($2.15M)','USPS OIG External Website']},
 ];
 var WIN_DATA=[
   {n:'IRS',w:2,v:26252397,d:['CX Research BPA ($22M)','Human Centered Design ($4.3M)']},
-  {n:'Census Bureau',w:7,v:22754461,d:['Digital Web Services ($8.2M)','Self-Response QA ($4.1M)','CES RFQ ($7.8M)','MAF/TIGER ($2.2M)','Photography ($400K)','Virtual Tour ($67K)','Analytics ($9K)']},
+  {n:'Census Bureau',w:7,v:22754461,d:['Digital Web Services ($8.2M)','Self-Response QA ($4.1M)','CES RFQ ($7.8M)','MAF/TIGER ($2.2M)','+ 3 more']},
   {n:'CMS',w:1,v:16000000,d:['Marketplace Notice Production ($16M)']},
   {n:'ACL / HHS',w:1,v:5000000,d:['Administration Community Living ($5M)']},
   {n:'MBDA',w:1,v:4410905,d:['Website Redesign ($4.4M)']},
@@ -540,165 +666,66 @@ var WIN_DATA=[
 function showLoss(i){
   var r=LOSS_DATA[i];
   openModal('Loss Analysis',r.r,r.c+' deals · '+fmt(r.v)+' total TCV lost',
-    '<div class="m-grid"><div class="m-field"><div class="m-lbl">Deals Lost</div><div class="m-val red">'+r.c+'</div></div><div class="m-field"><div class="m-lbl">TCV Lost</div><div class="m-val gold">'+fmt(r.v)+'</div></div></div>'+
-    '<div style="margin:14px 0 6px;font-size:0.72rem;font-weight:700">Deals in this category:</div>'+
-    '<ul style="padding-left:18px;font-size:0.76rem;color:var(--grey);line-height:1.9">'+r.d.map(x=>'<li>'+x+'</li>').join('')+'</ul>',
-    'Pipedrive CRM · closed-lost · Historical analysis Apr 2026');
+    '<div class="m-grid"><div class="mf"><div class="mf-l">Deals Lost</div><div class="mf-v red">'+r.c+'</div></div><div class="mf"><div class="mf-l">TCV Lost</div><div class="mf-v gold">'+fmt(r.v)+'</div></div></div>'+
+    '<div style="margin:14px 0 6px;font-size:.7rem;font-weight:700">Deals in this category:</div>'+
+    '<ul style="padding-left:18px;font-size:.76rem;color:var(--grey);line-height:1.9">'+r.d.map(x=>'<li>'+x+'</li>').join('')+'</ul>',
+    'Pipedrive CRM · Historical analysis Apr 2026');
 }
 function showWin(i){
   var a=WIN_DATA[i];
-  openModal('Win Analysis',a.n,a.w+' contract'+(a.w>1?'s':'')+' · '+fmt(a.v)+' total',
-    '<div class="m-grid"><div class="m-field"><div class="m-lbl">Total Wins</div><div class="m-val green">'+a.w+'</div></div><div class="m-field"><div class="m-lbl">Total Value</div><div class="m-val gold">'+fmt(a.v)+'</div></div></div>'+
-    '<div style="margin:14px 0 6px;font-size:0.72rem;font-weight:700">Won contracts:</div>'+
-    '<ul style="padding-left:18px;font-size:0.76rem;color:var(--grey);line-height:1.9">'+a.d.map(x=>'<li>'+x+'</li>').join('')+'</ul>',
-    'Pipedrive CRM · closed-won · Historical analysis Apr 2026');
+  openModal('Win Analysis',a.n,a.w+' contract'+(a.w>1?'s':'')+' · '+fmt(a.v),
+    '<div class="m-grid"><div class="mf"><div class="mf-l">Total Wins</div><div class="mf-v green">'+a.w+'</div></div><div class="mf"><div class="mf-l">Total Value</div><div class="mf-v gold">'+fmt(a.v)+'</div></div></div>'+
+    '<div style="margin:14px 0 6px;font-size:.7rem;font-weight:700">Won contracts:</div>'+
+    '<ul style="padding-left:18px;font-size:.76rem;color:var(--grey);line-height:1.9">'+a.d.map(x=>'<li>'+x+'</li>').join('')+'</ul>',
+    'Pipedrive CRM · Historical analysis Apr 2026');
 }
 
-// STATIC RENDERS
 function renderStatic(){
   var mx=Math.max(...LOSS_DATA.map(r=>r.c));
   document.getElementById('loss-bars').innerHTML=LOSS_DATA.map((r,i)=>
-    '<div class="bar-row" onclick="showLoss('+i+')"><div class="bar-lbl">'+r.r+'</div><div class="bar-track"><div class="bar-fill" style="width:'+(r.c/mx*100).toFixed(0)+'%"></div></div><div class="bar-n">'+r.c+' deals</div></div>'
+    '<div class="bar-row" onclick="showLoss('+i+')"><div class="bar-lbl">'+r.r+'</div><div class="bar-track"><div class="bar-fill" style="width:'+(r.c/mx*100).toFixed(0)+'%"></div></div><div class="bar-n">'+r.c+'</div></div>'
   ).join('');
   document.getElementById('win-agencies').innerHTML=WIN_DATA.map((a,i)=>
-    '<div class="win-row" onclick="showWin('+i+')"><div class="win-name">'+a.n+'</div><div class="win-stat">'+a.w+' win'+(a.w>1?'s':'')+' · '+fmt(a.v)+'</div></div>'
+    '<div class="wr" onclick="showWin('+i+')"><div class="wr-n">'+a.n+'</div><div class="wr-s">'+a.w+' win'+(a.w>1?'s':'')+' · '+fmt(a.v)+'</div></div>'
   ).join('');
 }
 
 // LOAD PIPEDRIVE
 async function loadAll(){
   document.getElementById('ts').textContent='Loading...';
-  try {
-    var res=await fetch(PD_BASE+'/deals?api_token='+PD_TOKEN+'&status=open&limit=100');
+  try{
+    var res=await fetch(PDB+'/deals?api_token='+PD+'&status=open&limit=100');
     var json=await res.json();
     DATA=json.data||[];
-
     var tv=DATA.reduce((s,d)=>s+(d.value||0),0);
     var tw=DATA.reduce((s,d)=>s+(d.weighted_value||0),0);
     var na=DATA.filter(d=>!d.next_activity_date);
     var hp=DATA.filter(d=>(d.probability||0)>=50);
-
     document.getElementById('k-pipe').textContent=fmt(tv);
     document.getElementById('k-deals').textContent=DATA.length+' open deals';
     document.getElementById('k-wt').textContent=fmt(tw);
     document.getElementById('k-hp').textContent=hp.length;
     document.getElementById('k-hp-v').textContent=fmt(hp.reduce((s,d)=>s+(d.value||0),0))+' in play';
     document.getElementById('k-na').textContent=na.length;
-
-    // Stages
-    var sd={};STAGE_ORDER.forEach(id=>sd[id]={c:0,v:0,w:0});
+    var sd={};SO.forEach(id=>sd[id]={c:0,v:0,w:0});
     DATA.forEach(d=>{if(sd[d.stage_id]){sd[d.stage_id].c++;sd[d.stage_id].v+=d.value||0;sd[d.stage_id].w+=d.weighted_value||0;}});
-    document.getElementById('stages').innerHTML=STAGE_ORDER.map(sid=>
-      '<div class="stage" onclick="showStage('+sid+')">'+
-      '<div class="stage-name">'+STAGES[sid]+'</div>'+
-      '<div class="stage-n">'+sd[sid].c+'</div>'+
-      '<div class="stage-v">'+fmt(sd[sid].v)+'</div>'+
-      '<div class="stage-w">'+fmt(sd[sid].w)+' wtd</div>'+
-      '</div>'
+    document.getElementById('stages').innerHTML=SO.map(sid=>
+      '<div class="stage" onclick="showStage('+sid+')"><div class="stage-name">'+SN[sid]+'</div><div class="stage-n">'+sd[sid].c+'</div><div class="stage-v">'+fmt(sd[sid].v)+'</div><div class="stage-w">'+fmt(sd[sid].w)+' wtd</div></div>'
     ).join('');
-
-    // Top deals
     var top=[...DATA].sort((a,b)=>(b.value||0)-(a.value||0));
     document.querySelector('#t-top tbody').innerHTML=top.slice(0,10).map(d=>
-      '<tr class="row" onclick="showDeal('+d.id+')">'+
-      '<td><div class="td-title">'+(d.title||'').substring(0,40)+(d.title?.length>40?'…':'')+'</div><div class="td-sub">'+(d.org_name||'')+'</div></td>'+
-      '<td><span class="td-val">'+fmt(d.value)+'</span></td>'+
-      '<td>'+probPill(d.probability||0)+'</td>'+
-      '<td class="'+(d.next_activity_date?'td-muted':'td-warn')+'">'+(d.next_activity_date||'None')+'</td>'+
-      '</tr>'
+      '<tr class="row" onclick="showDeal('+d.id+')"><td><div class="t1">'+(d.title||'').substring(0,38)+(d.title?.length>38?'…':'')+'</div><div class="t2">'+(d.org_name||'')+'</div></td><td><span class="tv">'+fmt(d.value)+'</span></td><td>'+pp(d.probability||0)+'</td><td class="'+(d.next_activity_date?'tm':'tw')+'">'+(d.next_activity_date||'None')+'</td></tr>'
     ).join('');
-
-    // No activity
     var nas=[...na].sort((a,b)=>(b.value||0)-(a.value||0));
-    document.querySelector('#t-na tbody').innerHTML=nas.slice(0,10).map(d=>{
-      var a=age(d.last_activity_date);
-      return '<tr class="row'+(a===null||a>180?' alert':'')+'" onclick="showDeal('+d.id+')">'+
-        '<td><div class="td-title">'+(d.title||'').substring(0,38)+(d.title?.length>38?'…':'')+'</div><div class="td-sub">'+(d.org_name||'')+'</div></td>'+
-        '<td><span class="td-val">'+fmt(d.value)+'</span></td>'+
-        '<td class="'+(a>180||a===null?'td-warn':'td-muted')+'">'+(d.last_activity_date||'Never')+(a!==null?' ('+a+'d)':'')+'</td>'+
-        '</tr>';
-    }).join('');
-
-    // High prob
+    document.querySelector('#t-na tbody').innerHTML=nas.slice(0,10).map(d=>{var a=age(d.last_activity_date);return'<tr class="row'+(a===null||a>180?' alert':'')+'" onclick="showDeal('+d.id+')"><td><div class="t1">'+(d.title||'').substring(0,36)+(d.title?.length>36?'…':'')+'</div><div class="t2">'+(d.org_name||'')+'</div></td><td><span class="tv">'+fmt(d.value)+'</span></td><td class="'+(a>180||a===null?'tw':'tm')+'">'+(d.last_activity_date||'Never')+(a!==null?' ('+a+'d)':'')+'</td></tr>';}).join('');
     var hps=[...hp].sort((a,b)=>(b.weighted_value||0)-(a.weighted_value||0));
-    document.querySelector('#t-hp tbody').innerHTML=hps.map(d=>
-      '<tr class="row" onclick="showDeal('+d.id+')">'+
-      '<td class="td-title">'+(d.title||'').substring(0,48)+(d.title?.length>48?'…':'')+'</td>'+
-      '<td class="td-muted">'+(d.org_name||'').substring(0,26)+'</td>'+
-      '<td><span class="td-val">'+fmt(d.value)+'</span></td>'+
-      '<td>'+probPill(d.probability||0)+'</td>'+
-      '<td class="td-muted">'+(d.owner_name||'?')+'</td>'+
-      '<td class="'+(d.next_activity_date?'td-muted':'td-warn')+'">'+(d.next_activity_date||'⚠ None')+'</td>'+
-      '</tr>'
-    ).join('');
-
-    // Recent
+    document.querySelector('#t-hp tbody').innerHTML=hps.map(d=>'<tr class="row" onclick="showDeal('+d.id+')"><td class="t1">'+(d.title||'').substring(0,46)+(d.title?.length>46?'…':'')+'</td><td class="tm">'+(d.org_name||'').substring(0,24)+'</td><td><span class="tv">'+fmt(d.value)+'</span></td><td>'+pp(d.probability||0)+'</td><td class="tm">'+(d.owner_name||'?')+'</td><td class="'+(d.next_activity_date?'tm':'tw')+'">'+(d.next_activity_date||'⚠ None')+'</td></tr>').join('');
     var rec=DATA.filter(d=>(d.update_time||'')>'2026-01-01').sort((a,b)=>(b.update_time||'').localeCompare(a.update_time||''));
-    document.querySelector('#t-rec tbody').innerHTML=rec.slice(0,12).map(d=>
-      '<tr class="row" onclick="showDeal('+d.id+')">'+
-      '<td class="td-muted">'+(d.update_time||'').substring(0,10)+'</td>'+
-      '<td class="td-title">'+(d.title||'').substring(0,50)+(d.title?.length>50?'…':'')+'</td>'+
-      '<td class="td-muted">'+(d.org_name||'').substring(0,24)+'</td>'+
-      '<td><span class="td-val">'+fmt(d.value)+'</span></td>'+
-      '<td class="td-muted">'+(d.owner_name||'?')+'</td>'+
-      '</tr>'
-    ).join('');
-
+    document.querySelector('#t-rec tbody').innerHTML=rec.slice(0,12).map(d=>'<tr class="row" onclick="showDeal('+d.id+')"><td class="tm">'+(d.update_time||'').substring(0,10)+'</td><td class="t1">'+(d.title||'').substring(0,48)+(d.title?.length>48?'…':'')+'</td><td class="tm">'+(d.org_name||'').substring(0,22)+'</td><td><span class="tv">'+fmt(d.value)+'</span></td><td class="tm">'+(d.owner_name||'?')+'</td></tr>').join('');
     document.getElementById('ts').textContent='Updated '+new Date().toLocaleTimeString();
-  } catch(e){
-    console.error(e);
-    document.getElementById('ts').textContent='Error: '+e.message;
-  }
+  }catch(e){document.getElementById('ts').textContent='Error: '+e.message;}
 }
 
-// LOAD HIGHERGOV OPPS
-async function loadOpps(){
-  var tbody=document.querySelector('#t-opp tbody');
-  var pill=document.getElementById('opp-pill');
-  var note=document.getElementById('opp-note');
-  try {
-    var res=await fetch('opps.json?t='+Date.now());
-    var data=await res.json();
-    var opps=data.opps||[];
-    var updated=data.updated?new Date(data.updated).toLocaleString():'?';
-    var today=new Date().toISOString().split('T')[0];
-    var pipelineTitles=DATA.map(d=>(d.title||'').toLowerCase());
-
-    var active=opps.filter(o=>!o.due||o.due>=today).map(function(o){
-      var tw=(o.title||'').toLowerCase().split(/\s+/).filter(w=>w.length>5);
-      var tracked=tw.filter(w=>pipelineTitles.some(pt=>pt.includes(w))).length>=3;
-      return Object.assign({},o,{alreadyTracked:tracked,score:(o.capture_score||0)+(tracked?-20:0)});
-    }).filter(o=>!o.alreadyTracked); // Only show truly untracked
-
-    active.sort((a,b)=>b.score-a.score||(a.due||'9').localeCompare(b.due||'9'));
-    window._opps=active;
-
-    if(!active.length){
-      tbody.innerHTML='<tr><td colspan="6" class="empty">No untracked federal opps found. Add more HigherGov search IDs to expand coverage.</td></tr>';
-      pill.textContent='● HigherGov · 0';
-      return;
-    }
-
-    note.textContent=active.length+' untracked federal opps · '+active.filter(o=>o.is8a).length+' are 8(a) set-asides · Scored vs real BLN24 proposals & past performance · Last refreshed: '+updated;
-    pill.textContent='● HigherGov · '+active.length+' opps';
-
-    tbody.innerHTML=active.slice(0,20).map(function(o,i){
-      return '<tr class="row" onclick="showOpp('+i+')">'+
-        '<td><div class="td-title">'+(o.title||'').substring(0,46)+((o.title||'').length>46?'…':'')+'</div><div class="td-sub">🏛 '+(o.agency||'').substring(0,32)+'</div></td>'+
-        '<td class="td-muted">'+(o.agency||'').substring(0,22)+'</td>'+
-        '<td>'+saPill(o.set_aside)+'</td>'+
-        '<td>'+wpPill(o.win_prob)+'</td>'+
-        '<td class="td-val">'+fmtVal(o.val_low,o.val_high)+'</td>'+
-        '<td class="td-muted">'+(o.due||'TBD')+'</td>'+
-        '</tr>';
-    }).join('');
-  } catch(e){
-    tbody.innerHTML='<tr><td colspan="6" class="empty" style="color:var(--red)">Error: '+e.message+'</td></tr>';
-    pill.textContent='⚠ Error';
-  }
-}
-
-renderStatic();
 setInterval(function(){if(sessionStorage.getItem('bln24_auth')==='9025'){loadAll();loadOpps();}},5*60*1000);
 </script>
 </body>

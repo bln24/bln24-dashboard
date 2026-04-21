@@ -23,7 +23,8 @@
         "CX/UX/HCD scope \u2014 core BLN24 capability (Studio24)",
         "Strategic Communications / Digital Comms \u2014 proven delivery capability"
       ],
-      "win_prob": "High (40-60%)"
+      "win_prob": "High (40-60%)",
+      "asana_task_gid": "1214145572823189"
     },
     {
       "naics": "541990",
@@ -46,7 +47,8 @@
         "Web / Tech Modernization \u2014 delivery track record",
         "Contract value in BLN24 sweet spot ($500K-$30M)"
       ],
-      "win_prob": "Medium (20-40%)"
+      "win_prob": "Medium (20-40%)",
+      "asana_task_gid": "1214145584662915"
     },
     {
       "naics": "541511",
@@ -68,7 +70,8 @@
         "Open competition \u2014 evaluate competitiveness",
         "Web / Tech Modernization \u2014 delivery track record"
       ],
-      "win_prob": "Medium (20-40%)"
+      "win_prob": "Medium (20-40%)",
+      "asana_task_gid": "1214145572827524"
     },
     {
       "naics": "561990",
@@ -90,7 +93,8 @@
         "Open competition \u2014 evaluate competitiveness",
         "Contract value in BLN24 sweet spot ($500K-$30M)"
       ],
-      "win_prob": "Medium (20-40%)"
+      "win_prob": "Medium (20-40%)",
+      "asana_task_gid": "1214145520946395"
     },
     {
       "naics": "513210",
@@ -112,7 +116,8 @@
         "Open competition \u2014 evaluate competitiveness",
         "Contract value in BLN24 sweet spot ($500K-$30M)"
       ],
-      "win_prob": "Medium (20-40%)"
+      "win_prob": "Medium (20-40%)",
+      "asana_task_gid": "1214145481866829"
     },
     {
       "naics": "541611",
@@ -133,7 +138,8 @@
         "Small Business set-aside \u2014 BLN24 qualifies",
         "CX/UX/HCD scope \u2014 core BLN24 capability (Studio24)"
       ],
-      "win_prob": "Low (10-20%)"
+      "win_prob": "Low (10-20%)",
+      "asana_task_gid": "1214145581615655"
     },
     {
       "naics": "541512",
@@ -154,7 +160,8 @@
         "Proven agency relationship (past performance / wins with this client)",
         "Open competition \u2014 evaluate competitiveness"
       ],
-      "win_prob": "Low (10-20%)"
+      "win_prob": "Low (10-20%)",
+      "asana_task_gid": "1214145481977172"
     },
     {
       "naics": "518210",
@@ -175,7 +182,8 @@
         "Proven agency relationship (past performance / wins with this client)",
         "Open competition \u2014 evaluate competitiveness"
       ],
-      "win_prob": "Low (10-20%)"
+      "win_prob": "Low (10-20%)",
+      "asana_task_gid": "1214145520916053"
     },
     {
       "naics": "541714",
@@ -196,7 +204,8 @@
         "Proven agency relationship (past performance / wins with this client)",
         "Open competition \u2014 evaluate competitiveness"
       ],
-      "win_prob": "Low (10-20%)"
+      "win_prob": "Low (10-20%)",
+      "asana_task_gid": "1214145572753951"
     },
     {
       "naics": "513210",
@@ -219,7 +228,8 @@
         "Web / Tech Modernization \u2014 delivery track record",
         "\u26a0 May already be tracked in Pipedrive"
       ],
-      "win_prob": "Low (10-20%)"
+      "win_prob": "Low (10-20%)",
+      "asana_task_gid": "1214145481992454"
     },
     {
       "naics": "541511",
@@ -543,5 +553,8 @@
       "win_prob": "Very Low (<10%)"
     }
   ],
-  "intel_version": "v2_real_intel_april2026"
+  "intel_version": "v2_real_intel_april2026",
+  "asana_project_gid": "1214145572732999",
+  "asana_pending_section": "1214145584685077",
+  "asana_project_url": "https://app.asana.com/0/1214145572732999"
 }
