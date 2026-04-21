@@ -221,6 +221,7 @@
   <div class="tab active" onclick="switchTab('pipeline',this)">📊 Pipeline</div>
   <div class="tab" onclick="switchTab('bdai',this)">🤖 BD AI</div>
   <div class="tab" onclick="switchTab('winloss',this)">📈 Win / Loss</div>
+  <div class="tab" onclick="switchTab('ops',this)">⚙️ Operations</div>
 </div>
 
 <!-- TAB: PIPELINE -->
@@ -418,7 +419,86 @@
   </div>
 </div>
 
-<footer>BLN24 Revenue Dashboard · Pipeline: Pipedrive (live) · BD AI: HigherGov (hourly) + SharePoint Intel · Win/Loss: Historical Analysis · Rex 📈</footer>
+<!-- TAB: OPERATIONS -->
+<div id="tab-ops" class="tab-pane">
+<div class="page">
+
+  <!-- ATTENTION BANNER -->
+  <div class="sl" style="margin-top:0">
+    <div class="st">Needs Brian's Attention</div>
+    <span class="badge" style="background:#FEF2F2;color:#DC2626" id="ops-ts">Loading...</span>
+  </div>
+  <div id="ops-attention" style="margin-bottom:20px"><div class="empty">Loading...</div></div>
+
+  <!-- KPIs -->
+  <div class="sl">
+    <div class="st">Project Health Snapshot</div>
+    <span class="badge b-live">Asana · Kai View</span>
+  </div>
+  <div class="kpis" style="margin-bottom:16px">
+    <div class="kpi green">
+      <div class="kpi-lbl">On-Track</div>
+      <div class="kpi-v" id="ops-k-ot">—</div>
+      <div class="kpi-sub" id="ops-k-ot-s">projects</div>
+    </div>
+    <div class="kpi gold">
+      <div class="kpi-lbl">At Risk</div>
+      <div class="kpi-v" id="ops-k-ar">—</div>
+      <div class="kpi-sub" id="ops-k-ar-s">need attention</div>
+    </div>
+    <div class="kpi red">
+      <div class="kpi-lbl">Blocked</div>
+      <div class="kpi-v" id="ops-k-bl">—</div>
+      <div class="kpi-sub" id="ops-k-bl-s">escalation needed</div>
+    </div>
+    <div class="kpi red">
+      <div class="kpi-lbl">Overdue Tasks</div>
+      <div class="kpi-v" id="ops-k-od">—</div>
+      <div class="kpi-sub">past due date</div>
+    </div>
+  </div>
+
+  <!-- PROJECT HEALTH TABLE -->
+  <div class="sl">
+    <div class="st">Project Status</div>
+    <span class="badge b-live">Kai · COO View</span>
+  </div>
+  <div class="card" style="margin-bottom:16px">
+    <table id="ops-projects-tbl">
+      <thead><tr>
+        <th>Project</th>
+        <th>Client</th>
+        <th>Status</th>
+        <th>Complete</th>
+        <th>Owner</th>
+        <th>Due</th>
+        <th>Notes</th>
+      </tr></thead>
+      <tbody><tr><td colspan="7" class="empty">Loading...</td></tr></tbody>
+    </table>
+  </div>
+
+  <!-- RESOURCE FLAGS -->
+  <div class="sl">
+    <div class="st">Resource Flags</div>
+    <span class="badge" style="background:#F0E6FF;color:#7C3AED">⚙ Kai · Staffing View</span>
+  </div>
+  <div class="card" style="margin-bottom:0">
+    <table id="ops-resources-tbl">
+      <thead><tr>
+        <th>Team Member</th>
+        <th>Utilization</th>
+        <th>Active Projects</th>
+        <th>Flag</th>
+      </tr></thead>
+      <tbody><tr><td colspan="4" class="empty">Loading...</td></tr></tbody>
+    </table>
+  </div>
+
+</div>
+</div>
+
+<footer>BLN24 Revenue Dashboard · Pipeline: Pipedrive (live) · BD AI: HigherGov (hourly) + SharePoint Intel · Win/Loss: Historical Analysis · Rex 📈 · Operations: Kai ⚙️</footer>
 
 <script>
 // AUTH
@@ -991,6 +1071,141 @@ async function loadAll(){
 }
 
 setInterval(function(){if(sessionStorage.getItem('bln24_auth')==='9025'){loadAll();loadOpps();}},5*60*1000);
+
+// ==============================
+// OPERATIONS TAB — Kai COO View
+// ==============================
+var OPS_DATA = null;
+
+async function loadOps() {
+  try {
+    var res = await fetch('ops-data.json?t=' + Date.now());
+    OPS_DATA = await res.json();
+    renderOps();
+  } catch(e) {
+    document.getElementById('ops-attention').innerHTML = '<div class="empty" style="color:var(--red)">Error loading ops data: ' + e.message + '</div>';
+    document.getElementById('ops-ts').textContent = 'Error';
+  }
+}
+
+function renderOps() {
+  if (!OPS_DATA) return;
+
+  // Timestamp
+  var ts = OPS_DATA.updated ? new Date(OPS_DATA.updated).toLocaleString() : 'Unknown';
+  var tsEl = document.getElementById('ops-ts');
+  tsEl.textContent = 'Last sync: ' + ts;
+  tsEl.style.background = '#F0FDF4'; tsEl.style.color = '#16A34A';
+
+  // Attention items
+  var attn = OPS_DATA.attention || [];
+  var attnEl = document.getElementById('ops-attention');
+  if (!attn.length) {
+    attnEl.innerHTML = '<div class="empty" style="color:var(--green)">✓ No escalations right now.</div>';
+  } else {
+    attnEl.innerHTML = attn.slice(0,3).map(function(a){
+      var bgMap = {red:'var(--red-light)', yellow:'var(--yellow-light)', green:'var(--green-light)'};
+      var colorMap = {red:'var(--red)', yellow:'var(--yellow)', green:'var(--green)'};
+      var iconMap = {red:'🔴', yellow:'🟡', green:'🟢'};
+      var bg = bgMap[a.urgency] || 'var(--grey-light)';
+      var color = colorMap[a.urgency] || 'var(--grey)';
+      var icon = iconMap[a.urgency] || '⚪';
+      return '<div style="background:'+bg+';border-left:4px solid '+color+';border-radius:0 8px 8px 0;padding:12px 16px;margin-bottom:10px;display:flex;align-items:flex-start;gap:12px">' +
+        '<span style="font-size:1rem;flex-shrink:0;margin-top:1px">'+icon+'</span>' +
+        '<div><div style="font-size:.82rem;font-weight:700;margin-bottom:3px">'+a.title+'</div>' +
+        '<div style="font-size:.74rem;color:#374151;line-height:1.5">'+a.detail+'</div></div>' +
+        '</div>';
+    }).join('');
+  }
+
+  // KPIs
+  var projects = OPS_DATA.projects || [];
+  var ot = projects.filter(p=>p.status==='on-track').length;
+  var ar = projects.filter(p=>p.status==='at-risk').length;
+  var bl = projects.filter(p=>p.status==='blocked').length;
+  var od = OPS_DATA.overdue_tasks || projects.filter(p=>p.status==='blocked').length;
+  document.getElementById('ops-k-ot').textContent = ot;
+  document.getElementById('ops-k-ot-s').textContent = ot === 1 ? 'project' : 'projects';
+  document.getElementById('ops-k-ar').textContent = ar;
+  document.getElementById('ops-k-ar-s').textContent = ar === 1 ? 'needs attention' : 'need attention';
+  document.getElementById('ops-k-bl').textContent = bl;
+  document.getElementById('ops-k-bl-s').textContent = bl === 1 ? 'escalation needed' : 'escalations needed';
+  document.getElementById('ops-k-od').textContent = od;
+
+  // Project table
+  var ptbody = document.querySelector('#ops-projects-tbl tbody');
+  if (!projects.length) {
+    ptbody.innerHTML = '<tr><td colspan="7" class="empty">No project data loaded.</td></tr>';
+  } else {
+    ptbody.innerHTML = projects.map(function(p, i) {
+      var sClass = p.status === 'on-track' ? 'p-green' : p.status === 'at-risk' ? 'p-yellow' : 'p-red';
+      var sLabel = p.status === 'on-track' ? 'On-Track' : p.status === 'at-risk' ? 'At Risk' : 'Blocked';
+      var pct = (p.pct || 0);
+      var pctColor = pct >= 75 ? 'var(--green)' : pct >= 40 ? 'var(--yellow)' : 'var(--red)';
+      return '<tr class="row" onclick="showProjectModal(' + i + ')">' +
+        '<td><div class="t1">' + (p.name || '').substring(0, 42) + '</div></td>' +
+        '<td class="tm">' + (p.client || '—') + '</td>' +
+        '<td><span class="p ' + sClass + '">' + sLabel + '</span></td>' +
+        '<td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:var(--border);border-radius:3px;height:5px;min-width:50px"><div style="width:' + pct + '%;height:5px;border-radius:3px;background:' + pctColor + '"></div></div><span class="tm">' + pct + '%</span></div></td>' +
+        '<td class="tm">' + (p.owner || '—') + '</td>' +
+        '<td class="tm">' + (p.due || '—') + '</td>' +
+        '<td style="font-size:.72rem;color:var(--grey);max-width:200px">' + (p.notes || '').substring(0, 60) + (p.notes && p.notes.length > 60 ? '…' : '') + '</td>' +
+        '</tr>';
+    }).join('');
+  }
+
+  // Resource table
+  var resources = OPS_DATA.resources || [];
+  var rtbody = document.querySelector('#ops-resources-tbl tbody');
+  if (!resources.length) {
+    rtbody.innerHTML = '<tr><td colspan="4" class="empty">No resource data loaded.</td></tr>';
+  } else {
+    rtbody.innerHTML = resources.map(function(r) {
+      var flagClass = r.flag === 'overloaded' ? 'p-red' : r.flag === 'available' ? 'p-green' : 'p-grey';
+      var flagLabel = r.flag === 'overloaded' ? '🔴 Overloaded' : r.flag === 'available' ? '🟢 Available' : '⚪ Normal';
+      var utilColor = r.utilization > 100 ? 'var(--red)' : r.utilization >= 80 ? 'var(--yellow)' : 'var(--green)';
+      return '<tr>' +
+        '<td class="t1">' + (r.name || '—') + '</td>' +
+        '<td><span style="font-weight:700;color:' + utilColor + '">' + r.utilization + '%</span></td>' +
+        '<td style="font-size:.72rem;color:var(--grey)">' + (r.projects || []).join(', ') + '</td>' +
+        '<td><span class="p ' + flagClass + '">' + flagLabel + '</span></td>' +
+        '</tr>';
+    }).join('');
+  }
+}
+
+function showProjectModal(i) {
+  var p = (OPS_DATA && OPS_DATA.projects) ? OPS_DATA.projects[i] : null;
+  if (!p) return;
+  var sClass = p.status === 'on-track' ? 'green' : p.status === 'at-risk' ? '' : 'red';
+  var sLabel = p.status === 'on-track' ? 'On-Track' : p.status === 'at-risk' ? 'At Risk' : 'Blocked';
+  openModal('Project Detail · Operations', p.name, p.client,
+    '<div class="m-grid">' +
+    '<div class="mf"><div class="mf-l">Status</div><div class="mf-v ' + sClass + '">' + sLabel + '</div></div>' +
+    '<div class="mf"><div class="mf-l">Client</div><div class="mf-v">' + (p.client || '—') + '</div></div>' +
+    '<div class="mf"><div class="mf-l">Owner</div><div class="mf-v">' + (p.owner || '—') + '</div></div>' +
+    '<div class="mf"><div class="mf-l">Due Date</div><div class="mf-v">' + (p.due || '—') + '</div></div>' +
+    '<div class="mf"><div class="mf-l">% Complete</div><div class="mf-v">' + (p.pct || 0) + '%</div></div>' +
+    '<div class="mf"><div class="mf-l">Team Size</div><div class="mf-v">' + (p.team_size || '—') + '</div></div>' +
+    '</div>' +
+    (p.notes ? '<div style="margin:12px 0 5px;font-size:.7rem;font-weight:700">Notes / Blockers:</div><div style="font-size:.78rem;color:#374151;line-height:1.6;background:var(--grey-light);padding:12px 14px;border-radius:6px">' + p.notes + '</div>' : '') +
+    (p.next_action ? '<div style="margin:12px 0 5px;font-size:.7rem;font-weight:700">Next Action:</div><div style="font-size:.78rem;color:var(--black);line-height:1.6;background:var(--gold-pale);padding:12px 14px;border-radius:6px;border-left:3px solid var(--gold)">' + p.next_action + '</div>' : ''),
+    'Kai · COO View · ' + new Date().toLocaleTimeString());
+}
+
+// Hook into auth flow
+var _origDoAuth = doAuth;
+doAuth = function(){
+  if(document.getElementById('pwd').value==='9025'){
+    setTimeout(loadOps, 500);
+  }
+  _origDoAuth();
+};
+window.addEventListener('DOMContentLoaded', function(){
+  if(sessionStorage.getItem('bln24_auth')==='9025'){
+    setTimeout(loadOps, 500);
+  }
+});
 </script>
 </body>
 </html>

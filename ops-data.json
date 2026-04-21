@@ -1,0 +1,161 @@
+{
+  "updated": "2026-04-21T12:00:00Z",
+  "overdue_tasks": 4,
+  "attention": [
+    {
+      "urgency": "red",
+      "title": "NOAA Modernization — delivery milestone at risk",
+      "detail": "Sprint 4 deliverable (data pipeline v2) is 9 days overdue. Team lead flagged resource conflict with Census backfill. Needs Brian's call on priority."
+    },
+    {
+      "urgency": "yellow",
+      "title": "FEMA CX Project — PM gap opening May 1",
+      "detail": "Jordan Lee rolls off April 30. No backfill identified yet. 3 open tasks unassigned. Recommend staffing decision this week."
+    },
+    {
+      "urgency": "yellow",
+      "title": "IRS Design System — client review stalled 2 weeks",
+      "detail": "Awaiting stakeholder sign-off on component library v1.2. Follow-up sent April 14 with no response. May need Brian to escalate directly."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Census Bureau Digital Web Services",
+      "client": "Census Bureau",
+      "status": "on-track",
+      "pct": 72,
+      "owner": "Priya Nair",
+      "due": "2026-09-30",
+      "team_size": 8,
+      "notes": "Sprint velocity healthy. Client satisfied with Q1 delivery. No blockers.",
+      "next_action": "Sprint 7 kickoff May 5 — confirm stakeholder attendance."
+    },
+    {
+      "name": "NOAA AI for Software Modernization",
+      "client": "NOAA",
+      "status": "blocked",
+      "pct": 38,
+      "owner": "Marcus Webb",
+      "due": "2026-06-15",
+      "team_size": 5,
+      "notes": "Data pipeline v2 milestone 9 days overdue. Resource conflict with Census backfill assignment. Client is aware but growing impatient.",
+      "next_action": "Brian to decide: pull Marcus full-time to NOAA or negotiate milestone extension with client."
+    },
+    {
+      "name": "IRS Human-Centered Design BPA",
+      "client": "IRS",
+      "status": "at-risk",
+      "pct": 55,
+      "owner": "Sarah Kim",
+      "due": "2026-07-31",
+      "team_size": 6,
+      "notes": "Component library v1.2 awaiting client sign-off for 2 weeks. Blocking 3 downstream tasks. Design team is idle on this track.",
+      "next_action": "Escalate directly to IRS program manager. Sarah to send follow-up by EOD today."
+    },
+    {
+      "name": "FEMA Customer Experience Redesign",
+      "client": "FEMA",
+      "status": "at-risk",
+      "pct": 44,
+      "owner": "Jordan Lee",
+      "due": "2026-08-15",
+      "team_size": 4,
+      "notes": "PM (Jordan Lee) rolls off April 30. No backfill identified. 3 tasks unassigned. Transition plan not yet drafted.",
+      "next_action": "Identify PM backfill candidate by April 25. Jordan to complete knowledge transfer doc before exit."
+    },
+    {
+      "name": "CMS Marketplace Notice Production",
+      "client": "CMS",
+      "status": "on-track",
+      "pct": 81,
+      "owner": "Tanya Brooks",
+      "due": "2026-05-31",
+      "team_size": 7,
+      "notes": "Strong delivery pace. Final QA sprint underway. Client engagement high.",
+      "next_action": "Schedule final client walkthrough week of May 18."
+    },
+    {
+      "name": "AWS Cloud Modernization Advisory",
+      "client": "AWS",
+      "status": "on-track",
+      "pct": 60,
+      "owner": "Derek Chang",
+      "due": "2026-10-31",
+      "team_size": 3,
+      "notes": "Advisory engagement running well. Monthly deliverables met. Opportunity to expand scope in Q3.",
+      "next_action": "Prepare scope expansion proposal for June QBR."
+    },
+    {
+      "name": "Census CES RFQ Data Analytics",
+      "client": "Census Bureau",
+      "status": "on-track",
+      "pct": 90,
+      "owner": "Priya Nair",
+      "due": "2026-04-30",
+      "team_size": 3,
+      "notes": "Final deliverables in client review. On track to close out this month.",
+      "next_action": "Obtain final sign-off and close project by April 30."
+    },
+    {
+      "name": "HHS Strategic Communications",
+      "client": "HHS",
+      "status": "at-risk",
+      "pct": 30,
+      "owner": "Angela Torres",
+      "due": "2026-06-30",
+      "team_size": 4,
+      "notes": "Scope creep from client adding deliverables without contract mod. Team stretched. Angela flagged 2 weeks ago.",
+      "next_action": "Submit formal contract mod request by April 28. Legal review needed."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Priya Nair",
+      "utilization": 125,
+      "projects": ["Census Digital Web", "Census CES RFQ"],
+      "flag": "overloaded"
+    },
+    {
+      "name": "Marcus Webb",
+      "utilization": 110,
+      "projects": ["NOAA Modernization", "Census backfill"],
+      "flag": "overloaded"
+    },
+    {
+      "name": "Jordan Lee",
+      "utilization": 80,
+      "projects": ["FEMA CX"],
+      "flag": "normal"
+    },
+    {
+      "name": "Sarah Kim",
+      "utilization": 90,
+      "projects": ["IRS HCD BPA"],
+      "flag": "normal"
+    },
+    {
+      "name": "Tanya Brooks",
+      "utilization": 95,
+      "projects": ["CMS Marketplace"],
+      "flag": "normal"
+    },
+    {
+      "name": "Derek Chang",
+      "utilization": 60,
+      "projects": ["AWS Advisory"],
+      "flag": "available"
+    },
+    {
+      "name": "Angela Torres",
+      "utilization": 115,
+      "projects": ["HHS Strategic Comms"],
+      "flag": "overloaded"
+    },
+    {
+      "name": "Chris Holt",
+      "utilization": 40,
+      "projects": [],
+      "flag": "available"
+    }
+  ]
+}
