@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-21T04:03:36.202Z",
+  "updated": "2026-04-21T04:09:10.557Z",
   "count": 123,
   "opps": [
     {
@@ -45,33 +45,81 @@
         "Training & eLearning"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Human-Centered Design / UX",
+            "skill": "Human-Centered Design (HCD)",
             "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "IRS HCD BPA $7M, Census UX, CBP digital transformation",
-            "matched_on": [
-              "hcd",
+            "status_label": "\u2705 Can Prime",
+            "evidence": "IRS HCD BPA $7M, Census UX, CBP digital transformation (Clarity24)",
+            "triggered_by": [
+              "hcd"
+            ]
+          },
+          {
+            "skill": "User Experience (UX) Design",
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "evidence": "IRS HCD BPA $7M, Census UX, CBP.gov redesign (Clarity24)",
+            "triggered_by": [
               "user experience",
               "ux "
             ]
           },
           {
-            "capability": "Behavioral Science & Research",
+            "skill": "Due Diligence & Advisory",
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "evidence": "MCC HCD due diligence \u2014 aligns with HCD/UX consulting capability",
+            "triggered_by": [
+              "due diligence",
+              "consulting services"
+            ]
+          },
+          {
+            "skill": "International Development",
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "evidence": "MCC HCD due diligence \u2014 BLN24 has HCD scope in developing-country context",
+            "triggered_by": [
+              "developing countries",
+              "mcc"
+            ]
+          },
+          {
+            "skill": "Behavioral Science",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "DHRA command climate (BLN Fors Marsh JV)",
-            "matched_on": [
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "DHRA command climate research (BLN Fors Marsh JV)",
+            "triggered_by": [
               "behavioral insights"
+            ]
+          },
+          {
+            "skill": "Training & eLearning",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 training/eLearning prime delivery on record",
+            "triggered_by": [
+              "training"
+            ]
+          },
+          {
+            "skill": "Recruitment & HR Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "workforce development"
             ]
           }
         ],
-        "fit": "Strong",
-        "fit_reason": "Scope aligns directly with BLN24 prime delivery lanes",
-        "prime_count": 1,
+        "fit": "Moderate",
+        "fit_reason": "BLN24 can prime: Human-Centered Design (HCD), User Experience (UX) Design. Needs teaming for: Training & eLearning, Recruitment & HR Support",
+        "prime_count": 4,
         "jv_count": 1,
-        "gap_count": 0
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 7
       }
     },
     {
@@ -114,31 +162,33 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Application Modernization",
+            "skill": "Application Modernization",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
             "evidence": "NOAA app modernization $2.8M, Census MAF/TIGER (Clarity24 JV)",
-            "matched_on": [
+            "triggered_by": [
               "application modernization"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
         "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit_reason": "Viable via JV \u2014 Application Modernization",
         "prime_count": 0,
         "jv_count": 1,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -180,33 +230,34 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Digital Marketing & Paid Media",
+            "skill": "Digital Marketing & Paid Media",
             "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "USDA social media, CDC digital, FTC paid advertising (Fors Marsh)",
-            "matched_on": [
-              "advertising",
-              "marketing platform",
+            "status_label": "\u2705 Can Prime",
+            "evidence": "USDA social media $141K, CDC digital; FTC paid media $581K (Fors Marsh)",
+            "triggered_by": [
+              "advertising medium",
               "lead generation"
             ]
           },
           {
-            "capability": "Data Analytics & Business Intelligence",
-            "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "Census SRQA $4.1M, Dept of Education EDARMST $2.9M",
-            "matched_on": [
-              "data-driven"
+            "skill": "Recruitment & HR Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "recruitment"
             ]
           }
         ],
-        "fit": "Strong",
-        "fit_reason": "Scope aligns directly with BLN24 prime delivery lanes",
-        "prime_count": 2,
+        "fit": "Moderate",
+        "fit_reason": "BLN24 can prime: Digital Marketing & Paid Media. Needs teaming for: Recruitment & HR Support",
+        "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -252,32 +303,44 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Branding & Visual Identity",
+            "skill": "Branding & Visual Identity",
             "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "MBDA website $4.4M, Census design services",
-            "matched_on": [
+            "status_label": "\u2705 Can Prime",
+            "evidence": "MBDA website/rebrand $4.4M, Census design services $388K",
+            "triggered_by": [
               "branding",
               "logo"
             ]
           },
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Large Format Print / Signage",
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "evidence": "Visual design and production capability; MBDA, CDC NCHS production work",
+            "triggered_by": [
+              "large format",
+              "building wrap"
+            ]
+          },
+          {
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           }
         ],
         "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Branding & Visual Identity. Gap areas need teaming: Cybersecurity / FISMA / Zero Trust",
-        "prime_count": 1,
+        "fit_reason": "BLN24 can prime: Branding & Visual Identity, Large Format Print / Signage. Needs teaming for: Cybersecurity / FISMA",
+        "prime_count": 2,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -323,42 +386,62 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Strategic Communications",
+            "skill": "Strategic Communications",
             "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
+            "status_label": "\u2705 Can Prime",
             "evidence": "CMS MNPS $16M, CDC health comms $3.9M, HUD FHEO $2M",
-            "matched_on": [
+            "triggered_by": [
               "communications services"
             ]
           },
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "security operations"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
-              "telecommunications",
-              "telephony",
+            "triggered_by": [
               "server hosting"
+            ]
+          },
+          {
+            "skill": "Telecommunications",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 telecom prime on record",
+            "triggered_by": [
+              "telecommunications",
+              "telephony"
+            ]
+          },
+          {
+            "skill": "Help Desk / IT Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 IT help desk prime on record",
+            "triggered_by": [
+              "service desk",
+              "incident management"
             ]
           }
         ],
         "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Strategic Communications. Gap areas need teaming: Cybersecurity / FISMA / Zero Trust, IT Infrastructure / Telecom",
+        "fit_reason": "BLN24 can prime: Strategic Communications. Needs teaming for: Cybersecurity / FISMA, IT Infrastructure",
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 4,
+        "unknown_count": 0,
+        "total_skills": 5
       }
     },
     {
@@ -404,31 +487,33 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Outreach & Stakeholder Engagement",
+            "skill": "Public / Stakeholder Outreach",
             "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "HUD FHEO outreach, HRSA Marketing BPA, USCIS VER",
-            "matched_on": [
+            "status_label": "\u2705 Can Prime",
+            "evidence": "HUD FHEO outreach $2M, HRSA Marketing BPA, USCIS VER (forecast)",
+            "triggered_by": [
               "outreach"
             ]
           },
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "soc"
             ]
           }
         ],
         "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Outreach & Stakeholder Engagement. Gap areas need teaming: Cybersecurity / FISMA / Zero Trust",
+        "fit_reason": "BLN24 can prime: Public / Stakeholder Outreach. Needs teaming for: Cybersecurity / FISMA",
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -476,42 +561,52 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Data Engineering & Management",
+            "skill": "Data Engineering",
             "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "Census SRQA, MAF/TIGER, Census data archiving $4.5M",
-            "matched_on": [
+            "status_label": "\u2705 Can Prime",
+            "evidence": "Census SRQA, Census MAF/TIGER $4.5M, Census data archiving $4.5M",
+            "triggered_by": [
               "data management"
             ]
           },
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "Scientific / Laboratory Support",
+            "skill": "Scientific / Lab Support",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
-              "laboratory",
+            "triggered_by": [
+              "laboratory"
+            ]
+          },
+          {
+            "skill": "Blood / Laboratory Services",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
               "pathology",
-              "point of care"
+              "point of care testing"
             ]
           }
         ],
         "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Data Engineering & Management. Gap areas need teaming: Cybersecurity / FISMA / Zero Trust, Scientific / Laboratory Support",
+        "fit_reason": "BLN24 can prime: Data Engineering. Needs teaming for: Cybersecurity / FISMA, Scientific / Lab Support",
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 4
       }
     },
     {
@@ -548,33 +643,43 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Scientific / Laboratory Support",
-            "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
-            "evidence": "Not a BLN24 service lane",
-            "matched_on": [
-              "clinical"
+            "skill": "Due Diligence & Advisory",
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "evidence": "MCC HCD due diligence \u2014 aligns with HCD/UX consulting capability",
+            "triggered_by": [
+              "subject matter expert"
             ]
           },
           {
-            "capability": "Medical Services",
+            "skill": "Medical Services",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "medical services",
-              "clinical psychologist",
-              "physician"
+              "clinical psychologist"
+            ]
+          },
+          {
+            "skill": "Recruitment & HR Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "recruiting"
             ]
           }
         ],
-        "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
-        "prime_count": 0,
+        "fit": "Moderate",
+        "fit_reason": "BLN24 can prime: Due Diligence & Advisory. Needs teaming for: Medical Services, Recruitment & HR Support",
+        "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -611,22 +716,44 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Records & Information Mgmt",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 prime delivery on record for records management",
+            "triggered_by": [
+              "information management",
+              "records and information"
+            ]
+          },
+          {
+            "skill": "Space / Defense / ITAR",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "itar"
+            ]
+          },
+          {
+            "skill": "Blood / Laboratory Services",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "blood program",
+              "blood supply"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -674,51 +801,61 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cloud Migration & Infrastructure",
+            "skill": "AWS / Cloud Engineering",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "NOAA NWS IDP cloud $4.3M, NOAA app mod $2.8M (Clarity24 JV)",
-            "matched_on": [
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "NOAA cloud on AWS (Clarity24 JV)",
+            "triggered_by": [
               "aws"
             ]
           },
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           },
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Scientific / Lab Support",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
+              "environmental monitoring"
+            ]
+          },
+          {
+            "skill": "Space / Defense / ITAR",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
               "space technology",
-              "surveillance",
-              "reconnaissance"
+              "surveillance"
             ]
           }
         ],
         "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit_reason": "Viable via JV \u2014 AWS / Cloud Engineering",
         "prime_count": 0,
         "jv_count": 1,
-        "gap_count": 3
+        "gap_count": 4,
+        "unknown_count": 0,
+        "total_skills": 5
       }
     },
     {
@@ -760,32 +897,34 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cloud Migration & Infrastructure",
+            "skill": "AWS / Cloud Engineering",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "NOAA NWS IDP cloud $4.3M, NOAA app mod $2.8M (Clarity24 JV)",
-            "matched_on": [
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "NOAA cloud on AWS (Clarity24 JV)",
+            "triggered_by": [
               "aws"
             ]
           },
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Space / Defense / ITAR",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "itar",
               "cmmc"
             ]
           }
         ],
         "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit_reason": "Viable via JV \u2014 AWS / Cloud Engineering",
         "prime_count": 0,
         "jv_count": 1,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -827,12 +966,14 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -874,22 +1015,33 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "Due Diligence & Advisory",
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "evidence": "MCC HCD due diligence \u2014 aligns with HCD/UX consulting capability",
+            "triggered_by": [
+              "subject matter expert"
+            ]
+          },
+          {
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "wan"
             ]
           }
         ],
-        "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
-        "prime_count": 0,
+        "fit": "Moderate",
+        "fit_reason": "BLN24 can prime: Due Diligence & Advisory. Needs teaming for: IT Infrastructure",
+        "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -927,41 +1079,42 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Human-Centered Design / UX",
+            "skill": "User Experience (UX) Design",
             "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "IRS HCD BPA $7M, Census UX, CBP digital transformation",
-            "matched_on": [
-              "user experience",
-              "usability"
+            "status_label": "\u2705 Can Prime",
+            "evidence": "IRS HCD BPA $7M, Census UX, CBP.gov redesign (Clarity24)",
+            "triggered_by": [
+              "user experience"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           },
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Space / Defense / ITAR",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "tactical"
             ]
           }
         ],
         "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Human-Centered Design / UX. Gap areas need teaming: IT Infrastructure / Telecom, Space / Defense Technology",
+        "fit_reason": "BLN24 can prime: User Experience (UX) Design. Needs teaming for: IT Infrastructure, Space / Defense / ITAR",
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -1006,31 +1159,42 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Survey Design & Research",
+            "skill": "Survey Design & Administration",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "USPTO survey support (BLN Fors Marsh JV), Census data collection",
-            "matched_on": [
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "USPTO survey support (BLN Fors Marsh JV); Census data collection",
+            "triggered_by": [
               "survey"
             ]
           },
           {
-            "capability": "Application Modernization",
+            "skill": "Application Modernization",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
             "evidence": "NOAA app modernization $2.8M, Census MAF/TIGER (Clarity24 JV)",
-            "matched_on": [
+            "triggered_by": [
               "application modernization"
+            ]
+          },
+          {
+            "skill": "Statistical Analysis",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Analytics yes; standalone statistical/biostatistics prime not confirmed",
+            "triggered_by": [
+              "data science"
             ]
           }
         ],
         "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit_reason": "Viable via JV \u2014 Survey Design & Administration, Application Modernization",
         "prime_count": 0,
         "jv_count": 2,
-        "gap_count": 0
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -1067,12 +1231,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -1109,12 +1275,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -1151,12 +1319,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -1193,12 +1363,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -1235,31 +1407,33 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Data Engineering & Management",
+            "skill": "Data Engineering",
             "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "Census SRQA, MAF/TIGER, Census data archiving $4.5M",
-            "matched_on": [
+            "status_label": "\u2705 Can Prime",
+            "evidence": "Census SRQA, Census MAF/TIGER $4.5M, Census data archiving $4.5M",
+            "triggered_by": [
               "data processing"
             ]
           },
           {
-            "capability": "Program Evaluation",
+            "skill": "Evaluation & Research",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "DHRA research (Fors Marsh JV), Census SRQA quality assurance",
-            "matched_on": [
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "DHRA research analytics (BLN Fors Marsh JV)",
+            "triggered_by": [
               "rct"
             ]
           }
         ],
         "fit": "Strong",
-        "fit_reason": "Scope aligns directly with BLN24 prime delivery lanes",
+        "fit_reason": "BLN24 can prime all identified skill requirements",
         "prime_count": 1,
         "jv_count": 1,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -1296,23 +1470,25 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Software Licensing / Procurement",
+            "skill": "Software Licensing",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "software license",
               "enterprise license"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -1353,31 +1529,24 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Web Design & Development",
-            "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "MBDA website $4.4M, Census DWS, Oversight.gov $387K",
-            "matched_on": [
-              "portal"
-            ]
-          },
-          {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "network engineering"
             ]
           }
         ],
-        "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Web Design & Development. Gap areas need teaming: IT Infrastructure / Telecom",
-        "prime_count": 1,
+        "fit": "Pass",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
+        "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -1414,22 +1583,33 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Software Licensing / Procurement",
+            "skill": "Program Management",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "PM is a support function; BLN24 has not won standalone PM contracts",
+            "triggered_by": [
+              "project management"
+            ]
+          },
+          {
+            "skill": "Software Licensing",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "software license"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -1465,22 +1645,24 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -1522,22 +1704,24 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -1573,22 +1757,33 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Program Management",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "PM is a support function; BLN24 has not won standalone PM contracts",
+            "triggered_by": [
+              "project management"
+            ]
+          },
+          {
+            "skill": "Space / Defense / ITAR",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "geospatial intelligence"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -1630,24 +1825,25 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "cybersecurity",
-              "fisma",
-              "zero trust"
+              "fisma"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -1690,31 +1886,24 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Outreach & Stakeholder Engagement",
+            "skill": "Public / Stakeholder Outreach",
             "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "HUD FHEO outreach, HRSA Marketing BPA, USCIS VER",
-            "matched_on": [
+            "status_label": "\u2705 Can Prime",
+            "evidence": "HUD FHEO outreach $2M, HRSA Marketing BPA, USCIS VER (forecast)",
+            "triggered_by": [
               "community engagement"
-            ]
-          },
-          {
-            "capability": "Data Engineering & Management",
-            "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "Census SRQA, MAF/TIGER, Census data archiving $4.5M",
-            "matched_on": [
-              "data collection"
             ]
           }
         ],
         "fit": "Strong",
-        "fit_reason": "Scope aligns directly with BLN24 prime delivery lanes",
-        "prime_count": 2,
+        "fit_reason": "BLN24 can prime all identified skill requirements",
+        "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -1761,22 +1950,42 @@
         "Training & eLearning"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Program Management",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "PM is a support function; BLN24 has not won standalone PM contracts",
+            "triggered_by": [
+              "program management"
+            ]
+          },
+          {
+            "skill": "Cybersecurity / FISMA",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
+            ]
+          },
+          {
+            "skill": "Training & eLearning",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 training/eLearning prime delivery on record",
+            "triggered_by": [
+              "training"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -1823,32 +2032,34 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
-              "soc",
-              "ato"
+            "triggered_by": [
+              "ato",
+              "soc"
             ]
           },
           {
-            "capability": "Scientific / Laboratory Support",
+            "skill": "Scientific / Lab Support",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "laboratory"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -1889,22 +2100,34 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "Due Diligence & Advisory",
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "evidence": "MCC HCD due diligence \u2014 aligns with HCD/UX consulting capability",
+            "triggered_by": [
+              "consulting services",
+              "technical consulting"
+            ]
+          },
+          {
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
-        "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
-        "prime_count": 0,
+        "fit": "Moderate",
+        "fit_reason": "BLN24 can prime: Due Diligence & Advisory. Needs teaming for: IT Infrastructure",
+        "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -1950,41 +2173,43 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Strategic Communications",
+            "skill": "Strategic Communications",
             "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
+            "status_label": "\u2705 Can Prime",
             "evidence": "CMS MNPS $16M, CDC health comms $3.9M, HUD FHEO $2M",
-            "matched_on": [
+            "triggered_by": [
               "communications services"
             ]
           },
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "soc"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "Telecommunications",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
-            "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 telecom prime on record",
+            "triggered_by": [
               "telecommunications",
-              "fiber"
+              "telecom"
             ]
           }
         ],
         "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Strategic Communications. Gap areas need teaming: Cybersecurity / FISMA / Zero Trust, IT Infrastructure / Telecom",
+        "fit_reason": "BLN24 can prime: Strategic Communications. Needs teaming for: Cybersecurity / FISMA, Telecommunications",
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -2025,12 +2250,24 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [],
+        "skills": [
+          {
+            "skill": "Scientific / Lab Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "environmental monitoring"
+            ]
+          }
+        ],
         "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -2071,31 +2308,33 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -2136,22 +2375,33 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
+            ]
+          },
+          {
+            "skill": "Scientific / Lab Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "environmental monitoring"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -2194,32 +2444,34 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
-              "soc",
-              "ato"
+            "triggered_by": [
+              "ato",
+              "soc"
             ]
           },
           {
-            "capability": "Scientific / Laboratory Support",
+            "skill": "Scientific / Lab Support",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "laboratory"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -2260,22 +2512,33 @@
         "Training & eLearning"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
+            ]
+          },
+          {
+            "skill": "Training & eLearning",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 training/eLearning prime delivery on record",
+            "triggered_by": [
+              "training"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -2317,33 +2580,34 @@
         "Training & eLearning"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           },
           {
-            "capability": "Training & eLearning Development",
+            "skill": "Training & eLearning",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 training/eLearning prime delivery on record",
-            "matched_on": [
-              "elearning",
-              "learning management",
-              "training content"
+            "triggered_by": [
+              "training",
+              "elearning"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -2384,49 +2648,42 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "soc"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           },
           {
-            "capability": "Scientific / Laboratory Support",
+            "skill": "Medical Services",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
-              "clinical"
-            ]
-          },
-          {
-            "capability": "Medical Services",
-            "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
-            "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "patient care"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 4
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -2470,32 +2727,43 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Mobile Development",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 mobile app prime on record",
+            "triggered_by": [
+              "ios"
+            ]
+          },
+          {
+            "skill": "Cybersecurity / FISMA",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "Scientific / Laboratory Support",
+            "skill": "Scientific / Lab Support",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "laboratory",
               "specimen"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -2538,31 +2806,33 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "Scientific / Laboratory Support",
+            "skill": "Scientific / Lab Support",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "laboratory"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -2603,22 +2873,24 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "soc"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -2662,31 +2934,52 @@
         "Training & eLearning"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "soc"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
+            ]
+          },
+          {
+            "skill": "Training & eLearning",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 training/eLearning prime delivery on record",
+            "triggered_by": [
+              "training"
+            ]
+          },
+          {
+            "skill": "Capacity Building",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Adjacent to HCD consulting but not a confirmed prime lane",
+            "triggered_by": [
+              "capacity building",
+              "technical assistance"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 4,
+        "unknown_count": 0,
+        "total_skills": 4
       }
     },
     {
@@ -2730,22 +3023,43 @@
         "Training & eLearning"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "soc"
+            ]
+          },
+          {
+            "skill": "Training & eLearning",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 training/eLearning prime delivery on record",
+            "triggered_by": [
+              "training"
+            ]
+          },
+          {
+            "skill": "Capacity Building",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Adjacent to HCD consulting but not a confirmed prime lane",
+            "triggered_by": [
+              "capacity building",
+              "technical assistance"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -2789,31 +3103,33 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -2855,40 +3171,42 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "IT Strategy & Governance",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 CIO-shop IT governance prime on record",
+            "triggered_by": [
+              "capital planning"
+            ]
+          },
+          {
+            "skill": "Cybersecurity / FISMA",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
-            ]
-          },
-          {
-            "capability": "IT Program Management / CIO Support",
-            "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
-            "evidence": "No BLN24 CIO-shop IT governance prime on record",
-            "matched_on": [
-              "capital planning"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 3
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -2932,12 +3250,33 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [],
+        "skills": [
+          {
+            "skill": "Training & eLearning",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 training/eLearning prime delivery on record",
+            "triggered_by": [
+              "training"
+            ]
+          },
+          {
+            "skill": "Recruitment & HR Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "recruiting"
+            ]
+          }
+        ],
         "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -2978,22 +3317,24 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "soc"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -3037,32 +3378,42 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "Scientific / Laboratory Support",
+            "skill": "Scientific / Lab Support",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
-              "laboratory",
-              "clinical"
+            "triggered_by": [
+              "laboratory"
+            ]
+          },
+          {
+            "skill": "Recruitment & HR Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "staffing"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -3103,33 +3454,43 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "cybersecurity",
-              "security operations",
               "ato"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
+            ]
+          },
+          {
+            "skill": "Recruitment & HR Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "staffing"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -3170,22 +3531,24 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "soc"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -3229,31 +3592,33 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "Scientific / Laboratory Support",
+            "skill": "Scientific / Lab Support",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "laboratory"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -3294,22 +3659,24 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "soc"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -3352,41 +3719,52 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
-              "soc",
-              "ato"
+            "triggered_by": [
+              "ato",
+              "soc"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           },
           {
-            "capability": "Scientific / Laboratory Support",
+            "skill": "Scientific / Lab Support",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "laboratory"
+            ]
+          },
+          {
+            "skill": "Records & Information Mgmt",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 prime delivery on record for records management",
+            "triggered_by": [
+              "records management"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 3
+        "gap_count": 4,
+        "unknown_count": 0,
+        "total_skills": 4
       }
     },
     {
@@ -3427,22 +3805,33 @@
         "Training & eLearning"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
+            ]
+          },
+          {
+            "skill": "Training & eLearning",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 training/eLearning prime delivery on record",
+            "triggered_by": [
+              "training"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -3483,31 +3872,33 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "soc"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -3550,32 +3941,33 @@
         "Training & eLearning"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "Scientific / Laboratory Support",
+            "skill": "Training & eLearning",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
-            "evidence": "Not a BLN24 service lane",
-            "matched_on": [
-              "medical device",
-              "clinical"
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 training/eLearning prime delivery on record",
+            "triggered_by": [
+              "training"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -3624,32 +4016,44 @@
         "AI / Machine Learning"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cloud Migration & Infrastructure",
+            "skill": "AWS / Cloud Engineering",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "NOAA NWS IDP cloud $4.3M, NOAA app mod $2.8M (Clarity24 JV)",
-            "matched_on": [
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "NOAA cloud on AWS (Clarity24 JV)",
+            "triggered_by": [
               "aws"
             ]
           },
           {
-            "capability": "Space / Defense Technology",
+            "skill": "AI / Machine Learning",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Data analytics yes; deep AI/ML prime not confirmed",
+            "triggered_by": [
+              "artificial intelligence",
+              "machine learning"
+            ]
+          },
+          {
+            "skill": "Space / Defense / ITAR",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "itar",
               "cmmc"
             ]
           }
         ],
         "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit_reason": "Viable via JV \u2014 AWS / Cloud Engineering",
         "prime_count": 0,
         "jv_count": 1,
-        "gap_count": 1
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -3690,24 +4094,25 @@
         "DevSecOps"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Space / Defense / ITAR",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "space technology",
-              "warfighter",
-              "cmmc"
+              "warfighter"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -3748,22 +4153,24 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Space / Defense / ITAR",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "cmmc"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -3799,12 +4206,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -3845,12 +4254,33 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [],
+        "skills": [
+          {
+            "skill": "Program Management",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "PM is a support function; BLN24 has not won standalone PM contracts",
+            "triggered_by": [
+              "program management"
+            ]
+          },
+          {
+            "skill": "Technical Writing",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Technical writing as a standalone not a confirmed prime lane",
+            "triggered_by": [
+              "documentation"
+            ]
+          }
+        ],
         "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -3892,32 +4322,34 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
-              "soc",
-              "ato"
+            "triggered_by": [
+              "ato",
+              "soc"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -3959,22 +4391,24 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -4015,24 +4449,25 @@
         "CRM / Salesforce"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "CRM / Salesforce Implementation",
+            "skill": "CRM / Salesforce",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 CRM implementation prime on record",
-            "matched_on": [
+            "triggered_by": [
               "crm",
-              "salesforce",
-              "customer relationship management"
+              "salesforce"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -4074,22 +4509,34 @@
         "Training & eLearning"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Training & eLearning Development",
+            "skill": "AI / Machine Learning",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Data analytics yes; deep AI/ML prime not confirmed",
+            "triggered_by": [
+              "generative ai",
+              "llm"
+            ]
+          },
+          {
+            "skill": "Training & eLearning",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 training/eLearning prime delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "lms"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -4130,22 +4577,24 @@
         "CRM / Salesforce"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "CRM / Salesforce Implementation",
+            "skill": "CRM / Salesforce",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 CRM implementation prime on record",
-            "matched_on": [
+            "triggered_by": [
               "servicenow"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -4181,12 +4630,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -4222,12 +4673,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -4274,42 +4727,61 @@
         "CRM / Salesforce"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cloud Migration & Infrastructure",
+            "skill": "Customer Experience (CX)",
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "evidence": "CBP Digital Transformation (Clarity24), IRS HCD",
+            "triggered_by": [
+              "customer experience"
+            ]
+          },
+          {
+            "skill": "Cloud Migration",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "NOAA NWS IDP cloud $4.3M, NOAA app mod $2.8M (Clarity24 JV)",
-            "matched_on": [
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "NOAA NWS IDP cloud $4.3M, NOAA AI mod $2.8M (Clarity24 JV)",
+            "triggered_by": [
               "paas"
             ]
           },
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Program Management",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "PM is a support function; BLN24 has not won standalone PM contracts",
+            "triggered_by": [
+              "program management"
+            ]
+          },
+          {
+            "skill": "Cybersecurity / FISMA",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "CRM / Salesforce Implementation",
+            "skill": "CRM / Salesforce",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 CRM implementation prime on record",
-            "matched_on": [
+            "triggered_by": [
               "crm",
-              "salesforce",
-              "customer relationship management"
+              "salesforce"
             ]
           }
         ],
-        "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
-        "prime_count": 0,
+        "fit": "Moderate",
+        "fit_reason": "BLN24 can prime: Customer Experience (CX). Needs teaming for: Program Management, Cybersecurity / FISMA",
+        "prime_count": 1,
         "jv_count": 1,
-        "gap_count": 2
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 5
       }
     },
     {
@@ -4352,22 +4824,33 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
+            ]
+          },
+          {
+            "skill": "Training & eLearning",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 training/eLearning prime delivery on record",
+            "triggered_by": [
+              "training"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -4403,12 +4886,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -4450,12 +4935,14 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -4497,12 +4984,14 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -4548,12 +5037,24 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [],
+        "skills": [
+          {
+            "skill": "Scientific / Lab Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "environmental monitoring"
+            ]
+          }
+        ],
         "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -4599,22 +5100,33 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
+            ]
+          },
+          {
+            "skill": "Scientific / Lab Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "environmental monitoring"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -4660,40 +5172,42 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Survey Design & Research",
+            "skill": "Survey Design & Administration",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "USPTO survey support (BLN Fors Marsh JV), Census data collection",
-            "matched_on": [
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "USPTO survey support (BLN Fors Marsh JV); Census data collection",
+            "triggered_by": [
               "survey"
             ]
           },
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "soc"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
         "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit_reason": "Viable via JV \u2014 Survey Design & Administration",
         "prime_count": 0,
         "jv_count": 1,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -4730,22 +5244,24 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -4781,12 +5297,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -4822,22 +5340,24 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Medical Services",
+            "skill": "Medical Services",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "nursing"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -4852,10 +5372,10 @@
       "due": "2026-04-25",
       "val_low": 100000,
       "val_high": 350000,
-      "description": "Implementation plan-ShakeAlert Earthquake Early Warning System in Nevada_amd 2, Q&A",
+      "description": "Implementation plan-ShakeAlert Earthquake Early Warning System in Nevada_amd 1, Q&A",
       "summary": "Background\n The U.S. Geological Survey (USGS) is seeking to engage a firm to develop a Technical Implementation Plan for the ShakeAlert Earthquake Early Warning System in Nevada. This initiative aims to enhance earthquake preparedness and response capabilities in the state, which is part of a broader effort to mitigate the impact of earthquakes across the United States. \n\nThe ShakeAlert system is already operational in California, Oregon, and Washington, and this contract will help expand its capabilities to Nevada, where significant earthquake risks exist.\n\nWork Details\n The contractor will p",
       "path": "https://www.highergov.com/contract-opportunity/b-implementation-plan-shakealert-earthquake-ew-140g0326q0073-k-c572e",
-      "source_path": "https://sam.gov/opp/4e3614c8357d47e89f6c1bfb0c32a2cb/view",
+      "source_path": "https://sam.gov/opp/9751416971bb45dd9ccbe7f16e38d200/view",
       "contact_email": "thuot@usgs.gov",
       "contact_name": "Tracy Huot",
       "is8a": false,
@@ -4877,31 +5397,33 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Survey Design & Research",
+            "skill": "Survey Design & Administration",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "USPTO survey support (BLN Fors Marsh JV), Census data collection",
-            "matched_on": [
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "USPTO survey support (BLN Fors Marsh JV); Census data collection",
+            "triggered_by": [
               "survey"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
         "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit_reason": "Viable via JV \u2014 Survey Design & Administration",
         "prime_count": 0,
         "jv_count": 1,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -4937,22 +5459,24 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Space / Defense / ITAR",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "geospatial intelligence"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -4996,58 +5520,51 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Data Analytics & Business Intelligence",
-            "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "Census SRQA $4.1M, Dept of Education EDARMST $2.9M",
-            "matched_on": [
-              "reporting"
-            ]
-          },
-          {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           },
           {
-            "capability": "Scientific / Laboratory Support",
+            "skill": "Software Licensing",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
-              "pathology"
+            "triggered_by": [
+              "software license"
             ]
           },
           {
-            "capability": "Software Licensing / Procurement",
+            "skill": "Blood / Laboratory Services",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
-              "software license"
+            "triggered_by": [
+              "pathology"
             ]
           }
         ],
-        "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Data Analytics & Business Intelligence. Gap areas need teaming: Cybersecurity / FISMA / Zero Trust, IT Infrastructure / Telecom",
-        "prime_count": 1,
+        "fit": "Pass",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
+        "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 4
+        "gap_count": 4,
+        "unknown_count": 0,
+        "total_skills": 4
       }
     },
     {
@@ -5083,31 +5600,42 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "Mobile Development",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 mobile app prime on record",
+            "triggered_by": [
+              "ios"
+            ]
+          },
+          {
+            "skill": "IT Infrastructure",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           },
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Space / Defense / ITAR",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "tactical"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -5143,12 +5671,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -5192,41 +5722,34 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Data Analytics & Business Intelligence",
-            "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "Census SRQA $4.1M, Dept of Education EDARMST $2.9M",
-            "matched_on": [
-              "reporting"
-            ]
-          },
-          {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
-              "soc",
-              "security operations"
+            "triggered_by": [
+              "security operations",
+              "soc"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
-        "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Data Analytics & Business Intelligence. Gap areas need teaming: Cybersecurity / FISMA / Zero Trust, IT Infrastructure / Telecom",
-        "prime_count": 1,
+        "fit": "Pass",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
+        "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -5262,22 +5785,24 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -5313,12 +5838,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -5355,12 +5882,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -5397,12 +5926,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -5450,41 +5981,34 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Human-Centered Design / UX",
-            "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "IRS HCD BPA $7M, Census UX, CBP digital transformation",
-            "matched_on": [
-              "usability"
-            ]
-          },
-          {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Space / Defense / ITAR",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "cmmc",
               "signals intelligence"
             ]
           }
         ],
-        "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Human-Centered Design / UX. Gap areas need teaming: Cybersecurity / FISMA / Zero Trust, Space / Defense Technology",
-        "prime_count": 1,
+        "fit": "Pass",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
+        "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -5521,12 +6045,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -5563,12 +6089,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -5605,12 +6133,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -5647,12 +6177,24 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
+        "skills": [
+          {
+            "skill": "Recruitment & HR Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "human resources"
+            ]
+          }
+        ],
         "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -5689,12 +6231,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -5731,12 +6275,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -5773,12 +6319,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -5823,32 +6371,34 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Data Analytics & Business Intelligence",
-            "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "Census SRQA $4.1M, Dept of Education EDARMST $2.9M",
-            "matched_on": [
-              "reporting"
+            "skill": "Technical Writing",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Technical writing as a standalone not a confirmed prime lane",
+            "triggered_by": [
+              "documentation"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "wan",
               "lan"
             ]
           }
         ],
-        "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Data Analytics & Business Intelligence. Gap areas need teaming: IT Infrastructure / Telecom",
-        "prime_count": 1,
+        "fit": "Pass",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
+        "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -5889,31 +6439,42 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Outreach & Stakeholder Engagement",
+            "skill": "Public / Stakeholder Outreach",
             "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "HUD FHEO outreach, HRSA Marketing BPA, USCIS VER",
-            "matched_on": [
+            "status_label": "\u2705 Can Prime",
+            "evidence": "HUD FHEO outreach $2M, HRSA Marketing BPA, USCIS VER (forecast)",
+            "triggered_by": [
               "public engagement"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
+            ]
+          },
+          {
+            "skill": "Recruitment & HR Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "staffing"
             ]
           }
         ],
         "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Outreach & Stakeholder Engagement. Gap areas need teaming: IT Infrastructure / Telecom",
+        "fit_reason": "BLN24 can prime: Public / Stakeholder Outreach. Needs teaming for: IT Infrastructure, Recruitment & HR Support",
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -5958,41 +6519,43 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           },
           {
-            "capability": "Medical Services",
+            "skill": "Medical Services",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "nursing",
               "patient care"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 3
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -6037,40 +6600,33 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Survey Design & Research",
-            "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "USPTO survey support (BLN Fors Marsh JV), Census data collection",
-            "matched_on": [
-              "respondent"
-            ]
-          },
-          {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "soc"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
-        "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit": "Pass",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
-        "jv_count": 1,
-        "gap_count": 2
+        "jv_count": 0,
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -6119,42 +6675,61 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Data Engineering & Management",
+            "skill": "Data Engineering",
             "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "Census SRQA, MAF/TIGER, Census data archiving $4.5M",
-            "matched_on": [
-              "data management",
-              "data collection"
+            "status_label": "\u2705 Can Prime",
+            "evidence": "Census SRQA, Census MAF/TIGER $4.5M, Census data archiving $4.5M",
+            "triggered_by": [
+              "data management"
             ]
           },
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Technical Writing",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Technical writing as a standalone not a confirmed prime lane",
+            "triggered_by": [
+              "documentation"
+            ]
+          },
+          {
+            "skill": "Software Development",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Custom dev as a standalone prime is not a confirmed BLN24 lane",
+            "triggered_by": [
+              "software development"
+            ]
+          },
+          {
+            "skill": "Cybersecurity / FISMA",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "cybersecurity",
               "security operations"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
         "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Data Engineering & Management. Gap areas need teaming: Cybersecurity / FISMA / Zero Trust, IT Infrastructure / Telecom",
+        "fit_reason": "BLN24 can prime: Data Engineering. Needs teaming for: Technical Writing, Software Development",
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 4,
+        "unknown_count": 0,
+        "total_skills": 5
       }
     },
     {
@@ -6197,32 +6772,34 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cloud Migration & Infrastructure",
+            "skill": "AWS / Cloud Engineering",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "NOAA NWS IDP cloud $4.3M, NOAA app mod $2.8M (Clarity24 JV)",
-            "matched_on": [
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "NOAA cloud on AWS (Clarity24 JV)",
+            "triggered_by": [
               "aws"
             ]
           },
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Space / Defense / ITAR",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "itar",
               "cmmc"
             ]
           }
         ],
         "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit_reason": "Viable via JV \u2014 AWS / Cloud Engineering",
         "prime_count": 0,
         "jv_count": 1,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -6269,51 +6846,52 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cloud Migration & Infrastructure",
+            "skill": "AWS / Cloud Engineering",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "NOAA NWS IDP cloud $4.3M, NOAA app mod $2.8M (Clarity24 JV)",
-            "matched_on": [
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "NOAA cloud on AWS (Clarity24 JV)",
+            "triggered_by": [
               "aws"
             ]
           },
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           },
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Space / Defense / ITAR",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "surveillance",
-              "itar",
-              "cmmc"
+              "itar"
             ]
           }
         ],
         "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit_reason": "Viable via JV \u2014 AWS / Cloud Engineering",
         "prime_count": 0,
         "jv_count": 1,
-        "gap_count": 3
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 4
       }
     },
     {
@@ -6356,41 +6934,52 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Web Design & Development",
+            "skill": "Web Design & Development",
             "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "MBDA website $4.4M, Census DWS, Oversight.gov $387K",
-            "matched_on": [
+            "status_label": "\u2705 Can Prime",
+            "evidence": "MBDA website $4.4M, Census Digital Web Services, Oversight.gov $387K",
+            "triggered_by": [
               "frontend"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "UX/UI Implementation",
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "evidence": "IRS HCD BPA, CBP.gov, Census DWS \u2014 UI delivery included",
+            "triggered_by": [
+              "user interface"
+            ]
+          },
+          {
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           },
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Space / Defense / ITAR",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
-              "cmmc",
-              "tactical"
+            "triggered_by": [
+              "tactical",
+              "cmmc"
             ]
           }
         ],
         "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Web Design & Development. Gap areas need teaming: IT Infrastructure / Telecom, Space / Defense Technology",
-        "prime_count": 1,
+        "fit_reason": "BLN24 can prime: Web Design & Development, UX/UI Implementation. Needs teaming for: IT Infrastructure, Space / Defense / ITAR",
+        "prime_count": 2,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 2,
+        "unknown_count": 0,
+        "total_skills": 4
       }
     },
     {
@@ -6435,22 +7024,24 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "soc"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -6491,32 +7082,34 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Behavioral Science & Research",
+            "skill": "Behavioral Science",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "DHRA command climate (BLN Fors Marsh JV)",
-            "matched_on": [
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "DHRA command climate research (BLN Fors Marsh JV)",
+            "triggered_by": [
               "behavior change",
               "nudge"
             ]
           },
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Space / Defense / ITAR",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "cmmc"
             ]
           }
         ],
         "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit_reason": "Viable via JV \u2014 Behavioral Science",
         "prime_count": 0,
         "jv_count": 1,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -6552,12 +7145,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -6597,32 +7192,33 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Survey Design & Research",
+            "skill": "Survey Design & Administration",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "USPTO survey support (BLN Fors Marsh JV), Census data collection",
-            "matched_on": [
-              "survey",
-              "respondent"
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "USPTO survey support (BLN Fors Marsh JV); Census data collection",
+            "triggered_by": [
+              "survey"
             ]
           },
           {
-            "capability": "Space / Defense Technology",
+            "skill": "Space / Defense / ITAR",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "tactical"
             ]
           }
         ],
         "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit_reason": "Viable via JV \u2014 Survey Design & Administration",
         "prime_count": 0,
         "jv_count": 1,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -6658,12 +7254,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -6707,40 +7305,42 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Data Engineering & Management",
-            "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "Census SRQA, MAF/TIGER, Census data archiving $4.5M",
-            "matched_on": [
-              "data collection"
+            "skill": "Technical Writing",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Technical writing as a standalone not a confirmed prime lane",
+            "triggered_by": [
+              "documentation"
             ]
           },
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
-        "fit": "Moderate",
-        "fit_reason": "BLN24 can own: Data Engineering & Management. Gap areas need teaming: Cybersecurity / FISMA / Zero Trust, IT Infrastructure / Telecom",
-        "prime_count": 1,
+        "fit": "Pass",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
+        "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 3
       }
     },
     {
@@ -6780,22 +7380,33 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Survey Design & Research",
+            "skill": "Survey Design & Administration",
             "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "USPTO survey support (BLN Fors Marsh JV), Census data collection",
-            "matched_on": [
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "evidence": "USPTO survey support (BLN Fors Marsh JV); Census data collection",
+            "triggered_by": [
               "survey"
+            ]
+          },
+          {
+            "skill": "Technical Writing",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Technical writing as a standalone not a confirmed prime lane",
+            "triggered_by": [
+              "documentation"
             ]
           }
         ],
         "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit_reason": "Viable via JV \u2014 Survey Design & Administration",
         "prime_count": 0,
         "jv_count": 1,
-        "gap_count": 0
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 2
       }
     },
     {
@@ -6831,12 +7442,24 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
+        "skills": [
+          {
+            "skill": "Records & Information Mgmt",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 prime delivery on record for records management",
+            "triggered_by": [
+              "document management"
+            ]
+          }
+        ],
         "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -6872,22 +7495,53 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "International Development",
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "evidence": "MCC HCD due diligence \u2014 BLN24 has HCD scope in developing-country context",
+            "triggered_by": [
+              "international development"
+            ]
+          },
+          {
+            "skill": "Technical Writing",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
-            "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
-              "telecommunications"
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Technical writing as a standalone not a confirmed prime lane",
+            "triggered_by": [
+              "documentation"
+            ]
+          },
+          {
+            "skill": "Telecommunications",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "No BLN24 telecom prime on record",
+            "triggered_by": [
+              "telecommunications",
+              "telecom"
+            ]
+          },
+          {
+            "skill": "Recruitment & HR Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "recruitment",
+              "human resources"
             ]
           }
         ],
-        "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
-        "prime_count": 0,
+        "fit": "Moderate",
+        "fit_reason": "BLN24 can prime: International Development. Needs teaming for: Technical Writing, Telecommunications",
+        "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 3,
+        "unknown_count": 0,
+        "total_skills": 4
       }
     },
     {
@@ -6923,12 +7577,24 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
+        "skills": [
+          {
+            "skill": "Technical Writing",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Technical writing as a standalone not a confirmed prime lane",
+            "triggered_by": [
+              "documentation"
+            ]
+          }
+        ],
         "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -6964,12 +7630,25 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
+        "skills": [
+          {
+            "skill": "Recruitment & HR Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "recruitment",
+              "recruiting"
+            ]
+          }
+        ],
         "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -7005,12 +7684,24 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
+        "skills": [
+          {
+            "skill": "Recruitment & HR Support",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Not a BLN24 service lane",
+            "triggered_by": [
+              "recruiting"
+            ]
+          }
+        ],
         "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 1,
+        "unknown_count": 0,
+        "total_skills": 1
       }
     },
     {
@@ -7047,22 +7738,33 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "Data Visualization",
+            "status": "unknown",
+            "status_label": "\u2753 Unknown",
+            "evidence": "Not yet assessed",
+            "triggered_by": [
+              "chart"
+            ]
+          },
+          {
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           }
         ],
         "fit": "Pass",
-        "fit_reason": "All identified scope items fall outside BLN24's proven delivery lanes",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1
+        "gap_count": 1,
+        "unknown_count": 1,
+        "total_skills": 2
       }
     },
     {
@@ -7101,22 +7803,14 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [
-          {
-            "capability": "Human-Centered Design / UX",
-            "status": "prime",
-            "status_label": "\u2705 BLN24 Prime",
-            "evidence": "IRS HCD BPA $7M, Census UX, CBP digital transformation",
-            "matched_on": [
-              "usability"
-            ]
-          }
-        ],
-        "fit": "Strong",
-        "fit_reason": "Scope aligns directly with BLN24 prime delivery lanes",
-        "prime_count": 1,
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
+        "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -7163,49 +7857,51 @@
         "Scientific/Technical Support"
       ],
       "capability_matrix": {
-        "items": [
+        "skills": [
           {
-            "capability": "Survey Design & Research",
-            "status": "jv",
-            "status_label": "\ud83e\udd1d JV / Teaming",
-            "evidence": "USPTO survey support (BLN Fors Marsh JV), Census data collection",
-            "matched_on": [
-              "respondent"
+            "skill": "Software Development",
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "evidence": "Custom dev as a standalone prime is not a confirmed BLN24 lane",
+            "triggered_by": [
+              "software development"
             ]
           },
           {
-            "capability": "Cybersecurity / FISMA / Zero Trust",
+            "skill": "Cybersecurity / FISMA",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 prime cybersecurity delivery on record",
-            "matched_on": [
+            "triggered_by": [
               "ato"
             ]
           },
           {
-            "capability": "IT Infrastructure / Telecom",
+            "skill": "IT Infrastructure",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "No BLN24 IT infrastructure prime on record",
-            "matched_on": [
+            "triggered_by": [
               "lan"
             ]
           },
           {
-            "capability": "Scientific / Laboratory Support",
+            "skill": "Scientific / Lab Support",
             "status": "gap",
-            "status_label": "\u274c Gap \u2014 Cannot Prime",
+            "status_label": "\u274c Cannot Prime",
             "evidence": "Not a BLN24 service lane",
-            "matched_on": [
+            "triggered_by": [
               "laboratory"
             ]
           }
         ],
-        "fit": "JV Required",
-        "fit_reason": "Scope matches BLN24 JV lanes (Clarity24 or Fors Marsh) \u2014 viable via teaming",
+        "fit": "Pass",
+        "fit_reason": "All required skills are outside BLN24's proven delivery lanes",
         "prime_count": 0,
-        "jv_count": 1,
-        "gap_count": 3
+        "jv_count": 0,
+        "gap_count": 4,
+        "unknown_count": 0,
+        "total_skills": 4
       }
     },
     {
@@ -7245,12 +7941,14 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     },
     {
@@ -7290,12 +7988,14 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "items": [],
-        "fit": "Pass",
-        "fit_reason": "No capability match found in scope text \u2014 likely out of BLN24 lanes entirely",
+        "skills": [],
+        "fit": "Unclassified",
+        "fit_reason": "No specific skill requirements identified in available scope text",
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0
+        "gap_count": 0,
+        "unknown_count": 0,
+        "total_skills": 0
       }
     }
   ]
