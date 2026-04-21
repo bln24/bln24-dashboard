@@ -158,11 +158,14 @@ function hgFetch(searchId) {
 async function main() {
   const today = new Date().toISOString().split('T')[0];
   // Priority types — RFI/Sources Sought, RFP/Solicitation, Forecast
-  // Matched to actual HigherGov opp_type.description values
+  // Type sets matched to actual HigherGov values
+  // Note: opp_cat='Federal Forecast Opportunity' uses type 'New' or 'Recompete' — distinguished by opp_cat, not opp_type
   const RFI_TYPES = new Set(['Sources Sought','Request for Information']);
-  const RFP_TYPES = new Set(['Solicitation','Synopsis Solicitation','Combined Synopsis/Solicitation','Request for Proposal','Request for Quotation','Recompete','New']);
-  const FORECAST_TYPES = new Set(['Presolicitation','Pre-Solicitation','Special Notice','Planning Notice']);
-  const GOOD_TYPES = new Set([...RFI_TYPES, ...RFP_TYPES, ...FORECAST_TYPES]);
+  const RFP_TYPES = new Set(['Solicitation','Synopsis Solicitation','Combined Synopsis/Solicitation','Request for Proposal','Request for Quotation']);
+  const FORECAST_OPP_CAT = 'Federal Forecast Opportunity';
+  const CONTRACT_OPP_CAT = 'Federal Contract Opportunity';
+  // Accept all opp_cats we care about; filter Award Notices etc by checking opp_cat
+  const SKIP_TYPES = new Set(['Award Notice','Justification','Special Notice']);
   let allOpps = [];
   const seen = new Set();
 
@@ -174,7 +177,11 @@ async function main() {
 
       for (const r of results) {
         const otype = (r.opp_type || {}).description || '';
-        if (!GOOD_TYPES.has(otype)) { skipped_type++; continue; }
+        const ocat = r.opp_cat || '';
+        // Skip award notices, justifications, and other noise
+        if (SKIP_TYPES.has(otype)) { skipped_type++; continue; }
+        // Skip if neither a known contract opp nor a forecast
+        if (ocat && ocat !== CONTRACT_OPP_CAT && ocat !== FORECAST_OPP_CAT) { skipped_type++; continue; }
         const due = r.due_date || '';
         if (due && due < today) { skipped_expired++; continue; }
         const key = r.source_id || r.title || '';
@@ -190,11 +197,12 @@ async function main() {
         try { vh = vh ? parseFloat(vh) : null; } catch(e) { vh = null; }
 
         const naics = (r.naics_code || {}).naics_code || '';
-        // Categorize notice type
+        // Categorize notice type — forecasts identified by opp_cat, not opp_type
         let noticeCategory = 'other';
-        if (RFI_TYPES.has(otype)) noticeCategory = 'rfi';
+        if (ocat === FORECAST_OPP_CAT) noticeCategory = 'forecast';
+        else if (RFI_TYPES.has(otype)) noticeCategory = 'rfi';
         else if (RFP_TYPES.has(otype)) noticeCategory = 'rfp';
-        else if (FORECAST_TYPES.has(otype)) noticeCategory = 'forecast';
+        else noticeCategory = 'rfp'; // default active solicitations to rfp bucket
 
         const isFullOpen = !sa || sa.toLowerCase().includes('full and open') || sa.toLowerCase().includes('unrestricted');
 
