@@ -113,13 +113,26 @@ function scoreOpp(o) {
   const oos = ['medical device','construction','hvac','logistics','warehousing','janitorial','food','vehicle','aircraft','weapon','ammunition'];
   if (oos.some(k => combined.includes(k))) { score -= 30; reasons.push('OUT OF SCOPE signals'); }
 
+  // Tier classification (Brian's definition)
+  // Tier 3: $500K–5M (sweet spot — boost)
+  // Tier 2: $5M–20M (solid target — neutral)
+  // Tier 1: $20M+ (large, harder to win cold — slight penalty unless strong relationship)
+  const midVal = (o.val_low && o.val_high) ? (o.val_low + o.val_high) / 2 : (o.val_low || o.val_high || null);
+  let tier = null;
+  if (midVal !== null) {
+    if (midVal >= 20000000) { tier = 1; score -= 5; reasons.push('Tier 1 ($20M+) — harder to win without existing relationship'); }
+    else if (midVal >= 5000000) { tier = 2; score += 5; reasons.push('Tier 2 ($5M–20M) — target range'); }
+    else if (midVal >= 500000) { tier = 3; score += 10; reasons.push('Tier 3 ($500K–5M) — sweet spot for BLN24'); }
+    else { tier = null; reasons.push('Value below $500K threshold — may not be worth the bid cost'); }
+  }
+
   let winProb;
   if (score >= 50) winProb = 'High (40-60%)';
   else if (score >= 30) winProb = 'Medium (20-40%)';
   else if (score >= 15) winProb = 'Low (10-20%)';
   else winProb = 'Very Low (<10%)';
 
-  return { score, reasons, winProb };
+  return { score, reasons, winProb, tier };
 }
 
 function hgFetch(searchId) {
@@ -198,10 +211,11 @@ async function main() {
           ericAlso: search.ericAlso || false,
         };
 
-        const { score, reasons, winProb } = scoreOpp(opp);
+        const { score, reasons, winProb, tier } = scoreOpp(opp);
         opp.capture_score = score;
         opp.win_reasons = reasons;
         opp.win_prob = winProb;
+        opp.tier = tier;
 
         allOpps.push(opp);
         added++;

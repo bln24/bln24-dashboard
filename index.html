@@ -601,6 +601,14 @@ function noticeTypeBadge(o){
   return '';
 }
 
+function tierBadge(o){
+  var t=o.tier;
+  if(t===3) return '<span class="p" style="background:#F0FDF4;color:#15803D;font-weight:800">T3 ★</span>';
+  if(t===2) return '<span class="p" style="background:#EFF6FF;color:#1D4ED8;font-weight:800">T2</span>';
+  if(t===1) return '<span class="p" style="background:#FEF2F2;color:#DC2626;font-weight:800">T1</span>';
+  return '<span class="p p-grey" style="font-size:.6rem">$ TBD</span>';
+}
+
 function renderOppCard(i,o){
   var el=document.getElementById('opp-card-'+i);
   if(!el)return;
@@ -620,7 +628,7 @@ function renderOppCard(i,o){
     '</div>'+
     fullOpenWarning+
     '<div class="opp-meta">'+
-    noticeTypeBadge(o)+wp(o.win_prob)+sa(o.set_aside)+ericNote+
+    tierBadge(o)+noticeTypeBadge(o)+wp(o.win_prob)+sa(o.set_aside)+ericNote+
     (o.due?'<span class="p p-grey">Due: '+o.due+'</span>':'')+
     (o.naics?'<span class="p p-grey">NAICS: '+o.naics+'</span>':'')+
     (fmtV(o.val_low,o.val_high)!=='—'?'<span class="p p-gold">'+fmtV(o.val_low,o.val_high)+'</span>':'')+
@@ -650,6 +658,7 @@ function showOppModal(i){
     '<div class="mf"><div class="mf-l">Est. Value</div><div class="mf-v gold">'+fmtV(o.val_low,o.val_high)+'</div></div>'+
     '<div class="mf"><div class="mf-l">Due Date</div><div class="mf-v">'+(o.due||'TBD')+'</div></div>'+
     '<div class="mf"><div class="mf-l">Capture Score</div><div class="mf-v">'+(o.capture_score||0)+' pts</div></div>'+
+    '<div class="mf"><div class="mf-l">Tier</div><div class="mf-v">'+(o.tier?'Tier '+o.tier+(o.tier===3?' ★ Sweet Spot':o.tier===2?' Target':'  Large — relationship needed'):'Unknown (no value listed)')+'</div></div>'+
     '<div class="mf"><div class="mf-l">Notice Type</div><div class="mf-v">'+(o.type||'—')+'</div></div>'+
     '<div class="mf"><div class="mf-l">Source Search</div><div class="mf-v">'+(o.searchLabel||'—')+(o.ericAlso?' <span style="font-size:.6rem;background:#F0E6FF;color:#7C3AED;padding:1px 5px;border-radius:4px;font-weight:700">Eric also tracking</span>':'')+'</div></div>'+
     '</div>'+
