@@ -56,23 +56,22 @@ const BLN24_AGENCIES = [
   'oversight.gov', 'inspector general',
 ];
 
-// Clarity24 JV (BLN24 + Accenture Federal Services) — 8(a) Mentor-Protégé
-// Wins: NOAA (cloud/app mod), CBP (digital transformation), USDA FNS (WIC digital services $19M)
-// MAS contract: 47QTCA24D009V
-// Note: NOAA and USDA already in BLN24_AGENCIES above
+// Clarity24 JV (BLN24 + Accenture Federal Services) — 8(a) MP JV, UEI Q9VENYSZDXD3
+// Confirmed wins: NOAA $7.06M, USDA FNS $2.2M, IRS $1.4M, CBP $1.37M (total $12.03M)
+// Note: NOAA, USDA, IRS already in BLN24_AGENCIES — CBP/FNS added here
 const CLARITY24_AGENCIES = [
   'customs and border protection', 'cbp',
-  'food and nutrition', 'fns',
-  'women infants and children', 'wic',
+  'food and nutrition service', 'fns',
 ];
 
-// BLN Fors Marsh JV LLC — 8(a) JV, Asian-Pacific American Owned, est. July 2022
-// UEI: P4D4UVLLQQC3, CAGE: 9K3S4
-// $12M+ in awards, MAS contract 47QTCA24D00CN
-// Capability lanes: behavioral science, comms, survey methodology, IRS Notice Redesign
+// BLN Fors Marsh JV LLC — 8(a) JV, Asian-Pacific American Owned, UEI P4D4UVLLQQC3
+// Confirmed wins: HHS Program Support Center $10.28M, USPTO $822K, FTC $581K (total $12M)
+// Note: IRS already in BLN24_AGENCIES
 const FORS_MARSH_AGENCIES = [
-  'internal revenue', ' irs',
-  // Fors Marsh direct: HHS, CMS — already in BLN24_AGENCIES
+  'program support center',
+  'federal trade commission', 'ftc',
+  'patent and trademark', 'uspto',
+  'bureau of the fiscal service', 'fiscal service',
 ];
 
 // Official BLN24 NAICS codes from Capability Statement (updated Apr 2026)
@@ -106,15 +105,15 @@ function scoreOpp(o) {
     score += 25;
     reasons.push('BLN24 direct past performance with this agency');
   }
-  // Clarity24 JV past performance (BLN24 + Accenture Federal Services)
+  // Clarity24 JV past performance (BLN24 + Accenture) — CBP $1.4M, USDA FNS $2.2M
   else if (CLARITY24_AGENCIES.some(a => agency.includes(a))) {
     score += 20;
-    reasons.push('Clarity24 JV past performance (BLN24 + Accenture) — 8(a) MP JV');
+    reasons.push('Clarity24 JV past performance (BLN24 + Accenture) — $12M in cloud/digital wins');
   }
-  // BLN Fors Marsh JV past performance
+  // BLN Fors Marsh JV past performance — HHS $10.3M, USPTO, FTC
   else if (FORS_MARSH_AGENCIES.some(a => agency.includes(a))) {
     score += 20;
-    reasons.push('BLN Fors Marsh JV past performance — behavioral science + comms');
+    reasons.push('BLN Fors Marsh JV past performance — $12M in comms/behavioral science wins');
   }
   // NAICS match
   if (BLN24_NAICS.has(naics)) {
