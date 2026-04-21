@@ -675,17 +675,34 @@ function showOppModal(i){
     '<div class="mf"><div class="mf-l">Source Search</div><div class="mf-v">'+(o.searchLabel||'—')+(o.ericAlso?' <span style="font-size:.6rem;background:#F0E6FF;color:#7C3AED;padding:1px 5px;border-radius:4px;font-weight:700">Eric also tracking</span>':'')+'</div></div>'+
     '</div>'+
     (o.isFullOpen?'<div style="background:#FEF3C7;border-left:3px solid #D97706;padding:10px 12px;border-radius:0 6px 6px 0;font-size:.75rem;color:#92400E;font-weight:600;margin-bottom:12px">⚠️ Full &amp; Open Competition — BLN24 competes against all firm sizes. Win probability is meaningfully lower. Best play: pursue as a sub to a larger prime, or wait for a set-aside reissue.</div>':'')+
-    // Scope tags in modal with color coding
-    (o.scope_tags&&o.scope_tags.length?'<div style="margin:12px 0 6px;font-size:.7rem;font-weight:700">What They\'re Buying: <span style="font-weight:400;color:var(--grey)">(green = BLN24 owns it · red = gap · purple = neutral)</span></div><div style="margin-bottom:12px;display:flex;flex-wrap:wrap;gap:4px">'+o.scope_tags.map(t=>{
-      const owned=(o.scope_owned||[]).includes(t);
-      const gap=(o.scope_gaps||[]).includes(t);
-      const bg=owned?'#F0FDF4':gap?'#FEF2F2':'#F3F0FF';
-      const color=owned?'#15803D':gap?'#DC2626':'#6D28D9';
-      const prefix=owned?'✓ ':gap?'⚠ ':'';
-      return '<span style="background:'+bg+';color:'+color+';border-radius:4px;padding:3px 10px;font-size:.72rem;font-weight:700">'+prefix+t+'</span>';
-    }).join('')+'</div>':'')+
-    ((o.matched_lanes&&o.matched_lanes.length)?'<div style="margin:8px 0 6px;font-size:.7rem;font-weight:700;color:#1D4ED8">BLN24 Proven Lanes That Match:</div><div style="margin-bottom:10px">'+o.matched_lanes.map(l=>'<span style="display:inline-block;background:#EFF6FF;color:#1D4ED8;border-radius:4px;padding:3px 10px;font-size:.72rem;font-weight:700;margin:0 4px 4px 0">✓ '+l+'</span>').join('')+'</div>':'')+
-    (reasons?'<div style="margin:8px 0 6px;font-size:.7rem;font-weight:700">Full Alignment Reasoning:</div><ul style="padding-left:18px;line-height:2">'+reasons+'</ul>':'No capability match found — verify before pursuing.')+
+    // Capability Matrix in modal
+    (function(){
+      var cm = o.capability_matrix;
+      if (!cm || !cm.items || !cm.items.length) return '';
+      var fitColor = cm.fit==='Strong'?'#15803D':cm.fit==='Moderate'?'#D97706':cm.fit==='Pass'?'#DC2626':'#1D4ED8';
+      var fitBg   = cm.fit==='Strong'?'#F0FDF4':cm.fit==='Moderate'?'#FFFBEB':cm.fit==='Pass'?'#FEF2F2':'#EFF6FF';
+      var html = '<div style="background:'+fitBg+';border-left:4px solid '+fitColor+';padding:10px 14px;border-radius:0 6px 6px 0;margin-bottom:14px">';
+      html += '<div style="font-size:.7rem;font-weight:800;color:'+fitColor+';text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px">'+cm.fit+'</div>';
+      html += '<div style="font-size:.75rem;color:#374151">'+cm.fit_reason+'</div></div>';
+      html += '<div style="font-size:.7rem;font-weight:700;margin-bottom:8px">Capability Matrix:</div>';
+      html += '<table style="width:100%;border-collapse:collapse;font-size:.73rem"><thead><tr>';
+      html += '<th style="text-align:left;padding:6px 8px;border-bottom:2px solid var(--border);color:var(--grey);font-size:.6rem;text-transform:uppercase;letter-spacing:.07em">Capability Required</th>';
+      html += '<th style="text-align:left;padding:6px 8px;border-bottom:2px solid var(--border);color:var(--grey);font-size:.6rem;text-transform:uppercase;letter-spacing:.07em">BLN24 Position</th>';
+      html += '<th style="text-align:left;padding:6px 8px;border-bottom:2px solid var(--border);color:var(--grey);font-size:.6rem;text-transform:uppercase;letter-spacing:.07em">Evidence</th>';
+      html += '</tr></thead><tbody>';
+      cm.items.forEach(function(item){
+        var c = item.status==='prime'?'#15803D':item.status==='jv'?'#1D4ED8':'#DC2626';
+        var bg = item.status==='prime'?'#F0FDF4':item.status==='jv'?'#EFF6FF':'#FEF2F2';
+        html += '<tr style="border-bottom:1px solid #F0F0F4">';
+        html += '<td style="padding:8px"><strong>'+item.capability+'</strong></td>';
+        html += '<td style="padding:8px"><span style="background:'+bg+';color:'+c+';padding:2px 8px;border-radius:4px;font-size:.67rem;font-weight:700;white-space:nowrap">'+item.status_label+'</span></td>';
+        html += '<td style="padding:8px;color:var(--grey);font-size:.69rem">'+item.evidence+'</td>';
+        html += '</tr>';
+      });
+      html += '</tbody></table>';
+      return html;
+    })()+
+    (reasons?'<div style="margin:14px 0 6px;font-size:.7rem;font-weight:700">Score Reasoning:</div><ul style="padding-left:18px;line-height:2;font-size:.72rem">'+reasons+'</ul>':'')+ 
     (o.summary?'<div style="margin:12px 0 5px;font-size:.7rem;font-weight:700">AI Summary:</div><div style="font-size:.75rem;color:var(--grey);line-height:1.6;background:var(--grey-light);padding:10px 12px;border-radius:6px">'+o.summary+'</div>':'')+
     // Full description
     (o.description&&o.description.length>50?'<div style="margin:14px 0 5px;font-size:.7rem;font-weight:700">Full Scope Description:</div><div style="font-size:.74rem;color:var(--black);line-height:1.7;background:var(--grey-light);padding:12px 14px;border-radius:6px;max-height:300px;overflow-y:auto;white-space:pre-wrap">'+o.description+'</div>':'')+ 

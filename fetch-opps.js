@@ -589,9 +589,17 @@ async function main() {
   // Sort by capture score
   allOpps.sort((a, b) => b.capture_score - a.capture_score || (a.due || '9').localeCompare(b.due || '9'));
 
-  const output = { updated: new Date().toISOString(), count: allOpps.length, opps: allOpps };
-  fs.writeFileSync(OUT_FILE, JSON.stringify(output, null, 2));
-  console.log(`Written ${allOpps.length} federal opps to ${OUT_FILE}`);
+  // Run capability matrix enrichment
+  const { execSync: es } = require('child_process');
+  const tmpFile = OUT_FILE + '.tmp';
+  fs.writeFileSync(tmpFile, JSON.stringify({ updated: new Date().toISOString(), count: allOpps.length, opps: allOpps }, null, 2));
+  fs.renameSync(tmpFile, OUT_FILE);
+  try {
+    es(`python3 /Users/t24/Desktop/T24/hg-proxy/enrich-opps.py`, { stdio: 'inherit' });
+  } catch(e) { console.log('Enrichment error:', e.message); }
+
+  const output = JSON.parse(fs.readFileSync(OUT_FILE, 'utf8'));
+  console.log(`Written ${output.opps.length} federal opps to ${OUT_FILE}`);
 
   try {
     execSync(`cd ${DASHBOARD_DIR} && git add opps.json && git diff --cached --quiet || (git commit -m "Update opps ${today}" && git push)`, { stdio: 'inherit' });
