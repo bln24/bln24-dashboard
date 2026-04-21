@@ -27,9 +27,9 @@
       "tier": 2,
       "rex_analysis": {
         "what_they_need": "CMS OEDA seeks contractor to develop, operate, and maintain data.cms.gov \u2014 the authoritative open data platform hosting 170+ datasets for Medicare, Medicaid, CHIP, and Marketplace. Scope: agile product management, human-centered design (HCD) and user research, Drupal CMS development and operations, DevSecOps, API management, help desk operations, data operations (dataset publishing, QA), ATO maint",
-        "rex_take": "BLN24 can cover: Human-Centered Design & UX Research, Web Design & Development. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust, DevSecOps / CI/CD. Evaluate whether the BLN24 scope is large enough to prime.",
+        "rex_take": "BLN24 can cover: Human-Centered Design & UX Research, Web Design & Development. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: RFI.",
-        "recommendation": "Weak / JV"
+        "recommendation": "Moderate"
       },
       "capability_matrix": {
         "tasks": [
@@ -41,7 +41,7 @@
             "pp_refs": [
               "IRS Human Centered Design & Research BPA ($7M)",
               "CBP Digital Transformation (Clarity24, $1.4M)",
-              "Census Digital Web Services ($0)",
+              "Census Digital Web Services III ($8.3M)",
               "MBDA Website Redesign ($4.4M)"
             ],
             "note": "BLN24 strong prime \u2014 IRS HCD BPA $7M is direct comparable",
@@ -58,7 +58,7 @@
             "status": "prime",
             "pp_refs": [
               "MBDA Website Redesign ($4.4M)",
-              "Census Digital Web Services ($0)",
+              "Census Digital Web Services III ($8.3M)",
               "USPS OIG Oversight.gov Refresh ($387K)",
               "CBP Digital Transformation (Clarity24, $1.4M)"
             ],
@@ -74,12 +74,25 @@
             "status": "prime",
             "pp_refs": [
               "IRS Human Centered Design & Research BPA ($7M)",
-              "Census Digital Web Services ($0)"
+              "Census Digital Web Services III ($8.3M)"
             ],
             "note": "BLN24 prime \u2014 IRS HCD BPA scope included 508 compliance testing",
             "triggered_by": [
               "section 508",
               "wcag"
+            ]
+          },
+          {
+            "task": "DevSecOps / CI/CD Pipelines",
+            "score": 2,
+            "score_label": "2 \u2014 Related PP, different context",
+            "status": "jv",
+            "pp_refs": [
+              "Census SRQA AI/ML/Data Quality ($4.1M)"
+            ],
+            "note": "Adjacent (2/4) \u2014 Census SRQA used agile + DevSecOps principles; IRS Forms Mod used CI/CD pipelines. Not standalone DevSecOps prime but confirmed delivery within broader contracts.",
+            "triggered_by": [
+              "devsecops"
             ]
           },
           {
@@ -93,25 +106,14 @@
               " ato ",
               "devsecops"
             ]
-          },
-          {
-            "task": "DevSecOps / CI/CD",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no DevSecOps prime delivery on record",
-            "triggered_by": [
-              "devsecops"
-            ]
           }
         ],
-        "fit": "Weak / JV",
-        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
-        "avg_score": 2.2,
+        "fit": "Moderate",
+        "fit_reason": "Can prime: Human-Centered Design & UX Research, Web Design & Development. Needs teaming for: Cybersecurity / FISMA / Zero Trust",
+        "avg_score": 2.6,
         "prime_count": 3,
-        "jv_count": 0,
-        "gap_count": 2,
+        "jv_count": 1,
+        "gap_count": 1,
         "total_tasks": 5,
         "qualifying": [
           {
@@ -121,8 +123,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "Partial \u2014 significant gaps",
-            "score": 2
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
           },
           {
             "q": "Notice Type",
@@ -189,7 +191,7 @@
             "pp_refs": [
               "IRS Human Centered Design & Research BPA ($7M)",
               "CBP Digital Transformation (Clarity24, $1.4M)",
-              "Census Digital Web Services ($0)",
+              "Census Digital Web Services III ($8.3M)",
               "MBDA Website Redesign ($4.4M)"
             ],
             "note": "BLN24 strong prime \u2014 IRS HCD BPA $7M is direct comparable",
@@ -854,7 +856,7 @@
               "Census SRQA AI/ML/Data Quality ($4.1M)",
               "Dept of Education EDARMST Data Analytics ($2.9M)",
               "IRS OLS (sub reference)",
-              "Census Digital Web Services ($0)"
+              "Census Digital Web Services III ($8.3M)"
             ],
             "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
             "triggered_by": [
@@ -1012,25 +1014,43 @@
             ]
           },
           {
-            "task": "DevSecOps / CI/CD",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no DevSecOps prime delivery on record",
+            "task": "Cloud Engineering / Infrastructure as Code",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census MAF/TIGER Modernization & Cloud ($4.5M)",
+              "NOAA NWS IDP Cloud Transition / App Mod (Clarity24, $7M)",
+              "Census EDL Applications ($4.5M)"
+            ],
+            "note": "BLN24 prime (direct + JV) \u2014 Census MAF/TIGER cloud migration $4.5M (IaC, automated deployment), Census EDL AWS platform, NOAA cloud migration $7M via Clarity24",
+            "triggered_by": [
+              "cloud services"
+            ]
+          },
+          {
+            "task": "DevSecOps / CI/CD Pipelines",
+            "score": 2,
+            "score_label": "2 \u2014 Related PP, different context",
+            "status": "jv",
+            "pp_refs": [
+              "Census SRQA AI/ML/Data Quality ($4.1M)"
+            ],
+            "note": "Adjacent (2/4) \u2014 Census SRQA used agile + DevSecOps principles; IRS Forms Mod used CI/CD pipelines. Not standalone DevSecOps prime but confirmed delivery within broader contracts.",
             "triggered_by": [
               "devops",
-              "ci/cd"
+              "ci/cd",
+              "continuous integration"
             ]
           }
         ],
-        "fit": "Weak / JV",
-        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
-        "avg_score": 1.5,
-        "prime_count": 1,
-        "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 2,
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Cloud Migration & Infrastructure, Cloud Engineering / Infrastructure as Code. Some areas need partner",
+        "avg_score": 2.7,
+        "prime_count": 2,
+        "jv_count": 1,
+        "gap_count": 0,
+        "total_tasks": 3,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -1039,8 +1059,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "Partial \u2014 significant gaps",
-            "score": 2
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
           },
           {
             "q": "Notice Type",
@@ -1056,9 +1076,9 @@
       },
       "rex_analysis": {
         "what_they_need": "FEMA requires a temporary bridge blanket purchase agreement for short-term IT architecture, engineering and cloud support services. FEMA also requires cloud reseller (brokerage) services and access. FEMA requires cloud reseller services to access multiple FedRAMP Authorized true on-demand Commercial Cloud Broker (CCB). The scope of this Blanket Purchase Agreement (BPA) includes the ability to acce",
-        "rex_take": "BLN24 can cover: Cloud Migration & Infrastructure. Gap areas requiring teaming: DevSecOps / CI/CD. Evaluate whether the BLN24 scope is large enough to prime.",
+        "rex_take": "BLN24 can cover: Cloud Migration & Infrastructure, Cloud Engineering / Infrastructure as Code. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
-        "recommendation": "Weak / JV"
+        "recommendation": "Moderate"
       }
     },
     {
@@ -1272,7 +1292,7 @@
               "Census SRQA AI/ML/Data Quality ($4.1M)",
               "Dept of Education EDARMST Data Analytics ($2.9M)",
               "IRS OLS (sub reference)",
-              "Census Digital Web Services ($0)"
+              "Census Digital Web Services III ($8.3M)"
             ],
             "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
             "triggered_by": [
@@ -1490,15 +1510,30 @@
             "triggered_by": [
               "etl"
             ]
+          },
+          {
+            "task": "Software Development / SDLC",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Census EDL Applications ($4.5M)",
+              "Census Digital Web Services III ($8.3M)"
+            ],
+            "note": "BLN24 prime \u2014 confirmed software development: Census SRQA full SDLC, Census EDL AWS platform dev, Census DWS AEM development, IRS Forms Modernization CI/CD pipelines (sub to Accenture)",
+            "triggered_by": [
+              "application development"
+            ]
           }
         ],
         "fit": "Strong",
         "fit_reason": "BLN24 can prime all or most identified task areas with recent past performance",
-        "avg_score": 4.0,
-        "prime_count": 1,
+        "avg_score": 3.5,
+        "prime_count": 2,
         "jv_count": 0,
         "gap_count": 0,
-        "total_tasks": 1,
+        "total_tasks": 2,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -1524,7 +1559,7 @@
       },
       "rex_analysis": {
         "what_they_need": "Provide skilled information technology labor services to the Coast Guard CG-C5I-Engineering and C5I Service Center Business Operations Division for Agile application development, database maintenance, and custom decision-making tool implementation to improve and modernize technology service delivery to operational Coast Guard units.\n\nBusiness Governance and Continuous Process Improvement\n- Assess",
-        "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Data Engineering & ETL. Past performance backs it up. Worth a closer look.",
+        "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Data Engineering & ETL, Software Development / SDLC. Past performance backs it up. Worth a closer look.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
         "recommendation": "Strong"
       }
@@ -1709,7 +1744,7 @@
             "status": "prime",
             "pp_refs": [
               "MBDA Website Redesign ($4.4M)",
-              "Census Digital Web Services ($0)",
+              "Census Digital Web Services III ($8.3M)",
               "USPS OIG Oversight.gov Refresh ($387K)",
               "CBP Digital Transformation (Clarity24, $1.4M)"
             ],
@@ -3940,7 +3975,7 @@
             "pp_refs": [
               "IRS Human Centered Design & Research BPA ($7M)",
               "CBP Digital Transformation (Clarity24, $1.4M)",
-              "Census Digital Web Services ($0)"
+              "Census Digital Web Services III ($8.3M)"
             ],
             "note": "BLN24 prime \u2014 CBP Digital Transformation (Clarity24), IRS HCD",
             "triggered_by": [
@@ -4285,7 +4320,7 @@
               "Census SRQA AI/ML/Data Quality ($4.1M)",
               "Dept of Education EDARMST Data Analytics ($2.9M)",
               "IRS OLS (sub reference)",
-              "Census Digital Web Services ($0)"
+              "Census Digital Web Services III ($8.3M)"
             ],
             "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
             "triggered_by": [
@@ -4475,7 +4510,7 @@
               "Census SRQA AI/ML/Data Quality ($4.1M)",
               "Dept of Education EDARMST Data Analytics ($2.9M)",
               "IRS OLS (sub reference)",
-              "Census Digital Web Services ($0)"
+              "Census Digital Web Services III ($8.3M)"
             ],
             "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
             "triggered_by": [
@@ -4797,6 +4832,21 @@
             ]
           },
           {
+            "task": "Software Development / SDLC",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Census EDL Applications ($4.5M)",
+              "Census Digital Web Services III ($8.3M)"
+            ],
+            "note": "BLN24 prime \u2014 confirmed software development: Census SRQA full SDLC, Census EDL AWS platform dev, Census DWS AEM development, IRS Forms Modernization CI/CD pipelines (sub to Accenture)",
+            "triggered_by": [
+              "software development"
+            ]
+          },
+          {
             "task": "Cybersecurity / FISMA / Zero Trust",
             "score": 0,
             "score_label": "0 \u2014 No Experience (Gap)",
@@ -4810,11 +4860,11 @@
         ],
         "fit": "Weak / JV",
         "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
-        "avg_score": 2.0,
-        "prime_count": 1,
+        "avg_score": 2.3,
+        "prime_count": 2,
         "jv_count": 0,
         "gap_count": 1,
-        "total_tasks": 2,
+        "total_tasks": 3,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -4840,7 +4890,7 @@
       },
       "rex_analysis": {
         "what_they_need": "TRDM provides a single distribution source of enterprise reference data for enhancing C2, transportation, logistics, deployment, and financial systems&rsquo; reference data management and functional data collection. The scope of TRDM requires the contractor to perform current technical &amp; Cybersecurity operations, maintenance, and distribution of the TRDM system and data while modernizing the a",
-        "rex_take": "BLN24 can cover: Data Engineering & ETL. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust. Evaluate whether the BLN24 scope is large enough to prime.",
+        "rex_take": "BLN24 can cover: Data Engineering & ETL, Software Development / SDLC. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
         "recommendation": "Weak / JV"
       }

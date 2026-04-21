@@ -55,8 +55,8 @@ PP = {
                    'detail': 'Federal agency communications and outreach program'},
     'CBP_DT':     {'ref': 'CBP Digital Transformation (Clarity24, $1.4M)', 'score': 3,
                    'detail': 'Digital transformation, UX, web platform for DHS/CBP'},
-    'CENSUS_DWS': {'ref': 'Census Digital Web Services ($0)', 'score': 3,
-                   'detail': 'Web development, CMS, digital platforms for Census Bureau'},
+    'CENSUS_DWS': {'ref': 'Census Digital Web Services III ($8.3M)', 'score': 4,
+                   'detail': 'Census.gov modernization, AEM development (one of largest federal AEM deployments), CX platform, web development'},
     'USPTO_SURV': {'ref': 'USPTO Survey Support (Fors Marsh JV)', 'score': 3,
                    'detail': 'Survey design and administration, marketing consulting for USPTO'},
     'FTC_MEDIA':  {'ref': 'FTC Paid Advertising (Fors Marsh JV, $581K)', 'score': 3,
@@ -317,11 +317,29 @@ TASK_AREAS = [
         'note': 'BLN24 gap — no IT infrastructure prime on record'
     },
     {
-        'task': 'DevSecOps / CI/CD',
-        'kw': ['devsecops','devops','ci/cd','jenkins','pipeline automation','containerization','kubernetes','docker'],
-        'pp_refs': [],
-        'base_score': 0,
-        'note': 'BLN24 gap — no DevSecOps prime delivery on record'
+        'task': 'Software Development / SDLC',
+        'kw': ['software development','application development','full software development lifecycle','sdlc','custom development',
+               'software engineering','code development','web application development','api development',
+               'adaptive forms','microservices','application modernization services'],
+        'pp_refs': ['CENSUS_SRQA', 'CENSUS_EDL', 'CENSUS_DWS'],
+        'base_score': 3,
+        'note': 'BLN24 prime — confirmed software development: Census SRQA full SDLC, Census EDL AWS platform dev, Census DWS AEM development, IRS Forms Modernization CI/CD pipelines (sub to Accenture)'
+    },
+    {
+        'task': 'Cloud Engineering / Infrastructure as Code',
+        'kw': ['cloud migration','infrastructure as code','iac','aws','amazon web services','azure','cloud platform',
+               'cloud architecture','cloud infrastructure','cloud services'],
+        'pp_refs': ['CENSUS_MAF', 'NOAA_CLOUD', 'CENSUS_EDL'],
+        'base_score': 3,
+        'note': 'BLN24 prime (direct + JV) — Census MAF/TIGER cloud migration $4.5M (IaC, automated deployment), Census EDL AWS platform, NOAA cloud migration $7M via Clarity24'
+    },
+    {
+        'task': 'DevSecOps / CI/CD Pipelines',
+        'kw': ['devsecops','devops','ci/cd','jenkins','pipeline automation','containerization','kubernetes','docker',
+               'continuous integration','continuous deployment','automated testing pipeline','release management'],
+        'pp_refs': ['CENSUS_SRQA'],
+        'base_score': 2,
+        'note': 'Adjacent (2/4) — Census SRQA used agile + DevSecOps principles; IRS Forms Mod used CI/CD pipelines. Not standalone DevSecOps prime but confirmed delivery within broader contracts.'
     },
     {
         'task': 'CRM / Salesforce Implementation',
