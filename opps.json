@@ -1,6 +1,6 @@
 {
   "updated": "2026-04-21T04:25:53.557Z",
-  "count": 124,
+  "count": 125,
   "opps": [
     {
       "naics": "541511",
@@ -239,6 +239,147 @@
           }
         ]
       }
+    },
+    {
+      "naics": "541511",
+      "title": "DOJ DEA \u2014 Web Developer / Content Services (MRAS)",
+      "agency": "Department of Justice (DOJ), Drug Enforcement Administration (DEA)",
+      "type": "Sources Sought",
+      "noticeCategory": "rfi",
+      "set_aside": "TBD (MRAS phase)",
+      "searchLabel": "Brian Direct \u2014 RFI",
+      "posted": "2026-04-21",
+      "due": "2026-05-05",
+      "val_low": 500000,
+      "val_high": 5000000,
+      "source_path": "https://feedback.gsa.gov/jfe/form/SV_4JzNl5sdspSArHw",
+      "path": "",
+      "description": "DOJ DEA is conducting market research (MRAS) for Web Developer and Content Services. Based on the agency and title, this covers: web development, content management, digital platform support, and potentially UX/design services for DEA web properties. DEA is a major federal law enforcement agency under DOJ with significant web presence.",
+      "summary": "GSA MRAS on behalf of DOJ Drug Enforcement Administration. Web Developer and Content Services \u2014 likely covering website development, content management, digital platform maintenance, and related services for DEA's public and internal web properties.",
+      "is8a": false,
+      "isFullOpen": true,
+      "ericAlso": false,
+      "capture_score": 35,
+      "win_prob": "Medium (20-40%)",
+      "tier": 3,
+      "scope_tags": [
+        "Web Design & Development",
+        "Content Development",
+        "Digital Platform Development",
+        "UX/UI Implementation"
+      ],
+      "scope_owned": [
+        "Web Design & Development",
+        "Content Development",
+        "Digital Platform Development"
+      ],
+      "scope_gaps": [],
+      "matched_lanes": [
+        "Web/Digital Platforms (MBDA $4.4M, Census DWS \u2014 proven prime)",
+        "Content Development (CMS MNPS $16M)"
+      ],
+      "win_reasons": [
+        "Agency: DOJ/DEA is a new agency but DOJ ecosystem work is adjacent",
+        "Strong web development lane: MBDA website $4.4M, Census DWS $8.3M, Oversight.gov",
+        "Content services: CMS MNPS $16M demonstrates federal content production at scale",
+        "MRAS response is low-effort \u2014 positions BLN24 for the follow-on RFP"
+      ],
+      "rex_analysis": {
+        "what_they_need": "DOJ DEA needs web developer and content services \u2014 this is a standard digital services requirement for a major federal law enforcement agency. Likely scope: web development, content management, digital platform support, possibly UX/accessibility. DEA has significant web presence (DEA.gov, enforcement tools, public information portals).",
+        "rex_take": "BLN24 has a strong web development and content lane \u2014 MBDA website $4.4M, Census DWS $8.3M, Oversight.gov $387K, Census.gov (DWS III $8.3M). This maps directly. DOJ/DEA is a new agency for BLN24 but the web/content scope is in our lane. MRAS responses are 30-minute surveys \u2014 low effort, high positioning value. Respond now to get on DEA's radar before the RFP drops. Watch for set-aside type on the actual RFP \u2014 if 8(a) or SB, strong position.",
+        "watch_notes": "MRAS is market research only \u2014 respond via Qualtrics form, not a full proposal. Response link: https://feedback.gsa.gov/jfe/form/SV_4JzNl5sdspSArHw\nHighlight: MBDA website redesign, Census DWS, Oversight.gov web work. Watch SAM.gov for follow-on RFP from DEA for web/content services.",
+        "recommendation": "Respond to RFI"
+      },
+      "capability_matrix": {
+        "fit": "Strong",
+        "fit_reason": "Web development and content services are BLN24 prime lanes with multiple direct past performance references.",
+        "avg_score": 3.3,
+        "prime_count": 4,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 4,
+        "qualifying": [
+          {
+            "q": "Capability match",
+            "answer": "STRONG \u2014 web dev and content are proven prime lanes",
+            "score": 5
+          },
+          {
+            "q": "Agency PP",
+            "answer": "NO direct DOJ/DEA PP \u2014 new agency",
+            "score": 2
+          },
+          {
+            "q": "Set-aside",
+            "answer": "TBD \u2014 watch RFP",
+            "score": 3
+          }
+        ],
+        "tasks": [
+          {
+            "task": "Web Development & Platform",
+            "score": 4,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "MBDA Website Redesign ($4.8M)",
+              "Census DWS III ($8.3M)",
+              "Oversight.gov ($387K)"
+            ],
+            "note": "BLN24 prime \u2014 multiple federal website redesign and platform contracts",
+            "triggered_by": [
+              "web developer",
+              "web development"
+            ]
+          },
+          {
+            "task": "Content Services",
+            "score": 4,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "CMS MNPS ($16M) \u2014 content production at scale",
+              "NTIA Outreach ($2.5M)"
+            ],
+            "note": "BLN24 prime \u2014 content development and management at federal agency scale",
+            "triggered_by": [
+              "content services",
+              "content"
+            ]
+          },
+          {
+            "task": "UX / Accessibility",
+            "score": 4,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "IRS HCD BPA ($7M)",
+              "Census DWS III (UX embedded)"
+            ],
+            "note": "BLN24 prime \u2014 508 compliance and UX embedded across web contracts",
+            "triggered_by": [
+              "accessibility",
+              "ux"
+            ]
+          },
+          {
+            "task": "CMS / Drupal Operations",
+            "score": 2,
+            "status": "jv",
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "pp_refs": [
+              "Census DWS III (Drupal-adjacent)",
+              "MBDA Website"
+            ],
+            "note": "Adjacent \u2014 BLN24 web work uses CMS but Drupal-specific ops may need partner",
+            "triggered_by": [
+              "content management",
+              "cms"
+            ]
+          }
+        ]
+      },
+      "asana_task_gid": "1214151095092222"
     },
     {
       "naics": "541611",
@@ -1558,22 +1699,26 @@
       "description": "On behalf of Department of Education (ED), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browser.\n\nOnly responses submitted through the linked RFI will be accepted. Nothing else will be evaluated or recorded (this includes selecting 'interested' within eBuy).\n\n\nLink to RFI: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi\n\n\nAdditional Information:\nDue to the structure of contracts in GSA eBuy, you may receive multiple Sources Sought or RFI notifications for the same requirement if it falls under multiple of your company's awarded SINs. However, please note that you are only required to respond to the RFI once.\n\nBe sure to use the URL provided above to submit your response.\n\n\nAny questions regarding this RFI will be responded to by email only.  Send your inquiry to: rfi@research.gsa.gov and be sure to include the RFQ number.\n\n",
       "summary": "",
       "path": "https://www.highergov.com/contract-opportunity/ed-ies-evaluation-of-workforce-pell-grants-mra-rfi1807182-r-36524",
-      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFI1807182?contractNumber=",
+      "source_path": "https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi",
       "contact_email": "rfi@research.gsa.gov",
       "contact_name": "Jon Dewolfe",
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": true,
-      "capture_score": 18,
+      "capture_score": 38,
       "win_reasons": [
-        "Agency: BLN24 has past performance here (relationship + credibility advantage)",
-        "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
-        "Small business set-aside",
-        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
+        "Agency: BLN24 has direct IES past performance (EDARMST $2.5M \u2014 same agency)",
+        "Education data analytics lane confirmed: EDARMST $2.5M direct match",
+        "BLN Fors Marsh JV covers evaluation methodology: DHRA $59M behavioral research",
+        "EAC EAVS ($744K) confirms survey administration capability",
+        "MRAS response is low effort \u2014 position now for follow-on RFP"
       ],
-      "win_prob": "Low (10-20%)",
+      "win_prob": "Medium (20-40%)",
       "tier": null,
-      "matched_lanes": [],
+      "matched_lanes": [
+        "Data/Analytics (Census SRQA $4.1M, Education EDARMST $2.5M)",
+        "Survey & Research (DHRA via Fors Marsh JV)"
+      ],
       "scope_tags": [
         "Survey & Research"
       ],
@@ -1582,38 +1727,115 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "tasks": [],
-        "fit": "Unclassified",
-        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
-        "avg_score": 0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 0,
+        "fit": "Moderate",
+        "fit_reason": "BLN24 has IES past performance (EDARMST). Program evaluation methodology needs Fors Marsh JV. Data analytics is strong.",
+        "avg_score": 2.8,
+        "prime_count": 2,
+        "jv_count": 2,
+        "gap_count": 1,
+        "total_tasks": 5,
         "qualifying": [
           {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
+            "q": "Agency PP",
+            "answer": "YES \u2014 EDARMST $2.5M, same agency (IES)",
             "score": 4
           },
           {
-            "q": "Notice Type",
-            "answer": "RFI \u2014 intel gathering, position early",
-            "score": 4
-          },
-          {
-            "q": "Contract Value",
-            "answer": "Value not listed \u2014 check solicitation",
+            "q": "Capability match",
+            "answer": "STRONG on data analytics. Program evaluation needs Fors Marsh JV.",
             "score": 3
+          },
+          {
+            "q": "Set-aside",
+            "answer": "TBD \u2014 watch RFP",
+            "score": 3
+          }
+        ],
+        "tasks": [
+          {
+            "task": "Program Evaluation Design",
+            "score": 2,
+            "status": "jv",
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "pp_refs": [
+              "DHRA OPA ($59M IDIQ via Fors Marsh JV) \u2014 behavioral research and evaluation"
+            ],
+            "note": "Via Fors Marsh JV \u2014 DHRA command climate research demonstrates evaluation methodology capability",
+            "triggered_by": [
+              "evaluation",
+              "program evaluation",
+              "workforce"
+            ]
+          },
+          {
+            "task": "Education Data Analytics",
+            "score": 4,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "Education EDARMST ($2.5M) \u2014 same agency, IES",
+              "Census SRQA ($4.1M)"
+            ],
+            "note": "BLN24 prime \u2014 EDARMST is same agency (IES), same type of data-driven program analysis",
+            "triggered_by": [
+              "data analysis",
+              "education",
+              "pell"
+            ]
+          },
+          {
+            "task": "Survey & Research Methodology",
+            "score": 3,
+            "status": "jv",
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "pp_refs": [
+              "DHRA OPA \u2014 DOD-wide surveys, focus groups, NLP",
+              "EAC EAVS ($744K) \u2014 survey administration"
+            ],
+            "note": "Via Fors Marsh JV + EAC EAVS \u2014 survey design and administration confirmed",
+            "triggered_by": [
+              "survey",
+              "research",
+              "evaluation"
+            ]
+          },
+          {
+            "task": "Reporting & Policy Analysis",
+            "score": 4,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "Education EDARMST \u2014 policy-facing reporting to ED leadership",
+              "Census SRQA"
+            ],
+            "note": "BLN24 prime \u2014 policy-relevant reporting to education agency leadership confirmed",
+            "triggered_by": [
+              "reporting",
+              "analysis"
+            ]
+          },
+          {
+            "task": "Workforce Development Domain Expertise",
+            "score": 1,
+            "status": "jv",
+            "status_label": "\u274c Cannot Prime",
+            "pp_refs": [],
+            "note": "GAP \u2014 Workforce Pell Grants evaluation requires TVET/workforce training domain expertise. Need partner with education program evaluation background.",
+            "triggered_by": [
+              "workforce",
+              "pell grants",
+              "vocational"
+            ]
           }
         ]
       },
       "rex_analysis": {
-        "what_they_need": "On behalf of Department of Education (ED), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into",
-        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
-        "recommendation": "Review Needed"
-      }
+        "what_they_need": "Department of Education Institute of Education Sciences (IES) needs a contractor to evaluate the effectiveness of Workforce Pell Grants \u2014 a federal program allowing Pell Grant funding for short-term, workforce-focused training programs. The evaluation will assess program design, implementation, and outcomes: are the grants achieving workforce readiness goals? Who is served? What works? This is a rigorous program evaluation contract \u2014 likely requiring quasi-experimental or RCT design, data analysis, site visits, and policy-relevant reporting.",
+        "rex_take": "BLN24 has direct Education IES past performance \u2014 EDARMST $2.5M (data analytics, risk management) and PRESTO BPA (communications and outreach). IES is a confirmed past performance agency. However, this is a program evaluation contract \u2014 a specific discipline requiring evaluation methodology expertise (RCT, quasi-experimental design, impact evaluation). BLN Fors Marsh JV is the differentiator here: DHRA command climate research ($59M IDIQ) demonstrates behavioral research and program evaluation capability at scale. The workforce development angle also ties directly to the MCC HCD proposal BLN24 is pursuing. MRAS response is low-effort \u2014 respond now, watch for the RFP.",
+        "watch_notes": "MRAS is market research only \u2014 respond via Qualtrics form. Response link: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi\nHighlight: EDARMST $2.5M (same agency, IES), DHRA OPA behavioral research (via Fors Marsh JV). This is an evaluation contract \u2014 if Fors Marsh JV can lead the evaluation methodology, BLN24 handles data analytics and reporting. Strong teaming play.",
+        "recommendation": "Respond to RFI"
+      },
+      "asana_task_gid": "1214151074171126"
     },
     {
       "naics": "541720",
