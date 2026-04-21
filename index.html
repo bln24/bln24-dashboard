@@ -633,7 +633,9 @@ function renderOppCard(i,o){
     (o.naics?'<span class="p p-grey">NAICS: '+o.naics+'</span>':'')+
     (fmtV(o.val_low,o.val_high)!=='—'?'<span class="p p-gold">'+fmtV(o.val_low,o.val_high)+'</span>':'')+
     '</div>'+
-    '<div class="opp-why">'+((o.win_reasons||[]).slice(0,3).map(r=>'<div style="margin-bottom:3px">✓ '+r+'</div>').join('') || 'No specific match reasons logged.')+'</div>'+
+    // Matched lanes (capability proof)
+    (o.matched_lanes&&o.matched_lanes.length?'<div style="margin-bottom:8px">'+o.matched_lanes.map(l=>'<span style="display:inline-block;background:#EFF6FF;color:#1D4ED8;border-radius:4px;padding:2px 8px;font-size:.67rem;font-weight:700;margin:0 4px 4px 0">✓ '+l+'</span>').join('')+'</div>':'')+
+    '<div class="opp-why">'+((o.win_reasons||[]).slice(0,4).map(r=>'<div style="margin-bottom:4px;font-size:.73rem">→ '+r+'</div>').join('') || '<div style="color:var(--grey);font-size:.73rem">No capability lane match — review before pursuing.</div>')+'</div>'+
     (o.summary?'<div style="font-size:.72rem;color:var(--grey);margin-bottom:10px;line-height:1.5">'+o.summary.substring(0,200)+(o.summary.length>200?'…':'')+'</div>':'')+
     '<div class="opp-actions">'+
     (status==='approved'?'<span class="opp-status-done status-approved">✓ Approved — In Asana</span>':
@@ -663,7 +665,8 @@ function showOppModal(i){
     '<div class="mf"><div class="mf-l">Source Search</div><div class="mf-v">'+(o.searchLabel||'—')+(o.ericAlso?' <span style="font-size:.6rem;background:#F0E6FF;color:#7C3AED;padding:1px 5px;border-radius:4px;font-weight:700">Eric also tracking</span>':'')+'</div></div>'+
     '</div>'+
     (o.isFullOpen?'<div style="background:#FEF3C7;border-left:3px solid #D97706;padding:10px 12px;border-radius:0 6px 6px 0;font-size:.75rem;color:#92400E;font-weight:600;margin-bottom:12px">⚠️ Full &amp; Open Competition — BLN24 competes against all firm sizes. Win probability is meaningfully lower. Best play: pursue as a sub to a larger prime, or wait for a set-aside reissue.</div>':'')+
-    (reasons?'<div style="margin:14px 0 6px;font-size:.7rem;font-weight:700">Why BLN24 Should Pursue:</div><ul style="padding-left:18px;line-height:2">'+reasons+'</ul>':'')+
+    ((o.matched_lanes&&o.matched_lanes.length)?'<div style="margin:12px 0 6px;font-size:.7rem;font-weight:700;color:#1D4ED8">Matched Capability Lanes:</div><div style="margin-bottom:10px">'+o.matched_lanes.map(l=>'<span style="display:inline-block;background:#EFF6FF;color:#1D4ED8;border-radius:4px;padding:3px 10px;font-size:.72rem;font-weight:700;margin:0 4px 4px 0">✓ '+l+'</span>').join('')+'</div>':'')+
+    (reasons?'<div style="margin:8px 0 6px;font-size:.7rem;font-weight:700">Full Alignment Reasoning:</div><ul style="padding-left:18px;line-height:2">'+reasons+'</ul>':'No capability match found — verify before pursuing.')+
     (o.summary?'<div style="margin:12px 0 5px;font-size:.7rem;font-weight:700">AI Summary:</div><div style="font-size:.75rem;color:var(--grey);line-height:1.6;background:var(--grey-light);padding:10px 12px;border-radius:6px">'+o.summary+'</div>':'')+
     '<div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">'+
     (o.path?'<a href="'+o.path+'" target="_blank" style="font-size:.73rem;color:var(--blue);font-weight:600">View on HigherGov ↗</a>':'')+

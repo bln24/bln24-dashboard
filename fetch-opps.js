@@ -97,13 +97,110 @@ const FORS_MARSH_AGENCIES = [
   'bureau of the fiscal service', 'fiscal service',
 ];
 
-// Official BLN24 NAICS codes from Capability Statement (updated Apr 2026)
-const BLN24_NAICS = new Set(['541511','541513','541611','541612','541690','541613','541990','518210','512110','541519','541618','541430']);
+// =============================================================
+// BLN24 PROVEN CAPABILITY LANES
+// Derived from actual contract wins — NOT just NAICS codes
+// Each lane: keywords that match real scopes BLN24 has delivered
+// =============================================================
 
-const CX_KW = ['user experience','ux ','human-centered','human centered','service design','accessibility','section 508','508 compliance','human factors','usability'];
-const COMMS_KW = ['communications','outreach','marketing','campaign','branding','content strategy','public affairs','media','advertising','stakeholder','storytelling'];
-const DATA_KW = ['data analytics','data management','business intelligence','dashboard','analytics platform','ai ','machine learning','artificial intelligence','data engineering','data architecture'];
-const TECH_KW = ['modernization','cloud ','devops','devsecops','cybersecurity','legacy','digital services','web development','software development','it support','application'];
+// LANE 1: Human-Centered Design & CX
+// Proven: IRS HCD BPA $7M, Census UX work, CBP CX (Clarity24)
+// Evidence: "Human Centered Design and Research", "Digital Transformation", CX on federal web platforms
+const LANE_HCD = [
+  'human centered design', 'human-centered design', 'hcd',
+  'user experience', 'ux research', 'ux design',
+  'service design', 'usability', 'usability testing',
+  'human factors', 'user research', 'design research',
+  'accessibility', 'section 508', '508 compliance',
+  'customer experience', 'cx strategy',
+  'user-centered', 'design thinking',
+];
+
+// LANE 2: Strategic Communications & Outreach
+// Proven: CMS MNPS $16M, CDC comms $3.9M, HUD comms $2M, NTIA, HRSA, HHS OIDP $10M
+// Evidence: notice production, health comms, multicultural outreach, digital campaigns
+const LANE_COMMS = [
+  'communications support', 'communications services', 'outreach',
+  'public affairs', 'stakeholder engagement', 'stakeholder communications',
+  'health communications', 'health messaging',
+  'media campaign', 'marketing campaign', 'digital campaign',
+  'content strategy', 'content development', 'content creation',
+  'notice production', 'plain language',
+  'branding', 'brand strategy',
+  'social media', 'digital media',
+  'multicultural', 'spanish language', 'multilingual',
+  'public health campaign', 'awareness campaign',
+  'paid media', 'advertising',
+];
+
+// LANE 3: Data Analytics, BI & Digital Platforms
+// Proven: Census SRQA $4.1M (AI/ML/data), EDL $4.5M, EDARMST $2.9M (data analytics), GA4
+// Evidence: data archiving, quality assurance, analytics platforms, risk management
+const LANE_DATA = [
+  'data analytics', 'data analysis', 'data management',
+  'business intelligence', 'bi dashboard', 'dashboard development',
+  'data engineering', 'data architecture', 'data governance',
+  'machine learning', 'artificial intelligence', 'ai/ml',
+  'statistical analysis', 'quantitative analysis',
+  'risk management', 'data quality', 'data archiving',
+  'analytics platform', 'reporting platform',
+  'survey methodology', 'survey support', 'survey design',
+  'research support', 'research services',
+];
+
+// LANE 4: Web Modernization & Digital Services
+// Proven: MBDA website $4.4M, Census Digital Web Services, CNMP UX/digital, Oversight.gov $387K
+// Evidence: website redesign, digital platforms, web development, CMS implementations
+const LANE_WEB = [
+  'website redesign', 'website design', 'web design',
+  'web development', 'web modernization', 'digital modernization',
+  'digital services', 'digital platform',
+  'content management system', 'cms implementation',
+  'web application', 'portal development',
+  'digital transformation', 'digital experience',
+  'drupal', 'wordpress', 'sharepoint',
+  'front-end', 'frontend', 'ui development',
+  'information architecture',
+];
+
+// LANE 5: Cloud & Application Modernization
+// Proven: NOAA NWS IDP Cloud $4.3M (Clarity24), MAF/TIGER Cloud $4.5M, NOAA AI mod $2.8M
+// Evidence: cloud migration, app modernization, devops, AWS/Azure work
+const LANE_CLOUD = [
+  'cloud migration', 'cloud transition', 'cloud modernization',
+  'application modernization', 'app modernization', 'legacy modernization',
+  'devops', 'devsecops', 'ci/cd',
+  'aws', 'azure', 'google cloud', 'cloud infrastructure',
+  'microservices', 'containerization', 'kubernetes',
+  'software modernization', 'system modernization',
+  'it modernization', 'platform modernization',
+];
+
+// LANE 6: Multimedia, Video & Visual Communications
+// Proven: CDC NCHS Visual Comms $3.6M, multiple video/photo contracts, USDA social media
+// Evidence: video production, photography, visual design, multimedia
+const LANE_MULTIMEDIA = [
+  'video production', 'video development', 'multimedia',
+  'photography', 'photo services',
+  'visual communications', 'visual design', 'graphic design',
+  'motion graphics', 'animation',
+  'social media content', 'digital content',
+  'creative services', 'creative production',
+  'infographics', 'data visualization',
+];
+
+// LANE 7: Behavioral Science & Research (BLN Fors Marsh)
+// Proven: DHRA Command Climate $1M, USPTO survey support, FTC targeted campaigns
+// Evidence: behavioral research, survey methodology, command climate
+const LANE_BEHAVIORAL = [
+  'behavioral science', 'behavioral research',
+  'survey methodology', 'survey design', 'survey administration',
+  'command climate', 'organizational climate',
+  'focus group', 'qualitative research', 'ethnographic',
+  'behavior change', 'social marketing',
+  'evaluation', 'program evaluation',
+  'research and analytics',
+];
 
 function isFederal(agencyName) {
   const a = agencyName.toLowerCase();
@@ -115,73 +212,172 @@ function isFederal(agencyName) {
 
 function scoreOpp(o) {
   const agency = (o.agency || '').toLowerCase();
-  const naics = o.naics || '';
   const sa = (o.set_aside || '').toLowerCase();
   const title = (o.title || '').toLowerCase();
   const summary = (o.summary || '').toLowerCase();
   const combined = title + ' ' + summary;
   let score = 0;
   const reasons = [];
+  const matchedLanes = [];
 
-  // Past performance match — direct BLN24
+  // -------------------------------------------------------
+  // 1. PAST PERFORMANCE AGENCY MATCH
+  // Most important signal — BLN24 wins repeat clients
+  // -------------------------------------------------------
+  // Agency match alone is necessary but not sufficient
+  // Weight kept moderate — capability lane match does the heavy lifting
   if (BLN24_AGENCIES.some(a => agency.includes(a))) {
+    score += 15;
+    reasons.push('Agency: BLN24 has past performance here (relationship + credibility advantage)');
+  } else if (CLARITY24_AGENCIES.some(a => agency.includes(a))) {
+    score += 12;
+    reasons.push('Agency: Clarity24 JV (BLN24 + Accenture) has past performance here');
+  } else if (FORS_MARSH_AGENCIES.some(a => agency.includes(a))) {
+    score += 12;
+    reasons.push('Agency: BLN Fors Marsh JV has past performance here');
+  }
+
+  // -------------------------------------------------------
+  // 2. CAPABILITY LANE MATCHING
+  // Score based on proven delivery lanes, not NAICS codes
+  // Points awarded per lane match; multiple lanes = stronger case
+  // -------------------------------------------------------
+
+  const hcdMatches = LANE_HCD.filter(k => combined.includes(k));
+  if (hcdMatches.length >= 2) {
     score += 25;
-    reasons.push('BLN24 direct past performance with this agency');
+    matchedLanes.push('HCD/UX (IRS $7M, Census, CBP — proven prime)');
+    reasons.push('Strong HCD/UX scope match — BLN24 proven prime (IRS $7M HCD BPA, Census UX, CBP digital transformation)');
+  } else if (hcdMatches.length === 1) {
+    score += 12;
+    matchedLanes.push('HCD/UX (partial match)');
+    reasons.push('Partial HCD/UX scope match — verify fit vs IRS/Census delivery experience');
   }
-  // Clarity24 JV past performance (BLN24 + Accenture) — CBP $1.4M, USDA FNS $2.2M
-  else if (CLARITY24_AGENCIES.some(a => agency.includes(a))) {
+
+  const commsMatches = LANE_COMMS.filter(k => combined.includes(k));
+  if (commsMatches.length >= 2) {
+    score += 25;
+    matchedLanes.push('Strategic Comms (CMS $16M, CDC $3.9M, HUD $2M — proven prime)');
+    reasons.push('Strong comms/outreach scope match — BLN24 proven prime (CMS MNPS $16M, CDC health comms, HUD FHEO outreach)');
+  } else if (commsMatches.length === 1) {
+    score += 12;
+    matchedLanes.push('Strategic Comms (partial)');
+    reasons.push('Partial comms scope match — verify fit vs CMS/CDC/HUD delivery experience');
+  }
+
+  const dataMatches = LANE_DATA.filter(k => combined.includes(k));
+  if (dataMatches.length >= 2) {
     score += 20;
-    reasons.push('Clarity24 JV past performance (BLN24 + Accenture) — $12M in cloud/digital wins');
+    matchedLanes.push('Data/Analytics (Census $4.1M SRQA, Dept of Education $2.9M — proven prime)');
+    reasons.push('Strong data/analytics scope match — BLN24 proven prime (Census SRQA AI/ML, Education EDARMST risk analytics)');
+  } else if (dataMatches.length === 1) {
+    score += 10;
+    matchedLanes.push('Data/Analytics (partial)');
+    reasons.push('Partial data/analytics scope match — verify fit vs Census/Education delivery experience');
   }
-  // BLN Fors Marsh JV past performance — HHS $10.3M, USPTO, FTC
-  else if (FORS_MARSH_AGENCIES.some(a => agency.includes(a))) {
+
+  const webMatches = LANE_WEB.filter(k => combined.includes(k));
+  if (webMatches.length >= 2) {
     score += 20;
-    reasons.push('BLN Fors Marsh JV past performance — $12M in comms/behavioral science wins');
+    matchedLanes.push('Web/Digital Platforms (MBDA $4.4M, Census DWS, Oversight.gov — proven prime)');
+    reasons.push('Strong web modernization scope match — BLN24 proven prime (MBDA website $4.4M, Census DWS, Oversight.gov)');
+  } else if (webMatches.length === 1) {
+    score += 10;
+    matchedLanes.push('Web/Digital (partial)');
+    reasons.push('Partial web/digital scope match — verify fit vs MBDA/Census delivery experience');
   }
-  // NAICS match
-  if (BLN24_NAICS.has(naics)) {
+
+  const cloudMatches = LANE_CLOUD.filter(k => combined.includes(k));
+  if (cloudMatches.length >= 2) {
     score += 20;
-    reasons.push('NAICS aligns with BLN24 capabilities');
+    matchedLanes.push('Cloud/App Mod (NOAA $7M via Clarity24 — JV prime)');
+    reasons.push('Strong cloud/app modernization match — Clarity24 JV proven prime (NOAA cloud migration $7M, MAF/TIGER cloud)');
+  } else if (cloudMatches.length === 1) {
+    score += 10;
+    matchedLanes.push('Cloud/App Mod (partial)');
+    reasons.push('Partial cloud/modernization match — Clarity24 JV has NOAA cloud delivery experience');
   }
-  // Set-aside
+
+  const multimediaMatches = LANE_MULTIMEDIA.filter(k => combined.includes(k));
+  if (multimediaMatches.length >= 2) {
+    score += 15;
+    matchedLanes.push('Multimedia/Visual Comms (CDC NCHS $3.6M, USDA, DOI — proven prime)');
+    reasons.push('Strong multimedia/visual comms match — BLN24 proven prime (CDC NCHS $3.6M, USDA social media, DOI video)');
+  } else if (multimediaMatches.length === 1) {
+    score += 8;
+    matchedLanes.push('Multimedia (partial)');
+    reasons.push('Partial multimedia scope match — verify fit vs CDC/USDA visual delivery experience');
+  }
+
+  const behavioralMatches = LANE_BEHAVIORAL.filter(k => combined.includes(k));
+  if (behavioralMatches.length >= 2) {
+    score += 15;
+    matchedLanes.push('Behavioral Science/Research (DHRA, USPTO via BLN Fors Marsh JV)');
+    reasons.push('Strong behavioral/research scope match — BLN Fors Marsh JV proven (DHRA climate research, USPTO survey support)');
+  } else if (behavioralMatches.length === 1) {
+    score += 8;
+    reasons.push('Partial behavioral/research match — BLN Fors Marsh JV has delivery experience');
+  }
+
+  // -------------------------------------------------------
+  // 3. SET-ASIDE
+  // -------------------------------------------------------
   if (sa.includes('8a') || sa.includes('8(a)')) {
     score += 20;
-    reasons.push('8(a) set-aside — direct vehicle match');
+    reasons.push('8(a) set-aside — direct vehicle match for BLN24');
   } else if (sa.includes('sba') || sa.includes('small business') || sa.includes('wosb') || sa.includes('sdvosb')) {
     score += 10;
     reasons.push('Small business set-aside');
   } else if (!sa || sa.toLowerCase().includes('full and open') || sa.toLowerCase().includes('unrestricted')) {
     score -= 10;
-    reasons.push('Full & Open — lower win probability (competing against all firms)');
+    reasons.push('Full & Open — competing against all firm sizes; lower win probability without incumbent advantage');
   }
-  // Capability keywords
-  if (CX_KW.some(k => combined.includes(k))) { score += 15; reasons.push('CX/UX capability match'); }
-  if (COMMS_KW.some(k => combined.includes(k))) { score += 12; reasons.push('Strategic Comms match'); }
-  if (DATA_KW.some(k => combined.includes(k))) { score += 10; reasons.push('Data/Analytics match'); }
-  if (TECH_KW.some(k => combined.includes(k))) { score += 8; reasons.push('Tech Modernization match'); }
 
-  // Out of scope penalty
-  const oos = ['medical device','construction','hvac','logistics','warehousing','janitorial','food','vehicle','aircraft','weapon','ammunition'];
-  if (oos.some(k => combined.includes(k))) { score -= 30; reasons.push('OUT OF SCOPE signals'); }
+  // -------------------------------------------------------
+  // 4. OUT OF SCOPE PENALTY
+  // Hard pass signals based on actual BLN24 non-deliverables
+  // -------------------------------------------------------
+  const oos = [
+    'medical device','medical equipment','laboratory equipment',
+    'construction','facilities management','hvac','janitorial','custodial',
+    'logistics','warehousing','supply chain','food service',
+    'vehicle','aircraft','vessel','ship','weapon','ammunition','firearms',
+    'hardware procurement','equipment procurement',
+    'security guard','physical security',
+  ];
+  const oosHit = oos.filter(k => combined.includes(k));
+  if (oosHit.length > 0) {
+    score -= 40;
+    reasons.push('OUT OF SCOPE: ' + oosHit.slice(0,2).join(', ') + ' — not in BLN24 delivery lanes');
+  }
 
-  // Tier classification — context only, not a scoring modifier
-  // BLN24 has proven wins at T2 and T3; T1 harder cold but not deprioritized
+  // -------------------------------------------------------
+  // 5. NO CAPABILITY MATCH PENALTY
+  // If no lane matched at all, this is a speculative opp
+  // -------------------------------------------------------
+  if (matchedLanes.length === 0 && !reasons.some(r => r.includes('OUT OF SCOPE'))) {
+    score -= 15;
+    reasons.push('No direct capability lane match found — scope may not align with BLN24 proven delivery');
+  }
+
+  // -------------------------------------------------------
+  // 6. TIER (context only, no score impact)
+  // -------------------------------------------------------
   const midVal = (o.val_low && o.val_high) ? (o.val_low + o.val_high) / 2 : (o.val_low || o.val_high || null);
   let tier = null;
   if (midVal !== null) {
-    if (midVal >= 20000000) { tier = 1; }
-    else if (midVal >= 5000000) { tier = 2; }
-    else if (midVal >= 500000) { tier = 3; }
-    // below $500K: no tier assigned
+    if (midVal >= 20000000) tier = 1;
+    else if (midVal >= 5000000) tier = 2;
+    else if (midVal >= 500000) tier = 3;
   }
 
   let winProb;
-  if (score >= 50) winProb = 'High (40-60%)';
-  else if (score >= 30) winProb = 'Medium (20-40%)';
+  if (score >= 60) winProb = 'High (40-60%)';
+  else if (score >= 35) winProb = 'Medium (20-40%)';
   else if (score >= 15) winProb = 'Low (10-20%)';
   else winProb = 'Very Low (<10%)';
 
-  return { score, reasons, winProb, tier };
+  return { score, reasons, winProb, tier, matchedLanes };
 }
 
 function hgFetch(searchId) {
@@ -269,11 +465,12 @@ async function main() {
           ericAlso: search.ericAlso || false,
         };
 
-        const { score, reasons, winProb, tier } = scoreOpp(opp);
+        const { score, reasons, winProb, tier, matchedLanes } = scoreOpp(opp);
         opp.capture_score = score;
         opp.win_reasons = reasons;
         opp.win_prob = winProb;
         opp.tier = tier;
+        opp.matched_lanes = matchedLanes || [];
 
         allOpps.push(opp);
         added++;
