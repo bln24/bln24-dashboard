@@ -25,9 +25,11 @@
       "ericAlso": false,
       "capture_score": 35,
       "win_reasons": [
-        "Strong HCD/UX scope match \u2014 BLN24 proven prime (IRS $7M HCD BPA, Census UX, CBP digital transformation)",
-        "Small business set-aside",
-        "\u26a0\ufe0f Gap area detected: Training & eLearning \u2014 would need a teaming partner for this scope"
+        "BUX/HCD: IRS HCD BPA M \u2014 direct match for behavioral UX, user research, and HCD methodology",
+        "Due diligence advisory: IRS HCD BPA and Education EDARMST both involved reviewing and advising on program design",
+        "Behavioral science: DHRA OPA M via Fors Marsh JV \u2014 behavioral research at scale",
+        "\u26a0 Workforce development (TVET/LMIC): GAP \u2014 IRS SB/SE is org change management, not TVET. Need a TVET partner.",
+        "\u26a0 Health sector: adjacent (CDC comms) but not health systems strengthening in LMICs. Need health expert."
       ],
       "win_prob": "Medium (20-40%)",
       "tier": null,
@@ -65,18 +67,19 @@
           },
           {
             "task": "Human Capital & Workforce Development Advisory",
-            "score": 4,
+            "score": 1,
             "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
-            "status": "prime",
+            "status": "jv",
             "pp_refs": [
-              "IRS SB/SE BOD Leadership Initiative (Clarity24, $2.7M)"
+              "IRS SB/SE BOD Leadership Initiative (Clarity24, .7M) \u2014 organizational capacity building, MCA staff onboarding analogy"
             ],
-            "note": "Via Clarity24 JV \u2014 IRS SB/SE BOD Leadership Initiative ($2.7M): leadership development, culture assessment for 60+ executives, org transformation, workforce capacity building. DIRECT reference for human capital/workforce advisory.",
+            "note": "ADJACENT (1/4) \u2014 IRS SB/SE covers organizational capacity building and staff onboarding, which partially maps to MCA institutional strengthening. Does NOT cover TVET, skills development, or international workforce systems. Score conservatively.",
             "triggered_by": [
               "workforce development",
               "human capital",
               "skills development"
-            ]
+            ],
+            "status_label": "\ud83e\udd1d Adjacent / Teaming"
           },
           {
             "task": "Behavioral Science & Research",
@@ -129,18 +132,19 @@
             "score_label": "0 \u2014 No Experience (Gap)",
             "status": "gap",
             "pp_refs": [],
-            "note": "BLN24 gap \u2014 not a service lane; teaming partner required",
+            "note": "GAP \u2014 MCC workforce dev is TVET/sector skills for developing countries. IRS SB/SE was leadership/culture change for domestic federal executives. Different scope. Need partner with TVET/international workforce development experience.",
             "triggered_by": [
               "workforce development",
               "skills development"
-            ]
+            ],
+            "status_label": "\u274c Cannot Prime"
           }
         ],
         "fit": "Moderate",
         "fit_reason": "Can prime: Human-Centered Design & UX Research, Human Capital & Workforce Development Advisory. Needs teaming for: Workforce / Talent Development",
-        "avg_score": 2.7,
-        "prime_count": 4,
-        "jv_count": 1,
+        "avg_score": 2.2,
+        "prime_count": 3,
+        "jv_count": 2,
         "gap_count": 1,
         "total_tasks": 6,
         "qualifying": [
