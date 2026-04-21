@@ -1,7 +1,245 @@
 {
   "updated": "2026-04-21T04:25:53.557Z",
-  "count": 123,
+  "count": 124,
   "opps": [
+    {
+      "naics": "541511",
+      "title": "data.CMS.gov \u2014 Development and Operations of CMS Open Data Platform",
+      "agency": "Centers for Medicare & Medicaid Services (CMS), Office of Enterprise Data and Analytics (OEDA)",
+      "type": "Sources Sought",
+      "noticeCategory": "rfi",
+      "set_aside": "TBD",
+      "searchLabel": "Brian Direct \u2014 RFI",
+      "posted": "2026-04-07",
+      "due": "2026-04-23",
+      "val_low": 5000000,
+      "val_high": 20000000,
+      "description": "Data.CMS.gov :  Development and Operations of CMS\u2019s Open Data Platform (SOO) April 7, 2026 Version 3 Table of Contents Introduction 1 Context 2 Product Vision 4 Objectives 5 Approach 7 Assumptions 8 Constraints 9 General Expectations for Agile Teams working at CMS 10 Understand What People Need 10 Work Towards Outcomes, Not Outputs 10 Build the Service using Agile and Iterative Processes 11 Make it Simple and Intuitive 11 Use Data to Drive Decisions 12 Metrics 12 Allow Third Parties to Use Our Data and Logic 13 Open Source/ Re-use 13 Delivery of Artificial Intelligence (AI) Solutions 13 Statement of Need 14 Optional Tasks 18 Delivery 21 Standup, Sprint Cadence, Program Increments 21 Tooling, Metrics, and Dashboards 22 Demos 22 Retrospectives 23 Communication and Collaboration 23 Testing &amp; Validation 24 Definition of Done (DoD) 25 Deliverables 26 Contractor Personnel 29 Staffing and Contract CLIN Structure 32 General CMS &amp; Related Technical Standards 36 Section 508 37 Government Furnished Equipment (GFE)/ Information (GFI)/ Software or Service (GFS) 37 Licensing Constraints 37 Cloud Services 37 Publications 38 Definitions 38 Duration and Location 42 Contract Transition In/Out 44 Joint Operating Agreements (JOAs) 44 Appendix A: Security Requirements 45 Appendix B: QASP 45 Appendix C: Current Usage Metrics, System Architecture, and Technical Environment 49 Appendix D: Current Data.CMS.gov Datasets and Tools 52 Appendix E: 508 Accessibility Requirements 61 Introduction The Centers for Medicare &amp; Medicaid Services (CMS) is a federal agency that ensures health care coverage for more than 100 million Americans through Medicare, Medicaid, the Children's Health Insurance Program, and the Health Insurance Marketplace. As the single largest payer for health care in the United States, CMS generates and collects enormous amounts of data. CMS recognizes that ensuring access to this data is key to driving innovation and promoting high-value, person-centered care. The C",
+      "summary": "CMS OEDA seeks contractor to develop, operate, and maintain data.cms.gov \u2014 the agency authoritative open data platform hosting 170+ datasets for Medicare, Medicaid, CHIP, and Marketplace. Scope: agile product management, HCD/UX research, Drupal CMS, DevSecOps, API management, help desk operations, data ops, ATO maintenance. ~15 FTE team. FFP + T&M CLINs. Optional tasks: hosting migration, CDN optimization, data website consolidation. 99.5% uptime SLA. Section 508/WCAG 2.1 AA required. US-based personnel only. Estimated value M-M.",
+      "path": "",
+      "source_path": "https://feedback.gsa.gov/jfe/form/SV_3PN0UNqhJ8ww1fM",
+      "is8a": false,
+      "isFullOpen": true,
+      "ericAlso": false,
+      "asana_task_gid": "1214150928848982",
+      "capture_score": 48,
+      "win_prob": "Medium (20-40%)",
+      "tier": 2,
+      "scope_tags": [
+        "Human-Centered Design (HCD)",
+        "UX Research & Testing",
+        "Accessibility / Section 508",
+        "Digital Platform Development",
+        "Web Design & Development",
+        "Data Analytics & BI",
+        "Data Engineering",
+        "AI / Machine Learning",
+        "DevSecOps / CI/CD",
+        "Content Development"
+      ],
+      "scope_owned": [
+        "Human-Centered Design (HCD)",
+        "UX Research & Testing",
+        "Accessibility / Section 508",
+        "Digital Platform Development",
+        "Content Development"
+      ],
+      "scope_gaps": [
+        "DevSecOps / CI/CD",
+        "AI / Machine Learning"
+      ],
+      "matched_lanes": [
+        "HCD/UX (IRS $7M, Census, CBP \u2014 proven prime)",
+        "Web/Digital Platforms (MBDA $4.4M, Census DWS \u2014 proven prime)",
+        "Strategic Comms (CMS MNPS $16M \u2014 same agency)"
+      ],
+      "win_reasons": [
+        "Agency: BLN24 has direct past performance with CMS (MNPS $16M \u2014 same agency, different office)",
+        "BLN24 prime past performance: IRS HCD BPA $7M direct BUX/UX match",
+        "Strong HCD/UX scope match \u2014 IRS HCD BPA $7M, Census, CBP digital transformation",
+        "CMS MNPS $16M is the relationship anchor \u2014 same agency, strong POC network",
+        "\u26a0 Gap area detected: DevSecOps / ATO maintenance \u2014 would need teaming partner for this scope"
+      ],
+      "rex_analysis": {
+        "what_they_need": "CMS needs a contractor to run data.cms.gov \u2014 the federal government open Medicare/Medicaid data platform. ~15 FTE team delivering: agile product management, HCD/UX research, Drupal development, DevSecOps, API architecture, data operations (170+ datasets), help desk, ATO maintenance, and optional infrastructure migration (Acquia to new hosting, CDN optimization). This is a full-stack digital platform contract at CMS scale.",
+        "rex_take": "CMS is BLN24's highest-value client ($16M MNPS). This is a different CMS office (OEDA vs. CMMI) but the agency relationship is real and valuable. BLN24 owns two lanes here: HCD/UX research (IRS HCD BPA $7M direct match) and digital platform/content (MBDA $4.4M, Census DWS, CMS MNPS $16M). The technical depth required \u2014 Drupal, DevSecOps, ATO, cloud infrastructure, API architecture \u2014 is where BLN24 needs a teaming partner. Clarity24 (Accenture JV) could cover the tech depth. This RFI is low-commitment intelligence gathering \u2014 respond now, position for the RFP. The Qualtrics form IS the response \u2014 fill it out today highlighting CMS MNPS and IRS HCD.",
+        "watch_notes": "This is an RFI \u2014 response is a Qualtrics survey form, not a full proposal. Responding gets BLN24 on CMS radar and shapes the acquisition strategy. The actual RFP will follow (est. Summer/Fall 2026). Key to flag in RFI response: CMS MNPS $16M past performance, IRS HCD BPA for UX/research, propose teaming structure for DevSecOps/Drupal gaps. Watch SAM.gov for the follow-on RFP \u2014 this is a major contract worth positioning for now.",
+        "recommendation": "Respond to RFI \u2014 High Priority"
+      },
+      "capability_matrix": {
+        "fit": "Moderate",
+        "fit_reason": "BLN24 owns HCD/UX and digital platform lanes. DevSecOps, Drupal infra, ATO maintenance need teaming partner. CMS MNPS $16M is the relationship anchor.",
+        "avg_score": 2.8,
+        "prime_count": 5,
+        "jv_count": 2,
+        "gap_count": 2,
+        "total_tasks": 9,
+        "qualifying": [
+          {
+            "q": "Agency past performance",
+            "answer": "YES \u2014 CMS MNPS $16M (same agency, different office)",
+            "score": 4
+          },
+          {
+            "q": "Technical capability match",
+            "answer": "STRONG on HCD/UX/content. GAP on DevSecOps/ATO.",
+            "score": 3
+          },
+          {
+            "q": "Set-aside",
+            "answer": "TBD \u2014 RFI phase. Watch for small business set-aside on RFP.",
+            "score": 3
+          },
+          {
+            "q": "Contract value",
+            "answer": "$5M-$20M Tier 2 \u2014 BLN24 proven wins at this range",
+            "score": 4
+          }
+        ],
+        "tasks": [
+          {
+            "task": "HCD / UX Research",
+            "score": 4,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "IRS HCD BPA ($7M)",
+              "CBP Digital Transformation (Clarity24)"
+            ],
+            "note": "BLN24 strongest lane \u2014 IRS HCD BPA is direct match for UX research and behavioral design at federal scale",
+            "triggered_by": [
+              "user research",
+              "human-centered design",
+              "usability testing"
+            ]
+          },
+          {
+            "task": "Accessibility / Section 508 / WCAG 2.1 AA",
+            "score": 4,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "IRS HCD BPA (508 compliance embedded)",
+              "Census DWS"
+            ],
+            "note": "BLN24 prime \u2014 508 compliance is confirmed deliverable in IRS HCD BPA",
+            "triggered_by": [
+              "section 508",
+              "accessibility",
+              "wcag"
+            ]
+          },
+          {
+            "task": "Digital Platform / Web Development",
+            "score": 3,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "MBDA Website Redesign ($4.4M)",
+              "Census Digital Web Services",
+              "Oversight.gov ($387K)"
+            ],
+            "note": "BLN24 prime \u2014 web/digital platform lane confirmed. Drupal-specific experience needs verification.",
+            "triggered_by": [
+              "web development",
+              "digital platform",
+              "drupal"
+            ]
+          },
+          {
+            "task": "Content Development & Data Documentation",
+            "score": 3,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "CMS MNPS ($16M) \u2014 notice/content production at scale",
+              "CDC health comms"
+            ],
+            "note": "BLN24 prime \u2014 CMS MNPS $16M is the most direct analog for content production at CMS scale",
+            "triggered_by": [
+              "content development",
+              "plain language",
+              "data documentation"
+            ]
+          },
+          {
+            "task": "Agile Product Management",
+            "score": 3,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "Census SRQA ($4.1M)",
+              "IRS HCD BPA",
+              "Education EDARMST"
+            ],
+            "note": "BLN24 prime \u2014 agile PM embedded and documented across major contracts",
+            "triggered_by": [
+              "agile",
+              "sprint",
+              "product management"
+            ]
+          },
+          {
+            "task": "Data Operations / Dataset Publishing",
+            "score": 2,
+            "status": "jv",
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "pp_refs": [
+              "Census SRQA ($4.1M) \u2014 data quality and operations",
+              "Census EDL Applications"
+            ],
+            "note": "BLN24 adjacent \u2014 data engineering and quality lane; not open public data publishing specifically. Needs partnership for scale.",
+            "triggered_by": [
+              "data operations",
+              "dataset",
+              "data products"
+            ]
+          },
+          {
+            "task": "API Architecture & Management",
+            "score": 2,
+            "status": "jv",
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "pp_refs": [
+              "NOAA cloud / app mod (Clarity24 JV)",
+              "Census MAF/TIGER modernization"
+            ],
+            "note": "Via Clarity24 JV \u2014 API work confirmed in cloud/app modernization context. Not standalone API platform prime.",
+            "triggered_by": [
+              "api",
+              "application programming interface"
+            ]
+          },
+          {
+            "task": "DevSecOps / ATO Maintenance / Cloud Infra",
+            "score": 0,
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "pp_refs": [],
+            "note": "\u26a0 GAP \u2014 No BLN24 prime DevSecOps, ATO maintenance, or cloud infrastructure delivery on record. Teaming partner required. Consider Accenture via Clarity24 JV.",
+            "triggered_by": [
+              "devsecops",
+              "ato",
+              "authority to operate",
+              "fisma"
+            ]
+          },
+          {
+            "task": "Help Desk Operations",
+            "score": 0,
+            "status": "gap",
+            "status_label": "\u274c Cannot Prime",
+            "pp_refs": [],
+            "note": "\u26a0 GAP \u2014 No BLN24 standalone help desk prime on record. Adjacent stakeholder engagement and comms support only.",
+            "triggered_by": [
+              "help desk",
+              "service desk",
+              "customer support"
+            ]
+          }
+        ]
+      }
+    },
     {
       "naics": "541611",
       "title": "HCD Due Diligence Contract Workforce Development and BUX",
