@@ -230,7 +230,8 @@ TASK_AREAS = [
     },
     {
         'task': 'Survey Design & Research Methodology',
-        'kw': ['survey','survey design','survey methodology','survey administration','questionnaire','data collection survey'],
+        # Require specific survey delivery phrases, not generic 'survey' mentions in data contexts
+        'kw': ['survey design','survey methodology','survey administration','questionnaire design','data collection survey','administer survey','survey respondent','user survey','respondent survey'],
         'pp_refs': ['USPTO_SURV', 'CENSUS_SRQA', 'DHRA'],
         'base_score': 3,
         'note': 'BLN24 JV — USPTO survey support (Fors Marsh), Census data collection experience'
@@ -265,7 +266,8 @@ TASK_AREAS = [
     },
     {
         'task': 'Human Capital & Workforce Development Advisory',
-        'kw': ['workforce development','human capital','leadership development','organizational transformation','change management','capacity building','talent development','workforce training','skills development','tvet'],
+        # Require more specific phrases to avoid false positives from finance/IT tools
+        'kw': ['workforce development program','leadership development program','leadership capacity','organizational transformation program','organizational change management for workforce','capacity building for staff','talent development program','workforce training program','skills development program','tvet','human capital development','human capital investment'],
         'pp_refs': ['IRS_SBSE'],
         'base_score': 4,
         'note': 'Via Clarity24 JV — IRS SB/SE BOD Leadership Initiative ($2.7M): leadership development, culture assessment for 60+ executives, org transformation, workforce capacity building. DIRECT reference for human capital/workforce advisory.'

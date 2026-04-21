@@ -16,7 +16,7 @@
       "val_high": 20000000,
       "source_path": "https://feedback.gsa.gov/jfe/form/SV_3PN0UNqhJ8ww1fM",
       "path": "",
-      "description": "CMS OEDA seeks contractor to develop, operate, and maintain data.cms.gov. ~15 FTE team: agile product management, HCD/UX research, Drupal CMS, DevSecOps, API management, help desk, data ops, ATO maintenance.",
+      "description": "CMS OEDA seeks contractor to develop, operate, and maintain data.cms.gov \u2014 the authoritative open data platform hosting 170+ datasets for Medicare, Medicaid, CHIP, and Marketplace. Scope: agile product management, human-centered design (HCD) and user research, Drupal CMS development and operations, DevSecOps, API management, help desk operations, data operations (dataset publishing, QA), ATO maintenance, Section 508/WCAG 2.1 AA compliance, and optional hosting/CDN migration and data website consolidation. ~15 FTE team. FFP + T&M CLINs. US-based personnel only. 99.5% uptime SLA.",
       "summary": "GSA MRAS. CMS open data platform \u2014 170+ datasets, Drupal, HCD/UX, DevSecOps, API, help desk. Estimated M-M.",
       "is8a": false,
       "isFullOpen": true,
@@ -26,7 +26,7 @@
       "win_prob": "Medium (20-40%)",
       "tier": 2,
       "rex_analysis": {
-        "what_they_need": "CMS OEDA seeks contractor to develop, operate, and maintain data.cms.gov. ~15 FTE team: agile product management, HCD/UX research, Drupal CMS, DevSecOps, API management, help desk, data ops, ATO maintenance. GSA MRAS. CMS open data platform \u2014 170+ datasets, Drupal, HCD/UX, DevSecOps, API, help desk. Estimated M-M.",
+        "what_they_need": "CMS OEDA seeks contractor to develop, operate, and maintain data.cms.gov \u2014 the authoritative open data platform hosting 170+ datasets for Medicare, Medicaid, CHIP, and Marketplace. Scope: agile product management, human-centered design (HCD) and user research, Drupal CMS development and operations, DevSecOps, API management, help desk operations, data operations (dataset publishing, QA), ATO maint",
         "rex_take": "BLN24 can cover: Human-Centered Design & UX Research, Web Design & Development. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust, DevSecOps / CI/CD. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: RFI.",
         "recommendation": "Weak / JV"
@@ -46,8 +46,9 @@
             ],
             "note": "BLN24 strong prime \u2014 IRS HCD BPA $7M is direct comparable",
             "triggered_by": [
+              "human-centered design",
               "hcd",
-              "ux research"
+              "user research"
             ]
           },
           {
@@ -64,6 +65,21 @@
             "note": "BLN24 prime \u2014 MBDA $4.4M, Census DWS, Oversight.gov, CBP.gov redesign (Clarity24)",
             "triggered_by": [
               "drupal"
+            ]
+          },
+          {
+            "task": "Accessibility / Section 508 Compliance",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "IRS Human Centered Design & Research BPA ($7M)",
+              "Census Digital Web Services ($0)"
+            ],
+            "note": "BLN24 prime \u2014 IRS HCD BPA scope included 508 compliance testing",
+            "triggered_by": [
+              "section 508",
+              "wcag"
             ]
           },
           {
@@ -91,11 +107,11 @@
         ],
         "fit": "Weak / JV",
         "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
-        "avg_score": 2.0,
-        "prime_count": 2,
+        "avg_score": 2.2,
+        "prime_count": 3,
         "jv_count": 0,
         "gap_count": 2,
-        "total_tasks": 4,
+        "total_tasks": 5,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -182,21 +198,6 @@
             ]
           },
           {
-            "task": "Human Capital & Workforce Development Advisory",
-            "score": 4,
-            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "IRS SB/SE BOD Leadership Initiative (Clarity24, $2.7M)"
-            ],
-            "note": "Via Clarity24 JV \u2014 IRS SB/SE BOD Leadership Initiative ($2.7M): leadership development, culture assessment for 60+ executives, org transformation, workforce capacity building. DIRECT reference for human capital/workforce advisory.",
-            "triggered_by": [
-              "workforce development",
-              "human capital",
-              "skills development"
-            ]
-          },
-          {
             "task": "Behavioral Science & Research",
             "score": 3,
             "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
@@ -254,13 +255,13 @@
             ]
           }
         ],
-        "fit": "Moderate",
-        "fit_reason": "Can prime: Human-Centered Design & UX Research, Human Capital & Workforce Development Advisory. Needs teaming for: Workforce / Talent Development",
-        "avg_score": 2.7,
-        "prime_count": 4,
+        "fit": "Weak / JV",
+        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
+        "avg_score": 2.4,
+        "prime_count": 3,
         "jv_count": 1,
         "gap_count": 1,
-        "total_tasks": 6,
+        "total_tasks": 5,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -269,8 +270,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "Mostly \u2014 some gap areas",
-            "score": 3
+            "answer": "Partial \u2014 significant gaps",
+            "score": 2
           },
           {
             "q": "Notice Type",
@@ -860,7 +861,7 @@
       "due": "2026-04-27",
       "val_low": null,
       "val_high": null,
-      "description": "On behalf of Department of Education (ED), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browser.\n\nOnly responses submitted through the linked RFI will be accepted. Nothing else will be evaluated or recorded (this includes selecting 'interested' within eBuy).\n\n\nLink to RFI: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi\n\n\nAdditional Information:\nDue to the structure of contracts in GSA eBuy, you may receive multiple Sources Sought or RFI notifications for the same requirement if it falls under multiple of your company's awarded SINs. However, please note that you are only required to respond to the RFI once.\n\nBe sure to use the URL provided above to submit your response.\n\n\nAny questions regarding this RFI will be responded to by email only.  Send your inquiry to: rfi@research.gsa.gov and be sure to include the RFQ number.\n\n",
+      "description": "Institute of Education Sciences (IES) market research for program evaluation of Workforce Pell Grants. IES is seeking vendors to evaluate the effectiveness of workforce development programs funded under Pell Grant expansion. Scope includes: rigorous program evaluation design (quasi-experimental or RCT), data collection and analysis, stakeholder interviews, site visits to educational institutions, assessment of workforce outcomes (employment, earnings, skill attainment), and policy-relevant reporting to Congress and Department of Education leadership. Contractor must have expertise in evaluation methodology, workforce development research, education data analytics, and federal program evaluation standards.",
       "summary": "Background\n The U.S. Department of Education's Institute of Education Sciences (IES) is tasked with supporting education research and conducting evaluations of federal education programs. The goal of this contract is to evaluate the impact of Pell Grants for eligible workforce programs, particularly following the expansion of Pell Grant eligibility to short-term certificate programs in high-demand industries as per the One Big Beautiful Bill Act (OBBB). This initiative aims to address labor market needs and assist displaced workers in acquiring necessary skills for employment. Approximately 18",
       "path": "https://www.highergov.com/contract-opportunity/ed-ies-evaluation-of-workforce-pell-grants-mra-rfi1807182-r-36524",
       "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFI1807182?contractNumber=",
@@ -887,19 +888,97 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "tasks": [],
-        "fit": "Unclassified",
-        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
-        "avg_score": 0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 0,
+        "tasks": [
+          {
+            "task": "Data Analytics & Business Intelligence",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Dept of Education EDARMST Data Analytics ($2.9M)",
+              "IRS OLS (sub reference)",
+              "Census Digital Web Services ($0)"
+            ],
+            "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
+            "triggered_by": [
+              "data analytics",
+              "reporting"
+            ]
+          },
+          {
+            "task": "Human Capital & Workforce Development Advisory",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "IRS SB/SE BOD Leadership Initiative (Clarity24, $2.7M)"
+            ],
+            "note": "Via Clarity24 JV \u2014 IRS SB/SE BOD Leadership Initiative ($2.7M): leadership development, culture assessment for 60+ executives, org transformation, workforce capacity building. DIRECT reference for human capital/workforce advisory.",
+            "triggered_by": [
+              "workforce development program"
+            ]
+          },
+          {
+            "task": "Due Diligence & Technical Advisory",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "IRS Human Centered Design & Research BPA ($7M)",
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Dept of Education EDARMST Data Analytics ($2.9M)"
+            ],
+            "note": "BLN24 prime \u2014 consulting/advisory embedded in major contracts (IRS, Census, Education)",
+            "triggered_by": [
+              "sme"
+            ]
+          },
+          {
+            "task": "Program Evaluation",
+            "score": 2,
+            "score_label": "2 \u2014 Related PP, different context",
+            "status": "jv",
+            "pp_refs": [
+              "DHRA Command Climate Research (Fors Marsh JV)",
+              "Census SRQA AI/ML/Data Quality ($4.1M)"
+            ],
+            "note": "BLN24 JV \u2014 Fors Marsh has evaluation expertise; adjacent to Census SRQA QA work",
+            "triggered_by": [
+              "program evaluation",
+              "rct",
+              "quasi-experimental"
+            ]
+          },
+          {
+            "task": "Workforce / Talent Development",
+            "score": 0,
+            "score_label": "0 \u2014 No Experience (Gap)",
+            "status": "gap",
+            "pp_refs": [],
+            "note": "BLN24 gap \u2014 not a service lane; teaming partner required",
+            "triggered_by": [
+              "workforce development"
+            ]
+          }
+        ],
+        "fit": "Moderate",
+        "fit_reason": "Can prime: Data Analytics & Business Intelligence, Human Capital & Workforce Development Advisory. Needs teaming for: Workforce / Talent Development",
+        "avg_score": 2.6,
+        "prime_count": 3,
+        "jv_count": 1,
+        "gap_count": 1,
+        "total_tasks": 5,
         "qualifying": [
           {
             "q": "Set-Aside",
             "answer": "Small Business set-aside",
             "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
           },
           {
             "q": "Notice Type",
@@ -1081,21 +1160,6 @@
       "capability_matrix": {
         "tasks": [
           {
-            "task": "Survey Design & Research Methodology",
-            "score": 3,
-            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "USPTO Survey Support (Fors Marsh JV)",
-              "Census SRQA AI/ML/Data Quality ($4.1M)",
-              "DHRA Command Climate Research (Fors Marsh JV)"
-            ],
-            "note": "BLN24 JV \u2014 USPTO survey support (Fors Marsh), Census data collection experience",
-            "triggered_by": [
-              "survey"
-            ]
-          },
-          {
             "task": "Application Modernization",
             "score": 3,
             "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
@@ -1112,12 +1176,12 @@
           }
         ],
         "fit": "Moderate",
-        "fit_reason": "Can prime most: Survey Design & Research Methodology, Application Modernization. Some areas need partner",
+        "fit_reason": "Can prime most: Application Modernization. Some areas need partner",
         "avg_score": 3.0,
-        "prime_count": 2,
+        "prime_count": 1,
         "jv_count": 0,
         "gap_count": 0,
-        "total_tasks": 2,
+        "total_tasks": 1,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -1271,19 +1335,6 @@
             ]
           },
           {
-            "task": "Human Capital & Workforce Development Advisory",
-            "score": 4,
-            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "IRS SB/SE BOD Leadership Initiative (Clarity24, $2.7M)"
-            ],
-            "note": "Via Clarity24 JV \u2014 IRS SB/SE BOD Leadership Initiative ($2.7M): leadership development, culture assessment for 60+ executives, org transformation, workforce capacity building. DIRECT reference for human capital/workforce advisory.",
-            "triggered_by": [
-              "human capital"
-            ]
-          },
-          {
             "task": "IT Infrastructure & Telecommunications",
             "score": 0,
             "score_label": "0 \u2014 No Experience (Gap)",
@@ -1306,13 +1357,13 @@
             ]
           }
         ],
-        "fit": "Weak / JV",
-        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
-        "avg_score": 2.0,
-        "prime_count": 2,
+        "fit": "Pass",
+        "fit_reason": "Scope primarily outside BLN24 delivery lanes",
+        "avg_score": 1.3,
+        "prime_count": 1,
         "jv_count": 0,
         "gap_count": 2,
-        "total_tasks": 4,
+        "total_tasks": 3,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -1321,8 +1372,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "Partial \u2014 significant gaps",
-            "score": 2
+            "answer": "No \u2014 primarily gap work",
+            "score": 1
           },
           {
             "q": "Notice Type",
@@ -1338,9 +1389,9 @@
       },
       "rex_analysis": {
         "what_they_need": "The DHA uses a custom software tool, referred to as Ektropy, to support financial and human capital management activities. Ektropy serves as the single tool used for facilitating:\n-Traceability between execution, planning, and budgeting\n-Contract Execution Management\n-Human Capital Management\n-Simplified and streamlined reporting of centrally located data\nCurrently, Ektropy is used by the Program",
-        "rex_take": "BLN24 can cover: Data Analytics & Business Intelligence, Human Capital & Workforce Development Advisory. Gap areas requiring teaming: IT Infrastructure & Telecommunications, Space / Defense / ITAR. Evaluate whether the BLN24 scope is large enough to prime.",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Weak / JV"
+        "recommendation": "Pass"
       }
     },
     {
@@ -1355,7 +1406,7 @@
       "due": "2026-07-01",
       "val_low": 5000000,
       "val_high": 10000000,
-      "description": "Purpose: ADDP is beginning the procurement process for a new contract for digital incentives.Description: This new contract will be for a period of 2 years and up to $9.00M total.",
+      "description": "Census Bureau ADDP program seeking digital incentives contractor. Digital engagement tools, behavioral nudge design, and incentive strategies to improve survey response rates for the American Community Survey (ACS) and other Census data collection programs. Contractor provides digital outreach, behavioral design, incentive architecture, and response rate analytics.",
       "summary": "",
       "path": "https://www.highergov.com/contract-forecast/1140486",
       "source_path": "",
@@ -1377,19 +1428,55 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "tasks": [],
-        "fit": "Unclassified",
-        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
-        "avg_score": 0,
-        "prime_count": 0,
+        "tasks": [
+          {
+            "task": "Public Outreach & Stakeholder Engagement",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "HUD FHEO Communications & Outreach ($2M)",
+              "HHS OIDP Comprehensive Communications ($10.3M, Fors Marsh JV)",
+              "CDC Communications (DDT $138K, NAC $250K)",
+              "CMS Marketplace Notice Production Services ($16M)"
+            ],
+            "note": "BLN24 prime \u2014 HUD FHEO, HRSA, USCIS outreach work",
+            "triggered_by": [
+              "outreach"
+            ]
+          },
+          {
+            "task": "Behavioral Science & Research",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "DHRA Command Climate Research (Fors Marsh JV)",
+              "HHS OIDP Comprehensive Communications ($10.3M, Fors Marsh JV)"
+            ],
+            "note": "BLN24 JV \u2014 DHRA command climate (Fors Marsh), HHS OIDP behavioral comms",
+            "triggered_by": [
+              "nudge"
+            ]
+          }
+        ],
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Public Outreach & Stakeholder Engagement, Behavioral Science & Research. Some areas need partner",
+        "avg_score": 3.0,
+        "prime_count": 2,
         "jv_count": 0,
         "gap_count": 0,
-        "total_tasks": 0,
+        "total_tasks": 2,
         "qualifying": [
           {
             "q": "Set-Aside",
             "answer": "Small Business set-aside",
             "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
           },
           {
             "q": "Notice Type",
@@ -1471,19 +1558,6 @@
             ]
           },
           {
-            "task": "Human Capital & Workforce Development Advisory",
-            "score": 4,
-            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "IRS SB/SE BOD Leadership Initiative (Clarity24, $2.7M)"
-            ],
-            "note": "Via Clarity24 JV \u2014 IRS SB/SE BOD Leadership Initiative ($2.7M): leadership development, culture assessment for 60+ executives, org transformation, workforce capacity building. DIRECT reference for human capital/workforce advisory.",
-            "triggered_by": [
-              "change management"
-            ]
-          },
-          {
             "task": "IT Infrastructure & Telecommunications",
             "score": 0,
             "score_label": "0 \u2014 No Experience (Gap)",
@@ -1495,13 +1569,13 @@
             ]
           }
         ],
-        "fit": "Moderate",
-        "fit_reason": "Can prime: Data Engineering & ETL, Human Capital & Workforce Development Advisory. Needs teaming for: IT Infrastructure & Telecommunications",
-        "avg_score": 2.7,
-        "prime_count": 2,
+        "fit": "Weak / JV",
+        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
+        "avg_score": 2.0,
+        "prime_count": 1,
         "jv_count": 0,
         "gap_count": 1,
-        "total_tasks": 3,
+        "total_tasks": 2,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -1510,8 +1584,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "Mostly \u2014 some gap areas",
-            "score": 3
+            "answer": "Partial \u2014 significant gaps",
+            "score": 2
           },
           {
             "q": "Notice Type",
@@ -1527,9 +1601,9 @@
       },
       "rex_analysis": {
         "what_they_need": "Provide skilled information technology labor services to the Coast Guard CG-C5I-Engineering and C5I Service Center Business Operations Division for Agile application development, database maintenance, and custom decision-making tool implementation to improve and modernize technology service delivery to operational Coast Guard units.\n\nBusiness Governance and Continuous Process Improvement\n- Assess",
-        "rex_take": "BLN24 can cover: Data Engineering & ETL, Human Capital & Workforce Development Advisory. Gap areas requiring teaming: IT Infrastructure & Telecommunications. Evaluate whether the BLN24 scope is large enough to prime.",
+        "rex_take": "BLN24 can cover: Data Engineering & ETL. Gap areas requiring teaming: IT Infrastructure & Telecommunications. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
-        "recommendation": "Moderate"
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -2246,40 +2320,19 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Survey Design & Research Methodology",
-            "score": 3,
-            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "USPTO Survey Support (Fors Marsh JV)",
-              "Census SRQA AI/ML/Data Quality ($4.1M)",
-              "DHRA Command Climate Research (Fors Marsh JV)"
-            ],
-            "note": "BLN24 JV \u2014 USPTO survey support (Fors Marsh), Census data collection experience",
-            "triggered_by": [
-              "survey"
-            ]
-          }
-        ],
-        "fit": "Moderate",
-        "fit_reason": "Can prime most: Survey Design & Research Methodology. Some areas need partner",
-        "avg_score": 3.0,
-        "prime_count": 1,
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
+        "prime_count": 0,
         "jv_count": 0,
         "gap_count": 0,
-        "total_tasks": 1,
+        "total_tasks": 0,
         "qualifying": [
           {
             "q": "Set-Aside",
             "answer": "Small Business set-aside",
             "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "Mostly \u2014 some gap areas",
-            "score": 3
           },
           {
             "q": "Notice Type",
@@ -2295,9 +2348,9 @@
       },
       "rex_analysis": {
         "what_they_need": "The ShakeAlert technical engagement (TE) team will maximize and optimize the use of U.S. Geological Survey (USGS) published ShakeAlert data to enhance public safety and resilience of the United States' West Coast through the integration of ShakeAlert-powered products and/or services into multiple critical industry sectors. \n\nPlease provide FIRM FIXED PRICED quote in accordance with the performance",
-        "rex_take": "BLN24 can cover: Survey Design & Research Methodology. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Moderate"
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -2959,19 +3012,6 @@
       "capability_matrix": {
         "tasks": [
           {
-            "task": "Human Capital & Workforce Development Advisory",
-            "score": 4,
-            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "IRS SB/SE BOD Leadership Initiative (Clarity24, $2.7M)"
-            ],
-            "note": "Via Clarity24 JV \u2014 IRS SB/SE BOD Leadership Initiative ($2.7M): leadership development, culture assessment for 60+ executives, org transformation, workforce capacity building. DIRECT reference for human capital/workforce advisory.",
-            "triggered_by": [
-              "capacity building"
-            ]
-          },
-          {
             "task": "Cybersecurity / FISMA / Zero Trust",
             "score": 0,
             "score_label": "0 \u2014 No Experience (Gap)",
@@ -2995,12 +3035,12 @@
           }
         ],
         "fit": "Pass",
-        "fit_reason": "Scope primarily outside BLN24 delivery lanes",
-        "avg_score": 1.3,
-        "prime_count": 1,
+        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
+        "avg_score": 0.0,
+        "prime_count": 0,
         "jv_count": 0,
         "gap_count": 2,
-        "total_tasks": 3,
+        "total_tasks": 2,
         "qualifying": [
           {
             "q": "Set-Aside",
