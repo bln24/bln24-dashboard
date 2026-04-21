@@ -576,14 +576,38 @@ function renderOpps() {
 var APPROVALS = JSON.parse(localStorage.getItem('bdai_approvals')||'{}');
 function saveApprovals(){localStorage.setItem('bdai_approvals',JSON.stringify(APPROVALS));}
 
-function approveOpp(i){
+async function approveOpp(i){
   var o=window._opps[i];
   if(!o)return;
+
+  // Mark approved immediately in UI
   APPROVALS[i]='approved';
   saveApprovals();
   renderOppCard(i,o);
-  // Open Asana link
-  window.open(ASANA_PROJECT,'_blank');
+
+  // Create Asana task via worker
+  try {
+    var resp = await fetch('https://bln24-hg-proxy.bln24.workers.dev/approve', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({opp: o})
+    });
+    var result = await resp.json();
+    if (result.ok && result.task_gid) {
+      o.asana_task_gid = result.task_gid;
+      APPROVALS[i] = {status:'approved', task_gid: result.task_gid, task_url: result.task_url};
+      saveApprovals();
+      renderOppCard(i,o);
+      // Open Asana task directly
+      window.open(result.task_url, '_blank');
+    } else {
+      console.warn('Asana task creation failed:', result);
+      window.open(ASANA_PROJECT, '_blank');
+    }
+  } catch(e) {
+    console.warn('Worker error:', e.message);
+    window.open(ASANA_PROJECT, '_blank');
+  }
 }
 function passOpp(i){
   var o=window._opps[i];
@@ -612,7 +636,9 @@ function tierBadge(o){
 function renderOppCard(i,o){
   var el=document.getElementById('opp-card-'+i);
   if(!el)return;
-  var status=APPROVALS[i];
+  var approval=APPROVALS[i];
+  var status=typeof approval==='object'?approval.status:approval;
+  var taskUrl=typeof approval==='object'?approval.task_url:null;
   var score=o.capture_score||0;
   var scoreColor=score>=50?'var(--green)':score>=30?'var(--yellow)':'var(--red)';
   var fullOpenWarning=o.isFullOpen?'<div style="background:#FEF3C7;border-left:3px solid #D97706;padding:8px 10px;border-radius:0 5px 5px 0;font-size:.7rem;color:#92400E;font-weight:600;margin-bottom:8px">⚠️ Full &amp; Open — competing against all firms. Lower win probability. Consider as sub or wait for set-aside reissue.</div>':'';
@@ -659,7 +685,7 @@ function renderOppCard(i,o){
     // Show AI summary if available, otherwise description excerpt
     ((o.summary||o.description)?'<div style="font-size:.73rem;color:#374151;margin-bottom:10px;line-height:1.6;border-left:3px solid var(--border);padding-left:10px">'+(o.summary||o.description||'').substring(0,280)+((o.summary||o.description||'').length>280?'…':'')+'</div>':'')+
     '<div class="opp-actions">'+
-    (status==='approved'?'<span class="opp-status-done status-approved">✓ Approved — In Asana</span>':
+    (status==='approved'?'<span class="opp-status-done status-approved" style="cursor:pointer" onclick="window.open(\''+(taskUrl||ASANA_PROJECT)+'\',\'_blank\')">\u2713 Approved — View in Asana ↗</span>':
      status==='passed'?'<span class="opp-status-done status-passed">✕ Passed</span>':
      '<button class="btn-approve" onclick="event.stopPropagation();approveOpp('+i+')">✓ Approve — Start Capture</button>'+
      '<button class="btn-pass" onclick="event.stopPropagation();passOpp('+i+')">✕ Pass</button>')+
