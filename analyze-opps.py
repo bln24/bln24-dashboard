@@ -61,7 +61,7 @@ MANUAL_ANALYSIS = {
     },
     'HCD Due Diligence': {
         'what_they_need': 'Millennium Challenge Corporation (MCC) needs a firm to provide technical advisory consulting for their Human & Community Development (HCD) practice — supporting due diligence on education, workforce development, health, and behavioral UX programs in developing countries. Work includes reviewing partner proposals, conducting data-driven analysis, scoping field visits, and supporting capacity building across MCC\'s investment portfolio.',
-        'rex_take': 'BLN24\'s HCD capability (IRS $7M BPA) is the strongest match — human-centered design, UX research, behavioral insights. The wrinkle: MCC operates in developing countries, not domestic federal agencies. The scope requires international development context and subject matter expertise in education/workforce systems in developing economies. BLN24 doesn\'t have that track record. Due April 23 — three days out. Cold agency, international context, 3-day window = cold submission. Pattern that loses. Unless Brian has an MCC relationship, this is a pass despite the HCD alignment.',
+        'rex_take': 'BLN24\'s HCD/BUX capability (IRS HCD BPA $7M) is the strongest match. UPDATE: The IRS SB/SE BOD Leadership Initiative ($2.7M via Clarity24) is a direct workforce development reference — leadership development, culture assessment for 60+ executives, organizational transformation, capacity building. That changes the workforce lane from a gap to a JV-backed capability. Combined with Fors Marsh JV behavioral science, BLN24 can credibly claim the workforce advisory scope. Cold agency and international context remain the risks. Favi Villa as Team Leader with USAID Kabul experience is the right call.',
         'watch_notes': 'Ask Brian: any MCC relationship? Any international development teaming partner? If no to both, this is a training exercise — not a real pursue. Flag MCC as an agency to build toward for future cycles.',
         'recommendation': 'Pass — cold agency, international context, 3-day deadline',
     },
@@ -76,6 +76,18 @@ MANUAL_ANALYSIS = {
         'rex_take': 'LCOMMS (Lab Comms) at NOAA is right in BLN24\'s lane if it\'s science communications, digital content, or public affairs support. NOAA is a past performance agency ($7M via Clarity24). Need to confirm scope before evaluating — "LCOMMS" is ambiguous.',
         'watch_notes': 'Pull the existing LCOMMS contract from USASpending to understand scope. If it\'s science comms/outreach, this is a genuine pursue. If it\'s IT/network comms infrastructure, pass.',
         'recommendation': 'Research scope — potential strong pursue',
+    },
+    'IES': {
+        'what_they_need': 'Department of Education Institute of Education Sciences (IES) needs a contractor to evaluate the effectiveness of Workforce Pell Grants — a federal program allowing Pell Grant funding for short-term workforce-focused training. Evaluation assesses program design, implementation, and outcomes using rigorous research methodology.',
+        'rex_take': 'BLN24 is stronger here than the initial score suggests. IRS SB/SE BOD Leadership Initiative ($2.7M via Clarity24) is a DIRECT workforce development / human capital reference — leadership development, culture assessment for 60+ IRS executives, organizational transformation, capacity building. That directly maps to evaluating workforce training programs. EDARMST $2.5M is same agency (IES). Fors Marsh JV covers evaluation methodology via DHRA $59M behavioral research. Teaming play: BLN24/Clarity24 leads workforce dev + data analytics, Fors Marsh JV leads evaluation design. MRAS response is low-effort. Respond now.',
+        'watch_notes': 'Respond via Qualtrics form: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi\nHighlight: IRS SB/SE Leadership Initiative (Clarity24 $2.7M) for workforce dev, EDARMST $2.5M for same-agency IES past performance, Fors Marsh JV for evaluation methodology.',
+        'recommendation': 'Respond to RFI — Strong',
+    },
+    'Pell': {
+        'what_they_need': 'Department of Education IES program evaluation of Workforce Pell Grants. Rigorous evaluation methodology required.',
+        'rex_take': 'Same as IES entry above. IRS SB/SE Leadership Initiative ($2.7M via Clarity24) is the workforce dev reference. EDARMST is same agency. Strong respond.',
+        'watch_notes': 'Respond via Qualtrics: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi',
+        'recommendation': 'Respond to RFI — Strong',
     },
 }
 

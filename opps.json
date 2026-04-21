@@ -61,10 +61,10 @@
         "\u26a0 Gap area detected: DevSecOps / ATO maintenance \u2014 would need teaming partner for this scope"
       ],
       "rex_analysis": {
-        "what_they_need": "CMS needs a contractor to run data.cms.gov \u2014 the federal government open Medicare/Medicaid data platform. ~15 FTE team delivering: agile product management, HCD/UX research, Drupal development, DevSecOps, API architecture, data operations (170+ datasets), help desk, ATO maintenance, and optional infrastructure migration (Acquia to new hosting, CDN optimization). This is a full-stack digital platform contract at CMS scale.",
-        "rex_take": "CMS is BLN24's highest-value client ($16M MNPS). This is a different CMS office (OEDA vs. CMMI) but the agency relationship is real and valuable. BLN24 owns two lanes here: HCD/UX research (IRS HCD BPA $7M direct match) and digital platform/content (MBDA $4.4M, Census DWS, CMS MNPS $16M). The technical depth required \u2014 Drupal, DevSecOps, ATO, cloud infrastructure, API architecture \u2014 is where BLN24 needs a teaming partner. Clarity24 (Accenture JV) could cover the tech depth. This RFI is low-commitment intelligence gathering \u2014 respond now, position for the RFP. The Qualtrics form IS the response \u2014 fill it out today highlighting CMS MNPS and IRS HCD.",
-        "watch_notes": "This is an RFI \u2014 response is a Qualtrics survey form, not a full proposal. Responding gets BLN24 on CMS radar and shapes the acquisition strategy. The actual RFP will follow (est. Summer/Fall 2026). Key to flag in RFI response: CMS MNPS $16M past performance, IRS HCD BPA for UX/research, propose teaming structure for DevSecOps/Drupal gaps. Watch SAM.gov for the follow-on RFP \u2014 this is a major contract worth positioning for now.",
-        "recommendation": "Respond to RFI \u2014 High Priority"
+        "what_they_need": "Data.CMS.gov :  Development and Operations of CMS\u2019s Open Data Platform (SOO) April 7, 2026 Version 3 Table of Contents Introduction 1 Context 2 Product Vision 4 Objectives 5 Approach 7 Assumptions 8 Constraints 9 General Expectations for Agile Teams working at CMS 10 Understand What People Need 10 Work Towards Outcomes, Not Outputs 10 Build the Service using Agile and Iterative Processes 11 Make i",
+        "rex_take": "BLN24 can cover: HCD / UX Research, Accessibility / Section 508 / WCAG 2.1 AA. Gap areas requiring teaming: DevSecOps / ATO Maintenance / Cloud Infra, Help Desk Operations. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: RFI.",
+        "recommendation": "Moderate"
       },
       "capability_matrix": {
         "fit": "Moderate",
@@ -285,10 +285,10 @@
         "MRAS response is low-effort \u2014 positions BLN24 for the follow-on RFP"
       ],
       "rex_analysis": {
-        "what_they_need": "DOJ DEA needs web developer and content services \u2014 this is a standard digital services requirement for a major federal law enforcement agency. Likely scope: web development, content management, digital platform support, possibly UX/accessibility. DEA has significant web presence (DEA.gov, enforcement tools, public information portals).",
-        "rex_take": "BLN24 has a strong web development and content lane \u2014 MBDA website $4.4M, Census DWS $8.3M, Oversight.gov $387K, Census.gov (DWS III $8.3M). This maps directly. DOJ/DEA is a new agency for BLN24 but the web/content scope is in our lane. MRAS responses are 30-minute surveys \u2014 low effort, high positioning value. Respond now to get on DEA's radar before the RFP drops. Watch for set-aside type on the actual RFP \u2014 if 8(a) or SB, strong position.",
-        "watch_notes": "MRAS is market research only \u2014 respond via Qualtrics form, not a full proposal. Response link: https://feedback.gsa.gov/jfe/form/SV_4JzNl5sdspSArHw\nHighlight: MBDA website redesign, Census DWS, Oversight.gov web work. Watch SAM.gov for follow-on RFP from DEA for web/content services.",
-        "recommendation": "Respond to RFI"
+        "what_they_need": "DOJ DEA is conducting market research (MRAS) for Web Developer and Content Services. Based on the agency and title, this covers: web development, content management, digital platform support, and potentially UX/design services for DEA web properties. DEA is a major federal law enforcement agency under DOJ with significant web presence. GSA MRAS on behalf of DOJ Drug Enforcement Administration. Web",
+        "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Web Development & Platform, Content Services, UX / Accessibility. Past performance backs it up. Worth a closer look.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD (MRAS phase). Notice type: RFI.",
+        "recommendation": "Strong"
       },
       "capability_matrix": {
         "fit": "Strong",
@@ -406,7 +406,8 @@
       "win_reasons": [
         "Strong HCD/UX scope match \u2014 BLN24 proven prime (IRS $7M HCD BPA, Census UX, CBP digital transformation)",
         "Small business set-aside",
-        "\u26a0\ufe0f Gap area detected: Training & eLearning \u2014 would need a teaming partner for this scope"
+        "\u26a0\ufe0f Gap area detected: Training & eLearning \u2014 would need a teaming partner for this scope",
+        "Workforce development: IRS SB/SE BOD Leadership Initiative (Clarity24 $2.7M) \u2014 leadership capacity building, org transformation, directly maps to MCC workforce advisory"
       ],
       "win_prob": "Medium (20-40%)",
       "tier": null,
@@ -489,20 +490,23 @@
           },
           {
             "task": "Workforce / Talent Development",
-            "score": 0,
+            "score": 3,
             "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 not a service lane; teaming partner required",
+            "status": "jv",
+            "pp_refs": [
+              "IRS SB/SE BOD Leadership Initiative (Clarity24, $2.7M) \u2014 leadership development, org transformation, culture assessment for 60+ IRS executives"
+            ],
+            "note": "Via Clarity24 JV \u2014 IRS SB/SE Leadership Initiative is human capital / workforce capacity building at federal scale. Directly maps to MCC workforce development advisory.",
             "triggered_by": [
               "workforce development",
               "skills development"
-            ]
+            ],
+            "status_label": "\ud83e\udd1d Via JV / Teaming"
           }
         ],
-        "fit": "Weak / JV",
+        "fit": "Moderate",
         "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
-        "avg_score": 2.4,
+        "avg_score": 3.0,
         "prime_count": 3,
         "jv_count": 1,
         "gap_count": 1,
@@ -532,7 +536,7 @@
       },
       "rex_analysis": {
         "what_they_need": "Millennium Challenge Corporation (MCC) needs a firm to provide technical advisory consulting for their Human & Community Development (HCD) practice \u2014 supporting due diligence on education, workforce development, health, and behavioral UX programs in developing countries. Work includes reviewing partner proposals, conducting data-driven analysis, scoping field visits, and supporting capacity building across MCC's investment portfolio.",
-        "rex_take": "BLN24's HCD capability (IRS $7M BPA) is the strongest match \u2014 human-centered design, UX research, behavioral insights. The wrinkle: MCC operates in developing countries, not domestic federal agencies. The scope requires international development context and subject matter expertise in education/workforce systems in developing economies. BLN24 doesn't have that track record. Due April 23 \u2014 three days out. Cold agency, international context, 3-day window = cold submission. Pattern that loses. Unless Brian has an MCC relationship, this is a pass despite the HCD alignment.",
+        "rex_take": "BLN24's HCD/BUX capability (IRS HCD BPA $7M) is the strongest match. UPDATE: The IRS SB/SE BOD Leadership Initiative ($2.7M via Clarity24) is a direct workforce development reference \u2014 leadership development, culture assessment for 60+ executives, organizational transformation, capacity building. That changes the workforce lane from a gap to a JV-backed capability. Combined with Fors Marsh JV behavioral science, BLN24 can credibly claim the workforce advisory scope. Cold agency and international context remain the risks. Favi Villa as Team Leader with USAID Kabul experience is the right call.",
         "watch_notes": "Ask Brian: any MCC relationship? Any international development teaming partner? If no to both, this is a training exercise \u2014 not a real pursue. Flag MCC as an agency to build toward for future cycles.",
         "recommendation": "Pass \u2014 cold agency, international context, 3-day deadline"
       },
@@ -1575,10 +1579,10 @@
         ]
       },
       "rex_analysis": {
-        "what_they_need": "PROJECTED CMMC LEVEL REQUIREMENT\nLevel 2 (Self)\nTECHNOLOGY AREAS\nBattlespace\nMODERNIZATION PRIORITIES\nSpace Technology\nKEYWORDS\nTacSRT; space sensing; analytics; surveillance; reconnaissance; tracking; terrestrial; space-to-ground; fusion; change detection; downlink; automated exploitation; maritime awareness; environmental monitoring; decision making; situational awareness; AI-ML\nOBJECTIVE\nThe ob",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Pass"
+        "what_they_need": "Department of Education Institute of Education Sciences (IES) needs a contractor to evaluate the effectiveness of Workforce Pell Grants \u2014 a federal program allowing Pell Grant funding for short-term workforce-focused training. Evaluation assesses program design, implementation, and outcomes using rigorous research methodology.",
+        "rex_take": "BLN24 is stronger here than the initial score suggests. IRS SB/SE BOD Leadership Initiative ($2.7M via Clarity24) is a DIRECT workforce development / human capital reference \u2014 leadership development, culture assessment for 60+ IRS executives, organizational transformation, capacity building. That directly maps to evaluating workforce training programs. EDARMST $2.5M is same agency (IES). Fors Marsh JV covers evaluation methodology via DHRA $59M behavioral research. Teaming play: BLN24/Clarity24 leads workforce dev + data analytics, Fors Marsh JV leads evaluation design. MRAS response is low-effort. Respond now.",
+        "watch_notes": "Respond via Qualtrics form: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi\nHighlight: IRS SB/SE Leadership Initiative (Clarity24 $2.7M) for workforce dev, EDARMST $2.5M for same-agency IES past performance, Fors Marsh JV for evaluation methodology.",
+        "recommendation": "Respond to RFI \u2014 Strong"
       }
     },
     {
@@ -1705,13 +1709,13 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": true,
-      "capture_score": 38,
+      "capture_score": 42,
       "win_reasons": [
         "Agency: BLN24 has direct IES past performance (EDARMST $2.5M \u2014 same agency)",
-        "Education data analytics lane confirmed: EDARMST $2.5M direct match",
-        "BLN Fors Marsh JV covers evaluation methodology: DHRA $59M behavioral research",
-        "EAC EAVS ($744K) confirms survey administration capability",
-        "MRAS response is low effort \u2014 position now for follow-on RFP"
+        "Workforce development: IRS SB/SE BOD Leadership Initiative (Clarity24 $2.7M) \u2014 leadership development, culture assessment, capacity building for 60+ IRS executives",
+        "Education data analytics: EDARMST $2.5M direct match for data-driven program analysis",
+        "BLN Fors Marsh JV covers behavioral research and evaluation methodology: DHRA OPA $59M",
+        "EAC EAVS ($744K) confirms survey administration and data portal capability"
       ],
       "win_prob": "Medium (20-40%)",
       "tier": null,
@@ -1728,11 +1732,11 @@
       "scope_gaps": [],
       "capability_matrix": {
         "fit": "Moderate",
-        "fit_reason": "BLN24 has IES past performance (EDARMST). Program evaluation methodology needs Fors Marsh JV. Data analytics is strong.",
-        "avg_score": 2.8,
+        "fit_reason": "BLN24/Clarity24 has IRS SB/SE Leadership Initiative ($2.7M) as direct workforce development reference. IES is same agency (EDARMST $2.5M). Fors Marsh JV covers evaluation methodology.",
+        "avg_score": 3.2,
         "prime_count": 2,
-        "jv_count": 2,
-        "gap_count": 1,
+        "jv_count": 3,
+        "gap_count": 0,
         "total_tasks": 5,
         "qualifying": [
           {
@@ -1816,11 +1820,14 @@
           },
           {
             "task": "Workforce Development Domain Expertise",
-            "score": 1,
+            "score": 3,
             "status": "jv",
-            "status_label": "\u274c Cannot Prime",
-            "pp_refs": [],
-            "note": "GAP \u2014 Workforce Pell Grants evaluation requires TVET/workforce training domain expertise. Need partner with education program evaluation background.",
+            "status_label": "\ud83e\udd1d Via JV / Teaming",
+            "pp_refs": [
+              "IRS SB/SE BOD Leadership Initiative (Clarity24, $2.7M) \u2014 leadership development, culture assessment, workforce capacity building",
+              "DHRA OPA ($59M IDIQ via Fors Marsh JV) \u2014 behavioral research and org climate assessment"
+            ],
+            "note": "Via Clarity24 JV \u2014 IRS SB/SE BOD Leadership Initiative is a DIRECT workforce development/human capital reference. Leadership strategy, org transformation, capacity building.",
             "triggered_by": [
               "workforce",
               "pell grants",
@@ -1830,10 +1837,10 @@
         ]
       },
       "rex_analysis": {
-        "what_they_need": "Department of Education Institute of Education Sciences (IES) needs a contractor to evaluate the effectiveness of Workforce Pell Grants \u2014 a federal program allowing Pell Grant funding for short-term, workforce-focused training programs. The evaluation will assess program design, implementation, and outcomes: are the grants achieving workforce readiness goals? Who is served? What works? This is a rigorous program evaluation contract \u2014 likely requiring quasi-experimental or RCT design, data analysis, site visits, and policy-relevant reporting.",
-        "rex_take": "BLN24 has direct Education IES past performance \u2014 EDARMST $2.5M (data analytics, risk management) and PRESTO BPA (communications and outreach). IES is a confirmed past performance agency. However, this is a program evaluation contract \u2014 a specific discipline requiring evaluation methodology expertise (RCT, quasi-experimental design, impact evaluation). BLN Fors Marsh JV is the differentiator here: DHRA command climate research ($59M IDIQ) demonstrates behavioral research and program evaluation capability at scale. The workforce development angle also ties directly to the MCC HCD proposal BLN24 is pursuing. MRAS response is low-effort \u2014 respond now, watch for the RFP.",
-        "watch_notes": "MRAS is market research only \u2014 respond via Qualtrics form. Response link: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi\nHighlight: EDARMST $2.5M (same agency, IES), DHRA OPA behavioral research (via Fors Marsh JV). This is an evaluation contract \u2014 if Fors Marsh JV can lead the evaluation methodology, BLN24 handles data analytics and reporting. Strong teaming play.",
-        "recommendation": "Respond to RFI"
+        "what_they_need": "Department of Education Institute of Education Sciences (IES) needs a contractor to evaluate the effectiveness of Workforce Pell Grants \u2014 a federal program allowing Pell Grant funding for short-term workforce-focused training. Evaluation assesses program design, implementation, and outcomes using rigorous research methodology.",
+        "rex_take": "BLN24 is stronger here than the initial score suggests. IRS SB/SE BOD Leadership Initiative ($2.7M via Clarity24) is a DIRECT workforce development / human capital reference \u2014 leadership development, culture assessment for 60+ IRS executives, organizational transformation, capacity building. That directly maps to evaluating workforce training programs. EDARMST $2.5M is same agency (IES). Fors Marsh JV covers evaluation methodology via DHRA $59M behavioral research. Teaming play: BLN24/Clarity24 leads workforce dev + data analytics, Fors Marsh JV leads evaluation design. MRAS response is low-effort. Respond now.",
+        "watch_notes": "Respond via Qualtrics form: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi\nHighlight: IRS SB/SE Leadership Initiative (Clarity24 $2.7M) for workforce dev, EDARMST $2.5M for same-agency IES past performance, Fors Marsh JV for evaluation methodology.",
+        "recommendation": "Respond to RFI \u2014 Strong"
       },
       "asana_task_gid": "1214151074171126"
     },
@@ -6048,10 +6055,10 @@
         ]
       },
       "rex_analysis": {
-        "what_they_need": "This is a non-personal service requirement for (1) regulatory consultation, (2) regulatory oversight, and (3) Contract Research Organization support to include administrative, financial, clinical, nonclinical, manufacturing, and regulatory support for medical products to include but not limited to: drugs, biologics, medical devices, and combination products within an integrated product team framew",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Pass"
+        "what_they_need": "Department of Education Institute of Education Sciences (IES) needs a contractor to evaluate the effectiveness of Workforce Pell Grants \u2014 a federal program allowing Pell Grant funding for short-term workforce-focused training. Evaluation assesses program design, implementation, and outcomes using rigorous research methodology.",
+        "rex_take": "BLN24 is stronger here than the initial score suggests. IRS SB/SE BOD Leadership Initiative ($2.7M via Clarity24) is a DIRECT workforce development / human capital reference \u2014 leadership development, culture assessment for 60+ IRS executives, organizational transformation, capacity building. That directly maps to evaluating workforce training programs. EDARMST $2.5M is same agency (IES). Fors Marsh JV covers evaluation methodology via DHRA $59M behavioral research. Teaming play: BLN24/Clarity24 leads workforce dev + data analytics, Fors Marsh JV leads evaluation design. MRAS response is low-effort. Respond now.",
+        "watch_notes": "Respond via Qualtrics form: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi\nHighlight: IRS SB/SE Leadership Initiative (Clarity24 $2.7M) for workforce dev, EDARMST $2.5M for same-agency IES past performance, Fors Marsh JV for evaluation methodology.",
+        "recommendation": "Respond to RFI \u2014 Strong"
       }
     },
     {
@@ -6469,10 +6476,10 @@
         ]
       },
       "rex_analysis": {
-        "what_they_need": "Provide the NOAA Fisheries Alaska Region with fisheries disaster assistance, including program management support, providing initial review and analysis of disaster assistance requests, serving as a liaison with requestors, and supporting the submission and documentation/tracking processes.",
-        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: TBD.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
-        "recommendation": "Review Needed"
+        "what_they_need": "Department of Education Institute of Education Sciences (IES) needs a contractor to evaluate the effectiveness of Workforce Pell Grants \u2014 a federal program allowing Pell Grant funding for short-term workforce-focused training. Evaluation assesses program design, implementation, and outcomes using rigorous research methodology.",
+        "rex_take": "BLN24 is stronger here than the initial score suggests. IRS SB/SE BOD Leadership Initiative ($2.7M via Clarity24) is a DIRECT workforce development / human capital reference \u2014 leadership development, culture assessment for 60+ IRS executives, organizational transformation, capacity building. That directly maps to evaluating workforce training programs. EDARMST $2.5M is same agency (IES). Fors Marsh JV covers evaluation methodology via DHRA $59M behavioral research. Teaming play: BLN24/Clarity24 leads workforce dev + data analytics, Fors Marsh JV leads evaluation design. MRAS response is low-effort. Respond now.",
+        "watch_notes": "Respond via Qualtrics form: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi\nHighlight: IRS SB/SE Leadership Initiative (Clarity24 $2.7M) for workforce dev, EDARMST $2.5M for same-agency IES past performance, Fors Marsh JV for evaluation methodology.",
+        "recommendation": "Respond to RFI \u2014 Strong"
       }
     },
     {
@@ -10921,10 +10928,10 @@
         ]
       },
       "rex_analysis": {
-        "what_they_need": "NOAA Ship FERDINAND R. HASSLER Propeller Procurement",
-        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: TBD.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
-        "recommendation": "Review Needed"
+        "what_they_need": "Department of Education IES program evaluation of Workforce Pell Grants. Rigorous evaluation methodology required.",
+        "rex_take": "Same as IES entry above. IRS SB/SE Leadership Initiative ($2.7M via Clarity24) is the workforce dev reference. EDARMST is same agency. Strong respond.",
+        "watch_notes": "Respond via Qualtrics: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi",
+        "recommendation": "Respond to RFI \u2014 Strong"
       }
     },
     {

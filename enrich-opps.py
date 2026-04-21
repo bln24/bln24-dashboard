@@ -61,6 +61,8 @@ PP = {
                    'detail': 'Survey design and administration, marketing consulting for USPTO'},
     'FTC_MEDIA':  {'ref': 'FTC Paid Advertising (Fors Marsh JV, $581K)', 'score': 3,
                    'detail': 'Targeted paid media, digital advertising for federal consumer protection'},
+    'IRS_SBSE':   {'ref': 'IRS SB/SE BOD Leadership Initiative (Clarity24, $2.7M)', 'score': 4,
+                   'detail': 'Leadership development, org transformation, culture assessment for 60+ IRS SB/SE executives, change management, workforce capacity building'},
     'USDA_SOC':   {'ref': 'USDA Social Media & Digital Outreach ($141K)', 'score': 3,
                    'detail': 'Social media campaign management, digital content for USDA'},
     'USDA_FNS':   {'ref': 'USDA FNS WIC Digital Services (Clarity24, $2.2M)', 'score': 3,
@@ -260,6 +262,13 @@ TASK_AREAS = [
         'pp_refs': ['NOAA_CLOUD', 'CENSUS_MAF', 'CENSUS_EDL'],
         'base_score': 3,
         'note': 'BLN24 JV — Clarity24 NOAA app mod $2.8M, Census MAF/TIGER modernization'
+    },
+    {
+        'task': 'Human Capital & Workforce Development Advisory',
+        'kw': ['workforce development','human capital','leadership development','organizational transformation','change management','capacity building','talent development','workforce training','skills development','tvet'],
+        'pp_refs': ['IRS_SBSE'],
+        'base_score': 4,
+        'note': 'Via Clarity24 JV — IRS SB/SE BOD Leadership Initiative ($2.7M): leadership development, culture assessment for 60+ executives, org transformation, workforce capacity building. DIRECT reference for human capital/workforce advisory.'
     },
     {
         'task': 'Due Diligence & Technical Advisory',
