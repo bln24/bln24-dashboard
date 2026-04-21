@@ -42,7 +42,7 @@ const SLED_DISQUALIFIERS = [
   'real estate commission', 'gaming commission',
 ];
 
-// BLN24 past performance agencies
+// BLN24 direct past performance agencies
 const BLN24_AGENCIES = [
   'census', 'internal revenue', ' irs', 'noaa', 'fema', 'cdc', 'cms ',
   'centers for medicare', 'hhs', 'health resources', 'hrsa',
@@ -54,6 +54,25 @@ const BLN24_AGENCIES = [
   'federal trade', 'ftc', 'department of state', 'state department',
   'transportation', 'navy', 'army', 'air force', 'booz allen',
   'oversight.gov', 'inspector general',
+];
+
+// Clarity24 JV (BLN24 + Accenture Federal Services) — 8(a) Mentor-Protégé
+// Wins: NOAA (cloud/app mod), CBP (digital transformation), USDA FNS (WIC digital services $19M)
+// MAS contract: 47QTCA24D009V
+// Note: NOAA and USDA already in BLN24_AGENCIES above
+const CLARITY24_AGENCIES = [
+  'customs and border protection', 'cbp',
+  'food and nutrition', 'fns',
+  'women infants and children', 'wic',
+];
+
+// BLN Fors Marsh JV LLC — 8(a) JV, Asian-Pacific American Owned, est. July 2022
+// UEI: P4D4UVLLQQC3, CAGE: 9K3S4
+// $12M+ in awards, MAS contract 47QTCA24D00CN
+// Capability lanes: behavioral science, comms, survey methodology, IRS Notice Redesign
+const FORS_MARSH_AGENCIES = [
+  'internal revenue', ' irs',
+  // Fors Marsh direct: HHS, CMS — already in BLN24_AGENCIES
 ];
 
 // Official BLN24 NAICS codes from Capability Statement (updated Apr 2026)
@@ -82,10 +101,20 @@ function scoreOpp(o) {
   let score = 0;
   const reasons = [];
 
-  // Past performance match
+  // Past performance match — direct BLN24
   if (BLN24_AGENCIES.some(a => agency.includes(a))) {
     score += 25;
-    reasons.push('Past performance with this agency');
+    reasons.push('BLN24 direct past performance with this agency');
+  }
+  // Clarity24 JV past performance (BLN24 + Accenture Federal Services)
+  else if (CLARITY24_AGENCIES.some(a => agency.includes(a))) {
+    score += 20;
+    reasons.push('Clarity24 JV past performance (BLN24 + Accenture) — 8(a) MP JV');
+  }
+  // BLN Fors Marsh JV past performance
+  else if (FORS_MARSH_AGENCIES.some(a => agency.includes(a))) {
+    score += 20;
+    reasons.push('BLN Fors Marsh JV past performance — behavioral science + comms');
   }
   // NAICS match
   if (BLN24_NAICS.has(naics)) {
