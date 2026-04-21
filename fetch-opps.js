@@ -42,18 +42,41 @@ const SLED_DISQUALIFIERS = [
   'real estate commission', 'gaming commission',
 ];
 
-// BLN24 direct past performance agencies
+// BLN24 confirmed past performance agencies (from SharePoint Contract Award spreadsheet + Past Performance folder)
+// Prime: Census $18.4M, CMS $16M, IRS $7M, MBDA $4.4M, CDC $3.9M, Education $2.9M, HUD $2M
+// Sub: DHA, DHRA, USPTO, NIH NEI
+// JV (Clarity24): NOAA $7M, CBP $1.4M, USDA FNS $2.2M, IRS $1.4M
+// JV (Fors Marsh): HHS PSC $10.3M, USPTO $822K, FTC $581K
 const BLN24_AGENCIES = [
-  'census', 'internal revenue', ' irs', 'noaa', 'fema', 'cdc', 'cms ',
-  'centers for medicare', 'hhs', 'health resources', 'hrsa',
-  'administration for community', 'acl', 'commerce', 'usda',
-  'agriculture', 'gsa', 'uspto', 'patent', 'department of education',
-  'housing', 'hud', 'defense health', 'dha', 'epa', 'treasury',
-  'homeland', 'dhs', 'labor', 'interior', 'nih', 'fda',
-  'national telecommunications', 'ntia', 'minority business', 'mbda',
-  'federal trade', 'ftc', 'department of state', 'state department',
-  'transportation', 'navy', 'army', 'air force', 'booz allen',
-  'oversight.gov', 'inspector general',
+  // CONFIRMED PRIME WINS
+  'census', 'centers for medicare', 'cms ', 'marketplace notice',
+  'internal revenue', ' irs ', 'irs ',
+  'minority business', 'mbda',
+  'centers for disease', 'cdc ',
+  'department of education', ' education ',
+  'housing and urban', 'hud',
+  'postal service', 'usps',
+  'usda', 'agriculture',
+  'health resources', 'hrsa',
+  // CONFIRMED SUB WINS
+  'defense health', 'dha',
+  'defense human resources', 'dhra',
+  'patent and trademark', 'uspto',
+  'national eye institute', 'nei',
+  // CONFIRMED PAST PERFORMANCE FOLDER AGENCIES
+  'department of commerce', 'commerce',
+  'department of homeland', 'homeland', 'dhs',
+  'department of interior', 'interior', 'national park',
+  'department of treasury', 'treasury', 'fiscal service',
+  'election assistance', 'eac',
+  'federal trade commission', 'ftc',
+  // BROADER HHS / RELATED
+  'health and human services', 'hhs',
+  'administration for community', 'acl',
+  'food and drug', 'fda',
+  'national institutes', 'nih',
+  'noaa', 'national oceanic',
+  'fema',
 ];
 
 // Clarity24 JV (BLN24 + Accenture Federal Services) — 8(a) MP JV, UEI Q9VENYSZDXD3
