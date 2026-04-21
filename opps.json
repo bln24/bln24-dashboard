@@ -90,7 +90,8 @@
             "pp_refs": [],
             "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
             "triggered_by": [
-              "ato"
+              " ato ",
+              "devsecops"
             ]
           },
           {
@@ -347,26 +348,15 @@
             "triggered_by": [
               "application modernization"
             ]
-          },
-          {
-            "task": "IT Infrastructure & Telecommunications",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
-            "triggered_by": [
-              "lan"
-            ]
           }
         ],
-        "fit": "Weak / JV",
-        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
-        "avg_score": 1.5,
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Application Modernization. Some areas need partner",
+        "avg_score": 3.0,
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 2,
+        "gap_count": 0,
+        "total_tasks": 1,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -375,8 +365,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "Partial \u2014 significant gaps",
-            "score": 2
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
           },
           {
             "q": "Notice Type",
@@ -456,26 +446,15 @@
             "triggered_by": [
               "social media"
             ]
-          },
-          {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "soc"
-            ]
           }
         ],
-        "fit": "Weak / JV",
-        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
-        "avg_score": 1.5,
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Digital Marketing & Paid Media. Some areas need partner",
+        "avg_score": 3.0,
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 2,
+        "gap_count": 0,
+        "total_tasks": 1,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -484,8 +463,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "Partial \u2014 significant gaps",
-            "score": 2
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
           },
           {
             "q": "Notice Type",
@@ -501,9 +480,9 @@
       },
       "rex_analysis": {
         "what_they_need": "On behalf of Department of Justice (DOJ), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a",
-        "rex_take": "BLN24 can cover: Digital Marketing & Paid Media. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust. Evaluate whether the BLN24 scope is large enough to prime.",
+        "rex_take": "BLN24 can cover: Digital Marketing & Paid Media. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFI.",
-        "recommendation": "Weak / JV"
+        "recommendation": "Moderate"
       }
     },
     {
@@ -656,17 +635,6 @@
       "capability_matrix": {
         "tasks": [
           {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "security operations"
-            ]
-          },
-          {
             "task": "IT Infrastructure & Telecommunications",
             "score": 0,
             "score_label": "0 \u2014 No Experience (Gap)",
@@ -674,9 +642,8 @@
             "pp_refs": [],
             "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
             "triggered_by": [
-              "server hosting",
-              "telecommunications",
-              "telephony"
+              "telecommunications services",
+              "telephony services"
             ]
           }
         ],
@@ -685,8 +652,8 @@
         "avg_score": 0.0,
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2,
-        "total_tasks": 2,
+        "gap_count": 1,
+        "total_tasks": 1,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -779,17 +746,6 @@
             ]
           },
           {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "ato"
-            ]
-          },
-          {
             "task": "Scientific / Laboratory Support",
             "score": 0,
             "score_label": "0 \u2014 No Experience (Gap)",
@@ -814,11 +770,11 @@
         ],
         "fit": "Pass",
         "fit_reason": "Scope primarily outside BLN24 delivery lanes",
-        "avg_score": 1.0,
+        "avg_score": 1.3,
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 3,
-        "total_tasks": 4,
+        "gap_count": 2,
+        "total_tasks": 3,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -1056,17 +1012,6 @@
             ]
           },
           {
-            "task": "IT Infrastructure & Telecommunications",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
-            "triggered_by": [
-              "lan"
-            ]
-          },
-          {
             "task": "DevSecOps / CI/CD",
             "score": 0,
             "score_label": "0 \u2014 No Experience (Gap)",
@@ -1079,13 +1024,13 @@
             ]
           }
         ],
-        "fit": "Pass",
-        "fit_reason": "Scope primarily outside BLN24 delivery lanes",
-        "avg_score": 1.0,
+        "fit": "Weak / JV",
+        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
+        "avg_score": 1.5,
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 2,
-        "total_tasks": 3,
+        "gap_count": 1,
+        "total_tasks": 2,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -1094,8 +1039,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
+            "answer": "Partial \u2014 significant gaps",
+            "score": 2
           },
           {
             "q": "Notice Type",
@@ -1111,9 +1056,9 @@
       },
       "rex_analysis": {
         "what_they_need": "FEMA requires a temporary bridge blanket purchase agreement for short-term IT architecture, engineering and cloud support services. FEMA also requires cloud reseller (brokerage) services and access. FEMA requires cloud reseller services to access multiple FedRAMP Authorized true on-demand Commercial Cloud Broker (CCB). The scope of this Blanket Purchase Agreement (BPA) includes the ability to acce",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "rex_take": "BLN24 can cover: Cloud Migration & Infrastructure. Gap areas requiring teaming: DevSecOps / CI/CD. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
-        "recommendation": "Pass"
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -1335,17 +1280,6 @@
             ]
           },
           {
-            "task": "IT Infrastructure & Telecommunications",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
-            "triggered_by": [
-              "lan"
-            ]
-          },
-          {
             "task": "Space / Defense / ITAR",
             "score": 0,
             "score_label": "0 \u2014 No Experience (Gap)",
@@ -1357,13 +1291,13 @@
             ]
           }
         ],
-        "fit": "Pass",
-        "fit_reason": "Scope primarily outside BLN24 delivery lanes",
-        "avg_score": 1.3,
+        "fit": "Weak / JV",
+        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
+        "avg_score": 2.0,
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 2,
-        "total_tasks": 3,
+        "gap_count": 1,
+        "total_tasks": 2,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -1372,8 +1306,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
+            "answer": "Partial \u2014 significant gaps",
+            "score": 2
           },
           {
             "q": "Notice Type",
@@ -1389,9 +1323,9 @@
       },
       "rex_analysis": {
         "what_they_need": "The DHA uses a custom software tool, referred to as Ektropy, to support financial and human capital management activities. Ektropy serves as the single tool used for facilitating:\n-Traceability between execution, planning, and budgeting\n-Contract Execution Management\n-Human Capital Management\n-Simplified and streamlined reporting of centrally located data\nCurrently, Ektropy is used by the Program",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "rex_take": "BLN24 can cover: Data Analytics & Business Intelligence. Gap areas requiring teaming: Space / Defense / ITAR. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Pass"
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -1556,26 +1490,15 @@
             "triggered_by": [
               "etl"
             ]
-          },
-          {
-            "task": "IT Infrastructure & Telecommunications",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
-            "triggered_by": [
-              "lan"
-            ]
           }
         ],
-        "fit": "Weak / JV",
-        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
-        "avg_score": 2.0,
+        "fit": "Strong",
+        "fit_reason": "BLN24 can prime all or most identified task areas with recent past performance",
+        "avg_score": 4.0,
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 2,
+        "gap_count": 0,
+        "total_tasks": 1,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -1584,8 +1507,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "Partial \u2014 significant gaps",
-            "score": 2
+            "answer": "Yes \u2014 strong alignment",
+            "score": 5
           },
           {
             "q": "Notice Type",
@@ -1601,9 +1524,9 @@
       },
       "rex_analysis": {
         "what_they_need": "Provide skilled information technology labor services to the Coast Guard CG-C5I-Engineering and C5I Service Center Business Operations Division for Agile application development, database maintenance, and custom decision-making tool implementation to improve and modernize technology service delivery to operational Coast Guard units.\n\nBusiness Governance and Continuous Process Improvement\n- Assess",
-        "rex_take": "BLN24 can cover: Data Engineering & ETL. Gap areas requiring teaming: IT Infrastructure & Telecommunications. Evaluate whether the BLN24 scope is large enough to prime.",
+        "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Data Engineering & ETL. Past performance backs it up. Worth a closer look.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
-        "recommendation": "Weak / JV"
+        "recommendation": "Strong"
       }
     },
     {
@@ -1794,15 +1717,26 @@
             "triggered_by": [
               "portal"
             ]
+          },
+          {
+            "task": "IT Infrastructure & Telecommunications",
+            "score": 0,
+            "score_label": "0 \u2014 No Experience (Gap)",
+            "status": "gap",
+            "pp_refs": [],
+            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
+            "triggered_by": [
+              "network engineering"
+            ]
           }
         ],
-        "fit": "Strong",
-        "fit_reason": "BLN24 can prime all or most identified task areas with recent past performance",
-        "avg_score": 4.0,
+        "fit": "Weak / JV",
+        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
+        "avg_score": 2.0,
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 1,
+        "gap_count": 1,
+        "total_tasks": 2,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -1811,8 +1745,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "Yes \u2014 strong alignment",
-            "score": 5
+            "answer": "Partial \u2014 significant gaps",
+            "score": 2
           },
           {
             "q": "Notice Type",
@@ -1828,9 +1762,9 @@
       },
       "rex_analysis": {
         "what_they_need": "PRE-SOLICITATION SYNOPSIS\n\nINTERNAL REVENUE SERVICE\n\nRiverbed Brand Name Maintenance/License Renewal/Support\n\n\n\nThe objective of this requirement is to renew hardware and software maintenance and license for Riverbed Brand name products that were purchased in FY19-24 to support Cloud, Unified Access, Inflation Reduction Act (IRA) Network Modernization and Refresh of End-of-Life Equipment and Segme",
-        "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Web Design & Development. Past performance backs it up. Worth a closer look.",
+        "rex_take": "BLN24 can cover: Web Design & Development. Gap areas requiring teaming: IT Infrastructure & Telecommunications. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Strong"
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -1939,36 +1873,19 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "ato"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
+        "gap_count": 0,
+        "total_tasks": 0,
         "qualifying": [
           {
             "q": "Set-Aside",
             "answer": "8(a) \u2014 Direct vehicle match",
             "score": 5
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
           },
           {
             "q": "Notice Type",
@@ -1984,9 +1901,9 @@
       },
       "rex_analysis": {
         "what_they_need": "See attachments Background\n The contract is issued by the Office of the Chief Information Officer (OCIO) and focuses on providing support for Enterprise Network/Security and Virtual Desktop Infrastructure (VDI) administration. \nThe goal of the contract is to ensure effective management, security, and operational continuity of VDI services, which are critical for government operations.\n\nWork Detail",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: 8A.",
         "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
-        "recommendation": "Pass"
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -2232,26 +2149,15 @@
             "triggered_by": [
               "sme"
             ]
-          },
-          {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "soc"
-            ]
           }
         ],
-        "fit": "Weak / JV",
-        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
-        "avg_score": 1.5,
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Due Diligence & Technical Advisory. Some areas need partner",
+        "avg_score": 3.0,
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 2,
+        "gap_count": 0,
+        "total_tasks": 1,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -2260,8 +2166,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "Partial \u2014 significant gaps",
-            "score": 2
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
           },
           {
             "q": "Notice Type",
@@ -2277,9 +2183,9 @@
       },
       "rex_analysis": {
         "what_they_need": "**The purpose of this amendment is to incorporate a bid schedule into the solicitation.** The U.S. Army Corps of Engineers, Memphis District has a requirement for annual and periodic inspection and servicing of fire equipment and systems. The solicitation number is W912EQ26QA026 and is being issued as a Request for Quote (RFQ). This is a small business set aside procurement. The associated NAICS c",
-        "rex_take": "BLN24 can cover: Due Diligence & Technical Advisory. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust. Evaluate whether the BLN24 scope is large enough to prime.",
+        "rex_take": "BLN24 can cover: Due Diligence & Technical Advisory. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Weak / JV"
+        "recommendation": "Moderate"
       }
     },
     {
@@ -2474,18 +2380,6 @@
       "capability_matrix": {
         "tasks": [
           {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "ato",
-              "soc"
-            ]
-          },
-          {
             "task": "Scientific / Laboratory Support",
             "score": 0,
             "score_label": "0 \u2014 No Experience (Gap)",
@@ -2503,8 +2397,8 @@
         "avg_score": 0.0,
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2,
-        "total_tasks": 2,
+        "gap_count": 1,
+        "total_tasks": 1,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -2573,47 +2467,19 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "ato"
-            ]
-          },
-          {
-            "task": "IT Infrastructure & Telecommunications",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
-            "triggered_by": [
-              "lan"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2,
-        "total_tasks": 2,
+        "gap_count": 0,
+        "total_tasks": 0,
         "qualifying": [
           {
             "q": "Set-Aside",
             "answer": "Small Business set-aside",
             "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
           },
           {
             "q": "Notice Type",
@@ -2629,9 +2495,9 @@
       },
       "rex_analysis": {
         "what_they_need": "This RFI is issued by the U.S. Department of Labor (DOL), through the Office of the Chief Information Officer (OCIO) and the Employee Benefits Security Administration (EBSA), to conduct market research and identify experienced contractors and solution approaches for a modernized electronic filing and processing platform, as outlined in the Performance Work Statement (PWS).  Background\n The U.S. De",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
-        "recommendation": "Pass"
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -2831,36 +2697,19 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "soc"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
+        "gap_count": 0,
+        "total_tasks": 0,
         "qualifying": [
           {
             "q": "Set-Aside",
             "answer": "Small Business set-aside",
             "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
           },
           {
             "q": "Notice Type",
@@ -2876,9 +2725,9 @@
       },
       "rex_analysis": {
         "what_they_need": "Pre-Solicitation Notice\n\nW9128F26QA043\n\n\n\nGarrison Spillway Chute Subdrain Inspection Garrison Dam, ND\n\nOn or about 15 April 2026, this office will issue Request for Quote (RFQ) for the Garrison Spillway Chute Subdrain Inspections at Garrison Dam, ND.  \n\nThe solicitation will close on or about 13 May 2026. This solicitation is restricted to SMALL BUSINESSES ONLY.\n\n\n\nSite Visit:\n\nSite visit informa",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Pass"
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -2919,36 +2768,19 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "soc"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
+        "gap_count": 0,
+        "total_tasks": 0,
         "qualifying": [
           {
             "q": "Set-Aside",
             "answer": "Small Business set-aside",
             "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
           },
           {
             "q": "Notice Type",
@@ -2964,9 +2796,9 @@
       },
       "rex_analysis": {
         "what_they_need": "This is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with the format in the Federal Acquisition Regulation (FAR) subpart 12.6, as supplemented with additional information included in this notice. This announcement constitutes the only solicitation; proposals are being requested and a written solicitation will not be issued.\n\n1.  The solicit",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Pass"
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -3010,47 +2842,19 @@
         "Training & eLearning"
       ],
       "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "soc"
-            ]
-          },
-          {
-            "task": "IT Infrastructure & Telecommunications",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
-            "triggered_by": [
-              "lan"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 2,
-        "total_tasks": 2,
+        "gap_count": 0,
+        "total_tasks": 0,
         "qualifying": [
           {
             "q": "Set-Aside",
             "answer": "Small Business set-aside",
             "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
           },
           {
             "q": "Notice Type",
@@ -3066,9 +2870,9 @@
       },
       "rex_analysis": {
         "what_they_need": "On behalf of Department of the Interior (DOI), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link i",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
-        "recommendation": "Pass"
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -3180,36 +2984,19 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "soc"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
+        "gap_count": 0,
+        "total_tasks": 0,
         "qualifying": [
           {
             "q": "Set-Aside",
             "answer": "Small Business set-aside",
             "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
           },
           {
             "q": "Notice Type",
@@ -3225,9 +3012,9 @@
       },
       "rex_analysis": {
         "what_they_need": "The Department of State&rsquo;s (DoS), Bureau of Global Acquisitions on behalf of the Executive Secretariat (S/ES), ExecTech Office is seeking potential sources under either HubZone, WOSB or SDVOSB socioeconomic factor that are capable of providing a service to perform Information Technology Support Services (ITSS).\n\nPlease see the attached Sources Sought Notice-Information Technology Support Serv",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
-        "recommendation": "Pass"
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -3277,20 +3064,7 @@
             "pp_refs": [],
             "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
             "triggered_by": [
-              "cybersecurity",
-              "ato",
-              "security operations"
-            ]
-          },
-          {
-            "task": "IT Infrastructure & Telecommunications",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
-            "triggered_by": [
-              "lan"
+              "cybersecurity"
             ]
           },
           {
@@ -3310,8 +3084,8 @@
         "avg_score": 0.0,
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 3,
-        "total_tasks": 3,
+        "gap_count": 2,
+        "total_tasks": 2,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -3380,36 +3154,19 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "soc"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
+        "gap_count": 0,
+        "total_tasks": 0,
         "qualifying": [
           {
             "q": "Set-Aside",
             "answer": "Small Business set-aside",
             "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
           },
           {
             "q": "Notice Type",
@@ -3425,9 +3182,9 @@
       },
       "rex_analysis": {
         "what_they_need": "Agency/Office: The U.S. Army Contracting Command-Detroit Arsenal (ACC-DTA), U.S. Army Intelligence and Security Command (INSCOM)\n\nSolicitation Number: W50NH9-26-R-A002\n\nRequirement: Intelligence and Automation Operations\n\nRequirement Description: The contractor shall provide all personnel, supervision, and non-personal services necessary to provide comprehensive operational intelligence integratio",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Pass"
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -3539,36 +3296,19 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "soc"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
+        "gap_count": 0,
+        "total_tasks": 0,
         "qualifying": [
           {
             "q": "Set-Aside",
             "answer": "Small Business set-aside",
             "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
           },
           {
             "q": "Notice Type",
@@ -3584,9 +3324,9 @@
       },
       "rex_analysis": {
         "what_they_need": "UPDATED as of 10 Apr 2026\n\nOn Tuesday Apr 14, 2026 &sdot; 2:30pm &ndash; 4pm (Eastern Time - New York) a webinar will be hosted to provide a demonstration of the submission process for the Special Operations Forces Global Services Delivery solicitation (H9240026RE001) within Symphony. This includes establishing company assets, claiming them within your proposal, submitting your proposal, and submi",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Pass"
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -3636,8 +3376,7 @@
             "pp_refs": [],
             "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
             "triggered_by": [
-              "cybersecurity",
-              "soc"
+              "cybersecurity"
             ]
           }
         ],
@@ -4223,17 +3962,6 @@
             ]
           },
           {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "ato"
-            ]
-          },
-          {
             "task": "CRM / Salesforce Implementation",
             "score": 0,
             "score_label": "0 \u2014 No Experience (Gap)",
@@ -4249,11 +3977,11 @@
         ],
         "fit": "Weak / JV",
         "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
-        "avg_score": 1.5,
+        "avg_score": 2.0,
         "prime_count": 2,
         "jv_count": 0,
-        "gap_count": 2,
-        "total_tasks": 4,
+        "gap_count": 1,
+        "total_tasks": 3,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -4279,7 +4007,7 @@
       },
       "rex_analysis": {
         "what_they_need": "With more than 60,000 employees, U.S. Customs and Border Protection, CBP, is one of the world's largest law enforcement organizations and is charged with keeping terrorists and their weapons out of the U.S. while facilitating lawful international travel and trade. In compliance with the Office of Management and Budget (OMBs) Cloud First guidance, Salesforce has been an instrumental platform for OI",
-        "rex_take": "BLN24 can cover: Customer Experience (CX) Strategy, Cloud Migration & Infrastructure. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust, CRM / Salesforce Implementation. Evaluate whether the BLN24 scope is large enough to prime.",
+        "rex_take": "BLN24 can cover: Customer Experience (CX) Strategy, Cloud Migration & Infrastructure. Gap areas requiring teaming: CRM / Salesforce Implementation. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
         "recommendation": "Weak / JV"
       }
@@ -4323,19 +4051,36 @@
       ],
       "scope_gaps": [],
       "capability_matrix": {
-        "tasks": [],
-        "fit": "Unclassified",
-        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
-        "avg_score": 0,
+        "tasks": [
+          {
+            "task": "Cybersecurity / FISMA / Zero Trust",
+            "score": 0,
+            "score_label": "0 \u2014 No Experience (Gap)",
+            "status": "gap",
+            "pp_refs": [],
+            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
+            "triggered_by": [
+              "information security"
+            ]
+          }
+        ],
+        "fit": "Pass",
+        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
+        "avg_score": 0.0,
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 0,
+        "gap_count": 1,
+        "total_tasks": 1,
         "qualifying": [
           {
             "q": "Set-Aside",
             "answer": "Full & Open \u2014 harder to win",
             "score": 2
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "No \u2014 primarily gap work",
+            "score": 1
           },
           {
             "q": "Notice Type",
@@ -4351,9 +4096,9 @@
       },
       "rex_analysis": {
         "what_they_need": "The National Oceanic and Atmospheric Administration (NOAA), National Weather Service (NWS) requires Tsunami Warning System Information System Security Officer (ISSO) services.\n\nAll questions must be submitted via the Question Submission Form no later than 2:00 p.m. Pacific Time on April 27, 2026. The Government will only respond to questions and comments submitted through the Google Form. Submit o",
-        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFP.",
-        "recommendation": "Review Needed"
+        "recommendation": "Pass"
       }
     },
     {
@@ -4390,36 +4135,19 @@
       "scope_owned": [],
       "scope_gaps": [],
       "capability_matrix": {
-        "tasks": [
-          {
-            "task": "IT Infrastructure & Telecommunications",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
-            "triggered_by": [
-              "lan"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
         "prime_count": 0,
         "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
+        "gap_count": 0,
+        "total_tasks": 0,
         "qualifying": [
           {
             "q": "Set-Aside",
             "answer": "8(a) \u2014 Direct vehicle match",
             "score": 5
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
           },
           {
             "q": "Notice Type",
@@ -4435,9 +4163,9 @@
       },
       "rex_analysis": {
         "what_they_need": "On behalf of Department of Commerce (DOC), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: 8A.",
         "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFI.",
-        "recommendation": "Pass"
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -4565,28 +4293,6 @@
             ]
           },
           {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "ato"
-            ]
-          },
-          {
-            "task": "IT Infrastructure & Telecommunications",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
-            "triggered_by": [
-              "lan"
-            ]
-          },
-          {
             "task": "Medical Services",
             "score": 0,
             "score_label": "0 \u2014 No Experience (Gap)",
@@ -4598,13 +4304,13 @@
             ]
           }
         ],
-        "fit": "Pass",
-        "fit_reason": "Scope primarily outside BLN24 delivery lanes",
-        "avg_score": 1.0,
+        "fit": "Weak / JV",
+        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
+        "avg_score": 2.0,
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 3,
-        "total_tasks": 4,
+        "gap_count": 1,
+        "total_tasks": 2,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -4613,8 +4319,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
+            "answer": "Partial \u2014 significant gaps",
+            "score": 2
           },
           {
             "q": "Notice Type",
@@ -4630,9 +4336,9 @@
       },
       "rex_analysis": {
         "what_they_need": "Request for Quote (RFQ) #: 36C25926Q0350\nRMR VAMC Pathology Service Dictation Software License-Brand Name or Equal To Dragon Medical\nThis is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with Revolutionary FAR Overhaul (RFO) Part 12. This announcement constitutes the only solicitation. Offers are being requested and a separate written solici",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "rex_take": "BLN24 can cover: Data Analytics & Business Intelligence. Gap areas requiring teaming: Medical Services. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Pass"
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -4790,38 +4496,15 @@
             "triggered_by": [
               "sme"
             ]
-          },
-          {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "security operations",
-              "soc"
-            ]
-          },
-          {
-            "task": "IT Infrastructure & Telecommunications",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
-            "triggered_by": [
-              "lan"
-            ]
           }
         ],
-        "fit": "Weak / JV",
-        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
-        "avg_score": 1.8,
+        "fit": "Strong",
+        "fit_reason": "BLN24 can prime all or most identified task areas with recent past performance",
+        "avg_score": 3.5,
         "prime_count": 2,
         "jv_count": 0,
-        "gap_count": 2,
-        "total_tasks": 4,
+        "gap_count": 0,
+        "total_tasks": 2,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -4830,8 +4513,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "Partial \u2014 significant gaps",
-            "score": 2
+            "answer": "Yes \u2014 strong alignment",
+            "score": 5
           },
           {
             "q": "Notice Type",
@@ -4847,9 +4530,9 @@
       },
       "rex_analysis": {
         "what_they_need": "The purpose of this contract is to establish Project SAFEHAVEN analytic support services to the Homeland Security Task Force (HSTF). The Homeland Security Task Force (HSTF) National Coordination Center (NCC) requires dedicated analytic support to sustain ongoing homeland security operations, including support to ICE Homeland Security Investigations (HSI) and broader mission partners. The Governmen",
-        "rex_take": "BLN24 can cover: Data Analytics & Business Intelligence, Due Diligence & Technical Advisory. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust, IT Infrastructure & Telecommunications. Evaluate whether the BLN24 scope is large enough to prime.",
+        "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Data Analytics & Business Intelligence, Due Diligence & Technical Advisory. Past performance backs it up. Worth a closer look.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
-        "recommendation": "Weak / JV"
+        "recommendation": "Strong"
       }
     },
     {
@@ -5121,29 +4804,17 @@
             "pp_refs": [],
             "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
             "triggered_by": [
-              "cybersecurity",
-              "security operations"
-            ]
-          },
-          {
-            "task": "IT Infrastructure & Telecommunications",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
-            "triggered_by": [
-              "lan"
+              "cybersecurity"
             ]
           }
         ],
-        "fit": "Pass",
-        "fit_reason": "Scope primarily outside BLN24 delivery lanes",
-        "avg_score": 1.3,
+        "fit": "Weak / JV",
+        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
+        "avg_score": 2.0,
         "prime_count": 1,
         "jv_count": 0,
-        "gap_count": 2,
-        "total_tasks": 3,
+        "gap_count": 1,
+        "total_tasks": 2,
         "qualifying": [
           {
             "q": "Set-Aside",
@@ -5152,8 +4823,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
+            "answer": "Partial \u2014 significant gaps",
+            "score": 2
           },
           {
             "q": "Notice Type",
@@ -5169,9 +4840,9 @@
       },
       "rex_analysis": {
         "what_they_need": "TRDM provides a single distribution source of enterprise reference data for enhancing C2, transportation, logistics, deployment, and financial systems&rsquo; reference data management and functional data collection. The scope of TRDM requires the contractor to perform current technical &amp; Cybersecurity operations, maintenance, and distribution of the TRDM system and data while modernizing the a",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "rex_take": "BLN24 can cover: Data Engineering & ETL. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
-        "recommendation": "Pass"
+        "recommendation": "Weak / JV"
       }
     },
     {

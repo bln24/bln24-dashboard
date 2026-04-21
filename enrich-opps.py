@@ -296,14 +296,22 @@ TASK_AREAS = [
     # Gap areas — included to be honest, always score 0-1
     {
         'task': 'Cybersecurity / FISMA / Zero Trust',
-        'kw': ['cybersecurity','fisma','zero trust','ato','authorization to operate','security operations','soc','vulnerability management','nist 800','pen testing'],
+        # Use specific phrases to avoid false positives:
+        # 'soc' matches 'social', 'associated' etc; 'ato' matches 'data operations', 'nato' etc
+        'kw': ['cybersecurity','fisma','zero trust','authorization to operate',' ato ','authority to operate',
+               'security operations center','vulnerability management','nist 800-','pen testing',
+               'penetration testing','cyber defense','incident response','security assessment',
+               'information security','information assurance','splunk','devsecops','siem'],
         'pp_refs': [],
         'base_score': 0,
         'note': 'BLN24 gap — no confirmed prime cybersecurity delivery; would need dedicated cyber partner'
     },
     {
         'task': 'IT Infrastructure & Telecommunications',
-        'kw': ['it infrastructure','network infrastructure','server hosting','telecommunications','telephony','wan','lan','wireless infrastructure'],
+        # Use specific full-word phrases; 'lan' and 'wan' match too many false positives (plan, planning, landscape)
+        'kw': ['it infrastructure','network infrastructure','server hosting services','telecommunications services',
+               'telephony services','wide area network','local area network','wireless network infrastructure',
+               'data center operations','network engineering','fiber optic','network connectivity'],
         'pp_refs': [],
         'base_score': 0,
         'note': 'BLN24 gap — no IT infrastructure prime on record'
