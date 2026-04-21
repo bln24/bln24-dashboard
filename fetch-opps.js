@@ -98,6 +98,47 @@ const FORS_MARSH_AGENCIES = [
 ];
 
 // =============================================================
+// SCOPE TAXONOMY
+// Tags that describe WHAT TYPE of work an opp is asking for
+// Used to show Brian a plain-English scope breakdown
+// =============================================================
+
+const SCOPE_TAGS = [
+  // Work Type
+  { tag: 'UX Research & Testing',      kw: ['ux research','usability testing','user research','user testing','usability study','user interviews','user-centered research'] },
+  { tag: 'Human-Centered Design',       kw: ['human centered design','human-centered design','hcd','design thinking','service design','experience design'] },
+  { tag: 'Accessibility / 508',         kw: ['accessibility','section 508','508 compliance','ada compliance','wcag'] },
+  { tag: 'Communications Strategy',     kw: ['communications strategy','communications plan','communications support','communications services','strategic communications'] },
+  { tag: 'Health Communications',       kw: ['health communications','public health campaign','health messaging','health outreach','health education','disease prevention campaign'] },
+  { tag: 'Outreach & Engagement',       kw: ['outreach','stakeholder engagement','community engagement','public engagement','employer outreach','education campaign'] },
+  { tag: 'Content Development',         kw: ['content development','content creation','content strategy','plain language','web content','editorial'] },
+  { tag: 'Digital Marketing',           kw: ['digital marketing','paid media','social media','digital campaign','advertising','marketing platform','lead generation'] },
+  { tag: 'Branding & Visual Design',    kw: ['branding','brand strategy','graphic design','visual design','logo','identity','creative services'] },
+  { tag: 'Video & Multimedia',          kw: ['video production','multimedia','photography','motion graphics','animation','visual communications','audiovisual'] },
+  { tag: 'Web Development',             kw: ['web development','web design','website redesign','frontend','drupal','wordpress','portal','web application'] },
+  { tag: 'Digital Platform',            kw: ['digital platform','digital services','digital transformation','digital experience','information architecture'] },
+  { tag: 'App Modernization',           kw: ['application modernization','app modernization','legacy modernization','system modernization','software modernization'] },
+  { tag: 'Cloud Migration',             kw: ['cloud migration','cloud transition','cloud modernization','aws','azure','cloud infrastructure','cloud platform'] },
+  { tag: 'Data Analytics',              kw: ['data analytics','data analysis','business intelligence','reporting','dashboard','data visualization','analytics platform'] },
+  { tag: 'Data Engineering',            kw: ['data engineering','data management','data architecture','data pipeline','data governance','etl','data quality'] },
+  { tag: 'AI / Machine Learning',       kw: ['artificial intelligence','machine learning','ai/ml','generative ai','llm','predictive analytics','nlp'] },
+  { tag: 'Survey & Research',           kw: ['survey','survey design','survey methodology','data collection','research support','evaluation','program evaluation'] },
+  { tag: 'Behavioral Science',          kw: ['behavioral science','behavioral research','behavior change','social marketing','nudge','command climate'] },
+  { tag: 'IT Program Management',       kw: ['it program management','it governance','enterprise architecture','it portfolio','it strategy','cio support'] },
+  { tag: 'DevSecOps',                   kw: ['devsecops','devops','ci/cd','agile','scrum','sprint','iterative development'] },
+  { tag: 'Cybersecurity',               kw: ['cybersecurity','fisma','zero trust','splunk','soc','security operations','vulnerability','ato'] },
+  { tag: 'Training & eLearning',        kw: ['training','elearning','e-learning','instructional design','lms','curriculum development','learning management'] },
+  { tag: 'CRM / Salesforce',            kw: ['crm','salesforce','microsoft dynamics','customer relationship management','servicenow'] },
+  { tag: 'Scientific/Technical Support',kw: ['scientific support','technical support','laboratory','research program','fisheries','biological','environmental'] },
+  { tag: 'Translation / Language',      kw: ['translation','spanish language','multilingual','language services','interpretation'] },
+];
+
+function extractScopeTags(text) {
+  const t = text.toLowerCase();
+  return SCOPE_TAGS.filter(s => s.kw.some(k => t.includes(k))).map(s => s.tag);
+}
+
+// =============================================================
 // BLN24 PROVEN CAPABILITY LANES
 // Derived from actual contract wins — NOT just NAICS codes
 // Each lane: keywords that match real scopes BLN24 has delivered
@@ -480,6 +521,8 @@ async function main() {
         opp.win_prob = winProb;
         opp.tier = tier;
         opp.matched_lanes = matchedLanes || [];
+        // Scope tags: what type of work is this opp actually asking for
+        opp.scope_tags = extractScopeTags((opp.title||'') + ' ' + (opp.summary||'') + ' ' + (opp.description||''));
 
         allOpps.push(opp);
         added++;
