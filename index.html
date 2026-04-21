@@ -684,34 +684,59 @@ function showOppModal(i){
     '<div class="mf"><div class="mf-l">Source Search</div><div class="mf-v">'+(o.searchLabel||'—')+(o.ericAlso?' <span style="font-size:.6rem;background:#F0E6FF;color:#7C3AED;padding:1px 5px;border-radius:4px;font-weight:700">Eric also tracking</span>':'')+'</div></div>'+
     '</div>'+
     (o.isFullOpen?'<div style="background:#FEF3C7;border-left:3px solid #D97706;padding:10px 12px;border-radius:0 6px 6px 0;font-size:.75rem;color:#92400E;font-weight:600;margin-bottom:12px">⚠️ Full &amp; Open Competition — BLN24 competes against all firm sizes. Win probability is meaningfully lower. Best play: pursue as a sub to a larger prime, or wait for a set-aside reissue.</div>':'')+
-    // Capability Matrix in modal — solicitation-first view
+    // Capability Matrix — BLN24 format (task-level scoring with PP refs)
     (function(){
       var cm = o.capability_matrix;
-      if (!cm || !cm.skills || !cm.skills.length) return '<div style="color:var(--grey);font-size:.78rem;padding:12px 0">Skill requirements not identified in available scope text. <a href="'+o.source_path+'" target="_blank" style="color:var(--blue)">View full solicitation ↗</a></div>';
-      var fitColor = {'Strong':'#15803D','Moderate':'#D97706','Pass':'#DC2626','JV Required':'#1D4ED8','Weak':'#DC2626','Review Needed':'#6B6E7A'}[cm.fit]||'#6B6E7A';
-      var fitBg    = {'Strong':'#F0FDF4','Moderate':'#FFFBEB','Pass':'#FEF2F2','JV Required':'#EFF6FF','Weak':'#FEF2F2','Review Needed':'#F4F4F6'}[cm.fit]||'#F4F4F6';
-      var html = '<div style="background:'+fitBg+';border-left:4px solid '+fitColor+';padding:10px 14px;border-radius:0 6px 6px 0;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">';
-      html += '<div><div style="font-size:.68rem;font-weight:800;color:'+fitColor+';text-transform:uppercase;letter-spacing:.07em;margin-bottom:2px">Overall Fit: '+cm.fit+'</div>';
-      html += '<div style="font-size:.75rem;color:#374151">'+cm.fit_reason+'</div></div>';
-      html += '<div style="font-size:.67rem;color:var(--grey);text-align:right">'+cm.prime_count+' prime · '+cm.jv_count+' JV · '+cm.gap_count+' gap</div></div>';
-      html += '<div style="font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:8px">Skills Required by Solicitation</div>';
-      html += '<table style="width:100%;border-collapse:collapse;font-size:.73rem"><thead><tr>';
-      html += '<th style="text-align:left;padding:7px 8px;background:#F9F9FB;border-bottom:2px solid var(--border);color:var(--grey);font-size:.58rem;text-transform:uppercase;letter-spacing:.07em">Skill / Capability Required</th>';
-      html += '<th style="text-align:left;padding:7px 8px;background:#F9F9FB;border-bottom:2px solid var(--border);color:var(--grey);font-size:.58rem;text-transform:uppercase;letter-spacing:.07em">BLN24 Can...</th>';
-      html += '<th style="text-align:left;padding:7px 8px;background:#F9F9FB;border-bottom:2px solid var(--border);color:var(--grey);font-size:.58rem;text-transform:uppercase;letter-spacing:.07em">Evidence / Notes</th>';
+      if (!cm || !cm.tasks || !cm.tasks.length) return '<div style="color:var(--grey);font-size:.78rem;padding:12px 0">Task areas not identified in available scope text. '+(o.source_path?'<a href="'+o.source_path+'" target="_blank" style="color:var(--blue)">View full solicitation ↗</a>':'')+'</div>';
+      var fitColor = {'Strong':'#15803D','Moderate':'#D97706','Pass':'#DC2626','Weak / JV':'#D97706','Unclassified':'#6B6E7A'}[cm.fit]||'#6B6E7A';
+      var fitBg    = {'Strong':'#F0FDF4','Moderate':'#FFFBEB','Pass':'#FEF2F2','Weak / JV':'#FFFBEB','Unclassified':'#F4F4F6'}[cm.fit]||'#F4F4F6';
+      var html = '<div style="background:'+fitBg+';border-left:4px solid '+fitColor+';padding:10px 14px;border-radius:0 6px 6px 0;margin-bottom:16px">';
+      html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap">';
+      html += '<div><div style="font-size:.68rem;font-weight:800;color:'+fitColor+';text-transform:uppercase;letter-spacing:.07em;margin-bottom:3px">'+cm.fit+' · Avg Score: '+cm.avg_score+'/4</div>';
+      html += '<div style="font-size:.75rem;color:#374151;line-height:1.5">'+cm.fit_reason+'</div></div>';
+      html += '<div style="font-size:.67rem;color:var(--grey);white-space:nowrap">'+cm.total_tasks+' tasks · '+cm.prime_count+' prime · '+cm.gap_count+' gap</div></div></div>';
+
+      // Qualifying factors
+      if (cm.qualifying && cm.qualifying.length) {
+        html += '<div style="font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:6px">Go/No-Go Factors</div>';
+        html += '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px">';
+        cm.qualifying.forEach(function(q){
+          var c = q.score >= 4?'#15803D':q.score >= 3?'#D97706':'#DC2626';
+          var bg = q.score >= 4?'#F0FDF4':q.score >= 3?'#FFFBEB':'#FEF2F2';
+          html += '<div style="background:'+bg+';border:1px solid '+c+'33;border-radius:6px;padding:6px 10px;min-width:140px">';
+          html += '<div style="font-size:.58rem;font-weight:700;color:'+c+';text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px">'+q.q+'</div>';
+          html += '<div style="font-size:.7rem;color:#374151">'+q.answer+'</div>';
+          html += '</div>';
+        });
+        html += '</div>';
+      }
+
+      // Task matrix
+      html += '<div style="font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:8px">Task Area Capability Matrix</div>';
+      html += '<table style="width:100%;border-collapse:collapse;font-size:.72rem">';
+      html += '<thead><tr style="background:#F9F9FB">';
+      html += '<th style="text-align:left;padding:7px 8px;border-bottom:2px solid var(--border);color:var(--grey);font-size:.58rem;text-transform:uppercase;letter-spacing:.06em">Task Area (from Solicitation)</th>';
+      html += '<th style="text-align:center;padding:7px 8px;border-bottom:2px solid var(--border);color:var(--grey);font-size:.58rem;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap">Score (0-4)</th>';
+      html += '<th style="text-align:left;padding:7px 8px;border-bottom:2px solid var(--border);color:var(--grey);font-size:.58rem;text-transform:uppercase;letter-spacing:.06em">Past Performance References</th>';
+      html += '<th style="text-align:left;padding:7px 8px;border-bottom:2px solid var(--border);color:var(--grey);font-size:.58rem;text-transform:uppercase;letter-spacing:.06em">Notes</th>';
       html += '</tr></thead><tbody>';
-      cm.skills.forEach(function(s){
-        var c  = s.status==='prime'?'#15803D':s.status==='jv'?'#1D4ED8':s.status==='gap'?'#DC2626':'#6B6E7A';
-        var bg = s.status==='prime'?'#F0FDF4':s.status==='jv'?'#EFF6FF':s.status==='gap'?'#FEF2F2':'#F9F9FB';
+      cm.tasks.forEach(function(t){
+        var scoreColor = t.score >= 3?'#15803D':t.score === 2?'#D97706':t.score === 1?'#6B6E7A':'#DC2626';
+        var scoreBg    = t.score >= 3?'#F0FDF4':t.score === 2?'#FFFBEB':t.score === 1?'#F4F4F6':'#FEF2F2';
         html += '<tr style="border-bottom:1px solid #F0F0F4">';
-        html += '<td style="padding:8px 8px"><strong style="font-size:.75rem">'+s.skill+'</strong>';
-        if(s.triggered_by&&s.triggered_by.length) html += '<div style="font-size:.6rem;color:var(--grey);margin-top:2px">matched: '+s.triggered_by.join(', ')+'</div>';
+        html += '<td style="padding:8px"><strong>'+t.task+'</strong>';
+        if(t.triggered_by&&t.triggered_by.length) html += '<div style="font-size:.58rem;color:#9CA3AF;margin-top:2px">→ '+t.triggered_by.join(', ')+'</div>';
         html += '</td>';
-        html += '<td style="padding:8px"><span style="background:'+bg+';color:'+c+';padding:3px 8px;border-radius:4px;font-size:.67rem;font-weight:700;white-space:nowrap">'+s.status_label+'</span></td>';
-        html += '<td style="padding:8px;color:var(--grey);font-size:.69rem;line-height:1.5">'+s.evidence+'</td>';
+        html += '<td style="padding:8px;text-align:center">';
+        html += '<span style="background:'+scoreBg+';color:'+scoreColor+';padding:3px 10px;border-radius:4px;font-size:.72rem;font-weight:800">'+t.score+'/4</span>';
+        html += '<div style="font-size:.58rem;color:'+scoreColor+';margin-top:3px;white-space:nowrap">'+t.score_label.split(' — ')[1]+'</div>';
+        html += '</td>';
+        html += '<td style="padding:8px;font-size:.68rem;color:#374151;line-height:1.6">'+(t.pp_refs&&t.pp_refs.length?t.pp_refs.join('<br>'):'<span style="color:#DC2626">None on record</span>')+'</td>';
+        html += '<td style="padding:8px;font-size:.68rem;color:var(--grey);line-height:1.5">'+t.note+'</td>';
         html += '</tr>';
       });
       html += '</tbody></table>';
+      html += '<div style="font-size:.6rem;color:var(--grey);margin-top:8px;font-style:italic">Scoring: 4=Highly similar PP (≤3 yrs) · 3=Similar PP · 2=Related PP · 1=Limited · 0=No experience</div>';
       return html;
     })()+
     (o.summary?'<div style="margin:12px 0 5px;font-size:.7rem;font-weight:700">AI Summary:</div><div style="font-size:.75rem;color:var(--grey);line-height:1.6;background:var(--grey-light);padding:10px 12px;border-radius:6px">'+o.summary+'</div>':'')+
