@@ -138,6 +138,11 @@
     .wr-n{font-size:.77rem;font-weight:500;}
     .wr-s{font-size:.7rem;font-weight:700;color:var(--gold-dark);}
 
+    /* TYPE FILTER BUTTONS */
+    .type-btn{background:none;border:1px solid var(--border);color:var(--grey);padding:5px 13px;border-radius:6px;font-size:.72rem;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s;white-space:nowrap;}
+    .type-btn:hover{border-color:var(--gold);color:var(--gold-dark);}
+    .type-btn.active{background:var(--black);color:var(--gold);border-color:var(--gold);}
+
     /* BD AI SPECIFIC */
     .opp-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin-bottom:14px;transition:box-shadow .15s,border-color .15s;cursor:pointer;}
     .opp-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08);border-color:#C4C4CC;}
@@ -205,6 +210,7 @@
 <header>
   <div class="brand">BLN24 · REVENUE</div>
   <div class="hdr-right">
+    <a href="#" onclick="switchTab('bdai',document.querySelector('.tab:nth-child(2)'));return false;" style="background:rgba(124,58,237,.2);border:1px solid #7C3AED;color:#C4A7F5;padding:5px 13px;border-radius:6px;font-size:.72rem;font-weight:700;text-decoration:none;white-space:nowrap;">🤖 BD AI</a>
     <span class="hdr-ts" id="ts">—</span>
     <button class="btn-ref" onclick="loadAll()">↻ Refresh</button>
   </div>
@@ -301,6 +307,15 @@
       <div style="color:rgba(255,255,255,.7);font-size:.78rem;line-height:1.6;max-width:600px">Rex finds federal opportunities, scores them against BLN24's real proposals and past performance, and surfaces the best ones here. <strong style="color:white">Approve</strong> to move into active capture — Rex will create Asana tasks and brief the team. <strong style="color:white">Pass</strong> to decline.</div>
     </div>
     <a href="https://app.asana.com/0/1214145572732999" target="_blank" class="asana-link">View in Asana →</a>
+  </div>
+
+  <!-- TYPE FILTER -->
+  <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:16px">
+    <span style="font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-right:4px">Show:</span>
+    <button class="type-btn active" data-filter="all" onclick="setTypeFilter('all',this)">All</button>
+    <button class="type-btn" data-filter="rfp" onclick="setTypeFilter('rfp',this)">📋 RFP / Solicitation</button>
+    <button class="type-btn" data-filter="rfi" onclick="setTypeFilter('rfi',this)">🔍 RFI / Sources Sought</button>
+    <button class="type-btn" data-filter="forecast" onclick="setTypeFilter('forecast',this)">📅 Forecast</button>
   </div>
 
   <div class="sl">
@@ -523,6 +538,40 @@ function showStage(sid){
     'Pipedrive CRM · '+new Date().toLocaleTimeString());
 }
 
+// TYPE FILTER
+var ACTIVE_TYPE_FILTER = 'all';
+function setTypeFilter(f, el) {
+  ACTIVE_TYPE_FILTER = f;
+  document.querySelectorAll('.type-btn').forEach(b => b.classList.toggle('active', b.dataset.filter === f));
+  renderOpps();
+}
+
+function renderOpps() {
+  var container = document.getElementById('opp-cards');
+  var countEl = document.getElementById('bdai-count');
+  var all = window._opps || [];
+  var filtered = ACTIVE_TYPE_FILTER === 'all' ? all : all.filter(o => o.noticeCategory === ACTIVE_TYPE_FILTER);
+
+  if (!filtered.length) {
+    container.innerHTML = '<div class="empty">No ' + ACTIVE_TYPE_FILTER + ' opportunities found. Try a different filter or add more HigherGov searches.</div>';
+    countEl.textContent = '0 opportunities (' + ACTIVE_TYPE_FILTER.toUpperCase() + ' filter active)';
+    return;
+  }
+
+  var updated = window._oppsUpdated || '?';
+  var rfiCount = all.filter(o => o.noticeCategory === 'rfi').length;
+  var rfpCount = all.filter(o => o.noticeCategory === 'rfp').length;
+  var fcastCount = all.filter(o => o.noticeCategory === 'forecast').length;
+  countEl.textContent = filtered.length + ' opps' + (ACTIVE_TYPE_FILTER !== 'all' ? ' (' + ACTIVE_TYPE_FILTER.toUpperCase() + ')' : ' — ' + rfpCount + ' RFP, ' + rfiCount + ' RFI, ' + fcastCount + ' Forecast') + ' · Refreshed: ' + updated;
+
+  var html = '';
+  filtered.slice(0, 25).forEach(function(o, i) {
+    html += '<div class="opp-card" id="opp-card-' + i + '"></div>';
+  });
+  container.innerHTML = html;
+  filtered.slice(0, 25).forEach(function(o, i) { renderOppCard(i, o); });
+}
+
 // APPROVAL STATE
 var APPROVALS = JSON.parse(localStorage.getItem('bdai_approvals')||'{}');
 function saveApprovals(){localStorage.setItem('bdai_approvals',JSON.stringify(APPROVALS));}
@@ -544,24 +593,34 @@ function passOpp(i){
   renderOppCard(i,o);
 }
 
+function noticeTypeBadge(o){
+  var nc=o.noticeCategory||'';
+  if(nc==='rfp') return '<span class="p" style="background:#E8F4FD;color:#0050A0">📋 RFP</span>';
+  if(nc==='rfi') return '<span class="p" style="background:#F0FDF4;color:#15803D">🔍 RFI</span>';
+  if(nc==='forecast') return '<span class="p" style="background:#FFFBEB;color:#92400E">📅 Forecast</span>';
+  return '';
+}
+
 function renderOppCard(i,o){
   var el=document.getElementById('opp-card-'+i);
   if(!el)return;
   var status=APPROVALS[i];
-  var reasons=(o.win_reasons||[]).slice(0,3).map(r=>'<span style="display:inline-block;margin-right:6px;margin-bottom:4px;background:var(--grey-light);border-radius:4px;padding:2px 8px;font-size:.7rem">'+r+'</span>').join('');
   var score=o.capture_score||0;
   var scoreColor=score>=50?'var(--green)':score>=30?'var(--yellow)':'var(--red)';
+  var fullOpenWarning=o.isFullOpen?'<div style="background:#FEF3C7;border-left:3px solid #D97706;padding:8px 10px;border-radius:0 5px 5px 0;font-size:.7rem;color:#92400E;font-weight:600;margin-bottom:8px">⚠️ Full &amp; Open — competing against all firms. Lower win probability. Consider as sub or wait for set-aside reissue.</div>':'';
+  var ericNote=o.ericAlso?'<span class="p" style="background:#F0E6FF;color:#7C3AED;font-size:.6rem">Eric also tracking</span>':'';
 
   el.innerHTML=
     '<div class="opp-card-top">'+
     '<div>'+
     '<div class="opp-title">'+(o.title||'').substring(0,72)+((o.title||'').length>72?'…':'')+'</div>'+
-    '<div class="opp-agency" style="margin-top:4px">🏛 '+(o.agency||'')+'</div>'+
+    '<div class="opp-agency" style="margin-top:4px">🏙 '+(o.agency||'')+'</div>'+
     '</div>'+
     '<div class="opp-score" style="background:'+scoreColor+';color:var(--white);min-width:60px;text-align:center">'+score+'pts</div>'+
     '</div>'+
+    fullOpenWarning+
     '<div class="opp-meta">'+
-    wp(o.win_prob)+sa(o.set_aside)+
+    noticeTypeBadge(o)+wp(o.win_prob)+sa(o.set_aside)+ericNote+
     (o.due?'<span class="p p-grey">Due: '+o.due+'</span>':'')+
     (o.naics?'<span class="p p-grey">NAICS: '+o.naics+'</span>':'')+
     (fmtV(o.val_low,o.val_high)!=='—'?'<span class="p p-gold">'+fmtV(o.val_low,o.val_high)+'</span>':'')+
@@ -591,12 +650,17 @@ function showOppModal(i){
     '<div class="mf"><div class="mf-l">Est. Value</div><div class="mf-v gold">'+fmtV(o.val_low,o.val_high)+'</div></div>'+
     '<div class="mf"><div class="mf-l">Due Date</div><div class="mf-v">'+(o.due||'TBD')+'</div></div>'+
     '<div class="mf"><div class="mf-l">Capture Score</div><div class="mf-v">'+(o.capture_score||0)+' pts</div></div>'+
-    '<div class="mf"><div class="mf-l">Type</div><div class="mf-v">'+(o.type||'—')+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Notice Type</div><div class="mf-v">'+(o.type||'—')+'</div></div>'+
+    '<div class="mf"><div class="mf-l">Source Search</div><div class="mf-v">'+(o.searchLabel||'—')+(o.ericAlso?' <span style="font-size:.6rem;background:#F0E6FF;color:#7C3AED;padding:1px 5px;border-radius:4px;font-weight:700">Eric also tracking</span>':'')+'</div></div>'+
     '</div>'+
+    (o.isFullOpen?'<div style="background:#FEF3C7;border-left:3px solid #D97706;padding:10px 12px;border-radius:0 6px 6px 0;font-size:.75rem;color:#92400E;font-weight:600;margin-bottom:12px">⚠️ Full &amp; Open Competition — BLN24 competes against all firm sizes. Win probability is meaningfully lower. Best play: pursue as a sub to a larger prime, or wait for a set-aside reissue.</div>':'')+
     (reasons?'<div style="margin:14px 0 6px;font-size:.7rem;font-weight:700">Why BLN24 Should Pursue:</div><ul style="padding-left:18px;line-height:2">'+reasons+'</ul>':'')+
     (o.summary?'<div style="margin:12px 0 5px;font-size:.7rem;font-weight:700">AI Summary:</div><div style="font-size:.75rem;color:var(--grey);line-height:1.6;background:var(--grey-light);padding:10px 12px;border-radius:6px">'+o.summary+'</div>':'')+
-    (o.path?'<div style="margin-top:12px"><a href="https://www.highergov.com'+o.path+'" target="_blank" style="font-size:.73rem;color:var(--blue);font-weight:600">View on HigherGov →</a></div>':'')+
-    (o.asana_task_gid?'<div style="margin-top:8px"><a href="https://app.asana.com/0/'+o.asana_task_gid+'" target="_blank" style="font-size:.73rem;color:#7C3AED;font-weight:600">View Asana Task →</a></div>':''),
+    '<div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">'+
+    (o.path?'<a href="https://www.highergov.com'+o.path+'" target="_blank" style="font-size:.73rem;color:var(--blue);font-weight:600">View on HigherGov ↗</a>':'')+
+    '<a href="https://sam.gov/search/?keywords='+encodeURIComponent(o.title||'')+'" target="_blank" style="font-size:.73rem;color:var(--grey);font-weight:600">Search SAM.gov ↗</a>'+
+    (o.asana_task_gid?'<a href="https://app.asana.com/0/'+o.asana_task_gid+'" target="_blank" style="font-size:.73rem;color:#7C3AED;font-weight:600">View Asana Task ↗</a>':'')+
+    '</div>',
     'HigherGov · Federal opps only · Scored vs BLN24 proposals & past performance');
 }
 
@@ -619,26 +683,12 @@ async function loadOpps(){
 
     active.sort((a,b)=>(b.capture_score||0)-(a.capture_score||0)||(a.due||'9').localeCompare(b.due||'9'));
     window._opps=active;
-
-    if(!active.length){
-      container.innerHTML='<div class="empty">No untracked federal opps found. Add more HigherGov searches to expand coverage.</div>';
-      countEl.textContent='No untracked opportunities found';
-      return;
-    }
-
-    var updated=data.updated?new Date(data.updated).toLocaleString():'?';
-    countEl.textContent=active.length+' untracked federal opps · Last refreshed: '+updated;
-
-    var html='';
-    active.slice(0,20).forEach(function(o,i){
-      html+='<div class="opp-card" id="opp-card-'+i+'"></div>';
-    });
-    container.innerHTML=html;
-    active.slice(0,20).forEach(function(o,i){ renderOppCard(i,o); });
+    window._oppsUpdated=data.updated?new Date(data.updated).toLocaleString():'?';
+    renderOpps();
 
   } catch(e){
-    container.innerHTML='<div class="empty" style="color:var(--red)">Error loading: '+e.message+'</div>';
-    countEl.textContent='Error';
+    document.getElementById('opp-cards').innerHTML='<div class="empty" style="color:var(--red)">Error loading: '+e.message+'</div>';
+    document.getElementById('bdai-count').textContent='Error';
   }
 }
 
