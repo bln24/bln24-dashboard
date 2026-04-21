@@ -113,17 +113,15 @@ function scoreOpp(o) {
   const oos = ['medical device','construction','hvac','logistics','warehousing','janitorial','food','vehicle','aircraft','weapon','ammunition'];
   if (oos.some(k => combined.includes(k))) { score -= 30; reasons.push('OUT OF SCOPE signals'); }
 
-  // Tier classification — BLN24 has proven wins at T2 and T3, highest probability there
-  // Tier 3: $500K–5M — proven wins, highest probability
-  // Tier 2: $5M–20M — proven wins, strong target
-  // Tier 1: $20M+ — can win but needs existing relationship, harder cold
+  // Tier classification — context only, not a scoring modifier
+  // BLN24 has proven wins at T2 and T3; T1 harder cold but not deprioritized
   const midVal = (o.val_low && o.val_high) ? (o.val_low + o.val_high) / 2 : (o.val_low || o.val_high || null);
   let tier = null;
   if (midVal !== null) {
-    if (midVal >= 20000000) { tier = 1; score -= 10; reasons.push('Tier 1 ($20M+) — needs existing relationship to win; harder cold'); }
-    else if (midVal >= 5000000) { tier = 2; score += 15; reasons.push('Tier 2 ($5M–20M) — BLN24 proven wins at this range'); }
-    else if (midVal >= 500000) { tier = 3; score += 20; reasons.push('Tier 3 ($500K–5M) — BLN24 proven wins, highest probability tier'); }
-    else { tier = null; reasons.push('Value below $500K — bid cost likely exceeds return'); }
+    if (midVal >= 20000000) { tier = 1; }
+    else if (midVal >= 5000000) { tier = 2; }
+    else if (midVal >= 500000) { tier = 3; }
+    // below $500K: no tier assigned
   }
 
   let winProb;
@@ -160,9 +158,10 @@ function hgFetch(searchId) {
 async function main() {
   const today = new Date().toISOString().split('T')[0];
   // Priority types — RFI/Sources Sought, RFP/Solicitation, Forecast
+  // Matched to actual HigherGov opp_type.description values
   const RFI_TYPES = new Set(['Sources Sought','Request for Information']);
-  const RFP_TYPES = new Set(['Solicitation','Combined Synopsis/Solicitation','Request for Proposal','Request for Quotation']);
-  const FORECAST_TYPES = new Set(['Presolicitation','Special Notice','Planning Notice']);
+  const RFP_TYPES = new Set(['Solicitation','Synopsis Solicitation','Combined Synopsis/Solicitation','Request for Proposal','Request for Quotation','Recompete','New']);
+  const FORECAST_TYPES = new Set(['Presolicitation','Pre-Solicitation','Special Notice','Planning Notice']);
   const GOOD_TYPES = new Set([...RFI_TYPES, ...RFP_TYPES, ...FORECAST_TYPES]);
   let allOpps = [];
   const seen = new Set();
