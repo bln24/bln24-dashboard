@@ -627,6 +627,8 @@ function renderOppCard(i,o){
     '<div class="opp-score" style="background:'+scoreColor+';color:var(--white);min-width:60px;text-align:center">'+score+'pts</div>'+
     '</div>'+
     fullOpenWarning+
+    // Rex recommendation pill
+    (o.rex_analysis&&o.rex_analysis.recommendation?'<div style="margin-bottom:6px"><span style="font-size:.63rem;font-weight:700;color:#D97706">🤖 Rex: '+o.rex_analysis.recommendation+'</span></div>':'')+
     // Fit verdict pill from capability matrix
     (o.capability_matrix?'<div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">'+(function(){
       var cm=o.capability_matrix;
@@ -684,6 +686,31 @@ function showOppModal(i){
     '<div class="mf"><div class="mf-l">Source Search</div><div class="mf-v">'+(o.searchLabel||'—')+(o.ericAlso?' <span style="font-size:.6rem;background:#F0E6FF;color:#7C3AED;padding:1px 5px;border-radius:4px;font-weight:700">Eric also tracking</span>':'')+'</div></div>'+
     '</div>'+
     (o.isFullOpen?'<div style="background:#FEF3C7;border-left:3px solid #D97706;padding:10px 12px;border-radius:0 6px 6px 0;font-size:.75rem;color:#92400E;font-weight:600;margin-bottom:12px">⚠️ Full &amp; Open Competition — BLN24 competes against all firm sizes. Win probability is meaningfully lower. Best play: pursue as a sub to a larger prime, or wait for a set-aside reissue.</div>':'')+
+    // Rex's Analysis — top of modal
+    (function(){
+      var ra = o.rex_analysis;
+      if (!ra) return '';
+      var recColor = {'Strong':'#15803D','Moderate':'#D97706','Pass':'#DC2626','Pursue via Clarity24 JV':'#1D4ED8','Watch / Sub':'#6B6E7A','Watch / watch':'#6B6E7A','Pursue':'#15803D','Weak pursue':'#D97706','Research scope':'#1D4ED8','Verify / Watch':'#6B6E7A','Review Needed':'#6B6E7A'}[ra.recommendation]||'#6B6E7A';
+      var recBg   = {'Strong':'#F0FDF4','Moderate':'#FFFBEB','Pass':'#FEF2F2','Pursue via Clarity24 JV':'#EFF6FF','Watch / Sub':'#F4F4F6','Pursue':'#F0FDF4','Weak pursue':'#FFFBEB','Research scope':'#EFF6FF','Verify / Watch':'#F4F4F6','Review Needed':'#F4F4F6'}[ra.recommendation]||'#F4F4F6';
+      var html = '<div style="margin-bottom:16px">';
+      // Recommendation badge
+      html += '<div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">';
+      html += '<span style="background:'+recBg+';color:'+recColor+';padding:4px 12px;border-radius:5px;font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em">🤖 Rex: '+(ra.recommendation||'Review')+'</span>';
+      html += '</div>';
+      // What they need
+      html += '<div style="font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:5px">What They Need</div>';
+      html += '<div style="font-size:.78rem;color:#374151;line-height:1.7;margin-bottom:12px;padding:10px 14px;background:#F9F9FB;border-radius:6px">'+ra.what_they_need+'</div>';
+      // Rex's take
+      html += '<div style="font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:5px">Rex\'s Take</div>';
+      html += '<div style="font-size:.78rem;color:#374151;line-height:1.7;margin-bottom:12px;padding:10px 14px;background:#FFFBEB;border-left:3px solid #D97706;border-radius:0 6px 6px 0">'+ra.rex_take+'</div>';
+      // Watch notes
+      if (ra.watch_notes) {
+        html += '<div style="font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:5px">Watch / Action Notes</div>';
+        html += '<div style="font-size:.75rem;color:#6B6E7A;line-height:1.6;margin-bottom:14px;padding:8px 12px;background:#F4F4F6;border-radius:6px">📌 '+ra.watch_notes+'</div>';
+      }
+      html += '</div><hr style="border:none;border-top:1px solid var(--border);margin-bottom:14px">';
+      return html;
+    })()+
     // Capability Matrix — BLN24 format (task-level scoring with PP refs)
     (function(){
       var cm = o.capability_matrix;
