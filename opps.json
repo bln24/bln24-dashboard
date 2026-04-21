@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-21T04:18:06.379Z",
+  "updated": "2026-04-21T04:25:53.557Z",
   "count": 123,
   "opps": [
     {
@@ -150,6 +150,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Millennium Challenge Corporation (MCC) needs a firm to provide technical advisory consulting for their Human & Community Development (HCD) practice \u2014 supporting due diligence on education, workforce development, health, and behavioral UX programs in developing countries. Work includes reviewing partner proposals, conducting data-driven analysis, scoping field visits, and supporting capacity building across MCC's investment portfolio.",
+        "rex_take": "BLN24's HCD capability (IRS $7M BPA) is the strongest match \u2014 human-centered design, UX research, behavioral insights. The wrinkle: MCC operates in developing countries, not domestic federal agencies. The scope requires international development context and subject matter expertise in education/workforce systems in developing economies. BLN24 doesn't have that track record. Due April 23 \u2014 three days out. Cold agency, international context, 3-day window = cold submission. Pattern that loses. Unless Brian has an MCC relationship, this is a pass despite the HCD alignment.",
+        "watch_notes": "Ask Brian: any MCC relationship? Any international development teaming partner? If no to both, this is a training exercise \u2014 not a real pursue. Flag MCC as an agency to build toward for future cycles.",
+        "recommendation": "Pass \u2014 cold agency, international context, 3-day deadline"
       }
     },
     {
@@ -249,6 +255,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Census Bureau's massive digital modernization initiative \u2014 the CenTAM framework \u2014 covering IT systems for the 2030 Decennial Census. Includes application development, legacy modernization, cloud migration, data collection platforms, and systems to support economic, geographic, and demographic programs. Multiple separate contract awards expected under this framework.",
+        "rex_take": "Clarity24 JV has direct Census past performance ($4.5M MAF/TIGER modernization, $4.5M EDL Applications, $2.8M NOAA app mod). Census is also BLN24's highest-value client ($18.4M). This is a real opportunity \u2014 but it's a large technology modernization vehicle, not comms or HCD. The question is which specific task areas under CenTAM align with what Clarity24 can actually deliver vs. what larger primes will own. Full & Open means big integrators will compete.",
+        "watch_notes": "Get into the weeds on the CenTAM acquisition structure \u2014 it's a collection of complementary contracts, not one big award. Find which specific package maps to digital modernization vs. IT infrastructure vs. data engineering. Clarity24 should be positioned for the digital/app mod pieces. Due 2027 \u2014 shape now.",
+        "recommendation": "Pursue via Clarity24 JV"
       }
     },
     {
@@ -350,6 +362,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Oregon National Guard Recruiting and Retention Battalion needs a specialized digital advertising platform that uses registrar-verified college enrollment data to identify and target eligible recruits across 1,500+ universities. Contractor provides targeted institutional advertising \u2014 reaching college students with recruiting messages based on verified enrollment data rather than self-reported job board data.",
+        "rex_take": "BLN24 can do the digital marketing piece \u2014 FTC paid media (Fors Marsh JV) and USDA social media are real comparables. But this is military recruiting advertising, which has a specific compliance and targeting context BLN24 hasn't operated in. The \"Workforce/Talent Development\" gap flag is real \u2014 military recruiting is a specialized lane. Also, Oregon National Guard is a state-level guard unit, which is technically federal but unusual client for BLN24.",
+        "watch_notes": "Verify whether National Guard contracts are federal or SLED. If federal and SBA set-aside, evaluate whether the digital marketing component alone is large enough to pursue. The targeting/data platform component may require a tech partner.",
+        "recommendation": "Weak pursue \u2014 verify federal vs SLED status"
       }
     },
     {
@@ -467,6 +485,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "USACE New Orleans District needs three large building wrap installs (80\" high, custom widths) for its HQ building \u2014 corporate branding / environmental graphics. Contractor must produce and install the wraps, obtaining Adobe source files from the government POC.",
+        "rex_take": "BLN24 can design these \u2014 MBDA branding and Census visual design are real comparables. But this is a production + installation job, not a strategy engagement. The \"Cybersecurity/ATO\" flag in the matrix is noise \u2014 that's boilerplate SOW language, not a real deliverable. Main risk: installation requires a local New Orleans vendor or sub. Small contract (~$50-150K estimated). Not worth the operational complexity unless BLN24 has a production partner in Louisiana.",
+        "watch_notes": "Check if BLN24 has a production/installation sub in the Gulf region. If yes, pursue as a quick win. If no, pass \u2014 the margin on a wrap install doesn't justify finding a new sub.",
+        "recommendation": "Pursue if production sub exists \u2014 otherwise pass"
       }
     },
     {
@@ -567,6 +591,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "DOT OCIO needs support for its Common Operating Environment (COE) \u2014 specifically the non-core telecommunications components: server hosting, network connectivity, cybersecurity operations, disaster recovery, wireless services, incident management, help desk, and move/add/change support across DOT HQ and field sites nationwide.",
+        "rex_take": "This is pure IT infrastructure \u2014 servers, networking, telecom, security operations. The \"Strategic Communications\" hit in the matrix was noise from the word \"communications\" appearing in the description. Zero BLN24 delivery lanes here. The description is explicit: server hosting, wireless infrastructure, incident management. Pass.",
+        "watch_notes": "Remove \"communications services\" from the comms keyword set if it's triggering on IT infrastructure descriptions \u2014 it's causing false positives.",
+        "recommendation": "Pass \u2014 IT infrastructure, not BLN24 scope"
       }
     },
     {
@@ -670,6 +700,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "USCIS needs outreach and education services to raise awareness of E-Verify, SAVE, and I-9 programs among employers. Contractor designs and delivers marketing campaigns, stakeholder communications, content development, and digital outreach to drive employer enrollment in voluntary verification programs.",
+        "rex_take": "Clean BLN24 fit \u2014 outreach, stakeholder engagement, content development, digital campaign work. HUD FHEO ($2M) and HRSA Marketing BPA are direct comparables in scope and structure. The \"Cybersecurity\" flag in the matrix is noise \u2014 it likely came from USCIS mentioning SOC compliance in a boilerplate section, not as a deliverable. Real scope here is comms and outreach only. The gap is that USCIS isn't a current BLN24 client \u2014 cold agency.",
+        "watch_notes": "USCIS is DHS. BLN24 has DHS in the past performance folder. Verify which DHS contract that covers. If it's a legitimate past performance claim, this becomes stronger. Research the incumbent.",
+        "recommendation": "Pursue \u2014 verify DHS PP claim"
       }
     },
     {
@@ -796,6 +832,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Remote Automated Laboratory System (RALS) License in support of the Department of Pathology and Area Laboratory Services (DPALS) for Eisenhower Army Medical Center, Fort Gordon, GA 30905.\n\nThe responsible offeror must submit:\n\n-Technical Description of items being offered\n\n-CLIN/Item Number Pricing (filled out)\n\n-Company&rsquo;s Unique Entity ID (UEI)\n\n-CAGE code\n\n-Company Contact Information\n\nThe",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -892,6 +934,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "(i) This is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with part 12. This announcement constitutes the only solicitation. Offers are being requested and a separate written solicitation will not be issued.\n\nSolicitation number FA301626R00130002 is issued as a Request for Proposal (RFP)  for Aerospace Medical Accession Standards Medical Ser",
+        "rex_take": "BLN24 can cover: Due Diligence & Technical Advisory. Gap areas requiring teaming: Medical Services. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -997,6 +1045,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The Armed Services Blood Program requires program support services for records and information management, communications, donor screening procedures, comparability assessment of other blood product sources, and other support of business transformation and performance improvements.  Background\n The Armed Services Blood Program (ASBP) is a vital component of the Department of Defense, responsible f",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -1139,6 +1193,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "PROJECTED CMMC LEVEL REQUIREMENT\nLevel 2 (Self)\nTECHNOLOGY AREAS\nBattlespace\nMODERNIZATION PRIORITIES\nSpace Technology\nKEYWORDS\nTacSRT; space sensing; analytics; surveillance; reconnaissance; tracking; terrestrial; space-to-ground; fusion; change detection; downlink; automated exploitation; maritime awareness; environmental monitoring; decision making; situational awareness; AI-ML\nOBJECTIVE\nThe ob",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -1236,6 +1296,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "PROJECTED CMMC LEVEL REQUIREMENT\nLevel 2 (Self)\nTECHNOLOGY AREAS\nNone\nMODERNIZATION PRIORITIES\nAdvanced Computing and Software\n|\nAdvanced Materials\n|\nIntegrated Network Systems-of-Systems\nKEYWORDS\nAnti-Submarine Warfare; ASW; Sonobuoy; Low-Frequency Acoustics; Directional Arrays; Passive Detection; Beamforming; Underwater Sensing\nOBJECTIVE\nDevelop a high-gain, low-frequency vertical line array of",
+        "rex_take": "BLN24 can cover: Cloud Migration & Infrastructure. Gap areas requiring teaming: Space / Defense / ITAR. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -1302,6 +1368,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "On behalf of Department of Education (ED), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -1400,6 +1472,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Sources Sought Notice: Rigorous Evaluation of Promising Teen Pregnancy Interventions\n\n\n\nINTRODUCTION\n\nThe US Department of Health and Human Services (HHS), Office of the Secretary (OS), Office of the Assistant Secretary for Health (OASH), Office of Population Affairs wants to identify viable small businesses that are capable of fulfilling the objectives of this requirement.\n\n\n\nThis is a Small Busi",
+        "rex_take": "BLN24 can cover: Due Diligence & Technical Advisory. Gap areas requiring teaming: IT Infrastructure & Telecommunications. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -1521,6 +1599,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "AMD 01: The purpose of amendment 01 is to provide attribute notes and extend the solicitation to 22 April 2026, 5:00 p.m., CDT. See attachment AOI SMDC Prototype OT AMD 01 with highlighted changes. \n\nThe Defense Information Systems Agency Emerging Technologies Directorate Advanced Concepts Division seeks to develop an innovative and user-friendly Retransmission Device to bridge the gap between Com",
+        "rex_take": "BLN24 can cover: Human-Centered Design & UX Research, UX/UI Design & Prototyping. Gap areas requiring teaming: IT Infrastructure & Telecommunications, Space / Defense / ITAR. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFP.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -1626,6 +1710,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Same as CenTAM above \u2014 Census Bureau's 2030 Decennial modernization framework. This may be the same opportunity listed twice under different search results.",
+        "rex_take": "Likely same opp as CenTAM Decennial Transformation. Verify if these are the same solicitation or different contract packages under the same framework.",
+        "watch_notes": "Confirm whether this is a duplicate of the Decennial Transformation opp or a separate package.",
+        "recommendation": "Verify / Watch"
       }
     },
     {
@@ -1687,6 +1777,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "RFI - CTP Tobacco User Fee Application Background\n The U.S. Food and Drug Administration (FDA) is conducting a Request for Information (RFI) to support the Center for Tobacco Products (CTP). The goal of this RFI is to acquire services that will sustain and enhance the existing Tobacco User Fee Application (TUFA) processes, ensuring compliance with federal statutes, regulations, guidelines, and the",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -1748,6 +1844,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "On behalf of Department of Commerce (DOC), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -1809,6 +1911,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Census Bureau program using digital incentives (push notifications, targeted outreach, behavioral nudges) to improve survey response rates for the American Community Survey (ACS) and other Census data collection programs. Contractor provides digital engagement tools, incentive design, and behavioral strategies to drive participation.",
+        "rex_take": "This sits squarely in BLN24's lane \u2014 digital engagement, outreach design, behavioral nudges. Census is the highest-value client ($18.4M in wins). The behavioral science angle connects to the BLN Fors Marsh JV. Main risk: this may be an existing program going to recompete on an existing vehicle. Need to know who the incumbent is and whether it's a set-aside.",
+        "watch_notes": "Confirm set-aside type (currently unlisted). Find the incumbent. If it's a small business set-aside with a weak incumbent, this is a genuine pursue. Fors Marsh JV is a natural fit for the behavioral/incentive design component.",
+        "recommendation": "Pursue \u2014 confirm set-aside"
       }
     },
     {
@@ -1870,6 +1978,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "NOAA's vehicle for Science, Engineering, and Technical Support Services across its research offices \u2014 weather, oceans, fisheries, atmospheric research. Task orders span scientific program support, systems engineering, data management, IT systems, and environmental compliance across ~235 NOAA facilities.",
+        "rex_take": "Clarity24 JV has $7M in confirmed NOAA delivery (cloud migration, app modernization), which is real past performance. But SETSS is primarily a science and engineering vehicle \u2014 meteorology, oceanography, fisheries, facilities. BLN24's lanes (HCD, comms, data analytics) are narrow within this IDIQ. Best path is monitoring for specific task orders in digital/data/comms scope rather than pursuing the IDIQ prime. Due Jan 2027 \u2014 early awareness only.",
+        "watch_notes": "Watch for task order RFPs under the existing SETSS vehicle that align with digital, UX, or data analytics scope. Clarity24's NOAA relationship is the asset here. Avoid chasing the IDIQ prime unless a teaming partner with deep NOAA scientific credentials is in place.",
+        "recommendation": "Watch / Sub"
       }
     },
     {
@@ -1966,6 +2080,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "NOAA recompete of its Laboratory Communications support vehicle \u2014 likely covering internal communications, public affairs, digital communications, or science communications support across NOAA labs and research programs.",
+        "rex_take": "LCOMMS (Lab Comms) at NOAA is right in BLN24's lane if it's science communications, digital content, or public affairs support. NOAA is a past performance agency ($7M via Clarity24). Need to confirm scope before evaluating \u2014 \"LCOMMS\" is ambiguous.",
+        "watch_notes": "Pull the existing LCOMMS contract from USASpending to understand scope. If it's science comms/outreach, this is a genuine pursue. If it's IT/network comms infrastructure, pass.",
+        "recommendation": "Research scope \u2014 potential strong pursue"
       }
     },
     {
@@ -2027,6 +2147,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The Internal Revenue Service (IRS) has a requirement for brand name software license(s) and maintenance services. For information purposes, the supply/services described shall be in accordance with the Internal Revenue Service (IRS) Statement of Work Statement entitled, SonarQube Enterprise License and Maintenance.\n\nThe solicitation (RFQ 2032L225Q00001) will be available on or about July 25, 2025",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -2114,6 +2240,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "PRE-SOLICITATION SYNOPSIS\n\nINTERNAL REVENUE SERVICE\n\nRiverbed Brand Name Maintenance/License Renewal/Support\n\n\n\nThe objective of this requirement is to renew hardware and software maintenance and license for Riverbed Brand name products that were purchased in FY19-24 to support Cloud, Unified Access, Inflation Reduction Act (IRA) Network Modernization and Refresh of End-of-Life Equipment and Segme",
+        "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Web Design & Development. Past performance backs it up. Worth a closer look.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Strong"
       }
     },
     {
@@ -2175,6 +2307,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The Enterprise Infrastructure and Operations Directorate (EIOD) requires the renewal of the brand name product, Atlassian, suite of software license products to support the development, test, and production environments, within which EIOD develops applications for use within U.S. Customs and Border Protection (CBP) and other U.S. Government agencies. Atlassian is a suite of software licensed produ",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -2252,6 +2390,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Business process implementation create RFIs, acquisition plans, RFPs IGCE and other procurement sensitive information.",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -2335,6 +2479,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "See attachments Background\n The contract is issued by the Office of the Chief Information Officer (OCIO) and focuses on providing support for Enterprise Network/Security and Virtual Desktop Infrastructure (VDI) administration. \nThe goal of the contract is to ensure effective management, security, and operational continuity of VDI services, which are critical for government operations.\n\nWork Detail",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -2395,6 +2545,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Please see attached documents.\nRFIs: RFI1794346, RFI1794353, and RFI1794355.\nIMUA draft TO 4 has been posted.\nQuestions are due on 24 April 2026\nThis RFQ posting is informational only.  Proposals are not to be submitted at this time.  Draft documents are for vendors to review and submit questions.  A final RFQ will be posted at a later date requesting proposal submittals. \nPlease disregard contact",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: 8A.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -2480,6 +2636,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Please see attachments Background\n The Privacy and Civil Liberties Oversight Board (PCLOB) is an independent bipartisan agency within the executive branch that reviews actions taken by the executive branch to protect the nation from terrorism, ensuring that privacy and civil liberties are considered. \n\nThe goal of this contract is to obtain comprehensive cybersecurity support services through a Vi",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -2569,6 +2731,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The purpose of this project is to convene a summit in each of the ten (10) NHTSA regions for\npedestrian safety stakeholders, law enforcement, members of the court system, State Highway\nSafety Offices (SHSO), and each NHTSA Regional Office to discuss the pedestrian safety\nproblem, current traffic safety trends and emerging issues and possible solutions.\nDuring this summit, emerging pedestrian safet",
+        "rex_take": "BLN24 can cover: Public Outreach & Stakeholder Engagement. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Moderate"
       }
     },
     {
@@ -2657,6 +2825,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "See solicitation and reference. \n Background\n The contract is issued by the Naval Surface Warfare Center, Port Hueneme Division (NSWC PHD) with the objective of enhancing the Test and Evaluation (T&E) workforce's understanding of Program Management and Systems Engineering principles. The goal is to provide training that enables effective collaboration and contribution to development teams within t",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -2758,6 +2932,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This is a Combined Synopsis / Solicitation for Commercial Items prepared in accordance with the format in FAR Subpart 12.6 &ndash; Streamlined Procedures for Evaluation and Solicitation of Commercial Items &ndash; as supplemented with additional information included in this notice. This solicitation is a Request for Quotations (RFQ). The solicitation document and incorporated provisions and clause",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -2856,6 +3036,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "LATIN AMERICA AND THE CARIBBEAN: TRANSPORTATION INFRASTRUCTURE PROJECT SCOPING SERVICES \n\n\n\nSOLICITATION NUMBER:          1131PL26R0035\n\nISSUANCE DATE:                          April 13, 2026\n\nCLOSING DATE:                            May 11, 2026, 1:00 PM, Arlington, VA Time\n\n\n\nThis Request for Proposal was prepared in accordance with the format in Federal Acquisition Regulation (FAR) Subpart 12.6",
+        "rex_take": "BLN24 can cover: Due Diligence & Technical Advisory. Gap areas requiring teaming: IT Infrastructure & Telecommunications. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -2954,6 +3140,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This solicitation has been amended therefore please revise before submitting a quote.\n\nCombined Synopsis &ndash; Solicitation\n\nThis is a combined synopsis/solicitation for commercial services prepared in accordance with (IAW) part 12. This announcement constitutes the only solicitation. Offers are being requested and a separate written solicitation will not be issued. Solicitation number FA460826Q",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -3019,6 +3211,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "*Updated 04/14/2026: Amendment 0001 is hereby issued to update the Statement of Work (SOW) and provide responses to submitted questions. The proposal due date remains unchanged at 2:00 P.M. Eastern Time on April 22, 2026.\n\n**************************************************************************************\n\n*Updated 04/02/2026 to include the Question &amp; Answer (Q&amp;A) Form attachment for ea",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBP.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBP. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -3112,6 +3310,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "ENSURE TO REFER TO ATTACHMENTS\n\nTHIS SOURCES SOUGHT IS NOT A NOTICE OF SOLICITATION ISSUANCE. This is a special notice that includes a REQUEST FOR INFORMATION (RFI) issued solely for information and planning purposes; it does not constitute a Request for Quote (RFQ) or Proposal (RFP) or promise to issue a solicitation in the future. This notice does not commit the Government contractually for any",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -3194,6 +3398,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "THIS IS A COMBINED SYNOPSIS/SOLICITATION FOR COMMERCIAL ITEMS PREPARED IN ACCORDANCE WITH THE FORMAT IN FAR SUBPART 12.6, AS SUPPLEMENTED WITH ADDITIONAL INFORMATION INCLUDED IN THIS NOTICE. THIS ANNOUNCEMENT CONSTITUTES THE ONLY SOLICITATION; QUOTES ARE BEING REQUESTED AND A WRITTEN SOLICITATION WILL NOT BE ISSUED. THIS SYNOPSIS/SOLICITATION 1333MK26Q0057 CONSTITUTES A REQUEST FOR QUOTATION (RFQ)",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -3290,6 +3500,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "COMBINED SYNOPSIS/SOLICITATION\nAuke Bay Laboratory &ndash; Preventative Maintenance Services\n\n(i) This is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with part 12. This announcement constitutes the only solicitation. Offers are being requested and a separate written solicitation will not be issued.\nSolicitation 1333MF26Q0019 is issued as a",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -3372,6 +3588,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This is a blanket purchase agreement. The period of performance is 1 May 2026 through 30 April 2031.\n\nGeneral: This is a service contract to provide all necessary support to perform UPS service, maintenance, repairs and replacement/upgrade of outdated parts or equipment for the MTC FTIG.\n\nThe contractor shall provide 24/7/365 emergency repair services to address any unscheduled system failures.\n\nT",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -3467,6 +3689,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The USDA has a requirement for Retirement and Financial Literacy Training Content for the AgLearn Learning Management System. Training and use of this software will be utilized by all USDA agencies and potentially used by additional external Federal Agencies.   \n\nPlease see the attached Performance Work Statement.\n\nThis solicitation shall result in a single award, firm-fixed price contract.\n\nPleas",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -3572,6 +3800,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The Central Texas VA Health Care System (CTVAHCS) in Temple, Texas is seeking Service Disabled Veteran Owned Small Business (SDVOSB), Veteran Owned Small Business (VOSB), or Small Business sources capable of meeting the requirement listed below.  The acquisition will be accomplished using commercial item procedures in accordance with FAR Part 12.\n\nNOTE: TO QUALIFY SDVOSB AND VOSB VENDORS MUST BE C",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SDVOSBC. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -3668,6 +3902,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Scientific Automated -80&deg;C Ultra-Low Temperature (ULT) Freezer System Sources Sought Notice # PCA-NHLBI-03869\n\n\n\nContracting Office Address\n\nDepartment of Health and Human Services, National Institutes of Health, Office of Acquisitions, OA Office of the Director, OD 6701 Rockledge Drive, Room 537-S, Bethesda, MD, 20892.\n\nIntroduction\n\nThis is a notice issued on behalf of the National Institute",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -3763,6 +4003,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Project Title: Multi-Channel 12 GHz Microwave Synthesizer\n\nNotice ID: NB688000-26-01171\n\nNAICS Code: 334516 - Analytical Laboratory Instrument Manufacturing\n\nTHIS SOURCES SOUGHT IS NOT A REQUEST FOR QUOTATION.\n\nIt is a market research tool being used to determine potential and eligible business firms that can provide the product described herein prior to determining the method of acquisition.\n\nThe",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -3845,6 +4091,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with the format in the Federal Acquisition Regulation (FAR) subpart 12.6, as supplemented with additional information included in this notice. This announcement constitutes the only solicitation; proposals are being requested and a written solicitation will not be issued.\n\n1.  The solicit",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -3941,6 +4193,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "On behalf of Department of the Interior (DOI), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link i",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -4026,6 +4284,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "On behalf of Department of the Interior (DOI), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link i",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -4122,6 +4386,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "I. Introductory\n\nThis is a Sources Sought. This is NOT a solicitation for proposals, proposal abstracts, or quotations. The purpose of this Sources Sought is to obtain a knowledge and information on potential vendor interest for project planning purposes for a full maintenance agreement for the network server which provides subscriber and dependent coverage for claims status, submission of 837 cla",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -4227,6 +4497,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The U.S. Department of Education, Office of Elementary and Secondary Education, is conducting a Small Business Set-Aside market research effort to identify GSA Schedule 54151S vendors capable of providing management, Independent Verification and Validation (IV&V), and capital planning support for the Migrant Student Information Exchange (MSIX) system. This Sources Sought is not a request for propo",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -4295,6 +4571,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The main requirement is to provide one full-time Medical Emergency Manager in support of the MEDICAL COUNTER - CHEMICAL, BIOLOGICAL, RADIOLOGICAL &amp; NUCLEAR (MC-CBRN) program within AETC/SG in accordance with established program goals and objectives for medical emergency management. Please see the attached documents for details.\n Background\n The contract is issued by the Air Education and Train",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -4377,6 +4659,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The Department of State&rsquo;s (DoS), Bureau of Global Acquisitions on behalf of the Executive Secretariat (S/ES), ExecTech Office is seeking potential sources under either HubZone, WOSB or SDVOSB socioeconomic factor that are capable of providing a service to perform Information Technology Support Services (ITSS).\n\nPlease see the attached Sources Sought Notice-Information Technology Support Serv",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -4495,6 +4783,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The purpose of this procurement is to obtain the services of a contractor to provide verbatim transcripts, lists of recommendations, and meeting reports for two congressionally mandated advisory panels: the Medicare Advisory Panel on Clinical Diagnostic Laboratory Tests (CDLT) and the Medicare Advisory Panel on Hospital Outpatient Payment (HOP).\n Background\n The purpose of this procurement is to o",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -4601,6 +4895,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "NIGC IT Staffing Background\n The National Indian Gaming Commission (NIGC) is seeking IT staffing services to support its mission of regulating and overseeing the Indian gaming industry. The goal of this contract is to enhance the NIGC's operational capabilities and cybersecurity posture through the provision of qualified IT personnel.\n\nWork Details\n The contractor will be responsible for providing",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -4683,6 +4983,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Agency/Office: The U.S. Army Contracting Command-Detroit Arsenal (ACC-DTA), U.S. Army Intelligence and Security Command (INSCOM)\n\nSolicitation Number: W50NH9-26-R-A002\n\nRequirement: Intelligence and Automation Operations\n\nRequirement Description: The contractor shall provide all personnel, supervision, and non-personal services necessary to provide comprehensive operational intelligence integratio",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -4779,6 +5085,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "PRE-SOLICITATION NON-COMPETITIVE &ndash; \n\nNotice of Intent to Sole Source\n\n\n\tSOLICITATION NUMBER: PCAS 02668\n\n\n\n\n\n\tTITLE: CONSULTATION AND DATA STORAGE 26 000089\n\n\n\n\n\n\tRESPONSE DATE: MAY 3, 2026, 09:00AM\n\n\n\n\n\n\tPRIMARY POINT OF CONTACT: VISHNUVAJJALA HANUMANTH RAO\n\n\nEMAIL: VISHNUH@MAIL.NIH.GOV\n\n\n\n\n\tINTRODUCTION:\n\n\nTHIS IS A PRE-SOLICITATION NON-COMPETITIVE (NOTICE OF INTENT) SYNOPSIS TO AWARD A CO",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -4861,6 +5173,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "HUDL Sports Streaming Services, SSIS Background\n The Bureau of Indian Education (BIE) under the Department of the Interior (DOI) is seeking to procure a sports streaming service for varsity sports statistics and online viewing services, as required by the National Federation of State High School Associations (NFHS). The goal is to ensure digital records of all varsity sport activities and accurate",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -4979,6 +5297,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Electronic Records Management System (ERMS) Solutions\nThis is a Sources Sought Notice ONLY. This notice is issued solely for market research and acquisition planning purposes; it does not constitute a Request for Quote (RFQ), Invitation for Bid (IFB), or Request for Proposal (RFP), nor does it promise a future solicitation. Responses are strictly voluntary, and no reimbursement will be provided fo",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -5061,6 +5385,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The Department of Homeland Security (DHS), Homeland Security Investigations (HSI), Cyber Crimes Center (C3) Computer Forensics Unit (CFU) has a requirement to support the Treasury Computer Forensics Training Program (TCFTP) by purchasing Forensic Technology Custom Training Bundles.",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -5154,6 +5484,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "On behalf of Air Force (USAF), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browse",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -5249,6 +5585,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This is a non-personal service requirement for (1) regulatory consultation, (2) regulatory oversight, and (3) Contract Research Organization support to include administrative, financial, clinical, nonclinical, manufacturing, and regulatory support for medical products to include but not limited to: drugs, biologics, medical devices, and combination products within an integrated product team framew",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -5367,6 +5709,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "PROJECTED CMMC LEVEL REQUIREMENT\nLevel 2 (Self)\nTECHNOLOGY AREAS\nSensors\nMODERNIZATION PRIORITIES\nTrusted AI and Autonomy\nKEYWORDS\nScene generation; artificial intelligence; radio frequency; electro optical; infrared; multimodal; synthetic data; geo-specific\nOBJECTIVE\nThe objective is to develop a capability for generating geo-specific, sensor-independent scenes for multimodal (RF and EO/IR) synth",
+        "rex_take": "BLN24 can cover: Accessibility / Section 508 Compliance, Cloud Migration & Infrastructure. Gap areas requiring teaming: Space / Defense / ITAR. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -5450,6 +5798,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "PROJECTED CMMC LEVEL REQUIREMENT\nLevel 2 (Self)\nTECHNOLOGY AREAS\nNone\nMODERNIZATION PRIORITIES\nAdvanced Materials\n|\nDirected Energy (DE)\n|\nSpace Technology\nKEYWORDS\nSol-Gel Glasses; Laser protection; Frequency-agile laser; Dazzlers; Mid-Wave Infrared; Long-Wave Infrared\nOBJECTIVE\nDevelop Mid-Wave Infrared/Long-Wave Infrared (MWIR/LWIR) nonlinear optical (NLO) dyes embedded in sol-gel glass operati",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -5515,6 +5869,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "PROJECTED CMMC LEVEL REQUIREMENT\nLevel 2 (Self)\nTECHNOLOGY AREAS\nNone\nMODERNIZATION PRIORITIES\nAdvanced Materials\n|\nHuman-Machine Interfaces\n|\nSustainment & Logistics\nKEYWORDS\nDigital Human Modeling; Human Systems; Protective Clothing; Protective Equipment; Cold Weather Gear; Aircrew\nOBJECTIVE\nDevelop an advanced suite of parametric human modeling tools incorporating USN/USMC aircrew anthropometri",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -5575,6 +5935,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "FY2026 Atlassian POP: 8/28/2026 - 8/27/2027",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: TBD.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -5640,6 +6006,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Provide the NOAA Fisheries Alaska Region with fisheries disaster assistance, including program management support, providing initial review and analysis of disaster assistance requests, serving as a liaison with requestors, and supporting the submission and documentation/tracking processes.",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: TBD.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -5735,6 +6107,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The purpose of the calculator is to electronically calculate various types of employee retirement benefits, retirement case management, and provide metrics/reports on benefits under the Civil Service Retirement System (CSRS), Civil Service Retirement System Offset (CSRS-Offset), Federal Employees Retirement System (FERS/FERS-RAE/FERS-FRAE), the Federal Thrift Savings Plan (TSP) and the Social Secu",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -5832,6 +6210,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The Government intends to procure spare RF Digital Attenuator via a 5-year IDIQ to support the Radar Operations Center, the National Reconditioning Center and the National Logistics Support Center in order to support and sustain the NEXRAD Severe Weather Radar.",
+        "rex_take": "BLN24 can cover: Accessibility / Section 508 Compliance. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -5916,6 +6300,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Salesforce Customer Relationship Management (CRM) Licenses",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -5999,6 +6389,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The contract will convene a group of experts to identify both the near term and overarching impacts and opportunities for use of generative AI and LLMs in the development and implementation of building codes.",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -6081,6 +6477,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "ServiceNow Licensing",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -6141,6 +6543,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "FY26 Incremental Funding $3,000,000.00October 2026",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: TBD.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -6201,6 +6609,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "FY26 Incremental Funding $0.00 OY",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: TBD.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -6331,6 +6745,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "With more than 60,000 employees, U.S. Customs and Border Protection, CBP, is one of the world's largest law enforcement organizations and is charged with keeping terrorists and their weapons out of the U.S. while facilitating lawful international travel and trade. In compliance with the Office of Management and Budget (OMBs) Cloud First guidance, Salesforce has been an instrumental platform for OI",
+        "rex_take": "BLN24 can cover: Customer Experience (CX) Strategy, Cloud Migration & Infrastructure. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust, CRM / Salesforce Implementation. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -6415,6 +6835,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The USCG, Aviation Logistics Center (ALC), BOD provides centralized logistics support for all USCG aviation missions. As the sole industrial complex for USCG aviation, ALC provides depot level maintenance, engineering, supply, procurement, acquisition, and information services. The BOD is a shared services division that is comprised of five teams: COR Team, Logistics Support Team, Production Plann",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: FORECAST.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -6475,6 +6901,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "FY2027 Winter Drydock Repair Project for NOAAS Thomas Jefferson",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: TBD.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -6541,6 +6973,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The Space Based Environmental Data Indefinite Delivery, Indefinite Quantity (SBEM IDIQ) is the follow-on acquisition for the National Oceanic and Atmospheric Administration\u2019s (NOAA) National Environmental Satellite, Data, and Information Service (NESDIS) Commercial Data Program (CDP) Radio Occultation Data Buy 2 IDIQ. Its primary objective is to acquire commercially-sourced space-based environment",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -6607,6 +7045,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The National Oceanic and Atmospheric Administration (NOAA), National Weather Service (NWS) requires Tsunami Warning System Information System Security Officer (ISSO) services.\n\nAll questions must be submitted via the Question Submission Form no later than 2:00 p.m. Pacific Time on April 27, 2026. The Government will only respond to questions and comments submitted through the Google Form. Submit o",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -6677,6 +7121,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This IDIQ will provide a broad range of Commercial Space Based Environmental Data (SBEM) to enable improved operational purchases and data evaluations for NOAA.  NOAA will have the opportunity to purchase both pilot data for testing and evaluation as well as operational data for continuity of operations. The NESDIS Commercial Space-Based Environmental Monitoring (SBEM) Data Buy IDIQ, under ProTech",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -6764,6 +7214,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This IDIQ will provide a broad range of Commercial Space Based Environmental Data (SBEM) to enable improved operational purchases and data evaluations for NOAA.  NOAA will have the opportunity to purchase both pilot data for testing and evaluation as well as operational data for continuity of operations. The NESDIS Commercial Space-Based Environmental Monitoring (SBEM) Data Buy IDIQ, under ProTech",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -6877,6 +7333,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This is a SOURCES SOUGHT announcement, market survey for information only, to be used for preliminary planning purposes. No quotes are being requested or accepted with this synopsis. The U.S. Army Corps of Engineers (USACE), Army Geospatial Center (AGC) has been tasked to solicit for and award a contract for technical support services to the Headquarters, Department of the Army (HQDA), Office of t",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: WOSB. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -6955,6 +7417,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "On behalf of Department of Commerce (DOC), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -7015,6 +7483,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "On behalf of Navy, GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browser.\n\nOnly res",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -7092,6 +7566,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Eastern Oklahoma VA Health Care System (EOVAHCS) requires a contractor to supply and install an Elopement Alarm System to notify nursing staff of monitored patients leaving that are identified at elevated risk for elopement at the Tulsa VA Medical Center. The contractor will be required to supply and install all components and to monitor 8 doors on 4 floors and 16 annunciating stations including w",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -7106,10 +7586,10 @@
       "due": "2026-04-25",
       "val_low": 100000,
       "val_high": 350000,
-      "description": "Implementation plan-ShakeAlert Earthquake Early Warning System in Nevada_amd 1, Q&A",
+      "description": "Implementation plan-ShakeAlert Earthquake Early Warning System in Nevada_amd 2, Q&A",
       "summary": "Background\n The U.S. Geological Survey (USGS) is seeking to engage a firm to develop a Technical Implementation Plan for the ShakeAlert Earthquake Early Warning System in Nevada. This initiative aims to enhance earthquake preparedness and response capabilities in the state, which is part of a broader effort to mitigate the impact of earthquakes across the United States. \n\nThe ShakeAlert system is already operational in California, Oregon, and Washington, and this contract will help expand its capabilities to Nevada, where significant earthquake risks exist.\n\nWork Details\n The contractor will p",
       "path": "https://www.highergov.com/contract-opportunity/b-implementation-plan-shakealert-earthquake-ew-140g0326q0073-k-c572e",
-      "source_path": "https://sam.gov/opp/9751416971bb45dd9ccbe7f16e38d200/view",
+      "source_path": "https://sam.gov/opp/4e3614c8357d47e89f6c1bfb0c32a2cb/view",
       "contact_email": "thuot@usgs.gov",
       "contact_name": "Tracy Huot",
       "is8a": false,
@@ -7202,6 +7682,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Implementation plan-ShakeAlert Earthquake Early Warning System in Nevada_amd 2, Q&A Background\n The U.S. Geological Survey (USGS) is seeking to engage a firm to develop a Technical Implementation Plan for the ShakeAlert Earthquake Early Warning System in Nevada. This initiative aims to enhance earthquake preparedness and response capabilities in the state, which is part of a broader effort to miti",
+        "rex_take": "BLN24 can cover: Accessibility / Section 508 Compliance, Survey Design & Research Methodology. Gap areas requiring teaming: IT Infrastructure & Telecommunications. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -7262,6 +7748,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "SEE ATTACHED DOCUMENTS\nIMUA TO 1 DRAFT has been posted - Questions are due 24 April 2026.\n\nRFIs 1794346 1794353 AND 1794355 Background\n The Integrated Mission & Unified Acquisition (IMUA) Task Order 1 is issued by the National Geospatial-Intelligence Agency (NGA). The goal of this contract is to provide comprehensive GEOINT ground support services, which are essential for the agency's mission of d",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -7385,6 +7877,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Request for Quote (RFQ) #: 36C25926Q0350\nRMR VAMC Pathology Service Dictation Software License-Brand Name or Equal To Dragon Medical\nThis is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with Revolutionary FAR Overhaul (RFO) Part 12. This announcement constitutes the only solicitation. Offers are being requested and a separate written solici",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -7473,6 +7971,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This acquisition is for the purchase of radios, consolette's and other radio accessories to support its mission. The Blanket Purchase Agreement (BPA) will facilitate the recurring procurement of these critical communication tools, ensuring law enforcement personnel have reliable access to secure tactical wireless communication. Given the rapid advancement of IT and radio technology, certain produc",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -7533,6 +8037,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The purpose of this requirement is to provide a service at Defense Finance and Accounting Service, Indianapolis, IN with on-site degaussing and shredding of 1353 Tapes and 7891 Hard Drives.\n Background\n The Defense Finance and Accounting Service (DFAS) is issuing a requirement for secure, on-site destruction of Government-owned media, specifically hard drives and magnetic tapes. \nThe goal of this",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -7661,6 +8171,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The purpose of this contract is to establish Project SAFEHAVEN analytic support services to the Homeland Security Task Force (HSTF). The Homeland Security Task Force (HSTF) National Coordination Center (NCC) requires dedicated analytic support to sustain ongoing homeland security operations, including support to ICE Homeland Security Investigations (HSI) and broader mission partners. The Governmen",
+        "rex_take": "BLN24 can cover: Data Analytics & Business Intelligence, Due Diligence & Technical Advisory. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust, IT Infrastructure & Telecommunications. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -7738,6 +8254,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "On behalf of Department of Homeland Security (DHS), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below l",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -7798,6 +8320,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "THIS IS NOT A REQUEST FOR COMPETITIVE OFFERS\u00c2\u00a0\nPhiladelphia VA Medical Center\u00c2\u00a0\nThis is a Pre-Solicitation Notice for the Department of Veterans Affairs, Network Contracting Office (NCO) 4, to provide\u00c2\u00a0mobile medical carts/workstations on wheels. This equipment requirement is for the\u00c2\u00a0Philadelphia VA Medical Center\u00c2\u00a0located\u00c2\u00a0in\u00c2\u00a0Philadelphia, PA\u00c2\u00a016602. The full solicitation will be released to NA",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -7859,6 +8387,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with part 12. This announcement constitutes the only solicitation. Offers are being requested and a separate written solicitation will not be issued.\n\nSolicitation number 1332KP26R0016 is issued as a request for proposal (RFP) to acquire available commercial multi-spectral imagery observa",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -7920,6 +8454,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Amendment 2: Added Appendices J &amp; K under the Attachments section.\n\nAmendment 1: Added Appendices A - I separately under the Attachments section.\n\nThe Advanced Research Projects Agency for Health (ARPA-H) is posting this Innovative Solutions Opening (ISO) in support of the One Comprehensive Universal Radiotherapy for Everyone (1-CURE) Program. ARPA-H anticipates that multiple Other Transaction",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -8034,6 +8574,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "PROJECTED CMMC LEVEL REQUIREMENT\nLevel 1\nTECHNOLOGY AREAS\nHuman Systems\n|\nSensors\nMODERNIZATION PRIORITIES\nHuman-Machine Interfaces\n|\nIntegrated Sensing and Cyber\n|\nTrusted AI and Autonomy\nKEYWORDS\nUAS, UAV, Payloads, Modularity, Communications, Electronic Warfare, Signals Intelligence, Cargo\nOBJECTIVE\nThe objectives for this effort are to enhance and refine various payload types and integrate the",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -8095,6 +8641,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "With the buildup for group quarters and address frames Geo is looking for various data sources to perform geo clean up in the math. Hotels and motels are transitory locations for some of the population and in 2020 we purchased a commercial data set of all hotels and motels in the country to get a hold of those transitory locations to help with more accurate enumeration efforts.  The list in 2020 w",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -8156,6 +8708,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "1332KP23DNEEP0001",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -8237,6 +8795,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This requirement is to improve drainage, removal of excess vegetation for vehicular travel on the access road to the National Weather Service (NWS) Next Generation Radar (NEXRAD) site located near Battle Mountain, Nevada. The road is approximately 11.7 miles and is in need of rehabilitation to a state that allows for proper water runoff and safe travel.",
+        "rex_take": "BLN24 can cover: Accessibility / Section 508 Compliance. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Moderate"
       }
     },
     {
@@ -8315,6 +8879,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The DOC is seeking a third-party vendor to deliver PP&B services on behalf of the Office of Human Resources Management (OHRM) to the majority of DOC bureaus and the Office of the Secretary (OS). The support would include supporting the transition of services, implementation, operations and ongoing enhancements.",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -8376,6 +8946,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "NBFS Labor",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -8437,6 +9013,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Thomas Jefferson Tailshaft LLTM Procurement for FY2027 Drydock",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -8498,6 +9080,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Testing purposes",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -8601,6 +9189,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "NOAA/NMFS seeks a qualified GSA Multiple Award Schedule contractor under SIN 561920 and/or 561510 to provide American Fisheries Advisory Committee (AFAC) Logistics, Travel, and Meeting Support. This requirement is a 100% small business set-aside and contemplates award of one order with a base period and four option periods.\n\nThe contractor shall provide end-to-end planning, coordination, and admin",
+        "rex_take": "BLN24 can cover: Data Analytics & Business Intelligence. Gap areas requiring teaming: IT Infrastructure & Telecommunications. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -8710,6 +9304,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Purpose:\nThe U.S. Department of Education (ED), Office of Finance and Operations (OFO), is conducting market research to determine whether sufficient small business capability exists to perform all requirements of the DRAFT Statement of Work (SOW) for Virtual and Hybrid Event Production services with minimal subcontracting. This RFI is issued solely for information and planning purposes and does n",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -8819,6 +9419,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Combined Synopsis/Solicitation Notice\n\nCombined Synopsis/Solicitation Notice\n\nPage 3 of 12\nCombined Synopsis/Solicitation Notice\n*= Required Field\nCombined Synopsis/Solicitation Notice\n\nPage 1 of 12\nSUBJECT*\nTrackCore RFID System   Cabinets, Cleveland   \n\nGENERAL INFORMATION\nCONTRACTING OFFICE S ZIP CODE*\n44131\nSOLICITATION NUMBER*\n36C25026Q0491\nRESPONSE DATE/TIME/ZONE\n04-23-2026 3:00 EASTERN TIME",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -8916,6 +9522,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "WEATHER AND SEA STATE SYSTEMS\nREQUEST FOR INFORMATION \n\n1. Description\n\n1.1 The 96th Test Systems Squadron (TSSQ), is currently conducting market research seeking capabilities statements from potential sources, including small businesses (SB) and large businesses that can provide procurement and sustainment support for Weather and Sea State Systems capable of meeting the Government&rsquo;s Weather",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -9033,6 +9645,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "TRDM provides a single distribution source of enterprise reference data for enhancing C2, transportation, logistics, deployment, and financial systems&rsquo; reference data management and functional data collection. The scope of TRDM requires the contractor to perform current technical &amp; Cybersecurity operations, maintenance, and distribution of the TRDM system and data while modernizing the a",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -9131,6 +9749,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "PROJECTED CMMC LEVEL REQUIREMENT\nLevel 2 (Self)\nTECHNOLOGY AREAS\nNone\nMODERNIZATION PRIORITIES\nAdvanced Computing and Software\nKEYWORDS\nVirtual Reality (VR); Ship Design; 3D Software; CAD Models; Ship Construction; Self-Directed Navigation in VR\nOBJECTIVE\nDevelop software for a commercially available Virtual Reality (VR) headset to view new ship construction models in an immersive environment.\nITA",
+        "rex_take": "BLN24 can cover: Cloud Migration & Infrastructure. Gap areas requiring teaming: Space / Defense / ITAR. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -9256,6 +9880,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "PROJECTED CMMC LEVEL REQUIREMENT\nLevel 2 (Self)\nTECHNOLOGY AREAS\nNone\nMODERNIZATION PRIORITIES\nAdvanced Computing and Software\n|\nHuman-Machine Interfaces\n|\nIntegrated Sensing and Cyber\nKEYWORDS\nSONAR; Array Signal Processing; Surveillance Automation; Acoustic Detection; Acoustic Target Classification; Sonar Operator Workload\nOBJECTIVE\nDevelop an auto-focus signal processing capability to optimize",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -9382,6 +10012,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "PROJECTED CMMC LEVEL REQUIREMENT\nLevel 2 (Self)\nTECHNOLOGY AREAS\nNone\nMODERNIZATION PRIORITIES\nAdvanced Computing and Software\n|\nSustainment & Logistics\n|\nTrusted AI and Autonomy\nKEYWORDS\nTropical cyclone; typhoon; Automated Tropical Cyclone Forecasting; ATCF; user interface; algorithms; modular; refactor; cloud; database; container; Application Programming Interface; API; graphical user interface",
+        "rex_take": "BLN24 can cover: UX/UI Design & Prototyping, Web Design & Development. Gap areas requiring teaming: IT Infrastructure & Telecommunications, Space / Defense / ITAR. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -9482,6 +10118,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This notice is for Port and Harbor support in Kodiak, AK.FA SOW has been updated.All other terms and conditions remain the same.This is a Combined Synopsis/Solicitation for Commercial Items prepared in accordance with the format in FAR SUBPART 12.6, as supplemented with additional information included in this notice.This announcement constitutes the only solicitation; quotes are being requested an",
+        "rex_take": "BLN24 can cover: Accessibility / Section 508 Compliance. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -9582,6 +10224,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "PROJECTED CMMC LEVEL REQUIREMENT\nLevel 2 (Self)\nTECHNOLOGY AREAS\nNone\nMODERNIZATION PRIORITIES\nHuman-Machine Interfaces\n|\nTrusted AI and Autonomy\nKEYWORDS\nbehavior change; adaptive systems; human performance; sleep and fatigue; dynamical systems modeling\nOBJECTIVE\nDevelop software for personalized and adaptive behavioral interventions (i.e., nudges) using commercial off-the-shelf (COTS) wearable h",
+        "rex_take": "BLN24 can cover: Accessibility / Section 508 Compliance, Behavioral Science & Research. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Moderate"
       }
     },
     {
@@ -9642,6 +10290,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "THIS SOURCES SOUGHT IS NOT A REQUEST FOR QUOTATION.\n\nIt is a market research tool being used to determine potential and eligible business firms that can provide the product described herein prior to determining the method of acquisition.\n\nThe National Institute of Standards &amp; Technology (NIST) seeks information on vendors that can provide Diode-Pumped Frequency-Doubled Nd:YVO4-Laser per the sp",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFI.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -9738,6 +10392,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This is a market survey for a Tactical Intelligence Platform for International Travel. This is not a screening information request or request for a proposal of any kind. The FAA is not seeking or accepting unsolicited proposals. Vendors will not be notified of the results of this market survey or the results of the information submitted.\n\nThe purpose of this market survey is to solicit statements",
+        "rex_take": "BLN24 can cover: Survey Design & Research Methodology. Gap areas requiring teaming: Space / Defense / ITAR. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFI.",
+        "recommendation": "Weak / JV"
       }
     },
     {
@@ -9798,6 +10458,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "NOAA Ship FERDINAND R. HASSLER Propeller Procurement",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: TBD.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -9908,6 +10574,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Amendment 0001 to solicitation 1333MK26Q0056 is for the following:Provide Answers to questions from Vendors:Q1. Do you need just the handheld or an entire system (handheld, probe, and rod)?A1.  Entire system, should include CastAway-CTD: Conductivity, Temperature, and Depth instrument castable to depths up to 100m. Features built-in LCD display, Bluetooth communications, and internal GPS. Outputs",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -9993,6 +10665,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "THIS IS A COMBINED SYNOPSIS/SOLICITATION FOR COMMERCIAL ITEMS PREPARED IN ACCORDANCE WITH THE FORMAT IN FAR SUBPART 12.6, AS SUPPLEMENTED WITH ADDITIONAL INFORMATION INCLUDED IN THIS NOTICE. THIS ANNOUNCEMENT CONSTITUTES THE ONLY SOLICITATION; QUOTES ARE BEING REQUESTED AND A WRITTEN SOLICITATION WILL NOT BE ISSUED. THIS SYNOPSIS/SOLICITATION 1333MK26Q0053 CONSTITUTES A REQUEST FOR QUOTATION (RFQ)",
+        "rex_take": "BLN24 can cover: Survey Design & Research Methodology. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Moderate"
       }
     },
     {
@@ -10070,6 +10748,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The Bureau of Reclamation is seeking information in response to specific market research questions. This RFI includes a Word document containing our questions as well as a draft Performance Work Statement (PWS). This is not a solicitation, and we are not accepting formal quotes at this time. We appreciate any information you can provide to help us refine our requirements and finalize our solicitat",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -10172,6 +10856,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Reasonable Accommodation Reviews\n\n1.0\tGeneral Information:  The U.S. International Development Finance Corporation (DFC) is financing solutions to the most critical challenges facing today's developing world, making the U.S. stronger, safer, and more prosperous. Working with the private sector, we mobilize private capital to invest in projects that build critical infrastructure, expand access to t",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -10232,6 +10922,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The contractor shall provide all personnel, equipment, tools, materials, supervision, and quality control necessary to provide Procurement Analyst Construction contracting support services to 127th Mission Support Contracting (MSC).\n\nDetailed attention is required to ensure all documentation is complete and submitted in a timely manner for consideration. The due date for quotes is 30 Apr 2026, 2pm",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -10309,6 +11005,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The contractor shall provide a comprehensive marketing package to the California Army National Guard (CAARNG) for recruitment and retention goals. The contractor shall provide services to generate qualified recruitment leads, offer a customized lead capture and nurturing solution, and support the Recruiting and Retention Battalion (RRB) leadership, recruiters, and marketing staff. Background\n The",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -10369,6 +11071,12 @@
             "score": 3
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The Oklahoma Air National Guard recruiting office is purchasing seven full-vehicle wraps, two for mini-vans and five for sedans, which will be used as a recruiting marketing tool to raise awareness of the Oklahoma Air National Guard as described in the Statement of Work. \n Background\n The Oklahoma Air National Guard recruiting office is purchasing seven full-vehicle wraps, two for mini-vans and fi",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -10447,6 +11155,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "We must have a vessel contract in place to turn around and conduct our passive acoustic monitoring work in the western North Atlantic region. If not awarded, we will be unable to both retrieve over 1 million dollars in equipment currently deployed, as well as lose invaluable data that is part of long-term monitoring efforts for species we are mandated to monitor.",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -10510,6 +11224,12 @@
             "score": 5
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The Navy is renovating the ADM Baker Pool Complex to meet high demand and ensure safety. This project includes upgrading the main pool, converting a wading pool into a splash pad, and renovating the snack bar and locker room\n Background\n The Navy is undertaking a renovation of the ADM Baker Pool Complex to address high demand and ensure safety. \nThis project is part of the mission of the CNIC Faci",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -10620,6 +11340,12 @@
             "score": 4
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "DISCLAIMER\nTHIS IS A SOURCES SOUGHT ANNOUNCEMENT ONLY.  THIS ANNOUNCEMENT DOES NOT CONSTITUTE A COMMITMENT BY THE GOVERNMENT. ALL INFORMATION SUBMITTED IN RESPONSE TO THIS ANNOUNCEMENT IS VOLUNTARY AND THE GOVERNMENT WILL NOT PAY FOR INFORMATION REQUESTED NOR WILL IT COMPENSATE ANY RESPONDENT FOR ANY COST INCURRED IN DEVELOPMENT INFORMATION PROVIDED TO THE GOVERNMENT. THIS IS NOT A REQUEST FOR PRO",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFI.",
+        "recommendation": "Pass"
       }
     },
     {
@@ -10684,6 +11410,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "AMENDMENT 0002 TO SOLICITATION 1333MK26Q0031This Amendment 0002 is issued to update Solicitation 1333MK26Q0031 as follows:Local Port Agent Information RequirementAll vendors submitting a quote shall provide the following information regarding the local port agent they intend to partner with for performance of this requirement:1. Name of the Local Port Agent company performing the work 2. Physical",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     },
     {
@@ -10748,6 +11480,12 @@
             "score": 2
           }
         ]
+      },
+      "rex_analysis": {
+        "what_they_need": "AMENDMENT 0002 TO SOLICITATION 1333MK26Q0034\n\nThis Amendment 0002 is issued to update Solicitation 1333MK26Q0034 as follows:\n\nThe Government is requesting Local Port Agent Information.\n\nAll vendors submitting a quote shall provide the following information regarding the local port agent they intend to partner with for performance of this requirement:\n\n1. Name of the Local Port Agent company perfor",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFP.",
+        "recommendation": "Review Needed"
       }
     }
   ]
