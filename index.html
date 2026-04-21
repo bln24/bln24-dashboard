@@ -636,7 +636,8 @@ function renderOppCard(i,o){
     // Matched lanes (capability proof)
     (o.matched_lanes&&o.matched_lanes.length?'<div style="margin-bottom:8px">'+o.matched_lanes.map(l=>'<span style="display:inline-block;background:#EFF6FF;color:#1D4ED8;border-radius:4px;padding:2px 8px;font-size:.67rem;font-weight:700;margin:0 4px 4px 0">✓ '+l+'</span>').join('')+'</div>':'')+
     '<div class="opp-why">'+((o.win_reasons||[]).slice(0,4).map(r=>'<div style="margin-bottom:4px;font-size:.73rem">→ '+r+'</div>').join('') || '<div style="color:var(--grey);font-size:.73rem">No capability lane match — review before pursuing.</div>')+'</div>'+
-    (o.summary?'<div style="font-size:.72rem;color:var(--grey);margin-bottom:10px;line-height:1.5">'+o.summary.substring(0,200)+(o.summary.length>200?'…':'')+'</div>':'')+
+    // Show AI summary if available, otherwise description excerpt
+    ((o.summary||o.description)?'<div style="font-size:.73rem;color:#374151;margin-bottom:10px;line-height:1.6;border-left:3px solid var(--border);padding-left:10px">'+(o.summary||o.description||'').substring(0,280)+((o.summary||o.description||'').length>280?'…':'')+'</div>':'')+
     '<div class="opp-actions">'+
     (status==='approved'?'<span class="opp-status-done status-approved">✓ Approved — In Asana</span>':
      status==='passed'?'<span class="opp-status-done status-passed">✕ Passed</span>':
@@ -668,10 +669,15 @@ function showOppModal(i){
     ((o.matched_lanes&&o.matched_lanes.length)?'<div style="margin:12px 0 6px;font-size:.7rem;font-weight:700;color:#1D4ED8">Matched Capability Lanes:</div><div style="margin-bottom:10px">'+o.matched_lanes.map(l=>'<span style="display:inline-block;background:#EFF6FF;color:#1D4ED8;border-radius:4px;padding:3px 10px;font-size:.72rem;font-weight:700;margin:0 4px 4px 0">✓ '+l+'</span>').join('')+'</div>':'')+
     (reasons?'<div style="margin:8px 0 6px;font-size:.7rem;font-weight:700">Full Alignment Reasoning:</div><ul style="padding-left:18px;line-height:2">'+reasons+'</ul>':'No capability match found — verify before pursuing.')+
     (o.summary?'<div style="margin:12px 0 5px;font-size:.7rem;font-weight:700">AI Summary:</div><div style="font-size:.75rem;color:var(--grey);line-height:1.6;background:var(--grey-light);padding:10px 12px;border-radius:6px">'+o.summary+'</div>':'')+
+    // Full description
+    (o.description&&o.description.length>50?'<div style="margin:14px 0 5px;font-size:.7rem;font-weight:700">Full Scope Description:</div><div style="font-size:.74rem;color:var(--black);line-height:1.7;background:var(--grey-light);padding:12px 14px;border-radius:6px;max-height:300px;overflow-y:auto;white-space:pre-wrap">'+o.description+'</div>':'')+ 
+    // Contact
+    (o.contact_name||o.contact_email?'<div style="margin:12px 0 4px;font-size:.7rem;font-weight:700">Point of Contact:</div><div style="font-size:.74rem;color:var(--grey)">'+[o.contact_name,o.contact_email].filter(Boolean).join(' · ')+'</div>':'')+ 
     '<div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">'+
-    (o.path?'<a href="'+o.path+'" target="_blank" style="font-size:.73rem;color:var(--blue);font-weight:600">View on HigherGov ↗</a>':'')+
-    '<a href="https://sam.gov/search/?keywords='+encodeURIComponent(o.title||'')+'" target="_blank" style="font-size:.73rem;color:var(--grey);font-weight:600">Search SAM.gov ↗</a>'+
-    (o.asana_task_gid?'<a href="https://app.asana.com/0/'+o.asana_task_gid+'" target="_blank" style="font-size:.73rem;color:#7C3AED;font-weight:600">View Asana Task ↗</a>':'')+
+    (o.source_path?'<a href="'+o.source_path+'" target="_blank" style="font-size:.73rem;color:var(--green);font-weight:700;background:var(--green-light);padding:5px 12px;border-radius:5px">View Full Solicitation ↗</a>':'')+
+    (o.path?'<a href="'+o.path+'" target="_blank" style="font-size:.73rem;color:var(--blue);font-weight:600">HigherGov ↗</a>':'')+
+    '<a href="https://sam.gov/search/?keywords='+encodeURIComponent(o.title||'')+'" target="_blank" style="font-size:.73rem;color:var(--grey);font-weight:600">SAM.gov ↗</a>'+
+    (o.asana_task_gid?'<a href="https://app.asana.com/0/'+o.asana_task_gid+'" target="_blank" style="font-size:.73rem;color:#7C3AED;font-weight:600">Asana Task ↗</a>':'')+
     '</div>',
     'HigherGov · Federal opps only · Scored vs BLN24 proposals & past performance');
 }

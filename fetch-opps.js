@@ -215,7 +215,9 @@ function scoreOpp(o) {
   const sa = (o.set_aside || '').toLowerCase();
   const title = (o.title || '').toLowerCase();
   const summary = (o.summary || '').toLowerCase();
-  const combined = title + ' ' + summary;
+  const description = (o.description || '').toLowerCase();
+  // Use full description for matching — much richer signal than title/summary alone
+  const combined = title + ' ' + summary + ' ' + description;
   let score = 0;
   const reasons = [];
   const matchedLanes = [];
@@ -458,8 +460,15 @@ async function main() {
           type: otype, noticeCategory, set_aside: sa, searchLabel: search.label,
           posted: r.posted_date || '', due,
           val_low: vl, val_high: vh,
-          summary: (r.ai_summary || '').substring(0, 400),
+          // Full description text for deeper scope analysis
+          description: (r.description_text || '').substring(0, 2000),
+          summary: (r.ai_summary || '').substring(0, 600),
           path: r.path || '',
+          // Source path = actual SAM.gov or agency solicitation URL
+          source_path: r.source_path || '',
+          // Contact info
+          contact_email: (r.primary_contact_email || {}).contact_email || '',
+          contact_name: (r.primary_contact_email || {}).contact_name || '',
           is8a: sa.toLowerCase().includes('8a') || sa.toLowerCase().includes('8(a)'),
           isFullOpen,
           ericAlso: search.ericAlso || false,
