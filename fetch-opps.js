@@ -5,16 +5,14 @@ const path = require('path');
 
 const HG_KEY = '1a262cdcd25f40fba31836526d6e12b1';
 const SEARCHES = [
-  // Rex's searches
-  { id: 'Iup74Uz07U7NNMzBgoOGC', label: 'Brian Search (Updated)', ericAlso: false },
-  // Eric's existing HigherGov saved searches (marked ericAlso: true)
-  { id: 'c-DVvbqbEWlzb-MHZ3JNR',    label: 'CDC 8(a)',                  ericAlso: true },
-  { id: '9O8IE4AuzgLjT6aQtZjHy',    label: 'Census Opps (BLN NAICS)',  ericAlso: true },
-  { id: 'FRacCgvvUr69AzRneQauN',    label: 'NOAA General',              ericAlso: true },
+  // Brian's primary NAICS-based search
+  { id: 'Iup74Uz07U7NNMzBgoOGC', label: "Brian's Search", ericAlso: false },
+  // Agency-specific supplemental searches (Eric's)
+  { id: '9O8IE4AuzgLjT6aQtZjHy',    label: 'Census Opps',              ericAlso: true },
   { id: 'E2rJZOxslwGCLQi3m7VlY',    label: 'Commerce Opportunities',   ericAlso: true },
   { id: 'bfIczPCqwFX0CqfQBdqwV',    label: 'IRS & Treasury',            ericAlso: true },
   { id: '0V6NAggtyNTUw6GGsmk9e',    label: 'IRS Opportunities',         ericAlso: true },
-  { id: 'QZWyCUILaOqccWDMKmW-z',    label: 'All Agencies',              ericAlso: true },
+  // Removed: CDC 8(a) (0 results), NOAA General (too broad/noisy), All Agencies (too broad/noisy)
 ];
 const DASHBOARD_DIR = '/Users/t24/Desktop/T24/dashboard';
 const OUT_FILE = path.join(DASHBOARD_DIR, 'opps.json');
