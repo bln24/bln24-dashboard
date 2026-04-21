@@ -436,6 +436,7 @@ window.addEventListener('DOMContentLoaded',function(){
   if(sessionStorage.getItem('bln24_auth')==='9025'){
     document.getElementById('auth').classList.add('hidden');
     loadAll();loadOpps();renderStatic();
+    syncAsanaTasks();
   }
 });
 
@@ -455,6 +456,25 @@ const SO=[38,39,42,138,195];
 let DATA=[];
 const ASANA_PROJECT='https://app.asana.com/0/1214145572732999';
 const ASANA_SECTION_APPROVED='https://app.asana.com/0/1214145572732999/list';
+const ASANA_PROJECT_GID='1214145572732999';
+// Asana section GIDs
+const ASANA_SECTIONS={
+  picks:'1214145584685077',
+  approved:'1214145584636985',
+  proposal:'1214145581449165',
+  submitted:'1214145584686432',
+  won:'1214145482012734',
+  passed:'1214145482012862'
+};
+const ASANA_SECTION_LABELS={
+  '1214145584685077':"Rex's Picks",
+  '1214145584636985':'Approved — Active Capture',
+  '1214145581449165':'Proposal In Progress',
+  '1214145584686432':'Submitted',
+  '1214145482012734':'Won 🏆',
+  '1214145482012862':'Passed'
+};
+let ASANA_TASKS={};  // title fragment -> {gid, section_gid, section_name, url}
 
 function fmt(n){if(!n)return'$0';if(n>=1e9)return'$'+(n/1e9).toFixed(2)+'B';if(n>=1e6)return'$'+(n/1e6).toFixed(1)+'M';if(n>=1e3)return'$'+Math.round(n/1000)+'K';return'$'+Math.round(n).toLocaleString();}
 function fmtV(l,h){function fv(n){if(!n)return null;n=parseFloat(n);return n>=1e6?'$'+(n/1e6).toFixed(1)+'M':n>=1e3?'$'+Math.round(n/1000)+'K':null;}var lv=fv(l),hv=fv(h);return lv&&hv?lv+' – '+hv:lv||hv||'—';}
@@ -536,6 +556,40 @@ function showStage(sid){
   openModal('Stage Detail',SN[sid],s.length+' deals · '+fmt(s.reduce((t,d)=>t+(d.value||0),0))+' TCV',
     tbl(s,[{h:'Opportunity',r:d=>'<div class="t1">'+(d.title||'').substring(0,50)+'</div><div class="t2">'+(d.org_name||'')+'</div>'},{h:'Value',r:d=>'<span class="tv">'+fmt(d.value)+'</span>'},{h:'Prob',r:d=>pp(d.probability||0)},{h:'Next',r:d=>d.next_activity_date||'<span class="tw">None</span>'}]),
     'Pipedrive CRM · '+new Date().toLocaleTimeString());
+}
+
+// ASANA SYNC — pull live task status from worker
+async function syncAsanaTasks(){
+  try {
+    var resp = await fetch('https://bln24-hg-proxy.bln24.workers.dev/asana-tasks', {method:'GET'});
+    if (!resp.ok) return;
+    var data = await resp.json();
+    ASANA_TASKS = {};
+    (data.tasks || []).forEach(function(t){
+      // Index by cleaned title fragment (strip [BD AI] prefix and score prefix)
+      var raw = (t.name || '').replace(/^\[BD AI\]\s*/i,'').replace(/^\[\w+\]\s*/,'').toLowerCase().trim();
+      var key = raw.substring(0,40);
+      ASANA_TASKS[key] = t;
+    });
+    console.log('Asana sync: ' + Object.keys(ASANA_TASKS).length + ' tasks loaded');
+    // Re-render opp cards to show updated Asana status
+    if (window._opps) renderOpps();
+  } catch(e) { console.warn('Asana sync failed:', e.message); }
+}
+
+function getAsanaTask(opp){
+  var title = (opp.title || '').toLowerCase().trim();
+  // Try progressively shorter fragments
+  for (var len = 40; len >= 15; len -= 5){
+    var key = title.substring(0, len);
+    if (ASANA_TASKS[key]) return ASANA_TASKS[key];
+  }
+  // Also check stored task GID from approval state
+  var approval = APPROVALS[window._opps ? window._opps.indexOf(opp) : -1];
+  if (approval && typeof approval === 'object' && approval.task_gid) {
+    return { gid: approval.task_gid, url: 'https://app.asana.com/0/' + ASANA_PROJECT_GID + '/' + approval.task_gid, section_name: approval.section || 'In Progress' };
+  }
+  return null;
 }
 
 // TYPE FILTER
@@ -653,6 +707,14 @@ function renderOppCard(i,o){
     '<div class="opp-score" style="background:'+scoreColor+';color:var(--white);min-width:60px;text-align:center">'+score+'pts</div>'+
     '</div>'+
     fullOpenWarning+
+    // Asana stage badge (live sync)
+    (function(){
+      var task = getAsanaTask(o);
+      if (!task) return '';
+      var sn = task.section_name || 'In Progress';
+      var color = sn.includes('Won') ? '#15803D' : sn.includes('Submitted') ? '#1D4ED8' : sn.includes('Proposal') ? '#D97706' : sn.includes('Passed') ? '#DC2626' : '#15803D';
+      return '<div style="margin-bottom:6px;display:flex;align-items:center;gap:6px">'+'<a href="'+(task.url||task.permalink_url||'#')+'" target="_blank" style="background:#F0FDF4;color:'+color+';border:1px solid '+color+'33;padding:2px 10px;border-radius:5px;font-size:.65rem;font-weight:800;text-decoration:none">Asana: '+sn+' ↗</a>'+'</div>';
+    })()+
     // Rex recommendation pill
     (o.rex_analysis&&o.rex_analysis.recommendation?'<div style="margin-bottom:6px"><span style="font-size:.63rem;font-weight:700;color:#D97706">🤖 Rex: '+o.rex_analysis.recommendation+'</span></div>':'')+
     // Fit verdict pill from capability matrix
@@ -797,11 +859,21 @@ function showOppModal(i){
     (o.description&&o.description.length>50?'<div style="margin:14px 0 5px;font-size:.7rem;font-weight:700">Full Scope Description:</div><div style="font-size:.74rem;color:var(--black);line-height:1.7;background:var(--grey-light);padding:12px 14px;border-radius:6px;max-height:300px;overflow-y:auto;white-space:pre-wrap">'+o.description+'</div>':'')+ 
     // Contact
     (o.contact_name||o.contact_email?'<div style="margin:12px 0 4px;font-size:.7rem;font-weight:700">Point of Contact:</div><div style="font-size:.74rem;color:var(--grey)">'+[o.contact_name,o.contact_email].filter(Boolean).join(' · ')+'</div>':'')+ 
+    // Asana status block in modal
+    (function(){
+      var task = getAsanaTask(o);
+      var taskGid = o.asana_task_gid || (task && task.gid);
+      if (!task && !taskGid) return '';
+      var sn = (task && task.section_name) || 'In Progress';
+      var taskUrl = (task && (task.url || task.permalink_url)) || ('https://app.asana.com/0/'+ASANA_PROJECT_GID+'/'+(taskGid||''));
+      var stageColor = sn.includes('Won') ? '#15803D' : sn.includes('Submitted') ? '#1D4ED8' : sn.includes('Proposal') ? '#D97706' : sn.includes('Passed') ? '#DC2626' : '#15803D';
+      var stageBg = sn.includes('Won') ? '#F0FDF4' : sn.includes('Submitted') ? '#EFF6FF' : sn.includes('Proposal') ? '#FFFBEB' : sn.includes('Passed') ? '#FEF2F2' : '#F0FDF4';
+      return '<div style="background:'+stageBg+';border-left:4px solid '+stageColor+';padding:10px 14px;border-radius:0 6px 6px 0;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center">'+'<div><div style="font-size:.62rem;font-weight:800;text-transform:uppercase;color:'+stageColor+';letter-spacing:.07em;margin-bottom:3px">Asana Stage</div><div style="font-size:.82rem;font-weight:700;color:#374151">'+sn+'</div></div>'+'<a href="'+taskUrl+'" target="_blank" style="background:'+stageColor+';color:white;padding:6px 14px;border-radius:6px;font-size:.72rem;font-weight:700;text-decoration:none">Open in Asana ↗</a>'+'</div>';
+    })()+
     '<div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">'+
     (o.source_path?'<a href="'+o.source_path+'" target="_blank" style="font-size:.73rem;color:var(--green);font-weight:700;background:var(--green-light);padding:5px 12px;border-radius:5px">View Full Solicitation ↗</a>':'')+
     (o.path?'<a href="'+o.path+'" target="_blank" style="font-size:.73rem;color:var(--blue);font-weight:600">HigherGov ↗</a>':'')+
     '<a href="https://sam.gov/search/?keywords='+encodeURIComponent(o.title||'')+'" target="_blank" style="font-size:.73rem;color:var(--grey);font-weight:600">SAM.gov ↗</a>'+
-    (o.asana_task_gid?'<a href="https://app.asana.com/0/'+o.asana_task_gid+'" target="_blank" style="font-size:.73rem;color:#7C3AED;font-weight:600">Asana Task ↗</a>':'')+
     '</div>',
     'HigherGov · Federal opps only · Scored vs BLN24 proposals & past performance');
 }
