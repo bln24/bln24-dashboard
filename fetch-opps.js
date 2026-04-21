@@ -133,9 +133,51 @@ const SCOPE_TAGS = [
   { tag: 'Translation / Language',      kw: ['translation','spanish language','multilingual','language services','interpretation'] },
 ];
 
+// Scope tags BLN24 can credibly claim based on confirmed contract wins
+// Anything NOT in this set = gap flag (we see the need but can't prime it cleanly)
+const BLN24_OWNED_TAGS = new Set([
+  'Human-Centered Design',       // IRS $7M HCD BPA, Census, CBP
+  'UX Research & Testing',       // IRS HCD, Census UX
+  'Accessibility / 508',         // IRS HCD BPA scope included 508
+  'Communications Strategy',     // CMS MNPS, HUD, CDC
+  'Health Communications',       // CDC DDT, CDC NAC, CDC NCHS, HHS OIDP
+  'Outreach & Engagement',       // HUD FHEO, USCIS (potential), HRSA
+  'Content Development',         // CMS MNPS notice production, CDC
+  'Digital Marketing',           // USDA social media, CDC
+  'Branding & Visual Design',    // MBDA website, Census design services
+  'Video & Multimedia',          // CDC NCHS $3.6M, USDA, DOI, VA
+  'Web Development',             // MBDA $4.4M, Census DWS, Oversight.gov
+  'Digital Platform',            // Census DWS, MBDA, CBP.gov (Clarity24)
+  'App Modernization',           // NOAA (Clarity24), Census MAF/TIGER
+  'Cloud Migration',             // NOAA NWS IDP (Clarity24), Census cloud
+  'Data Analytics',              // Census SRQA, Dept of Education EDARMST
+  'Data Engineering',            // Census SRQA, MAF/TIGER
+  'Survey & Research',           // USPTO survey (Fors Marsh), Census data collection
+  'Behavioral Science',          // DHRA command climate (Fors Marsh)
+  'Translation / Language',      // CMS Spanish language media campaign
+]);
+
+// Tags that appear in opps but BLN24 cannot credibly prime without a partner
+const BLN24_GAP_TAGS = new Set([
+  'AI / Machine Learning',       // We have data analytics but not deep AI/ML prime
+  'Cybersecurity',               // No cyber prime delivery on record
+  'DevSecOps',                   // No DevSecOps prime on record
+  'IT Program Management',       // No CIO-shop IT mgmt prime on record
+  'CRM / Salesforce',            // No CRM implementation prime on record
+  'Scientific/Technical Support',// Not a BLN24 lane
+  'Training & eLearning',        // Not a confirmed prime lane
+]);
+
 function extractScopeTags(text) {
   const t = text.toLowerCase();
   return SCOPE_TAGS.filter(s => s.kw.some(k => t.includes(k))).map(s => s.tag);
+}
+
+function classifyScopeTags(tags) {
+  const owned = tags.filter(t => BLN24_OWNED_TAGS.has(t));
+  const gaps  = tags.filter(t => BLN24_GAP_TAGS.has(t));
+  const neutral = tags.filter(t => !BLN24_OWNED_TAGS.has(t) && !BLN24_GAP_TAGS.has(t));
+  return { owned, gaps, neutral };
 }
 
 // =============================================================
@@ -522,7 +564,18 @@ async function main() {
         opp.tier = tier;
         opp.matched_lanes = matchedLanes || [];
         // Scope tags: what type of work is this opp actually asking for
-        opp.scope_tags = extractScopeTags((opp.title||'') + ' ' + (opp.summary||'') + ' ' + (opp.description||''));
+        const rawTags = extractScopeTags((opp.title||'') + ' ' + (opp.summary||'') + ' ' + (opp.description||''));
+        const { owned, gaps, neutral } = classifyScopeTags(rawTags);
+        opp.scope_tags = rawTags;
+        opp.scope_owned = owned;   // BLN24 can credibly claim these
+        opp.scope_gaps  = gaps;    // BLN24 sees these needs but can't prime them cleanly
+        // Penalize opps where the primary need is a gap lane with no owned match
+        if (gaps.length > 0 && owned.length === 0) {
+          opp.capture_score = Math.max(0, opp.capture_score - 15);
+          opp.win_reasons = [...(opp.win_reasons||[]), '⚠️ Scope gap: ' + gaps.join(', ') + ' — BLN24 has no confirmed prime delivery in these lanes'];
+        } else if (gaps.length > 0) {
+          opp.win_reasons = [...(opp.win_reasons||[]), '⚠️ Gap area detected: ' + gaps.join(', ') + ' — would need a teaming partner for this scope'];
+        }
 
         allOpps.push(opp);
         added++;

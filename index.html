@@ -633,8 +633,15 @@ function renderOppCard(i,o){
     (o.naics?'<span class="p p-grey">NAICS: '+o.naics+'</span>':'')+
     (fmtV(o.val_low,o.val_high)!=='—'?'<span class="p p-gold">'+fmtV(o.val_low,o.val_high)+'</span>':'')+
     '</div>'+
-    // Scope tags: what type of work is this
-    (o.scope_tags&&o.scope_tags.length?'<div style="margin-bottom:8px;display:flex;flex-wrap:wrap;gap:4px">'+o.scope_tags.map(t=>'<span style="background:#F3F0FF;color:#6D28D9;border-radius:4px;padding:2px 8px;font-size:.65rem;font-weight:700">'+ t+'</span>').join('')+'</div>':'<div style="font-size:.68rem;color:var(--grey);margin-bottom:8px">Scope not classified</div>')+
+    // Scope tags: green=BLN24 owns it, red=gap, purple=neutral
+    (o.scope_tags&&o.scope_tags.length?'<div style="margin-bottom:8px;display:flex;flex-wrap:wrap;gap:4px">'+ o.scope_tags.map(t=>{
+      const owned=(o.scope_owned||[]).includes(t);
+      const gap=(o.scope_gaps||[]).includes(t);
+      const bg=owned?'#F0FDF4':gap?'#FEF2F2':'#F3F0FF';
+      const color=owned?'#15803D':gap?'#DC2626':'#6D28D9';
+      const prefix=owned?'✓ ':gap?'⚠ ':'';
+      return '<span style="background:'+bg+';color:'+color+';border-radius:4px;padding:2px 8px;font-size:.65rem;font-weight:700">'+prefix+t+'</span>';
+    }).join('')+'</div>':'<div style="font-size:.68rem;color:var(--grey);margin-bottom:8px">Scope not classified</div>')+
     // Matched BLN24 capability lanes
     (o.matched_lanes&&o.matched_lanes.length?'<div style="margin-bottom:8px">'+o.matched_lanes.map(l=>'<span style="display:inline-block;background:#EFF6FF;color:#1D4ED8;border-radius:4px;padding:2px 8px;font-size:.65rem;font-weight:700;margin:0 4px 4px 0">✓ '+l+'</span>').join('')+'</div>':'')+
     '<div class="opp-why">'+((o.win_reasons||[]).slice(0,4).map(r=>'<div style="margin-bottom:4px;font-size:.73rem">→ '+r+'</div>').join('') || '<div style="color:var(--grey);font-size:.73rem">No capability lane match — review before pursuing.</div>')+'</div>'+
@@ -668,8 +675,15 @@ function showOppModal(i){
     '<div class="mf"><div class="mf-l">Source Search</div><div class="mf-v">'+(o.searchLabel||'—')+(o.ericAlso?' <span style="font-size:.6rem;background:#F0E6FF;color:#7C3AED;padding:1px 5px;border-radius:4px;font-weight:700">Eric also tracking</span>':'')+'</div></div>'+
     '</div>'+
     (o.isFullOpen?'<div style="background:#FEF3C7;border-left:3px solid #D97706;padding:10px 12px;border-radius:0 6px 6px 0;font-size:.75rem;color:#92400E;font-weight:600;margin-bottom:12px">⚠️ Full &amp; Open Competition — BLN24 competes against all firm sizes. Win probability is meaningfully lower. Best play: pursue as a sub to a larger prime, or wait for a set-aside reissue.</div>':'')+
-    // Scope tags in modal
-    (o.scope_tags&&o.scope_tags.length?'<div style="margin:12px 0 6px;font-size:.7rem;font-weight:700">What They\'re Buying:</div><div style="margin-bottom:12px;display:flex;flex-wrap:wrap;gap:4px">'+o.scope_tags.map(t=>'<span style="background:#F3F0FF;color:#6D28D9;border-radius:4px;padding:3px 10px;font-size:.72rem;font-weight:700">'+t+'</span>').join('')+'</div>':'')+
+    // Scope tags in modal with color coding
+    (o.scope_tags&&o.scope_tags.length?'<div style="margin:12px 0 6px;font-size:.7rem;font-weight:700">What They\'re Buying: <span style="font-weight:400;color:var(--grey)">(green = BLN24 owns it · red = gap · purple = neutral)</span></div><div style="margin-bottom:12px;display:flex;flex-wrap:wrap;gap:4px">'+o.scope_tags.map(t=>{
+      const owned=(o.scope_owned||[]).includes(t);
+      const gap=(o.scope_gaps||[]).includes(t);
+      const bg=owned?'#F0FDF4':gap?'#FEF2F2':'#F3F0FF';
+      const color=owned?'#15803D':gap?'#DC2626':'#6D28D9';
+      const prefix=owned?'✓ ':gap?'⚠ ':'';
+      return '<span style="background:'+bg+';color:'+color+';border-radius:4px;padding:3px 10px;font-size:.72rem;font-weight:700">'+prefix+t+'</span>';
+    }).join('')+'</div>':'')+
     ((o.matched_lanes&&o.matched_lanes.length)?'<div style="margin:8px 0 6px;font-size:.7rem;font-weight:700;color:#1D4ED8">BLN24 Proven Lanes That Match:</div><div style="margin-bottom:10px">'+o.matched_lanes.map(l=>'<span style="display:inline-block;background:#EFF6FF;color:#1D4ED8;border-radius:4px;padding:3px 10px;font-size:.72rem;font-weight:700;margin:0 4px 4px 0">✓ '+l+'</span>').join('')+'</div>':'')+
     (reasons?'<div style="margin:8px 0 6px;font-size:.7rem;font-weight:700">Full Alignment Reasoning:</div><ul style="padding-left:18px;line-height:2">'+reasons+'</ul>':'No capability match found — verify before pursuing.')+
     (o.summary?'<div style="margin:12px 0 5px;font-size:.7rem;font-weight:700">AI Summary:</div><div style="font-size:.75rem;color:var(--grey);line-height:1.6;background:var(--grey-light);padding:10px 12px;border-radius:6px">'+o.summary+'</div>':'')+
