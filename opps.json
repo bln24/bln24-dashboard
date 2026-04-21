@@ -1,6 +1,6 @@
 {
-  "updated": "2026-04-21T03:09:12.342Z",
-  "count": 119,
+  "updated": "2026-04-21T03:17:05.234Z",
+  "count": 120,
   "opps": [
     {
       "naics": "541611",
@@ -32,6 +32,10 @@
       "tier": null,
       "matched_lanes": [
         "HCD/UX (IRS $7M, Census, CBP — proven prime)"
+      ],
+      "scope_tags": [
+        "Human-Centered Design",
+        "Training & eLearning"
       ]
     },
     {
@@ -65,6 +69,9 @@
       "tier": 1,
       "matched_lanes": [
         "Cloud/App Mod (partial)"
+      ],
+      "scope_tags": [
+        "App Modernization"
       ]
     },
     {
@@ -97,6 +104,9 @@
       "tier": null,
       "matched_lanes": [
         "Strategic Comms (partial)"
+      ],
+      "scope_tags": [
+        "Digital Marketing"
       ]
     },
     {
@@ -129,6 +139,10 @@
       "tier": null,
       "matched_lanes": [
         "Strategic Comms (partial)"
+      ],
+      "scope_tags": [
+        "Branding & Visual Design",
+        "Cybersecurity"
       ]
     },
     {
@@ -161,6 +175,10 @@
       "tier": null,
       "matched_lanes": [
         "Strategic Comms (partial)"
+      ],
+      "scope_tags": [
+        "Communications Strategy",
+        "Cybersecurity"
       ]
     },
     {
@@ -193,6 +211,10 @@
       "tier": 2,
       "matched_lanes": [
         "Strategic Comms (partial)"
+      ],
+      "scope_tags": [
+        "Outreach & Engagement",
+        "Cybersecurity"
       ]
     },
     {
@@ -225,6 +247,11 @@
       "tier": null,
       "matched_lanes": [
         "Data/Analytics (partial)"
+      ],
+      "scope_tags": [
+        "Data Engineering",
+        "Cybersecurity",
+        "Scientific/Technical Support"
       ]
     },
     {
@@ -256,7 +283,8 @@
       ],
       "win_prob": "Low (10-20%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541511",
@@ -287,7 +315,10 @@
       ],
       "win_prob": "Low (10-20%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541511",
@@ -318,7 +349,10 @@
       ],
       "win_prob": "Low (10-20%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541611",
@@ -349,7 +383,8 @@
       ],
       "win_prob": "Low (10-20%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541715",
@@ -381,6 +416,11 @@
       "tier": null,
       "matched_lanes": [
         "Cloud/App Mod (partial)"
+      ],
+      "scope_tags": [
+        "Cloud Migration",
+        "Cybersecurity",
+        "Scientific/Technical Support"
       ]
     },
     {
@@ -413,6 +453,9 @@
       "tier": null,
       "matched_lanes": [
         "Cloud/App Mod (partial)"
+      ],
+      "scope_tags": [
+        "Cloud Migration"
       ]
     },
     {
@@ -445,7 +488,10 @@
       ],
       "win_prob": "Low (10-20%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research"
+      ]
     },
     {
       "naics": "541519",
@@ -477,7 +523,8 @@
       "tier": null,
       "matched_lanes": [
         "HCD/UX (IRS $7M, Census, CBP — proven prime)"
-      ]
+      ],
+      "scope_tags": []
     },
     {
       "naics": "541511",
@@ -510,6 +557,10 @@
       "tier": 1,
       "matched_lanes": [
         "Cloud/App Mod (partial)"
+      ],
+      "scope_tags": [
+        "App Modernization",
+        "Survey & Research"
       ]
     },
     {
@@ -541,7 +592,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Training & eLearning"
+      ]
     },
     {
       "naics": "541511",
@@ -572,7 +626,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541611",
@@ -603,7 +658,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity",
+        "Training & eLearning"
+      ]
     },
     {
       "naics": "541611",
@@ -634,7 +693,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity",
+        "Training & eLearning"
+      ]
     },
     {
       "naics": "541511",
@@ -665,7 +728,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541690",
@@ -696,7 +762,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Training & eLearning",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "541611",
@@ -727,7 +797,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541611",
@@ -758,7 +829,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "541611",
@@ -789,7 +864,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 2,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541612",
@@ -820,7 +896,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541990",
@@ -851,7 +930,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 1,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "517410",
@@ -882,7 +962,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541519",
@@ -913,7 +994,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541519",
@@ -944,7 +1026,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 2,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Web Development"
+      ]
     },
     {
       "naics": "541519",
@@ -975,7 +1060,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541611",
@@ -1005,7 +1091,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541611",
@@ -1035,7 +1122,42 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
+    },
+    {
+      "naics": "541611",
+      "title": "ED IES - Evaluation of Workforce Pell Grants - MRAS",
+      "agency": "Federal Acquisition Service",
+      "type": "Sources Sought",
+      "noticeCategory": "rfi",
+      "set_aside": "SBA",
+      "searchLabel": "All Agencies",
+      "posted": "2026-04-20",
+      "due": "2026-04-27",
+      "val_low": null,
+      "val_high": null,
+      "description": "On behalf of Department of Education (ED), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browser.\n\nOnly responses submitted through the linked RFI will be accepted. Nothing else will be evaluated or recorded (this includes selecting 'interested' within eBuy).\n\n\nLink to RFI: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi\n\n\nAdditional Information:\nDue to the structure of contracts in GSA eBuy, you may receive multiple Sources Sought or RFI notifications for the same requirement if it falls under multiple of your company's awarded SINs. However, please note that you are only required to respond to the RFI once.\n\nBe sure to use the URL provided above to submit your response.\n\n\nAny questions regarding this RFI will be responded to by email only.  Send your inquiry to: rfi@research.gsa.gov and be sure to include the RFQ number.\n\n",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-opportunity/ed-ies-evaluation-of-workforce-pell-grants-mra-rfi1807182-r-36524",
+      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFI1807182?contractNumber=",
+      "contact_email": "rfi@research.gsa.gov",
+      "contact_name": "Jon Dewolfe",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": true,
+      "capture_score": 3,
+      "win_reasons": [
+        "Partial behavioral/research match — BLN Fors Marsh JV has delivery experience",
+        "Small business set-aside",
+        "No direct capability lane match found — scope may not align with BLN24 proven delivery"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": null,
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research"
+      ]
     },
     {
       "naics": "541611",
@@ -1066,7 +1188,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Outreach & Engagement",
+        "Survey & Research"
+      ]
     },
     {
       "naics": "611430",
@@ -1097,7 +1223,12 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research",
+        "Cybersecurity",
+        "Training & eLearning"
+      ]
     },
     {
       "naics": "541990",
@@ -1128,7 +1259,12 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research",
+        "Cybersecurity",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "541690",
@@ -1159,7 +1295,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research"
+      ]
     },
     {
       "naics": "517111",
@@ -1191,6 +1330,10 @@
       "tier": 3,
       "matched_lanes": [
         "Strategic Comms (partial)"
+      ],
+      "scope_tags": [
+        "Communications Strategy",
+        "Cybersecurity"
       ]
     },
     {
@@ -1221,7 +1364,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "541715",
@@ -1256,6 +1402,10 @@
       "matched_lanes": [
         "Data/Analytics (Census $4.1M SRQA, Dept of Education $2.9M — proven prime)",
         "Cloud/App Mod (partial)"
+      ],
+      "scope_tags": [
+        "Cloud Migration",
+        "AI / Machine Learning"
       ]
     },
     {
@@ -1286,7 +1436,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541990",
@@ -1316,7 +1467,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "541990",
@@ -1346,7 +1500,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541990",
@@ -1376,7 +1531,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "336611",
@@ -1406,7 +1562,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541511",
@@ -1438,7 +1595,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research"
+      ]
     },
     {
       "naics": "518210",
@@ -1470,7 +1630,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 1,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "518210",
@@ -1502,7 +1666,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 1,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "561621",
@@ -1532,7 +1700,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "561790",
@@ -1562,7 +1733,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "518210",
@@ -1592,7 +1767,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Training & eLearning"
+      ]
     },
     {
       "naics": "541519",
@@ -1622,7 +1800,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541511",
@@ -1652,7 +1833,12 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research",
+        "Cybersecurity",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "541511",
@@ -1683,7 +1869,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541519",
@@ -1713,7 +1900,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541690",
@@ -1743,7 +1933,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 2,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541519",
@@ -1773,7 +1964,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541690",
@@ -1787,10 +1979,10 @@
       "due": "2026-04-25",
       "val_low": 100000,
       "val_high": 350000,
-      "description": "Implementation plan-ShakeAlert Earthquake Early Warning System in Nevada_amd 1, Q&A",
+      "description": "Implementation plan-ShakeAlert Earthquake Early Warning System in Nevada_amd 2, Q&A",
       "summary": "Background\n The U.S. Geological Survey (USGS) is seeking to engage a firm to develop a Technical Implementation Plan for the ShakeAlert Earthquake Early Warning System in Nevada. This initiative aims to enhance earthquake preparedness and response capabilities in the state, which is part of a broader effort to mitigate the impact of earthquakes across the United States. \n\nThe ShakeAlert system is already operational in California, Oregon, and Washington, and this contract will help expand its capabilities to Nevada, where significant earthquake risks exist.\n\nWork Details\n The contractor will p",
       "path": "https://www.highergov.com/contract-opportunity/b-implementation-plan-shakealert-earthquake-ew-140g0326q0073-k-c572e",
-      "source_path": "https://sam.gov/opp/9751416971bb45dd9ccbe7f16e38d200/view",
+      "source_path": "https://sam.gov/opp/4e3614c8357d47e89f6c1bfb0c32a2cb/view",
       "contact_email": "thuot@usgs.gov",
       "contact_name": "Tracy Huot",
       "is8a": false,
@@ -1803,7 +1995,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research"
+      ]
     },
     {
       "naics": "541611",
@@ -1833,7 +2028,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541519",
@@ -1863,7 +2059,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Data Analytics",
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541511",
@@ -1893,7 +2093,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541519",
@@ -1923,7 +2126,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 1,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541519",
@@ -1953,7 +2157,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "518210",
@@ -1983,7 +2188,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 2,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Data Analytics",
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541611",
@@ -2013,7 +2222,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541519",
@@ -2043,7 +2253,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541519",
@@ -2073,7 +2286,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541519",
@@ -2103,7 +2319,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Training & eLearning"
+      ]
     },
     {
       "naics": "541611",
@@ -2133,7 +2352,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541715",
@@ -2163,7 +2385,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "DevSecOps"
+      ]
     },
     {
       "naics": "541519",
@@ -2193,7 +2418,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541519",
@@ -2227,6 +2453,10 @@
       "tier": 1,
       "matched_lanes": [
         "HCD/UX (partial match)"
+      ],
+      "scope_tags": [
+        "Cybersecurity",
+        "CRM / Salesforce"
       ]
     },
     {
@@ -2258,7 +2488,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541380",
@@ -2289,7 +2520,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "541714",
@@ -2320,7 +2555,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541715",
@@ -2354,6 +2590,10 @@
       "tier": null,
       "matched_lanes": [
         "HCD/UX (partial match)"
+      ],
+      "scope_tags": [
+        "Survey & Research",
+        "Cybersecurity"
       ]
     },
     {
@@ -2385,7 +2625,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "518210",
@@ -2416,7 +2657,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 1,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "237310",
@@ -2447,7 +2689,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541612",
@@ -2478,7 +2721,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 1,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "423430",
@@ -2509,7 +2753,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "334516",
@@ -2540,7 +2785,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "561510",
@@ -2571,7 +2820,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Data Analytics",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "561920",
@@ -2602,7 +2855,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Outreach & Engagement"
+      ]
     },
     {
       "naics": "334418",
@@ -2633,7 +2889,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541990",
@@ -2662,7 +2921,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "AI / Machine Learning",
+        "Training & eLearning"
+      ]
     },
     {
       "naics": "541519",
@@ -2693,7 +2956,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research",
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "334511",
@@ -2724,7 +2991,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 2,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research",
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541519",
@@ -2757,6 +3028,11 @@
       "tier": null,
       "matched_lanes": [
         "Data/Analytics (partial)"
+      ],
+      "scope_tags": [
+        "Data Engineering",
+        "Survey & Research",
+        "Cybersecurity"
       ]
     },
     {
@@ -2790,6 +3066,9 @@
       "tier": null,
       "matched_lanes": [
         "Cloud/App Mod (partial)"
+      ],
+      "scope_tags": [
+        "Cloud Migration"
       ]
     },
     {
@@ -2823,6 +3102,10 @@
       "tier": null,
       "matched_lanes": [
         "Cloud/App Mod (partial)"
+      ],
+      "scope_tags": [
+        "Cloud Migration",
+        "Cybersecurity"
       ]
     },
     {
@@ -2856,6 +3139,9 @@
       "tier": null,
       "matched_lanes": [
         "Web/Digital (partial)"
+      ],
+      "scope_tags": [
+        "Web Development"
       ]
     },
     {
@@ -2886,7 +3172,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 2,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Training & eLearning",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "488310",
@@ -2917,7 +3207,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research",
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541715",
@@ -2948,7 +3242,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Behavioral Science"
+      ]
     },
     {
       "naics": "334516",
@@ -2978,7 +3275,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "334513",
@@ -3008,7 +3309,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "513210",
@@ -3038,7 +3340,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "541990",
@@ -3068,7 +3374,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research"
+      ]
     },
     {
       "naics": "541519",
@@ -3098,7 +3407,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "CRM / Salesforce"
+      ]
     },
     {
       "naics": "541519",
@@ -3128,7 +3440,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "CRM / Salesforce"
+      ]
     },
     {
       "naics": "336611",
@@ -3158,7 +3473,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "334513",
@@ -3188,7 +3504,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research",
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "334513",
@@ -3218,7 +3538,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research"
+      ]
     },
     {
       "naics": "336611",
@@ -3248,7 +3571,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "541511",
@@ -3278,7 +3604,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541611",
@@ -3308,7 +3635,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541519",
@@ -3338,7 +3666,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ]
     },
     {
       "naics": "541611",
@@ -3368,7 +3699,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541810",
@@ -3398,7 +3730,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541430",
@@ -3428,7 +3761,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "541611",
@@ -3458,7 +3792,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity",
+        "Training & eLearning"
+      ]
     },
     {
       "naics": "541715",
@@ -3488,7 +3826,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "518210",
@@ -3519,7 +3860,11 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "483212",
@@ -3550,7 +3895,8 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 3,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": []
     },
     {
       "naics": "713940",
@@ -3583,7 +3929,8 @@
       "tier": 3,
       "matched_lanes": [
         "HCD/UX (partial match)"
-      ]
+      ],
+      "scope_tags": []
     },
     {
       "naics": "541330",
@@ -3614,7 +3961,12 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": 1,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research",
+        "Cybersecurity",
+        "Scientific/Technical Support"
+      ]
     },
     {
       "naics": "488310",
@@ -3644,7 +3996,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Branding & Visual Design"
+      ]
     },
     {
       "naics": "488310",
@@ -3674,7 +4029,10 @@
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": []
+      "matched_lanes": [],
+      "scope_tags": [
+        "Branding & Visual Design"
+      ]
     }
   ]
 }
