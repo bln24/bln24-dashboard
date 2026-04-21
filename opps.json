@@ -1,7 +1,125 @@
 {
   "updated": "2026-04-21T17:00:01.861Z",
-  "count": 56,
+  "count": 57,
   "opps": [
+    {
+      "naics": "541511",
+      "title": "data.CMS.gov \u2014 Development and Operations of CMS Open Data Platform",
+      "agency": "Centers for Medicare & Medicaid Services (CMS), Office of Enterprise Data and Analytics (OEDA)",
+      "type": "Sources Sought",
+      "noticeCategory": "rfi",
+      "set_aside": "TBD",
+      "searchLabel": "Brian Direct \u2014 RFI",
+      "posted": "2026-04-07",
+      "due": "2026-04-23",
+      "val_low": 5000000,
+      "val_high": 20000000,
+      "source_path": "https://feedback.gsa.gov/jfe/form/SV_3PN0UNqhJ8ww1fM",
+      "path": "",
+      "description": "CMS OEDA seeks contractor to develop, operate, and maintain data.cms.gov. ~15 FTE team: agile product management, HCD/UX research, Drupal CMS, DevSecOps, API management, help desk, data ops, ATO maintenance.",
+      "summary": "GSA MRAS. CMS open data platform \u2014 170+ datasets, Drupal, HCD/UX, DevSecOps, API, help desk. Estimated M-M.",
+      "is8a": false,
+      "isFullOpen": true,
+      "ericAlso": false,
+      "asana_task_gid": "1214150928848982",
+      "capture_score": 48,
+      "win_prob": "Medium (20-40%)",
+      "tier": 2,
+      "rex_analysis": {
+        "what_they_need": "CMS OEDA seeks contractor to develop, operate, and maintain data.cms.gov. ~15 FTE team: agile product management, HCD/UX research, Drupal CMS, DevSecOps, API management, help desk, data ops, ATO maintenance. GSA MRAS. CMS open data platform \u2014 170+ datasets, Drupal, HCD/UX, DevSecOps, API, help desk. Estimated M-M.",
+        "rex_take": "BLN24 can cover: Human-Centered Design & UX Research, Web Design & Development. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust, DevSecOps / CI/CD. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: RFI.",
+        "recommendation": "Weak / JV"
+      },
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Human-Centered Design & UX Research",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "IRS Human Centered Design & Research BPA ($7M)",
+              "CBP Digital Transformation (Clarity24, $1.4M)",
+              "Census Digital Web Services ($0)",
+              "MBDA Website Redesign ($4.4M)"
+            ],
+            "note": "BLN24 strong prime \u2014 IRS HCD BPA $7M is direct comparable",
+            "triggered_by": [
+              "hcd",
+              "ux research"
+            ]
+          },
+          {
+            "task": "Web Design & Development",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "MBDA Website Redesign ($4.4M)",
+              "Census Digital Web Services ($0)",
+              "USPS OIG Oversight.gov Refresh ($387K)",
+              "CBP Digital Transformation (Clarity24, $1.4M)"
+            ],
+            "note": "BLN24 prime \u2014 MBDA $4.4M, Census DWS, Oversight.gov, CBP.gov redesign (Clarity24)",
+            "triggered_by": [
+              "drupal"
+            ]
+          },
+          {
+            "task": "Cybersecurity / FISMA / Zero Trust",
+            "score": 0,
+            "score_label": "0 \u2014 No Experience (Gap)",
+            "status": "gap",
+            "pp_refs": [],
+            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
+            "triggered_by": [
+              "ato"
+            ]
+          },
+          {
+            "task": "DevSecOps / CI/CD",
+            "score": 0,
+            "score_label": "0 \u2014 No Experience (Gap)",
+            "status": "gap",
+            "pp_refs": [],
+            "note": "BLN24 gap \u2014 no DevSecOps prime delivery on record",
+            "triggered_by": [
+              "devsecops"
+            ]
+          }
+        ],
+        "fit": "Weak / JV",
+        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
+        "avg_score": 2.0,
+        "prime_count": 2,
+        "jv_count": 0,
+        "gap_count": 2,
+        "total_tasks": 4,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "tbd",
+            "score": 3
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Partial \u2014 significant gaps",
+            "score": 2
+          },
+          {
+            "q": "Notice Type",
+            "answer": "RFI \u2014 intel gathering, position early",
+            "score": 4
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$12.5M \u2014 Tier 2+ (BLN24 has won at this range)",
+            "score": 4
+          }
+        ]
+      }
+    },
     {
       "naics": "541611",
       "title": "HCD Due Diligence Contract Workforce Development and BUX",

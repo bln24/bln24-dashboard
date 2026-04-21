@@ -587,6 +587,27 @@ async function main() {
   // Sort by capture score
   allOpps.sort((a, b) => b.capture_score - a.capture_score || (a.due || '9').localeCompare(b.due || '9'));
 
+  // Preserve manually-added opps (Brian Direct entries) from previous run
+  try {
+    const existing = JSON.parse(fs.readFileSync(OUT_FILE, 'utf8'));
+    const manualOpps = (existing.opps || []).filter(o => 
+      o.searchLabel && (o.searchLabel.includes('Brian Direct') || o.searchLabel.includes('Manual'))
+    );
+    // Add manual opps that aren't already in allOpps by title
+    const allTitles = new Set(allOpps.map(o => (o.title||'').toLowerCase().substring(0,40)));
+    for (const m of manualOpps) {
+      const key = (m.title||'').toLowerCase().substring(0,40);
+      if (!allTitles.has(key)) {
+        allOpps.push(m);
+        allTitles.add(key);
+      }
+    }
+    if (manualOpps.length > 0) console.log(`Preserved ${manualOpps.length} manually-added opps`);
+  } catch(e) { /* first run */ }
+
+  // Re-sort after adding manual opps
+  allOpps.sort((a, b) => b.capture_score - a.capture_score || (a.due || '9').localeCompare(b.due || '9'));
+
   // Run capability matrix enrichment
   const { execSync: es } = require('child_process');
   const tmpFile = OUT_FILE + '.tmp';
