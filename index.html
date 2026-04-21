@@ -665,7 +665,7 @@ function getAsanaTask(opp){
     if (ASANA_TASKS[key]) return ASANA_TASKS[key];
   }
   // Also check stored task GID from approval state
-  var approval = APPROVALS[window._opps ? window._opps.indexOf(opp) : -1];
+  var approval = APPROVALS[i]; // i is the card index in _filteredOpps, which is what was saved
   if (approval && typeof approval === 'object' && approval.task_gid) {
     return { gid: approval.task_gid, url: 'https://app.asana.com/0/' + ASANA_PROJECT_GID + '/' + approval.task_gid, section_name: approval.section || 'In Progress' };
   }
@@ -699,11 +699,13 @@ function renderOpps() {
   countEl.textContent = filtered.length + ' opps' + (ACTIVE_TYPE_FILTER !== 'all' ? ' (' + ACTIVE_TYPE_FILTER.toUpperCase() + ')' : ' — ' + rfpCount + ' RFP, ' + rfiCount + ' RFI, ' + fcastCount + ' Forecast') + ' · Refreshed: ' + updated;
 
   var html = '';
-  filtered.slice(0, 25).forEach(function(o, i) {
+  // Store filtered opps so modal/approve/pass use the right index
+  window._filteredOpps = filtered.slice(0, 25);
+  window._filteredOpps.forEach(function(o, i) {
     html += '<div class="opp-card" id="opp-card-' + i + '"></div>';
   });
   container.innerHTML = html;
-  filtered.slice(0, 25).forEach(function(o, i) { renderOppCard(i, o); });
+  window._filteredOpps.forEach(function(o, i) { renderOppCard(i, o); });
 }
 
 // APPROVAL STATE
@@ -711,7 +713,7 @@ var APPROVALS = JSON.parse(localStorage.getItem('bdai_approvals')||'{}');
 function saveApprovals(){localStorage.setItem('bdai_approvals',JSON.stringify(APPROVALS));}
 
 async function approveOpp(i){
-  var o=window._opps[i];
+  var o=(window._filteredOpps||window._opps)[i];
   if(!o)return;
 
   // Mark approved immediately in UI
@@ -744,7 +746,7 @@ async function approveOpp(i){
   }
 }
 function passOpp(i){
-  var o=window._opps[i];
+  var o=(window._filteredOpps||window._opps)[i];
   if(!o)return;
   APPROVALS[i]='passed';
   saveApprovals();
@@ -837,7 +839,7 @@ function renderOppCard(i,o){
 }
 
 function showOppModal(i){
-  var o=window._opps[i];if(!o)return;
+  var o=(window._filteredOpps||window._opps)[i];if(!o)return;
   var wpCls=(o.win_prob||'').indexOf('High')>=0?'green':(o.win_prob||'').indexOf('Medium')>=0?'':'red';
   var reasons=(o.win_reasons||[]).map(r=>'<li style="margin-bottom:5px;font-size:.77rem">'+r+'</li>').join('');
   openModal('Federal Opportunity · BD AI',o.title,o.agency,
