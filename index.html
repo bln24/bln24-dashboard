@@ -304,7 +304,7 @@
   <div style="background:var(--black);border-radius:10px;padding:16px 20px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
     <div>
       <div style="color:var(--gold);font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px">How This Works</div>
-      <div style="color:rgba(255,255,255,.7);font-size:.78rem;line-height:1.6;max-width:600px">Rex finds federal opportunities, scores them against BLN24's real proposals and past performance, and surfaces the best ones here. <strong style="color:white">Approve</strong> to move into active capture — Rex will create Asana tasks and brief the team. <strong style="color:white">Pass</strong> to decline.</div>
+      <div style="color:rgba(255,255,255,.7);font-size:.78rem;line-height:1.6;max-width:600px">Every opp here — RFP, RFI, or Forecast — was surfaced because it aligns with BLN24’s past performance, NAICS codes, or proven capability lanes. Rex scores each one against real proposals and wins. <strong style="color:white">Approve</strong> to start capture — Rex creates the Asana task and briefs the team. <strong style="color:white">Pass</strong> to decline and move on.</div>
     </div>
     <a href="https://app.asana.com/0/1214145572732999" target="_blank" class="asana-link">View in Asana →</a>
   </div>
@@ -641,7 +641,7 @@ function renderOppCard(i,o){
      '<button class="btn-approve" onclick="event.stopPropagation();approveOpp('+i+')">✓ Approve — Start Capture</button>'+
      '<button class="btn-pass" onclick="event.stopPropagation();passOpp('+i+')">✕ Pass</button>')+
     '<button class="btn-detail" onclick="event.stopPropagation();showOppModal('+i+')">Details →</button>'+
-    (o.path?'<a href="https://www.highergov.com'+o.path+'" target="_blank" style="font-size:.72rem;color:var(--blue);font-weight:600;padding:7px 0;text-decoration:none">HigherGov ↗</a>':'')+
+    (o.path?'<a href="'+o.path+'" target="_blank" style="font-size:.72rem;color:var(--blue);font-weight:600;padding:7px 0;text-decoration:none">HigherGov ↗</a>':'')+
     '</div>';
 }
 
@@ -666,7 +666,7 @@ function showOppModal(i){
     (reasons?'<div style="margin:14px 0 6px;font-size:.7rem;font-weight:700">Why BLN24 Should Pursue:</div><ul style="padding-left:18px;line-height:2">'+reasons+'</ul>':'')+
     (o.summary?'<div style="margin:12px 0 5px;font-size:.7rem;font-weight:700">AI Summary:</div><div style="font-size:.75rem;color:var(--grey);line-height:1.6;background:var(--grey-light);padding:10px 12px;border-radius:6px">'+o.summary+'</div>':'')+
     '<div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">'+
-    (o.path?'<a href="https://www.highergov.com'+o.path+'" target="_blank" style="font-size:.73rem;color:var(--blue);font-weight:600">View on HigherGov ↗</a>':'')+
+    (o.path?'<a href="'+o.path+'" target="_blank" style="font-size:.73rem;color:var(--blue);font-weight:600">View on HigherGov ↗</a>':'')+
     '<a href="https://sam.gov/search/?keywords='+encodeURIComponent(o.title||'')+'" target="_blank" style="font-size:.73rem;color:var(--grey);font-weight:600">Search SAM.gov ↗</a>'+
     (o.asana_task_gid?'<a href="https://app.asana.com/0/'+o.asana_task_gid+'" target="_blank" style="font-size:.73rem;color:#7C3AED;font-weight:600">View Asana Task ↗</a>':'')+
     '</div>',
