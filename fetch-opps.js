@@ -5,8 +5,9 @@ const path = require('path');
 
 const HG_KEY = '1a262cdcd25f40fba31836526d6e12b1';
 const SEARCHES = [
-  // Brian's primary NAICS-based search
+  // Brian's primary searches
   { id: 'Iup74Uz07U7NNMzBgoOGC', label: "Brian's Search", ericAlso: false },
+  { id: 'CkrVFXHxUw3Z8bV9Akp5D', label: "Brian's Search 2", ericAlso: false },
   // Agency-specific supplemental searches (Eric's)
   { id: '9O8IE4AuzgLjT6aQtZjHy',    label: 'Census Opps',              ericAlso: true },
   { id: 'E2rJZOxslwGCLQi3m7VlY',    label: 'Commerce Opportunities',   ericAlso: true },
