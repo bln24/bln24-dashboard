@@ -141,34 +141,39 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "ICF International",
-            "why": "Large HCD/comms firm, HHS/CMS anchor client, OASIS+ prime \u2014 direct competitor on health/HCD RFPs",
-            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/"
-          },
-          {
             "name": "Fearless Solutions",
-            "why": "8(a) HCD-focused firm, federal digital services, same NAICS lanes as BLN24",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/"
+            "why": "8(a) HCD-focused SB, wins federal digital services and UX work at HHS/CMS/VA. Same NAICS lanes, same size bracket as BLN24. Direct competitor on 8(a) and SB HCD RFPs.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "HHS, CMS, federal digital services, HCD methodology"
           },
           {
-            "name": "Softrams",
-            "why": "8(a), Agile dev, CMS/VA web work, same size bracket as BLN24",
-            "url": "https://www.highergov.com/awardee/?search=Softrams"
+            "name": "Coforma (formerly CivicActions)",
+            "why": "SB federal UX/HCD firm, CMS digital services work, active on OASIS+ SB. Competes directly on CMS and HCD-focused federal digital service contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "CMS, HCD, federal digital services, OASIS+ SB"
           },
           {
-            "name": "Unison",
-            "why": "Federal Drupal/AEM specialist, Census and HHS web platform experience",
-            "url": "https://www.highergov.com/awardee/?search=Unison"
+            "name": "Softrams LLC",
+            "why": "SB Agile web dev and digital services firm, CMS and VA work. Competes directly on SB web development and digital platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Softrams",
+            "evidence": "CMS, VA \u2014 Agile dev, digital services, SB set-asides"
+          },
+          {
+            "name": "Agile Six Applications",
+            "why": "SB federal digital services, CMS/VA web development, OASIS+ SB holder. Competes on federal web platform and digital services set-asides.",
+            "url": "https://www.highergov.com/awardee/?search=Agile+Six",
+            "evidence": "CMS, VA \u2014 web dev, digital services, OASIS+ SB"
           }
         ],
         "partners": [
           {
-            "name": "SAIC or ManTech",
-            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
+            "why": "Census-specific: Amivero and Spatial Front already hold Census security credentials. For other agencies, ManTech has cleared cyber capability. Sub arrangement covers ATO without BLN24 holding it.",
+            "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
             "relationship": "Recommended sub"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -329,40 +334,45 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "ICF International",
-            "why": "Large HCD/comms firm, HHS/CMS anchor client, OASIS+ prime \u2014 direct competitor on health/HCD RFPs",
-            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/"
-          },
-          {
-            "name": "Fearless Solutions",
-            "why": "8(a) HCD-focused firm, federal digital services, same NAICS lanes as BLN24",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/"
-          },
-          {
             "name": "Chemonics International",
-            "why": "Largest MCC/USAID implementer \u2014 likely incumbent or strong competitor on MCC work",
-            "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/"
+            "why": "Largest MCC/USAID implementer globally. Multiple MCC compact country programs. Primary competitor on any MCC advisory work \u2014 likely either the incumbent or the most formidable bidder.",
+            "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/",
+            "evidence": "MCC/USAID \u2014 workforce dev, TVET, education advisory in compact countries"
           },
           {
             "name": "DevTech Systems",
-            "why": "MCC/USAID monitoring & evaluation, workforce dev, education advisory \u2014 direct MCC competitor",
-            "url": "https://www.highergov.com/awardee/?search=DevTech+Systems"
+            "why": "MCC/USAID M&E and advisory firm. Workforce development, education sector, program evaluation in developing countries. Direct MCC competitor in HCD advisory space.",
+            "url": "https://www.highergov.com/awardee/?search=DevTech+Systems",
+            "evidence": "MCC, USAID \u2014 monitoring, evaluation, workforce advisory"
+          },
+          {
+            "name": "Creative Associates International",
+            "why": "International education and TVET programs in developing countries. Directly competes on workforce development and education advisory for MCC.",
+            "url": "https://www.highergov.com/awardee/creative-associates-international-inc-1847/",
+            "evidence": "USAID, MCC \u2014 education, workforce, TVET in LMIC"
+          },
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) HCD-focused SB, wins federal digital services and UX work at HHS/CMS/VA. Same NAICS lanes, same size bracket as BLN24. Direct competitor on 8(a) and SB HCD RFPs.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "HHS, CMS, federal digital services, HCD methodology"
           }
         ],
         "partners": [
           {
             "name": "Chemonics International",
-            "why": "Largest MCC/USAID implementer. Deep TVET and workforce development in compact countries. Sub arrangement fills BLN24's international workforce gap.",
+            "why": "Largest MCC/USAID implementer. TVET and workforce development expertise in compact countries. Teaming with Chemonics fills BLN24's LMIC workforce gap and adds MCC incumbent credibility.",
             "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/",
             "relationship": "Recommended sub"
           },
           {
-            "name": "BLN Fors Marsh JV LLC",
-            "why": "Active 8(a) JV \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M, FTC paid media. Behavioral science is Fors Marsh's core lane.",
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
             "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
             "relationship": "Active JV"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -461,17 +471,33 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "SAIC",
-            "why": "Large cloud/IT prime, competes on cloud migration and app mod at federal scale",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/"
+            "name": "Spatial Front Inc",
+            "why": "SB with confirmed Census tech contracts ($17M+). Cloud and data engineering work at Census Bureau. Direct SB competitor for Census tech modernization work.",
+            "url": "https://www.highergov.com/awardee/spatial-front-inc-10000821/",
+            "evidence": "Census Bureau \u2014 $17M+ in confirmed awards, cloud and data engineering"
           },
           {
-            "name": "Peraton",
-            "why": "Cloud infrastructure, DevSecOps \u2014 threatens on cloud/tech-heavy RFPs",
-            "url": "https://www.highergov.com/awardee/?search=Peraton"
+            "name": "Vibrantech Solutions",
+            "why": "SB with Census Bureau awards ($13M, SB Set-Aside). Tech and data services at Census. Competes on Census SB IT modernization work.",
+            "url": "https://www.highergov.com/awardee/vibrantech-solutions-inc-10088566/",
+            "evidence": "Census Bureau \u2014 $13M SB set-aside, IT services"
+          },
+          {
+            "name": "Amivero LLC",
+            "why": "SB with Census Bureau awards ($5M, SB Set-Aside). Cloud and data modernization focus. Active Census SB competitor.",
+            "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
+            "evidence": "Census Bureau \u2014 $5M SB set-aside, cloud/data modernization"
           }
         ],
-        "partners": []
+        "partners": [
+          {
+            "name": "Clarity24 LLC (BLN24 Active JV)",
+            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital Transformation ($4M). Cloud engineering is Clarity24's core delivery lane.",
+            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
+            "relationship": "Active JV"
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -673,34 +699,39 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Softrams",
-            "why": "8(a), Agile dev, CMS/VA web work, same size bracket as BLN24",
-            "url": "https://www.highergov.com/awardee/?search=Softrams"
+            "name": "Softrams LLC",
+            "why": "SB Agile web dev and digital services firm, CMS and VA work. Competes directly on SB web development and digital platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Softrams",
+            "evidence": "CMS, VA \u2014 Agile dev, digital services, SB set-asides"
           },
           {
-            "name": "Unison",
-            "why": "Federal Drupal/AEM specialist, Census and HHS web platform experience",
-            "url": "https://www.highergov.com/awardee/?search=Unison"
+            "name": "Agile Six Applications",
+            "why": "SB federal digital services, CMS/VA web development, OASIS+ SB holder. Competes on federal web platform and digital services set-asides.",
+            "url": "https://www.highergov.com/awardee/?search=Agile+Six",
+            "evidence": "CMS, VA \u2014 web dev, digital services, OASIS+ SB"
           },
           {
-            "name": "ICF International",
-            "why": "Major health/public affairs comms, CDC/HHS anchor \u2014 primary competitor on comms RFPs",
-            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/"
+            "name": "ICF International (mid-market subsidiary)",
+            "why": "ICF has SB subsidiaries that compete on health comms set-asides. Primary health comms competitor regardless of set-aside type.",
+            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/",
+            "evidence": "HHS, CMS, CDC \u2014 health communications, behavior change"
           },
           {
-            "name": "Ketchum",
-            "why": "Federal health comms, FDA/CDC campaigns, established agency relationships",
-            "url": "https://www.highergov.com/awardee/?search=Ketchum"
+            "name": "Valassis Communications / Vericast",
+            "why": "SB comms/outreach firm with federal health comms contracts. Multilingual outreach and public awareness campaigns.",
+            "url": "https://www.highergov.com/awardee/?search=Vericast",
+            "evidence": "Federal health comms, multilingual outreach"
           }
         ],
         "partners": [
           {
-            "name": "BLN Fors Marsh JV LLC",
-            "why": "Active 8(a) JV \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M, FTC paid media. Behavioral science is Fors Marsh's core lane.",
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
             "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
             "relationship": "Active JV"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -812,17 +843,12 @@
         "partners": [
           {
             "name": "Chemonics International",
-            "why": "Largest MCC/USAID implementer. Deep TVET and workforce development in compact countries. Sub arrangement fills BLN24's international workforce gap.",
+            "why": "Largest MCC/USAID implementer. TVET and workforce development expertise in compact countries. Teaming with Chemonics fills BLN24's LMIC workforce gap and adds MCC incumbent credibility.",
             "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/",
             "relationship": "Recommended sub"
-          },
-          {
-            "name": "BLN Fors Marsh JV LLC",
-            "why": "Active 8(a) JV \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M, FTC paid media. Behavioral science is Fors Marsh's core lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -922,12 +948,13 @@
         "competitors": [],
         "partners": [
           {
-            "name": "Peraton or Leidos",
-            "why": "Large IT infrastructure primes on OASIS+. Sub arrangement covers network, server hosting, telecom without BLN24 holding that prime.",
-            "url": "https://www.highergov.com/awardee/?search=Peraton",
+            "name": "Amivero LLC (for Census) / IT Works! (federal SB)",
+            "why": "Both are confirmed SB Census tech contractors. Sub arrangement covers network/infrastructure requirements without needing a large prime.",
+            "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
             "relationship": "Recommended sub"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -1003,7 +1030,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -1130,26 +1158,16 @@
         "recommendation": "Moderate"
       },
       "competitive_intel": {
-        "competitors": [
-          {
-            "name": "SAIC",
-            "why": "Large cloud/IT prime, competes on cloud migration and app mod at federal scale",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/"
-          },
-          {
-            "name": "Peraton",
-            "why": "Cloud infrastructure, DevSecOps \u2014 threatens on cloud/tech-heavy RFPs",
-            "url": "https://www.highergov.com/awardee/?search=Peraton"
-          }
-        ],
+        "competitors": [],
         "partners": [
           {
-            "name": "Clarity24 LLC (BLN24 JV)",
-            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital ($4M). Cloud is Clarity24's core lane.",
+            "name": "Clarity24 LLC (BLN24 Active JV)",
+            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital Transformation ($4M). Cloud engineering is Clarity24's core delivery lane.",
             "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
             "relationship": "Active JV"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -1250,17 +1268,27 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "SAIC",
-            "why": "Large cloud/IT prime, competes on cloud migration and app mod at federal scale",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/"
+            "name": "Spatial Front Inc",
+            "why": "SB with confirmed Census tech contracts ($17M+). Cloud and data engineering work at Census Bureau. Direct SB competitor for Census tech modernization work.",
+            "url": "https://www.highergov.com/awardee/spatial-front-inc-10000821/",
+            "evidence": "Census Bureau \u2014 $17M+ in confirmed awards, cloud and data engineering"
           },
           {
-            "name": "Peraton",
-            "why": "Cloud infrastructure, DevSecOps \u2014 threatens on cloud/tech-heavy RFPs",
-            "url": "https://www.highergov.com/awardee/?search=Peraton"
+            "name": "Vibrantech Solutions",
+            "why": "SB with Census Bureau awards ($13M, SB Set-Aside). Tech and data services at Census. Competes on Census SB IT modernization work.",
+            "url": "https://www.highergov.com/awardee/vibrantech-solutions-inc-10088566/",
+            "evidence": "Census Bureau \u2014 $13M SB set-aside, IT services"
           }
         ],
-        "partners": []
+        "partners": [
+          {
+            "name": "Clarity24 LLC (BLN24 Active JV)",
+            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital Transformation ($4M). Cloud engineering is Clarity24's core delivery lane.",
+            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
+            "relationship": "Active JV"
+          }
+        ],
+        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -1331,7 +1359,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -1440,17 +1469,20 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Booz Allen Hamilton",
-            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
-            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
+            "name": "Mathematica Policy Research",
+            "why": "Premier federal research and analytics firm. Wins large data analytics and program evaluation contracts across ED, HHS, Labor. Strong competitor on research-heavy data analytics RFPs.",
+            "url": "https://www.highergov.com/awardee/?search=Mathematica",
+            "evidence": "ED, HHS, Labor \u2014 data analytics, program evaluation, research"
           },
           {
-            "name": "Leidos",
-            "why": "Federal data platforms, large data engineering contracts",
-            "url": "https://www.highergov.com/awardee/?search=Leidos"
+            "name": "Westat",
+            "why": "Federal statistical research firm. Survey methodology, data analytics, program evaluation. Competes at Census, ED, HHS on data and research contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Westat",
+            "evidence": "Census, ED, HHS \u2014 surveys, data analytics, statistical research"
           }
         ],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -1521,7 +1553,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -1638,36 +1671,16 @@
         "recommendation": "Strong"
       },
       "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Booz Allen Hamilton",
-            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
-            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
-          },
-          {
-            "name": "Leidos",
-            "why": "Federal data platforms, large data engineering contracts",
-            "url": "https://www.highergov.com/awardee/?search=Leidos"
-          },
-          {
-            "name": "SAIC",
-            "why": "Large cloud/IT prime, competes on cloud migration and app mod at federal scale",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/"
-          },
-          {
-            "name": "Peraton",
-            "why": "Cloud infrastructure, DevSecOps \u2014 threatens on cloud/tech-heavy RFPs",
-            "url": "https://www.highergov.com/awardee/?search=Peraton"
-          }
-        ],
+        "competitors": [],
         "partners": [
           {
-            "name": "Clarity24 LLC (BLN24 JV)",
-            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital ($4M). Cloud is Clarity24's core lane.",
+            "name": "Clarity24 LLC (BLN24 Active JV)",
+            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital Transformation ($4M). Cloud engineering is Clarity24's core delivery lane.",
             "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
             "relationship": "Active JV"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -1738,7 +1751,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -1809,7 +1823,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -1880,7 +1895,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -1956,7 +1972,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -2053,12 +2070,13 @@
         "competitors": [],
         "partners": [
           {
-            "name": "SAIC or ManTech",
-            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
+            "why": "Census-specific: Amivero and Spatial Front already hold Census security credentials. For other agencies, ManTech has cleared cyber capability. Sub arrangement covers ATO without BLN24 holding it.",
+            "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
             "relationship": "Recommended sub"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -2128,7 +2146,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -2228,17 +2247,27 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "ICF International",
-            "why": "Major health/public affairs comms, CDC/HHS anchor \u2014 primary competitor on comms RFPs",
-            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/"
+            "name": "ICF International (mid-market subsidiary)",
+            "why": "ICF has SB subsidiaries that compete on health comms set-asides. Primary health comms competitor regardless of set-aside type.",
+            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/",
+            "evidence": "HHS, CMS, CDC \u2014 health communications, behavior change"
           },
           {
-            "name": "Ketchum",
-            "why": "Federal health comms, FDA/CDC campaigns, established agency relationships",
-            "url": "https://www.highergov.com/awardee/?search=Ketchum"
+            "name": "Valassis Communications / Vericast",
+            "why": "SB comms/outreach firm with federal health comms contracts. Multilingual outreach and public awareness campaigns.",
+            "url": "https://www.highergov.com/awardee/?search=Vericast",
+            "evidence": "Federal health comms, multilingual outreach"
           }
         ],
-        "partners": []
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -2337,19 +2366,9 @@
         "recommendation": "Moderate"
       },
       "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Chemonics International",
-            "why": "Largest MCC/USAID implementer \u2014 likely incumbent or strong competitor on MCC work",
-            "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/"
-          },
-          {
-            "name": "DevTech Systems",
-            "why": "MCC/USAID monitoring & evaluation, workforce dev, education advisory \u2014 direct MCC competitor",
-            "url": "https://www.highergov.com/awardee/?search=DevTech+Systems"
-          }
-        ],
-        "partners": []
+        "competitors": [],
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -2424,7 +2443,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -2503,7 +2523,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -2602,7 +2623,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -2677,7 +2699,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBP \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -2752,7 +2775,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -2827,7 +2851,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -2905,7 +2930,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -2980,7 +3006,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -3055,7 +3082,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -3160,18 +3188,19 @@
         "competitors": [],
         "partners": [
           {
-            "name": "SAIC or ManTech",
-            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
+            "why": "Census-specific: Amivero and Spatial Front already hold Census security credentials. For other agencies, ManTech has cleared cyber capability. Sub arrangement covers ATO without BLN24 holding it.",
+            "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
             "relationship": "Recommended sub"
           },
           {
             "name": "Chemonics International",
-            "why": "Largest MCC/USAID implementer. Deep TVET and workforce development in compact countries. Sub arrangement fills BLN24's international workforce gap.",
+            "why": "Largest MCC/USAID implementer. TVET and workforce development expertise in compact countries. Teaming with Chemonics fills BLN24's LMIC workforce gap and adds MCC incumbent credibility.",
             "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/",
             "relationship": "Recommended sub"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -3246,7 +3275,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -3340,7 +3370,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -3415,7 +3446,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -3490,7 +3522,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -3584,12 +3617,13 @@
         "competitors": [],
         "partners": [
           {
-            "name": "SAIC or ManTech",
-            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
+            "why": "Census-specific: Amivero and Spatial Front already hold Census security credentials. For other agencies, ManTech has cleared cyber capability. Sub arrangement covers ATO without BLN24 holding it.",
+            "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
             "relationship": "Recommended sub"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -3683,7 +3717,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -3758,7 +3793,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -3851,7 +3887,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -3943,7 +3980,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -4071,26 +4109,16 @@
         "recommendation": "Weak / JV"
       },
       "competitive_intel": {
-        "competitors": [
-          {
-            "name": "SAIC",
-            "why": "Large cloud/IT prime, competes on cloud migration and app mod at federal scale",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/"
-          },
-          {
-            "name": "Peraton",
-            "why": "Cloud infrastructure, DevSecOps \u2014 threatens on cloud/tech-heavy RFPs",
-            "url": "https://www.highergov.com/awardee/?search=Peraton"
-          }
-        ],
+        "competitors": [],
         "partners": [
           {
-            "name": "Clarity24 LLC (BLN24 JV)",
-            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital ($4M). Cloud is Clarity24's core lane.",
+            "name": "Clarity24 LLC (BLN24 Active JV)",
+            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital Transformation ($4M). Cloud engineering is Clarity24's core delivery lane.",
             "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
             "relationship": "Active JV"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -4185,12 +4213,13 @@
         "competitors": [],
         "partners": [
           {
-            "name": "SAIC or ManTech",
-            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
+            "why": "Census-specific: Amivero and Spatial Front already hold Census security credentials. For other agencies, ManTech has cleared cyber capability. Sub arrangement covers ATO without BLN24 holding it.",
+            "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
             "relationship": "Recommended sub"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -4261,7 +4290,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -4371,19 +4401,9 @@
         "recommendation": "Weak / JV"
       },
       "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Booz Allen Hamilton",
-            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
-            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
-          },
-          {
-            "name": "Leidos",
-            "why": "Federal data platforms, large data engineering contracts",
-            "url": "https://www.highergov.com/awardee/?search=Leidos"
-          }
-        ],
-        "partners": []
+        "competitors": [],
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -4470,7 +4490,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -4540,7 +4561,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -4654,29 +4676,9 @@
         "recommendation": "Strong"
       },
       "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Booz Allen Hamilton",
-            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
-            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
-          },
-          {
-            "name": "Leidos",
-            "why": "Federal data platforms, large data engineering contracts",
-            "url": "https://www.highergov.com/awardee/?search=Leidos"
-          },
-          {
-            "name": "Chemonics International",
-            "why": "Largest MCC/USAID implementer \u2014 likely incumbent or strong competitor on MCC work",
-            "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/"
-          },
-          {
-            "name": "DevTech Systems",
-            "why": "MCC/USAID monitoring & evaluation, workforce dev, education advisory \u2014 direct MCC competitor",
-            "url": "https://www.highergov.com/awardee/?search=DevTech+Systems"
-          }
-        ],
-        "partners": []
+        "competitors": [],
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -4746,7 +4748,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -4833,7 +4836,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -4904,7 +4908,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -5030,26 +5035,16 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Booz Allen Hamilton",
-            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
-            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
-          },
-          {
-            "name": "Leidos",
-            "why": "Federal data platforms, large data engineering contracts",
-            "url": "https://www.highergov.com/awardee/?search=Leidos"
-          }
-        ],
+        "competitors": [],
         "partners": [
           {
-            "name": "SAIC or ManTech",
-            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
+            "why": "Census-specific: Amivero and Spatial Front already hold Census security credentials. For other agencies, ManTech has cleared cyber capability. Sub arrangement covers ATO without BLN24 holding it.",
+            "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
             "relationship": "Recommended sub"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -5120,7 +5115,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -5190,7 +5186,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -5320,42 +5317,22 @@
         "recommendation": "Moderate"
       },
       "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Booz Allen Hamilton",
-            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
-            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
-          },
-          {
-            "name": "Leidos",
-            "why": "Federal data platforms, large data engineering contracts",
-            "url": "https://www.highergov.com/awardee/?search=Leidos"
-          },
-          {
-            "name": "SAIC",
-            "why": "Large cloud/IT prime, competes on cloud migration and app mod at federal scale",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/"
-          },
-          {
-            "name": "Peraton",
-            "why": "Cloud infrastructure, DevSecOps \u2014 threatens on cloud/tech-heavy RFPs",
-            "url": "https://www.highergov.com/awardee/?search=Peraton"
-          }
-        ],
+        "competitors": [],
         "partners": [
           {
-            "name": "SAIC or ManTech",
-            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
+            "why": "Census-specific: Amivero and Spatial Front already hold Census security credentials. For other agencies, ManTech has cleared cyber capability. Sub arrangement covers ATO without BLN24 holding it.",
+            "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
             "relationship": "Recommended sub"
           },
           {
-            "name": "Clarity24 LLC (BLN24 JV)",
-            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital ($4M). Cloud is Clarity24's core lane.",
+            "name": "Clarity24 LLC (BLN24 Active JV)",
+            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital Transformation ($4M). Cloud engineering is Clarity24's core delivery lane.",
             "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
             "relationship": "Active JV"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -5481,26 +5458,16 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Booz Allen Hamilton",
-            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
-            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
-          },
-          {
-            "name": "Leidos",
-            "why": "Federal data platforms, large data engineering contracts",
-            "url": "https://www.highergov.com/awardee/?search=Leidos"
-          }
-        ],
+        "competitors": [],
         "partners": [
           {
-            "name": "SAIC or ManTech",
-            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
+            "why": "Census-specific: Amivero and Spatial Front already hold Census security credentials. For other agencies, ManTech has cleared cyber capability. Sub arrangement covers ATO without BLN24 holding it.",
+            "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
             "relationship": "Recommended sub"
           }
-        ]
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -5570,7 +5537,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
     {
@@ -5640,7 +5608,8 @@
       },
       "competitive_intel": {
         "competitors": [],
-        "partners": []
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     }
   ]
