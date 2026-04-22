@@ -384,6 +384,32 @@
     </div>
   </div>
 
+  <!-- GP at a Glance — top of CPO -->
+  <div class="sl" style="margin-top:0"><div class="st">Gross Profit At a Glance — All Tracked Programs</div><span class="badge b-ai">&#9670; After cost only &middot; Click rows for detail &middot; <span id="gp-month-label">Mar 2026</span></span></div>
+
+  <!-- Month selector -->
+  <div style="display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap" id="gp-month-btns">
+    <button onclick="showGpMonth('Oct-2025',this)" class="type-btn">Oct 25</button>
+    <button onclick="showGpMonth('Nov-2025',this)" class="type-btn">Nov 25</button>
+    <button onclick="showGpMonth('Dec-2025',this)" class="type-btn">Dec 25</button>
+    <button onclick="showGpMonth('Jan-2026',this)" class="type-btn">Jan 26</button>
+    <button onclick="showGpMonth('Feb-2026',this)" class="type-btn">Feb 26</button>
+    <button onclick="showGpMonth('Mar-2026',this)" class="type-btn active">Mar 26</button>
+    <button onclick="showGpMonth('total',this)" class="type-btn" style="margin-left:8px;border-color:var(--gold);color:var(--gold-dark)">&#931; YTD Total</button>
+  </div>
+
+  <!-- GP cards grid -->
+  <div id="gp-cards" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-bottom:20px"></div>
+
+  <!-- GP bar chart -->
+  <div class="card" style="margin-bottom:20px">
+    <div class="card-hdr">
+      <span class="card-title" id="gp-chart-title">Monthly Gross Profit by Program — Mar 2026</span>
+      <span class="badge b-ai">&#9670; Revenue after cost</span>
+    </div>
+    <div style="height:280px;position:relative"><canvas id="gpBarChart"></canvas></div>
+  </div>
+
   <!-- Portfolio + Risk -->
   <div class="g2" style="margin-bottom:16px">
     <div class="card">
@@ -841,7 +867,7 @@ window.addEventListener('DOMContentLoaded',function(){
 
 // TABS
 function switchTab(name,el){
-  if(name==='cpo'){setTimeout(function(){if(typeof wireCpoRows==='function')wireCpoRows();},30);}
+  if(name==='cpo'){setTimeout(function(){if(typeof wireCpoRows==='function'){wireCpoRows();}if(typeof renderGpCards==='function'){renderGpCards(currentGpMonth||'Mar-2026');renderGpChart(currentGpMonth||'Mar-2026');}},30);}
   document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
@@ -1658,6 +1684,100 @@ function openCpoModal(id) {
     + '</div>';
 
   openModal('CPO · Program Detail', p.name, p.agency, body, 'Atlas · Apr 22, 2026');
+}
+
+// GP Month Data
+var GP_DATA = {
+  programs: ["SRQA","AWS","DHA MRDC","OIDP","NOAA IDP","QUANTM","Entrokey","CBP DTO","NOAA NWS AI","MNPS","EAVS","FEMA","NTIA"],
+  colors:   ["#16A34A","#FF9900","#004B87","#6B2D8B","#00A3E0","#0072CE","#D97706","#DC2626","#059669","#7C3AED","#0891B2","#9333EA","#2563EB"],
+  agencies: ["Census/AFS","Amazon","DHA/DoD","HHS","NOAA/C24","Census","Entrokey","CBP/C24","NOAA","CMS","EAC","FEMA","NTIA"],
+  cpo_ids:  ["srqa","aws","dha","oidp","noaa_idp","quantm","entrokey","cbp","noaa_ai","mnps","eavs","fema","ntia"],
+  monthly: {
+    "Oct-2025": [40646,null,18051,28950,141527,9281,1341,27083,71067,22189,3337,1112,null],
+    "Nov-2025": [36267,null,17238,31225,144748,7432,9115,23186,-10313,40693,3749,1779,null],
+    "Dec-2025": [41747,-3123,6726,36233,55072,7432,-2720,11310,11601,21935,2868,1045,null],
+    "Jan-2026": [49791,null,24344,29803,7615,6188,4956,18011,35175,null,3219,1778,null],
+    "Feb-2026": [43462,128924,19148,29471,7451,null,6265,19337,null,null,15651,232,null],
+    "Mar-2026": [17447,49391,18049,34325,-1132,18400,33740,13334,-5325,9255,-2490,232,809],
+    "total":    [229360,175192,103556,190007,355281,48733,52697,112261,102205,94072,26334,6178,809]
+  }
+};
+
+var gpChart = null;
+var currentGpMonth = 'Mar-2026';
+
+function showGpMonth(month, btn) {
+  currentGpMonth = month;
+  document.querySelectorAll('#gp-month-btns .type-btn').forEach(function(b){ b.classList.remove('active'); });
+  if (btn) btn.classList.add('active');
+
+  var label = month === 'total' ? 'YTD Total (All Tracked Months)' : month;
+  var labelEl = document.getElementById('gp-month-label');
+  if (labelEl) labelEl.textContent = label;
+  var chartTitle = document.getElementById('gp-chart-title');
+  if (chartTitle) chartTitle.textContent = (month === 'total' ? 'YTD Total Gross Profit by Program' : 'Monthly Gross Profit by Program — ' + month);
+
+  renderGpCards(month);
+  renderGpChart(month);
+}
+
+function renderGpCards(month) {
+  var el = document.getElementById('gp-cards');
+  if (!el) return;
+  var vals = GP_DATA.monthly[month] || [];
+  // Sort by value descending
+  var items = GP_DATA.programs.map(function(p, i) {
+    return { name: p, agency: GP_DATA.agencies[i], val: vals[i], color: GP_DATA.colors[i], cpo_id: GP_DATA.cpo_ids[i] };
+  }).filter(function(x){ return x.val !== null && x.val !== undefined; });
+  items.sort(function(a,b){ return b.val - a.val; });
+
+  el.innerHTML = items.map(function(item) {
+    var gp = item.val;
+    var gpStr = (gp >= 0 ? '+$' : '-$') + Math.abs(gp/1000).toFixed(0) + 'K';
+    var bgColor = gp < 0 ? 'var(--red-light)' : gp < 5000 ? 'var(--yellow-light)' : 'var(--white)';
+    var valColor = gp < 0 ? 'var(--red)' : gp < 5000 ? 'var(--yellow)' : 'var(--green)';
+    var borderColor = gp < 0 ? 'var(--red)' : item.color;
+    return '<div onclick="openCpoModal('' + item.cpo_id + '')" style="background:' + bgColor + ';border:1px solid var(--border);border-top:3px solid ' + borderColor + ';border-radius:10px;padding:14px 16px;cursor:pointer;transition:box-shadow .15s" onmouseenter="this.style.boxShadow='0 4px 16px rgba(0,0,0,.1)'" onmouseleave="this.style.boxShadow=''">'
+      + '<div style="font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:4px">' + item.name + '</div>'
+      + '<div style="font-size:1.5rem;font-weight:800;color:' + valColor + ';line-height:1">' + gpStr + '</div>'
+      + '<div style="font-size:.65rem;color:var(--grey);margin-top:4px">' + item.agency + '</div>'
+      + '</div>';
+  }).join('');
+}
+
+function renderGpChart(month) {
+  var ctx = document.getElementById('gpBarChart');
+  if (!ctx) return;
+  var vals = GP_DATA.monthly[month] || [];
+  var items = GP_DATA.programs.map(function(p, i) {
+    return { name: p, val: vals[i], color: GP_DATA.colors[i] };
+  }).filter(function(x){ return x.val !== null && x.val !== undefined; });
+  items.sort(function(a,b){ return b.val - a.val; });
+
+  if (gpChart) { gpChart.destroy(); gpChart = null; }
+  gpChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: items.map(function(x){ return x.name; }),
+      datasets: [{
+        label: 'Gross Profit',
+        data: items.map(function(x){ return x.val; }),
+        backgroundColor: items.map(function(x){ return x.val < 0 ? '#FCA5A5' : x.color; }),
+        borderRadius: 4,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: {
+        callbacks: { label: function(c){ return ' $' + c.raw.toLocaleString(); } }
+      }},
+      scales: {
+        x: { grid: { display: false }, ticks: { font: { size: 11 }, color: '#6B6E7A' } },
+        y: { ticks: { callback: function(v){ return '$' + (v/1000).toFixed(0) + 'K'; }, color: '#6B6E7A' },
+             grid: { color: '#F0F0F4' } }
+      }
+    }
+  });
 }
 
 // Make CPO table rows clickable - runs on load and on tab switch
