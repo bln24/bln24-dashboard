@@ -397,6 +397,7 @@
     <button onclick="showGpMonth('Feb-2026',this)" class="type-btn">Feb 26</button>
     <button onclick="showGpMonth('Mar-2026',this)" class="type-btn active">Mar 26</button>
     <button onclick="showGpMonth('total',this)" class="type-btn" style="margin-left:8px;border-color:var(--gold);color:var(--gold-dark)">&#931; YTD Total</button>
+    <button onclick="showGpMonth('contract',this)" class="type-btn" style="margin-left:4px;border-color:var(--blue);color:var(--blue)">&#128196; Contract Period</button>
   </div>
 
   <!-- GP cards grid -->
@@ -2885,7 +2886,25 @@ var GP_DATA = {
     "Jan-2026": [49791,null,24344,29803,7615,6188,4956,18011,35175,null,3219,1778,null],
     "Feb-2026": [43462,128924,19148,29471,7451,null,6265,19337,null,null,15651,232,null],
     "Mar-2026": [17447,49391,18049,34325,-1132,18400,33740,13334,-5325,9255,-2490,232,809],
-    "total":    [229360,175192,103556,190007,355281,48733,52697,112261,102205,94072,26334,6178,809]
+    "total":    [229360,175192,103556,190007,355281,48733,52697,112261,102205,94072,26334,6178,809],
+    "contract": [258059,175192,178705,348353,407627,144483,33740,121172,288623,308414,35405,7739,31377]
+  },
+  labels: {
+    "contract": {
+      "SRQA":"OP3 (Sep 25–Mar 26, 7 mo)",
+      "AWS":"Base (Nov 25–Jun 26, 8 mo)",
+      "DHA MRDC":"Base (Sep 25–Sep 26, 13 mo)",
+      "OIDP":"OY1 (Sep 24–Sep 26, 13 mo)",
+      "NOAA IDP":"Base (Sep 25–Sep 26, 13 mo)",
+      "QUANTM":"Base (Jul 25–Aug 26, 13 mo)",
+      "Entrokey":"Phase 3 (Aug 25–Jun 26, 11 mo)",
+      "CBP DTO":"Base (Sep 25–Apr 26, 7 mo)",
+      "NOAA NWS AI":"Base (Jul 25–Jul 26, 13 mo)",
+      "MNPS":"OY1 (Mar 25–Mar 26, 13 mo)",
+      "EAVS":"Base (Sep 25–Sep 26, 13 mo)",
+      "FEMA":"Base (May 25–May 26, 13 mo)",
+      "NTIA":"Base (Mar 26–Sep 26, 7 mo)"
+    }
   }
 };
 
@@ -2897,11 +2916,11 @@ function showGpMonth(month, btn) {
   document.querySelectorAll('#gp-month-btns .type-btn').forEach(function(b){ b.classList.remove('active'); });
   if (btn) btn.classList.add('active');
 
-  var label = month === 'total' ? 'YTD Total (All Tracked Months)' : month;
+  var label = month === 'total' ? 'YTD Total (All Tracked Months)' : month === 'contract' ? 'Contract Period (Full Period in Financial Report)' : month;
   var labelEl = document.getElementById('gp-month-label');
   if (labelEl) labelEl.textContent = label;
   var chartTitle = document.getElementById('gp-chart-title');
-  if (chartTitle) chartTitle.textContent = (month === 'total' ? 'YTD Total Gross Profit by Program' : 'Monthly Gross Profit by Program — ' + month);
+  if (chartTitle) chartTitle.textContent = month === 'total' ? 'YTD Total Gross Profit by Program' : month === 'contract' ? 'Gross Profit — Full Contract Period' : 'Monthly Gross Profit by Program — ' + month;
 
   renderGpCards(month);
   renderGpChart(month);
@@ -2927,6 +2946,7 @@ function renderGpCards(month) {
       + '<div style="font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:4px">' + item.name + '</div>'
       + '<div style="font-size:1.5rem;font-weight:800;color:' + valColor + ';line-height:1">' + gpStr + '</div>'
       + '<div style="font-size:.65rem;color:var(--grey);margin-top:4px">' + item.agency + '</div>'
+      + (month === 'contract' && GP_DATA.labels && GP_DATA.labels.contract && GP_DATA.labels.contract[item.name] ? '<div style="font-size:.58rem;color:var(--blue);margin-top:2px">' + GP_DATA.labels.contract[item.name] + '</div>' : '')
       + '</div>';
   }).join('');
 }
