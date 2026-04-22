@@ -192,6 +192,7 @@
     .asana-link:hover{background:#d1eaf8;}
     footer{text-align:center;padding:20px 28px 32px;font-size:.63rem;color:var(--grey);border-top:1px solid var(--border);background:var(--white);margin-top:12px;}
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
 
@@ -407,7 +408,7 @@
       <span class="card-title" id="gp-chart-title">Monthly Gross Profit by Program — Mar 2026</span>
       <span class="badge b-ai">&#9670; Revenue after cost</span>
     </div>
-    <div style="height:280px;position:relative"><canvas id="gpBarChart"></canvas></div>
+    <div style="height:280px;position:relative;min-height:280px"><canvas id="gpBarChart"></canvas></div>
   </div>
 
   <!-- Revenue After Cost -->
@@ -867,7 +868,7 @@ window.addEventListener('DOMContentLoaded',function(){
 
 // TABS
 function switchTab(name,el){
-  if(name==='cpo'){setTimeout(function(){if(typeof wireCpoRows==='function'){wireCpoRows();}if(typeof renderGpCards==='function'){renderGpCards(currentGpMonth||'Mar-2026');renderGpChart(currentGpMonth||'Mar-2026');}},30);}
+  if(name==='cpo'){setTimeout(function(){if(typeof wireCpoRows==='function'){wireCpoRows();}if(typeof showGpMonth==='function'){showGpMonth(currentGpMonth||'Mar-2026',null);}},100);}
   document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
@@ -1754,7 +1755,7 @@ function renderGpChart(month) {
   }).filter(function(x){ return x.val !== null && x.val !== undefined; });
   items.sort(function(a,b){ return b.val - a.val; });
 
-  if (gpChart) { gpChart.destroy(); gpChart = null; }
+  try { if (gpChart) { gpChart.destroy(); } } catch(e){} gpChart = null;
   gpChart = new Chart(ctx, {
     type: 'bar',
     data: {
@@ -1794,7 +1795,13 @@ function wireCpoRows() {
     });
   });
 }
-document.addEventListener('DOMContentLoaded', wireCpoRows);
+document.addEventListener('DOMContentLoaded', function(){
+  wireCpoRows();
+  // If CPO tab is somehow active on load, render GP
+  if(document.getElementById('tab-cpo') && document.getElementById('tab-cpo').classList.contains('active')){
+    setTimeout(function(){ if(typeof showGpMonth==='function') showGpMonth('Mar-2026',null); }, 200);
+  }
+});
 </script>
 </body>
 </html>
