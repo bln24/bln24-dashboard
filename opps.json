@@ -22,7 +22,7 @@
       "isFullOpen": true,
       "ericAlso": false,
       "asana_task_gid": "1214150928848982",
-      "capture_score": 88,
+      "capture_score": 98,
       "win_prob": "Medium (20-40%)",
       "tier": 2,
       "rex_analysis": {
@@ -182,7 +182,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 78,
+      "capture_score_base": 88,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -210,7 +210,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 47,
+      "capture_score": 50,
       "win_reasons": [
         "Strong HCD/UX scope match \u2014 BLN24 proven prime (IRS $7M HCD BPA, Census UX, CBP digital transformation)",
         "Small business set-aside",
@@ -396,7 +396,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 44,
+      "capture_score_base": 47,
       "capture_score_delta": 3,
       "capture_score_delta_reasons": [
         "Strong incumbent: Chemonics International (MCC/USAID \u2014 largest implementer, multiple compact ) \u2014 -12pts",
@@ -426,7 +426,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": true,
-      "capture_score": 59,
+      "capture_score": 65,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Partial cloud/modernization match \u2014 Clarity24 JV has NOAA cloud delivery experience",
@@ -503,13 +503,13 @@
           {
             "name": "Vidoori Inc",
             "why": "$173M Enterprise Testing BPA + $7.3M CMMU AI/ML modernization + $4.7M internet data collection system. Multiple Census BPAs. One of the strongest Census relationships in the SB space.",
-            "url": "https://www.highergov.com/awardee/?search=Vidoori",
+            "url": "https://www.usaspending.gov/recipient/?query=Vidoori&page=1",
             "evidence": "$173M Census BPA, $7.3M CMMU modernization, $4.7M internet data collection"
           },
           {
             "name": "T-Rex Solutions (often teams with Vidoori)",
             "why": "Former 2020 Census technical integrator ($1.6B ESF SE&I BPA). Deep Census IT systems engineering knowledge. Frequently sub or JV on Census modernization work. Incumbent risk.",
-            "url": "https://www.highergov.com/awardee/?search=T-Rex+Solutions",
+            "url": "https://www.usaspending.gov/recipient/?query=Vidoori&page=1",
             "evidence": "2020 Census integrator $1.6B, deep Census systems knowledge"
           },
           {
@@ -543,7 +543,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 53,
+      "capture_score_base": 59,
       "capture_score_delta": 6,
       "capture_score_delta_reasons": [
         "Strong incumbent: T-Rex Solutions (often teams with Vidoori) (2020 Census integrator $1.6B, deep Census systems ) \u2014 -12pts",
@@ -573,7 +573,7 @@
       "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 92,
+      "capture_score": 102,
       "win_reasons": [
         "Web development lane: MBDA website .8M, Census DWS III .3M, Oversight.gov \u2014 direct match",
         "Content services: CMS MNPS M \u2014 federal content production at scale",
@@ -792,7 +792,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 82,
+      "capture_score_base": 92,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -821,7 +821,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 62,
+      "capture_score": 72,
       "win_reasons": [
         "Partial comms scope match \u2014 verify fit vs CMS/CDC/HUD delivery experience",
         "Small business set-aside"
@@ -929,7 +929,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 52,
+      "capture_score_base": 62,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -1143,7 +1143,7 @@
           {
             "name": "Westat",
             "why": "Federal statistical research firm. Survey methodology and program evaluation at Census, ED, and HHS. Regular IES contractor.",
-            "url": "https://www.highergov.com/awardee/?search=Westat",
+            "url": "https://www.usaspending.gov/recipient/?query=Westat&page=1",
             "evidence": "ED, Census, HHS \u2014 surveys, evaluation, statistical research"
           },
           {
@@ -1189,7 +1189,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 71,
+      "capture_score": 81,
       "win_reasons": [
         "Strong cloud/app modernization match \u2014 Clarity24 JV proven prime (NOAA cloud migration $7M, MAF/TIGER cloud)",
         "Small business set-aside",
@@ -1317,7 +1317,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 61,
+      "capture_score_base": 71,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -1824,7 +1824,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 66,
+      "capture_score": 76,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Small business set-aside",
@@ -1948,7 +1948,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 56,
+      "capture_score_base": 66,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -2553,7 +2553,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 53,
+      "capture_score": 63,
       "win_reasons": [
         "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
         "Small business set-aside",
@@ -2664,7 +2664,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 43,
+      "capture_score_base": 53,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -4513,7 +4513,7 @@
           {
             "name": "Westat",
             "why": "Federal statistical research firm. Survey methodology and program evaluation at Census, ED, and HHS. Regular IES contractor.",
-            "url": "https://www.highergov.com/awardee/?search=Westat",
+            "url": "https://www.usaspending.gov/recipient/?query=Westat&page=1",
             "evidence": "ED, Census, HHS \u2014 surveys, evaluation, statistical research"
           },
           {
@@ -4780,7 +4780,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 56,
+      "capture_score": 66,
       "win_reasons": [
         "Agency: Clarity24 JV (BLN24 + Accenture) has past performance here",
         "Partial HCD/UX scope match \u2014 verify fit vs IRS/Census delivery experience",
@@ -4909,7 +4909,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 46,
+      "capture_score_base": 56,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -5581,13 +5581,13 @@
           {
             "name": "Slalom Inc",
             "why": "$128M USCIS VER Future contract \u2014 this is THE incumbent on VER program work. Slalom won the VER Future modernization. Any VER-related opp, Slalom is the primary competitor to watch.",
-            "url": "https://www.highergov.com/awardee/?search=Slalom",
+            "url": "https://www.usaspending.gov/recipient/?query=Slalom+Inc&page=1",
             "evidence": "USCIS $128.7M VER Future (USASpending confirmed \u2014 DIRECT INCUMBENT on VER work)"
           },
           {
             "name": "Pluribus Digital",
             "why": "$80.6M USCIS DevSecOps services. Active USCIS digital and tech relationship. SB competitor for USCIS digital work.",
-            "url": "https://www.highergov.com/awardee/?search=Pluribus+Digital",
+            "url": "https://www.usaspending.gov/recipient/?query=Pluribus+Digital&page=1",
             "evidence": "USCIS $80.6M DevSecOps services (USASpending confirmed)"
           }
         ],

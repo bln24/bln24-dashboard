@@ -8,59 +8,66 @@
       {
         "name": "Vidoori Inc",
         "why": "$173M Enterprise Testing BPA + $7.3M CMMU AI/ML modernization + $4.7M internet data collection system. Multiple Census BPAs. One of the strongest Census relationships in the SB space.",
-        "url": "https://www.highergov.com/awardee/?search=Vidoori",
+        "url": "https://www.usaspending.gov/recipient/?query=Vidoori&page=1",
         "sa": "Small Business",
-        "evidence": "$173M Census BPA, $7.3M CMMU modernization, $4.7M internet data collection"
+        "evidence": "$173M Census BPA, $7.3M CMMU modernization, $4.7M internet data collection",
+        "url_type": "usaspending_search"
       },
       {
         "name": "T-Rex Solutions (often teams with Vidoori)",
         "why": "Former 2020 Census technical integrator ($1.6B ESF SE&I BPA). Deep Census IT systems engineering knowledge. Frequently sub or JV on Census modernization work. Incumbent risk.",
-        "url": "https://www.highergov.com/awardee/?search=T-Rex+Solutions",
+        "url": "https://www.usaspending.gov/recipient/?query=Vidoori&page=1",
         "sa": "Small Business",
-        "evidence": "2020 Census integrator $1.6B, deep Census systems knowledge"
+        "evidence": "2020 Census integrator $1.6B, deep Census systems knowledge",
+        "url_type": "usaspending_search"
       },
       {
         "name": "Spatial Front Inc",
         "why": "SB with $17M+ in confirmed Census tech awards. Cloud and data engineering. Active on Census SB set-asides.",
         "url": "https://www.highergov.com/awardee/spatial-front-inc-10000821/",
         "sa": "Small Business",
-        "evidence": "Census Bureau $17M+ confirmed"
+        "evidence": "Census Bureau $17M+ confirmed",
+        "url_type": "highergov_direct"
       },
       {
         "name": "Amivero LLC",
         "why": "SB with $5M Census SB set-aside awards. Cloud and data modernization focus.",
         "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
         "sa": "Small Business",
-        "evidence": "Census Bureau $5M SB set-aside"
+        "evidence": "Census Bureau $5M SB set-aside",
+        "url_type": "highergov_direct"
       },
       {
         "name": "Great Hill Solutions",
         "why": "8(a) with multiple Census sole-source awards ($7M). Growing Census relationship.",
         "url": "https://www.highergov.com/awardee/great-hill-solutions-llc-12512157/",
         "sa": "8(a)",
-        "evidence": "Census Bureau $7M, 3 sole-source awards"
+        "evidence": "Census Bureau $7M, 3 sole-source awards",
+        "url_type": "highergov_direct"
       }
     ],
     "app_modernization_sb_usaspending": [
       {
         "name": "T-REX SOLUTIONS LLC",
         "why": "Won $1480.2M at U.S. Census Bureau for IGF::OT::IGF  ENTERPRISE SOLUTIONS FRAMEWORK (ESF) FOR MULTI. Agency-confirmed track record for this type of work.",
-        "url": "https://www.highergov.com/awardee/?search=T-REX",
+        "url": "https://www.usaspending.gov/recipient/?query=T-Rex+Solutions&page=1",
         "evidence": "U.S. Census Bureau $1480.2M \u2014 IGF::OT::IGF  ENTERPRISE SOLUTIONS FRAMEWORK (ESF) FOR MULTI-TIERED AC (USASpending confirmed)",
         "amount_m": 1480.2,
         "description": "IGF::OT::IGF  ENTERPRISE SOLUTIONS FRAMEWORK (ESF) FOR MULTI-TIERED ACQUISITION ",
         "naics": null,
-        "sa": ""
+        "sa": "",
+        "url_type": "usaspending_search"
       },
       {
         "name": "GUIDEHOUSE DIGITAL LLC",
         "why": "Won $258.9M at U.S. Census Bureau for IT INFRASTRUCTURE SUPPORT SERVICES-DATA CENTER  IGF::OT::IGF. Agency-confirmed track record for this type of work.",
-        "url": "https://www.highergov.com/awardee/?search=GUIDEHOUSE",
+        "url": "https://www.usaspending.gov/recipient/?query=Guidehouse+Digital&page=1",
         "evidence": "U.S. Census Bureau $258.9M \u2014 IT INFRASTRUCTURE SUPPORT SERVICES-DATA CENTER  IGF::OT::IGF (USASpending confirmed)",
         "amount_m": 258.9,
         "description": "IT INFRASTRUCTURE SUPPORT SERVICES-DATA CENTER  IGF::OT::IGF",
         "naics": null,
-        "sa": ""
+        "sa": "",
+        "url_type": "usaspending_search"
       },
       {
         "name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
@@ -75,12 +82,13 @@
       {
         "name": "IRON VINE SECURITY LLC",
         "why": "Won $95.3M at U.S. Census Bureau for ENTERPRISE CYBERSECURITY SUPPORT SERVICES. Agency-confirmed track record for this type of work.",
-        "url": "https://www.highergov.com/awardee/?search=IRON",
+        "url": "https://www.usaspending.gov/recipient/?query=Iron+Vine+Security&page=1",
         "evidence": "U.S. Census Bureau $95.3M \u2014 ENTERPRISE CYBERSECURITY SUPPORT SERVICES (USASpending confirmed)",
         "amount_m": 95.3,
         "description": "ENTERPRISE CYBERSECURITY SUPPORT SERVICES",
         "naics": null,
-        "sa": ""
+        "sa": "",
+        "url_type": "usaspending_search"
       },
       {
         "name": "HARMONIA HOLDINGS GROUP, LLC",
@@ -95,12 +103,13 @@
       {
         "name": "METROSTAR SYSTEMS, LLC",
         "why": "Won $76.7M at U.S. Census Bureau for ENTERPRISE DATA DISSEMINATION ENVIRONMENT (EDDE) SERVICES. I. Agency-confirmed track record for this type of work.",
-        "url": "https://www.highergov.com/awardee/?search=METROSTAR",
+        "url": "https://www.usaspending.gov/recipient/?query=MetroStar+Systems&page=1",
         "evidence": "U.S. Census Bureau $76.7M \u2014 ENTERPRISE DATA DISSEMINATION ENVIRONMENT (EDDE) SERVICES. IGF::OT::IG (USASpending confirmed)",
         "amount_m": 76.7,
         "description": "ENTERPRISE DATA DISSEMINATION ENVIRONMENT (EDDE) SERVICES. IGF::OT::IGF  HYBRID ",
         "naics": null,
-        "sa": ""
+        "sa": "",
+        "url_type": "usaspending_search"
       },
       {
         "name": "EXECUTIVE INFORMATION SYSTEMS, L.L.C.",
@@ -115,12 +124,13 @@
       {
         "name": "SPATIAL FRONT INC",
         "why": "Won $57.3M at U.S. Census Bureau for GEOGRAPHY SUPPORT AND PROJECT MANAGEMENT SERVICES CALL ORDER. Agency-confirmed track record for this type of work.",
-        "url": "https://www.highergov.com/awardee/?search=SPATIAL",
+        "url": "https://www.highergov.com/awardee/spatial-front-inc-10000821/",
         "evidence": "U.S. Census Bureau $57.3M \u2014 GEOGRAPHY SUPPORT AND PROJECT MANAGEMENT SERVICES CALL ORDER 0006. (USASpending confirmed)",
         "amount_m": 57.3,
         "description": "GEOGRAPHY SUPPORT AND PROJECT MANAGEMENT SERVICES CALL ORDER 0006.",
         "naics": null,
-        "sa": ""
+        "sa": "",
+        "url_type": "highergov_direct"
       },
       {
         "name": "ALETHIX, LLC",
@@ -138,37 +148,42 @@
       {
         "name": "T-Rex Solutions LLC",
         "why": "INCUMBENT: $1.48B Census Enterprise Solutions Framework (ESF) integrator. This is the dominant Census IT firm. ANY Census modernization RFP, T-Rex is the biggest risk.",
-        "url": "https://www.highergov.com/awardee/?search=T-Rex+Solutions",
+        "url": "https://www.usaspending.gov/recipient/?query=T-Rex+Solutions&page=1",
         "evidence": "Census Bureau $1.48B ESF \u2014 2020 Census integrator, largest Census IT contract",
-        "amount_m": 1480
+        "amount_m": 1480,
+        "url_type": "usaspending_search"
       },
       {
         "name": "Guidehouse Digital LLC",
         "why": "$258M Census IT Infrastructure Support Services (data center, IGF). Large business Census IT relationship. Cannot prime SB but confirmed Census infra experience.",
-        "url": "https://www.highergov.com/awardee/?search=Guidehouse+Digital",
+        "url": "https://www.usaspending.gov/recipient/?query=Guidehouse+Digital&page=1",
         "evidence": "Census $258M IT Infrastructure Support (USASpending confirmed)",
-        "amount_m": 258
+        "amount_m": 258,
+        "url_type": "usaspending_search"
       },
       {
         "name": "Iron Vine Security LLC",
         "why": "$95M Census Enterprise Cybersecurity Support Services. THE Census cyber firm. If the opp has a security component at Census, Iron Vine is a competitor and potential sub.",
-        "url": "https://www.highergov.com/awardee/?search=Iron+Vine+Security",
+        "url": "https://www.usaspending.gov/recipient/?query=Iron+Vine+Security&page=1",
         "evidence": "Census $95M Enterprise Cybersecurity Support (USASpending confirmed)",
-        "amount_m": 95
+        "amount_m": 95,
+        "url_type": "usaspending_search"
       },
       {
         "name": "MetroStar Systems LLC",
         "why": "$76M Census EDDE (Enterprise Data Dissemination Environment). Data engineering and dissemination at Census.",
-        "url": "https://www.highergov.com/awardee/?search=MetroStar+Systems",
+        "url": "https://www.usaspending.gov/recipient/?query=MetroStar+Systems&page=1",
         "evidence": "Census $76M EDDE \u2014 enterprise data engineering (USASpending confirmed)",
-        "amount_m": 76
+        "amount_m": 76,
+        "url_type": "usaspending_search"
       },
       {
         "name": "Spatial Front Inc",
         "why": "$57M Census Geography Support and Project Management. SB competitor with deep Census relationship.",
         "url": "https://www.highergov.com/awardee/spatial-front-inc-10000821/",
         "evidence": "Census $57M Geography Support + $31M Enterprise Modernization (USASpending confirmed)",
-        "amount_m": 57
+        "amount_m": 57,
+        "url_type": "highergov_direct"
       }
     ]
   },
@@ -196,7 +211,8 @@
         "why": "ICF is the dominant health comms firm at CMS and HHS \u2014 but as a large business, cannot prime on SB set-asides. They are a competitor on full & open and a potential sub on SB. Know them both ways.",
         "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/",
         "sa": "Large Business \u2014 cannot prime on SB",
-        "evidence": "CMS, HHS, CDC \u2014 dominant health comms firm"
+        "evidence": "CMS, HHS, CDC \u2014 dominant health comms firm",
+        "url_type": "highergov_direct"
       }
     ]
   },
@@ -208,26 +224,29 @@
         "why": "Confirmed HUD winner: $6.8M administrative/outreach support + $1M 8(a) public relations at HUD. Active HUD relationship across multiple offices. Should be on radar for any HUD comms or outreach work.",
         "url": "https://www.highergov.com/awardee/red-carrot-inc-10011907/",
         "sa": "8(a) / Small Business",
-        "evidence": "HUD $6.8M admin/outreach + $1M 8(a) PR \u2014 confirmed HUD awards"
+        "evidence": "HUD $6.8M admin/outreach + $1M 8(a) PR \u2014 confirmed HUD awards",
+        "url_type": "highergov_direct"
       },
       {
         "name": "Schatz Publishing Group",
         "why": "$5.2M HUD evaluation and communications support. Mid-size firm with confirmed HUD relationship.",
         "url": "https://www.highergov.com/awardee/schatz-publishing-group-llc-10005750/",
         "sa": "Small Business",
-        "evidence": "HUD $5.2M \u2014 evaluation and communications"
+        "evidence": "HUD $5.2M \u2014 evaluation and communications",
+        "url_type": "highergov_direct"
       }
     ],
     "comms_sb_usaspending": [
       {
         "name": "RED CARROT INC",
         "why": "Won $7.7M at Department of Housing and Urban Development for BROADCASTING, WEBCASTING AND SATELLITE SERVICES FOR THE DEPA. Agency-confirmed track record for this type of work.",
-        "url": "https://www.highergov.com/awardee/?search=RED",
+        "url": "https://www.highergov.com/awardee/red-carrot-inc-10011907/",
         "evidence": "Department of Housing and Urban Development $7.7M \u2014 BROADCASTING, WEBCASTING AND SATELLITE SERVICES FOR THE DEPARTMENT (USASpending confirmed)",
         "amount_m": 7.7,
         "description": "BROADCASTING, WEBCASTING AND SATELLITE SERVICES FOR THE DEPARTMENT",
         "naics": null,
-        "sa": ""
+        "sa": "",
+        "url_type": "highergov_direct"
       },
       {
         "name": "LINKIT, LLC",
@@ -287,14 +306,16 @@
         "why": "$7.7M HUD broadcasting/webcasting + confirmed HUD public relations. Top HUD comms SB. Strongest competitor on HUD outreach work.",
         "url": "https://www.highergov.com/awardee/red-carrot-inc-10011907/",
         "evidence": "HUD $7.7M broadcasting/webcasting (USASpending confirmed)",
-        "amount_m": 7.7
+        "amount_m": 7.7,
+        "url_type": "highergov_direct"
       },
       {
         "name": "Schatz Publishing Group LLC",
         "why": "$1.3M HUD professional editing and publications. Active HUD comms relationship.",
         "url": "https://www.highergov.com/awardee/schatz-publishing-group-llc-10005750/",
         "evidence": "HUD $1.3M editing/publications (USASpending confirmed)",
-        "amount_m": 1.3
+        "amount_m": 1.3,
+        "url_type": "highergov_direct"
       },
       {
         "name": "Bixal Solutions Inc",
@@ -332,7 +353,8 @@
         "why": "Largest MCC/USAID implementer globally. Multiple MCC compact country programs. Likely bidder or incumbent on any MCC advisory work. Primary competitor.",
         "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/",
         "sa": "N/A (international development \u2014 size standards differ)",
-        "evidence": "MCC/USAID \u2014 largest implementer, multiple compact countries"
+        "evidence": "MCC/USAID \u2014 largest implementer, multiple compact countries",
+        "url_type": "highergov_direct"
       },
       {
         "name": "DevTech Systems",
@@ -346,7 +368,8 @@
         "why": "International education, TVET, and workforce programs in developing countries. Directly competes on education and workforce advisory for MCC compact countries.",
         "url": "https://www.highergov.com/awardee/creative-associates-international-inc-1847/",
         "sa": "Small Business",
-        "evidence": "USAID, MCC \u2014 TVET, education, workforce in LMIC"
+        "evidence": "USAID, MCC \u2014 TVET, education, workforce in LMIC",
+        "url_type": "highergov_direct"
       }
     ]
   },
@@ -375,22 +398,24 @@
       {
         "name": "STEAMPUNK, INC.",
         "why": "Won $32.8M at Drug Enforcement Administration for SUPPORT- PROFESSIONAL: PROGRAM MANAGEMENT/SUPPORT. Agency-confirmed track record for this type of work.",
-        "url": "https://www.highergov.com/awardee/?search=STEAMPUNK%2C",
+        "url": "https://www.usaspending.gov/recipient/?query=Steampunk+Inc&page=1",
         "evidence": "Drug Enforcement Administration $32.8M \u2014 SUPPORT- PROFESSIONAL: PROGRAM MANAGEMENT/SUPPORT (USASpending confirmed)",
         "amount_m": 32.8,
         "description": "SUPPORT- PROFESSIONAL: PROGRAM MANAGEMENT/SUPPORT",
         "naics": null,
-        "sa": ""
+        "sa": "",
+        "url_type": "usaspending_search"
       },
       {
         "name": "VSOLVIT LLC",
         "why": "Won $32.6M at Drug Enforcement Administration for CONTRACT FOR DATA MANAGEMENT SUPPORT (VORTEX). Agency-confirmed track record for this type of work.",
-        "url": "https://www.highergov.com/awardee/?search=VSOLVIT",
+        "url": "https://www.usaspending.gov/recipient/?query=VSolvit&page=1",
         "evidence": "Drug Enforcement Administration $32.6M \u2014 CONTRACT FOR DATA MANAGEMENT SUPPORT (VORTEX) (USASpending confirmed)",
         "amount_m": 32.6,
         "description": "CONTRACT FOR DATA MANAGEMENT SUPPORT (VORTEX)",
         "naics": null,
-        "sa": ""
+        "sa": "",
+        "url_type": "usaspending_search"
       },
       {
         "name": "ASRC FEDERAL AGILE MANAGEMENT LLC",
@@ -448,16 +473,18 @@
       {
         "name": "Steampunk Inc",
         "why": "$32.8M DEA professional program management/IT support. Active DEA relationship. Key competitor on DEA tech work.",
-        "url": "https://www.highergov.com/awardee/?search=Steampunk",
+        "url": "https://www.usaspending.gov/recipient/?query=Steampunk+Inc&page=1",
         "evidence": "DEA $32.8M IT program management (USASpending confirmed)",
-        "amount_m": 32.8
+        "amount_m": 32.8,
+        "url_type": "usaspending_search"
       },
       {
         "name": "VSolvit LLC",
         "why": "$32.6M DEA VORTEX data management contract. Data management and IT at DEA.",
-        "url": "https://www.highergov.com/awardee/?search=VSolvit",
+        "url": "https://www.usaspending.gov/recipient/?query=VSolvit&page=1",
         "evidence": "DEA $32.6M VORTEX data management (USASpending confirmed)",
-        "amount_m": 32.6
+        "amount_m": 32.6,
+        "url_type": "usaspending_search"
       },
       {
         "name": "ASRC Federal Agile Management LLC",
@@ -500,9 +527,10 @@
       {
         "name": "Westat",
         "why": "Federal statistical research firm. Survey methodology and program evaluation at Census, ED, and HHS. Regular IES contractor.",
-        "url": "https://www.highergov.com/awardee/?search=Westat",
+        "url": "https://www.usaspending.gov/recipient/?query=Westat&page=1",
         "sa": "Small Business eligible on some NAICS",
-        "evidence": "ED, Census, HHS \u2014 surveys, evaluation, statistical research"
+        "evidence": "ED, Census, HHS \u2014 surveys, evaluation, statistical research",
+        "url_type": "usaspending_search"
       },
       {
         "name": "Abt Associates",
@@ -651,30 +679,34 @@
       {
         "name": "IPG DXTRA Inc (Interpublic Group)",
         "why": "$66.5M CDC NCIRD Communications Support. The dominant CDC health comms firm. If you are competing against a CDC comms contract, IPG DXTRA is likely the strongest competitor or incumbent.",
-        "url": "https://www.highergov.com/awardee/?search=IPG+DXTRA",
+        "url": "https://www.usaspending.gov/recipient/?query=IPG+DXTRA&page=1",
         "evidence": "CDC $66.5M NCIRD communications (USASpending confirmed)",
-        "amount_m": 66.5
+        "amount_m": 66.5,
+        "url_type": "usaspending_search"
       },
       {
         "name": "Brunet-Garcia Advertising LLC",
         "why": "$20.5M CDC drug overdose campaign research. SB advertising and campaign firm with confirmed CDC work.",
-        "url": "https://www.highergov.com/awardee/?search=Brunet-Garcia",
+        "url": "https://www.usaspending.gov/recipient/?query=Brunet-Garcia&page=1",
         "evidence": "CDC $20.5M drug overdose campaign research (USASpending confirmed)",
-        "amount_m": 20.5
+        "amount_m": 20.5,
+        "url_type": "usaspending_search"
       },
       {
         "name": "Westat Inc",
         "why": "$11.2M CDC HIV communications and partnership support. Research + communications firm with confirmed CDC relationship.",
-        "url": "https://www.highergov.com/awardee/?search=Westat",
+        "url": "https://www.usaspending.gov/recipient/?query=Westat&page=1",
         "evidence": "CDC $11.2M HIV comms/partnership (USASpending confirmed)",
-        "amount_m": 11.2
+        "amount_m": 11.2,
+        "url_type": "usaspending_search"
       },
       {
         "name": "Palladian Partners Inc",
         "why": "$9.5M CDC DHDSP Million Hearts communications. Active CDC health comms SB competitor.",
-        "url": "https://www.highergov.com/awardee/?search=Palladian+Partners",
+        "url": "https://www.usaspending.gov/recipient/?query=Palladian+Partners&page=1",
         "evidence": "CDC $9.5M Million Hearts communications (USASpending confirmed)",
-        "amount_m": 9.5
+        "amount_m": 9.5,
+        "url_type": "usaspending_search"
       }
     ]
   },
@@ -684,16 +716,18 @@
       {
         "name": "Slalom Inc",
         "why": "$128M USCIS VER Future contract \u2014 this is THE incumbent on VER program work. Slalom won the VER Future modernization. Any VER-related opp, Slalom is the primary competitor to watch.",
-        "url": "https://www.highergov.com/awardee/?search=Slalom",
+        "url": "https://www.usaspending.gov/recipient/?query=Slalom+Inc&page=1",
         "evidence": "USCIS $128.7M VER Future (USASpending confirmed \u2014 DIRECT INCUMBENT on VER work)",
-        "amount_m": 128.7
+        "amount_m": 128.7,
+        "url_type": "usaspending_search"
       },
       {
         "name": "Pluribus Digital",
         "why": "$80.6M USCIS DevSecOps services. Active USCIS digital and tech relationship. SB competitor for USCIS digital work.",
-        "url": "https://www.highergov.com/awardee/?search=Pluribus+Digital",
+        "url": "https://www.usaspending.gov/recipient/?query=Pluribus+Digital&page=1",
         "evidence": "USCIS $80.6M DevSecOps services (USASpending confirmed)",
-        "amount_m": 80.6
+        "amount_m": 80.6,
+        "url_type": "usaspending_search"
       }
     ]
   },
