@@ -750,100 +750,394 @@
     </div>
   </div>
 
-  <!-- WIN/LOSS DATA FROM OFFICIAL GOVERNMENT SOURCES -->
-  <div class="card" style="margin-top:16px;border-top:3px solid var(--gold-dark)">
-    <div class="card-hdr"><span class="card-title">🏛️ Win/Loss Data from Official Government Sources</span><span class="badge b-hist">28 debrief letters · 2023–2026</span></div>
-    <div style="font-size:.74rem;color:var(--muted);margin-bottom:12px">Extracted from official government award/debrief notifications in the BLN24 SharePoint Debrief folder. Every entry is sourced from a government-issued letter, not internal estimates.</div>
+  <!-- DEEP WIN/LOSS ANALYSIS FROM OFFICIAL SOURCES -->
+  <div class="card" style="margin-top:16px;border-top:3px solid #27ae60">
+    <div class="card-hdr"><span class="card-title">🔬 Deep Win/Loss Analysis — Official Sources</span><span class="badge b-hist">23 wins · 13 losses · All from gov letters & CPARS</span></div>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:.78rem;line-height:1.7">
-      <div>
-        <div style="font-weight:700;margin-bottom:8px;color:var(--green)">✅ Why We Win (Government Confirmed)</div>
-        <ul style="padding-left:16px;color:var(--black)">
-          <li><strong>8(a) sole source</strong> — highest win rate, no competition (MBDA, Census sole sources)</li>
-          <li><strong>8(a) competitive with &lt;5 competitors</strong> — CMS MNPS $16M won on 8(a) competitive</li>
-          <li><strong>Agency-specific past performance</strong> — DHA re-award $9.9M, Census repeat wins</li>
-          <li><strong>Technical + PP both strong</strong> — FMCS: BLN24 rated <em>Exceptional</em> on PP, still lost because technical was only <em>Acceptable</em></li>
-          <li><strong>Price competitiveness matters at parity</strong> — when technical is close, price decides</li>
-        </ul>
+    <!-- WIN BREAKDOWN STATS -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px">
+      <div style="background:#eafaf1;border-radius:8px;padding:12px;text-align:center">
+        <div style="font-size:1.8rem;font-weight:700;color:#27ae60">23</div>
+        <div style="font-size:.73rem;color:var(--muted)">Total Wins</div>
+        <div style="font-size:.8rem;font-weight:600">$144.4M TCV</div>
       </div>
-      <div>
-        <div style="font-weight:700;margin-bottom:8px;color:var(--red)">❌ Why We Lose (Government Confirmed)</div>
-        <ul style="padding-left:16px;color:var(--black)">
-          <li><strong>"Good" vs "Outstanding"</strong> — lost NIMHD $2.1M, DHA $9.1M because competitors rated Outstanding/Exceptional while BLN24 rated Good/Acceptable</li>
-          <li><strong>SOW misalignment</strong> — IRS: wrote about web, they wanted notices. ED IES: didn't address discovery phase. Census GUPS: pointed to future work not demonstrated PP</li>
-          <li><strong>Language/style errors</strong> — NIMHD: used "minorities" (flagged as <em>major issue</em>). ED IES: press release didn't mention IES once. Wrong vendor name used</li>
-          <li><strong>Price non-compliance</strong> — DOL $22.3M: pricing didn't follow RFQ instructions, never evaluated</li>
-          <li><strong>Specialized PP gaps</strong> — NIMH multimedia: video style not modern. Census GUPS: no GIS/QGIS. NIMHD: no OMB clearance experience</li>
-          <li><strong>PP breadth for BPAs</strong> — USCG BPA: "low confidence" because we didn't cover all task areas</li>
-        </ul>
+      <div style="background:#fef9e7;border-radius:8px;padding:12px;text-align:center">
+        <div style="font-size:1.8rem;font-weight:700;color:var(--gold-dark)">14</div>
+        <div style="font-size:.73rem;color:var(--muted)">8(a) Sole Source</div>
+        <div style="font-size:.8rem;font-weight:600">$46.2M TCV</div>
       </div>
-    </div>
-
-    <div style="margin-top:14px">
-      <div style="font-weight:700;font-size:.78rem;margin-bottom:8px;color:var(--gold-dark)">⚔️ Who Beat Us (Government Named)</div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;font-size:.74rem">
-        <div style="background:#fafafa;border:1px solid #eee;border-radius:6px;padding:8px">
-          <div style="font-weight:700;color:var(--red)">FedWriters Inc</div>
-          <div style="color:var(--muted)">IRS CRX $4.0M (2024)<br>DOL RA $22.3M (2026)</div>
-        </div>
-        <div style="background:#fafafa;border:1px solid #eee;border-radius:6px;padding:8px">
-          <div style="font-weight:700;color:var(--red)">SAVVEE INC</div>
-          <div style="color:var(--muted)">USCG BPA $23.5M (2025)</div>
-        </div>
-        <div style="background:#fafafa;border:1px solid #eee;border-radius:6px;padding:8px">
-          <div style="font-weight:700;color:var(--red)">ITCON Services</div>
-          <div style="color:var(--muted)">NIMHD Web Mod $2.1M (2023)</div>
-        </div>
-        <div style="background:#fafafa;border:1px solid #eee;border-radius:6px;padding:8px">
-          <div style="font-weight:700;color:var(--red)">Rock Creek Productions</div>
-          <div style="color:var(--muted)">FMCS $99K (2024) — beat us despite we were cheaper</div>
-        </div>
-        <div style="background:#fafafa;border:1px solid #eee;border-radius:6px;padding:8px">
-          <div style="font-weight:700;color:var(--red)">A1Fed Inc</div>
-          <div style="color:var(--muted)">DHA BPA $6.8M (2025) — we bid $9.1M</div>
-        </div>
-        <div style="background:#fafafa;border:1px solid #eee;border-radius:6px;padding:8px">
-          <div style="font-weight:700;color:var(--red)">Hatcher Group + AIR</div>
-          <div style="color:var(--muted)">ED IES Comms $3.8M (2024)</div>
-        </div>
+      <div style="background:#eaf0fb;border-radius:8px;padding:12px;text-align:center">
+        <div style="font-size:1.8rem;font-weight:700;color:#2980b9">2</div>
+        <div style="font-size:.73rem;color:var(--muted)">8(a) Competitive</div>
+        <div style="font-size:.8rem;font-weight:600">$21.8M TCV</div>
+      </div>
+      <div style="background:#f5eef8;border-radius:8px;padding:12px;text-align:center">
+        <div style="font-size:1.8rem;font-weight:700;color:#8e44ad">7</div>
+        <div style="font-size:.73rem;color:var(--muted)">SB Competitive</div>
+        <div style="font-size:.8rem;font-weight:600">$76.4M TCV</div>
       </div>
     </div>
 
-    <div style="margin-top:14px">
-      <div style="font-weight:700;font-size:.78rem;margin-bottom:8px">📋 Full Loss Log (Government Letters)</div>
-      <table style="width:100%;font-size:.73rem;border-collapse:collapse">
+    <!-- ENTITY BREAKDOWN + CATEGORY BREAKDOWN -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+      <div>
+        <div style="font-weight:700;font-size:.78rem;margin-bottom:8px;color:var(--gold-dark)">🏢 Wins by Entity</div>
+        <table style="width:100%;font-size:.74rem;border-collapse:collapse">
+          <thead><tr style="background:var(--gold-dark);color:#fff">
+            <th style="padding:5px 8px;text-align:left">Entity</th>
+            <th style="padding:5px 8px;text-align:center">Wins</th>
+            <th style="padding:5px 8px;text-align:right">TCV</th>
+          </tr></thead>
+          <tbody>
+            <tr style="background:#fff">
+              <td style="padding:5px 8px;font-weight:600">BLN24</td>
+              <td style="padding:5px 8px;text-align:center">14</td>
+              <td style="padding:5px 8px;text-align:right">$74.6M</td>
+            </tr>
+            <tr style="background:#fff">
+              <td style="padding:5px 8px;font-weight:600">BLN Fors Marsh</td>
+              <td style="padding:5px 8px;text-align:center">4</td>
+              <td style="padding:5px 8px;text-align:right">$36.3M</td>
+            </tr>
+            <tr style="background:#f9f9f9">
+              <td style="padding:5px 8px;font-weight:600">Clarity24</td>
+              <td style="padding:5px 8px;text-align:center">5</td>
+              <td style="padding:5px 8px;text-align:right">$33.6M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-weight:700;font-size:.78rem;margin-bottom:8px;color:var(--gold-dark)">📂 Wins by Work Type</div>
+        <table style="width:100%;font-size:.74rem;border-collapse:collapse">
+          <thead><tr style="background:var(--gold-dark);color:#fff">
+            <th style="padding:5px 8px;text-align:left">Category</th>
+            <th style="padding:5px 8px;text-align:center">Wins</th>
+            <th style="padding:5px 8px;text-align:right">TCV</th>
+          </tr></thead>
+          <tbody>
+            <tr style="background:#f9f9f9">
+              <td style="padding:5px 8px;font-weight:600">Comms/Brand</td>
+              <td style="padding:5px 8px;text-align:center">8</td>
+              <td style="padding:5px 8px;text-align:right">$68.8M</td>
+            </tr>
+            <tr style="background:#f9f9f9">
+              <td style="padding:5px 8px;font-weight:600">Tech/Dev</td>
+              <td style="padding:5px 8px;text-align:center">7</td>
+              <td style="padding:5px 8px;text-align:right">$41.0M</td>
+            </tr>
+            <tr style="background:#fff">
+              <td style="padding:5px 8px;font-weight:600">Web/Digital</td>
+              <td style="padding:5px 8px;text-align:center">2</td>
+              <td style="padding:5px 8px;text-align:right">$13.1M</td>
+            </tr>
+            <tr style="background:#fff">
+              <td style="padding:5px 8px;font-weight:600">Analytics/Data</td>
+              <td style="padding:5px 8px;text-align:center">4</td>
+              <td style="padding:5px 8px;text-align:right">$13.0M</td>
+            </tr>
+            <tr style="background:#fff">
+              <td style="padding:5px 8px;font-weight:600">UX/HCD</td>
+              <td style="padding:5px 8px;text-align:center">2</td>
+              <td style="padding:5px 8px;text-align:right">$8.5M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CPARS RATINGS -->
+    <div style="margin-bottom:16px">
+      <div style="font-weight:700;font-size:.78rem;margin-bottom:8px;color:var(--gold-dark)">⭐ CPARS Performance Ratings (Government Confirmed)</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;font-size:.73rem">
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #27ae60;border-radius:6px;padding:10px">
+          <div style="font-weight:700;color:var(--black)">CMS MNPS</div>
+          <div style="color:var(--muted);font-size:.7rem">$16M · BLN24 · 8(a) Competitive</div>
+          <div style="margin-top:6px;font-size:.7rem"><span style="color:#27ae60">Exceptional</span> · <span style="color:#27ae60">Exceptional</span> · <span style="color:#27ae60">Exceptional</span> · <span style="color:#2980b9">Very Good</span></div>
+          <div style="margin-top:4px;background:#eafaf1;color:#27ae60;font-weight:700;font-size:.7rem;padding:2px 6px;border-radius:4px;display:inline-block">Exceptional</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #27ae60;border-radius:6px;padding:10px">
+          <div style="font-weight:700;color:var(--black)">HUD FHEO</div>
+          <div style="color:var(--muted);font-size:.7rem">$2M · BLN24 · 8(a) Sole Source</div>
+          <div style="margin-top:6px;font-size:.7rem"><span style="color:#27ae60">Exceptional</span> · <span style="color:#27ae60">Exceptional</span> · <span style="color:#27ae60">Exceptional</span> · <span style="color:#27ae60">Exceptional</span></div>
+          <div style="margin-top:4px;background:#eafaf1;color:#27ae60;font-weight:700;font-size:.7rem;padding:2px 6px;border-radius:4px;display:inline-block">Exceptional</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #27ae60;border-radius:6px;padding:10px">
+          <div style="font-weight:700;color:var(--black)">NTIA Outreach</div>
+          <div style="color:var(--muted);font-size:.7rem">$2.7M · BLN24 · 8(a) Sole Source</div>
+          <div style="margin-top:6px;font-size:.7rem"><span style="color:#27ae60">Exceptional</span> · <span style="color:#27ae60">Exceptional</span> · <span style="color:#27ae60">Exceptional</span> · <span style="color:#2980b9">Very Good</span></div>
+          <div style="margin-top:4px;background:#eafaf1;color:#27ae60;font-weight:700;font-size:.7rem;padding:2px 6px;border-radius:4px;display:inline-block">Exceptional</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #27ae60;border-radius:6px;padding:10px">
+          <div style="font-weight:700;color:var(--black)">Census EDL</div>
+          <div style="color:var(--muted);font-size:.7rem">$4.5M · BLN24 · 8(a) Sole Source</div>
+          <div style="margin-top:6px;font-size:.7rem"><span style="color:#27ae60">Exceptional</span> · <span style="color:#27ae60">Exceptional</span> · <span style="color:#2980b9">Very Good</span> · <span style="color:#2980b9">Very Good</span></div>
+          <div style="margin-top:4px;background:#eafaf1;color:#27ae60;font-weight:700;font-size:.7rem;padding:2px 6px;border-radius:4px;display:inline-block">Exceptional</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #2980b9;border-radius:6px;padding:10px">
+          <div style="font-weight:700;color:var(--black)">Census DWS III</div>
+          <div style="color:var(--muted);font-size:.7rem">$8.3M · BLN24 · SB Competitive</div>
+          <div style="margin-top:6px;font-size:.7rem"><span style="color:#2980b9">Very Good</span> · <span style="color:#2980b9">Very Good</span> · <span style="color:#2980b9">Very Good</span> · <span style="color:#f39c12">Satisfactory</span></div>
+          <div style="margin-top:4px;background:#eaf0fb;color:#2980b9;font-weight:700;font-size:.7rem;padding:2px 6px;border-radius:4px;display:inline-block">Very Good</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #2980b9;border-radius:6px;padding:10px">
+          <div style="font-weight:700;color:var(--black)">CDC NCHS</div>
+          <div style="color:var(--muted);font-size:.7rem">$2.6M · BLN24 · 8(a) Sole Source</div>
+          <div style="margin-top:6px;font-size:.7rem"><span style="color:#2980b9">Very Good</span> · <span style="color:#2980b9">Very Good</span> · <span style="color:#2980b9">Very Good</span> · <span style="color:#2980b9">Very Good</span></div>
+          <div style="margin-top:4px;background:#eaf0fb;color:#2980b9;font-weight:700;font-size:.7rem;padding:2px 6px;border-radius:4px;display:inline-block">Very Good</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOSS PATTERN FREQUENCY -->
+    <div style="margin-bottom:16px">
+      <div style="font-weight:700;font-size:.78rem;margin-bottom:8px;color:#c0392b">📉 Loss Pattern Frequency</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #c0392b;border-radius:6px;padding:8px 12px;min-width:160px">
+          <div style="font-weight:700;font-size:.74rem;color:#c0392b">Good vs Outstanding</div>
+          <div style="margin-top:4px;background:#eee;border-radius:4px;height:6px"><div style="background:#c0392b;border-radius:4px;height:6px;width:50%"></div></div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:3px">2 losses</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #d35400;border-radius:6px;padding:8px 12px;min-width:160px">
+          <div style="font-weight:700;font-size:.74rem;color:#d35400">PP Depth Gap</div>
+          <div style="margin-top:4px;background:#eee;border-radius:4px;height:6px"><div style="background:#d35400;border-radius:4px;height:6px;width:50%"></div></div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:3px">2 losses</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #e67e22;border-radius:6px;padding:8px 12px;min-width:160px">
+          <div style="font-weight:700;font-size:.74rem;color:#e67e22">Style/Quality</div>
+          <div style="margin-top:4px;background:#eee;border-radius:4px;height:6px"><div style="background:#e67e22;border-radius:4px;height:6px;width:25%"></div></div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:3px">1 loss</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #e67e22;border-radius:6px;padding:8px 12px;min-width:160px">
+          <div style="font-weight:700;font-size:.74rem;color:#e67e22">Not Specific Enough</div>
+          <div style="margin-top:4px;background:#eee;border-radius:4px;height:6px"><div style="background:#e67e22;border-radius:4px;height:6px;width:25%"></div></div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:3px">1 loss</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #e67e22;border-radius:6px;padding:8px 12px;min-width:160px">
+          <div style="font-weight:700;font-size:.74rem;color:#e67e22">Language/Sensitivity</div>
+          <div style="margin-top:4px;background:#eee;border-radius:4px;height:6px"><div style="background:#e67e22;border-radius:4px;height:6px;width:25%"></div></div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:3px">1 loss</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #e74c3c;border-radius:6px;padding:8px 12px;min-width:160px">
+          <div style="font-weight:700;font-size:.74rem;color:#e74c3c">SOW Misalignment + Price</div>
+          <div style="margin-top:4px;background:#eee;border-radius:4px;height:6px"><div style="background:#e74c3c;border-radius:4px;height:6px;width:25%"></div></div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:3px">1 loss</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #e67e22;border-radius:6px;padding:8px 12px;min-width:160px">
+          <div style="font-weight:700;font-size:.74rem;color:#e67e22">Language/Style + SOW Misalignment</div>
+          <div style="margin-top:4px;background:#eee;border-radius:4px;height:6px"><div style="background:#e67e22;border-radius:4px;height:6px;width:25%"></div></div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:3px">1 loss</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #c0392b;border-radius:6px;padding:8px 12px;min-width:160px">
+          <div style="font-weight:700;font-size:.74rem;color:#c0392b">Technically Unacceptable + Price</div>
+          <div style="margin-top:4px;background:#eee;border-radius:4px;height:6px"><div style="background:#c0392b;border-radius:4px;height:6px;width:25%"></div></div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:3px">1 loss</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #d35400;border-radius:6px;padding:8px 12px;min-width:160px">
+          <div style="font-weight:700;font-size:.74rem;color:#d35400">PP Breadth</div>
+          <div style="margin-top:4px;background:#eee;border-radius:4px;height:6px"><div style="background:#d35400;border-radius:4px;height:6px;width:25%"></div></div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:3px">1 loss</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #c0392b;border-radius:6px;padding:8px 12px;min-width:160px">
+          <div style="font-weight:700;font-size:.74rem;color:#c0392b">Technically Unacceptable</div>
+          <div style="margin-top:4px;background:#eee;border-radius:4px;height:6px"><div style="background:#c0392b;border-radius:4px;height:6px;width:25%"></div></div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:3px">1 loss</div>
+        </div>
+        <div style="background:#fafafa;border:1px solid #eee;border-left:3px solid #8e44ad;border-radius:6px;padding:8px 12px;min-width:160px">
+          <div style="font-weight:700;font-size:.74rem;color:#8e44ad">Non-Compliance</div>
+          <div style="margin-top:4px;background:#eee;border-radius:4px;height:6px"><div style="background:#8e44ad;border-radius:4px;height:6px;width:25%"></div></div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:3px">1 loss</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FULL LOSS LOG WITH CLICK-THROUGH -->
+    <div style="margin-bottom:8px">
+      <div style="font-weight:700;font-size:.78rem;margin-bottom:8px">📋 Full Loss Log — Click Row for Debrief Letter</div>
+      <table style="width:100%;font-size:.72rem;border-collapse:collapse" id="loss-log-table">
         <thead>
           <tr style="background:var(--gold-dark);color:#fff;text-align:left">
-            <th style="padding:6px 8px">Year</th><th style="padding:6px 8px">Agency</th><th style="padding:6px 8px">Requirement</th><th style="padding:6px 8px">Awardee</th><th style="padding:6px 8px">Value</th><th style="padding:6px 8px">Loss Reason (Official)</th>
+            <th style="padding:6px 8px">Year</th>
+            <th style="padding:6px 8px">Entity</th>
+            <th style="padding:6px 8px">Agency</th>
+            <th style="padding:6px 8px">Requirement</th>
+            <th style="padding:6px 8px">Acq Type</th>
+            <th style="padding:6px 8px">Value</th>
+            <th style="padding:6px 8px">Pattern</th>
+            <th style="padding:6px 8px">Awardee</th>
+            <th style="padding:6px 8px">📄</th>
           </tr>
         </thead>
-        <tbody style="color:var(--black)">
-          <tr style="background:#fff"><td style="padding:5px 8px">2023</td><td>NIH/NIMH</td><td>Multimedia Production</td><td>Interface Media Group</td><td>$42K</td><td>Video style not modern; no NIH relationship</td></tr>
-          <tr style="background:#f9f9f9"><td style="padding:5px 8px">2023</td><td>GSA/PBS</td><td>Marketing &amp; Comms</td><td>Unknown</td><td>—</td><td>"Struggled to connect expertise to specific PBS examples" — no federal agency references</td></tr>
-          <tr style="background:#fff"><td style="padding:5px 8px">2023</td><td>NIH/NICHD</td><td>NIMHD Web Modernization</td><td>ITCON Services</td><td>$2.1M</td><td>ITCON Outstanding vs BLN24 Good; stronger agency relationship</td></tr>
-          <tr style="background:#f9f9f9"><td style="padding:5px 8px">2024</td><td>NIH/NIMHD</td><td>Comms &amp; Outreach Support</td><td>Unknown</td><td>—</td><td>"Minorities" language flagged (major issue); no OMB clearance experience; key person never worked with prime</td></tr>
-          <tr style="background:#fff"><td style="padding:5px 8px">2024</td><td>IRS</td><td>CRX Letters/Notices Redesign</td><td>FedWriters Inc</td><td>$4.0M</td><td>SOW misalignment (web vs notices); price $4.3M vs $4.0M</td></tr>
-          <tr style="background:#f9f9f9"><td style="padding:5px 8px">2024</td><td>Census</td><td>GUPS Software BPA</td><td>IBR LLC</td><td>—</td><td>"Some Confidence" vs IBR "High Confidence"; no GIS/QGIS PP</td></tr>
-          <tr style="background:#fff"><td style="padding:5px 8px">2024</td><td>HHS/ACF</td><td>Comms, Outreach &amp; Materials</td><td>Schatz Publishing Group</td><td>$3.7M</td><td>"Some Confidence" technical; Schatz is domain specialist</td></tr>
-          <tr style="background:#f9f9f9"><td style="padding:5px 8px">2024</td><td>FMCS</td><td>Video Production</td><td>Rock Creek Productions</td><td>$99K</td><td>Technical Acceptable vs Rock Creek Exceptional; lost despite being $2K cheaper</td></tr>
-          <tr style="background:#fff"><td style="padding:5px 8px">2024</td><td>Dept of Education</td><td>IES Communications Impl.</td><td>Hatcher Group + AIR</td><td>$3.8M</td><td>Press release didn't mention IES; wrong vendor name; graphics off-style; discovery phase missing</td></tr>
-          <tr style="background:#f9f9f9"><td style="padding:5px 8px">2025</td><td>DHA</td><td>BPA (BLN Fors Marsh JV)</td><td>A1Fed Inc</td><td>$6.8M</td><td>Technically Unacceptable; price $9.1M vs $6.8M</td></tr>
-          <tr style="background:#fff"><td style="padding:5px 8px">2025</td><td>USCG</td><td>BPA (BLN Fors Marsh JV)</td><td>SAVVEE INC</td><td>$23.5M</td><td>"Low confidence" — PP breadth insufficient for all BPA task areas</td></tr>
-          <tr style="background:#f9f9f9"><td style="padding:5px 8px">2026</td><td>DHA</td><td>Data Gov</td><td>Unknown</td><td>—</td><td>Excluded from competitive range — Technically Unacceptable</td></tr>
-          <tr style="background:#fff"><td style="padding:5px 8px">2026</td><td>DOL/ETA</td><td>RA Campaign (BLN Fors Marsh)</td><td>FedWriters Inc</td><td>$22.3M</td><td>Pricing non-compliant with RFQ instructions — not evaluated</td></tr>
+        <tbody>
+          <tr style="background:#fff;cursor:pointer" onclick="showLossDetail(0)" title="Click to see full reason">
+            <td style="padding:5px 8px">2026</td>
+            <td style="padding:5px 8px;font-weight:600">BLN24</td>
+            <td style="padding:5px 8px">DHA</td>
+            <td style="padding:5px 8px">Data Governance</td>
+            <td style="padding:5px 8px">SB Competitive</td>
+            <td style="padding:5px 8px">—</td>
+            <td style="padding:5px 8px"><span style="background:#c0392b;color:#fff;padding:2px 6px;border-radius:3px;font-size:.68rem;white-space:nowrap">Technically Unacceptable</span></td>
+            <td style="padding:5px 8px">Unknown</td>
+            <td style="padding:5px 8px"><a href="https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2026/BLN%2024%20Pre-%20Award%20Notice%20of%20Exclusion-LMW(s)%20(1).pdf" target="_blank" style="color:var(--gold-dark);text-decoration:none" onclick="event.stopPropagation()">📄</a></td>
+          </tr>
+          <tr style="background:#f9f9f9;cursor:pointer" onclick="showLossDetail(1)" title="Click to see full reason">
+            <td style="padding:5px 8px">2026</td>
+            <td style="padding:5px 8px;font-weight:600">BLN Fors Marsh</td>
+            <td style="padding:5px 8px">DOL/ETA</td>
+            <td style="padding:5px 8px">RA Campaign (BLN Fors Marsh)</td>
+            <td style="padding:5px 8px">SB Competitive</td>
+            <td style="padding:5px 8px">$22.3M</td>
+            <td style="padding:5px 8px"><span style="background:#8e44ad;color:#fff;padding:2px 6px;border-radius:3px;font-size:.68rem;white-space:nowrap">Non-Compliance</span></td>
+            <td style="padding:5px 8px">FedWriters Inc</td>
+            <td style="padding:5px 8px"><a href="https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2026/DOL%20RA%20Campaign_Debrief.pdf" target="_blank" style="color:var(--gold-dark);text-decoration:none" onclick="event.stopPropagation()">📄</a></td>
+          </tr>
+          <tr style="background:#fff;cursor:pointer" onclick="showLossDetail(2)" title="Click to see full reason">
+            <td style="padding:5px 8px">2025</td>
+            <td style="padding:5px 8px;font-weight:600">BLN Fors Marsh</td>
+            <td style="padding:5px 8px">DHA</td>
+            <td style="padding:5px 8px">Expert Communications BPA (BLN Fors Mars</td>
+            <td style="padding:5px 8px">Full & Open</td>
+            <td style="padding:5px 8px">$6.8M</td>
+            <td style="padding:5px 8px"><span style="background:#c0392b;color:#fff;padding:2px 6px;border-radius:3px;font-size:.68rem;white-space:nowrap">Technically Unacceptable + Price</span></td>
+            <td style="padding:5px 8px">A1Fed Inc</td>
+            <td style="padding:5px 8px"><a href="https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2025/DHA%20Debrief.pdf" target="_blank" style="color:var(--gold-dark);text-decoration:none" onclick="event.stopPropagation()">📄</a></td>
+          </tr>
+          <tr style="background:#f9f9f9;cursor:pointer" onclick="showLossDetail(3)" title="Click to see full reason">
+            <td style="padding:5px 8px">2025</td>
+            <td style="padding:5px 8px;font-weight:600">BLN Fors Marsh</td>
+            <td style="padding:5px 8px">USCG</td>
+            <td style="padding:5px 8px">Office of Govt & Public Affairs BPA (BLN</td>
+            <td style="padding:5px 8px">SB Competitive</td>
+            <td style="padding:5px 8px">$23.5M</td>
+            <td style="padding:5px 8px"><span style="background:#d35400;color:#fff;padding:2px 6px;border-radius:3px;font-size:.68rem;white-space:nowrap">PP Breadth</span></td>
+            <td style="padding:5px 8px">SAVVEE INC</td>
+            <td style="padding:5px 8px"><a href="https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2025/BLN%20FORS%20MARSH%20Debriefing%20Letter_10.20.25_final.pdf" target="_blank" style="color:var(--gold-dark);text-decoration:none" onclick="event.stopPropagation()">📄</a></td>
+          </tr>
+          <tr style="background:#fff;cursor:pointer" onclick="showLossDetail(4)" title="Click to see full reason">
+            <td style="padding:5px 8px">2024</td>
+            <td style="padding:5px 8px;font-weight:600">BLN24</td>
+            <td style="padding:5px 8px">NIH/NIMHD</td>
+            <td style="padding:5px 8px">Comms & Outreach Support</td>
+            <td style="padding:5px 8px">SB Competitive</td>
+            <td style="padding:5px 8px">—</td>
+            <td style="padding:5px 8px"><span style="background:#e67e22;color:#fff;padding:2px 6px;border-radius:3px;font-size:.68rem;white-space:nowrap">Language/Sensitivity</span></td>
+            <td style="padding:5px 8px">Unknown</td>
+            <td style="padding:5px 8px"><a href="https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2024/NIMHD%20Communications%20and%20Outreach%20Support_Unsuccessful%20Offeror%20letter_BLN.pdf" target="_blank" style="color:var(--gold-dark);text-decoration:none" onclick="event.stopPropagation()">📄</a></td>
+          </tr>
+          <tr style="background:#f9f9f9;cursor:pointer" onclick="showLossDetail(5)" title="Click to see full reason">
+            <td style="padding:5px 8px">2024</td>
+            <td style="padding:5px 8px;font-weight:600">BLN24</td>
+            <td style="padding:5px 8px">IRS</td>
+            <td style="padding:5px 8px">CRX Notices/Letters Redesign</td>
+            <td style="padding:5px 8px">SB Competitive</td>
+            <td style="padding:5px 8px">$4.0M</td>
+            <td style="padding:5px 8px"><span style="background:#e74c3c;color:#fff;padding:2px 6px;border-radius:3px;font-size:.68rem;white-space:nowrap">SOW Misalignment + Price</span></td>
+            <td style="padding:5px 8px">FedWriters Inc</td>
+            <td style="padding:5px 8px"><a href="https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2024/IV_2%20Post%20Award%20Explanation_BLN24.pdf" target="_blank" style="color:var(--gold-dark);text-decoration:none" onclick="event.stopPropagation()">📄</a></td>
+          </tr>
+          <tr style="background:#fff;cursor:pointer" onclick="showLossDetail(6)" title="Click to see full reason">
+            <td style="padding:5px 8px">2024</td>
+            <td style="padding:5px 8px;font-weight:600">BLN24</td>
+            <td style="padding:5px 8px">Census</td>
+            <td style="padding:5px 8px">GUPS Software BPA</td>
+            <td style="padding:5px 8px">SB Competitive</td>
+            <td style="padding:5px 8px">—</td>
+            <td style="padding:5px 8px"><span style="background:#d35400;color:#fff;padding:2px 6px;border-radius:3px;font-size:.68rem;white-space:nowrap">PP Depth Gap</span></td>
+            <td style="padding:5px 8px">IBR LLC</td>
+            <td style="padding:5px 8px"><a href="https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2024/FINAL%20Notification%20to%20Unsuccessful%20Quoter%20and%20Briefing%20-%20BLN24.pdf" target="_blank" style="color:var(--gold-dark);text-decoration:none" onclick="event.stopPropagation()">📄</a></td>
+          </tr>
+          <tr style="background:#f9f9f9;cursor:pointer" onclick="showLossDetail(7)" title="Click to see full reason">
+            <td style="padding:5px 8px">2024</td>
+            <td style="padding:5px 8px;font-weight:600">BLN24</td>
+            <td style="padding:5px 8px">HHS/ACF</td>
+            <td style="padding:5px 8px">Comms, Outreach & Materials</td>
+            <td style="padding:5px 8px">SB Competitive</td>
+            <td style="padding:5px 8px">$3.7M</td>
+            <td style="padding:5px 8px"><span style="background:#d35400;color:#fff;padding:2px 6px;border-radius:3px;font-size:.68rem;white-space:nowrap">PP Depth Gap</span></td>
+            <td style="padding:5px 8px">Schatz Publishing Group</td>
+            <td style="padding:5px 8px"><a href="https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2024/BLN24%20Brief%20Explanation.pdf" target="_blank" style="color:var(--gold-dark);text-decoration:none" onclick="event.stopPropagation()">📄</a></td>
+          </tr>
+          <tr style="background:#fff;cursor:pointer" onclick="showLossDetail(8)" title="Click to see full reason">
+            <td style="padding:5px 8px">2024</td>
+            <td style="padding:5px 8px;font-weight:600">BLN24</td>
+            <td style="padding:5px 8px">FMCS</td>
+            <td style="padding:5px 8px">Video Production</td>
+            <td style="padding:5px 8px">SB Competitive</td>
+            <td style="padding:5px 8px">$100K</td>
+            <td style="padding:5px 8px"><span style="background:#c0392b;color:#fff;padding:2px 6px;border-radius:3px;font-size:.68rem;white-space:nowrap">Good vs Outstanding</span></td>
+            <td style="padding:5px 8px">Rock Creek Productions</td>
+            <td style="padding:5px 8px"><a href="https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2024/FMCS%20-%20Brief%20Explanation%20-%20BLN24.pdf" target="_blank" style="color:var(--gold-dark);text-decoration:none" onclick="event.stopPropagation()">📄</a></td>
+          </tr>
+          <tr style="background:#f9f9f9;cursor:pointer" onclick="showLossDetail(9)" title="Click to see full reason">
+            <td style="padding:5px 8px">2024</td>
+            <td style="padding:5px 8px;font-weight:600">BLN24</td>
+            <td style="padding:5px 8px">Dept of Education</td>
+            <td style="padding:5px 8px">IES Communications Implementation</td>
+            <td style="padding:5px 8px">SB Competitive</td>
+            <td style="padding:5px 8px">$3.8M</td>
+            <td style="padding:5px 8px"><span style="background:#e67e22;color:#fff;padding:2px 6px;border-radius:3px;font-size:.68rem;white-space:nowrap">Language/Style + SOW Misalignment</span></td>
+            <td style="padding:5px 8px">Hatcher Group + AIR</td>
+            <td style="padding:5px 8px"><a href="https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2024/ED%20IES%20Communication%20Implementation%20-%20Unsuccesful%20Offeror%20Letter%20-%20BLN24.pdf" target="_blank" style="color:var(--gold-dark);text-decoration:none" onclick="event.stopPropagation()">📄</a></td>
+          </tr>
+          <tr style="background:#fff;cursor:pointer" onclick="showLossDetail(10)" title="Click to see full reason">
+            <td style="padding:5px 8px">2023</td>
+            <td style="padding:5px 8px;font-weight:600">BLN24</td>
+            <td style="padding:5px 8px">NIH/NIMH</td>
+            <td style="padding:5px 8px">Multimedia Production RFQ 1642485</td>
+            <td style="padding:5px 8px">SB Competitive</td>
+            <td style="padding:5px 8px">$42K</td>
+            <td style="padding:5px 8px"><span style="background:#e67e22;color:#fff;padding:2px 6px;border-radius:3px;font-size:.68rem;white-space:nowrap">Style/Quality</span></td>
+            <td style="padding:5px 8px">Interface Media Group</td>
+            <td style="padding:5px 8px"><a href="https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2023/BLN%20LLC%20-%20NIMH%20RFQ%201642485%20-%20Brief%20Explanation.pdf" target="_blank" style="color:var(--gold-dark);text-decoration:none" onclick="event.stopPropagation()">📄</a></td>
+          </tr>
+          <tr style="background:#f9f9f9;cursor:pointer" onclick="showLossDetail(11)" title="Click to see full reason">
+            <td style="padding:5px 8px">2023</td>
+            <td style="padding:5px 8px;font-weight:600">BLN24</td>
+            <td style="padding:5px 8px">GSA/PBS</td>
+            <td style="padding:5px 8px">Marketing & Communications</td>
+            <td style="padding:5px 8px">SB Competitive</td>
+            <td style="padding:5px 8px">—</td>
+            <td style="padding:5px 8px"><span style="background:#e67e22;color:#fff;padding:2px 6px;border-radius:3px;font-size:.68rem;white-space:nowrap">Not Specific Enough</span></td>
+            <td style="padding:5px 8px">Unknown</td>
+            <td style="padding:5px 8px"><a href="https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2023/GSA%20PBS%20Marketing%20%26%20Communications%20Loss%20Notice.docx" target="_blank" style="color:var(--gold-dark);text-decoration:none" onclick="event.stopPropagation()">📄</a></td>
+          </tr>
+          <tr style="background:#fff;cursor:pointer" onclick="showLossDetail(12)" title="Click to see full reason">
+            <td style="padding:5px 8px">2023</td>
+            <td style="padding:5px 8px;font-weight:600">BLN24</td>
+            <td style="padding:5px 8px">NIH/NICHD</td>
+            <td style="padding:5px 8px">NIMHD Web Modernization</td>
+            <td style="padding:5px 8px">SB Competitive</td>
+            <td style="padding:5px 8px">$2.1M</td>
+            <td style="padding:5px 8px"><span style="background:#c0392b;color:#fff;padding:2px 6px;border-radius:3px;font-size:.68rem;white-space:nowrap">Good vs Outstanding</span></td>
+            <td style="padding:5px 8px">ITCON Services</td>
+            <td style="padding:5px 8px"><a href="https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2023/Unsuccessfulaward_BLN24.pdf" target="_blank" style="color:var(--gold-dark);text-decoration:none" onclick="event.stopPropagation()">📄</a></td>
+          </tr>
         </tbody>
       </table>
     </div>
 
+    <!-- DETAIL PANEL (shown on row click) -->
+    <div id="loss-detail-panel" style="display:none;background:#fef9e7;border:1px solid var(--gold-dark);border-radius:8px;padding:14px;margin-top:8px">
+      <div style="display:flex;justify-content:space-between;align-items:start">
+        <div>
+          <div id="loss-detail-title" style="font-weight:700;font-size:.85rem;margin-bottom:4px"></div>
+          <div id="loss-detail-meta" style="font-size:.73rem;color:var(--muted);margin-bottom:8px"></div>
+          <div id="loss-detail-reason" style="font-size:.78rem;line-height:1.6"></div>
+        </div>
+        <button onclick="document.getElementById('loss-detail-panel').style.display='none'" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--muted);padding:0 4px">✕</button>
+      </div>
+      <div style="margin-top:10px">
+        <a id="loss-detail-link" href="#" target="_blank" style="color:var(--gold-dark);font-size:.74rem;font-weight:600;text-decoration:none">📄 Open Government Letter in SharePoint →</a>
+      </div>
+    </div>
+
     <div style="margin-top:12px;font-size:.72rem;color:var(--gold-dark);font-weight:600">
-      Source: 28 official government award/debrief notification letters · SharePoint Debrief folder (2023–2026) · Analyzed by Rex, April 2026
+      Source: CPARS database · 28 official government award/debrief letters (2023–2026) · Master Award Sheet · Analyzed by Rex, April 2026
     </div>
   </div>
 
 </div>
-</div>
-
-<!-- MODAL -->
+</div>>
 <div class="overlay" id="overlay" onclick="if(event.target===this)closeModal()">
   <div class="modal">
     <button class="modal-x" onclick="closeModal()">✕</button>
@@ -957,6 +1251,19 @@ window.addEventListener('DOMContentLoaded',function(){
 });
 
 // TABS
+const LOSS_DATA = [{"title": "Data Governance", "agency": "DHA", "entity": "BLN24", "year": 2026, "awardee": "Unknown", "value": 0, "pattern": "Technically Unacceptable", "reason": "Excluded from competitive range — Technically Unacceptable.", "sp_link": "https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2026/BLN%2024%20Pre-%20Award%20Notice%20of%20Exclusion-LMW(s)%20(1).pdf"}, {"title": "RA Campaign (BLN Fors Marsh)", "agency": "DOL/ETA", "entity": "BLN Fors Marsh", "year": 2026, "awardee": "FedWriters Inc", "value": 22328791, "pattern": "Non-Compliance", "reason": "Pricing did not comply with RFQ instructions — not evaluated on technical.", "sp_link": "https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2026/DOL%20RA%20Campaign_Debrief.pdf"}, {"title": "Expert Communications BPA (BLN Fors Marsh)", "agency": "DHA", "entity": "BLN Fors Marsh", "year": 2025, "awardee": "A1Fed Inc", "value": 6800000, "pattern": "Technically Unacceptable + Price", "reason": "Technically Unacceptable on Technical Approach. Price $9.1M vs A1Fed $6.8M. Teaming PP breadth issue.", "sp_link": "https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2025/DHA%20Debrief.pdf"}, {"title": "Office of Govt & Public Affairs BPA (BLN Fors Marsh)", "agency": "USCG", "entity": "BLN Fors Marsh", "year": 2025, "awardee": "SAVVEE INC", "value": 23500000, "pattern": "PP Breadth", "reason": ""Low confidence" — Holocaust Museum work relevant but Air National Guard work not relevant for marketing/paid advertising BPA tasks.", "sp_link": "https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2025/BLN%20FORS%20MARSH%20Debriefing%20Letter_10.20.25_final.pdf"}, {"title": "Comms & Outreach Support", "agency": "NIH/NIMHD", "entity": "BLN24", "year": 2024, "awardee": "Unknown", "value": 0, "pattern": "Language/Sensitivity", "reason": ""Minorities" language flagged as major issue. No OMB clearance experience. Key personnel never worked with prime.", "sp_link": "https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2024/NIMHD%20Communications%20and%20Outreach%20Support_Unsuccessful%20Offeror%20letter_BLN.pdf"}, {"title": "CRX Notices/Letters Redesign", "agency": "IRS", "entity": "BLN24", "year": 2024, "awardee": "FedWriters Inc", "value": 4000000, "pattern": "SOW Misalignment + Price", "reason": "We wrote about web; SOW was about notices/letters. SOW misalignment across multiple tasks. Price $4.3M vs $4.0M.", "sp_link": "https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2024/IV_2%20Post%20Award%20Explanation_BLN24.pdf"}, {"title": "GUPS Software BPA", "agency": "Census", "entity": "BLN24", "year": 2024, "awardee": "IBR LLC", "value": 0, "pattern": "PP Depth Gap", "reason": ""Some Confidence" vs IBR "High Confidence". No GIS/QGIS PP. Future work cited instead of demonstrated experience.", "sp_link": "https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2024/FINAL%20Notification%20to%20Unsuccessful%20Quoter%20and%20Briefing%20-%20BLN24.pdf"}, {"title": "Comms, Outreach & Materials", "agency": "HHS/ACF", "entity": "BLN24", "year": 2024, "awardee": "Schatz Publishing Group", "value": 3700000, "pattern": "PP Depth Gap", "reason": ""Some Confidence" technical. Schatz is a domain specialist in federal public affairs.", "sp_link": "https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2024/BLN24%20Brief%20Explanation.pdf"}, {"title": "Video Production", "agency": "FMCS", "entity": "BLN24", "year": 2024, "awardee": "Rock Creek Productions", "value": 99633, "pattern": "Good vs Outstanding", "reason": "Technical: Acceptable vs Rock Creek Exceptional. PP: Very Relevant, Exceptional. Lost despite being $2K cheaper.", "sp_link": "https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2024/FMCS%20-%20Brief%20Explanation%20-%20BLN24.pdf"}, {"title": "IES Communications Implementation", "agency": "Dept of Education", "entity": "BLN24", "year": 2024, "awardee": "Hatcher Group + AIR", "value": 3800000, "pattern": "Language/Style + SOW Misalignment", "reason": "Press release didn"t mention IES. Wrong vendor name used. Graphics off agency style. Discovery phase not addressed.", "sp_link": "https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2024/ED%20IES%20Communication%20Implementation%20-%20Unsuccesful%20Offeror%20Letter%20-%20BLN24.pdf"}, {"title": "Multimedia Production RFQ 1642485", "agency": "NIH/NIMH", "entity": "BLN24", "year": 2023, "awardee": "Interface Media Group", "value": 42000, "pattern": "Style/Quality", "reason": "Video style not modern enough; no NIH relationship; 14 competitors", "sp_link": "https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2023/BLN%20LLC%20-%20NIMH%20RFQ%201642485%20-%20Brief%20Explanation.pdf"}, {"title": "Marketing & Communications", "agency": "GSA/PBS", "entity": "BLN24", "year": 2023, "awardee": "Unknown", "value": 0, "pattern": "Not Specific Enough", "reason": ""High degree of technical knowledge but struggled to connect to specific PBS examples." No federal agency references.", "sp_link": "https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2023/GSA%20PBS%20Marketing%20%26%20Communications%20Loss%20Notice.docx"}, {"title": "NIMHD Web Modernization", "agency": "NIH/NICHD", "entity": "BLN24", "year": 2023, "awardee": "ITCON Services", "value": 2094088, "pattern": "Good vs Outstanding", "reason": "ITCON rated Outstanding, BLN24 rated Good. ITCON had stronger agency relationship.", "sp_link": "https://thebln24.sharepoint.com/sites/Testing/Shared%20Documents/General/03%20Award/Debrief/2023/Unsuccessfulaward_BLN24.pdf"}];
+
+function showLossDetail(idx) {
+  const l = LOSS_DATA[idx];
+  document.getElementById('loss-detail-title').textContent = l.year + ' · ' + l.agency + ' — ' + l.title;
+  document.getElementById('loss-detail-meta').textContent = 'Entity: ' + l.entity + ' · Acq: — · Awardee: ' + l.awardee + (l.value > 0 ? ' · Value: $' + (l.value/1e6).toFixed(1) + 'M' : '');
+  document.getElementById('loss-detail-reason').innerHTML = '<strong>Loss Reason:</strong> ' + l.reason;
+  document.getElementById('loss-detail-link').href = l.sp_link;
+  document.getElementById('loss-detail-panel').style.display = 'block';
+  document.getElementById('loss-detail-panel').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+
 function switchTab(name,el){
   if(name==='cpo'){
     setTimeout(function(){
