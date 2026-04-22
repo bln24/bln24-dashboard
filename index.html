@@ -407,8 +407,9 @@
   <div class="card" style="margin-bottom:20px">
     <div class="card-hdr">
       <span class="card-title" id="gp-chart-title">Monthly Gross Profit by Program — Mar 2026</span>
-      <span class="badge b-ai">&#9670; Revenue after cost</span>
+      <span class="badge b-ai">&#9670; Revenue after direct cost only</span>
     </div>
+    <div style="font-size:.68rem;color:var(--grey);margin-bottom:12px" id="gp-chart-note">All values = revenue billed minus direct labor cost. Does not include overhead/G&amp;A.</div>
     <div style="height:280px;position:relative;min-height:280px"><canvas id="gpBarChart"></canvas></div>
   </div>
 
@@ -2924,8 +2925,14 @@ function showGpMonth(month, btn) {
   var label = month === 'total' ? 'YTD Total (All Tracked Months)' : month === 'contract' ? 'Contract Period (Full Period in Financial Report)' : month;
   var labelEl = document.getElementById('gp-month-label');
   if (labelEl) labelEl.textContent = label;
+  var chartNote = document.getElementById('gp-chart-note');
+  if (chartNote) {
+    if (month === 'total') chartNote.textContent = 'Cumulative GP Oct 2025–Mar 2026 (6 months). Each bar = sum of monthly GP after direct cost.';
+    else if (month === 'contract') chartNote.textContent = 'Full contract period GP from financial reports. Period length varies by program — see card labels.';
+    else chartNote.textContent = 'GP after direct cost for ' + month + '. Does not include overhead/G&A allocations.';
+  }
   var chartTitle = document.getElementById('gp-chart-title');
-  if (chartTitle) chartTitle.textContent = month === 'total' ? 'YTD Total Gross Profit by Program' : month === 'contract' ? 'Gross Profit — Full Contract Period' : 'Monthly Gross Profit by Program — ' + month;
+  if (chartTitle) chartTitle.textContent = month === 'total' ? 'YTD Cumulative Gross Profit After Cost (Oct 2025–Mar 2026)' : month === 'contract' ? 'Contract Period Gross Profit After Cost (Full Period in Fin. Report)' : 'Gross Profit After Cost — ' + month + ' (Revenue minus direct costs)';
 
   renderGpCards(month);
   renderGpChart(month);
