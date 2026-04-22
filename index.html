@@ -220,6 +220,7 @@
 <div class="tab-bar">
   <div class="tab active" onclick="switchTab('pipeline',this)">📊 Pipeline</div>
   <div class="tab" onclick="switchTab('bdai',this)">🤖 BD AI</div>
+  <div class="tab" onclick="switchTab('cpo',this)">🧭 CPO Report</div>
   <div class="tab" onclick="switchTab('winloss',this)">📈 Win / Loss</div>
   <div class="tab" onclick="switchTab('ops',this)">⚙️ Operations</div>
 </div>
@@ -328,6 +329,157 @@
 
 </div>
 </div>
+
+<!-- TAB: CPO REPORT -->
+<div id="tab-cpo" class="tab-pane">
+<div class="page">
+
+  <div class="sl" style="margin-top:0">
+    <div class="st">CPO Report — Atlas Portfolio & Risk View</div>
+    <span class="badge b-ai">◆ SharePoint + Graph API · Atlas</span>
+  </div>
+
+  <!-- Signal strip -->
+  <div id="cpo-signals" style="margin-bottom:16px"></div>
+
+  <!-- KPIs -->
+  <div class="kpis" style="margin-bottom:16px">
+    <div class="kpi gold">
+      <div class="kpi-lbl">Portfolio TCV</div>
+      <div class="kpi-v" style="color:var(--gold-dark)">$67.8M</div>
+      <div class="kpi-sub">9 active programs</div>
+    </div>
+    <div class="kpi blue">
+      <div class="kpi-lbl">BD Pipeline (Wtd)</div>
+      <div class="kpi-v" style="color:var(--blue)">$87.8M</div>
+      <div class="kpi-sub">of $120M goal</div>
+    </div>
+    <div class="kpi red">
+      <div class="kpi-lbl">BD Gap to Goal</div>
+      <div class="kpi-v">$32.2M</div>
+      <div class="kpi-sub">26% shortfall</div>
+    </div>
+    <div class="kpi red">
+      <div class="kpi-lbl">Confirm Required</div>
+      <div class="kpi-v">3</div>
+      <div class="kpi-sub">Contracts w/ lapsed dates</div>
+    </div>
+  </div>
+
+  <!-- Portfolio + Risk -->
+  <div class="g2" style="margin-bottom:16px">
+    <div class="card">
+      <div class="card-hdr">
+        <span class="card-title">🏆 Portfolio — Ranked by Strategic Value</span>
+        <span class="badge b-ai">◆ Atlas · Apr 2026</span>
+      </div>
+      <table>
+        <thead><tr>
+          <th>#</th><th>Program</th><th>Agency</th><th>TCV</th><th>Health</th><th>Ends</th>
+        </tr></thead>
+        <tbody>
+          <tr><td style="color:var(--grey);font-weight:700">1</td><td><div class="t1">MNPS</div><div class="t2">Largest prime — confirm PoP</div></td><td class="tm">CMS / HHS</td><td class="tv">$16M</td><td><span class="p p-yellow">Watch</span></td><td style="font-size:.7rem;color:var(--red)">Dec 2024*</td></tr>
+          <tr><td style="color:var(--grey);font-weight:700">2</td><td><div class="t1">DHA MRDC Comms</div><div class="t2">New — started Sep 2025</div></td><td class="tm">DHA / DoD</td><td class="tv">$9.9M</td><td><span class="p p-green">Healthy</span></td><td style="font-size:.7rem">Sep 2026</td></tr>
+          <tr><td style="color:var(--grey);font-weight:700">3</td><td><div class="t1">HRSA Marketing BPA</div><div class="t2">$85M ceiling, IQ Solutions partner</div></td><td class="tm">HRSA / HHS</td><td class="tv">$85M</td><td><span class="p p-green">Healthy</span></td><td style="font-size:.7rem">Sep 2028</td></tr>
+          <tr><td style="color:var(--grey);font-weight:700">4</td><td><div class="t1">MBDA Website</div><div class="t2">Confirm renewal status</div></td><td class="tm">MBDA</td><td class="tv">$4.4M</td><td><span class="p p-yellow">Watch</span></td><td style="font-size:.7rem;color:var(--red)">Jul 2024*</td></tr>
+          <tr><td style="color:var(--grey);font-weight:700">5</td><td><div class="t1">FHEO Comms</div><div class="t2">Confirm renewal</div></td><td class="tm">HUD</td><td class="tv">$2M</td><td><span class="p p-yellow">Watch</span></td><td style="font-size:.7rem;color:var(--red)">Sep 2024*</td></tr>
+          <tr><td style="color:var(--grey);font-weight:700">6</td><td><div class="t1">NTIA Outreach</div><div class="t2">Through Sep 2027</div></td><td class="tm">NTIA</td><td class="tv">$2.5M</td><td><span class="p p-green">Healthy</span></td><td style="font-size:.7rem">Sep 2027</td></tr>
+          <tr><td style="color:var(--grey);font-weight:700">7</td><td><div class="t1">IRS HCD BPA</div><div class="t2">Favi Villa team — confirm renewal</div></td><td class="tm">IRS</td><td class="tv">$4.3M</td><td><span class="p p-yellow">Watch</span></td><td style="font-size:.7rem;color:var(--red)">Sep 2023*</td></tr>
+          <tr><td style="color:var(--grey);font-weight:700">8</td><td><div class="t1">PRESTO BPA Cat 3</div><div class="t2">$2B ceiling vehicle</div></td><td class="tm">Dept of Ed</td><td class="tv">$2B</td><td><span class="p p-green">Healthy</span></td><td style="font-size:.7rem">Feb 2033</td></tr>
+          <tr class="alert"><td style="color:var(--grey);font-weight:700">9</td><td><div class="t1">EDARMST</div><div class="t2">Confirm staff redeployment</div></td><td class="tm">Dept of Ed</td><td class="tv">$2.5M</td><td><span class="p p-red">Ended</span></td><td style="font-size:.7rem;color:var(--red)">Sep 2024</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:.63rem;color:var(--grey);margin-top:8px">* = end date passed in records — confirmation needed</div>
+    </div>
+
+    <div class="card">
+      <div class="card-hdr">
+        <span class="card-title">⚠️ Risk Register — Open Items</span>
+        <span class="badge" style="background:var(--red-light);color:var(--red)">6 Open</span>
+      </div>
+      <table>
+        <thead><tr><th>Risk</th><th>Program</th><th>Sev</th></tr></thead>
+        <tbody>
+          <tr class="alert"><td><div class="t1">BD Gap to 2026 goal</div><div class="t2">Assign capture leads to top 5 pipeline opps</div></td><td class="tm">Portfolio</td><td><span class="p p-red">🔴</span></td></tr>
+          <tr class="alert"><td><div class="t1">CMS MNPS PoP unconfirmed</div><div class="t2">Pull current TO from Deltek</div></td><td class="tm">CMS MNPS</td><td><span class="p p-yellow">🟡</span></td></tr>
+          <tr><td><div class="t1">MBDA + HUD may be lapsed</div><div class="t2">Confirm option exercise or re-award</div></td><td class="tm">MBDA/HUD</td><td><span class="p p-yellow">🟡</span></td></tr>
+          <tr><td><div class="t1">EDARMST staff not redeployed</div><div class="t2">Verify headcount since Sep 2024</div></td><td class="tm">EDARMST</td><td><span class="p p-yellow">🟡</span></td></tr>
+          <tr><td><div class="t1">NOAA / OIDP margin below 15%</div><div class="t2">Review labor mix and rate structure</div></td><td class="tm">NOAA / OIDP</td><td><span class="p p-yellow">🟡</span></td></tr>
+          <tr><td><div class="t1">DWITT deal stalled (75% prob)</div><div class="t2">Eric Ma to re-engage — last activity Jan 2024</div></td><td class="tm">USDA DWITT</td><td><span class="p p-yellow">🟡</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- BD Pipeline -->
+  <div class="card" style="margin-bottom:16px">
+    <div class="card-hdr">
+      <span class="card-title">🚀 BD Pipeline — High Priority Pursuits</span>
+      <span class="badge b-ai">◆ From bd_data · Atlas scored</span>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px">
+      <span style="font-size:.72rem;padding:4px 12px;border-radius:20px;background:var(--grey-light);color:var(--grey);border:1px solid var(--border)">Weighted: <strong>$87.8M</strong></span>
+      <span style="font-size:.72rem;padding:4px 12px;border-radius:20px;background:var(--red-light);color:var(--red);border:1px solid #fca5a5">Gap to $120M: <strong>$32.2M</strong></span>
+      <span style="font-size:.72rem;padding:4px 12px;border-radius:20px;background:var(--grey-light);color:var(--grey)">All opps at Identification — no captures assigned yet</span>
+    </div>
+    <table>
+      <thead><tr>
+        <th>Priority</th><th>Opportunity</th><th>Agency</th><th>BLN24 Est. Rev</th><th>RFP</th><th>Stage</th><th>Vehicle</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><span class="p p-green">High</span></td><td class="t1">CENTAM</td><td class="tm">Census</td><td class="tv">$100M</td><td style="font-weight:600;color:var(--blue)">Q3 2026</td><td class="tm">Identification</td><td class="tm">GSA MAS</td></tr>
+        <tr><td><span class="p p-green">High</span></td><td class="t1">Army ATC TTSS</td><td class="tm">Army ATC</td><td class="tv">$43.7M</td><td style="font-weight:600;color:var(--blue)">Q2 2026</td><td class="tm">Identification</td><td class="tm">TBD</td></tr>
+        <tr><td><span class="p p-green">High</span></td><td class="t1">DHA Data Integration</td><td class="tm">DHA / DoD</td><td class="tv">$25.2M</td><td style="font-weight:600;color:var(--blue)">Q3 2027</td><td class="tm">Identification</td><td class="tm">TBD</td></tr>
+        <tr><td><span class="p p-green">High</span></td><td class="t1">CBP ECIS Cloud</td><td class="tm">CBP / DHS</td><td class="tv">$21.2M</td><td style="font-weight:600;color:var(--blue)">Q2 2026</td><td class="tm">Identification</td><td class="tm">TBD</td></tr>
+        <tr><td><span class="p p-green">High</span></td><td class="t1">Army ATC ATIS</td><td class="tm">Army ATC</td><td class="tv">$20.6M</td><td style="font-weight:600;color:var(--blue)">Q2 2026</td><td class="tm">Identification</td><td class="tm">TBD</td></tr>
+        <tr><td><span class="p p-green">High</span></td><td class="t1">DHA Comms Operational</td><td class="tm">DHA / DoD</td><td class="tv">$15.5M</td><td style="font-weight:600;color:var(--blue)">Q2 2026</td><td class="tm">Identification</td><td class="tm">TBD</td></tr>
+        <tr><td><span class="p p-green">High</span></td><td class="t1">CBP Process Mgmt & Info Sec</td><td class="tm">CBP / DHS</td><td class="tv">$14.8M</td><td style="font-weight:600;color:var(--blue)">Q2 2026</td><td class="tm">Identification</td><td class="tm">TBD</td></tr>
+        <tr><td><span class="p p-green">High</span></td><td class="t1">NIH CIO-CS "The Store"</td><td class="tm">NIH / HHS</td><td class="tv">TBD</td><td style="font-weight:600;color:var(--blue)">Q4 2026</td><td class="tm">Tracking</td><td class="tm">GWAC</td></tr>
+        <tr><td><span class="p p-yellow">Med</span></td><td class="t1">USCIS eAUTO</td><td class="tm">USCIS / DHS</td><td class="tv">$62.8M</td><td style="font-weight:600;color:var(--blue)">Q2 2026</td><td class="tm">Identification</td><td class="tm">TBD</td></tr>
+        <tr><td><span class="p p-yellow">Med</span></td><td class="t1">CBP DTSS BPA</td><td class="tm">CBP / DHS</td><td class="tv">$21.8M</td><td style="font-weight:600;color:var(--blue)">Q2 2026</td><td class="tm">Identification</td><td class="tm">BPA</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Vehicles + CEO Actions -->
+  <div class="g2">
+    <div class="card">
+      <div class="card-hdr">
+        <span class="card-title">📋 Active Vehicles</span>
+        <span class="badge b-live">9 vehicles</span>
+      </div>
+      <div style="font-size:.77rem;line-height:2.0">
+        <div style="padding:6px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between"><span><strong>OASIS+ SB</strong> &mdash; GSA</span><span class="tm">Apr 2030</span></div>
+        <div style="padding:6px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between"><span><strong>OASIS+ 8(a)</strong> &mdash; GSA</span><span class="tm">2030</span></div>
+        <div style="padding:6px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between"><span><strong>PRESTO BPA Cat 3</strong> &mdash; ED</span><span class="tm">Feb 2033</span></div>
+        <div style="padding:6px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between"><span><strong>HRSA Marketing BPA</strong> &mdash; HRSA</span><span class="tm">Sep 2028</span></div>
+        <div style="padding:6px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between"><span><strong>DWITT BPA</strong> &mdash; USDA</span><span class="tm">Aug 2030</span></div>
+        <div style="padding:6px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between"><span><strong>e-FAST</strong> &mdash; FAA</span><span class="tm">Sep 2029</span></div>
+        <div style="padding:6px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between"><span><strong>GSA MAS</strong></span><span class="tm">Active</span></div>
+        <div style="padding:6px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between"><span><strong>NEC IDIQ (Sub)</strong> &mdash; CMS/HHS via Fors Marsh</span><span class="tm">Aug 2032</span></div>
+        <div style="padding:6px 0;display:flex;justify-content:space-between"><span><strong>OASIS+ 8(a) (JV)</strong> &mdash; BLN Fors Marsh</span><span class="tm">Jan 2031</span></div>
+      </div>
+    </div>
+
+    <div class="card" style="background:var(--gold-pale);border-color:#E8C07A">
+      <div class="card-hdr">
+        <span class="card-title">⚡ CEO Action Required</span>
+        <span class="badge" style="background:var(--red-light);color:var(--red)">2 Red · 3 Yellow</span>
+      </div>
+      <div style="font-size:.77rem;line-height:1;color:var(--black)">
+        <div style="padding:10px 0;border-bottom:1px solid #E8C07A;display:flex;gap:10px;align-items:flex-start"><span>🔴</span><span>Confirm current PoP on CMS MNPS — largest contract, data shows expired</span></div>
+        <div style="padding:10px 0;border-bottom:1px solid #E8C07A;display:flex;gap:10px;align-items:flex-start"><span>🔴</span><span>Close BD gap: assign capture leads to top 5 High-priority pipeline opps</span></div>
+        <div style="padding:10px 0;border-bottom:1px solid #E8C07A;display:flex;gap:10px;align-items:flex-start"><span>🟡</span><span>Verify MBDA + HUD FHEO contract renewals — may need re-award</span></div>
+        <div style="padding:10px 0;border-bottom:1px solid #E8C07A;display:flex;gap:10px;align-items:flex-start"><span>🟡</span><span>Push Eric Ma on DWITT re-engagement — stalled since Jan 2024</span></div>
+        <div style="padding:10px 0;border-bottom:1px solid #E8C07A;display:flex;gap:10px;align-items:flex-start"><span>🟡</span><span>Review NOAA/OIDP labor mix — margins below 15% threshold</span></div>
+        <div style="padding:10px 0;display:flex;gap:10px;align-items:flex-start"><span>✅</span><span>Atlas is operational — SharePoint + Graph API connected, daily reporting ready</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
 
 <!-- TAB: WIN/LOSS -->
 <div id="tab-winloss" class="tab-pane">
