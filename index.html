@@ -797,7 +797,7 @@ function renderOppCard(i,o){
     '<div class="opp-title">'+(o.title||'').substring(0,72)+((o.title||'').length>72?'…':'')+'</div>'+
     '<div class="opp-agency" style="margin-top:4px">🏙 '+(o.agency||'')+'</div>'+
     '</div>'+
-    '<div class="opp-score" style="background:'+scoreColor+';color:var(--white);min-width:60px;text-align:center">'+score+'pts</div>'+
+    '<div class="opp-score" style="background:'+scoreColor+';color:var(--white);min-width:60px;text-align:center">'+score+'pts'+(o.capture_score_delta&&o.capture_score_delta!==0?'<div style="font-size:.55rem;opacity:.85">'+(o.capture_score_delta>0?'▲':'▼')+Math.abs(o.capture_score_delta)+' CI</div>':'')+'</div>'+
     '</div>'+
     fullOpenWarning+
     // Asana stage badge (live sync)
@@ -953,6 +953,17 @@ function showOppModal(i){
       var ci = o.competitive_intel;
       if (!ci || (!ci.competitors.length && !ci.partners.length)) return '';
       var html = '<div style="margin:14px 0 6px;font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--grey)">Competitive Intelligence</div>';
+      // Score delta explanation
+      var delta = o.capture_score_delta;
+      var reasons = o.capture_score_delta_reasons || [];
+      if (delta && delta !== 0 && reasons.length) {
+        var dColor = delta > 0 ? '#15803D' : '#DC2626';
+        var dBg = delta > 0 ? '#F0FDF4' : '#FEF2F2';
+        html += '<div style="background:'+dBg+';border-left:3px solid '+dColor+';padding:8px 12px;border-radius:0 6px 6px 0;margin-bottom:12px">';
+        html += '<div style="font-size:.67rem;font-weight:800;color:'+dColor+';margin-bottom:4px">Score adjusted by '+(delta>0?'+':'')+delta+'pts based on competitive intelligence:</div>';
+        reasons.forEach(function(r){ html += '<div style="font-size:.65rem;color:#374151;margin-top:2px">• '+r+'</div>'; });
+        html += '</div>';
+      }
       html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">';
       // Competitors
       if (ci.competitors.length) {

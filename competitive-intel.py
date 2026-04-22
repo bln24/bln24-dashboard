@@ -502,10 +502,60 @@ def get_competitive_intel(opp):
         elif has_data:
             add_partner_for_gap('behavioral_science', 'research and analytics depth')
 
+    # ── SCORE MODIFIER based on competitive intelligence ──────────
+    score_delta = 0
+    score_reasons = []
+
+    # Incumbent penalty — if the dominant competitor has a massive agency relationship
+    for comp in competitors:
+        evidence = comp.get('evidence', '')
+        amount_m = comp.get('amount_m', 0) or 0
+        name = comp.get('name', '')
+        why = comp.get('why', '').lower()
+        
+        # T-Rex/Vidoori at Census = very strong incumbent
+        if 'incumbent' in why or amount_m >= 500:
+            score_delta -= 12
+            score_reasons.append(f'Strong incumbent: {name} ({comp.get("evidence","")[:50]}) — -12pts')
+            break
+        elif amount_m >= 100:
+            score_delta -= 6
+            score_reasons.append(f'Established agency relationship: {name} (${amount_m:.0f}M) — -6pts')
+            break
+        elif amount_m >= 20:
+            score_delta -= 3
+            score_reasons.append(f'Active agency competitor: {name} (${amount_m:.0f}M) — -3pts')
+
+    # Set-aside bonus — SB set-aside eliminates large prime competition
+    if sa_type in ('8a', 'sb'):
+        score_delta += 5
+        score_reasons.append('SB/8(a) set-aside: large prime competition eliminated — +5pts')
+
+    # Partner bonus — confirmed JV with agency history raises p-win
+    for partner in partners:
+        p_why = partner.get('why', '').lower()
+        p_rel = partner.get('relationship', '').lower()
+        if 'active jv' in p_rel or 'proven' in p_rel:
+            if 'census' in p_why or 'noaa' in p_why or 'census' in (opp.get('agency','') or '').lower():
+                score_delta += 8
+                score_reasons.append(f'Proven JV partner with agency history ({partner["name"][:30]}) — +8pts')
+                break
+            else:
+                score_delta += 5
+                score_reasons.append(f'Active JV partner fills gap ({partner["name"][:30]}) — +5pts')
+                break
+
+    # Open field bonus — if we found no significant incumbent
+    if not competitors or all((comp.get('amount_m', 0) or 0) < 5 for comp in competitors):
+        score_delta += 5
+        score_reasons.append('No dominant incumbent identified — +5pts')
+
     return {
         'competitors': competitors[:4],
         'partners': partners[:3],
-        'set_aside_note': f'Set-aside: {opp.get("set_aside","unknown")} — competitor list filtered accordingly'
+        'set_aside_note': f'Set-aside: {opp.get("set_aside","unknown")} — competitor list filtered accordingly',
+        'score_delta': score_delta,
+        'score_reasons': score_reasons,
     }
 
 
@@ -517,6 +567,26 @@ def main():
     for opp in opps:
         intel = get_competitive_intel(opp)
         opp['competitive_intel'] = intel
+        
+        # Apply score modifier from competitive intelligence
+        # Rules: base score >= 20, not a Pass opp, delta capped at +/-10
+        delta = intel.get('score_delta', 0)
+        delta = max(-15, min(10, delta))  # cap delta
+        base_score = opp.get('capture_score', 0)
+        cm_fit = opp.get('capability_matrix', {}).get('fit', '')
+        is_viable = base_score >= 20 and cm_fit not in ('Pass', 'Unclassified')
+        if delta != 0 and is_viable:
+            new_score = max(0, base_score + delta)
+            opp['capture_score_base'] = base_score
+            opp['capture_score'] = new_score
+            opp['capture_score_delta'] = delta
+            opp['capture_score_delta_reasons'] = intel.get('score_reasons', [])
+        elif delta != 0:
+            # Record the delta but don't apply it
+            opp['capture_score_base'] = base_score
+            opp['capture_score_delta'] = delta
+            opp['capture_score_delta_reasons'] = intel.get('score_reasons', [])
+        
         if intel['competitors'] or intel['partners']:
             updated += 1
 

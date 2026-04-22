@@ -22,7 +22,7 @@
       "isFullOpen": true,
       "ericAlso": false,
       "asana_task_gid": "1214150928848982",
-      "capture_score": 48,
+      "capture_score": 78,
       "win_prob": "Medium (20-40%)",
       "tier": 2,
       "rex_analysis": {
@@ -175,8 +175,19 @@
             "evidence": "CMS $24.8M \u2014 health exchange operational oversight and monitoring (confirmed)"
           }
         ],
-        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 68,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541611",
@@ -199,7 +210,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 35,
+      "capture_score": 44,
       "win_reasons": [
         "Strong HCD/UX scope match \u2014 BLN24 proven prime (IRS $7M HCD BPA, Census UX, CBP digital transformation)",
         "Small business set-aside",
@@ -376,8 +387,23 @@
             "gap_filled": "Behavioral Science & Research"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 3,
+        "score_reasons": [
+          "Strong incumbent: Chemonics International (MCC/USAID \u2014 largest implementer, multiple compact ) \u2014 -12pts",
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 41,
+      "capture_score_delta": 3,
+      "capture_score_delta_reasons": [
+        "Strong incumbent: Chemonics International (MCC/USAID \u2014 largest implementer, multiple compact ) \u2014 -12pts",
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541511",
@@ -400,7 +426,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": true,
-      "capture_score": 35,
+      "capture_score": 53,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Partial cloud/modernization match \u2014 Clarity24 JV has NOAA cloud delivery experience",
@@ -508,8 +534,23 @@
             "gap_filled": "cloud engineering / tech depth"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 6,
+        "score_reasons": [
+          "Strong incumbent: T-Rex Solutions (often teams with Vidoori) (2020 Census integrator $1.6B, deep Census systems ) \u2014 -12pts",
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 47,
+      "capture_score_delta": 6,
+      "capture_score_delta_reasons": [
+        "Strong incumbent: T-Rex Solutions (often teams with Vidoori) (2020 Census integrator $1.6B, deep Census systems ) \u2014 -12pts",
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541990",
@@ -532,7 +573,7 @@
       "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 42,
+      "capture_score": 82,
       "win_reasons": [
         "Web development lane: MBDA website .8M, Census DWS III .3M, Oversight.gov \u2014 direct match",
         "Content services: CMS MNPS M \u2014 federal content production at scale",
@@ -743,8 +784,21 @@
             "gap_filled": "behavioral science / comms depth"
           }
         ],
-        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly",
+        "score_delta": 15,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 72,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541613",
@@ -767,7 +821,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 22,
+      "capture_score": 52,
       "win_reasons": [
         "Partial comms scope match \u2014 verify fit vs CMS/CDC/HUD delivery experience",
         "Small business set-aside"
@@ -874,8 +928,19 @@
             "gap_filled": "Workforce / Talent Development"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 42,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541511",
@@ -898,7 +963,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 22,
+      "capture_score": 42,
       "win_reasons": [
         "Partial comms scope match \u2014 verify fit vs CMS/CDC/HUD delivery experience",
         "Small business set-aside",
@@ -988,8 +1053,19 @@
             "gap_filled": "IT Infrastructure & Telecommunications"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 42,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541611",
@@ -1012,7 +1088,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 18,
+      "capture_score": 38,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
@@ -1084,8 +1160,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 38,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -1108,7 +1195,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 15,
+      "capture_score": 61,
       "win_reasons": [
         "Strong cloud/app modernization match \u2014 Clarity24 JV proven prime (NOAA cloud migration $7M, MAF/TIGER cloud)",
         "Small business set-aside",
@@ -1234,8 +1321,21 @@
             "gap_filled": "cloud engineering / tech depth"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 18,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 51,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541511",
@@ -1258,7 +1358,7 @@
       "is8a": false,
       "isFullOpen": true,
       "ericAlso": true,
-      "capture_score": 15,
+      "capture_score": 17,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Partial cloud/modernization match \u2014 Clarity24 JV has NOAA cloud delivery experience",
@@ -1362,8 +1462,21 @@
             "gap_filled": "cloud engineering / tech depth"
           }
         ],
-        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly",
+        "score_delta": 1,
+        "score_reasons": [
+          "Strong incumbent: Vidoori Inc + T-Rex Solutions (teamed) (Vidoori: $173M Census BPA, $7.3M CMMU AI/ML modern) \u2014 -12pts",
+          "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 17,
+      "capture_score_delta": 1,
+      "capture_score_delta_reasons": [
+        "Strong incumbent: Vidoori Inc + T-Rex Solutions (teamed) (Vidoori: $173M Census BPA, $7.3M CMMU AI/ML modern) \u2014 -12pts",
+        "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541611",
@@ -1386,7 +1499,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 10,
+      "capture_score": 30,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Small business set-aside",
@@ -1447,8 +1560,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 30,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541511",
@@ -1471,7 +1595,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 10,
+      "capture_score": 13,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Small business set-aside",
@@ -1589,8 +1713,23 @@
             "gap_filled": "research and analytics depth"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 3,
+        "score_reasons": [
+          "Strong incumbent: Pull from HigherGov: DHA + 541511/541512 (Pull from HigherGov when RFP details available) \u2014 -12pts",
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 13,
+      "capture_score_delta": 3,
+      "capture_score_delta_reasons": [
+        "Strong incumbent: Pull from HigherGov: DHA + 541511/541512 (Pull from HigherGov when RFP details available) \u2014 -12pts",
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541611",
@@ -1613,7 +1752,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": true,
-      "capture_score": 10,
+      "capture_score": 30,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Small business set-aside",
@@ -1674,8 +1813,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 30,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541611",
@@ -1698,7 +1848,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 10,
+      "capture_score": 56,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Small business set-aside",
@@ -1814,8 +1964,21 @@
             "gap_filled": "cloud engineering / tech depth"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 18,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 46,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541990",
@@ -1838,7 +2001,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": true,
-      "capture_score": 10,
+      "capture_score": 30,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Small business set-aside",
@@ -1899,8 +2062,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 30,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -1923,7 +2097,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": true,
-      "capture_score": 10,
+      "capture_score": 30,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Small business set-aside",
@@ -1984,8 +2158,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 30,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -2008,7 +2193,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 7,
+      "capture_score": 27,
       "win_reasons": [
         "Agency: Clarity24 JV (BLN24 + Accenture) has past performance here",
         "Small business set-aside",
@@ -2069,8 +2254,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 27,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541511",
@@ -2093,7 +2289,7 @@
       "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 5,
+      "capture_score": 25,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "8(a) set-aside \u2014 direct vehicle match for BLN24",
@@ -2159,8 +2355,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 25,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541511",
@@ -2183,7 +2390,7 @@
       "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 5,
+      "capture_score": 25,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "8(a) set-aside \u2014 direct vehicle match for BLN24",
@@ -2270,8 +2477,19 @@
             "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
         ],
-        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 25,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541611",
@@ -2294,7 +2512,7 @@
       "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 5,
+      "capture_score": 25,
       "win_reasons": [
         "8(a) set-aside \u2014 direct vehicle match for BLN24",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
@@ -2354,8 +2572,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 25,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541611",
@@ -2378,7 +2607,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 3,
+      "capture_score": 43,
       "win_reasons": [
         "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
         "Small business set-aside",
@@ -2475,8 +2704,21 @@
             "gap_filled": "behavioral science / comms depth"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 15,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 33,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541990",
@@ -2499,7 +2741,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 3,
+      "capture_score": 13,
       "win_reasons": [
         "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
         "Small business set-aside",
@@ -2589,8 +2831,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 13,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541611",
@@ -2613,7 +2866,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 3,
+      "capture_score": 13,
       "win_reasons": [
         "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
         "Small business set-aside",
@@ -2678,8 +2931,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 13,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541511",
@@ -2702,7 +2966,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 3,
+      "capture_score": 13,
       "win_reasons": [
         "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
         "Small business set-aside",
@@ -2771,8 +3035,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 13,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541990",
@@ -2795,7 +3070,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": true,
-      "capture_score": 3,
+      "capture_score": 13,
       "win_reasons": [
         "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
         "Small business set-aside",
@@ -2878,8 +3153,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 13,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "518210",
@@ -2902,7 +3188,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
@@ -2967,8 +3253,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBP \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBP \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541990",
@@ -2991,7 +3288,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "Small business set-aside",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
@@ -3056,8 +3353,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -3080,7 +3388,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "Small business set-aside",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
@@ -3145,8 +3453,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541611",
@@ -3169,7 +3488,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Small business set-aside",
@@ -3237,8 +3556,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541511",
@@ -3261,7 +3591,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "Small business set-aside",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
@@ -3326,8 +3656,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -3350,7 +3691,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "Small business set-aside",
         "OUT OF SCOPE: ship \u2014 not in BLN24 delivery lanes",
@@ -3415,8 +3756,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541511",
@@ -3439,7 +3791,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "Small business set-aside",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
@@ -3541,8 +3893,19 @@
             "gap_filled": "Workforce / Talent Development"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -3565,7 +3928,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "Small business set-aside",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
@@ -3630,8 +3993,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -3654,7 +4028,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "Small business set-aside",
         "OUT OF SCOPE: vehicle \u2014 not in BLN24 delivery lanes",
@@ -3732,8 +4106,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541611",
@@ -3756,7 +4141,7 @@
       "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "8(a) set-aside \u2014 direct vehicle match for BLN24",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
@@ -3821,8 +4206,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541611",
@@ -3845,7 +4241,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "Small business set-aside",
         "OUT OF SCOPE: ship \u2014 not in BLN24 delivery lanes",
@@ -3910,8 +4306,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541611",
@@ -3934,7 +4341,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "Small business set-aside",
         "OUT OF SCOPE: ship \u2014 not in BLN24 delivery lanes",
@@ -4018,8 +4425,19 @@
             "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -4042,7 +4460,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": true,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "OUT OF SCOPE: ship \u2014 not in BLN24 delivery lanes",
@@ -4120,8 +4538,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541990",
@@ -4144,7 +4573,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": true,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
@@ -4215,8 +4644,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541990",
@@ -4239,7 +4679,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": true,
-      "capture_score": 0,
+      "capture_score": 10,
       "win_reasons": [
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
         "\u26a0\ufe0f Scope gap: AI / Machine Learning, Training & eLearning \u2014 BLN24 has no confirmed prime delivery in these lanes"
@@ -4316,8 +4756,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -4340,7 +4791,7 @@
       "is8a": false,
       "isFullOpen": true,
       "ericAlso": true,
-      "capture_score": 0,
+      "capture_score": 5,
       "win_reasons": [
         "Full & Open \u2014 competing against all firm sizes; lower win probability without incumbent advantage",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
@@ -4416,8 +4867,17 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly",
+        "score_delta": 5,
+        "score_reasons": [
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 5,
+      "capture_score_delta": 5,
+      "capture_score_delta_reasons": [
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -4440,7 +4900,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 0,
+      "capture_score": 46,
       "win_reasons": [
         "Agency: Clarity24 JV (BLN24 + Accenture) has past performance here",
         "Partial HCD/UX scope match \u2014 verify fit vs IRS/Census delivery experience",
@@ -4567,8 +5027,21 @@
             "gap_filled": "cloud engineering / tech depth"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 18,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 36,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541511",
@@ -4591,7 +5064,7 @@
       "is8a": false,
       "isFullOpen": true,
       "ericAlso": true,
-      "capture_score": -2,
+      "capture_score": 3,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
@@ -4676,8 +5149,17 @@
             "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
         ],
-        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly",
+        "score_delta": 5,
+        "score_reasons": [
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 3,
+      "capture_score_delta": 5,
+      "capture_score_delta_reasons": [
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541511",
@@ -4700,7 +5182,7 @@
       "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -5,
+      "capture_score": 5,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "8(a) set-aside \u2014 direct vehicle match for BLN24",
@@ -4761,8 +5243,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 5,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -4785,7 +5278,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -5,
+      "capture_score": 10,
       "win_reasons": [
         "Small business set-aside",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
@@ -4894,8 +5387,21 @@
             "gap_filled": "research and analytics depth"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 15,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541511",
@@ -4918,7 +5424,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -5,
+      "capture_score": 5,
       "win_reasons": [
         "Small business set-aside",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
@@ -4989,8 +5495,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 5,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541511",
@@ -5013,7 +5530,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -5,
+      "capture_score": 5,
       "win_reasons": [
         "Small business set-aside",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
@@ -5073,8 +5590,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 5,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "518210",
@@ -5097,7 +5625,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -5,
+      "capture_score": 10,
       "win_reasons": [
         "Small business set-aside",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
@@ -5210,8 +5738,21 @@
             "gap_filled": "research and analytics depth"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 15,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -5234,7 +5775,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -5,
+      "capture_score": 5,
       "win_reasons": [
         "Small business set-aside",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
@@ -5294,8 +5835,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 5,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -5318,7 +5870,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -5,
+      "capture_score": 5,
       "win_reasons": [
         "Small business set-aside",
         "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
@@ -5389,8 +5941,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 5,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "518210",
@@ -5413,7 +5976,7 @@
       "is8a": false,
       "isFullOpen": true,
       "ericAlso": true,
-      "capture_score": -10,
+      "capture_score": 0,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Full & Open \u2014 competing against all firm sizes; lower win probability without incumbent advantage",
@@ -5474,8 +6037,17 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly",
+        "score_delta": 5,
+        "score_reasons": [
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 5,
+      "capture_score_delta_reasons": [
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541990",
@@ -5498,7 +6070,7 @@
       "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -10,
+      "capture_score": 0,
       "win_reasons": [
         "Partial data/analytics scope match \u2014 verify fit vs Census/Education delivery experience",
         "8(a) set-aside \u2014 direct vehicle match for BLN24",
@@ -5617,8 +6189,19 @@
             "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
         ],
-        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541990",
@@ -5641,7 +6224,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -15,
+      "capture_score": 0,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Small business set-aside",
@@ -5702,8 +6285,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541512",
@@ -5726,7 +6320,7 @@
       "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -20,
+      "capture_score": 0,
       "win_reasons": [
         "8(a) set-aside \u2014 direct vehicle match for BLN24",
         "OUT OF SCOPE: logistics, aircraft \u2014 not in BLN24 delivery lanes"
@@ -5786,8 +6380,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541519",
@@ -5810,7 +6415,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -20,
+      "capture_score": 0,
       "win_reasons": [
         "Partial data/analytics scope match \u2014 verify fit vs Census/Education delivery experience",
         "Small business set-aside",
@@ -5939,8 +6544,19 @@
             "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541990",
@@ -5963,7 +6579,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -20,
+      "capture_score": 0,
       "win_reasons": [
         "Partial data/analytics scope match \u2014 verify fit vs Census/Education delivery experience",
         "Small business set-aside",
@@ -6082,8 +6698,19 @@
             "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
         ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541611",
@@ -6106,7 +6733,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -30,
+      "capture_score": 0,
       "win_reasons": [
         "Small business set-aside",
         "OUT OF SCOPE: vessel \u2014 not in BLN24 delivery lanes"
@@ -6166,8 +6793,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     },
     {
       "naics": "541430",
@@ -6190,7 +6828,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -30,
+      "capture_score": 0,
       "win_reasons": [
         "Small business set-aside",
         "OUT OF SCOPE: vehicle \u2014 not in BLN24 delivery lanes"
@@ -6250,8 +6888,19 @@
           }
         ],
         "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
-      }
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
     }
   ]
 }
