@@ -677,5 +677,49 @@
         "amount_m": 9.5
       }
     ]
-  }
+  },
+  "uscis": {
+    "_notes": "USCIS: Major IT and outreach. E-Verify, SAVE, I-9, VER program. Key NAICS 541511, 541513.",
+    "tech_confirmed": [
+      {
+        "name": "Slalom Inc",
+        "why": "$128M USCIS VER Future contract \u2014 this is THE incumbent on VER program work. Slalom won the VER Future modernization. Any VER-related opp, Slalom is the primary competitor to watch.",
+        "url": "https://www.highergov.com/awardee/?search=Slalom",
+        "evidence": "USCIS $128.7M VER Future (USASpending confirmed \u2014 DIRECT INCUMBENT on VER work)",
+        "amount_m": 128.7
+      },
+      {
+        "name": "Pluribus Digital",
+        "why": "$80.6M USCIS DevSecOps services. Active USCIS digital and tech relationship. SB competitor for USCIS digital work.",
+        "url": "https://www.highergov.com/awardee/?search=Pluribus+Digital",
+        "evidence": "USCIS $80.6M DevSecOps services (USASpending confirmed)",
+        "amount_m": 80.6
+      }
+    ]
+  },
+  "fhwa_dot": {
+    "_notes": "FHWA/DOT: Dominated by SAIC on IT infrastructure. Large business. For SB set-asides, look for SB IT firms.",
+    "tech_lb": [
+      {
+        "name": "SAIC (large business \u2014 sub only on SB)",
+        "why": "$214M+ across 4 FHWA IT infrastructure contracts. SAIC is THE FHWA IT firm. On SB set-asides they cannot prime, making them a potential sub. On full & open, they are the dominant competitor.",
+        "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+        "evidence": "FHWA $214M+ IT infrastructure (USASpending confirmed \u2014 dominant player)",
+        "amount_m": 214
+      }
+    ]
+  },
+  "fema": {
+    "_notes": "FEMA: GDIT and IBM dominate on full & open. For SB, look for sub opportunities under GDIT.",
+    "tech_lb": [
+      {
+        "name": "GDIT (General Dynamics IT \u2014 large business, sub only on SB)",
+        "why": "$396M across 3 FEMA IT contracts (contact center, flood insurance, OC3). GDIT is the dominant FEMA IT player. Cannot prime SB but ideal sub relationship if BLN24 needs FEMA credibility.",
+        "url": "https://www.highergov.com/awardee/general-dynamics-information-technol/",
+        "evidence": "FEMA $396M across 3 contracts (USASpending confirmed)",
+        "amount_m": 396
+      }
+    ]
+  },
+  "_generic_fallback_note": "Fearless Solutions and Coforma are generic HCD/digital firms. Only use them as competitors if they have confirmed work at THIS specific agency. Check USASpending first."
 }

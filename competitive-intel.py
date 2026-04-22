@@ -340,9 +340,19 @@ def get_competitive_intel(opp):
         if has_comms:
             add_agency_winners('cms', 'comms_sb', 1)
 
-    # DHS/USCIS competitors
+    # DHS/USCIS competitors — use confirmed USASpending data
     elif 'citizenship' in (opp.get('agency','')).lower() or 'immigration' in (opp.get('agency','')).lower():
-        add_agency_winners('dhs_uscis', 'tech_sb', 2)
+        add_agency_winners('uscis', 'tech_confirmed', 2)
+        if not competitors:
+            add_agency_winners('dhs_uscis', 'tech_sb', 2)
+
+    # FHWA/DOT competitors
+    elif 'highway' in (opp.get('agency','')).lower() or 'transportation' in (opp.get('agency','')).lower():
+        add_agency_winners('fhwa_dot', 'tech_lb', 1)
+
+    # FEMA competitors  
+    elif 'emergency management' in (opp.get('agency','')).lower() or 'fema' in (opp.get('agency','')).lower():
+        add_agency_winners('fema', 'tech_lb', 1)
 
     # Education IES competitors
     elif 'education' in (opp.get('agency','')).lower() or 'ies' in (opp.get('title','')).lower() or 'pell' in (opp.get('title','')).lower():
@@ -476,10 +486,13 @@ def get_competitive_intel(opp):
             if has_data:
                 add_comp(COMPETITORS_BY_LANE['data_sb'], 2)
             if not competitors:
-                add_comp([
-                    {'name': 'Fearless Solutions', 'why': '8(a) SB federal digital services firm — competes across HCD, comms, and digital platform work for federal agencies.', 'url': f'{HG_BASE}/awardee/fearless-inc-388034/', 'evidence': 'Federal digital services, HCD'},
-                    {'name': 'Coforma', 'why': 'SB federal UX/digital services firm — competes on SB digital services and platform contracts.', 'url': f'{HG_BASE}/awardee/?search=Coforma', 'evidence': 'Federal digital services, UX, OASIS+ SB'},
-                ], 2)
+                # No agency-specific data — flag for research rather than using generic names
+                competitors.append({
+                    'name': 'Search USASpending.gov for this agency',
+                    'why': f'No confirmed competitor data for {opp.get("agency","this agency")}. Go to USASpending.gov → search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.',
+                    'url': f'https://api.usaspending.gov/api/v2/search/spending_by_award/',
+                    'evidence': 'Pull from USASpending before listing competitors'
+                })
         elif not is_pass:
             add_comp(COMPETITORS_BY_LANE['hcd_ux_fo'], 2)
             if has_data:

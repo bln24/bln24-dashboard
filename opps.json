@@ -22,7 +22,7 @@
       "isFullOpen": true,
       "ericAlso": false,
       "asana_task_gid": "1214150928848982",
-      "capture_score": 78,
+      "capture_score": 88,
       "win_prob": "Medium (20-40%)",
       "tier": 2,
       "rex_analysis": {
@@ -182,7 +182,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 68,
+      "capture_score_base": 78,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -210,7 +210,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 44,
+      "capture_score": 47,
       "win_reasons": [
         "Strong HCD/UX scope match \u2014 BLN24 proven prime (IRS $7M HCD BPA, Census UX, CBP digital transformation)",
         "Small business set-aside",
@@ -396,7 +396,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 41,
+      "capture_score_base": 44,
       "capture_score_delta": 3,
       "capture_score_delta_reasons": [
         "Strong incumbent: Chemonics International (MCC/USAID \u2014 largest implementer, multiple compact ) \u2014 -12pts",
@@ -426,7 +426,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": true,
-      "capture_score": 53,
+      "capture_score": 59,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Partial cloud/modernization match \u2014 Clarity24 JV has NOAA cloud delivery experience",
@@ -543,7 +543,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 47,
+      "capture_score_base": 53,
       "capture_score_delta": 6,
       "capture_score_delta_reasons": [
         "Strong incumbent: T-Rex Solutions (often teams with Vidoori) (2020 Census integrator $1.6B, deep Census systems ) \u2014 -12pts",
@@ -573,7 +573,7 @@
       "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 82,
+      "capture_score": 92,
       "win_reasons": [
         "Web development lane: MBDA website .8M, Census DWS III .3M, Oversight.gov \u2014 direct match",
         "Content services: CMS MNPS M \u2014 federal content production at scale",
@@ -792,7 +792,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 72,
+      "capture_score_base": 82,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -821,7 +821,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 52,
+      "capture_score": 62,
       "win_reasons": [
         "Partial comms scope match \u2014 verify fit vs CMS/CDC/HUD delivery experience",
         "Small business set-aside"
@@ -907,16 +907,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Defense Finance and Accounting Service. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [
@@ -935,7 +929,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 42,
+      "capture_score_base": 52,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -1038,10 +1032,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "N/A \u2014 Outside BLN24 lane",
-            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "name": "SAIC (large business \u2014 sub only on SB)",
+            "why": "$214M+ across 4 FHWA IT infrastructure contracts. SAIC is THE FHWA IT firm. On SB set-asides they cannot prime, making them a potential sub. On full & open, they are the dominant competitor.",
             "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
-            "evidence": "Out-of-scope for BLN24 prime"
+            "evidence": "FHWA $214M+ IT infrastructure (USASpending confirmed \u2014 dominant player)"
           }
         ],
         "partners": [
@@ -1195,7 +1189,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 61,
+      "capture_score": 71,
       "win_reasons": [
         "Strong cloud/app modernization match \u2014 Clarity24 JV proven prime (NOAA cloud migration $7M, MAF/TIGER cloud)",
         "Small business set-aside",
@@ -1300,16 +1294,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "GDIT (General Dynamics IT \u2014 large business, sub only on SB)",
+            "why": "$396M across 3 FEMA IT contracts (contact center, flood insurance, OC3). GDIT is the dominant FEMA IT player. Cannot prime SB but ideal sub relationship if BLN24 needs FEMA credibility.",
+            "url": "https://www.highergov.com/awardee/general-dynamics-information-technol/",
+            "evidence": "FEMA $396M across 3 contracts (USASpending confirmed)"
           }
         ],
         "partners": [
@@ -1329,7 +1317,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 51,
+      "capture_score_base": 61,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -1547,16 +1535,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Department of Commerce. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -1800,16 +1782,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for U.S. Census Bureau. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -1848,7 +1824,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 56,
+      "capture_score": 66,
       "win_reasons": [
         "Agency: BLN24 has past performance here (relationship + credibility advantage)",
         "Small business set-aside",
@@ -1972,7 +1948,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 46,
+      "capture_score_base": 56,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -2049,16 +2025,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for National Oceanic and Atmospheric Administration. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -2145,16 +2115,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for IRS Office of the Chief Procurement Officer. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -2241,16 +2205,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for CBP Office of Information and Technology. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -2342,16 +2300,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Department of the Interior. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -2559,16 +2511,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for National Geospatial-Intelligence Agency. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -2607,7 +2553,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 43,
+      "capture_score": 53,
       "win_reasons": [
         "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
         "Small business set-aside",
@@ -2683,6 +2629,12 @@
       "competitive_intel": {
         "competitors": [
           {
+            "name": "SAIC (large business \u2014 sub only on SB)",
+            "why": "$214M+ across 4 FHWA IT infrastructure contracts. SAIC is THE FHWA IT firm. On SB set-asides they cannot prime, making them a potential sub. On full & open, they are the dominant competitor.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "FHWA $214M+ IT infrastructure (USASpending confirmed \u2014 dominant player)"
+          },
+          {
             "name": "ICF International (mid-market subsidiary)",
             "why": "ICF has SB subsidiaries that compete on health comms set-asides. Primary health comms competitor regardless of set-aside type.",
             "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/",
@@ -2712,7 +2664,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 33,
+      "capture_score_base": 43,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -2818,16 +2770,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for USACE Memphis District. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -2918,16 +2864,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for U.S. Geological Survey. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -3022,16 +2962,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for USGS Office of Acquisitions and Grants. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -3240,16 +3174,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for National Oceanic and Atmospheric Administration. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -3340,16 +3268,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for USACE Omaha District. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -3440,16 +3362,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Air Combat Command. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -3543,16 +3459,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Department of the Interior. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -3643,16 +3553,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Marine Corps. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -3743,16 +3647,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for DOS Office of Acquisition Management. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -3980,16 +3878,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Department of the Army. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -4193,16 +4085,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Office of the Secretary of Defense. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -4293,16 +4179,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for U.S. Special Operations Command. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -4900,7 +4780,7 @@
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 46,
+      "capture_score": 56,
       "win_reasons": [
         "Agency: Clarity24 JV (BLN24 + Accenture) has past performance here",
         "Partial HCD/UX scope match \u2014 verify fit vs IRS/Census delivery experience",
@@ -5006,16 +4886,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for CBP Office of Information and Technology. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [
@@ -5035,7 +4909,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 36,
+      "capture_score_base": 46,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -5230,16 +5104,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for National Oceanic and Atmospheric Administration. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -5577,16 +5445,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for DOJ Office of the Inspector General. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -5717,16 +5579,16 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Cognosante MVH LLC",
-            "why": "$24.8M USCIS contract \u2014 health exchange oversight and monitoring. Medium firm with strong DHS/USCIS tech presence. Competes on large USCIS IT work.",
-            "url": "https://www.highergov.com/awardee/cognosante-mvh-llc-10118811/",
-            "evidence": "USCIS $24.8M, health exchange monitoring"
+            "name": "Slalom Inc",
+            "why": "$128M USCIS VER Future contract \u2014 this is THE incumbent on VER program work. Slalom won the VER Future modernization. Any VER-related opp, Slalom is the primary competitor to watch.",
+            "url": "https://www.highergov.com/awardee/?search=Slalom",
+            "evidence": "USCIS $128.7M VER Future (USASpending confirmed \u2014 DIRECT INCUMBENT on VER work)"
           },
           {
-            "name": "Applied Enterprise Management Corp",
-            "why": "$17.8M USCIS ERIC 3.0 contract. Active USCIS technology track record.",
-            "url": "https://www.highergov.com/awardee/applied-enterprise-management-corpor/",
-            "evidence": "USCIS $17.8M ERIC 3.0 system"
+            "name": "Pluribus Digital",
+            "why": "$80.6M USCIS DevSecOps services. Active USCIS digital and tech relationship. SB competitor for USCIS digital work.",
+            "url": "https://www.highergov.com/awardee/?search=Pluribus+Digital",
+            "evidence": "USCIS $80.6M DevSecOps services (USASpending confirmed)"
           }
         ],
         "partners": [
@@ -5739,16 +5601,18 @@
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 15,
+        "score_delta": 3,
         "score_reasons": [
+          "Strong incumbent: Slalom Inc (USCIS $128.7M VER Future (USASpending confirmed \u2014 ) \u2014 -12pts",
           "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
           "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
       "capture_score_base": 10,
-      "capture_score_delta": 10,
+      "capture_score_delta": 3,
       "capture_score_delta_reasons": [
+        "Strong incumbent: Slalom Inc (USCIS $128.7M VER Future (USASpending confirmed \u2014 ) \u2014 -12pts",
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
         "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
         "No dominant incumbent identified \u2014 +5pts"
@@ -5822,16 +5686,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Air Force Materiel Command. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -6272,16 +6130,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Department of the Interior. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -6367,16 +6219,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Air Force Sustainment Center. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -6523,16 +6369,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Mathematica Policy Research",
-            "why": "Premier federal research and analytics firm. Wins large data analytics and program evaluation contracts across ED, HHS, Labor. Strong competitor on research-heavy data analytics RFPs.",
-            "url": "https://www.highergov.com/awardee/?search=Mathematica",
-            "evidence": "ED, HHS, Labor \u2014 data analytics, program evaluation, research"
-          },
-          {
-            "name": "Westat",
-            "why": "Federal statistical research firm. Survey methodology, data analytics, program evaluation. Competes at Census, ED, HHS on data and research contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Westat",
-            "evidence": "Census, ED, HHS \u2014 surveys, data analytics, statistical research"
+            "name": "SAIC (large business \u2014 sub only on SB)",
+            "why": "$214M+ across 4 FHWA IT infrastructure contracts. SAIC is THE FHWA IT firm. On SB set-asides they cannot prime, making them a potential sub. On full & open, they are the dominant competitor.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "FHWA $214M+ IT infrastructure (USASpending confirmed \u2014 dominant player)"
           }
         ],
         "partners": [
@@ -6780,16 +6620,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Department of State. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
@@ -6875,16 +6709,10 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Fearless Solutions",
-            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
-            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
-            "evidence": "Federal digital services, HCD"
-          },
-          {
-            "name": "Coforma",
-            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Coforma",
-            "evidence": "Federal digital services, UX, OASIS+ SB"
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Department of the Army. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
           }
         ],
         "partners": [],
