@@ -339,14 +339,16 @@
     <span class="badge b-ai">◆ PMO Teams + Graph API · Atlas · Mar 2026</span>
   </div>
 
-  <!-- Signal strip -->
-  <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px">
-    <span style="font-size:.72rem;padding:4px 12px;border-radius:20px;background:#FEF2F2;color:var(--red);border:1px solid #fca5a5">🔴 MNPS/SRQA/CBP PoPs lapsed — billing continuing</span>
-    <span style="font-size:.72rem;padding:4px 12px;border-radius:20px;background:var(--yellow-light);color:var(--yellow);border:1px solid #fde68a">🟡 BD Gap: $32.2M below $120M goal</span>
+  <!-- Signal strip - Real data from PMO Teams, Apr 22 2026 -->
+  <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px">
+    <span style="font-size:.72rem;padding:4px 12px;border-radius:20px;background:#FEF2F2;color:var(--red);border:1px solid #fca5a5">🔴 MNPS + SRQA + CBP PoPs lapsed — billing active on expired contracts</span>
+    <span style="font-size:.72rem;padding:4px 12px;border-radius:20px;background:#FEF2F2;color:var(--red);border:1px solid #fca5a5">🔴 BD Gap: $32.2M vs $120M 2026 goal</span>
+    <span style="font-size:.72rem;padding:4px 12px;border-radius:20px;background:var(--yellow-light);color:var(--yellow);border:1px solid #fde68a">🟡 Shawn De Lopez 157% — overloaded</span>
+    <span style="font-size:.72rem;padding:4px 12px;border-radius:20px;background:var(--yellow-light);color:var(--yellow);border:1px solid #fde68a">🟡 5 staff under 75% utilization</span>
     <span style="font-size:.72rem;padding:4px 12px;border-radius:20px;background:var(--yellow-light);color:var(--yellow);border:1px solid #fde68a">🟡 4 Costpoint issues pending IT/Ops</span>
-    <span style="font-size:.72rem;padding:4px 12px;border-radius:20px;background:var(--green-light);color:var(--green);border:1px solid #bbf7d0">✅ PMO Teams connected · Invoice Tracker live</span>
+    <span style="font-size:.72rem;padding:4px 12px;border-radius:20px;background:var(--green-light);color:var(--green);border:1px solid #bbf7d0">✅ 58 staff tracked · 94.5% avg util Apr 2026</span>
   </div>
-  <div id="cpo-signals" style="margin-bottom:16px"></div>
+  <div id="cpo-signals" style="display:none"></div>
 
   <!-- KPIs -->
   <div class="kpis" style="margin-bottom:16px">
@@ -424,7 +426,7 @@
     <div class="kpi green">
       <div class="kpi-lbl">Monthly Run Rate</div>
       <div class="kpi-v" style="color:var(--green)">$2.02M</div>
-      <div class="kpi-sub">March 2026 invoiced</div>
+      <div class="kpi-sub">March 2026 · 21 billing lines</div>
     </div>
     <div class="kpi gold">
       <div class="kpi-lbl">Annualized Run Rate</div>
@@ -437,9 +439,9 @@
       <div class="kpi-sub">Confirmed prime contracts</div>
     </div>
     <div class="kpi gold">
-      <div class="kpi-lbl">Avg Margin</div>
-      <div class="kpi-v" style="color:var(--gold-dark)">N/A</div>
-      <div class="kpi-sub">Pending Deltek connection</div>
+      <div class="kpi-lbl">Staff Tracked</div>
+      <div class="kpi-v" style="color:var(--gold-dark)">58</div>
+      <div class="kpi-sub">Avg 94.5% util · Apr 2026</div>
     </div>
   </div>
 
@@ -490,6 +492,44 @@
         </tbody>
       </table>
       <div style="font-size:.63rem;color:var(--grey);margin-top:8px;padding:8px;background:var(--grey-light);border-radius:6px">⚠️ Margins pending Deltek Costpoint connection — N/A will auto-populate once linked</div>
+    </div>
+  </div>
+
+  <!-- Utilization Section -->
+  <div class="g2" style="margin-bottom:16px">
+    <div class="card">
+      <div class="card-hdr">
+        <span class="card-title">🔴 Overloaded Staff (&gt;110% Apr 2026)</span>
+        <span class="badge" style="background:var(--red-light);color:var(--red)">5 at risk</span>
+      </div>
+      <table>
+        <thead><tr><th>Name</th><th>Apr Util</th><th>Capability</th></tr></thead>
+        <tbody>
+          <tr class="alert"><td class="t1">Shawn De Lopez</td><td><span style="font-weight:800;color:var(--red)">157%</span></td><td class="tm">CX &amp; Comms</td></tr>
+          <tr class="alert"><td class="t1">Eduardo Abraham</td><td><span style="font-weight:800;color:var(--red)">128%</span></td><td class="tm">Technology</td></tr>
+          <tr class="alert"><td class="t1">David Dang</td><td><span style="font-weight:800;color:var(--red)">123%</span></td><td class="tm">CX &amp; Comms</td></tr>
+          <tr><td class="t1">Lily Le</td><td><span style="font-weight:700;color:var(--yellow)">113%</span></td><td class="tm">CX &amp; Comms</td></tr>
+          <tr><td class="t1">Sarah Palm</td><td><span style="font-weight:700;color:var(--yellow)">111%</span></td><td class="tm">CX &amp; Comms</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:.63rem;color:var(--grey);margin-top:8px">Source: BLN24 Resource Utilization &amp; Forecasting.xlsx · Apr 22, 2026</div>
+    </div>
+    <div class="card">
+      <div class="card-hdr">
+        <span class="card-title">🟡 Under-Utilized Staff (&lt;75% Apr 2026)</span>
+        <span class="badge" style="background:var(--yellow-light);color:var(--yellow)">5 flagged</span>
+      </div>
+      <table>
+        <thead><tr><th>Name</th><th>Apr Util</th><th>Capability</th></tr></thead>
+        <tbody>
+          <tr class="alert"><td class="t1">Arielle Desir (Contractor)</td><td><span style="font-weight:800;color:var(--red)">7%</span></td><td class="tm">CX &amp; Comms</td></tr>
+          <tr class="alert"><td class="t1">Jason Verwest</td><td><span style="font-weight:800;color:var(--yellow)">30%</span></td><td class="tm">Technology · Census CES PM</td></tr>
+          <tr><td class="t1">Logan Monday</td><td><span style="font-weight:700;color:var(--yellow)">34%</span></td><td class="tm">CX &amp; Comms · NOAA NCEI</td></tr>
+          <tr><td class="t1">Rafael Sachakov</td><td><span style="font-weight:700;color:var(--yellow)">36%</span></td><td class="tm">Technology</td></tr>
+          <tr><td class="t1">Diona Kurien (Contractor)</td><td><span style="font-weight:700;color:var(--yellow)">46%</span></td><td class="tm">Technology</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:.63rem;color:var(--grey);margin-top:8px">+ 4 at 0%: Amy Folkestad, Joe Trefilek, Len Escanilla, Shanna Glover</div>
     </div>
   </div>
 
