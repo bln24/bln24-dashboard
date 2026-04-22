@@ -868,7 +868,17 @@ window.addEventListener('DOMContentLoaded',function(){
 
 // TABS
 function switchTab(name,el){
-  if(name==='cpo'){setTimeout(function(){if(typeof wireCpoRows==='function'){wireCpoRows();}if(typeof showGpMonth==='function'){showGpMonth(currentGpMonth||'Mar-2026',null);}},100);}
+  if(name==='cpo'){
+    setTimeout(function(){
+      if(typeof wireCpoRows==='function') wireCpoRows();
+      if(typeof showGpMonth==='function') showGpMonth(currentGpMonth||'Mar-2026', null);
+    }, 150);
+    // Second attempt for chart resize
+    setTimeout(function(){
+      if(typeof gpChart !== 'undefined' && gpChart && gpChart.resize) gpChart.resize();
+      else if(typeof showGpMonth==='function') showGpMonth(currentGpMonth||'Mar-2026', null);
+    }, 400);
+  }
   document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
@@ -1605,6 +1615,10 @@ var _origDoAuth = doAuth;
 doAuth = function(){
   if(document.getElementById('pwd').value==='9025'){
     setTimeout(loadOps, 500);
+    // Init GP data when authenticated
+    setTimeout(function(){
+      if(typeof showGpMonth==='function') showGpMonth('Mar-2026', document.querySelector('#gp-month-btns .type-btn.active'));
+    }, 800);
   }
   _origDoAuth();
 };
