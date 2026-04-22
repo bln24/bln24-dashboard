@@ -190,5 +190,42 @@
         "evidence": "ED, IES, Labor \u2014 program evaluation, workforce research"
       }
     ]
+  },
+  "_large_business_subs": {
+    "_notes": "Large/medium businesses that have proven agency relationships \u2014 ideal subs on SB set-asides. Cannot prime SB but bring agency credibility + technical depth.",
+    "census_cyber_it": [
+      {
+        "name": "IgniteAction LLC (Ignite IT + ActioNet JV)",
+        "why": "Won $557M Census OCISS BPA for cloud infrastructure + cybersecurity and zero trust. This is THE Census cyber/IT infrastructure player. If BLN24 needs cyber/ATO coverage on a Census contract, IgniteAction is the right call \u2014 they already have the Census relationship, cleared staff, and zero trust experience.",
+        "url": "https://www.highergov.com/awardee/?search=IgniteAction",
+        "evidence": "Census Bureau $557M OCISS BPA \u2014 cloud infrastructure, cybersecurity, zero trust (2024-2025)",
+        "lb_note": "Large business \u2014 cannot prime SB set-asides, ideal sub"
+      },
+      {
+        "name": "Guidehouse Digital LLC",
+        "why": "Won $62M Census Infrastructure Support Services (security compliance, FISMA, disaster recovery). Proven Census infrastructure and security relationship.",
+        "url": "https://www.highergov.com/awardee/?search=Guidehouse+Digital",
+        "evidence": "Census Bureau $62M Infrastructure Support \u2014 security compliance, FISMA (2024)",
+        "lb_note": "Large business \u2014 cannot prime SB, ideal sub for Census cyber/infra gap"
+      }
+    ],
+    "cms_tech": [
+      {
+        "name": "Cognosante MVH LLC",
+        "why": "Won $24.8M CMS contract for health exchange monitoring. Active CMS technology relationship. Medium-size firm with confirmed CMS IT track record.",
+        "url": "https://www.highergov.com/awardee/cognosante-mvh-llc-10118811/",
+        "evidence": "CMS $24.8M \u2014 health exchange operational oversight and monitoring (confirmed)",
+        "lb_note": "Medium business \u2014 may qualify SB on some NAICS; confirmed CMS experience"
+      }
+    ],
+    "hud_comms": [
+      {
+        "name": "ICF International",
+        "why": "Dominant health and public affairs comms firm. While too large to prime on SB set-asides, ICF brings deep HUD/HHS outreach credibility as a sub. Their name on a proposal raises credibility with HUD evaluators who know their work.",
+        "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/",
+        "evidence": "HHS, CMS, HUD \u2014 major health and public affairs comms contracts",
+        "lb_note": "Large business \u2014 cannot prime SB; sub arrangement adds credibility"
+      }
+    ]
   }
 }

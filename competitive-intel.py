@@ -222,11 +222,12 @@ PARTNERS = {
         'url': f'{HG_BASE}/awardee/chemonics-international-inc-3474/',
         'relationship': 'Recommended sub'
     },
+    # Cybersecurity partner — agency-specific lookup in get_competitive_intel, use this as fallback
     'cybersecurity': {
-        'name': 'ManTech International (large business sub)',
-        'why': 'ManTech is a large business that CANNOT prime on SB set-asides — which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.',
-        'url': f'{HG_BASE}/awardee/?search=ManTech',
-        'relationship': 'Recommended large business sub'
+        'name': 'IgniteAction LLC (Census) / ManTech (other agencies)',
+        'why': 'For Census: IgniteAction won \$557M Census OCISS BPA for cloud infrastructure + cybersecurity and zero trust — they already have the Census cyber relationship and cleared staff. For other agencies: ManTech brings cleared cyber, ATO maintenance, and FISMA expertise. Large businesses cannot prime SB set-asides, making them ideal subs — they get on the contract, BLN24 primes.',
+        'url': f'{HG_BASE}/awardee/?search=IgniteAction',
+        'relationship': 'Recommended large business sub (agency-specific)'
     },
     'program_evaluation': {
         'name': 'Mathematica Policy Research (medium/large sub)',
@@ -387,20 +388,52 @@ def get_competitive_intel(opp):
             partners.append(p_copy)
             seen_p.add(p['name'])
 
-    # Gap-driven partner selection
+    # Load agency-specific large business sub data
+    lb_subs = AGENCY_WINNERS.get('_large_business_subs', {})
+
+    def add_agency_lb_partner(lb_key, gap_task_name, max_add=1):
+        """Add a confirmed agency-specific large business sub partner."""
+        subs = lb_subs.get(lb_key, [])
+        added = 0
+        for s in subs[:max_add]:
+            if s['name'] not in seen_p:
+                partners.append({
+                    'name': s['name'],
+                    'why': f'GAP: {gap_task_name} — {s["why"]}',
+                    'url': s['url'],
+                    'relationship': s.get('lb_note', 'Large business sub'),
+                    'gap_filled': gap_task_name,
+                    'evidence': s.get('evidence', '')
+                })
+                seen_p.add(s['name'])
+                added += 1
+
+    # Gap-driven partner selection — use agency-specific subs first
     gap_tasks = [t for t in tasks if t.get('score', 0) == 0]
     for task in gap_tasks:
         task_name = task.get('task', '')
-        if 'DevSecOps' in task_name or 'CI/CD' in task_name:
-            add_partner_for_gap('devsecops', task_name)
+        if 'Cybersecurity' in task_name or 'FISMA' in task_name:
+            # Use agency-specific cyber sub
+            if agency_type == 'census':
+                add_agency_lb_partner('census_cyber_it', task_name, 1)
+            elif agency_type == 'cms':
+                add_agency_lb_partner('cms_tech', task_name, 1)
+            if not any(t.get('gap_filled') == task_name for t in partners):
+                add_partner_for_gap('cybersecurity', task_name)  # fallback
+        elif 'DevSecOps' in task_name or 'CI/CD' in task_name:
+            if agency_type == 'census':
+                add_agency_lb_partner('census_cyber_it', task_name, 1)
+            if not any(t.get('gap_filled') == task_name for t in partners):
+                add_partner_for_gap('devsecops', task_name)
         elif 'Cloud Engineering' in task_name:
             add_partner_for_gap('cloud', task_name)
-        elif 'Cybersecurity' in task_name or 'FISMA' in task_name:
-            add_partner_for_gap('cybersecurity', task_name)
         elif 'Workforce' in task_name or 'TVET' in task_name:
             add_partner_for_gap('tvet_workforce', task_name)
         elif 'IT Infrastructure' in task_name:
-            add_partner_for_gap('it_infrastructure', task_name)
+            if agency_type == 'census':
+                add_agency_lb_partner('census_cyber_it', task_name, 1)
+            if not any(t.get('gap_filled') == task_name for t in partners):
+                add_partner_for_gap('it_infrastructure', task_name)
         elif 'Program Evaluation' in task_name:
             add_partner_for_gap('program_evaluation', task_name)
 
