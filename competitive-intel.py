@@ -216,22 +216,22 @@ PARTNERS = {
         'relationship': 'Recommended sub'
     },
     'cybersecurity': {
-        'name': 'Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)',
-        'why': 'Census-specific: Amivero and Spatial Front already hold Census security credentials. For other agencies, ManTech has cleared cyber capability. Sub arrangement covers ATO without BLN24 holding it.',
-        'url': f'{HG_BASE}/awardee/amivero-llc-10055353/',
-        'relationship': 'Recommended sub'
+        'name': 'ManTech International (large business sub)',
+        'why': 'ManTech is a large business that CANNOT prime on SB set-asides — which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.',
+        'url': f'{HG_BASE}/awardee/?search=ManTech',
+        'relationship': 'Recommended large business sub'
     },
     'program_evaluation': {
-        'name': 'Mathematica or Westat',
-        'why': 'Rigorous evaluation methodology, RCT design, ED/HHS/Labor program evaluation history. Fills BLN24\'s evaluation methodology gap for education and workforce programs.',
+        'name': 'Mathematica Policy Research (medium/large sub)',
+        'why': 'Mathematica is a premier federal research firm that often cannot compete on SB set-asides as prime. Their evaluation methodology, RCT design, and ED/HHS program evaluation expertise makes them an ideal sub — BLN24 primes with SB status, Mathematica delivers the rigorous evaluation methodology. They bring credibility BLN24 doesn\'t have; BLN24 brings the SB vehicle they need.',
         'url': f'{HG_BASE}/awardee/?search=Mathematica',
-        'relationship': 'Recommended sub'
+        'relationship': 'Recommended medium/large business sub'
     },
     'it_infrastructure': {
-        'name': 'Amivero LLC (for Census) / IT Works! (federal SB)',
-        'why': 'Both are confirmed SB Census tech contractors. Sub arrangement covers network/infrastructure requirements without needing a large prime.',
-        'url': f'{HG_BASE}/awardee/amivero-llc-10055353/',
-        'relationship': 'Recommended sub'
+        'name': 'Leidos or Peraton (large business sub)',
+        'why': 'Large businesses cannot prime on SB set-asides — making them ideal subs. Leidos and Peraton have deep IT infrastructure, network, and telecom capabilities. BLN24 primes with SB status, they bring the infrastructure technical depth. This is exactly the model: BLN24 gets the contract, large firm gets the sub work they could not win as prime.',
+        'url': f'{HG_BASE}/awardee/?search=Leidos',
+        'relationship': 'Recommended large business sub'
     },
 }
 
