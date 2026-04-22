@@ -994,7 +994,8 @@ async function loadOpps(){
     renderOpps();
 
   } catch(e){
-    document.getElementById('opp-cards').innerHTML='<div class="empty" style="color:var(--red)">Error loading: '+e.message+'</div>';
+    console.error('loadOpps error:', e);
+    document.getElementById('opp-cards').innerHTML='<div class="empty" style="color:var(--red)">Error loading: '+e.message+'<br><small style="color:#999">'+e.stack+'</small></div>';
     document.getElementById('bdai-count').textContent='Error';
   }
 }
