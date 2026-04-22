@@ -971,8 +971,11 @@ function showOppModal(i){
         ci.partners.forEach(function(p){
           html += '<div style="margin-bottom:8px;padding:8px 10px;background:#F0FDF4;border-radius:6px">';
           html += '<a href="'+p.url+'" target="_blank" style="font-size:.72rem;font-weight:700;color:#15803D;text-decoration:none">'+p.name+' ↗</a>';
+          if (p.gap_filled) {
+            html += '<div style="font-size:.62rem;background:#FEF3C7;color:#92400E;padding:2px 7px;border-radius:3px;display:inline-block;margin:2px 4px;font-weight:700">⚠ Fills: '+p.gap_filled+'</div>';
+          }
           html += '<div style="font-size:.63rem;background:#D1FAE5;color:#065F46;padding:1px 6px;border-radius:3px;display:inline-block;margin:2px 0;font-weight:600">'+p.relationship+'</div>';
-          html += '<div style="font-size:.67rem;color:#6B6E7A;margin-top:2px;line-height:1.4">'+p.why+'</div>';
+          html += '<div style="font-size:.67rem;color:#6B6E7A;margin-top:3px;line-height:1.5">'+p.why+'</div>';
           html += '</div>';
         });
         html += '</div>';

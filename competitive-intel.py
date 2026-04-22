@@ -372,37 +372,60 @@ def get_competitive_intel(opp):
     if has_data and agency_type in ('education', 'hhs') and not is_intl_dev:
         add_comp(COMPETITORS_BY_LANE['data_sb'], 2)
 
-    # Select partners based on gaps
+    # Select partners based on SPECIFIC GAPS — explain what they fill
     partners = []
     seen_p = set()
+    gap_reasons = {}  # track what gap each partner fills
 
-    def add_partner(key):
+    def add_partner_for_gap(key, gap_task_name):
         p = PARTNERS.get(key)
         if p and p['name'] not in seen_p:
-            partners.append(p)
+            # Override the why with gap-specific reasoning
+            p_copy = dict(p)
+            p_copy['gap_filled'] = gap_task_name
+            p_copy['why'] = f'GAP: {gap_task_name} — {p["why"]}'
+            partners.append(p_copy)
             seen_p.add(p['name'])
 
-    for task in tasks:
-        if task.get('score', 0) == 0:
-            task_name = task.get('task', '')
-            if 'DevSecOps' in task_name or 'CI/CD' in task_name:
-                add_partner('devsecops')
-            elif 'Cloud Engineering' in task_name:
-                add_partner('cloud')
-            elif 'Cybersecurity' in task_name or 'FISMA' in task_name:
-                add_partner('cybersecurity')
-            elif 'Workforce' in task_name or 'TVET' in task_name:
-                add_partner('tvet_workforce')
-            elif 'IT Infrastructure' in task_name:
-                add_partner('it_infrastructure')
-            elif 'Program Evaluation' in task_name:
-                add_partner('program_evaluation')
+    # Gap-driven partner selection
+    gap_tasks = [t for t in tasks if t.get('score', 0) == 0]
+    for task in gap_tasks:
+        task_name = task.get('task', '')
+        if 'DevSecOps' in task_name or 'CI/CD' in task_name:
+            add_partner_for_gap('devsecops', task_name)
+        elif 'Cloud Engineering' in task_name:
+            add_partner_for_gap('cloud', task_name)
+        elif 'Cybersecurity' in task_name or 'FISMA' in task_name:
+            add_partner_for_gap('cybersecurity', task_name)
+        elif 'Workforce' in task_name or 'TVET' in task_name:
+            add_partner_for_gap('tvet_workforce', task_name)
+        elif 'IT Infrastructure' in task_name:
+            add_partner_for_gap('it_infrastructure', task_name)
+        elif 'Program Evaluation' in task_name:
+            add_partner_for_gap('program_evaluation', task_name)
 
-    # Always suggest JV partners when relevant to scope
-    if has_comms or any('behavioral' in t.get('task','').lower() for t in tasks if t.get('score',0) >= 3):
-        add_partner('behavioral_science')
-    if has_cloud or any('cloud' in t.get('task','').lower() for t in tasks if t.get('score',0) >= 3):
-        add_partner('cloud')
+    # JV partners only when they fill a real scope need — explain the specific gap
+    behavioral_tasks = [t for t in tasks if 'behavioral' in t.get('task','').lower() and t.get('score',0) >= 2]
+    if behavioral_tasks:
+        p = PARTNERS.get('behavioral_science')
+        if p and p['name'] not in seen_p:
+            p_copy = dict(p)
+            gap_desc = behavioral_tasks[0]['task'] if behavioral_tasks else 'behavioral science scope'
+            p_copy['gap_filled'] = gap_desc
+            p_copy['why'] = f'SCOPE NEED: {gap_desc} — {p["why"]}'
+            partners.append(p_copy)
+            seen_p.add(p['name'])
+
+    cloud_gap_tasks = [t for t in gap_tasks if 'cloud' in t.get('task','').lower() or 'devops' in t.get('task','').lower()]
+    if cloud_gap_tasks and 'Clarity24' not in str([p.get('name','') for p in partners]):
+        p = PARTNERS.get('cloud')
+        if p and p['name'] not in seen_p:
+            p_copy = dict(p)
+            gap_desc = cloud_gap_tasks[0]['task'] if cloud_gap_tasks else 'cloud/DevSecOps scope'
+            p_copy['gap_filled'] = gap_desc
+            p_copy['why'] = f'GAP: {gap_desc} — {p["why"]}'
+            partners.append(p_copy)
+            seen_p.add(p['name'])
 
     # Universal fallback — every opp gets at least basic intel
     # Only apply fallback if the opp is in BLN24's lanes (not a Pass/out-of-scope opp)
@@ -437,14 +460,14 @@ def get_competitive_intel(opp):
             'evidence': 'Out-of-scope for BLN24 prime'
         })
 
-    # If still no partners suggested, default to JV partners (skip for Pass opps)
+    # If still no partners suggested, only add JV partners when there's a real scope reason
     if not partners and not is_pass and has_any_prime:
         if has_comms or has_hcd:
-            add_partner('behavioral_science')
-        if has_cloud or has_data or has_web:
-            add_partner('cloud')
-        if not partners:
-            add_partner('behavioral_science')
+            add_partner_for_gap('behavioral_science', 'behavioral science / comms depth')
+        elif has_cloud or has_web:
+            add_partner_for_gap('cloud', 'cloud engineering / tech depth')
+        elif has_data:
+            add_partner_for_gap('behavioral_science', 'research and analytics depth')
 
     return {
         'competitors': competitors[:4],

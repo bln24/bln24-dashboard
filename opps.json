@@ -168,9 +168,10 @@
         "partners": [
           {
             "name": "ManTech International (large business sub)",
-            "why": "ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
+            "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
             "url": "https://www.highergov.com/awardee/?search=ManTech",
-            "relationship": "Recommended large business sub"
+            "relationship": "Recommended large business sub",
+            "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
         ],
         "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly"
@@ -361,15 +362,17 @@
         "partners": [
           {
             "name": "Chemonics International",
-            "why": "Largest MCC/USAID implementer. TVET and workforce development expertise in compact countries. Teaming with Chemonics fills BLN24's LMIC workforce gap and adds MCC incumbent credibility.",
+            "why": "GAP: Workforce / Talent Development \u2014 Largest MCC/USAID implementer. TVET and workforce development expertise in compact countries. Teaming with Chemonics fills BLN24's LMIC workforce gap and adds MCC incumbent credibility.",
             "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/",
-            "relationship": "Recommended sub"
+            "relationship": "Recommended sub",
+            "gap_filled": "Workforce / Talent Development"
           },
           {
             "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "why": "SCOPE NEED: Behavioral Science & Research \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
             "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
+            "relationship": "Active JV",
+            "gap_filled": "Behavioral Science & Research"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -498,9 +501,10 @@
         "partners": [
           {
             "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
-            "why": "STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
+            "why": "GAP: cloud engineering / tech depth \u2014 STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
             "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
-            "relationship": "Active JV \u2014 Proven Census delivery together"
+            "relationship": "Active JV \u2014 Proven Census delivery together",
+            "gap_filled": "cloud engineering / tech depth"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -732,9 +736,10 @@
         "partners": [
           {
             "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "why": "GAP: behavioral science / comms depth \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
             "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
+            "relationship": "Active JV",
+            "gap_filled": "behavioral science / comms depth"
           }
         ],
         "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
@@ -862,9 +867,10 @@
         "partners": [
           {
             "name": "Chemonics International",
-            "why": "Largest MCC/USAID implementer. TVET and workforce development expertise in compact countries. Teaming with Chemonics fills BLN24's LMIC workforce gap and adds MCC incumbent credibility.",
+            "why": "GAP: Workforce / Talent Development \u2014 Largest MCC/USAID implementer. TVET and workforce development expertise in compact countries. Teaming with Chemonics fills BLN24's LMIC workforce gap and adds MCC incumbent credibility.",
             "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/",
-            "relationship": "Recommended sub"
+            "relationship": "Recommended sub",
+            "gap_filled": "Workforce / Talent Development"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -975,9 +981,10 @@
         "partners": [
           {
             "name": "Leidos or Peraton (large business sub)",
-            "why": "Large businesses cannot prime on SB set-asides \u2014 making them ideal subs. Leidos and Peraton have deep IT infrastructure, network, and telecom capabilities. BLN24 primes with SB status, they bring the infrastructure technical depth. This is exactly the model: BLN24 gets the contract, large firm gets the sub work they could not win as prime.",
+            "why": "GAP: IT Infrastructure & Telecommunications \u2014 Large businesses cannot prime on SB set-asides \u2014 making them ideal subs. Leidos and Peraton have deep IT infrastructure, network, and telecom capabilities. BLN24 primes with SB status, they bring the infrastructure technical depth. This is exactly the model: BLN24 gets the contract, large firm gets the sub work they could not win as prime.",
             "url": "https://www.highergov.com/awardee/?search=Leidos",
-            "relationship": "Recommended large business sub"
+            "relationship": "Recommended large business sub",
+            "gap_filled": "IT Infrastructure & Telecommunications"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -1075,14 +1082,7 @@
             "evidence": "ED, IES, Labor \u2014 program evaluation, workforce research"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -1227,9 +1227,10 @@
         "partners": [
           {
             "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
-            "why": "STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
+            "why": "GAP: cloud engineering / tech depth \u2014 STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
             "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
-            "relationship": "Active JV \u2014 Proven Census delivery together"
+            "relationship": "Active JV \u2014 Proven Census delivery together",
+            "gap_filled": "cloud engineering / tech depth"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -1354,9 +1355,10 @@
         "partners": [
           {
             "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
-            "why": "STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
+            "why": "GAP: cloud engineering / tech depth \u2014 STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
             "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
-            "relationship": "Active JV \u2014 Proven Census delivery together"
+            "relationship": "Active JV \u2014 Proven Census delivery together",
+            "gap_filled": "cloud engineering / tech depth"
           }
         ],
         "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly"
@@ -1443,14 +1445,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -1586,10 +1581,11 @@
         ],
         "partners": [
           {
-            "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
-            "why": "STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
-            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
-            "relationship": "Active JV \u2014 Proven Census delivery together"
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "GAP: research and analytics depth \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV",
+            "gap_filled": "research and analytics depth"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -1676,14 +1672,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -1818,9 +1807,10 @@
         "partners": [
           {
             "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
-            "why": "STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
+            "why": "GAP: cloud engineering / tech depth \u2014 STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
             "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
-            "relationship": "Active JV \u2014 Proven Census delivery together"
+            "relationship": "Active JV \u2014 Proven Census delivery together",
+            "gap_filled": "cloud engineering / tech depth"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -1907,14 +1897,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -1999,14 +1982,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -2091,14 +2067,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -2188,14 +2157,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
@@ -2301,9 +2263,10 @@
         "partners": [
           {
             "name": "ManTech International (large business sub)",
-            "why": "ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
+            "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
             "url": "https://www.highergov.com/awardee/?search=ManTech",
-            "relationship": "Recommended large business sub"
+            "relationship": "Recommended large business sub",
+            "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
         ],
         "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
@@ -2389,14 +2352,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
@@ -2512,9 +2468,10 @@
         "partners": [
           {
             "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "why": "GAP: behavioral science / comms depth \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
             "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
+            "relationship": "Active JV",
+            "gap_filled": "behavioral science / comms depth"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -2630,14 +2587,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -2726,14 +2676,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -2826,14 +2769,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -3029,14 +2965,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBP \u2014 competitor list filtered accordingly"
       }
     },
@@ -3125,14 +3054,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -3221,14 +3143,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -3320,14 +3235,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -3416,14 +3324,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -3512,14 +3413,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -3633,15 +3527,17 @@
         "partners": [
           {
             "name": "ManTech International (large business sub)",
-            "why": "ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
+            "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
             "url": "https://www.highergov.com/awardee/?search=ManTech",
-            "relationship": "Recommended large business sub"
+            "relationship": "Recommended large business sub",
+            "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           },
           {
             "name": "Chemonics International",
-            "why": "Largest MCC/USAID implementer. TVET and workforce development expertise in compact countries. Teaming with Chemonics fills BLN24's LMIC workforce gap and adds MCC incumbent credibility.",
+            "why": "GAP: Workforce / Talent Development \u2014 Largest MCC/USAID implementer. TVET and workforce development expertise in compact countries. Teaming with Chemonics fills BLN24's LMIC workforce gap and adds MCC incumbent credibility.",
             "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/",
-            "relationship": "Recommended sub"
+            "relationship": "Recommended sub",
+            "gap_filled": "Workforce / Talent Development"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -3732,14 +3628,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -3930,14 +3819,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
@@ -4026,14 +3908,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -4136,9 +4011,10 @@
         "partners": [
           {
             "name": "ManTech International (large business sub)",
-            "why": "ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
+            "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
             "url": "https://www.highergov.com/awardee/?search=ManTech",
-            "relationship": "Recommended large business sub"
+            "relationship": "Recommended large business sub",
+            "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -4337,14 +4213,7 @@
             "evidence": "ED, IES, Labor \u2014 program evaluation, workforce research"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly"
       }
     },
@@ -4691,9 +4560,10 @@
         "partners": [
           {
             "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
-            "why": "STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
+            "why": "GAP: cloud engineering / tech depth \u2014 STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
             "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
-            "relationship": "Active JV \u2014 Proven Census delivery together"
+            "relationship": "Active JV \u2014 Proven Census delivery together",
+            "gap_filled": "cloud engineering / tech depth"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -4799,9 +4669,10 @@
         "partners": [
           {
             "name": "ManTech International (large business sub)",
-            "why": "ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
+            "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
             "url": "https://www.highergov.com/awardee/?search=ManTech",
-            "relationship": "Recommended large business sub"
+            "relationship": "Recommended large business sub",
+            "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
         ],
         "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly"
@@ -4888,14 +4759,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
@@ -5022,10 +4886,11 @@
         ],
         "partners": [
           {
-            "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
-            "why": "STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
-            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
-            "relationship": "Active JV \u2014 Proven Census delivery together"
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "GAP: research and analytics depth \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV",
+            "gap_filled": "research and analytics depth"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -5206,14 +5071,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -5344,10 +5202,11 @@
         ],
         "partners": [
           {
-            "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
-            "why": "STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
-            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
-            "relationship": "Active JV \u2014 Proven Census delivery together"
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "GAP: research and analytics depth \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV",
+            "gap_filled": "research and analytics depth"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -5433,14 +5292,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -5620,14 +5472,7 @@
             "evidence": "DoD, federal agencies \u2014 digital transformation, comms"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly"
       }
     },
@@ -5765,9 +5610,10 @@
         "partners": [
           {
             "name": "ManTech International (large business sub)",
-            "why": "ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
+            "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
             "url": "https://www.highergov.com/awardee/?search=ManTech",
-            "relationship": "Recommended large business sub"
+            "relationship": "Recommended large business sub",
+            "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
         ],
         "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
@@ -5854,14 +5700,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -5945,14 +5784,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
@@ -6100,15 +5932,10 @@
         "partners": [
           {
             "name": "ManTech International (large business sub)",
-            "why": "ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
+            "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
             "url": "https://www.highergov.com/awardee/?search=ManTech",
-            "relationship": "Recommended large business sub"
-          },
-          {
-            "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
-            "why": "STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
-            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
-            "relationship": "Active JV \u2014 Proven Census delivery together"
+            "relationship": "Recommended large business sub",
+            "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -6248,9 +6075,10 @@
         "partners": [
           {
             "name": "ManTech International (large business sub)",
-            "why": "ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
+            "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 ManTech is a large business that CANNOT prime on SB set-asides \u2014 which is exactly why they make a great sub. They bring cleared cyber, ATO maintenance, and FISMA expertise that BLN24 needs. BLN24 primes with SB status, ManTech provides the security depth. Win-win: ManTech gets on the contract, BLN24 covers the gap.",
             "url": "https://www.highergov.com/awardee/?search=ManTech",
-            "relationship": "Recommended large business sub"
+            "relationship": "Recommended large business sub",
+            "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
         ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
@@ -6336,14 +6164,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -6427,14 +6248,7 @@
             "evidence": "Federal digital services, UX, OASIS+ SB"
           }
         ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV"
-          }
-        ],
+        "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     }
