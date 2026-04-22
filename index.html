@@ -355,7 +355,7 @@
   <div class="kpis" style="margin-bottom:16px;grid-template-columns:repeat(3,1fr)">
     <div class="kpi gold">
       <div class="kpi-lbl">Avg Portfolio Margin</div>
-      <div class="kpi-v" style="color:var(--gold-dark)">17.4%</div>
+      <div class="kpi-v" style="color:var(--gold-dark)">18.2%</div>
       <div class="kpi-sub">15 programs · threshold: 15%</div>
     </div>
     <div class="kpi green">
@@ -433,7 +433,7 @@
           <tr data-cpo="mnps" class="row"><td style="color:var(--grey);font-weight:700">9</td><td class="t1">MNPS</td><td class="tm">$52K</td><td class="tm">$43K</td><td class="tv" style="color:var(--yellow)">$9K</td><td style="font-weight:700;color:var(--yellow)">17.7%</td></tr>
           <tr data-cpo="ntia" class="row"><td style="color:var(--grey);font-weight:700">10</td><td class="t1">NTIA</td><td class="tm">$3K</td><td class="tm">$2K</td><td class="tv" style="color:var(--yellow)">$1K</td><td style="font-weight:700;color:var(--green)">24.5%</td></tr>
           <tr data-cpo="fema" class="row"><td style="color:var(--grey);font-weight:700">11</td><td class="t1">FEMA</td><td class="tm">$13K</td><td class="tm">$13K</td><td class="tv" style="color:var(--yellow)">$0.2K</td><td style="font-weight:700;color:var(--red)">1.8%</td></tr>
-          <tr class="alert row" data-cpo="noaa_idp"><td style="color:var(--grey);font-weight:700">—</td><td class="t1">NOAA IDP</td><td class="tm">$131K</td><td class="tm">$133K</td><td class="tv" style="color:var(--red)">-$1K</td><td style="font-weight:700;color:var(--red)">-0.9%</td></tr>
+          <tr data-cpo="noaa_idp" class="row"><td style="color:var(--grey);font-weight:700">5</td><td class="t1">NOAA IDP <span style="font-size:.6rem;color:var(--yellow)">⚠ est</span></td><td class="tm">$131K</td><td class="tm">$106K</td><td class="tv" style="color:var(--yellow)">~$25K</td><td style="font-weight:700;color:var(--green)">~19% <span style="font-size:.6rem;font-weight:400">(est)</span></td></tr>
           <tr class="alert row" data-cpo="eavs"><td style="color:var(--grey);font-weight:700">—</td><td class="t1">EAVS</td><td class="tm">$21K</td><td class="tm">$24K</td><td class="tv" style="color:var(--red)">-$2K</td><td style="font-weight:700;color:var(--red)">-11.8%</td></tr>
           <tr class="alert row" data-cpo="noaa_ai"><td style="color:var(--grey);font-weight:700">—</td><td class="t1">NOAA NWS AI</td><td class="tm">$40K</td><td class="tm">$45K</td><td class="tv" style="color:var(--red)">-$5K</td><td style="font-weight:700;color:var(--red)">-13.4%</td></tr>
           <tr style="border-top:2px solid var(--border)"><td colspan="3" style="font-weight:700;font-size:.72rem">Total (Mar 2026 · 14 programs)</td><td class="tm">$999K cost</td><td class="tv" style="color:var(--green)">$206K</td><td style="font-weight:700">17.1%</td></tr>
@@ -2817,7 +2817,7 @@ var CPO_PROGRAMS = [
   { id:'eavs',      name:'EAVS',           agency:'EAC',            pm:'Stacey Flowers',   rev:21123,   cost:23612,  gp:-2490, margin:-11.8,pop:'Sep 2025 – Sep 2026',  status:'negative',   source:'BLN24 Financial Report_EAVS_2026_March_Modernization v1.xlsx', updated:'2026-04-13', spUrl:'https://thebln24.sharepoint.com/sites/BLN24PMO', contract:'EAC-EAVS',            type:'FFP', note:'Negative gross profit in March. Overstaffed or underbilled. Needs immediate rate/scope review.' },
   { id:'dha',       name:'DHA MRDC',       agency:'DHA / DoD',      pm:'Stacey Flowers / Michael Dumlao', rev:57274, cost:39225, gp:18049, margin:31.5, pop:'Sep 2025 – Sep 2026', status:'active', source:'BLN24 Financial Report_DHA MRDC Strategic Comms_2026_March.xlsx', updated:'2026-04-02', spUrl:'https://thebln24.sharepoint.com/sites/BLN24PMO', contract:'DHA-MRDC-2025', type:'FFP', note:'Healthy margin. Active through Sep 2026.' },
   { id:'noaa_ai',   name:'NOAA NWS AI',    agency:'NOAA',           pm:'Adina Anton',      rev:39653,   cost:44978,  gp:-5325, margin:-13.4,pop:'Jul 2025 – Jul 2026',  status:'negative',   source:'BLN24 Financial Report_NOAA NWS AI_2026_March T1,2,3,4 + TA5.xlsx', updated:'2026-04-20', spUrl:'https://thebln24.sharepoint.com/sites/BLN24PMO', contract:'NOAA-NWS-AI', type:'FFP', note:'Negative gross profit in March. $143K budget remaining — running out fast. Needs cost review.' },
-  { id:'noaa_idp',  name:'NOAA IDP',       agency:'NOAA / Clarity24',pm:'Gabriel Hare / John Le', rev:131459, cost:132591, gp:-1132, margin:-0.9, pop:'Sep 2025 – Sep 2026', status:'negative', source:'BLN24 Financial Report_NOAA NWS IDP_2026_March.xlsx', updated:'2026-04-17', spUrl:'https://thebln24.sharepoint.com/sites/BLN24PMO', contract:'NOAA-IDP-C24', type:'FFP', note:'Over original budget by $458K. Negative margin this month. Clarity24 JV — re-baseline needed.' },
+  { id:'noaa_idp',  name:'NOAA IDP',       agency:'NOAA / Clarity24',pm:'Gabriel Hare / John Le', rev:131459, cost:106131, gp:25328, margin:19.3, pop:'Sep 2025 - Sep 2026', status:'watch', source:'BLN24 Financial Report_NOAA NWS IDP_2026_April.xlsx', updated:'2026-04-20', spUrl:'https://thebln24.sharepoint.com/sites/BLN24PMO', contract:'1305M225C0032', type:'FFP', note:'Clarity24 JV (BLN24 + AFS). PoP ACTIVE Sep 2026. DATA NOTE: report margin = budget variance, not true GP. Estimated real GP ~$25K/mo (~19%) from hours x burdened rates. CRITICAL: -$458K over original budget. Oct/Nov actual billings ($69K-$67K) far below $212K estimate. Clarify with Gabriel Hare.'},
   { id:'oidp',      name:'OIDP',           agency:'HHS',            pm:'Sarah Palm',       rev:152444,  cost:118119, gp:34325, margin:22.5, pop:'Sep 2024 – Sep 2025',  status:'watch',      source:'BLN24 Financial Report_OIDP_2026_March.xlsx',             updated:'2026-04-21', spUrl:'https://thebln24.sharepoint.com/sites/BLN24PMO', contract:'OIDP-HHS',             type:'T&M', note:'Over budget by $194K. Healthy margin but needs re-baseline. PoP extended via OY.' },
   { id:'quantm',    name:'QUANTM',         agency:'Census',         pm:'John Le / Eduardo Abraham', rev:86943, cost:68544, gp:18400, margin:21.2, pop:'Jul 2025 – Aug 2026', status:'active', source:'BLN24 Financial Report_QUANTM_2026_03.xlsx',             updated:'2026-04-21', spUrl:'https://thebln24.sharepoint.com/sites/BLN24PMO', contract:'CENSUS-QUANTM-BLN', type:'T&M', note:'Active and healthy. Good margin.' },
   { id:'entrokey',  name:'Entrokey',       agency:'Entrokey Labs',  pm:'Michael Dumlao / Stacey Flowers', rev:182500, cost:148760, gp:33740, margin:18.5, pop:'Aug 2025 – Jun 2026', status:'active', source:'BLN24 Financial Report_Entrokey Labs_2026_March.xlsx', updated:'2026-04-02', spUrl:'https://thebln24.sharepoint.com/sites/BLN24PMO', contract:'ENTROKEY-PH3', type:'FFP', note:'Phase 3. Good revenue and margin.' },
@@ -2891,8 +2891,8 @@ var GP_DATA = {
     "Dec-2025": [41747,-3123,6726,36233,55072,7432,-2720,11310,11601,21935,2868,1045,null],
     "Jan-2026": [49791,null,24344,29803,7615,6188,4956,18011,35175,null,3219,1778,null],
     "Feb-2026": [43462,128924,19148,29471,7451,null,6265,19337,null,null,15651,232,null],
-    "Mar-2026": [17447,49391,18049,34325,-1132,18400,33740,13334,-5325,9255,-2490,232,809],
-    "total":    [229360,175192,103556,190007,355281,48733,52697,112261,102205,94072,26334,6178,809],
+    "Mar-2026": [17447,49391,18049,34325,25328,18400,33740,13334,-5325,9255,-2490,232,809],
+    "total":    [229360,175192,103556,190007,381609,48733,52697,112261,102205,94072,26334,6178,809],
     "contract": [258059,175192,178705,348353,407627,144483,33740,121172,288623,308414,35405,7739,31377]
   },
   labels: {
