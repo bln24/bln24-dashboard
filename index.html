@@ -1752,7 +1752,7 @@ function renderGpCards(month) {
     var bgColor = gp < 0 ? 'var(--red-light)' : gp < 5000 ? 'var(--yellow-light)' : 'var(--white)';
     var valColor = gp < 0 ? 'var(--red)' : gp < 5000 ? 'var(--yellow)' : 'var(--green)';
     var borderColor = gp < 0 ? 'var(--red)' : item.color;
-    return '<div onclick="openCpoModal('' + item.cpo_id + '')" style="background:' + bgColor + ';border:1px solid var(--border);border-top:3px solid ' + borderColor + ';border-radius:10px;padding:14px 16px;cursor:pointer;transition:box-shadow .15s" onmouseenter="this.style.boxShadow='0 4px 16px rgba(0,0,0,.1)'" onmouseleave="this.style.boxShadow=''">'
+    return '<div onclick="openCpoModal(\'' + item.cpo_id + '\')" style="background:' + bgColor + ';border:1px solid var(--border);border-top:3px solid ' + borderColor + ';border-radius:10px;padding:14px 16px;cursor:pointer;transition:box-shadow .15s">'
       + '<div style="font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:4px">' + item.name + '</div>'
       + '<div style="font-size:1.5rem;font-weight:800;color:' + valColor + ';line-height:1">' + gpStr + '</div>'
       + '<div style="font-size:.65rem;color:var(--grey);margin-top:4px">' + item.agency + '</div>'
