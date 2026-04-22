@@ -752,28 +752,28 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Softrams LLC",
-            "why": "SB Agile web dev and digital services firm, CMS and VA work. Competes directly on SB web development and digital platform contracts.",
-            "url": "https://www.usaspending.gov/recipient/P4X8JNU7TMQ7/latest/",
-            "evidence": "CMS, VA \u2014 Agile dev, digital services, SB set-asides"
+            "name": "Arctic Slope Mission Services LLC",
+            "why": "$77M+ across 4 DEA IT/mission support contracts \u2014 the dominant DEA IT contractor. While their work is mission/IT support rather than web dev specifically, they have the deepest DEA relationship and could expand into web services. Watch them.",
+            "url": "https://www.usaspending.gov/recipient/WTJEFSM3P945/latest/",
+            "evidence": "DEA $77M+ across 4 contracts (USASpending confirmed)"
           },
           {
-            "name": "Agile Six Applications",
-            "why": "SB federal digital services, CMS/VA web development, OASIS+ SB holder. Competes on federal web platform and digital services set-asides.",
-            "url": "https://www.highergov.com/awardee/?search=Agile+Six",
-            "evidence": "CMS, VA \u2014 web dev, digital services, OASIS+ SB"
+            "name": "ASRC Federal Agile Management LLC",
+            "why": "$27.8M DEA IT Support Services. Active DEA IT relationship. If DEA web dev is bundled with IT support, ASRC Federal is a competitor to watch.",
+            "url": "https://www.usaspending.gov/recipient/X92VVYGXK9X5/latest/",
+            "evidence": "DEA $27.8M IT Support Services (USASpending confirmed)"
           },
           {
-            "name": "ICF International (mid-market subsidiary)",
-            "why": "ICF has SB subsidiaries that compete on health comms set-asides. Primary health comms competitor regardless of set-aside type.",
-            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/",
-            "evidence": "HHS, CMS, CDC \u2014 health communications, behavior change"
+            "name": "Chenega Professional & Technical Services",
+            "why": "$32M+ across 2 DEA IT contracts (Concorde Core). Active DEA presence. Medium business with DEA IT track record.",
+            "url": "https://www.usaspending.gov/recipient/ECMESLV5KNB1/latest/",
+            "evidence": "DEA $32M+ Concorde Core IT support (USASpending confirmed)"
           },
           {
-            "name": "Valassis Communications / Vericast",
-            "why": "SB comms/outreach firm with federal health comms contracts. Multilingual outreach and public awareness campaigns.",
-            "url": "https://www.highergov.com/awardee/?search=Vericast",
-            "evidence": "Federal health comms, multilingual outreach"
+            "name": "Open field for web/content specifically",
+            "why": "USASpending shows no confirmed incumbent for DEA web design or content services specifically. The DEA web developer MRAS is likely a new or recompeting requirement with no dominant incumbent \u2014 more winnable for BLN24.",
+            "url": "https://www.usaspending.gov/search/?hash=ab571b1a5f5d1f2d9a16b5edd98abc30",
+            "evidence": "USASpending analysis: no dominant web/comms incumbent at DEA"
           }
         ],
         "partners": [
@@ -785,7 +785,7 @@
             "gap_filled": "behavioral science / comms depth"
           }
         ],
-        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly",
+        "set_aside_note": "Set-aside: SBA \u2014 large primes (Arctic Slope, ASRC Federal, Chenega) cannot prime. This is a more open field for SB web/content contractors.",
         "score_delta": 15,
         "score_reasons": [
           "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
