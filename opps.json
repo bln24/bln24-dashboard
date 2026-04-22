@@ -520,134 +520,155 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "fit": "Strong",
-        "fit_reason": "BLN24 has direct web development, content services, and digital communications past performance. DEA scope maps cleanly to MBDA website, Census DWS, and communications portfolio.",
-        "avg_score": 3.3,
-        "prime_count": 5,
-        "jv_count": 1,
-        "gap_count": 0,
-        "total_tasks": 6,
-        "qualifying": [
-          {
-            "q": "Capability match",
-            "answer": "STRONG \u2014 web dev, content, digital comms all confirmed prime lanes",
-            "score": 5
-          },
-          {
-            "q": "Agency PP",
-            "answer": "NO \u2014 DOJ/DEA is a new agency for BLN24",
-            "score": 2
-          },
-          {
-            "q": "Notice type",
-            "answer": "MRAS \u2014 respond to Qualtrics form to get on radar",
-            "score": 4
-          }
-        ],
         "tasks": [
           {
-            "task": "Web Design & Development",
+            "task": "Content Development & Plain Language",
             "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
             "status": "prime",
-            "status_label": "\u2705 Can Prime",
             "pp_refs": [
-              "MBDA Website Redesign (.8M)",
-              "Census DWS III (.3M)",
-              "Oversight.gov (K)"
+              "CMS Marketplace Notice Production Services ($16M)",
+              "HUD FHEO Communications & Outreach ($2M)",
+              "CDC Communications (DDT $138K, NAC $250K)"
             ],
-            "note": "BLN24 prime \u2014 MBDA website redesign and sustain through 2028, Census.gov (one of largest federal AEM deployments), Oversight.gov federal website refresh",
+            "note": "BLN24 prime \u2014 CMS MNPS $16M is core content/notice production work",
             "triggered_by": [
-              "web developer",
-              "web development",
-              "websites"
-            ]
-          },
-          {
-            "task": "Content Development & Strategy",
-            "score": 4,
-            "status": "prime",
-            "status_label": "\u2705 Can Prime",
-            "pp_refs": [
-              "CMS MNPS (M) \u2014 notice/content production at scale",
-              "NTIA Outreach (.5M)"
-            ],
-            "note": "BLN24 prime \u2014 CMS MNPS M is core content production at federal agency scale; NTIA brand and content modernization",
-            "triggered_by": [
-              "content services",
               "content development",
               "content strategy"
             ]
           },
           {
-            "task": "Digital Marketing & Paid Media",
-            "score": 3,
+            "task": "Video Production & Multimedia",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
             "status": "prime",
-            "status_label": "\u2705 Can Prime",
             "pp_refs": [
-              "HHS OIDP Comprehensive Comms (.3M, Fors Marsh JV)",
-              "FTC Paid Advertising (K, Fors Marsh JV)"
+              "CDC NCHS Visual Communications ($3.6M)",
+              "DOI/NPS Video Production ($90K)",
+              "USDA NRCS/USFS Video/Photography ($138K)",
+              "Census Assignment Photography ($136K)"
             ],
-            "note": "Via Fors Marsh JV \u2014 HHS OIDP paid media and digital campaigns at scale; FTC targeted paid advertising",
+            "note": "BLN24 prime \u2014 CDC NCHS visual comms $3.6M, DOI/USDA video work",
             "triggered_by": [
-              "social media",
-              "digital",
+              "multimedia"
+            ]
+          },
+          {
+            "task": "Web Design & Development",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "MBDA Website Redesign ($4.4M)",
+              "Census Digital Web Services III ($8.3M)",
+              "USPS OIG Oversight.gov Refresh ($387K)",
+              "CBP Digital Transformation (Clarity24, $1.4M)"
+            ],
+            "note": "BLN24 prime \u2014 MBDA $4.4M, Census DWS, Oversight.gov, CBP.gov redesign (Clarity24)",
+            "triggered_by": [
+              "web development"
+            ]
+          },
+          {
+            "task": "Accessibility / Section 508 Compliance",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "IRS Human Centered Design & Research BPA ($7M)",
+              "Census Digital Web Services III ($8.3M)"
+            ],
+            "note": "BLN24 prime \u2014 IRS HCD BPA scope included 508 compliance testing",
+            "triggered_by": [
+              "accessibility",
+              "section 508",
+              "wcag"
+            ]
+          },
+          {
+            "task": "Public Outreach & Stakeholder Engagement",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "HUD FHEO Communications & Outreach ($2M)",
+              "HHS OIDP Comprehensive Communications ($10.3M, Fors Marsh JV)",
+              "CDC Communications (DDT $138K, NAC $250K)",
+              "CMS Marketplace Notice Production Services ($16M)"
+            ],
+            "note": "BLN24 prime \u2014 HUD FHEO, HRSA, USCIS outreach work",
+            "triggered_by": [
               "outreach"
             ]
           },
           {
-            "task": "Multilingual / Spanish Language Content",
-            "score": 4,
+            "task": "Digital Marketing & Paid Media",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
             "status": "prime",
-            "status_label": "\u2705 Can Prime",
             "pp_refs": [
-              "CMS Spanish Language Medicare Campaign",
-              "FTC Language Resources Expansion (Fors Marsh JV)"
+              "HHS OIDP Comprehensive Communications ($10.3M, Fors Marsh JV)",
+              "FTC Paid Advertising (Fors Marsh JV, $581K)",
+              "USDA Social Media & Digital Outreach ($141K)",
+              "CDC Communications (DDT $138K, NAC $250K)"
             ],
-            "note": "BLN24 prime \u2014 CMS Spanish Language Campaign for Medicare Open Enrollment; FTC multilingual outreach expansion",
+            "note": "BLN24 prime/JV \u2014 USDA social media, FTC paid media (Fors Marsh), HHS OIDP",
             "triggered_by": [
-              "community outreach",
-              "communications"
+              "social media",
+              "advertising"
             ]
           },
           {
-            "task": "Branding & Visual Design",
-            "score": 4,
+            "task": "Graphic Design & Infographics",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
             "status": "prime",
-            "status_label": "\u2705 Can Prime",
             "pp_refs": [
-              "MBDA Website Redesign (.8M) \u2014 full brand refresh",
-              "NTIA Brand Modernization (.5M)"
+              "CDC NCHS Visual Communications ($3.6M)",
+              "MBDA Website Redesign ($4.4M)",
+              "USDA Social Media & Digital Outreach ($141K)"
             ],
-            "note": "BLN24 prime \u2014 MBDA brand and identity from ground up; NTIA logo redesign and Brand Style Guide",
+            "note": "BLN24 prime \u2014 CDC NCHS visual comms, MBDA branding, USDA social media graphics",
             "triggered_by": [
-              "graphics",
-              "visual design",
-              "brand"
+              "visual design"
             ]
+          }
+        ],
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Content Development & Plain Language, Video Production & Multimedia. Some areas need partner",
+        "avg_score": 3.4,
+        "prime_count": 7,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 7,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "8(a) \u2014 Direct vehicle match",
+            "score": 5
           },
           {
-            "task": "Section 508 / Accessibility",
-            "score": 4,
-            "status": "prime",
-            "status_label": "\u2705 Can Prime",
-            "pp_refs": [
-              "IRS HCD BPA (M) \u2014 508 compliance embedded",
-              "Census DWS III (accessibility across federal web platform)"
-            ],
-            "note": "BLN24 prime \u2014 508 compliance confirmed deliverable across IRS, Census, and MBDA web work",
-            "triggered_by": [
-              "accessibility",
-              "508",
-              "community"
-            ]
+            "q": "Do we have the capabilities needed?",
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
+          },
+          {
+            "q": "Notice Type",
+            "answer": "RFI \u2014 intel gathering, position early",
+            "score": 4
+          },
+          {
+            "q": "Contract Value",
+            "answer": "Value not listed \u2014 check solicitation",
+            "score": 3
           }
         ]
       },
       "rex_analysis": {
-        "what_they_need": "DEA manages public-facing websites and social media to communicate its drug enforcement mission. They need a contractor for web development and content services \u2014 likely covering DEA.gov maintenance, digital content strategy, social media management, graphics/visual design, paid digital media, multimedia production, and Section 508 accessibility compliance.",
-        "rex_take": "This is actually a stronger match than it first appeared. BLN24 has direct past performance in every element of this scope: MBDA website .8M and Census DWS III .3M for web development; CMS MNPS M for content production at scale; HHS OIDP .3M and FTC for paid media (via Fors Marsh JV); CMS Spanish Language Campaign and FTC language resources for multilingual content; MBDA and NTIA for branding. DOJ/DEA is a new agency but the web/content scope is dead center. MRAS response is 30 minutes \u2014 fill out the Qualtrics form now and watch for the RFP.",
-        "watch_notes": "Respond via Qualtrics: https://feedback.gsa.gov/jfe/form/SV_4JzNl5sdspSArHw\nHighlight: MBDA website .8M (web dev prime), Census DWS III .3M (largest federal AEM deployment), CMS MNPS M (content at scale), HHS OIDP paid media (Fors Marsh JV).\nWatch SAM.gov for the follow-on RFP from DOJ/DEA.",
-        "recommendation": "Respond to RFI \u2014 Strong"
+        "what_they_need": "DOJ Drug Enforcement Administration (DEA) market research for Web Developer and Content Services. DEA manages several external websites and social media platforms to communicate its mission of drug enforcement, public safety, and community outreach. Scope likely covers: web development and maintenance for DEA.gov and related properties, content development and management, digital content strategy,",
+        "rex_take": "BLN24 can cover: Content Development & Plain Language, Video Production & Multimedia. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFI.",
+        "recommendation": "Moderate"
       },
       "competitive_intel": {
         "competitors": [
@@ -660,6 +681,16 @@
             "name": "Unison",
             "why": "Federal Drupal/AEM specialist, Census and HHS web platform experience",
             "url": "https://www.highergov.com/awardee/?search=Unison"
+          },
+          {
+            "name": "ICF International",
+            "why": "Major health/public affairs comms, CDC/HHS anchor \u2014 primary competitor on comms RFPs",
+            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/"
+          },
+          {
+            "name": "Ketchum",
+            "why": "Federal health comms, FDA/CDC campaigns, established agency relationships",
+            "url": "https://www.highergov.com/awardee/?search=Ketchum"
           }
         ],
         "partners": [
@@ -1348,10 +1379,10 @@
             "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
             "status": "prime",
             "pp_refs": [
+              "Census CES ADRM IT & Research Support ($7M)",
               "Census SRQA AI/ML/Data Quality ($4.1M)",
               "Dept of Education EDARMST Data Analytics ($2.9M)",
-              "IRS OLS (sub reference)",
-              "Census Digital Web Services III ($8.3M)"
+              "IRS OLS (sub reference)"
             ],
             "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
             "triggered_by": [
@@ -1555,15 +1586,16 @@
           },
           {
             "task": "Software Development / SDLC",
-            "score": 3,
-            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
             "status": "prime",
             "pp_refs": [
+              "Census CES ADRM IT & Research Support ($7M)",
               "Census SRQA AI/ML/Data Quality ($4.1M)",
               "Census EDL Applications ($4.5M)",
               "Census Digital Web Services III ($8.3M)"
             ],
-            "note": "BLN24 prime \u2014 confirmed software development: Census SRQA full SDLC, Census EDL AWS platform dev, Census DWS AEM development, IRS Forms Modernization CI/CD pipelines (sub to Accenture)",
+            "note": "BLN24 prime \u2014 Census CES $7M (OnTheMap, QWI Explorer, Job-to-Job Flows \u2014 real federal web applications with coders), Census SRQA full SDLC, Census EDL AWS platform, Census DWS AEM (largest federal AEM deployment), IRS Forms CI/CD",
             "triggered_by": [
               "application development"
             ]
@@ -1571,7 +1603,7 @@
         ],
         "fit": "Strong",
         "fit_reason": "BLN24 can prime all or most identified task areas with recent past performance",
-        "avg_score": 3.5,
+        "avg_score": 4.0,
         "prime_count": 2,
         "jv_count": 0,
         "gap_count": 0,
@@ -4280,10 +4312,10 @@
             "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
             "status": "prime",
             "pp_refs": [
+              "Census CES ADRM IT & Research Support ($7M)",
               "Census SRQA AI/ML/Data Quality ($4.1M)",
               "Dept of Education EDARMST Data Analytics ($2.9M)",
-              "IRS OLS (sub reference)",
-              "Census Digital Web Services III ($8.3M)"
+              "IRS OLS (sub reference)"
             ],
             "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
             "triggered_by": [
@@ -4559,10 +4591,10 @@
             "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
             "status": "prime",
             "pp_refs": [
+              "Census CES ADRM IT & Research Support ($7M)",
               "Census SRQA AI/ML/Data Quality ($4.1M)",
               "Dept of Education EDARMST Data Analytics ($2.9M)",
-              "IRS OLS (sub reference)",
-              "Census Digital Web Services III ($8.3M)"
+              "IRS OLS (sub reference)"
             ],
             "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
             "triggered_by": [
@@ -4928,10 +4960,10 @@
             "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
             "status": "prime",
             "pp_refs": [
+              "Census CES ADRM IT & Research Support ($7M)",
               "Census SRQA AI/ML/Data Quality ($4.1M)",
               "Dept of Education EDARMST Data Analytics ($2.9M)",
-              "IRS OLS (sub reference)",
-              "Census Digital Web Services III ($8.3M)"
+              "IRS OLS (sub reference)"
             ],
             "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
             "triggered_by": [
@@ -5225,15 +5257,16 @@
           },
           {
             "task": "Software Development / SDLC",
-            "score": 3,
-            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
             "status": "prime",
             "pp_refs": [
+              "Census CES ADRM IT & Research Support ($7M)",
               "Census SRQA AI/ML/Data Quality ($4.1M)",
               "Census EDL Applications ($4.5M)",
               "Census Digital Web Services III ($8.3M)"
             ],
-            "note": "BLN24 prime \u2014 confirmed software development: Census SRQA full SDLC, Census EDL AWS platform dev, Census DWS AEM development, IRS Forms Modernization CI/CD pipelines (sub to Accenture)",
+            "note": "BLN24 prime \u2014 Census CES $7M (OnTheMap, QWI Explorer, Job-to-Job Flows \u2014 real federal web applications with coders), Census SRQA full SDLC, Census EDL AWS platform, Census DWS AEM (largest federal AEM deployment), IRS Forms CI/CD",
             "triggered_by": [
               "software development"
             ]
@@ -5250,9 +5283,9 @@
             ]
           }
         ],
-        "fit": "Weak / JV",
-        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
-        "avg_score": 2.3,
+        "fit": "Moderate",
+        "fit_reason": "Can prime: Data Engineering & ETL, Software Development / SDLC. Needs teaming for: Cybersecurity / FISMA / Zero Trust",
+        "avg_score": 2.7,
         "prime_count": 2,
         "jv_count": 0,
         "gap_count": 1,
@@ -5265,8 +5298,8 @@
           },
           {
             "q": "Do we have the capabilities needed?",
-            "answer": "Partial \u2014 significant gaps",
-            "score": 2
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
           },
           {
             "q": "Notice Type",
@@ -5284,7 +5317,7 @@
         "what_they_need": "TRDM provides a single distribution source of enterprise reference data for enhancing C2, transportation, logistics, deployment, and financial systems&rsquo; reference data management and functional data collection. The scope of TRDM requires the contractor to perform current technical &amp; Cybersecurity operations, maintenance, and distribution of the TRDM system and data while modernizing the a",
         "rex_take": "BLN24 can cover: Data Engineering & ETL, Software Development / SDLC. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
-        "recommendation": "Weak / JV"
+        "recommendation": "Moderate"
       },
       "competitive_intel": {
         "competitors": [
@@ -5378,10 +5411,10 @@
             "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
             "status": "prime",
             "pp_refs": [
+              "Census CES ADRM IT & Research Support ($7M)",
               "Census SRQA AI/ML/Data Quality ($4.1M)",
               "Dept of Education EDARMST Data Analytics ($2.9M)",
-              "IRS OLS (sub reference)",
-              "Census Digital Web Services III ($8.3M)"
+              "IRS OLS (sub reference)"
             ],
             "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
             "triggered_by": [

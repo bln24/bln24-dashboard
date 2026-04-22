@@ -63,6 +63,8 @@ PP = {
                    'detail': 'Targeted paid media, digital advertising for federal consumer protection'},
     'IRS_SBSE':   {'ref': 'IRS SB/SE BOD Leadership Initiative (Clarity24, $2.7M)', 'score': 4,
                    'detail': 'Leadership development, org transformation, culture assessment for 60+ IRS SB/SE executives, change management, workforce capacity building'},
+    'CENSUS_CES':  {'ref': 'Census CES ADRM IT & Research Support ($7M)', 'score': 4,
+                   'detail': 'Software engineering, application development (OnTheMap, QWI Explorer, Job-to-Job Flows), database admin, cloud + enterprise environments, Agile delivery, data science, statistical research, economists/statisticians/coders, federal security and 508'},
     'USDA_SOC':   {'ref': 'USDA Social Media & Digital Outreach ($141K)', 'score': 3,
                    'detail': 'Social media campaign management, digital content for USDA'},
     'USDA_FNS':   {'ref': 'USDA FNS WIC Digital Services (Clarity24, $2.2M)', 'score': 3,
@@ -210,7 +212,7 @@ TASK_AREAS = [
     {
         'task': 'Data Analytics & Business Intelligence',
         'kw': ['data analytics','data analysis','business intelligence','bi dashboard','analytics platform','reporting','data reporting','kpi dashboard','performance dashboard','databricks'],
-        'pp_refs': ['CENSUS_SRQA', 'ED_DATA', 'IRS_OLS', 'CENSUS_DWS'],
+        'pp_refs': ['CENSUS_CES', 'CENSUS_SRQA', 'ED_DATA', 'IRS_OLS'],
         'base_score': 4,
         'note': 'BLN24 prime — Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M'
     },
@@ -320,10 +322,11 @@ TASK_AREAS = [
         'task': 'Software Development / SDLC',
         'kw': ['software development','application development','full software development lifecycle','sdlc','custom development',
                'software engineering','code development','web application development','api development',
-               'adaptive forms','microservices','application modernization services'],
-        'pp_refs': ['CENSUS_SRQA', 'CENSUS_EDL', 'CENSUS_DWS'],
-        'base_score': 3,
-        'note': 'BLN24 prime — confirmed software development: Census SRQA full SDLC, Census EDL AWS platform dev, Census DWS AEM development, IRS Forms Modernization CI/CD pipelines (sub to Accenture)'
+               'adaptive forms','microservices','application modernization services','code enhancement',
+               'develop applications','develops tests and deploys'],
+        'pp_refs': ['CENSUS_CES', 'CENSUS_SRQA', 'CENSUS_EDL', 'CENSUS_DWS'],
+        'base_score': 4,
+        'note': 'BLN24 prime — Census CES $7M (OnTheMap, QWI Explorer, Job-to-Job Flows — real federal web applications with coders), Census SRQA full SDLC, Census EDL AWS platform, Census DWS AEM (largest federal AEM deployment), IRS Forms CI/CD'
     },
     {
         'task': 'Cloud Engineering / Infrastructure as Code',
