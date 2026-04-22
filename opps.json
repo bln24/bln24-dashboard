@@ -401,7 +401,7 @@
       "due": "2026-04-28",
       "val_low": null,
       "val_high": null,
-      "description": "On behalf of Department of Justice (DOJ), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browser.\n\nOnly responses submitted through the linked RFI will be accepted. Nothing else will be evaluated or recorded (this includes selecting 'interested' within eBuy).\n\n\nLink to RFI: https://feedback.gsa.gov/jfe/form/SV_4JzNl5sdspSArHw\n\n\nAdditional Information:\nDue to the structure of contracts in GSA eBuy, you may receive multiple Sources Sought or RFI notifications for the same requirement if it falls under multiple of your company's awarded SINs. However, please note that you are only required to respond to the RFI once.\n\nBe sure to use the URL provided above to submit your response.\n\n\nAny questions regarding this RFI will be responded to by email only.  Send your inquiry to: rfi@research.gsa.gov and be sure to include the RFQ number.\n\n",
+      "description": "DOJ Drug Enforcement Administration (DEA) market research for Web Developer and Content Services. DEA manages several external websites and social media platforms to communicate its mission of drug enforcement, public safety, and community outreach. Scope likely covers: web development and maintenance for DEA.gov and related properties, content development and management, digital content strategy, social media management, multimedia production, graphics and visual design, paid digital media and advertising, Section 508/WCAG accessibility compliance, and related communications and outreach services. This is a Small Business MRAS \u2014 watch for the follow-on RFP which will define exact requirements and NAICS codes.",
       "summary": "Background\n The Drug Enforcement Administration (DEA), under the U.S. Department of Justice, is seeking to enhance its digital communication efforts through the management of several external websites and social media platforms. \n\nThe goal is to effectively communicate the DEA's mission of protecting the public from illegal drugs and drug abuse. The DEA's Digital Communications Section (CPD) is responsible for managing these communications, which include the official website www.DEA.gov and other educational platforms aimed at drug awareness and prevention.\n\nWork Details\n The contract involves",
       "path": "https://www.highergov.com/contract-opportunity/doj-dea-web-developer-content-services-mras-rfi1807179-r-39939",
       "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFI1807179?contractNumber=",
@@ -410,13 +410,16 @@
       "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": 32,
+      "capture_score": 42,
       "win_reasons": [
-        "Partial comms scope match \u2014 verify fit vs CMS/CDC/HUD delivery experience",
-        "8(a) set-aside \u2014 direct vehicle match for BLN24",
-        "\u26a0\ufe0f Gap area detected: Cybersecurity \u2014 would need a teaming partner for this scope"
+        "Web development lane: MBDA website .8M, Census DWS III .3M, Oversight.gov \u2014 direct match",
+        "Content services: CMS MNPS M \u2014 federal content production at scale",
+        "Paid media / digital: HHS OIDP .3M (Fors Marsh JV), FTC paid advertising",
+        "Spanish/multilingual: CMS Spanish Language Medicare Campaign, FTC language resources",
+        "Branding: MBDA full brand refresh, NTIA brand modernization .5M",
+        "MRAS response is low-effort \u2014 respond to get on DEA radar before RFP drops"
       ],
-      "win_prob": "Low (10-20%)",
+      "win_prob": "Medium (20-40%)",
       "tier": null,
       "matched_lanes": [
         "Strategic Comms (partial)"
@@ -432,59 +435,134 @@
         "Cybersecurity"
       ],
       "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Digital Marketing & Paid Media",
-            "score": 3,
-            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "HHS OIDP Comprehensive Communications ($10.3M, Fors Marsh JV)",
-              "FTC Paid Advertising (Fors Marsh JV, $581K)",
-              "USDA Social Media & Digital Outreach ($141K)",
-              "CDC Communications (DDT $138K, NAC $250K)"
-            ],
-            "note": "BLN24 prime/JV \u2014 USDA social media, FTC paid media (Fors Marsh), HHS OIDP",
-            "triggered_by": [
-              "social media"
-            ]
-          }
-        ],
-        "fit": "Moderate",
-        "fit_reason": "Can prime most: Digital Marketing & Paid Media. Some areas need partner",
-        "avg_score": 3.0,
-        "prime_count": 1,
-        "jv_count": 0,
+        "fit": "Strong",
+        "fit_reason": "BLN24 has direct web development, content services, and digital communications past performance. DEA scope maps cleanly to MBDA website, Census DWS, and communications portfolio.",
+        "avg_score": 3.3,
+        "prime_count": 5,
+        "jv_count": 1,
         "gap_count": 0,
-        "total_tasks": 1,
+        "total_tasks": 6,
         "qualifying": [
           {
-            "q": "Set-Aside",
-            "answer": "8(a) \u2014 Direct vehicle match",
+            "q": "Capability match",
+            "answer": "STRONG \u2014 web dev, content, digital comms all confirmed prime lanes",
             "score": 5
           },
           {
-            "q": "Do we have the capabilities needed?",
-            "answer": "Mostly \u2014 some gap areas",
-            "score": 3
+            "q": "Agency PP",
+            "answer": "NO \u2014 DOJ/DEA is a new agency for BLN24",
+            "score": 2
           },
           {
-            "q": "Notice Type",
-            "answer": "RFI \u2014 intel gathering, position early",
+            "q": "Notice type",
+            "answer": "MRAS \u2014 respond to Qualtrics form to get on radar",
             "score": 4
+          }
+        ],
+        "tasks": [
+          {
+            "task": "Web Design & Development",
+            "score": 4,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "MBDA Website Redesign (.8M)",
+              "Census DWS III (.3M)",
+              "Oversight.gov (K)"
+            ],
+            "note": "BLN24 prime \u2014 MBDA website redesign and sustain through 2028, Census.gov (one of largest federal AEM deployments), Oversight.gov federal website refresh",
+            "triggered_by": [
+              "web developer",
+              "web development",
+              "websites"
+            ]
           },
           {
-            "q": "Contract Value",
-            "answer": "Value not listed \u2014 check solicitation",
-            "score": 3
+            "task": "Content Development & Strategy",
+            "score": 4,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "CMS MNPS (M) \u2014 notice/content production at scale",
+              "NTIA Outreach (.5M)"
+            ],
+            "note": "BLN24 prime \u2014 CMS MNPS M is core content production at federal agency scale; NTIA brand and content modernization",
+            "triggered_by": [
+              "content services",
+              "content development",
+              "content strategy"
+            ]
+          },
+          {
+            "task": "Digital Marketing & Paid Media",
+            "score": 3,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "HHS OIDP Comprehensive Comms (.3M, Fors Marsh JV)",
+              "FTC Paid Advertising (K, Fors Marsh JV)"
+            ],
+            "note": "Via Fors Marsh JV \u2014 HHS OIDP paid media and digital campaigns at scale; FTC targeted paid advertising",
+            "triggered_by": [
+              "social media",
+              "digital",
+              "outreach"
+            ]
+          },
+          {
+            "task": "Multilingual / Spanish Language Content",
+            "score": 4,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "CMS Spanish Language Medicare Campaign",
+              "FTC Language Resources Expansion (Fors Marsh JV)"
+            ],
+            "note": "BLN24 prime \u2014 CMS Spanish Language Campaign for Medicare Open Enrollment; FTC multilingual outreach expansion",
+            "triggered_by": [
+              "community outreach",
+              "communications"
+            ]
+          },
+          {
+            "task": "Branding & Visual Design",
+            "score": 4,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "MBDA Website Redesign (.8M) \u2014 full brand refresh",
+              "NTIA Brand Modernization (.5M)"
+            ],
+            "note": "BLN24 prime \u2014 MBDA brand and identity from ground up; NTIA logo redesign and Brand Style Guide",
+            "triggered_by": [
+              "graphics",
+              "visual design",
+              "brand"
+            ]
+          },
+          {
+            "task": "Section 508 / Accessibility",
+            "score": 4,
+            "status": "prime",
+            "status_label": "\u2705 Can Prime",
+            "pp_refs": [
+              "IRS HCD BPA (M) \u2014 508 compliance embedded",
+              "Census DWS III (accessibility across federal web platform)"
+            ],
+            "note": "BLN24 prime \u2014 508 compliance confirmed deliverable across IRS, Census, and MBDA web work",
+            "triggered_by": [
+              "accessibility",
+              "508",
+              "community"
+            ]
           }
         ]
       },
       "rex_analysis": {
-        "what_they_need": "On behalf of Department of Justice (DOJ), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a",
-        "rex_take": "BLN24 can cover: Digital Marketing & Paid Media. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFI.",
-        "recommendation": "Moderate"
+        "what_they_need": "DEA manages public-facing websites and social media to communicate its drug enforcement mission. They need a contractor for web development and content services \u2014 likely covering DEA.gov maintenance, digital content strategy, social media management, graphics/visual design, paid digital media, multimedia production, and Section 508 accessibility compliance.",
+        "rex_take": "This is actually a stronger match than it first appeared. BLN24 has direct past performance in every element of this scope: MBDA website .8M and Census DWS III .3M for web development; CMS MNPS M for content production at scale; HHS OIDP .3M and FTC for paid media (via Fors Marsh JV); CMS Spanish Language Campaign and FTC language resources for multilingual content; MBDA and NTIA for branding. DOJ/DEA is a new agency but the web/content scope is dead center. MRAS response is 30 minutes \u2014 fill out the Qualtrics form now and watch for the RFP.",
+        "watch_notes": "Respond via Qualtrics: https://feedback.gsa.gov/jfe/form/SV_4JzNl5sdspSArHw\nHighlight: MBDA website .8M (web dev prime), Census DWS III .3M (largest federal AEM deployment), CMS MNPS M (content at scale), HHS OIDP paid media (Fors Marsh JV).\nWatch SAM.gov for the follow-on RFP from DOJ/DEA.",
+        "recommendation": "Respond to RFI \u2014 Strong"
       }
     },
     {
