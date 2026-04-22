@@ -1,0 +1,194 @@
+{
+  "_notes": "Agency-specific winner database. Built from HigherGov data + Brian training. Update when new intel comes in.",
+  "_last_updated": "2026-04-22",
+  "_methodology": "For each agency: who won SB-eligible contracts in the last 3 years in relevant NAICS codes? Filter by set-aside type when applicable.",
+  "census_bureau": {
+    "_notes": "Key NAICS at Census: 541511, 541512, 541519, 512110. Major vehicles: STARS III, OASIS+, agency BPAs",
+    "app_modernization_sb": [
+      {
+        "name": "Vidoori Inc",
+        "why": "$173M Enterprise Testing BPA + $7.3M CMMU AI/ML modernization + $4.7M internet data collection system. Multiple Census BPAs. One of the strongest Census relationships in the SB space.",
+        "url": "https://www.highergov.com/awardee/?search=Vidoori",
+        "sa": "Small Business",
+        "evidence": "$173M Census BPA, $7.3M CMMU modernization, $4.7M internet data collection"
+      },
+      {
+        "name": "T-Rex Solutions (often teams with Vidoori)",
+        "why": "Former 2020 Census technical integrator ($1.6B ESF SE&I BPA). Deep Census IT systems engineering knowledge. Frequently sub or JV on Census modernization work. Incumbent risk.",
+        "url": "https://www.highergov.com/awardee/?search=T-Rex+Solutions",
+        "sa": "Small Business",
+        "evidence": "2020 Census integrator $1.6B, deep Census systems knowledge"
+      },
+      {
+        "name": "Spatial Front Inc",
+        "why": "SB with $17M+ in confirmed Census tech awards. Cloud and data engineering. Active on Census SB set-asides.",
+        "url": "https://www.highergov.com/awardee/spatial-front-inc-10000821/",
+        "sa": "Small Business",
+        "evidence": "Census Bureau $17M+ confirmed"
+      },
+      {
+        "name": "Amivero LLC",
+        "why": "SB with $5M Census SB set-aside awards. Cloud and data modernization focus.",
+        "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
+        "sa": "Small Business",
+        "evidence": "Census Bureau $5M SB set-aside"
+      },
+      {
+        "name": "Great Hill Solutions",
+        "why": "8(a) with multiple Census sole-source awards ($7M). Growing Census relationship.",
+        "url": "https://www.highergov.com/awardee/great-hill-solutions-llc-12512157/",
+        "sa": "8(a)",
+        "evidence": "Census Bureau $7M, 3 sole-source awards"
+      }
+    ]
+  },
+  "cms": {
+    "_notes": "Key NAICS at CMS: 541511, 541512, 541513, 541613. BLN24 relationship: MNPS $16M",
+    "tech_sb": [
+      {
+        "name": "Vibrantech Solutions",
+        "why": "$13.3M CMS Enterprise Case Management solution (SB set-aside). Real CMS tech development track record.",
+        "url": "https://www.highergov.com/awardee/vibrantech-solutions-inc-10088566/",
+        "sa": "Small Business",
+        "evidence": "CMS $13.3M Enterprise Case Management, SB set-aside"
+      },
+      {
+        "name": "Sienna Systems",
+        "why": "$2.5M CMS infrastructure support (8(a) sole source). Active CMS 8(a) relationship.",
+        "url": "https://www.highergov.com/awardee/sienna-systems-corp-10008096/",
+        "sa": "8(a)",
+        "evidence": "CMS $2.5M infrastructure support, 8(a) sole source"
+      }
+    ],
+    "comms_sb": [
+      {
+        "name": "ICF International (large business sub only on SB)",
+        "why": "ICF is the dominant health comms firm at CMS and HHS \u2014 but as a large business, cannot prime on SB set-asides. They are a competitor on full & open and a potential sub on SB. Know them both ways.",
+        "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/",
+        "sa": "Large Business \u2014 cannot prime on SB",
+        "evidence": "CMS, HHS, CDC \u2014 dominant health comms firm"
+      }
+    ]
+  },
+  "hud": {
+    "_notes": "Key NAICS at HUD: 541613, 541820, 541430. BLN24 relationship: FHEO $2.3M",
+    "comms_sb": [
+      {
+        "name": "RED Carrot Inc",
+        "why": "Confirmed HUD winner: $6.8M administrative/outreach support + $1M 8(a) public relations at HUD. Active HUD relationship across multiple offices. Should be on radar for any HUD comms or outreach work.",
+        "url": "https://www.highergov.com/awardee/red-carrot-inc-10011907/",
+        "sa": "8(a) / Small Business",
+        "evidence": "HUD $6.8M admin/outreach + $1M 8(a) PR \u2014 confirmed HUD awards"
+      },
+      {
+        "name": "Schatz Publishing Group",
+        "why": "$5.2M HUD evaluation and communications support. Mid-size firm with confirmed HUD relationship.",
+        "url": "https://www.highergov.com/awardee/schatz-publishing-group-llc-10005750/",
+        "sa": "Small Business",
+        "evidence": "HUD $5.2M \u2014 evaluation and communications"
+      }
+    ]
+  },
+  "dhs_uscis": {
+    "_notes": "Key NAICS: 541511, 541613. CBP = Clarity24 past performance",
+    "tech_sb": [
+      {
+        "name": "Cognosante MVH LLC",
+        "why": "$24.8M USCIS contract \u2014 health exchange oversight and monitoring. Medium firm with strong DHS/USCIS tech presence. Competes on large USCIS IT work.",
+        "url": "https://www.highergov.com/awardee/cognosante-mvh-llc-10118811/",
+        "sa": "Unrestricted (large enough to compete full & open)",
+        "evidence": "USCIS $24.8M, health exchange monitoring"
+      },
+      {
+        "name": "Applied Enterprise Management Corp",
+        "why": "$17.8M USCIS ERIC 3.0 contract. Active USCIS technology track record.",
+        "url": "https://www.highergov.com/awardee/applied-enterprise-management-corpor/",
+        "sa": "Unrestricted",
+        "evidence": "USCIS $17.8M ERIC 3.0 system"
+      }
+    ]
+  },
+  "mcc": {
+    "_notes": "MCC uses USAID/State Dept contractor ecosystem. International dev firms dominate.",
+    "intl_dev": [
+      {
+        "name": "Chemonics International",
+        "why": "Largest MCC/USAID implementer globally. Multiple MCC compact country programs. Likely bidder or incumbent on any MCC advisory work. Primary competitor.",
+        "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/",
+        "sa": "N/A (international development \u2014 size standards differ)",
+        "evidence": "MCC/USAID \u2014 largest implementer, multiple compact countries"
+      },
+      {
+        "name": "DevTech Systems",
+        "why": "MCC/USAID M&E and advisory firm. Workforce development, education advisory, behavioral research in developing countries. Focused competitor on MCC HCD advisory.",
+        "url": "https://www.highergov.com/awardee/?search=DevTech+Systems",
+        "sa": "Small Business",
+        "evidence": "MCC, USAID \u2014 M&E, workforce, education advisory"
+      },
+      {
+        "name": "Creative Associates International",
+        "why": "International education, TVET, and workforce programs in developing countries. Directly competes on education and workforce advisory for MCC compact countries.",
+        "url": "https://www.highergov.com/awardee/creative-associates-international-inc-1847/",
+        "sa": "Small Business",
+        "evidence": "USAID, MCC \u2014 TVET, education, workforce in LMIC"
+      }
+    ]
+  },
+  "doj_dea": {
+    "_notes": "DEA: Web dev, digital comms, outreach. New agency for BLN24 \u2014 limited confirmed intel.",
+    "web_comms_sb": [
+      {
+        "name": "TBD \u2014 pull from HigherGov when DEA RFP drops",
+        "why": "DEA web/content RFP not yet issued. When it drops, search HigherGov: Contracts > awarding agency = DEA > NAICS 541511/541613 > recent awards. Identify who has won DEA web or comms work before.",
+        "url": "https://www.highergov.com/awardee/?search=DEA+web",
+        "sa": "TBD",
+        "evidence": "Research needed when RFP issued"
+      }
+    ]
+  },
+  "defense_health_agency": {
+    "_notes": "DHA: IT systems, health data, financial management tools. Software and data tools at DHA.",
+    "software_tools_sb": [
+      {
+        "name": "Pull from HigherGov: DHA + 541511/541512",
+        "why": "For DHA software tools: search HigherGov Contracts filtered by Defense Health Agency + NAICS 541511/541512 to find who has won financial management, human capital, or data software contracts at DHA recently. This is a specialized DHA IT market \u2014 the incumbent and recent winners are the strongest competitors.",
+        "url": "https://www.highergov.com/contract/?awarding_agency=Defense+Health+Agency",
+        "sa": "Research needed",
+        "evidence": "Pull from HigherGov when RFP details available"
+      },
+      {
+        "name": "Experienced DHA IT SB Contractors (GDIT, ManTech as sub)",
+        "why": "DHA software/financial tools tend to go to IT-focused SB firms with cleared capabilities. Consider ManTech or GDIT as large business subs \u2014 they cannot prime SB set-asides but bring DHA IT depth.",
+        "url": "https://www.highergov.com/awardee/?search=ManTech",
+        "sa": "Large business sub only on SB",
+        "evidence": "DHA cleared IT capabilities"
+      }
+    ]
+  },
+  "education_ies": {
+    "_notes": "IES: Program evaluation, research methodology, education data. Key competitors: Mathematica, Westat, Abt Associates, RTI International",
+    "program_evaluation_sb": [
+      {
+        "name": "Mathematica Policy Research",
+        "why": "Premier federal evaluation firm. Wins IES and ED evaluation contracts regularly. They are THE main competitor on any IES program evaluation work \u2014 they essentially invented rigorous federal program evaluation. Check their IES-specific awards on HigherGov.",
+        "url": "https://www.highergov.com/awardee/?search=Mathematica",
+        "sa": "Mid-size (may qualify as SB depending on NAICS)",
+        "evidence": "IES, ED, HHS \u2014 program evaluation, RCT design, education research"
+      },
+      {
+        "name": "Westat",
+        "why": "Federal statistical research firm. Survey methodology and program evaluation at Census, ED, and HHS. Regular IES contractor.",
+        "url": "https://www.highergov.com/awardee/?search=Westat",
+        "sa": "Small Business eligible on some NAICS",
+        "evidence": "ED, Census, HHS \u2014 surveys, evaluation, statistical research"
+      },
+      {
+        "name": "Abt Associates",
+        "why": "Federal research and evaluation firm. Education, health, and workforce program evaluation. Active on IES and ED evaluation contracts.",
+        "url": "https://www.highergov.com/awardee/?search=Abt+Associates",
+        "sa": "Mid-size",
+        "evidence": "ED, IES, Labor \u2014 program evaluation, workforce research"
+      }
+    ]
+  }
+}

@@ -10,7 +10,14 @@ import json
 from pathlib import Path
 
 OPPS_FILE = Path('/Users/t24/Desktop/T24/dashboard/opps.json')
+AGENCY_WINNERS_FILE = Path('/Users/t24/Desktop/T24/hg-proxy/agency-winners.json')
 HG_BASE = 'https://www.highergov.com'
+
+# Load agency-specific winner database
+try:
+    AGENCY_WINNERS = json.loads(AGENCY_WINNERS_FILE.read_text())
+except:
+    AGENCY_WINNERS = {}
 
 # ─────────────────────────────────────────────────────────────────
 # CONFIRMED COMPETITOR DATABASE
@@ -293,16 +300,56 @@ def get_competitive_intel(opp):
                 seen.add(c['name'])
                 added += 1
 
-    # MCC competitors — specialized
-    if is_intl_dev:
-        add_comp(COMPETITORS_BY_LANE['intl_dev'], 3)
+    # ── AGENCY-SPECIFIC DATABASE FIRST ──────────────────────────
+    # Use confirmed agency winner data before falling back to capability-based
+    def add_agency_winners(agency_key, sub_key, max_add=3):
+        agency_data = AGENCY_WINNERS.get(agency_key, {})
+        winners = agency_data.get(sub_key, [])
+        for w in winners[:max_add]:
+            if w.get('name','TBD') not in seen and 'TBD' not in w.get('name',''):
+                competitors.append({
+                    'name': w['name'],
+                    'why': w['why'],
+                    'url': w['url'],
+                    'evidence': w.get('evidence','')
+                })
+                seen.add(w['name'])
 
-    # Census-specific competitors for tech work
+    # MCC competitors — use MCC-specific database
+    if is_intl_dev:
+        add_agency_winners('mcc', 'intl_dev', 3)
+        if not competitors:
+            add_comp(COMPETITORS_BY_LANE['intl_dev'], 3)
+
+    # Census-specific competitors — use confirmed Census winner database
     elif agency_type == 'census' and (has_cloud or has_data):
-        if sa_type in ('8a', 'sb', 'tbd', 'sb'):
-            add_comp(COMPETITORS_BY_LANE['census_tech_sb'], 4)
-        else:
+        if sa_type in ('8a', 'sb', 'tbd'):
+            add_agency_winners('census_bureau', 'app_modernization_sb', 4)
+        if not competitors:
             add_comp(COMPETITORS_BY_LANE['census_tech_sb'], 3)
+
+    # HUD competitors
+    elif 'hud' in (opp.get('agency','') + opp.get('title','')).lower() or 'housing and urban' in (opp.get('agency','')).lower():
+        add_agency_winners('hud', 'comms_sb', 2)
+
+    # CMS competitors
+    elif 'cms' in (opp.get('agency','') + opp.get('title','')).lower() or 'medicare' in (opp.get('agency','')).lower():
+        if has_web or has_cloud:
+            add_agency_winners('cms', 'tech_sb', 2)
+        if has_comms:
+            add_agency_winners('cms', 'comms_sb', 1)
+
+    # DHS/USCIS competitors
+    elif 'citizenship' in (opp.get('agency','')).lower() or 'immigration' in (opp.get('agency','')).lower():
+        add_agency_winners('dhs_uscis', 'tech_sb', 2)
+
+    # Education IES competitors
+    elif 'education' in (opp.get('agency','')).lower() or 'ies' in (opp.get('title','')).lower() or 'pell' in (opp.get('title','')).lower():
+        add_agency_winners('education_ies', 'program_evaluation_sb', 3)
+
+    # Defense Health Agency competitors
+    elif 'defense health' in (opp.get('agency','')).lower() or 'dha' in (opp.get('title','')).lower():
+        add_agency_winners('defense_health_agency', 'software_tools_sb', 2)
 
     # HCD/UX competitors
     if has_hcd:
@@ -321,8 +368,8 @@ def get_competitive_intel(opp):
         if sa_type in ('8a', 'sb'):
             add_comp(COMPETITORS_BY_LANE['comms_sb'], 2)
 
-    # Data/research competitors
-    if has_data and agency_type in ('census', 'education', 'hhs'):
+    # Data/research competitors — only for education/research agencies, not generic data tools
+    if has_data and agency_type in ('education', 'hhs') and not is_intl_dev:
         add_comp(COMPETITORS_BY_LANE['data_sb'], 2)
 
     # Select partners based on gaps
