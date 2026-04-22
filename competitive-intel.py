@@ -66,30 +66,31 @@ COMPETITORS_BY_LANE = {
     ],
 
     # Census-specific — App Modernization / Cloud / Data (SB)
+    # LOGIC: 1) Who is the incumbent? 2) Who has most Census contracts? 3) Who teams well?
     'census_tech_sb': [
         {
-            'name': 'Spatial Front Inc',
-            'why': 'SB with confirmed Census tech contracts ($17M+). Cloud and data engineering work at Census Bureau. Direct SB competitor for Census tech modernization work.',
-            'url': f'{HG_BASE}/awardee/spatial-front-inc-10000821/',
-            'evidence': 'Census Bureau — $17M+ in confirmed awards, cloud and data engineering'
+            'name': 'Vidoori Inc + T-Rex Solutions (teamed)',
+            'why': 'STRONGEST COMPETITOR. Vidoori has $173M Census BPA (Enterprise Testing), $7.3M CMMU modernization (AI/ML/automation), and $4.7M internet data collection. T-Rex Solutions was THE 2020 Census IT modernization integrator (up to $1.6B ESF SE&I BPA) and has the deepest Census systems engineering knowledge. Together they cover the full stack: T-Rex brings systems engineering + incumbent credibility, Vidoori brings testing + AI/ML + modernization. Both are SB-eligible. This team is the hardest to beat on Census modernization.',
+            'url': f'{HG_BASE}/awardee/?search=Vidoori',
+            'evidence': 'Vidoori: $173M Census BPA, $7.3M CMMU AI/ML modernization. T-Rex: $1.6B 2020 Census integrator.'
         },
         {
-            'name': 'Vibrantech Solutions',
-            'why': 'SB with Census Bureau awards ($13M, SB Set-Aside). Tech and data services at Census. Competes on Census SB IT modernization work.',
-            'url': f'{HG_BASE}/awardee/vibrantech-solutions-inc-10088566/',
-            'evidence': 'Census Bureau — $13M SB set-aside, IT services'
+            'name': 'Vidoori Inc',
+            'why': '$173M Census Enterprise Testing BPA + $7.3M CMMU AI/ML modernization + $4.7M internet data collection. Multiple Census BPAs, AI/ML and automation at Census, data systems modernization track record. If not teaming with T-Rex, still a formidable solo competitor.',
+            'url': f'{HG_BASE}/awardee/?search=Vidoori',
+            'evidence': 'Census Bureau — $173M testing BPA, $7.3M AI/ML modernization, multiple awards'
+        },
+        {
+            'name': 'Spatial Front Inc',
+            'why': 'SB with confirmed Census tech awards ($17M+). Cloud and data engineering. Active on Census SB set-asides.',
+            'url': f'{HG_BASE}/awardee/spatial-front-inc-10000821/',
+            'evidence': 'Census Bureau — $17M+ confirmed, cloud and data engineering'
         },
         {
             'name': 'Amivero LLC',
-            'why': 'SB with Census Bureau awards ($5M, SB Set-Aside). Cloud and data modernization focus. Active Census SB competitor.',
+            'why': 'SB with Census Bureau SB set-aside awards ($5M). Cloud and data modernization focus. Growing Census presence.',
             'url': f'{HG_BASE}/awardee/amivero-llc-10055353/',
             'evidence': 'Census Bureau — $5M SB set-aside, cloud/data modernization'
-        },
-        {
-            'name': 'Great Hill Solutions',
-            'why': '8(a) with multiple Census Bureau sole-source awards ($7M). Cloud and data engineering at Census. Strong incumbent risk for Census 8(a) work.',
-            'url': f'{HG_BASE}/awardee/great-hill-solutions-llc-12512157/',
-            'evidence': 'Census Bureau — $7M, 3 8(a) sole-source awards'
         },
     ],
 
@@ -186,15 +187,15 @@ COMPETITORS_BY_LANE = {
 PARTNERS = {
     'devsecops': {
         'name': 'Clarity24 LLC (BLN24 Active JV)',
-        'why': 'Active 8(a) JV — AWS cloud delivery (NOAA $7M, NOAA AI $3.6M, CBP $4M), app modernization, DevSecOps. Fills the tech depth gap without needing a new sub relationship.',
+        'why': 'Active 8(a) JV. Three reasons this is the right call: (1) BLN24 independently has Census quals (DWS III $8.3M, SRQA $4.1M, CES $7M) so BLN24 is the relationship anchor; (2) Accenture Federal Services brings cloud/DevSecOps/AWS depth; (3) joint delivery proven at Census, NOAA ($7M cloud), and CBP ($4M). BLN24 primes with credibility, Clarity24 fills the tech depth gap.',
         'url': f'{HG_BASE}/awardee/clarity24-llc-627966104/',
-        'relationship': 'Active JV'
+        'relationship': 'Active JV — Proven joint delivery'
     },
     'cloud': {
-        'name': 'Clarity24 LLC (BLN24 Active JV)',
-        'why': 'NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital Transformation ($4M). Cloud engineering is Clarity24\'s core delivery lane.',
+        'name': 'Clarity24 LLC (BLN24 Active JV) — STRONGEST FOR CENSUS',
+        'why': 'STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) — proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.',
         'url': f'{HG_BASE}/awardee/clarity24-llc-627966104/',
-        'relationship': 'Active JV'
+        'relationship': 'Active JV — Proven Census delivery together'
     },
     'behavioral_science': {
         'name': 'BLN Fors Marsh JV LLC (Active JV)',
@@ -298,11 +299,10 @@ def get_competitive_intel(opp):
 
     # Census-specific competitors for tech work
     elif agency_type == 'census' and (has_cloud or has_data):
-        if sa_type in ('8a', 'sb', 'tbd'):
-            add_comp(COMPETITORS_BY_LANE['census_tech_sb'], 3)
+        if sa_type in ('8a', 'sb', 'tbd', 'sb'):
+            add_comp(COMPETITORS_BY_LANE['census_tech_sb'], 4)
         else:
-            # Full & open at Census — can include larger firms
-            add_comp(COMPETITORS_BY_LANE['census_tech_sb'], 2)
+            add_comp(COMPETITORS_BY_LANE['census_tech_sb'], 3)
 
     # HCD/UX competitors
     if has_hcd:
