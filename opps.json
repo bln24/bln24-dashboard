@@ -504,13 +504,13 @@
           {
             "name": "Vidoori Inc",
             "why": "$173M Enterprise Testing BPA + $7.3M CMMU AI/ML modernization + $4.7M internet data collection system. Multiple Census BPAs. One of the strongest Census relationships in the SB space.",
-            "url": "https://www.usaspending.gov/recipient/N37JST95C3S5/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=N37JST95C3S5",
             "evidence": "$173M Census BPA, $7.3M CMMU modernization, $4.7M internet data collection"
           },
           {
             "name": "T-Rex Solutions (often teams with Vidoori)",
             "why": "Former 2020 Census technical integrator ($1.6B ESF SE&I BPA). Deep Census IT systems engineering knowledge. Frequently sub or JV on Census modernization work. Incumbent risk.",
-            "url": "https://www.usaspending.gov/recipient/N37JST95C3S5/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=N37JST95C3S5",
             "evidence": "2020 Census integrator $1.6B, deep Census systems knowledge"
           },
           {
@@ -754,25 +754,25 @@
           {
             "name": "Arctic Slope Mission Services LLC",
             "why": "$77M+ across 4 DEA IT/mission support contracts \u2014 the dominant DEA IT contractor. While their work is mission/IT support rather than web dev specifically, they have the deepest DEA relationship and could expand into web services. Watch them.",
-            "url": "https://www.usaspending.gov/recipient/WTJEFSM3P945/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=WTJEFSM3P945",
             "evidence": "DEA $77M+ across 4 contracts (USASpending confirmed)"
           },
           {
             "name": "ASRC Federal Agile Management LLC",
             "why": "$27.8M DEA IT Support Services. Active DEA IT relationship. If DEA web dev is bundled with IT support, ASRC Federal is a competitor to watch.",
-            "url": "https://www.usaspending.gov/recipient/X92VVYGXK9X5/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=X92VVYGXK9X5",
             "evidence": "DEA $27.8M IT Support Services (USASpending confirmed)"
           },
           {
             "name": "Chenega Professional & Technical Services",
             "why": "$32M+ across 2 DEA IT contracts (Concorde Core). Active DEA presence. Medium business with DEA IT track record.",
-            "url": "https://www.usaspending.gov/recipient/ECMESLV5KNB1/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=ECMESLV5KNB1",
             "evidence": "DEA $32M+ Concorde Core IT support (USASpending confirmed)"
           },
           {
             "name": "Open field for web/content specifically",
             "why": "USASpending shows no confirmed incumbent for DEA web design or content services specifically. The DEA web developer MRAS is likely a new or recompeting requirement with no dominant incumbent \u2014 more winnable for BLN24.",
-            "url": "https://www.usaspending.gov/search/?hash=ab571b1a5f5d1f2d9a16b5edd98abc30",
+            "url": "https://www.usaspending.gov/search/?award_type_codes=A,B,C,D&agencies=Drug%20Enforcement%20Administration",
             "evidence": "USASpending analysis: no dominant web/comms incumbent at DEA"
           }
         ],
@@ -1044,7 +1044,7 @@
           {
             "name": "Leidos or Peraton (large business sub)",
             "why": "GAP: IT Infrastructure & Telecommunications \u2014 Large businesses cannot prime on SB set-asides \u2014 making them ideal subs. Leidos and Peraton have deep IT infrastructure, network, and telecom capabilities. BLN24 primes with SB status, they bring the infrastructure technical depth. This is exactly the model: BLN24 gets the contract, large firm gets the sub work they could not win as prime.",
-            "url": "https://www.usaspending.gov/recipient/ZL41ERXMPAR3/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=ZL41ERXMPAR3",
             "relationship": "Recommended large business sub",
             "gap_filled": "IT Infrastructure & Telecommunications"
           }
@@ -1139,13 +1139,13 @@
           {
             "name": "Mathematica Policy Research",
             "why": "Premier federal evaluation firm. Wins IES and ED evaluation contracts regularly. They are THE main competitor on any IES program evaluation work \u2014 they essentially invented rigorous federal program evaluation. Check their IES-specific awards on HigherGov.",
-            "url": "https://www.usaspending.gov/recipient/T41EGEAK2L35/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=T41EGEAK2L35",
             "evidence": "IES, ED, HHS \u2014 program evaluation, RCT design, education research"
           },
           {
             "name": "Westat",
             "why": "Federal statistical research firm. Survey methodology and program evaluation at Census, ED, and HHS. Regular IES contractor.",
-            "url": "https://www.usaspending.gov/recipient/NVUWAFWQ57S5/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=NVUWAFWQ57S5",
             "evidence": "ED, Census, HHS \u2014 surveys, evaluation, statistical research"
           },
           {
@@ -1428,13 +1428,13 @@
           {
             "name": "Vidoori Inc + T-Rex Solutions (teamed)",
             "why": "STRONGEST COMPETITOR. Vidoori has $173M Census BPA (Enterprise Testing), $7.3M CMMU modernization (AI/ML/automation), and $4.7M internet data collection. T-Rex Solutions was THE 2020 Census IT modernization integrator (up to $1.6B ESF SE&I BPA) and has the deepest Census systems engineering knowledge. Together they cover the full stack: T-Rex brings systems engineering + incumbent credibility, Vidoori brings testing + AI/ML + modernization. Both are SB-eligible. This team is the hardest to beat on Census modernization.",
-            "url": "https://www.usaspending.gov/recipient/N37JST95C3S5/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=N37JST95C3S5",
             "evidence": "Vidoori: $173M Census BPA, $7.3M CMMU AI/ML modernization. T-Rex: $1.6B 2020 Census integrator."
           },
           {
             "name": "Vidoori Inc",
             "why": "$173M Census Enterprise Testing BPA + $7.3M CMMU AI/ML modernization + $4.7M internet data collection. Multiple Census BPAs, AI/ML and automation at Census, data systems modernization track record. If not teaming with T-Rex, still a formidable solo competitor.",
-            "url": "https://www.usaspending.gov/recipient/N37JST95C3S5/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=N37JST95C3S5",
             "evidence": "Census Bureau \u2014 $173M testing BPA, $7.3M AI/ML modernization, multiple awards"
           },
           {
@@ -1673,19 +1673,19 @@
           {
             "name": "Experienced DHA IT SB Contractors (GDIT, ManTech as sub)",
             "why": "DHA software/financial tools tend to go to IT-focused SB firms with cleared capabilities. Consider ManTech or GDIT as large business subs \u2014 they cannot prime SB set-asides but bring DHA IT depth.",
-            "url": "https://www.usaspending.gov/recipient/KZA5CX3J8KE8/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=KZA5CX3J8KE8",
             "evidence": "DHA cleared IT capabilities"
           },
           {
             "name": "Mathematica Policy Research",
             "why": "Premier federal research and analytics firm. Wins large data analytics and program evaluation contracts across ED, HHS, Labor. Strong competitor on research-heavy data analytics RFPs.",
-            "url": "https://www.usaspending.gov/recipient/T41EGEAK2L35/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=T41EGEAK2L35",
             "evidence": "ED, HHS, Labor \u2014 data analytics, program evaluation, research"
           },
           {
             "name": "Westat",
             "why": "Federal statistical research firm. Survey methodology, data analytics, program evaluation. Competes at Census, ED, HHS on data and research contracts.",
-            "url": "https://www.usaspending.gov/recipient/NVUWAFWQ57S5/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=NVUWAFWQ57S5",
             "evidence": "Census, ED, HHS \u2014 surveys, data analytics, statistical research"
           }
         ],
@@ -1924,13 +1924,13 @@
           {
             "name": "Mathematica Policy Research",
             "why": "Premier federal research and analytics firm. Wins large data analytics and program evaluation contracts across ED, HHS, Labor. Strong competitor on research-heavy data analytics RFPs.",
-            "url": "https://www.usaspending.gov/recipient/T41EGEAK2L35/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=T41EGEAK2L35",
             "evidence": "ED, HHS, Labor \u2014 data analytics, program evaluation, research"
           },
           {
             "name": "Westat",
             "why": "Federal statistical research firm. Survey methodology, data analytics, program evaluation. Competes at Census, ED, HHS on data and research contracts.",
-            "url": "https://www.usaspending.gov/recipient/NVUWAFWQ57S5/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=NVUWAFWQ57S5",
             "evidence": "Census, ED, HHS \u2014 surveys, data analytics, statistical research"
           }
         ],
@@ -2427,7 +2427,7 @@
           {
             "name": "IgniteAction LLC (Census) / ManTech (other agencies)",
             "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 For Census: IgniteAction won \\$557M Census OCISS BPA for cloud infrastructure + cybersecurity and zero trust \u2014 they already have the Census cyber relationship and cleared staff. For other agencies: ManTech brings cleared cyber, ATO maintenance, and FISMA expertise. Large businesses cannot prime SB set-asides, making them ideal subs \u2014 they get on the contract, BLN24 primes.",
-            "url": "https://www.usaspending.gov/recipient/F8HKSUHCLFS3/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=F8HKSUHCLFS3",
             "relationship": "Recommended large business sub (agency-specific)",
             "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
@@ -3782,7 +3782,7 @@
           {
             "name": "IgniteAction LLC (Census) / ManTech (other agencies)",
             "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 For Census: IgniteAction won \\$557M Census OCISS BPA for cloud infrastructure + cybersecurity and zero trust \u2014 they already have the Census cyber relationship and cleared staff. For other agencies: ManTech brings cleared cyber, ATO maintenance, and FISMA expertise. Large businesses cannot prime SB set-asides, making them ideal subs \u2014 they get on the contract, BLN24 primes.",
-            "url": "https://www.usaspending.gov/recipient/F8HKSUHCLFS3/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=F8HKSUHCLFS3",
             "relationship": "Recommended large business sub (agency-specific)",
             "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           },
@@ -4303,7 +4303,7 @@
           {
             "name": "IgniteAction LLC (Census) / ManTech (other agencies)",
             "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 For Census: IgniteAction won \\$557M Census OCISS BPA for cloud infrastructure + cybersecurity and zero trust \u2014 they already have the Census cyber relationship and cleared staff. For other agencies: ManTech brings cleared cyber, ATO maintenance, and FISMA expertise. Large businesses cannot prime SB set-asides, making them ideal subs \u2014 they get on the contract, BLN24 primes.",
-            "url": "https://www.usaspending.gov/recipient/F8HKSUHCLFS3/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=F8HKSUHCLFS3",
             "relationship": "Recommended large business sub (agency-specific)",
             "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
@@ -4510,13 +4510,13 @@
           {
             "name": "Mathematica Policy Research",
             "why": "Premier federal evaluation firm. Wins IES and ED evaluation contracts regularly. They are THE main competitor on any IES program evaluation work \u2014 they essentially invented rigorous federal program evaluation. Check their IES-specific awards on HigherGov.",
-            "url": "https://www.usaspending.gov/recipient/T41EGEAK2L35/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=T41EGEAK2L35",
             "evidence": "IES, ED, HHS \u2014 program evaluation, RCT design, education research"
           },
           {
             "name": "Westat",
             "why": "Federal statistical research firm. Survey methodology and program evaluation at Census, ED, and HHS. Regular IES contractor.",
-            "url": "https://www.usaspending.gov/recipient/NVUWAFWQ57S5/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=NVUWAFWQ57S5",
             "evidence": "ED, Census, HHS \u2014 surveys, evaluation, statistical research"
           },
           {
@@ -5021,7 +5021,7 @@
           {
             "name": "IgniteAction LLC (Census) / ManTech (other agencies)",
             "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 For Census: IgniteAction won \\$557M Census OCISS BPA for cloud infrastructure + cybersecurity and zero trust \u2014 they already have the Census cyber relationship and cleared staff. For other agencies: ManTech brings cleared cyber, ATO maintenance, and FISMA expertise. Large businesses cannot prime SB set-asides, making them ideal subs \u2014 they get on the contract, BLN24 primes.",
-            "url": "https://www.usaspending.gov/recipient/F8HKSUHCLFS3/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=F8HKSUHCLFS3",
             "relationship": "Recommended large business sub (agency-specific)",
             "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
@@ -5239,13 +5239,13 @@
           {
             "name": "Mathematica Policy Research",
             "why": "Premier federal research and analytics firm. Wins large data analytics and program evaluation contracts across ED, HHS, Labor. Strong competitor on research-heavy data analytics RFPs.",
-            "url": "https://www.usaspending.gov/recipient/T41EGEAK2L35/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=T41EGEAK2L35",
             "evidence": "ED, HHS, Labor \u2014 data analytics, program evaluation, research"
           },
           {
             "name": "Westat",
             "why": "Federal statistical research firm. Survey methodology, data analytics, program evaluation. Competes at Census, ED, HHS on data and research contracts.",
-            "url": "https://www.usaspending.gov/recipient/NVUWAFWQ57S5/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=NVUWAFWQ57S5",
             "evidence": "Census, ED, HHS \u2014 surveys, data analytics, statistical research"
           }
         ],
@@ -5584,13 +5584,13 @@
           {
             "name": "Slalom Inc",
             "why": "$128M USCIS VER Future contract \u2014 this is THE incumbent on VER program work. Slalom won the VER Future modernization. Any VER-related opp, Slalom is the primary competitor to watch.",
-            "url": "https://www.usaspending.gov/recipient/D975PL76FFK7/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=D975PL76FFK7",
             "evidence": "USCIS $128.7M VER Future (USASpending confirmed \u2014 DIRECT INCUMBENT on VER work)"
           },
           {
             "name": "Pluribus Digital",
             "why": "$80.6M USCIS DevSecOps services. Active USCIS digital and tech relationship. SB competitor for USCIS digital work.",
-            "url": "https://www.usaspending.gov/recipient/EBC8TT6W1LR7/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=EBC8TT6W1LR7",
             "evidence": "USCIS $80.6M DevSecOps services (USASpending confirmed)"
           }
         ],
@@ -6045,7 +6045,7 @@
           {
             "name": "IgniteAction LLC (Census) / ManTech (other agencies)",
             "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 For Census: IgniteAction won \\$557M Census OCISS BPA for cloud infrastructure + cybersecurity and zero trust \u2014 they already have the Census cyber relationship and cleared staff. For other agencies: ManTech brings cleared cyber, ATO maintenance, and FISMA expertise. Large businesses cannot prime SB set-asides, making them ideal subs \u2014 they get on the contract, BLN24 primes.",
-            "url": "https://www.usaspending.gov/recipient/F8HKSUHCLFS3/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=F8HKSUHCLFS3",
             "relationship": "Recommended large business sub (agency-specific)",
             "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
@@ -6382,7 +6382,7 @@
           {
             "name": "IgniteAction LLC (Census) / ManTech (other agencies)",
             "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 For Census: IgniteAction won \\$557M Census OCISS BPA for cloud infrastructure + cybersecurity and zero trust \u2014 they already have the Census cyber relationship and cleared staff. For other agencies: ManTech brings cleared cyber, ATO maintenance, and FISMA expertise. Large businesses cannot prime SB set-asides, making them ideal subs \u2014 they get on the contract, BLN24 primes.",
-            "url": "https://www.usaspending.gov/recipient/F8HKSUHCLFS3/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=F8HKSUHCLFS3",
             "relationship": "Recommended large business sub (agency-specific)",
             "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
@@ -6536,7 +6536,7 @@
           {
             "name": "IgniteAction LLC (Census) / ManTech (other agencies)",
             "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 For Census: IgniteAction won \\$557M Census OCISS BPA for cloud infrastructure + cybersecurity and zero trust \u2014 they already have the Census cyber relationship and cleared staff. For other agencies: ManTech brings cleared cyber, ATO maintenance, and FISMA expertise. Large businesses cannot prime SB set-asides, making them ideal subs \u2014 they get on the contract, BLN24 primes.",
-            "url": "https://www.usaspending.gov/recipient/F8HKSUHCLFS3/latest/",
+            "url": "https://www.usaspending.gov/search/?recipient_search_text=F8HKSUHCLFS3",
             "relationship": "Recommended large business sub (agency-specific)",
             "gap_filled": "Cybersecurity / FISMA / Zero Trust"
           }
