@@ -617,6 +617,7 @@ async function main() {
   try {
     es(`python3 /Users/t24/Desktop/T24/hg-proxy/enrich-opps.py`, { stdio: 'inherit' });
     es(`python3 /Users/t24/Desktop/T24/hg-proxy/analyze-opps.py`, { stdio: 'inherit' });
+    es(`python3 /Users/t24/Desktop/T24/hg-proxy/competitive-intel.py`, { stdio: 'inherit' });
   } catch(e) { console.log('Enrichment error:', e.message); }
 
   const output = JSON.parse(fs.readFileSync(OUT_FILE, 'utf8'));

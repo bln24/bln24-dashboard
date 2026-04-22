@@ -137,6 +137,38 @@
             "score": 4
           }
         ]
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "ICF International",
+            "why": "Large HCD/comms firm, HHS/CMS anchor client, OASIS+ prime \u2014 direct competitor on health/HCD RFPs",
+            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/"
+          },
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) HCD-focused firm, federal digital services, same NAICS lanes as BLN24",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/"
+          },
+          {
+            "name": "Softrams",
+            "why": "8(a), Agile dev, CMS/VA web work, same size bracket as BLN24",
+            "url": "https://www.highergov.com/awardee/?search=Softrams"
+          },
+          {
+            "name": "Unison",
+            "why": "Federal Drupal/AEM specialist, Census and HHS web platform experience",
+            "url": "https://www.highergov.com/awardee/?search=Unison"
+          }
+        ],
+        "partners": [
+          {
+            "name": "SAIC or ManTech",
+            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "relationship": "Recommended sub"
+          }
+        ]
       }
     },
     {
@@ -293,6 +325,44 @@
         "rex_take": "BLN24's HCD/BUX capability (IRS HCD BPA $7M) is the strongest match. UPDATE: The IRS SB/SE BOD Leadership Initiative ($2.7M via Clarity24) is a direct workforce development reference \u2014 leadership development, culture assessment for 60+ executives, organizational transformation, capacity building. That changes the workforce lane from a gap to a JV-backed capability. Combined with Fors Marsh JV behavioral science, BLN24 can credibly claim the workforce advisory scope. Cold agency and international context remain the risks. Favi Villa as Team Leader with USAID Kabul experience is the right call.",
         "watch_notes": "Ask Brian: any MCC relationship? Any international development teaming partner? If no to both, this is a training exercise \u2014 not a real pursue. Flag MCC as an agency to build toward for future cycles.",
         "recommendation": "Pass \u2014 cold agency, international context, 3-day deadline"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "ICF International",
+            "why": "Large HCD/comms firm, HHS/CMS anchor client, OASIS+ prime \u2014 direct competitor on health/HCD RFPs",
+            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/"
+          },
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) HCD-focused firm, federal digital services, same NAICS lanes as BLN24",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/"
+          },
+          {
+            "name": "Chemonics International",
+            "why": "Largest MCC/USAID implementer \u2014 likely incumbent or strong competitor on MCC work",
+            "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/"
+          },
+          {
+            "name": "DevTech Systems",
+            "why": "MCC/USAID monitoring & evaluation, workforce dev, education advisory \u2014 direct MCC competitor",
+            "url": "https://www.highergov.com/awardee/?search=DevTech+Systems"
+          }
+        ],
+        "partners": [
+          {
+            "name": "Chemonics International",
+            "why": "Largest MCC/USAID implementer. Deep TVET and workforce development in compact countries. Sub arrangement fills BLN24's international workforce gap.",
+            "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/",
+            "relationship": "Recommended sub"
+          },
+          {
+            "name": "BLN Fors Marsh JV LLC",
+            "why": "Active 8(a) JV \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M, FTC paid media. Behavioral science is Fors Marsh's core lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ]
       }
     },
     {
@@ -387,6 +457,21 @@
         "rex_take": "Clarity24 JV has direct Census past performance ($4.5M MAF/TIGER modernization, $4.5M EDL Applications, $2.8M NOAA app mod). Census is also BLN24's highest-value client ($18.4M). This is a real opportunity \u2014 but it's a large technology modernization vehicle, not comms or HCD. The question is which specific task areas under CenTAM align with what Clarity24 can actually deliver vs. what larger primes will own. Full & Open means big integrators will compete.",
         "watch_notes": "Get into the weeds on the CenTAM acquisition structure \u2014 it's a collection of complementary contracts, not one big award. Find which specific package maps to digital modernization vs. IT infrastructure vs. data engineering. Clarity24 should be positioned for the digital/app mod pieces. Due 2027 \u2014 shape now.",
         "recommendation": "Pursue via Clarity24 JV"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "SAIC",
+            "why": "Large cloud/IT prime, competes on cloud migration and app mod at federal scale",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/"
+          },
+          {
+            "name": "Peraton",
+            "why": "Cloud infrastructure, DevSecOps \u2014 threatens on cloud/tech-heavy RFPs",
+            "url": "https://www.highergov.com/awardee/?search=Peraton"
+          }
+        ],
+        "partners": []
       }
     },
     {
@@ -563,6 +648,28 @@
         "rex_take": "This is actually a stronger match than it first appeared. BLN24 has direct past performance in every element of this scope: MBDA website .8M and Census DWS III .3M for web development; CMS MNPS M for content production at scale; HHS OIDP .3M and FTC for paid media (via Fors Marsh JV); CMS Spanish Language Campaign and FTC language resources for multilingual content; MBDA and NTIA for branding. DOJ/DEA is a new agency but the web/content scope is dead center. MRAS response is 30 minutes \u2014 fill out the Qualtrics form now and watch for the RFP.",
         "watch_notes": "Respond via Qualtrics: https://feedback.gsa.gov/jfe/form/SV_4JzNl5sdspSArHw\nHighlight: MBDA website .8M (web dev prime), Census DWS III .3M (largest federal AEM deployment), CMS MNPS M (content at scale), HHS OIDP paid media (Fors Marsh JV).\nWatch SAM.gov for the follow-on RFP from DOJ/DEA.",
         "recommendation": "Respond to RFI \u2014 Strong"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Softrams",
+            "why": "8(a), Agile dev, CMS/VA web work, same size bracket as BLN24",
+            "url": "https://www.highergov.com/awardee/?search=Softrams"
+          },
+          {
+            "name": "Unison",
+            "why": "Federal Drupal/AEM specialist, Census and HHS web platform experience",
+            "url": "https://www.highergov.com/awardee/?search=Unison"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC",
+            "why": "Active 8(a) JV \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M, FTC paid media. Behavioral science is Fors Marsh's core lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ]
       }
     },
     {
@@ -668,6 +775,23 @@
         "rex_take": "BLN24 can cover: Digital Marketing & Paid Media. Gap areas requiring teaming: Workforce / Talent Development. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
         "recommendation": "Weak / JV"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": [
+          {
+            "name": "Chemonics International",
+            "why": "Largest MCC/USAID implementer. Deep TVET and workforce development in compact countries. Sub arrangement fills BLN24's international workforce gap.",
+            "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/",
+            "relationship": "Recommended sub"
+          },
+          {
+            "name": "BLN Fors Marsh JV LLC",
+            "why": "Active 8(a) JV \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M, FTC paid media. Behavioral science is Fors Marsh's core lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ]
       }
     },
     {
@@ -762,6 +886,17 @@
         "rex_take": "This is pure IT infrastructure \u2014 servers, networking, telecom, security operations. The \"Strategic Communications\" hit in the matrix was noise from the word \"communications\" appearing in the description. Zero BLN24 delivery lanes here. The description is explicit: server hosting, wireless infrastructure, incident management. Pass.",
         "watch_notes": "Remove \"communications services\" from the comms keyword set if it's triggering on IT infrastructure descriptions \u2014 it's causing false positives.",
         "recommendation": "Pass \u2014 IT infrastructure, not BLN24 scope"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": [
+          {
+            "name": "Peraton or Leidos",
+            "why": "Large IT infrastructure primes on OASIS+. Sub arrangement covers network, server hosting, telecom without BLN24 holding that prime.",
+            "url": "https://www.highergov.com/awardee/?search=Peraton",
+            "relationship": "Recommended sub"
+          }
+        ]
       }
     },
     {
@@ -834,6 +969,10 @@
         "rex_take": "BLN24 is stronger here than the initial score suggests. IRS SB/SE BOD Leadership Initiative ($2.7M via Clarity24) is a DIRECT workforce development / human capital reference \u2014 leadership development, culture assessment for 60+ IRS executives, organizational transformation, capacity building. That directly maps to evaluating workforce training programs. EDARMST $2.5M is same agency (IES). Fors Marsh JV covers evaluation methodology via DHRA $59M behavioral research. Teaming play: BLN24/Clarity24 leads workforce dev + data analytics, Fors Marsh JV leads evaluation design. MRAS response is low-effort. Respond now.",
         "watch_notes": "Respond via Qualtrics form: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi\nHighlight: IRS SB/SE Leadership Initiative (Clarity24 $2.7M) for workforce dev, EDARMST $2.5M for same-agency IES past performance, Fors Marsh JV for evaluation methodology.",
         "recommendation": "Respond to RFI \u2014 Strong"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -958,6 +1097,28 @@
         "rex_take": "BLN24 can cover: Cloud Migration & Infrastructure, Cloud Engineering / Infrastructure as Code. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
         "recommendation": "Moderate"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "SAIC",
+            "why": "Large cloud/IT prime, competes on cloud migration and app mod at federal scale",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/"
+          },
+          {
+            "name": "Peraton",
+            "why": "Cloud infrastructure, DevSecOps \u2014 threatens on cloud/tech-heavy RFPs",
+            "url": "https://www.highergov.com/awardee/?search=Peraton"
+          }
+        ],
+        "partners": [
+          {
+            "name": "Clarity24 LLC (BLN24 JV)",
+            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital ($4M). Cloud is Clarity24's core lane.",
+            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
+            "relationship": "Active JV"
+          }
+        ]
       }
     },
     {
@@ -1054,6 +1215,21 @@
         "rex_take": "Likely same opp as CenTAM Decennial Transformation. Verify if these are the same solicitation or different contract packages under the same framework.",
         "watch_notes": "Confirm whether this is a duplicate of the Decennial Transformation opp or a separate package.",
         "recommendation": "Verify / Watch"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "SAIC",
+            "why": "Large cloud/IT prime, competes on cloud migration and app mod at federal scale",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/"
+          },
+          {
+            "name": "Peraton",
+            "why": "Cloud infrastructure, DevSecOps \u2014 threatens on cloud/tech-heavy RFPs",
+            "url": "https://www.highergov.com/awardee/?search=Peraton"
+          }
+        ],
+        "partners": []
       }
     },
     {
@@ -1121,6 +1297,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -1225,6 +1405,21 @@
         "rex_take": "BLN24 can cover: Data Analytics & Business Intelligence. Gap areas requiring teaming: Space / Defense / ITAR. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Weak / JV"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Booz Allen Hamilton",
+            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
+            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
+          },
+          {
+            "name": "Leidos",
+            "why": "Federal data platforms, large data engineering contracts",
+            "url": "https://www.highergov.com/awardee/?search=Leidos"
+          }
+        ],
+        "partners": []
       }
     },
     {
@@ -1292,6 +1487,10 @@
         "rex_take": "This sits squarely in BLN24's lane \u2014 digital engagement, outreach design, behavioral nudges. Census is the highest-value client ($18.4M in wins). The behavioral science angle connects to the BLN Fors Marsh JV. Main risk: this may be an existing program going to recompete on an existing vehicle. Need to know who the incumbent is and whether it's a set-aside.",
         "watch_notes": "Confirm set-aside type (currently unlisted). Find the incumbent. If it's a small business set-aside with a weak incumbent, this is a genuine pursue. Fors Marsh JV is a natural fit for the behavioral/incentive design component.",
         "recommendation": "Pursue \u2014 confirm set-aside"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -1405,6 +1604,38 @@
         "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Data Engineering & ETL, Software Development / SDLC. Past performance backs it up. Worth a closer look.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
         "recommendation": "Strong"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Booz Allen Hamilton",
+            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
+            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
+          },
+          {
+            "name": "Leidos",
+            "why": "Federal data platforms, large data engineering contracts",
+            "url": "https://www.highergov.com/awardee/?search=Leidos"
+          },
+          {
+            "name": "SAIC",
+            "why": "Large cloud/IT prime, competes on cloud migration and app mod at federal scale",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/"
+          },
+          {
+            "name": "Peraton",
+            "why": "Cloud infrastructure, DevSecOps \u2014 threatens on cloud/tech-heavy RFPs",
+            "url": "https://www.highergov.com/awardee/?search=Peraton"
+          }
+        ],
+        "partners": [
+          {
+            "name": "Clarity24 LLC (BLN24 JV)",
+            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital ($4M). Cloud is Clarity24's core lane.",
+            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
+            "relationship": "Active JV"
+          }
+        ]
       }
     },
     {
@@ -1472,6 +1703,10 @@
         "rex_take": "Clarity24 JV has $7M in confirmed NOAA delivery (cloud migration, app modernization), which is real past performance. But SETSS is primarily a science and engineering vehicle \u2014 meteorology, oceanography, fisheries, facilities. BLN24's lanes (HCD, comms, data analytics) are narrow within this IDIQ. Best path is monitoring for specific task orders in digital/data/comms scope rather than pursuing the IDIQ prime. Due Jan 2027 \u2014 early awareness only.",
         "watch_notes": "Watch for task order RFPs under the existing SETSS vehicle that align with digital, UX, or data analytics scope. Clarity24's NOAA relationship is the asset here. Avoid chasing the IDIQ prime unless a teaming partner with deep NOAA scientific credentials is in place.",
         "recommendation": "Watch / Sub"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -1539,6 +1774,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -1606,6 +1845,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -1678,6 +1921,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: 8A.",
         "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -1769,6 +2016,17 @@
         "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
         "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": [
+          {
+            "name": "SAIC or ManTech",
+            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "relationship": "Recommended sub"
+          }
+        ]
       }
     },
     {
@@ -1835,6 +2093,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: 8A.",
         "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFI.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -1930,6 +2192,21 @@
         "rex_take": "BLN24 can cover: Public Outreach & Stakeholder Engagement. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Moderate"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "ICF International",
+            "why": "Major health/public affairs comms, CDC/HHS anchor \u2014 primary competitor on comms RFPs",
+            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/"
+          },
+          {
+            "name": "Ketchum",
+            "why": "Federal health comms, FDA/CDC campaigns, established agency relationships",
+            "url": "https://www.highergov.com/awardee/?search=Ketchum"
+          }
+        ],
+        "partners": []
       }
     },
     {
@@ -2026,6 +2303,21 @@
         "rex_take": "BLN24 can cover: Due Diligence & Technical Advisory. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Moderate"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Chemonics International",
+            "why": "Largest MCC/USAID implementer \u2014 likely incumbent or strong competitor on MCC work",
+            "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/"
+          },
+          {
+            "name": "DevTech Systems",
+            "why": "MCC/USAID monitoring & evaluation, workforce dev, education advisory \u2014 direct MCC competitor",
+            "url": "https://www.highergov.com/awardee/?search=DevTech+Systems"
+          }
+        ],
+        "partners": []
       }
     },
     {
@@ -2097,6 +2389,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -2172,6 +2468,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -2267,6 +2567,10 @@
         "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -2338,6 +2642,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBP.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBP. Notice type: RFP.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -2409,6 +2717,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -2480,6 +2792,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -2554,6 +2870,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -2625,6 +2945,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -2696,6 +3020,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -2795,6 +3123,23 @@
         "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": [
+          {
+            "name": "SAIC or ManTech",
+            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "relationship": "Recommended sub"
+          },
+          {
+            "name": "Chemonics International",
+            "why": "Largest MCC/USAID implementer. Deep TVET and workforce development in compact countries. Sub arrangement fills BLN24's international workforce gap.",
+            "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/",
+            "relationship": "Recommended sub"
+          }
+        ]
       }
     },
     {
@@ -2866,6 +3211,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -2956,6 +3305,10 @@
         "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -3027,6 +3380,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: 8A.",
         "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -3098,6 +3455,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -3186,6 +3547,17 @@
         "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": [
+          {
+            "name": "SAIC or ManTech",
+            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "relationship": "Recommended sub"
+          }
+        ]
       }
     },
     {
@@ -3276,6 +3648,10 @@
         "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
         "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -3347,6 +3723,10 @@
         "rex_take": "BLN24 is stronger here than the initial score suggests. IRS SB/SE BOD Leadership Initiative ($2.7M via Clarity24) is a DIRECT workforce development / human capital reference \u2014 leadership development, culture assessment for 60+ IRS executives, organizational transformation, capacity building. That directly maps to evaluating workforce training programs. EDARMST $2.5M is same agency (IES). Fors Marsh JV covers evaluation methodology via DHRA $59M behavioral research. Teaming play: BLN24/Clarity24 leads workforce dev + data analytics, Fors Marsh JV leads evaluation design. MRAS response is low-effort. Respond now.",
         "watch_notes": "Respond via Qualtrics form: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi\nHighlight: IRS SB/SE Leadership Initiative (Clarity24 $2.7M) for workforce dev, EDARMST $2.5M for same-agency IES past performance, Fors Marsh JV for evaluation methodology.",
         "recommendation": "Respond to RFI \u2014 Strong"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -3436,6 +3816,10 @@
         "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
         "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -3524,6 +3908,10 @@
         "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
         "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -3649,6 +4037,28 @@
         "rex_take": "BLN24 can cover: Customer Experience (CX) Strategy, Cloud Migration & Infrastructure. Gap areas requiring teaming: CRM / Salesforce Implementation. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
         "recommendation": "Weak / JV"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "SAIC",
+            "why": "Large cloud/IT prime, competes on cloud migration and app mod at federal scale",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/"
+          },
+          {
+            "name": "Peraton",
+            "why": "Cloud infrastructure, DevSecOps \u2014 threatens on cloud/tech-heavy RFPs",
+            "url": "https://www.highergov.com/awardee/?search=Peraton"
+          }
+        ],
+        "partners": [
+          {
+            "name": "Clarity24 LLC (BLN24 JV)",
+            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital ($4M). Cloud is Clarity24's core lane.",
+            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
+            "relationship": "Active JV"
+          }
+        ]
       }
     },
     {
@@ -3738,6 +4148,17 @@
         "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFP.",
         "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": [
+          {
+            "name": "SAIC or ManTech",
+            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "relationship": "Recommended sub"
+          }
+        ]
       }
     },
     {
@@ -3805,6 +4226,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: 8A.",
         "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFI.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -3912,6 +4337,21 @@
         "rex_take": "BLN24 can cover: Data Analytics & Business Intelligence. Gap areas requiring teaming: Medical Services. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Weak / JV"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Booz Allen Hamilton",
+            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
+            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
+          },
+          {
+            "name": "Leidos",
+            "why": "Federal data platforms, large data engineering contracts",
+            "url": "https://www.highergov.com/awardee/?search=Leidos"
+          }
+        ],
+        "partners": []
       }
     },
     {
@@ -3995,6 +4435,10 @@
         "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
         "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -4061,6 +4505,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -4172,6 +4620,31 @@
         "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Data Analytics & Business Intelligence, Due Diligence & Technical Advisory. Past performance backs it up. Worth a closer look.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
         "recommendation": "Strong"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Booz Allen Hamilton",
+            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
+            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
+          },
+          {
+            "name": "Leidos",
+            "why": "Federal data platforms, large data engineering contracts",
+            "url": "https://www.highergov.com/awardee/?search=Leidos"
+          },
+          {
+            "name": "Chemonics International",
+            "why": "Largest MCC/USAID implementer \u2014 likely incumbent or strong competitor on MCC work",
+            "url": "https://www.highergov.com/awardee/chemonics-international-inc-3474/"
+          },
+          {
+            "name": "DevTech Systems",
+            "why": "MCC/USAID monitoring & evaluation, workforce dev, education advisory \u2014 direct MCC competitor",
+            "url": "https://www.highergov.com/awardee/?search=DevTech+Systems"
+          }
+        ],
+        "partners": []
       }
     },
     {
@@ -4238,6 +4711,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -4321,6 +4798,10 @@
         "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -4388,6 +4869,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
         "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -4511,6 +4996,28 @@
         "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
         "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Booz Allen Hamilton",
+            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
+            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
+          },
+          {
+            "name": "Leidos",
+            "why": "Federal data platforms, large data engineering contracts",
+            "url": "https://www.highergov.com/awardee/?search=Leidos"
+          }
+        ],
+        "partners": [
+          {
+            "name": "SAIC or ManTech",
+            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "relationship": "Recommended sub"
+          }
+        ]
       }
     },
     {
@@ -4578,6 +5085,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -4644,6 +5155,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: 8A.",
         "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -4770,6 +5285,44 @@
         "rex_take": "BLN24 can cover: Data Engineering & ETL, Software Development / SDLC. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust. Evaluate whether the BLN24 scope is large enough to prime.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
         "recommendation": "Weak / JV"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Booz Allen Hamilton",
+            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
+            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
+          },
+          {
+            "name": "Leidos",
+            "why": "Federal data platforms, large data engineering contracts",
+            "url": "https://www.highergov.com/awardee/?search=Leidos"
+          },
+          {
+            "name": "SAIC",
+            "why": "Large cloud/IT prime, competes on cloud migration and app mod at federal scale",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/"
+          },
+          {
+            "name": "Peraton",
+            "why": "Cloud infrastructure, DevSecOps \u2014 threatens on cloud/tech-heavy RFPs",
+            "url": "https://www.highergov.com/awardee/?search=Peraton"
+          }
+        ],
+        "partners": [
+          {
+            "name": "SAIC or ManTech",
+            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "relationship": "Recommended sub"
+          },
+          {
+            "name": "Clarity24 LLC (BLN24 JV)",
+            "why": "NOAA IDP Cloud Migration ($4.3M), NOAA AI/ML ($3.6M), CBP Digital ($4M). Cloud is Clarity24's core lane.",
+            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
+            "relationship": "Active JV"
+          }
+        ]
       }
     },
     {
@@ -4893,6 +5446,28 @@
         "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Booz Allen Hamilton",
+            "why": "Data/analytics powerhouse, federal AI/ML \u2014 competes on data engineering and analytics RFPs",
+            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/"
+          },
+          {
+            "name": "Leidos",
+            "why": "Federal data platforms, large data engineering contracts",
+            "url": "https://www.highergov.com/awardee/?search=Leidos"
+          }
+        ],
+        "partners": [
+          {
+            "name": "SAIC or ManTech",
+            "why": "Large cleared cyber primes on OASIS+. Sub arrangement covers ATO maintenance and FISMA compliance without BLN24 holding the ATO.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "relationship": "Recommended sub"
+          }
+        ]
       }
     },
     {
@@ -4959,6 +5534,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     },
     {
@@ -5025,6 +5604,10 @@
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [],
+        "partners": []
       }
     }
   ]

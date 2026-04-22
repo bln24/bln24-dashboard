@@ -948,6 +948,38 @@ function showOppModal(i){
       return html;
     })()+
     (o.summary?'<div style="margin:12px 0 5px;font-size:.7rem;font-weight:700">AI Summary:</div><div style="font-size:.75rem;color:var(--grey);line-height:1.6;background:var(--grey-light);padding:10px 12px;border-radius:6px">'+o.summary+'</div>':'')+
+    // Competitive Intelligence
+    (function(){
+      var ci = o.competitive_intel;
+      if (!ci || (!ci.competitors.length && !ci.partners.length)) return '';
+      var html = '<div style="margin:14px 0 6px;font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--grey)">Competitive Intelligence</div>';
+      html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">';
+      // Competitors
+      if (ci.competitors.length) {
+        html += '<div><div style="font-size:.67rem;font-weight:700;color:#DC2626;margin-bottom:6px">⚔️ Likely Competitors</div>';
+        ci.competitors.forEach(function(c){
+          html += '<div style="margin-bottom:8px;padding:8px 10px;background:#FEF2F2;border-radius:6px">';
+          html += '<a href="'+c.url+'" target="_blank" style="font-size:.72rem;font-weight:700;color:#DC2626;text-decoration:none">'+c.name+' ↗</a>';
+          html += '<div style="font-size:.67rem;color:#6B6E7A;margin-top:2px;line-height:1.4">'+c.why+'</div>';
+          html += '</div>';
+        });
+        html += '</div>';
+      }
+      // Partners
+      if (ci.partners.length) {
+        html += '<div><div style="font-size:.67rem;font-weight:700;color:#15803D;margin-bottom:6px">🤝 Recommended Partners</div>';
+        ci.partners.forEach(function(p){
+          html += '<div style="margin-bottom:8px;padding:8px 10px;background:#F0FDF4;border-radius:6px">';
+          html += '<a href="'+p.url+'" target="_blank" style="font-size:.72rem;font-weight:700;color:#15803D;text-decoration:none">'+p.name+' ↗</a>';
+          html += '<div style="font-size:.63rem;background:#D1FAE5;color:#065F46;padding:1px 6px;border-radius:3px;display:inline-block;margin:2px 0;font-weight:600">'+p.relationship+'</div>';
+          html += '<div style="font-size:.67rem;color:#6B6E7A;margin-top:2px;line-height:1.4">'+p.why+'</div>';
+          html += '</div>';
+        });
+        html += '</div>';
+      }
+      html += '</div>';
+      return html;
+    })()+
     // Full description
     (o.description&&o.description.length>50?'<div style="margin:14px 0 5px;font-size:.7rem;font-weight:700">Full Scope Description:</div><div style="font-size:.74rem;color:var(--black);line-height:1.7;background:var(--grey-light);padding:12px 14px;border-radius:6px;max-height:300px;overflow-y:auto;white-space:pre-wrap">'+o.description+'</div>':'')+ 
     // Contact
