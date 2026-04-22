@@ -357,6 +357,48 @@ def get_competitive_intel(opp):
     if has_cloud or any('cloud' in t.get('task','').lower() for t in tasks if t.get('score',0) >= 3):
         add_partner('cloud')
 
+    # Universal fallback — every opp gets at least basic intel
+    # Only apply fallback if the opp is in BLN24's lanes (not a Pass/out-of-scope opp)
+    fit = cm.get('fit', '')
+    # Unclassified = thin description, not actually a pass
+    is_pass = fit == 'Pass' and not competitors
+    has_any_prime = any(t.get('score', 0) >= 3 for t in tasks) or fit == 'Unclassified'
+
+    if not competitors and not is_pass and has_any_prime:
+        if sa_type in ('8a', 'sb'):
+            if has_hcd or has_web:
+                add_comp(COMPETITORS_BY_LANE['hcd_ux_sb'], 2)
+            if has_comms:
+                add_comp(COMPETITORS_BY_LANE['comms_sb'], 2)
+            if has_data:
+                add_comp(COMPETITORS_BY_LANE['data_sb'], 2)
+            if not competitors:
+                add_comp([
+                    {'name': 'Fearless Solutions', 'why': '8(a) SB federal digital services firm — competes across HCD, comms, and digital platform work for federal agencies.', 'url': f'{HG_BASE}/awardee/fearless-inc-388034/', 'evidence': 'Federal digital services, HCD'},
+                    {'name': 'Coforma', 'why': 'SB federal UX/digital services firm — competes on SB digital services and platform contracts.', 'url': f'{HG_BASE}/awardee/?search=Coforma', 'evidence': 'Federal digital services, UX, OASIS+ SB'},
+                ], 2)
+        elif not is_pass:
+            add_comp(COMPETITORS_BY_LANE['hcd_ux_fo'], 2)
+            if has_data:
+                add_comp(COMPETITORS_BY_LANE['data_sb'], 1)
+    elif is_pass:
+        # Pass opp: note that BLN24 can't prime but flag potential subs
+        competitors.append({
+            'name': 'N/A — Outside BLN24 lane',
+            'why': 'This opp falls outside BLN24\'s confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.',
+            'url': f'{HG_BASE}/awardee/science-applications-international-corporation-saic-25048/',
+            'evidence': 'Out-of-scope for BLN24 prime'
+        })
+
+    # If still no partners suggested, default to JV partners (skip for Pass opps)
+    if not partners and not is_pass and has_any_prime:
+        if has_comms or has_hcd:
+            add_partner('behavioral_science')
+        if has_cloud or has_data or has_web:
+            add_partner('cloud')
+        if not partners:
+            add_partner('behavioral_science')
+
     return {
         'competitors': competitors[:4],
         'partners': partners[:3],

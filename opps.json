@@ -845,7 +845,20 @@
         "recommendation": "Weak / JV"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
         "partners": [
           {
             "name": "Chemonics International",
@@ -951,7 +964,14 @@
         "recommendation": "Pass \u2014 IT infrastructure, not BLN24 scope"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [
           {
             "name": "Amivero LLC (for Census) / IT Works! (federal SB)",
@@ -1035,8 +1055,28 @@
         "recommendation": "Respond to RFI \u2014 Strong"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -1164,7 +1204,20 @@
         "recommendation": "Moderate"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
         "partners": [
           {
             "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
@@ -1370,8 +1423,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -1493,7 +1566,14 @@
             "evidence": "Census, ED, HHS \u2014 surveys, data analytics, statistical research"
           }
         ],
-        "partners": [],
+        "partners": [
+          {
+            "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
+            "why": "STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
+            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
+            "relationship": "Active JV \u2014 Proven Census delivery together"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -1564,8 +1644,28 @@
         "recommendation": "Pursue \u2014 confirm set-aside"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -1683,7 +1783,20 @@
         "recommendation": "Strong"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "Mathematica Policy Research",
+            "why": "Premier federal research and analytics firm. Wins large data analytics and program evaluation contracts across ED, HHS, Labor. Strong competitor on research-heavy data analytics RFPs.",
+            "url": "https://www.highergov.com/awardee/?search=Mathematica",
+            "evidence": "ED, HHS, Labor \u2014 data analytics, program evaluation, research"
+          },
+          {
+            "name": "Westat",
+            "why": "Federal statistical research firm. Survey methodology, data analytics, program evaluation. Competes at Census, ED, HHS on data and research contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Westat",
+            "evidence": "Census, ED, HHS \u2014 surveys, data analytics, statistical research"
+          }
+        ],
         "partners": [
           {
             "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
@@ -1762,8 +1875,28 @@
         "recommendation": "Watch / Sub"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -1834,8 +1967,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -1906,8 +2059,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -1983,8 +2156,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
@@ -2079,7 +2272,14 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [
           {
             "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
@@ -2157,8 +2357,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
@@ -2378,8 +2598,28 @@
         "recommendation": "Moderate"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -2454,8 +2694,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -2534,8 +2794,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -2634,7 +2914,14 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
@@ -2710,8 +2997,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBP \u2014 competitor list filtered accordingly"
       }
     },
@@ -2786,8 +3093,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -2862,8 +3189,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -2941,8 +3288,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -3017,8 +3384,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -3093,8 +3480,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -3197,7 +3604,14 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [
           {
             "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
@@ -3286,8 +3700,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -3381,7 +3815,14 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
@@ -3457,8 +3898,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
@@ -3533,8 +3994,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -3626,7 +4107,14 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [
           {
             "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
@@ -3728,7 +4216,14 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [],
         "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly"
       }
@@ -3804,8 +4299,28 @@
         "recommendation": "Respond to RFI \u2014 Strong"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly"
       }
     },
@@ -3898,7 +4413,14 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [],
         "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly"
       }
@@ -3991,7 +4513,14 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [],
         "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly"
       }
@@ -4121,7 +4650,20 @@
         "recommendation": "Weak / JV"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
         "partners": [
           {
             "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
@@ -4222,7 +4764,14 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [
           {
             "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
@@ -4301,8 +4850,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
@@ -4413,8 +4982,28 @@
         "recommendation": "Weak / JV"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Mathematica Policy Research",
+            "why": "Premier federal research and analytics firm. Wins large data analytics and program evaluation contracts across ED, HHS, Labor. Strong competitor on research-heavy data analytics RFPs.",
+            "url": "https://www.highergov.com/awardee/?search=Mathematica",
+            "evidence": "ED, HHS, Labor \u2014 data analytics, program evaluation, research"
+          },
+          {
+            "name": "Westat",
+            "why": "Federal statistical research firm. Survey methodology, data analytics, program evaluation. Competes at Census, ED, HHS on data and research contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Westat",
+            "evidence": "Census, ED, HHS \u2014 surveys, data analytics, statistical research"
+          }
+        ],
+        "partners": [
+          {
+            "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
+            "why": "STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
+            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
+            "relationship": "Active JV \u2014 Proven Census delivery together"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -4501,7 +5090,14 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
@@ -4572,8 +5168,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -4688,8 +5304,28 @@
         "recommendation": "Strong"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Mathematica Policy Research",
+            "why": "Premier federal research and analytics firm. Wins large data analytics and program evaluation contracts across ED, HHS, Labor. Strong competitor on research-heavy data analytics RFPs.",
+            "url": "https://www.highergov.com/awardee/?search=Mathematica",
+            "evidence": "ED, HHS, Labor \u2014 data analytics, program evaluation, research"
+          },
+          {
+            "name": "Westat",
+            "why": "Federal statistical research firm. Survey methodology, data analytics, program evaluation. Competes at Census, ED, HHS on data and research contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Westat",
+            "evidence": "Census, ED, HHS \u2014 surveys, data analytics, statistical research"
+          }
+        ],
+        "partners": [
+          {
+            "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
+            "why": "STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
+            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
+            "relationship": "Active JV \u2014 Proven Census delivery together"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -4759,8 +5395,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -4847,7 +5503,14 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
@@ -4919,8 +5582,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "ICF International",
+            "why": "Large HCD/comms firm with HHS/CMS anchor clients. Wins health communications, digital services, and HCD work across federal health agencies. Primary competitor on unrestricted health/HCD RFPs.",
+            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/",
+            "evidence": "HHS, CMS, CDC, NIH \u2014 health comms and digital services"
+          },
+          {
+            "name": "Booz Allen Hamilton",
+            "why": "Large cleared digital services and comms prime. Wins on full & open federal digital transformation and comms work.",
+            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/",
+            "evidence": "DoD, federal agencies \u2014 digital transformation, comms"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly"
       }
     },
@@ -5047,7 +5730,14 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [
           {
             "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
@@ -5126,8 +5816,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -5197,8 +5907,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly"
       }
     },
@@ -5329,7 +6059,20 @@
         "recommendation": "Moderate"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "Mathematica Policy Research",
+            "why": "Premier federal research and analytics firm. Wins large data analytics and program evaluation contracts across ED, HHS, Labor. Strong competitor on research-heavy data analytics RFPs.",
+            "url": "https://www.highergov.com/awardee/?search=Mathematica",
+            "evidence": "ED, HHS, Labor \u2014 data analytics, program evaluation, research"
+          },
+          {
+            "name": "Westat",
+            "why": "Federal statistical research firm. Survey methodology, data analytics, program evaluation. Competes at Census, ED, HHS on data and research contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Westat",
+            "evidence": "Census, ED, HHS \u2014 surveys, data analytics, statistical research"
+          }
+        ],
         "partners": [
           {
             "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
@@ -5470,7 +6213,14 @@
         "recommendation": "Pass"
       },
       "competitive_intel": {
-        "competitors": [],
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
         "partners": [
           {
             "name": "Amivero LLC or Spatial Front (for Census) / ManTech (other agencies)",
@@ -5548,8 +6298,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     },
@@ -5619,8 +6389,28 @@
         "recommendation": "Review Needed"
       },
       "competitive_intel": {
-        "competitors": [],
-        "partners": [],
+        "competitors": [
+          {
+            "name": "Fearless Solutions",
+            "why": "8(a) SB federal digital services firm \u2014 competes across HCD, comms, and digital platform work for federal agencies.",
+            "url": "https://www.highergov.com/awardee/fearless-inc-388034/",
+            "evidence": "Federal digital services, HCD"
+          },
+          {
+            "name": "Coforma",
+            "why": "SB federal UX/digital services firm \u2014 competes on SB digital services and platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Coforma",
+            "evidence": "Federal digital services, UX, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "$59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV"
+          }
+        ],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly"
       }
     }
