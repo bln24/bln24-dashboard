@@ -664,10 +664,21 @@ function getAsanaTask(opp){
     var key = title.substring(0, len);
     if (ASANA_TASKS[key]) return ASANA_TASKS[key];
   }
-  // Also check stored task GID from approval state
-  var approval = APPROVALS[i]; // i is the card index in _filteredOpps, which is what was saved
-  if (approval && typeof approval === 'object' && approval.task_gid) {
-    return { gid: approval.task_gid, url: 'https://app.asana.com/0/' + ASANA_PROJECT_GID + '/' + approval.task_gid, section_name: approval.section || 'In Progress' };
+  // Also check stored task GID from any saved approval matching this opp title
+  var titleKey = title.substring(0, 40);
+  for (var key in APPROVALS) {
+    var appr = APPROVALS[key];
+    if (appr && typeof appr === 'object' && appr.task_gid) {
+      // Match by checking if the filtered opp at this index has this title
+      var filteredOpp = (window._filteredOpps||[])[key];
+      if (filteredOpp && (filteredOpp.title||'').toLowerCase().substring(0,40) === titleKey) {
+        return { gid: appr.task_gid, url: appr.task_url || ('https://app.asana.com/0/' + ASANA_PROJECT_GID + '/' + appr.task_gid), section_name: appr.section || 'In Progress' };
+      }
+    }
+  }
+  // Also check opp's own task GID
+  if (opp.asana_task_gid) {
+    return { gid: opp.asana_task_gid, url: 'https://app.asana.com/0/' + ASANA_PROJECT_GID + '/' + opp.asana_task_gid, section_name: 'Active Capture' };
   }
   return null;
 }
