@@ -1,6 +1,6 @@
 {
-  "updated": "2026-05-02T11:04:20.183Z",
-  "count": 58,
+  "updated": "2026-05-03T11:05:04.258Z",
+  "count": 57,
   "opps": [
     {
       "naics": "541511",
@@ -22,7 +22,7 @@
       "isFullOpen": true,
       "ericAlso": false,
       "asana_task_gid": "1214150928848982",
-      "capture_score": 158,
+      "capture_score": 168,
       "win_prob": "Medium (20-40%)",
       "tier": 2,
       "rex_analysis": {
@@ -182,7 +182,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 148,
+      "capture_score_base": 158,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -1385,7 +1385,7 @@
       "type": "New",
       "noticeCategory": "forecast",
       "set_aside": "",
-      "searchLabel": "Census Opps",
+      "searchLabel": "Commerce Opportunities",
       "posted": "2026-02-12",
       "due": "2026-07-01",
       "val_low": 100000000,
@@ -1683,7 +1683,7 @@
       "type": "Recompete",
       "noticeCategory": "forecast",
       "set_aside": "SBA",
-      "searchLabel": "Census Opps",
+      "searchLabel": "Commerce Opportunities",
       "posted": "2026-01-05",
       "due": "2026-07-01",
       "val_low": 5000000,
@@ -5807,100 +5807,6 @@
       ]
     },
     {
-      "naics": "518210",
-      "title": "Hotel/Motel Data for TL frames in 2028 DR and 2030",
-      "agency": "U.S. Census Bureau",
-      "type": "New",
-      "noticeCategory": "forecast",
-      "set_aside": "",
-      "searchLabel": "Census Opps",
-      "posted": "2026-02-27",
-      "due": "2026-07-01",
-      "val_low": 0,
-      "val_high": 250000,
-      "description": "With the buildup for group quarters and address frames Geo is looking for various data sources to perform geo clean up in the math. Hotels and motels are transitory locations for some of the population and in 2020 we purchased a commercial data set of all hotels and motels in the country to get a hold of those transitory locations to help with more accurate enumeration efforts.  The list in 2020 was very helpful in updating the address frames.",
-      "summary": "",
-      "path": "https://www.highergov.com/contract-forecast/1141537",
-      "source_path": "",
-      "contact_email": "linda.buckner@census.gov",
-      "contact_name": "Linda M. Buckner",
-      "is8a": false,
-      "isFullOpen": true,
-      "ericAlso": true,
-      "capture_score": -10,
-      "win_reasons": [
-        "Agency: BLN24 has past performance here (relationship + credibility advantage)",
-        "Full & Open \u2014 competing against all firm sizes; lower win probability without incumbent advantage",
-        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": null,
-      "matched_lanes": [],
-      "scope_tags": [],
-      "scope_owned": [],
-      "scope_gaps": [],
-      "capability_matrix": {
-        "tasks": [],
-        "fit": "Unclassified",
-        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
-        "avg_score": 0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 0,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Full & Open \u2014 harder to win",
-            "score": 2
-          },
-          {
-            "q": "Notice Type",
-            "answer": "Forecast \u2014 early awareness, shape before RFP",
-            "score": 3
-          },
-          {
-            "q": "Contract Value",
-            "answer": "$125K \u2014 Below $500K (small win)",
-            "score": 2
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "With the buildup for group quarters and address frames Geo is looking for various data sources to perform geo clean up in the math. Hotels and motels are transitory locations for some of the population and in 2020 we purchased a commercial data set of all hotels and motels in the country to get a hold of those transitory locations to help with more accurate enumeration efforts.  The list in 2020 w",
-        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
-        "recommendation": "Review Needed"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "ICF International",
-            "why": "Large HCD/comms firm with HHS/CMS anchor clients. Wins health communications, digital services, and HCD work across federal health agencies. Primary competitor on unrestricted health/HCD RFPs.",
-            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/",
-            "evidence": "HHS, CMS, CDC, NIH \u2014 health comms and digital services"
-          },
-          {
-            "name": "Booz Allen Hamilton",
-            "why": "Large cleared digital services and comms prime. Wins on full & open federal digital transformation and comms work.",
-            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/",
-            "evidence": "DoD, federal agencies \u2014 digital transformation, comms"
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly",
-        "score_delta": 5,
-        "score_reasons": [
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": -10,
-      "capture_score_delta": 5,
-      "capture_score_delta_reasons": [
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
       "naics": "541990",
       "title": "One Acquisition Solution for Integrated Services Plus (OASIS+) 8(a) Small Business Set-Aside Continuously Open Solicitation",
       "agency": "Federal Acquisition Service",
@@ -5917,7 +5823,7 @@
       "path": "https://www.highergov.com/contract-opportunity/one-acquisition-solution-for-integrated-services-p-47qrca23r0002-p2-o-3c097",
       "source_path": "https://sam.gov/opp/f21eef1cba7047f09ce6e96e206b9941/view",
       "contact_email": "oasisplusopen@gsa.gov",
-      "contact_name": "Shelba Young",
+      "contact_name": "Valerie Ates",
       "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
@@ -6422,7 +6328,7 @@
       "path": "https://www.highergov.com/contract-opportunity/one-acquisition-solution-for-integrated-services-p-47qrca23r0001-p2-o-0c991",
       "source_path": "https://sam.gov/opp/21db2790be6a44b4aef259a961ad0af1/view",
       "contact_email": "oasisplusopen@gsa.gov",
-      "contact_name": "Shelba Young",
+      "contact_name": "Valerie Ates",
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
