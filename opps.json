@@ -1,6 +1,6 @@
 {
-  "updated": "2026-05-03T11:05:04.258Z",
-  "count": 57,
+  "updated": "2026-05-04T11:01:26.569Z",
+  "count": 67,
   "opps": [
     {
       "naics": "541511",
@@ -22,7 +22,7 @@
       "isFullOpen": true,
       "ericAlso": false,
       "asana_task_gid": "1214150928848982",
-      "capture_score": 168,
+      "capture_score": 178,
       "win_prob": "Medium (20-40%)",
       "tier": 2,
       "rex_analysis": {
@@ -182,7 +182,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 158,
+      "capture_score_base": 168,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -795,6 +795,187 @@
       ]
     },
     {
+      "naics": "541613",
+      "title": "OPE VOICE Office Initiatives",
+      "agency": "Immigration and Customs Enforcement",
+      "type": "New",
+      "noticeCategory": "forecast",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-05-01",
+      "due": "2026-05-11",
+      "val_low": 500000,
+      "val_high": 1000000,
+      "description": "ICE has a requirement for support in the development and execution of the VOICE public awareness, VOICE strategic engagements events, and VOICE digital marketing. VOICE Office requires assistance with the development and dissemination of information to educate key audiences through strategic and innovated communication initiatives and outreach plans to engage stakeholders and government agencies, including assisting with the development of branding and messaging that aligns with the VOICE priorities and mission. The contractor will provide public awareness, media, and outreach engagement services to support the VOICE Office. VOICE Office requires materials and services to assist in the development and dissemination of information to educate key audiences through comprehensive communications initiatives.",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1142207",
+      "source_path": "",
+      "contact_email": "",
+      "contact_name": "",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 38,
+      "win_reasons": [
+        "Strong comms/outreach scope match \u2014 BLN24 proven prime (CMS MNPS $16M, CDC health comms, HUD FHEO outreach)",
+        "Small business set-aside"
+      ],
+      "win_prob": "Medium (20-40%)",
+      "tier": 3,
+      "matched_lanes": [
+        "Strategic Comms (CMS $16M, CDC $3.9M, HUD $2M \u2014 proven prime)"
+      ],
+      "scope_tags": [
+        "Outreach & Engagement",
+        "Digital Marketing",
+        "Branding & Visual Design"
+      ],
+      "scope_owned": [
+        "Outreach & Engagement",
+        "Digital Marketing",
+        "Branding & Visual Design"
+      ],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Branding & Visual Identity",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "MBDA Website Redesign ($4.4M)",
+              "Census Digital Web Services III ($8.3M)"
+            ],
+            "note": "BLN24 prime \u2014 MBDA website/rebrand $4.4M, Census design services",
+            "triggered_by": [
+              "branding"
+            ]
+          },
+          {
+            "task": "Public Outreach & Stakeholder Engagement",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "HUD FHEO Communications & Outreach ($2M)",
+              "HHS OIDP Comprehensive Communications ($10.3M, Fors Marsh JV)",
+              "CDC Communications (DDT $138K, NAC $250K)",
+              "CMS Marketplace Notice Production Services ($16M)"
+            ],
+            "note": "BLN24 prime \u2014 HUD FHEO, HRSA, USCIS outreach work",
+            "triggered_by": [
+              "outreach"
+            ]
+          },
+          {
+            "task": "Digital Marketing & Paid Media",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "HHS OIDP Comprehensive Communications ($10.3M, Fors Marsh JV)",
+              "FTC Paid Advertising (Fors Marsh JV, $581K)",
+              "USDA Social Media & Digital Outreach ($141K)",
+              "CDC Communications (DDT $138K, NAC $250K)"
+            ],
+            "note": "BLN24 prime/JV \u2014 USDA social media, FTC paid media (Fors Marsh), HHS OIDP",
+            "triggered_by": [
+              "digital marketing"
+            ]
+          }
+        ],
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Branding & Visual Identity, Public Outreach & Stakeholder Engagement. Some areas need partner",
+        "avg_score": 3.3,
+        "prime_count": 3,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 3,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$0.8M \u2014 Tier 3 (BLN24 sweet spot)",
+            "score": 5
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "ICE has a requirement for support in the development and execution of the VOICE public awareness, VOICE strategic engagements events, and VOICE digital marketing. VOICE Office requires assistance with the development and dissemination of information to educate key audiences through strategic and innovated communication initiatives and outreach plans to engage stakeholders and government agencies,",
+        "rex_take": "BLN24 can cover: Branding & Visual Identity, Public Outreach & Stakeholder Engagement. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Moderate"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Slalom Inc",
+            "why": "$128M USCIS VER Future contract \u2014 this is THE incumbent on VER program work. Slalom won the VER Future modernization. Any VER-related opp, Slalom is the primary competitor to watch.",
+            "url": "https://www.usaspending.gov/recipient/?query=Slalom+Inc&page=1",
+            "evidence": "USCIS $128.7M VER Future (USASpending confirmed \u2014 DIRECT INCUMBENT on VER work)"
+          },
+          {
+            "name": "Pluribus Digital",
+            "why": "$80.6M USCIS DevSecOps services. Active USCIS digital and tech relationship. SB competitor for USCIS digital work.",
+            "url": "https://www.usaspending.gov/recipient/?query=Pluribus+Digital&page=1",
+            "evidence": "USCIS $80.6M DevSecOps services (USASpending confirmed)"
+          },
+          {
+            "name": "ICF International (mid-market subsidiary)",
+            "why": "ICF has SB subsidiaries that compete on health comms set-asides. Primary health comms competitor regardless of set-aside type.",
+            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/",
+            "evidence": "HHS, CMS, CDC \u2014 health communications, behavior change"
+          },
+          {
+            "name": "Valassis Communications / Vericast",
+            "why": "SB comms/outreach firm with federal health comms contracts. Multilingual outreach and public awareness campaigns.",
+            "url": "https://www.highergov.com/awardee/?search=Vericast",
+            "evidence": "Federal health comms, multilingual outreach"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "GAP: behavioral science / comms depth \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV",
+            "gap_filled": "behavioral science / comms depth"
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 3,
+        "score_reasons": [
+          "Strong incumbent: Slalom Inc (USCIS $128.7M VER Future (USASpending confirmed \u2014 ) \u2014 -12pts",
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 35,
+      "capture_score_delta": 3,
+      "capture_score_delta_reasons": [
+        "Strong incumbent: Slalom Inc (USCIS $128.7M VER Future (USASpending confirmed \u2014 ) \u2014 -12pts",
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
       "naics": "541511",
       "title": "Decennial Transformation & Application Modernization Acquisition",
       "agency": "Department of Commerce",
@@ -1086,6 +1267,186 @@
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
         "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541611",
+      "title": "Management and Governance Directorate (MGD) Financial Analytics, Governance, and Acquisition Support",
+      "agency": "Customs and Border Protection",
+      "type": "New",
+      "noticeCategory": "forecast",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-04-27",
+      "due": "2026-09-25",
+      "val_low": 20000000,
+      "val_high": 50000000,
+      "description": "This re-compete acquisition seeks comprehensive professional support services for the U.S. Customs and Border Protection (CBP) Office of Information Technology (OIT)'s Management and Governance Directorate (MGD), Financial Management Acquisition Division (FMAD), and Strategic Planning & Mission Engagement Division (SPME). Services encompass strategy implementation, financial planning, and investment management, aiming to enhance OIT's budget formulation, planning, and reporting, and ensure transparent, data-driven financial decision-making. Key support areas include Capital Planning and Investment Control (CPIC) coordination, strategic financial planning, strategy management, and critical support for the Unified Immigration Portal (UIP) program, focusing on cost models and reporting. The requirement also involves extensive analytics, automation, data visualization, and platforms technical services, including the development and maintenance of executive dashboards (e.g., Power BI, Power Platform, Apptio Cloud ability). These services are essential for managing extensive financial resources and delivering mission-critical IT capabilities that support trade administration, traveler movement, and border security.\n\n Acquisition Strategy: 100% Small Business Set-Aside competed under General Services Administration (GSA) OASIS+ Small Business (SB) Pool.",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1142186",
+      "source_path": "",
+      "contact_email": "ronetta.m.sweeney@cbp.dhs.gov",
+      "contact_name": "Ronetta Sweeney",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 40,
+      "win_reasons": [
+        "Agency: Clarity24 JV (BLN24 + Accenture) has past performance here",
+        "Partial multimedia scope match \u2014 verify fit vs CDC/USDA visual delivery experience",
+        "Small business set-aside"
+      ],
+      "win_prob": "Low (10-20%)",
+      "tier": 1,
+      "matched_lanes": [
+        "Multimedia (partial)"
+      ],
+      "scope_tags": [
+        "Web Development",
+        "Data Analytics"
+      ],
+      "scope_owned": [
+        "Web Development",
+        "Data Analytics"
+      ],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Web Design & Development",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "MBDA Website Redesign ($4.4M)",
+              "Census Digital Web Services III ($8.3M)",
+              "USPS OIG Oversight.gov Refresh ($387K)",
+              "CBP Digital Transformation (Clarity24, $1.4M)"
+            ],
+            "note": "BLN24 prime \u2014 MBDA $4.4M, Census DWS, Oversight.gov, CBP.gov redesign (Clarity24)",
+            "triggered_by": [
+              "portal"
+            ]
+          },
+          {
+            "task": "Data Analytics & Business Intelligence",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census CES ADRM IT & Research Support ($7M)",
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Dept of Education EDARMST Data Analytics ($2.9M)",
+              "IRS OLS (sub reference)"
+            ],
+            "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
+            "triggered_by": [
+              "reporting"
+            ]
+          },
+          {
+            "task": "Data Visualization",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Dept of Education EDARMST Data Analytics ($2.9M)",
+              "CDC NCHS Visual Communications ($3.6M)"
+            ],
+            "note": "BLN24 prime \u2014 Census SRQA, Education data analytics, CDC NCHS visual data",
+            "triggered_by": [
+              "data visualization",
+              "power bi",
+              "visualization"
+            ]
+          },
+          {
+            "task": "IT Program Management / CIO Support",
+            "score": 1,
+            "score_label": "1 \u2014 Limited / Adjacent Experience",
+            "status": "jv",
+            "pp_refs": [],
+            "note": "BLN24 adjacent \u2014 program management embedded in delivery but no CIO-shop standalone prime",
+            "triggered_by": [
+              "capital planning"
+            ]
+          }
+        ],
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Web Design & Development, Data Analytics & Business Intelligence. Some areas need partner",
+        "avg_score": 3.0,
+        "prime_count": 3,
+        "jv_count": 0,
+        "gap_count": 1,
+        "total_tasks": 4,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$35.0M \u2014 Tier 2+ (BLN24 has won at this range)",
+            "score": 4
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This re-compete acquisition seeks comprehensive professional support services for the U.S. Customs and Border Protection (CBP) Office of Information Technology (OIT)'s Management and Governance Directorate (MGD), Financial Management Acquisition Division (FMAD), and Strategic Planning & Mission Engagement Division (SPME). Services encompass strategy implementation, financial planning, and investme",
+        "rex_take": "BLN24 can cover: Web Design & Development, Data Analytics & Business Intelligence. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Moderate"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Softrams LLC",
+            "why": "SB Agile web dev and digital services firm, CMS and VA work. Competes directly on SB web development and digital platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Softrams",
+            "evidence": "CMS, VA \u2014 Agile dev, digital services, SB set-asides"
+          },
+          {
+            "name": "Agile Six Applications",
+            "why": "SB federal digital services, CMS/VA web development, OASIS+ SB holder. Competes on federal web platform and digital services set-asides.",
+            "url": "https://www.highergov.com/awardee/?search=Agile+Six",
+            "evidence": "CMS, VA \u2014 web dev, digital services, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
+            "why": "GAP: cloud engineering / tech depth \u2014 STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
+            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
+            "relationship": "Active JV \u2014 Proven Census delivery together",
+            "gap_filled": "cloud engineering / tech depth"
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 18,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 30,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
         "No dominant incumbent identified \u2014 +5pts"
       ]
     },
@@ -1385,7 +1746,7 @@
       "type": "New",
       "noticeCategory": "forecast",
       "set_aside": "",
-      "searchLabel": "Commerce Opportunities",
+      "searchLabel": "Census Opps",
       "posted": "2026-02-12",
       "due": "2026-07-01",
       "val_low": 100000000,
@@ -1516,6 +1877,281 @@
       "capture_score_delta_reasons": [
         "Strong incumbent: Vidoori Inc + T-Rex Solutions (teamed) (Vidoori: $173M Census BPA, $7.3M CMMU AI/ML modern) \u2014 -12pts",
         "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541519",
+      "title": "VSPTS (Visa Security Program Tracking System)",
+      "agency": "Immigration and Customs Enforcement",
+      "type": "New",
+      "noticeCategory": "forecast",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-04-22",
+      "due": "2026-09-26",
+      "val_low": 5000000,
+      "val_high": 10000000,
+      "description": "The purpose of this procurement is to provide Operations and Maintenance (O&M) Support Services for the Department of Homeland Security (DHS) / Immigration & Customs Enforcement (ICE) / Homeland Security Investigations (HSI) Visa Security Program (VSP). The VSP requires Information Technology (IT) support to maintain the Visa Security Program Tracking System (VSPTS) Software Operations and Maintenance (O&M) Sup\nThe VSPTS support team requires an understanding of the following major technologies:\n\u00e2\u20ac\u00a2\tJava Enterprise Edition (Java EE)\n\u00e2\u20ac\u00a2\tPostgreSQL RDBMS\n\u00e2\u20ac\u00a2\tJBoss / WildFly\n\u00e2\u20ac\u00a2\tArtemis Active MQ\n\u00e2\u20ac\u00a2\tAnsible\n\u00e2\u20ac\u00a2\tTerraform\n\u00e2\u20ac\u00a2\tArtificial Intelligence (AI)/Machine Learning (ML)\n\u00e2\u20ac\u00a2\tOther emerging technology\nAdditionally, it is helpful for VSPTS support to have helpful detailed understanding of DoS Consular Affairs and CBP National Targeting Center (NTC) business and technical organizations.\nport Services.",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1142227",
+      "source_path": "",
+      "contact_email": "",
+      "contact_name": "",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 15,
+      "win_reasons": [
+        "Strong data/analytics scope match \u2014 BLN24 proven prime (Census SRQA AI/ML, Education EDARMST risk analytics)",
+        "Small business set-aside",
+        "\u26a0\ufe0f Scope gap: AI / Machine Learning \u2014 BLN24 has no confirmed prime delivery in these lanes"
+      ],
+      "win_prob": "Low (10-20%)",
+      "tier": 2,
+      "matched_lanes": [
+        "Data/Analytics (Census $4.1M SRQA, Dept of Education $2.9M \u2014 proven prime)"
+      ],
+      "scope_tags": [
+        "AI / Machine Learning"
+      ],
+      "scope_owned": [],
+      "scope_gaps": [
+        "AI / Machine Learning"
+      ],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Data Engineering & ETL",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Census MAF/TIGER Modernization & Cloud ($4.5M)",
+              "Census EDL Applications ($4.5M)"
+            ],
+            "note": "BLN24 prime \u2014 Census SRQA, MAF/TIGER, EDL all heavy data engineering",
+            "triggered_by": [
+              "sql"
+            ]
+          }
+        ],
+        "fit": "Strong",
+        "fit_reason": "BLN24 can prime all or most identified task areas with recent past performance",
+        "avg_score": 4.0,
+        "prime_count": 1,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 1,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Yes \u2014 strong alignment",
+            "score": 5
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$7.5M \u2014 Tier 2+ (BLN24 has won at this range)",
+            "score": 4
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The purpose of this procurement is to provide Operations and Maintenance (O&M) Support Services for the Department of Homeland Security (DHS) / Immigration & Customs Enforcement (ICE) / Homeland Security Investigations (HSI) Visa Security Program (VSP). The VSP requires Information Technology (IT) support to maintain the Visa Security Program Tracking System (VSPTS) Software Operations and Mainten",
+        "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Data Engineering & ETL. Past performance backs it up. Worth a closer look.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Strong"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Slalom Inc",
+            "why": "$128M USCIS VER Future contract \u2014 this is THE incumbent on VER program work. Slalom won the VER Future modernization. Any VER-related opp, Slalom is the primary competitor to watch.",
+            "url": "https://www.usaspending.gov/recipient/?query=Slalom+Inc&page=1",
+            "evidence": "USCIS $128.7M VER Future (USASpending confirmed \u2014 DIRECT INCUMBENT on VER work)"
+          },
+          {
+            "name": "Pluribus Digital",
+            "why": "$80.6M USCIS DevSecOps services. Active USCIS digital and tech relationship. SB competitor for USCIS digital work.",
+            "url": "https://www.usaspending.gov/recipient/?query=Pluribus+Digital&page=1",
+            "evidence": "USCIS $80.6M DevSecOps services (USASpending confirmed)"
+          }
+        ],
+        "partners": [
+          {
+            "name": "BLN Fors Marsh JV LLC (Active JV)",
+            "why": "GAP: research and analytics depth \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
+            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
+            "relationship": "Active JV",
+            "gap_filled": "research and analytics depth"
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 3,
+        "score_reasons": [
+          "Strong incumbent: Slalom Inc (USCIS $128.7M VER Future (USASpending confirmed \u2014 ) \u2014 -12pts",
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 15,
+      "capture_score_delta": 3,
+      "capture_score_delta_reasons": [
+        "Strong incumbent: Slalom Inc (USCIS $128.7M VER Future (USASpending confirmed \u2014 ) \u2014 -12pts",
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541519",
+      "title": "Microsoft 365 Management, Operational Support, and Enhancements (MOSE)",
+      "agency": "Citizen and Immigration Services",
+      "type": "Recompete",
+      "noticeCategory": "forecast",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-04-30",
+      "due": "2027-02-26",
+      "val_low": 20000000,
+      "val_high": 50000000,
+      "description": "USCIS has a requirement for Microsoft 365 Management, Operational Support, and Enhancements (MOSE). This Operations and Maintenance Services requirement will assist USCIS to operate, optimize, enhance and maintain existing M365 services, onboard new M365 services, and plan and develop strategies for future service sustainment, not limited to, but including: Core productivity applications (Word, Excel, PowerPoint, Outlook, OneNote); Collaboration and Communication (Microsoft Team, SharePoint Online, OneDrive for Business, Loop, Whiteboard); Security and Compliance (Microsoft Purview, Defender, Entra ID, Intune, Rights Management and Information protection); Power Platform (Power Bi, Apps, Automate and Virtual Agents); Project and Task Management (Planner, To Do, List); Additional Services and Tools (Booking, Forms, Stream, Sway); Artificial Intelligence and Automation (Microsoft Copilot).  Assisting in planning and executing the rollout of Copilot /AI service in accordance with DHS and USCIS security and privacy policies as well as additional Microsoft 365 Services, USCIS may choose to adopt.   Additionally, USCIS needs support for M365 service integrations with both Microsoft and non-Microsoft Technologies, e.g., AirWatch, ServiceNow, Archive360, JAMF, and AgilQuest.\n\n*Small business set aside to be determined through market research. USCIS intends to issue a Request for Information during May 2026.",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1142246",
+      "source_path": "",
+      "contact_email": "lisa.t.walker@uscis.dhs.gov",
+      "contact_name": "Lisa Walker",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 15,
+      "win_reasons": [
+        "Partial data/analytics scope match \u2014 verify fit vs Census/Education delivery experience",
+        "Partial web/digital scope match \u2014 verify fit vs MBDA/Census delivery experience",
+        "Small business set-aside",
+        "\u26a0\ufe0f Scope gap: AI / Machine Learning, CRM / Salesforce \u2014 BLN24 has no confirmed prime delivery in these lanes"
+      ],
+      "win_prob": "Low (10-20%)",
+      "tier": 1,
+      "matched_lanes": [
+        "Data/Analytics (partial)",
+        "Web/Digital (partial)"
+      ],
+      "scope_tags": [
+        "AI / Machine Learning",
+        "CRM / Salesforce"
+      ],
+      "scope_owned": [],
+      "scope_gaps": [
+        "AI / Machine Learning",
+        "CRM / Salesforce"
+      ],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Data Visualization",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Dept of Education EDARMST Data Analytics ($2.9M)",
+              "CDC NCHS Visual Communications ($3.6M)"
+            ],
+            "note": "BLN24 prime \u2014 Census SRQA, Education data analytics, CDC NCHS visual data",
+            "triggered_by": [
+              "power bi"
+            ]
+          },
+          {
+            "task": "CRM / Salesforce Implementation",
+            "score": 0,
+            "score_label": "0 \u2014 No Experience (Gap)",
+            "status": "gap",
+            "pp_refs": [],
+            "note": "BLN24 gap \u2014 no CRM implementation prime on record",
+            "triggered_by": [
+              "servicenow"
+            ]
+          }
+        ],
+        "fit": "Weak / JV",
+        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
+        "avg_score": 1.5,
+        "prime_count": 1,
+        "jv_count": 0,
+        "gap_count": 1,
+        "total_tasks": 2,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Partial \u2014 significant gaps",
+            "score": 2
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$35.0M \u2014 Tier 2+ (BLN24 has won at this range)",
+            "score": 4
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "USCIS has a requirement for Microsoft 365 Management, Operational Support, and Enhancements (MOSE). This Operations and Maintenance Services requirement will assist USCIS to operate, optimize, enhance and maintain existing M365 services, onboard new M365 services, and plan and develop strategies for future service sustainment, not limited to, but including: Core productivity applications (Word, Ex",
+        "rex_take": "BLN24 can cover: Data Visualization. Gap areas requiring teaming: CRM / Salesforce Implementation. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Weak / JV"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Slalom Inc",
+            "why": "$128M USCIS VER Future contract \u2014 this is THE incumbent on VER program work. Slalom won the VER Future modernization. Any VER-related opp, Slalom is the primary competitor to watch.",
+            "url": "https://www.usaspending.gov/recipient/?query=Slalom+Inc&page=1",
+            "evidence": "USCIS $128.7M VER Future (USASpending confirmed \u2014 DIRECT INCUMBENT on VER work)"
+          },
+          {
+            "name": "Pluribus Digital",
+            "why": "$80.6M USCIS DevSecOps services. Active USCIS digital and tech relationship. SB competitor for USCIS digital work.",
+            "url": "https://www.usaspending.gov/recipient/?query=Pluribus+Digital&page=1",
+            "evidence": "USCIS $80.6M DevSecOps services (USASpending confirmed)"
+          }
+        ],
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": -2,
+        "score_reasons": [
+          "Strong incumbent: Slalom Inc (USCIS $128.7M VER Future (USASpending confirmed \u2014 ) \u2014 -12pts",
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 15,
+      "capture_score_delta": -2,
+      "capture_score_delta_reasons": [
+        "Strong incumbent: Slalom Inc (USCIS $128.7M VER Future (USASpending confirmed \u2014 ) \u2014 -12pts",
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
         "No dominant incumbent identified \u2014 +5pts"
       ]
     },
@@ -1683,7 +2319,7 @@
       "type": "Recompete",
       "noticeCategory": "forecast",
       "set_aside": "SBA",
-      "searchLabel": "Commerce Opportunities",
+      "searchLabel": "Census Opps",
       "posted": "2026-01-05",
       "due": "2026-07-01",
       "val_low": 5000000,
@@ -2219,6 +2855,158 @@
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541519",
+      "title": "OIT ServiceNow Licensing",
+      "agency": "CBP Office of Information and Technology",
+      "type": "Recompete",
+      "noticeCategory": "forecast",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-04-29",
+      "due": "2026-07-16",
+      "val_low": 20000000,
+      "val_high": 50000000,
+      "description": "The purpose is to acquire OIT ServiceNow Licensing and Software.  Service Now currently supports the following areas within OIT - Single OIT intake (user portal), Service Catalog, TRM (AppEngine), Password Reset (ITOM), Knowledge management, Vendor Registration (CSM), CMDB (ITSM/ITOM), Service Mapping (ITOM), Event Management (ITOM), Cloud Management (ITOM), Incident/Problem/Change (ITSM), and ENTSD Project Management (ITBM).\n\nAcquisition Strategy:  Total SB set aside on NASA SEWP",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1142199",
+      "source_path": "",
+      "contact_email": "michael.v.chambers@cbp.dhs.gov",
+      "contact_name": "Michael Chambers",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 7,
+      "win_reasons": [
+        "Agency: Clarity24 JV (BLN24 + Accenture) has past performance here",
+        "Small business set-aside",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
+        "\u26a0\ufe0f Gap area detected: CRM / Salesforce \u2014 would need a teaming partner for this scope"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": 1,
+      "matched_lanes": [],
+      "scope_tags": [
+        "Web Development",
+        "CRM / Salesforce"
+      ],
+      "scope_owned": [
+        "Web Development"
+      ],
+      "scope_gaps": [
+        "CRM / Salesforce"
+      ],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Web Design & Development",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "MBDA Website Redesign ($4.4M)",
+              "Census Digital Web Services III ($8.3M)",
+              "USPS OIG Oversight.gov Refresh ($387K)",
+              "CBP Digital Transformation (Clarity24, $1.4M)"
+            ],
+            "note": "BLN24 prime \u2014 MBDA $4.4M, Census DWS, Oversight.gov, CBP.gov redesign (Clarity24)",
+            "triggered_by": [
+              "portal"
+            ]
+          },
+          {
+            "task": "CRM / Salesforce Implementation",
+            "score": 0,
+            "score_label": "0 \u2014 No Experience (Gap)",
+            "status": "gap",
+            "pp_refs": [],
+            "note": "BLN24 gap \u2014 no CRM implementation prime on record",
+            "triggered_by": [
+              "servicenow"
+            ]
+          }
+        ],
+        "fit": "Weak / JV",
+        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
+        "avg_score": 2.0,
+        "prime_count": 1,
+        "jv_count": 0,
+        "gap_count": 1,
+        "total_tasks": 2,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Partial \u2014 significant gaps",
+            "score": 2
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$35.0M \u2014 Tier 2+ (BLN24 has won at this range)",
+            "score": 4
+          },
+          {
+            "q": "Specialized Tech Gap",
+            "answer": "Warning: \"gis\" \u2014 area where BLN24 has limited PP (debrief data)",
+            "score": 1
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The purpose is to acquire OIT ServiceNow Licensing and Software.  Service Now currently supports the following areas within OIT - Single OIT intake (user portal), Service Catalog, TRM (AppEngine), Password Reset (ITOM), Knowledge management, Vendor Registration (CSM), CMDB (ITSM/ITOM), Service Mapping (ITOM), Event Management (ITOM), Cloud Management (ITOM), Incident/Problem/Change (ITSM), and ENT",
+        "rex_take": "BLN24 can cover: Web Design & Development. Gap areas requiring teaming: CRM / Salesforce Implementation. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Weak / JV"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Softrams LLC",
+            "why": "SB Agile web dev and digital services firm, CMS and VA work. Competes directly on SB web development and digital platform contracts.",
+            "url": "https://www.highergov.com/awardee/?search=Softrams",
+            "evidence": "CMS, VA \u2014 Agile dev, digital services, SB set-asides"
+          },
+          {
+            "name": "Agile Six Applications",
+            "why": "SB federal digital services, CMS/VA web development, OASIS+ SB holder. Competes on federal web platform and digital services set-asides.",
+            "url": "https://www.highergov.com/awardee/?search=Agile+Six",
+            "evidence": "CMS, VA \u2014 web dev, digital services, OASIS+ SB"
+          }
+        ],
+        "partners": [
+          {
+            "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
+            "why": "GAP: cloud engineering / tech depth \u2014 STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
+            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
+            "relationship": "Active JV \u2014 Proven Census delivery together",
+            "gap_filled": "cloud engineering / tech depth"
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 18,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 7,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
         "No dominant incumbent identified \u2014 +5pts"
       ]
     },
@@ -3975,105 +4763,6 @@
       ]
     },
     {
-      "naics": "541611",
-      "title": "SOF Global Services Delivery (SOFGSD)",
-      "agency": "U.S. Special Operations Command",
-      "type": "Solicitation",
-      "noticeCategory": "rfp",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-04-10",
-      "due": "2026-05-13",
-      "val_low": null,
-      "val_high": null,
-      "description": "UPDATED as of 10 Apr 2026\n\nOn Tuesday Apr 14, 2026 &sdot; 2:30pm &ndash; 4pm (Eastern Time - New York) a webinar will be hosted to provide a demonstration of the submission process for the Special Operations Forces Global Services Delivery solicitation (H9240026RE001) within Symphony. This includes establishing company assets, claiming them within your proposal, submitting your proposal, and submitting questions to the program office, as needed. Registration within Symphony will be covered at the end.\n\n\n\tSubmission URL: https://ussocom-sofgsd.app.cloud.gov/\n\tSymphony Support Documentation:\n\t\n\t\tPrepare Your SOFGSD Technical Proposal\n\t\tSOFGSD: Master Crosswalk &amp; Quick Reference\n\t\n\t\n\n\nMeeting Link:  meet.google.com/ztn-aoup-cez\n\nJoin by phone:  (US) +1 518-547-0014;  PIN: 276802174\n\nFor support within Symphony, contact client.support@apexlogic.com\n\nPlease note, this demonstration will be recorded and published afterwards.\n\n&lt;&lt;BREAK&gt;&gt;\n\nUPDATED as of 31 Mar 2026\n\nSF 30 H9240026RE001 Amendment 0001 is added as an attachment.  This amendment updates the proposal submission date and time on the SF 33 to read 13 May 2026, at 1:00pm Eastern.\n\n&lt;&lt;BREAK&gt;&gt;\n\n30 Mar 2026: FINAL RFP &ndash; SOF Global Services Delivery (SOFGSD) H9240026RE001\n\nThis is a formal Request for Proposal (RFP) for the United States Special Operations Command (USSOCOM) SOF Global Services Delivery (SOFGSD) Indefinite Delivery Indefinite Quantity contract.  The sole points of contact for information regarding this acquisition are the Contracting Officers:\n\n\n\tPrimary Contracting Officer:  Sherri Ashby; sherri.ashby@socom.mil\n\tContract Specialist: Ashley Watson; ashley.s.watson.civ@socom.mil\n\n\nThis final RFP is released in relation to Draft RFP H9240025RE002 which can be reviewed via the following link: https://sam.gov/workspace/contract/opp/63d402fe5ab14912ac95ac72ae5f639a/view\n\nSOFGSD is being solicited as a 100% Small Business Set-Aside under NAICS 541611, with a SB Size Standard o",
-      "summary": "Background\n The United States Special Operations Command (USSOCOM) is a Unified Combatant Command of the Department of Defense (DoD) tasked with providing fully capable Special Operations Forces to defend the United States and its interests. \n\nThe SOF Global Services Delivery (SOFGSD) contract aims to support USSOCOM's mission and command priorities, which include competing and winning for the nation, preserving and growing readiness, innovating for future threats, advancing partnerships, and strengthening the force and family. This contract is a 100% Small Business Set-Aside.\n\nWork Details\n T",
-      "path": "https://www.highergov.com/contract-opportunity/sof-global-services-delivery-sofgsd-h9240026re001-o-10f93",
-      "source_path": "https://sam.gov/opp/4a253e7c7d1b4b05a4f5331b1d405226/view",
-      "contact_email": "sherri.ashby@socom.mil",
-      "contact_name": "Sherri Ashby",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": 0,
-      "win_reasons": [
-        "Small business set-aside",
-        "OUT OF SCOPE: ship \u2014 not in BLN24 delivery lanes",
-        "\u26a0\ufe0f Scope gap: Cybersecurity \u2014 BLN24 has no confirmed prime delivery in these lanes"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": null,
-      "matched_lanes": [],
-      "scope_tags": [
-        "Cybersecurity"
-      ],
-      "scope_owned": [],
-      "scope_gaps": [
-        "Cybersecurity"
-      ],
-      "capability_matrix": {
-        "tasks": [],
-        "fit": "Unclassified",
-        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
-        "avg_score": 0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 0,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFP \u2014 active solicitation, actionable now",
-            "score": 5
-          },
-          {
-            "q": "Contract Value",
-            "answer": "Value not listed \u2014 check solicitation",
-            "score": 3
-          },
-          {
-            "q": "Specialized Tech Gap",
-            "answer": "Warning: \"gis\" \u2014 area where BLN24 has limited PP (debrief data)",
-            "score": 1
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "UPDATED as of 10 Apr 2026\n\nOn Tuesday Apr 14, 2026 &sdot; 2:30pm &ndash; 4pm (Eastern Time - New York) a webinar will be hosted to provide a demonstration of the submission process for the Special Operations Forces Global Services Delivery solicitation (H9240026RE001) within Symphony. This includes establishing company assets, claiming them within your proposal, submitting your proposal, and submi",
-        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Review Needed"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Search USASpending.gov for this agency",
-            "why": "No confirmed competitor data for U.S. Special Operations Command. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
-            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-            "evidence": "Pull from USASpending before listing competitors"
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 10,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": 0,
-      "capture_score_delta": 10,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
       "naics": "541519",
       "title": "SolarWinds",
       "agency": "Air Combat Command",
@@ -4251,6 +4940,422 @@
         ],
         "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541511",
+      "title": "Imagery Management and Annotation Tools Software and Associated Support",
+      "agency": "National Oceanic and Atmospheric Administration",
+      "type": "Recompete",
+      "noticeCategory": "forecast",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-04-29",
+      "due": "2026-07-01",
+      "val_low": 500000,
+      "val_high": 1000000,
+      "description": "Imagery Management and Annotation Tools Software and Associated SupportSBIR Phase III contract",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1142431",
+      "source_path": "",
+      "contact_email": "sarah.morison@noaa.gov",
+      "contact_name": "Sarah Morison",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 0,
+      "win_reasons": [
+        "Agency: BLN24 has past performance here (relationship + credibility advantage)",
+        "Small business set-aside",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
+        "\u26a0\ufe0f Scope gap: Cybersecurity \u2014 BLN24 has no confirmed prime delivery in these lanes"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": 3,
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ],
+      "scope_owned": [],
+      "scope_gaps": [
+        "Cybersecurity"
+      ],
+      "capability_matrix": {
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
+        "prime_count": 0,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 0,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$0.8M \u2014 Tier 3 (BLN24 sweet spot)",
+            "score": 5
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Imagery Management and Annotation Tools Software and Associated SupportSBIR Phase III contract",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for National Oceanic and Atmospheric Administration. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
+          }
+        ],
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541511",
+      "title": "Test Requirements - Forecasted 1",
+      "agency": "Department of Commerce",
+      "type": "New",
+      "noticeCategory": "forecast",
+      "set_aside": "TBD",
+      "searchLabel": "Commerce Opportunities",
+      "posted": "2026-04-29",
+      "due": "2026-07-01",
+      "val_low": 0,
+      "val_high": 250000,
+      "description": "Enter meaningful description to include the Purpose and Scope of Work for the requirements.",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1142371",
+      "source_path": "",
+      "contact_email": "amanda.n.white@census.gov",
+      "contact_name": "Amanda N White",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": true,
+      "capture_score": 0,
+      "win_reasons": [
+        "Agency: BLN24 has past performance here (relationship + credibility advantage)",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": null,
+      "matched_lanes": [],
+      "scope_tags": [],
+      "scope_owned": [],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
+        "prime_count": 0,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 0,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "tbd",
+            "score": 3
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$125K \u2014 Below $500K (small win)",
+            "score": 2
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Enter meaningful description to include the Purpose and Scope of Work for the requirements.",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: TBD.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for Department of Commerce. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
+          }
+        ],
+        "partners": [],
+        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541519",
+      "title": "\"Open Radio Access Network (ORAN) System\"",
+      "agency": "National Institute of Standards and Technology",
+      "type": "New",
+      "noticeCategory": "forecast",
+      "set_aside": "TBD",
+      "searchLabel": "Commerce Opportunities",
+      "posted": "2026-04-29",
+      "due": "2026-07-01",
+      "val_low": 250000,
+      "val_high": 500000,
+      "description": "\"The 5G Cybersecurity project in collaboration with industry participants to show how the components of 5G architectures can securely mitigate cybersecurity risks and meet industry sectors\u2019 compliance requirements. 5G standards have been designed to support use case\u2013specific capabilities by way of network deployment options. New desegregated radio technologies like Open Radio Access Networks (Open Ran or ORAN) have matured to the point where products and commercial offerings are available for purchase. \"",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1142389",
+      "source_path": "",
+      "contact_email": "autumn.hernandez@nist.gov",
+      "contact_name": "Autumn Hernandez",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": true,
+      "capture_score": 0,
+      "win_reasons": [
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
+        "\u26a0\ufe0f Scope gap: Cybersecurity \u2014 BLN24 has no confirmed prime delivery in these lanes"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": null,
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ],
+      "scope_owned": [],
+      "scope_gaps": [
+        "Cybersecurity"
+      ],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Cybersecurity / FISMA / Zero Trust",
+            "score": 0,
+            "score_label": "0 \u2014 No Experience (Gap)",
+            "status": "gap",
+            "pp_refs": [],
+            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
+            "triggered_by": [
+              "cybersecurity"
+            ]
+          }
+        ],
+        "fit": "Pass",
+        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
+        "avg_score": 0.0,
+        "prime_count": 0,
+        "jv_count": 0,
+        "gap_count": 1,
+        "total_tasks": 1,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "tbd",
+            "score": 3
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "No \u2014 primarily gap work",
+            "score": 1
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$375K \u2014 Below $500K (small win)",
+            "score": 2
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "\"The 5G Cybersecurity project in collaboration with industry participants to show how the components of 5G architectures can securely mitigate cybersecurity risks and meet industry sectors\u2019 compliance requirements. 5G standards have been designed to support use case\u2013specific capabilities by way of network deployment options. New desegregated radio technologies like Open Radio Access Networks (Open",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
+        "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
+        "partners": [
+          {
+            "name": "IgniteAction LLC (Census) / ManTech (other agencies)",
+            "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 For Census: IgniteAction won \\$557M Census OCISS BPA for cloud infrastructure + cybersecurity and zero trust \u2014 they already have the Census cyber relationship and cleared staff. For other agencies: ManTech brings cleared cyber, ATO maintenance, and FISMA expertise. Large businesses cannot prime SB set-asides, making them ideal subs \u2014 they get on the contract, BLN24 primes.",
+            "url": "https://www.highergov.com/awardee/?search=IgniteAction",
+            "relationship": "Recommended large business sub (agency-specific)",
+            "gap_filled": "Cybersecurity / FISMA / Zero Trust"
+          }
+        ],
+        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541618",
+      "title": "Spectrum Valuation",
+      "agency": "National Telecommunications and Information Administration",
+      "type": "New",
+      "noticeCategory": "forecast",
+      "set_aside": "TBD",
+      "searchLabel": "Commerce Opportunities",
+      "posted": "2026-04-29",
+      "due": "2026-07-01",
+      "val_low": 10000000,
+      "val_high": 20000000,
+      "description": "NTIA seeks contractor support for spectrum valuation to design and deliver a defensible, repeatable, and data driven valuation of designated radio-frequency spectrum bands to inform strategic planning, budgeting, policy development, and potential reallocation/sharing decisions. The effort will produce an analytical framework, an economic model, market analysis, operational utility assessment, and valuation outputs with clear decision support for leadership. A standardized valuation methodology\u2014grounded in economic, technical, regulatory, and operational factors\u2014is needed to support investment, sharing, auction participation, relocation cost analysis, and long term spectrum strategy.",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1142398",
+      "source_path": "",
+      "contact_email": "arichardson@ntia.gov",
+      "contact_name": "Antonio Richardson",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": true,
+      "capture_score": 0,
+      "win_reasons": [
+        "OUT OF SCOPE: ship \u2014 not in BLN24 delivery lanes",
+        "\u26a0\ufe0f Scope gap: Cybersecurity \u2014 BLN24 has no confirmed prime delivery in these lanes"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": 2,
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ],
+      "scope_owned": [],
+      "scope_gaps": [
+        "Cybersecurity"
+      ],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Due Diligence & Technical Advisory",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "IRS Human Centered Design & Research BPA ($7M)",
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Dept of Education EDARMST Data Analytics ($2.9M)"
+            ],
+            "note": "BLN24 prime \u2014 consulting/advisory embedded in major contracts (IRS, Census, Education)",
+            "triggered_by": [
+              "sme"
+            ]
+          }
+        ],
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Due Diligence & Technical Advisory. Some areas need partner",
+        "avg_score": 3.0,
+        "prime_count": 1,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 1,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "tbd",
+            "score": 3
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$15.0M \u2014 Tier 2+ (BLN24 has won at this range)",
+            "score": 4
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "NTIA seeks contractor support for spectrum valuation to design and deliver a defensible, repeatable, and data driven valuation of designated radio-frequency spectrum bands to inform strategic planning, budgeting, policy development, and potential reallocation/sharing decisions. The effort will produce an analytical framework, an economic model, market analysis, operational utility assessment, and",
+        "rex_take": "BLN24 can cover: Due Diligence & Technical Advisory. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: TBD. Notice type: FORECAST.",
+        "recommendation": "Moderate"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for National Telecommunications and Information Administration. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
+          }
+        ],
+        "partners": [],
+        "set_aside_note": "Set-aside: TBD \u2014 competitor list filtered accordingly",
         "score_delta": 10,
         "score_reasons": [
           "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -4592,115 +5697,6 @@
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541519",
-      "title": "ServiceNow Licensing",
-      "agency": "National Institute of Standards and Technology",
-      "type": "Recompete",
-      "noticeCategory": "forecast",
-      "set_aside": "",
-      "searchLabel": "Commerce Opportunities",
-      "posted": "2026-01-05",
-      "due": "2026-07-01",
-      "val_low": 2000000,
-      "val_high": 5000000,
-      "description": "ServiceNow Licensing",
-      "summary": "",
-      "path": "https://www.highergov.com/contract-forecast/1140468",
-      "source_path": "",
-      "contact_email": "aijun.zhang@nist.gov",
-      "contact_name": "Aijun Zhang",
-      "is8a": false,
-      "isFullOpen": true,
-      "ericAlso": true,
-      "capture_score": 0,
-      "win_reasons": [
-        "Full & Open \u2014 competing against all firm sizes; lower win probability without incumbent advantage",
-        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
-        "\u26a0\ufe0f Scope gap: CRM / Salesforce \u2014 BLN24 has no confirmed prime delivery in these lanes"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": 3,
-      "matched_lanes": [],
-      "scope_tags": [
-        "CRM / Salesforce"
-      ],
-      "scope_owned": [],
-      "scope_gaps": [
-        "CRM / Salesforce"
-      ],
-      "capability_matrix": {
-        "tasks": [
-          {
-            "task": "CRM / Salesforce Implementation",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no CRM implementation prime on record",
-            "triggered_by": [
-              "servicenow"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Full & Open \u2014 harder to win",
-            "score": 2
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
-          },
-          {
-            "q": "Notice Type",
-            "answer": "Forecast \u2014 early awareness, shape before RFP",
-            "score": 3
-          },
-          {
-            "q": "Contract Value",
-            "answer": "$3.5M \u2014 Tier 3 (BLN24 sweet spot)",
-            "score": 5
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "ServiceNow Licensing",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
-        "recommendation": "Pass"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "N/A \u2014 Outside BLN24 lane",
-            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
-            "evidence": "Out-of-scope for BLN24 prime"
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly",
-        "score_delta": 5,
-        "score_reasons": [
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": 0,
-      "capture_score_delta": 5,
-      "capture_score_delta_reasons": [
         "No dominant incumbent identified \u2014 +5pts"
       ]
     },
@@ -5807,6 +6803,213 @@
       ]
     },
     {
+      "naics": "518210",
+      "title": "Hotel/Motel Data for TL frames in 2028 DR and 2030",
+      "agency": "U.S. Census Bureau",
+      "type": "New",
+      "noticeCategory": "forecast",
+      "set_aside": "",
+      "searchLabel": "Census Opps",
+      "posted": "2026-02-27",
+      "due": "2026-07-01",
+      "val_low": 0,
+      "val_high": 250000,
+      "description": "With the buildup for group quarters and address frames Geo is looking for various data sources to perform geo clean up in the math. Hotels and motels are transitory locations for some of the population and in 2020 we purchased a commercial data set of all hotels and motels in the country to get a hold of those transitory locations to help with more accurate enumeration efforts.  The list in 2020 was very helpful in updating the address frames.",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1141537",
+      "source_path": "",
+      "contact_email": "linda.buckner@census.gov",
+      "contact_name": "Linda M. Buckner",
+      "is8a": false,
+      "isFullOpen": true,
+      "ericAlso": true,
+      "capture_score": -10,
+      "win_reasons": [
+        "Agency: BLN24 has past performance here (relationship + credibility advantage)",
+        "Full & Open \u2014 competing against all firm sizes; lower win probability without incumbent advantage",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": null,
+      "matched_lanes": [],
+      "scope_tags": [],
+      "scope_owned": [],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
+        "prime_count": 0,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 0,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Full & Open \u2014 harder to win",
+            "score": 2
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$125K \u2014 Below $500K (small win)",
+            "score": 2
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "With the buildup for group quarters and address frames Geo is looking for various data sources to perform geo clean up in the math. Hotels and motels are transitory locations for some of the population and in 2020 we purchased a commercial data set of all hotels and motels in the country to get a hold of those transitory locations to help with more accurate enumeration efforts.  The list in 2020 w",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: None listed.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "ICF International",
+            "why": "Large HCD/comms firm with HHS/CMS anchor clients. Wins health communications, digital services, and HCD work across federal health agencies. Primary competitor on unrestricted health/HCD RFPs.",
+            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/",
+            "evidence": "HHS, CMS, CDC, NIH \u2014 health comms and digital services"
+          },
+          {
+            "name": "Booz Allen Hamilton",
+            "why": "Large cleared digital services and comms prime. Wins on full & open federal digital transformation and comms work.",
+            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/",
+            "evidence": "DoD, federal agencies \u2014 digital transformation, comms"
+          }
+        ],
+        "partners": [],
+        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly",
+        "score_delta": 5,
+        "score_reasons": [
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": -10,
+      "capture_score_delta": 5,
+      "capture_score_delta_reasons": [
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541512",
+      "title": "NIIS-2 Follow-on",
+      "agency": "National Oceanic and Atmospheric Administration",
+      "type": "Recompete",
+      "noticeCategory": "forecast",
+      "set_aside": "",
+      "searchLabel": "Commerce Opportunities",
+      "posted": "2026-04-29",
+      "due": "2026-07-01",
+      "val_low": 100000000,
+      "val_high": 100000000,
+      "description": "The Government intends to procure a labor contract to provide IT operation and maintenance services to supporting NESDIS Enterprise IT infrastructure",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1142422",
+      "source_path": "",
+      "contact_email": "thomas.heinrichs@noaa.gov",
+      "contact_name": "Thomas Heinrichs",
+      "is8a": false,
+      "isFullOpen": true,
+      "ericAlso": true,
+      "capture_score": -10,
+      "win_reasons": [
+        "Agency: BLN24 has past performance here (relationship + credibility advantage)",
+        "Full & Open \u2014 competing against all firm sizes; lower win probability without incumbent advantage",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": 1,
+      "matched_lanes": [],
+      "scope_tags": [],
+      "scope_owned": [],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "IT Infrastructure & Telecommunications",
+            "score": 0,
+            "score_label": "0 \u2014 No Experience (Gap)",
+            "status": "gap",
+            "pp_refs": [],
+            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
+            "triggered_by": [
+              "it infrastructure"
+            ]
+          }
+        ],
+        "fit": "Pass",
+        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
+        "avg_score": 0.0,
+        "prime_count": 0,
+        "jv_count": 0,
+        "gap_count": 1,
+        "total_tasks": 1,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Full & Open \u2014 harder to win",
+            "score": 2
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "No \u2014 primarily gap work",
+            "score": 1
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$100.0M \u2014 Tier 2+ (BLN24 has won at this range)",
+            "score": 4
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The Government intends to procure a labor contract to provide IT operation and maintenance services to supporting NESDIS Enterprise IT infrastructure",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: FORECAST.",
+        "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
+        "partners": [
+          {
+            "name": "Leidos or Peraton (large business sub)",
+            "why": "GAP: IT Infrastructure & Telecommunications \u2014 Large businesses cannot prime on SB set-asides \u2014 making them ideal subs. Leidos and Peraton have deep IT infrastructure, network, and telecom capabilities. BLN24 primes with SB status, they bring the infrastructure technical depth. This is exactly the model: BLN24 gets the contract, large firm gets the sub work they could not win as prime.",
+            "url": "https://www.highergov.com/awardee/?search=Leidos",
+            "relationship": "Recommended large business sub",
+            "gap_filled": "IT Infrastructure & Telecommunications"
+          }
+        ],
+        "set_aside_note": "Set-aside:  \u2014 competitor list filtered accordingly",
+        "score_delta": 5,
+        "score_reasons": [
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": -10,
+      "capture_score_delta": 5,
+      "capture_score_delta_reasons": [
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
       "naics": "541990",
       "title": "One Acquisition Solution for Integrated Services Plus (OASIS+) 8(a) Small Business Set-Aside Continuously Open Solicitation",
       "agency": "Federal Acquisition Service",
@@ -6142,6 +7345,121 @@
         ]
       },
       "capture_score_base": -15,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541519",
+      "title": "Network Backhaul Turnkey Services",
+      "agency": "Customs and Border Protection",
+      "type": "New",
+      "noticeCategory": "forecast",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-04-22",
+      "due": "2026-05-25",
+      "val_low": 350000,
+      "val_high": 500000,
+      "description": "U.S. Customs and Border Protection (CBP), in coordination with U.S. Border Patrol (USBP), require reliable, secure, and prioritized communications in remote and high traffic border areas, where commercial networks are often insufficient. To support mission critical operations and LGDS sensors, agents, and vehicles, CBP needs Satellite Backhaul connectivity for life, health, and safety capabilities. Satellite services will integrate with CBP\u00e2\u20ac\u2122s fiber optic infrastructure to enable real time data and situational awareness along LGDS corridors. \n\nAcquisition Strategy: NASA SEWP V, TECH Ops II",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1142185",
+      "source_path": "",
+      "contact_email": "",
+      "contact_name": "",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": -18,
+      "win_reasons": [
+        "Agency: Clarity24 JV (BLN24 + Accenture) has past performance here",
+        "Small business set-aside",
+        "OUT OF SCOPE: vehicle \u2014 not in BLN24 delivery lanes"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": null,
+      "matched_lanes": [],
+      "scope_tags": [],
+      "scope_owned": [],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "IT Infrastructure & Telecommunications",
+            "score": 0,
+            "score_label": "0 \u2014 No Experience (Gap)",
+            "status": "gap",
+            "pp_refs": [],
+            "note": "BLN24 gap \u2014 no IT infrastructure prime on record",
+            "triggered_by": [
+              "fiber optic"
+            ]
+          }
+        ],
+        "fit": "Pass",
+        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
+        "avg_score": 0.0,
+        "prime_count": 0,
+        "jv_count": 0,
+        "gap_count": 1,
+        "total_tasks": 1,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "No \u2014 primarily gap work",
+            "score": 1
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$425K \u2014 Below $500K (small win)",
+            "score": 2
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "U.S. Customs and Border Protection (CBP), in coordination with U.S. Border Patrol (USBP), require reliable, secure, and prioritized communications in remote and high traffic border areas, where commercial networks are often insufficient. To support mission critical operations and LGDS sensors, agents, and vehicles, CBP needs Satellite Backhaul connectivity for life, health, and safety capabilities",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
+        "partners": [
+          {
+            "name": "Leidos or Peraton (large business sub)",
+            "why": "GAP: IT Infrastructure & Telecommunications \u2014 Large businesses cannot prime on SB set-asides \u2014 making them ideal subs. Leidos and Peraton have deep IT infrastructure, network, and telecom capabilities. BLN24 primes with SB status, they bring the infrastructure technical depth. This is exactly the model: BLN24 gets the contract, large firm gets the sub work they could not win as prime.",
+            "url": "https://www.highergov.com/awardee/?search=Leidos",
+            "relationship": "Recommended large business sub",
+            "gap_filled": "IT Infrastructure & Telecommunications"
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": -18,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
