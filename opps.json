@@ -1,6 +1,6 @@
 {
-  "updated": "2026-05-07T11:01:26.795Z",
-  "count": 67,
+  "updated": "2026-05-10T11:03:42.137Z",
+  "count": 62,
   "opps": [
     {
       "naics": "541511",
@@ -22,7 +22,7 @@
       "isFullOpen": true,
       "ericAlso": false,
       "asana_task_gid": "1214150928848982",
-      "capture_score": 188,
+      "capture_score": 208,
       "win_prob": "Medium (20-40%)",
       "tier": 2,
       "rex_analysis": {
@@ -182,7 +182,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 178,
+      "capture_score_base": 198,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -659,307 +659,6 @@
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
         "Active JV partner fills gap (BLN Fors Marsh JV LLC (Active ) \u2014 +5pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541611",
-      "title": "Decennial Schedule Support (DSS)",
-      "agency": "U.S. Census Bureau",
-      "type": "Solicitation",
-      "noticeCategory": "rfp",
-      "set_aside": "8A",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-05-05",
-      "due": "2026-05-08",
-      "val_low": null,
-      "val_high": null,
-      "description": "PURPOSE:\nThe purpose of this requirement is for the Government to receive the following: \n-\tSupport and maintenance of the 2030 Census lifecycle (includes the 2026 Census Test, 2028 Dress Rehearsal, 2030 Execution, and other related tests), and IMS (described above in section 3.2),\n-\tCloseout and archive 2030 Census lifecycle (2026 Census Test, 2028 Dress Rehearsal, 2030 Execution, and other related tests) IMS data as directed by the USCB,\n-\tDocument Lessons Learned and suggested improvements for future decennial program/project schedules,\n-\tAssist with the development of the 2040 schedule architecture,\n-\tEnhancements to the Decennial Directorate Schedule Management System and 2030 Census lifecycle Project Schedules, to allow for greater efficiency of automated processing,\n-\tEnhancements to the Decennial Directorate Schedule Management System and 2030 Census Project Schedules, to allow for improved data exchange with external partners,\n-\tEnhancements to improve data quality of the Decennial Directorate Schedule Management System and 2030 Census lifecycle Project Schedules,\n-\tImplementation of more cost-effective processes for updating the 2030 Census lifecycle IMS and continuing to keep the schedules current,\n-\tA full range of Schedule Management services in support of the 2030 Census lifecycle IMS Schedules, Schedule Management Support Services for all Decennial Directorate Divisions and other Decennial Directorate initiatives as directed by the USCB, and\n-\tResearch innovate and adapt newest schedule management best practices, technologies, and trends in the industry as directed by the USCB\n\nSCOPE:\nThe Contractor shall perform tasks in support of establishing, maintaining, and managing the Decennial Schedule System, the DCMD Project Schedules, the Decennial Schedule Management Plan and Processes, and the Decennial Integrated Master Schedule (IMS) as defined by SB for the 2030 Census lifecycle. This includes management of the Oracle Primavera and support of the Proj",
-      "summary": "Background\n The US Census Bureau (USCB) is seeking support for the 2030 Census lifecycle, which includes the 2026 Census Test, 2028 Dress Rehearsal, and 2030 Execution. \nThe goal of this contract is to provide comprehensive support and maintenance for the Integrated Master Schedule (IMS) associated with these activities, ensuring effective management and documentation of lessons learned for future decennial programs.\n\nWork Details\n The Contractor shall perform tasks including: \n- Support and maintenance of the 2030 Census lifecycle IMS data as directed by USCB. \n- Closeout and archive of IMS d",
-      "path": "https://www.highergov.com/contract-opportunity/decennial-schedule-support-dss-rfp1808141-o-45916",
-      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFP1808141?contractNumber=",
-      "contact_email": "james.n.brooks.jr@census.gov",
-      "contact_name": "Jim Brooks",
-      "is8a": true,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": 51,
-      "win_reasons": [
-        "Agency: BLN24 has past performance here (relationship + credibility advantage)",
-        "Partial data/analytics scope match \u2014 verify fit vs Census/Education delivery experience",
-        "8(a) set-aside \u2014 direct vehicle match for BLN24",
-        "\u26a0\ufe0f Gap area detected: Cybersecurity \u2014 would need a teaming partner for this scope"
-      ],
-      "win_prob": "Medium (20-40%)",
-      "tier": null,
-      "matched_lanes": [
-        "Data/Analytics (partial)"
-      ],
-      "scope_tags": [
-        "Data Engineering",
-        "Cybersecurity"
-      ],
-      "scope_owned": [
-        "Data Engineering"
-      ],
-      "scope_gaps": [
-        "Cybersecurity"
-      ],
-      "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Data Engineering & ETL",
-            "score": 4,
-            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "Census SRQA AI/ML/Data Quality ($4.1M)",
-              "Census MAF/TIGER Modernization & Cloud ($4.5M)",
-              "Census EDL Applications ($4.5M)"
-            ],
-            "note": "BLN24 prime \u2014 Census SRQA, MAF/TIGER, EDL all heavy data engineering",
-            "triggered_by": [
-              "data quality"
-            ]
-          },
-          {
-            "task": "Accessibility / Section 508 Compliance",
-            "score": 3,
-            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "IRS Human Centered Design & Research BPA ($7M)",
-              "Census Digital Web Services III ($8.3M)"
-            ],
-            "note": "BLN24 prime \u2014 IRS HCD BPA scope included 508 compliance testing",
-            "triggered_by": [
-              "ada"
-            ]
-          }
-        ],
-        "fit": "Strong",
-        "fit_reason": "BLN24 can prime all or most identified task areas with recent past performance",
-        "avg_score": 3.5,
-        "prime_count": 2,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 2,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "8(a) \u2014 Direct vehicle match",
-            "score": 5
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "Yes \u2014 strong alignment",
-            "score": 5
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFP \u2014 active solicitation, actionable now",
-            "score": 5
-          },
-          {
-            "q": "Contract Value",
-            "answer": "Value not listed \u2014 check solicitation",
-            "score": 3
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "PURPOSE:\nThe purpose of this requirement is for the Government to receive the following: \n-\tSupport and maintenance of the 2030 Census lifecycle (includes the 2026 Census Test, 2028 Dress Rehearsal, 2030 Execution, and other related tests), and IMS (described above in section 3.2),\n-\tCloseout and archive 2030 Census lifecycle (2026 Census Test, 2028 Dress Rehearsal, 2030 Execution, and other relat",
-        "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Data Engineering & ETL, Accessibility / Section 508 Compliance. Past performance backs it up. Worth a closer look.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
-        "recommendation": "Strong"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Vidoori Inc",
-            "why": "$173M Enterprise Testing BPA + $7.3M CMMU AI/ML modernization + $4.7M internet data collection system. Multiple Census BPAs. One of the strongest Census relationships in the SB space.",
-            "url": "https://www.usaspending.gov/recipient/?query=Vidoori&page=1",
-            "evidence": "$173M Census BPA, $7.3M CMMU modernization, $4.7M internet data collection"
-          },
-          {
-            "name": "T-Rex Solutions (often teams with Vidoori)",
-            "why": "Former 2020 Census technical integrator ($1.6B ESF SE&I BPA). Deep Census IT systems engineering knowledge. Frequently sub or JV on Census modernization work. Incumbent risk.",
-            "url": "https://www.usaspending.gov/recipient/?query=Vidoori&page=1",
-            "evidence": "2020 Census integrator $1.6B, deep Census systems knowledge"
-          },
-          {
-            "name": "Spatial Front Inc",
-            "why": "SB with $17M+ in confirmed Census tech awards. Cloud and data engineering. Active on Census SB set-asides.",
-            "url": "https://www.highergov.com/awardee/spatial-front-inc-10000821/",
-            "evidence": "Census Bureau $17M+ confirmed"
-          },
-          {
-            "name": "Amivero LLC",
-            "why": "SB with $5M Census SB set-aside awards. Cloud and data modernization focus.",
-            "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
-            "evidence": "Census Bureau $5M SB set-aside"
-          }
-        ],
-        "partners": [
-          {
-            "name": "BLN Fors Marsh JV LLC (Active JV)",
-            "why": "GAP: research and analytics depth \u2014 $59M behavioral research (DHRA OPA), HHS OIDP $10.3M comprehensive comms, FTC paid media $4.5M BPA. Behavioral science is Fors Marsh's deepest lane.",
-            "url": "https://www.highergov.com/awardee/bln-fors-marsh-jv-llc-476980511/",
-            "relationship": "Active JV",
-            "gap_filled": "research and analytics depth"
-          }
-        ],
-        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly",
-        "score_delta": 6,
-        "score_reasons": [
-          "Strong incumbent: T-Rex Solutions (often teams with Vidoori) (2020 Census integrator $1.6B, deep Census systems ) \u2014 -12pts",
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "Proven JV partner with agency history (BLN Fors Marsh JV LLC (Active ) \u2014 +8pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": 45,
-      "capture_score_delta": 6,
-      "capture_score_delta_reasons": [
-        "Strong incumbent: T-Rex Solutions (often teams with Vidoori) (2020 Census integrator $1.6B, deep Census systems ) \u2014 -12pts",
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "Proven JV partner with agency history (BLN Fors Marsh JV LLC (Active ) \u2014 +8pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541611",
-      "title": "HHS ACF - Chafee SOTA II - MRAS",
-      "agency": "Administration for Children and Families",
-      "type": "Sources Sought",
-      "noticeCategory": "rfi",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-05-01",
-      "due": "2026-05-07",
-      "val_low": null,
-      "val_high": null,
-      "description": "On behalf of Department of Health and Human Services (HHS), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browser.\n\nOnly responses submitted through the linked RFI will be accepted. Nothing else will be evaluated or recorded (this includes selecting 'interested' within eBuy).\n\n\nLink to RFI: https://feedback.gsa.gov/jfe/form/SV_4YjCIIxM2tqEvfU\n\n\nAdditional Information:\nDue to the structure of contracts in GSA eBuy, you may receive multiple Sources Sought or RFI notifications for the same requirement if it falls under multiple of your company's awarded SINs. However, please note that you are only required to respond to the RFI once.\n\nBe sure to use the URL provided above to submit your response.\n\n\nAny questions regarding this RFI will be responded to by email only.  Send your inquiry to: rfi@research.gsa.gov and be sure to include the RFQ number.\n\n",
-      "summary": "Background\n The Department of Health and Human Services (HHS) is seeking market research for the Administration for Children and Families (ACF) under the Chafee SOTA II - MRAS initiative. The goal of this contract is to support various study objectives through optional services that may be elected at any time during the contract period, ensuring compliance with relevant standards.\n\nWork Details\n The contractor shall perform the following tasks:\n\n1. Ensure all external communication products meet or exceed Section 508 compliance standards.\n\n2. Deliver materials necessary for multimedia content ",
-      "path": "https://www.highergov.com/contract-opportunity/hhs-acf-chafee-sota-ii-mras-rfi1809448-r-0114f",
-      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFI1809448?contractNumber=",
-      "contact_email": "rfi@research.gsa.gov",
-      "contact_name": "Jon Dewolfe",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": 53,
-      "win_reasons": [
-        "Strong HCD/UX scope match \u2014 BLN24 proven prime (IRS $7M HCD BPA, Census UX, CBP digital transformation)",
-        "Partial multimedia scope match \u2014 verify fit vs CDC/USDA visual delivery experience",
-        "Small business set-aside"
-      ],
-      "win_prob": "Medium (20-40%)",
-      "tier": null,
-      "matched_lanes": [
-        "HCD/UX (IRS $7M, Census, CBP \u2014 proven prime)",
-        "Multimedia (partial)"
-      ],
-      "scope_tags": [
-        "Accessibility / 508",
-        "Video & Multimedia"
-      ],
-      "scope_owned": [
-        "Accessibility / 508",
-        "Video & Multimedia"
-      ],
-      "scope_gaps": [],
-      "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Video Production & Multimedia",
-            "score": 4,
-            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "CDC NCHS Visual Communications ($3.6M)",
-              "DOI/NPS Video Production ($90K)",
-              "USDA NRCS/USFS Video/Photography ($138K)",
-              "Census Assignment Photography ($136K)"
-            ],
-            "note": "BLN24 prime \u2014 CDC NCHS visual comms $3.6M, DOI/USDA video work",
-            "triggered_by": [
-              "multimedia"
-            ]
-          },
-          {
-            "task": "Accessibility / Section 508 Compliance",
-            "score": 3,
-            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "IRS Human Centered Design & Research BPA ($7M)",
-              "Census Digital Web Services III ($8.3M)"
-            ],
-            "note": "BLN24 prime \u2014 IRS HCD BPA scope included 508 compliance testing",
-            "triggered_by": [
-              "section 508",
-              "508 compliance"
-            ]
-          }
-        ],
-        "fit": "Strong",
-        "fit_reason": "BLN24 can prime all or most identified task areas with recent past performance",
-        "avg_score": 3.5,
-        "prime_count": 2,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 2,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "Yes \u2014 strong alignment",
-            "score": 5
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFI \u2014 intel gathering, position early",
-            "score": 4
-          },
-          {
-            "q": "Contract Value",
-            "answer": "Value not listed \u2014 check solicitation",
-            "score": 3
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "On behalf of Department of Health and Human Services (HHS), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the",
-        "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Video Production & Multimedia, Accessibility / Section 508 Compliance. Past performance backs it up. Worth a closer look.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
-        "recommendation": "Strong"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Search USASpending.gov for this agency",
-            "why": "No confirmed competitor data for Administration for Children and Families. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
-            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-            "evidence": "Pull from USASpending before listing competitors"
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 10,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": 43,
-      "capture_score_delta": 10,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
         "No dominant incumbent identified \u2014 +5pts"
       ]
     },
@@ -2741,6 +2440,132 @@
     },
     {
       "naics": "541611",
+      "title": "Technical Advisory Support Services: Transition of Food for Peace  to USDA",
+      "agency": "USDA Office of the Chief Financial Officer",
+      "type": "Synopsis Solicitation",
+      "noticeCategory": "rfp",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search 2",
+      "posted": "2026-05-09",
+      "due": "2026-05-27",
+      "val_low": null,
+      "val_high": null,
+      "description": "This is a combined synopsis/solicitation for commercial items prepared in accordance with the format in FAR Part 12.  This announcement constitutes the only solicitation.  Quotations are being requested and a separate written solicitation will not be issued. \n\nSolicitation number 12314426Q0118 is issued as a Request for Quotation (RFQ) for Technical Advisory Support Services supporting the transition of Food for Peace to the US Department of Agriculture (USDA).\n\nThis acquisition is set-aside for small business concerns.  The applicable North American Industry Classification Standard Code is NAICS 541611  The small business size standard is $24.5M  This acquisition is a Total Small Business Set-Aside.  All responsible sources may submit a quotation which will be considered by the agency. \n",
+      "summary": "Background\n The USDA is seeking technical advisory support services to facilitate the transition of the Food for Peace program to its management. This initiative aims to ensure that USDA can effectively adapt its systems and processes to meet the unique requirements of the Food for Peace operating environment, thereby bridging any operational gaps during the transition.\n\nWork Details\n The contractor will provide technical advisory services that include: understanding the unique requirements of Food for Peace\u2019s operating environment; guiding USDA in adapting its systems, processes, and procedur",
+      "path": "https://www.highergov.com/contract-opportunity/technical-advisory-support-services-transition-of-12314426q0118-k-5a6db",
+      "source_path": "https://sam.gov/opp/4a9d3090f78a463d8d38de29f6d5a6db/view",
+      "contact_email": "diana.rath@usda.gov",
+      "contact_name": "Diana Rath",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 10,
+      "win_reasons": [
+        "Agency: BLN24 has past performance here (relationship + credibility advantage)",
+        "Small business set-aside",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": null,
+      "matched_lanes": [],
+      "scope_tags": [],
+      "scope_owned": [],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Accessibility / Section 508 Compliance",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "IRS Human Centered Design & Research BPA ($7M)",
+              "Census Digital Web Services III ($8.3M)"
+            ],
+            "note": "BLN24 prime \u2014 IRS HCD BPA scope included 508 compliance testing",
+            "triggered_by": [
+              "ada"
+            ]
+          },
+          {
+            "task": "Due Diligence & Technical Advisory",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "IRS Human Centered Design & Research BPA ($7M)",
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Dept of Education EDARMST Data Analytics ($2.9M)"
+            ],
+            "note": "BLN24 prime \u2014 consulting/advisory embedded in major contracts (IRS, Census, Education)",
+            "triggered_by": [
+              "technical advisory",
+              "advisory support"
+            ]
+          }
+        ],
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Accessibility / Section 508 Compliance, Due Diligence & Technical Advisory. Some areas need partner",
+        "avg_score": 3.0,
+        "prime_count": 2,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 2,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
+          },
+          {
+            "q": "Notice Type",
+            "answer": "RFP \u2014 active solicitation, actionable now",
+            "score": 5
+          },
+          {
+            "q": "Contract Value",
+            "answer": "Value not listed \u2014 check solicitation",
+            "score": 3
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This is a combined synopsis/solicitation for commercial items prepared in accordance with the format in FAR Part 12.  This announcement constitutes the only solicitation.  Quotations are being requested and a separate written solicitation will not be issued. \n\nSolicitation number 12314426Q0118 is issued as a Request for Quotation (RFQ) for Technical Advisory Support Services supporting the transit",
+        "rex_take": "BLN24 can cover: Accessibility / Section 508 Compliance, Due Diligence & Technical Advisory. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Moderate"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for USDA Office of the Chief Financial Officer. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
+          }
+        ],
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 10,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541611",
       "title": "ADDP Digital Incentives",
       "agency": "U.S. Census Bureau",
       "type": "Recompete",
@@ -3717,124 +3542,6 @@
       ]
     },
     {
-      "naics": "541990",
-      "title": "Technology Test and Evaluation Division (TTED) Technology Evaluations Support Services",
-      "agency": "National Institute of Standards and Technology",
-      "type": "Synopsis Solicitation",
-      "noticeCategory": "rfp",
-      "set_aside": "SBA",
-      "searchLabel": "Commerce Opportunities",
-      "posted": "2026-04-13",
-      "due": "2026-05-07",
-      "val_low": null,
-      "val_high": null,
-      "description": "This is a Combined Synopsis / Solicitation for Commercial Items prepared in accordance with the format in FAR Subpart 12.6 &ndash; Streamlined Procedures for Evaluation and Solicitation of Commercial Items &ndash; as supplemented with additional information included in this notice. This solicitation is a Request for Quotations (RFQ). The solicitation document and incorporated provisions and clauses are those in effect through Federal Acquisition Circular 2026-01, effective March 13, 2026.  \n\n\n\nThe associated North American Industrial Classification System (NAICS) code for this procurement is 541990 &ndash; All Other Professional, Scientific, and Technical Services with a small business size standard of $19.5 Million.\n\n\n\nThis acquisition is being procured as a 100% small business set-aside; all qualified small business concerns capable of providing the required services are eligible.\n\n\n\nFAR Part 12 and acquisition procedures will be utilized.\n\n\n\nThe Government intends to award one or more Indefinite Delivery/ Indefinite Quantity (IDIQ) contract(s) to provide Technology Evaluations Support Services for the Technology Test and Evaluation Division (TTED) at the National Institute of Standards and Technology (NIST).\n\n\n\nThe maximum cumulative amount of all orders placed under the awarded IDIQ contract shall be $7,400,000.00.\n\n\n\nSee attached SF1449 and its attachments for pertinent details of this solicitation.  Please note that this is a draft solicitation and the final solicitation is expected to be issued on or around April 23, 2026.\n",
-      "summary": "Background\n The National Institute of Standards and Technology (NIST) is a non-regulatory federal agency within the U.S. Department of Commerce, established to promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology.\n\nThe Technology Test and Evaluation Division (TTED) within NIST's Information Technology Laboratory (ITL) conducts evaluation-driven research programs to accelerate the readiness of emerging technologies for deployment. This contract aims to provide Technology Evaluations Support Services to assist TTED in its mission.\n\nWo",
-      "path": "https://www.highergov.com/contract-opportunity/technology-test-and-evaluation-division-tted-tec-1333nd26qnb770088-k-04e94",
-      "source_path": "https://sam.gov/opp/ac74d4efcaab4c3199d22a91d0304b27/view",
-      "contact_email": "jennifer.lohmeier@nist.gov",
-      "contact_name": "Jennifer Lohmeier",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": true,
-      "capture_score": 3,
-      "win_reasons": [
-        "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
-        "Small business set-aside",
-        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
-        "\u26a0\ufe0f Gap area detected: Cybersecurity, Scientific/Technical Support \u2014 would need a teaming partner for this scope"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": null,
-      "matched_lanes": [],
-      "scope_tags": [
-        "Survey & Research",
-        "Cybersecurity",
-        "Scientific/Technical Support"
-      ],
-      "scope_owned": [
-        "Survey & Research"
-      ],
-      "scope_gaps": [
-        "Cybersecurity",
-        "Scientific/Technical Support"
-      ],
-      "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Scientific / Laboratory Support",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 not a service lane",
-            "triggered_by": [
-              "laboratory",
-              "research program"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFP \u2014 active solicitation, actionable now",
-            "score": 5
-          },
-          {
-            "q": "Contract Value",
-            "answer": "Value not listed \u2014 check solicitation",
-            "score": 3
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "This is a Combined Synopsis / Solicitation for Commercial Items prepared in accordance with the format in FAR Subpart 12.6 &ndash; Streamlined Procedures for Evaluation and Solicitation of Commercial Items &ndash; as supplemented with additional information included in this notice. This solicitation is a Request for Quotations (RFQ). The solicitation document and incorporated provisions and clause",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Pass"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "N/A \u2014 Outside BLN24 lane",
-            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
-            "evidence": "Out-of-scope for BLN24 prime"
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 10,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": 3,
-      "capture_score_delta": 10,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
       "naics": "541511",
       "title": "D--LABVIEW SOFTWARE BRAND NAME OR EQUAL DEVELOPMENT/T",
       "agency": "USGS Office of Acquisitions and Grants",
@@ -3851,7 +3558,7 @@
       "path": "https://www.highergov.com/contract-opportunity/d-labview-software-brand-name-or-equal-developmen-140g0226q0038-o-6dd41",
       "source_path": "https://sam.gov/opp/75aee514afbc4508a047ca152af8da35/view",
       "contact_email": "lisa_williams@ios.doi.gov",
-      "contact_name": "Lisa Williams",
+      "contact_name": "Lisa D. Williams",
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
@@ -4135,747 +3842,6 @@
       ]
     },
     {
-      "naics": "541690",
-      "title": "DHS CISA - Infrastructure Security Exercise Support Serv - MRAS",
-      "agency": "Federal Acquisition Service",
-      "type": "Sources Sought",
-      "noticeCategory": "rfi",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-04-24",
-      "due": "2026-05-07",
-      "val_low": null,
-      "val_high": null,
-      "description": "On behalf of Department of Homeland Security (DHS), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browser.\n\nOnly responses submitted through the linked RFI will be accepted. Nothing else will be evaluated or recorded (this includes selecting 'interested' within eBuy).\n\n\nLink to RFI: https://feedback.gsa.gov/jfe/form/SV_eb689IdpdEiCv1I\n\n\nAdditional Information:\nDue to the structure of contracts in GSA eBuy, you may receive multiple Sources Sought or RFI notifications for the same requirement if it falls under multiple of your company's awarded SINs. However, please note that you are only required to respond to the RFI once.\n\nBe sure to use the URL provided above to submit your response.\n\n\nAny questions regarding this RFI will be responded to by email only.  Send your inquiry to: rfi@research.gsa.gov and be sure to include the RFQ number.\n\n",
-      "summary": "Background\n The U.S. Department of Homeland Security (DHS) is issuing this solicitation for exercise support services through its Cybersecurity and Infrastructure Security Agency (CISA). \n\nThe mission of DHS is to secure the nation from various threats, requiring a dedicated workforce across multiple sectors. CISA's goal is to advance risk-reduction efforts by enhancing the resilience of critical infrastructure through partnerships with state, local, tribal, and territorial (SLTT) agencies as well as private sector stakeholders. The contract aims to improve readiness against physical and cyber",
-      "path": "https://www.highergov.com/contract-opportunity/dhs-cisa-infrastructure-security-exercise-suppor-rfi1808193-r-d8b2b",
-      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFI1808193?contractNumber=",
-      "contact_email": "rfi@research.gsa.gov",
-      "contact_name": "Jon Dewolfe",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": 0,
-      "win_reasons": [
-        "Small business set-aside",
-        "OUT OF SCOPE: ship \u2014 not in BLN24 delivery lanes",
-        "\u26a0\ufe0f Scope gap: Cybersecurity \u2014 BLN24 has no confirmed prime delivery in these lanes"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": null,
-      "matched_lanes": [],
-      "scope_tags": [
-        "Cybersecurity"
-      ],
-      "scope_owned": [],
-      "scope_gaps": [
-        "Cybersecurity"
-      ],
-      "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Cybersecurity / FISMA / Zero Trust",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
-            "triggered_by": [
-              "cybersecurity"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFI \u2014 intel gathering, position early",
-            "score": 4
-          },
-          {
-            "q": "Contract Value",
-            "answer": "Value not listed \u2014 check solicitation",
-            "score": 3
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "On behalf of Department of Homeland Security (DHS), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below l",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
-        "recommendation": "Pass"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "N/A \u2014 Outside BLN24 lane",
-            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
-            "evidence": "Out-of-scope for BLN24 prime"
-          }
-        ],
-        "partners": [
-          {
-            "name": "IgniteAction LLC (Census) / ManTech (other agencies)",
-            "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 For Census: IgniteAction won \\$557M Census OCISS BPA for cloud infrastructure + cybersecurity and zero trust \u2014 they already have the Census cyber relationship and cleared staff. For other agencies: ManTech brings cleared cyber, ATO maintenance, and FISMA expertise. Large businesses cannot prime SB set-asides, making them ideal subs \u2014 they get on the contract, BLN24 primes.",
-            "url": "https://www.highergov.com/awardee/?search=IgniteAction",
-            "relationship": "Recommended large business sub (agency-specific)",
-            "gap_filled": "Cybersecurity / FISMA / Zero Trust"
-          }
-        ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 10,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": 0,
-      "capture_score_delta": 10,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541611",
-      "title": "Army - Learning Architect and FS Instructor - MRAS",
-      "agency": "Department of the Army",
-      "type": "Sources Sought",
-      "noticeCategory": "rfi",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-04-23",
-      "due": "2026-05-07",
-      "val_low": null,
-      "val_high": null,
-      "description": "On behalf of Army, GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browser.\n\nOnly responses submitted through the linked RFI will be accepted. Nothing else will be evaluated or recorded (this includes selecting 'interested' within eBuy).\n\n\nLink to RFI: https://feedback.gsa.gov/jfe/form/SV_cHizzj0rtyUhJCS\n\n\nAdditional Information:\nDue to the structure of contracts in GSA eBuy, you may receive multiple Sources Sought or RFI notifications for the same requirement if it falls under multiple of your company's awarded SINs. However, please note that you are only required to respond to the RFI once.\n\nBe sure to use the URL provided above to submit your response.\n\n\nAny questions regarding this RFI will be responded to by email only.  Send your inquiry to: rfi@research.gsa.gov and be sure to include the RFQ number.\n\n",
-      "summary": "Background\n The contract is issued on behalf of the Army by the General Services Administration (GSA) to support the institutional education, training, and doctrine for various Army courses including the Advanced Leader\u2019s Course (ALC), Senior Leader\u2019s Course (SLC), Basic Officer Leaders Course (BOLC), Captains Career Course (CCC), and AG Warrant Officers Basic and Advanced Courses.\n\nThe goal of this contract is to provide instructor services and training support necessary for effective military education.\n\nWork Details\n The contractor will provide non-personal services including instructor sup",
-      "path": "https://www.highergov.com/contract-opportunity/army-learning-architect-and-fs-instructor-mras-rfi1807991-r-2db8f",
-      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFI1807991?contractNumber=",
-      "contact_email": "rfi@research.gsa.gov",
-      "contact_name": "Jon Dewolfe",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": 0,
-      "win_reasons": [
-        "Small business set-aside",
-        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
-        "\u26a0\ufe0f Scope gap: Training & eLearning \u2014 BLN24 has no confirmed prime delivery in these lanes"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": null,
-      "matched_lanes": [],
-      "scope_tags": [
-        "Training & eLearning"
-      ],
-      "scope_owned": [],
-      "scope_gaps": [
-        "Training & eLearning"
-      ],
-      "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Space / Defense / ITAR",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 not a service lane",
-            "triggered_by": [
-              "itar"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFI \u2014 intel gathering, position early",
-            "score": 4
-          },
-          {
-            "q": "Contract Value",
-            "answer": "Value not listed \u2014 check solicitation",
-            "score": 3
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "On behalf of Army, GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browser.\n\nOnly res",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
-        "recommendation": "Pass"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "N/A \u2014 Outside BLN24 lane",
-            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
-            "evidence": "Out-of-scope for BLN24 prime"
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 10,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": 0,
-      "capture_score_delta": 10,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541519",
-      "title": "Vehicle-to-Everything (V2X) Performance Measurement Support Services",
-      "agency": "National Institute of Standards and Technology",
-      "type": "Synopsis Solicitation",
-      "noticeCategory": "rfp",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-05-04",
-      "due": "2026-05-08",
-      "val_low": null,
-      "val_high": null,
-      "description": "Vehicle-to-Everything (V2X) Performance Measurement Support Services\n",
-      "summary": "Background\n The National Institute of Standards and Technology (NIST) is seeking procurement for Vehicle-to-Everything (V2X) Performance Measurement Support Services to be utilized by the Communication Technology Laboratory (CTL) at their Gaithersburg, MD campus. \n\nThe goal of this contract is to support the development and deployment of V2X communication technologies that enhance road safety and efficiency through interoperability among various devices. The NIST V2X Communications testbed includes devices from multiple vendors, aimed at accelerating the deployment of these technologies by und",
-      "path": "https://www.highergov.com/contract-opportunity/vehicle-to-everything-v2x-performance-measuremen-1333nd26qnb670135-k-c7fce",
-      "source_path": "https://sam.gov/opp/4835aba5c1bf457f85a8ca8015a661a6/view",
-      "contact_email": "robert.cowins@nist.gov",
-      "contact_name": "Robert Cowins",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": 0,
-      "win_reasons": [
-        "Small business set-aside",
-        "OUT OF SCOPE: vehicle \u2014 not in BLN24 delivery lanes",
-        "\u26a0\ufe0f Scope gap: Cybersecurity, Scientific/Technical Support \u2014 BLN24 has no confirmed prime delivery in these lanes"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": null,
-      "matched_lanes": [],
-      "scope_tags": [
-        "Cybersecurity",
-        "Scientific/Technical Support"
-      ],
-      "scope_owned": [],
-      "scope_gaps": [
-        "Cybersecurity",
-        "Scientific/Technical Support"
-      ],
-      "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Scientific / Laboratory Support",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 not a service lane",
-            "triggered_by": [
-              "laboratory"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFP \u2014 active solicitation, actionable now",
-            "score": 5
-          },
-          {
-            "q": "Contract Value",
-            "answer": "Value not listed \u2014 check solicitation",
-            "score": 3
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "Vehicle-to-Everything (V2X) Performance Measurement Support Services\n Background\n The National Institute of Standards and Technology (NIST) is seeking procurement for Vehicle-to-Everything (V2X) Performance Measurement Support Services to be utilized by the Communication Technology Laboratory (CTL) at their Gaithersburg, MD campus. \n\nThe goal of this contract is to support the development and depl",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Pass"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "N/A \u2014 Outside BLN24 lane",
-            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
-            "evidence": "Out-of-scope for BLN24 prime"
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 10,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": 0,
-      "capture_score_delta": 10,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541511",
-      "title": "Supervisory Control and Data Acquisition (SCADA) System",
-      "agency": "Global Strike Command",
-      "type": "Presolicitation",
-      "noticeCategory": "rfp",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-05-01",
-      "due": "2026-05-08",
-      "val_low": 10000000,
-      "val_high": 100000000,
-      "description": "NOTICE OF INTENT TO SOLE SOURCE\n\nName: Supervisory Control and Data Acquisition (SCADA) Service\n\nReference:  FA462526Q1017\n\nWhiteman AFB intends to award a sole source contract to HSQ Technology (CAGE 3S480) as authorized by RFO 6.103-1, &quot;Only one responsible source and no other supplies or services will satisfy agency requirements.&quot; This notice contains the Sole Source Justification.\n\nTHIS NOTICE IS NOT A SOLICITATION. The solicitation will not be made available through the GPE. In order to obtain the solicitation, a responsible source must email the primary point of contact identified in this notice No Later Than 08 May 2026, 11:00AM Central Time. \n\nIAW RFO 5.101(c)(4)(vi), all responsible sources may submit a a quotation, bid, or proposal, as appropriate, which will be considered by the agency.\n\nAn interested party must certify with the submission of its offer that its proposed services and products integrate seamlessly with HSQ&#39;s software and hardware. An offer whose services and products lack compatibility with Whiteman AFB&#39;s exisiting SCADA system will be deemed nonconforming; thus, ineligible for award. \n",
-      "summary": "Background\n Whiteman Air Force Base (AFB) intends to award a sole source contract to HSQ Technology for the Supervisory Control and Data Acquisition (SCADA) Service. The agency's mission is to ensure operational efficiency and reliability of critical systems, including the Waste Water Treatment Plant, Water Plant, Electrical Generators, Transfer Switches, Electrical Systems, and Fire Suppression System.\n\nThe goal of this contract is to provide necessary service and maintenance for the existing SCADA system, which is proprietary to HSQ Technology.\n\nWork Details\n The contractor will provide serv",
-      "path": "https://www.highergov.com/contract-opportunity/supervisory-control-and-data-acquisition-scada-s-fa462526q1017-p-54e6a",
-      "source_path": "https://sam.gov/opp/967466a370b447e9aca38a7de7954e6a/view",
-      "contact_email": "cris.hernandez@us.af.mil",
-      "contact_name": "Cris Hernandez",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": 0,
-      "win_reasons": [
-        "Small business set-aside",
-        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
-        "\u26a0\ufe0f Scope gap: Cybersecurity \u2014 BLN24 has no confirmed prime delivery in these lanes"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": 1,
-      "matched_lanes": [],
-      "scope_tags": [
-        "Cybersecurity"
-      ],
-      "scope_owned": [],
-      "scope_gaps": [
-        "Cybersecurity"
-      ],
-      "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Accessibility / Section 508 Compliance",
-            "score": 3,
-            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "IRS Human Centered Design & Research BPA ($7M)",
-              "Census Digital Web Services III ($8.3M)"
-            ],
-            "note": "BLN24 prime \u2014 IRS HCD BPA scope included 508 compliance testing",
-            "triggered_by": [
-              "ada"
-            ]
-          }
-        ],
-        "fit": "Moderate",
-        "fit_reason": "Can prime most: Accessibility / Section 508 Compliance. Some areas need partner",
-        "avg_score": 3.0,
-        "prime_count": 1,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 1,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "Mostly \u2014 some gap areas",
-            "score": 3
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFP \u2014 active solicitation, actionable now",
-            "score": 5
-          },
-          {
-            "q": "Contract Value",
-            "answer": "$55.0M \u2014 Tier 2+ (BLN24 has won at this range)",
-            "score": 4
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "NOTICE OF INTENT TO SOLE SOURCE\n\nName: Supervisory Control and Data Acquisition (SCADA) Service\n\nReference:  FA462526Q1017\n\nWhiteman AFB intends to award a sole source contract to HSQ Technology (CAGE 3S480) as authorized by RFO 6.103-1, &quot;Only one responsible source and no other supplies or services will satisfy agency requirements.&quot; This notice contains the Sole Source Justification.\n\nT",
-        "rex_take": "BLN24 can cover: Accessibility / Section 508 Compliance. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Moderate"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Search USASpending.gov for this agency",
-            "why": "No confirmed competitor data for Global Strike Command. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
-            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-            "evidence": "Pull from USASpending before listing competitors"
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 10,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": 0,
-      "capture_score_delta": 10,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541511",
-      "title": "Base Telecommunications Systems (BTS)",
-      "agency": "Air Combat Command",
-      "type": "Solicitation",
-      "noticeCategory": "rfp",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-04-28",
-      "due": "2026-05-08",
-      "val_low": 3500000,
-      "val_high": 7000000,
-      "description": "Contractor shall provide all personnel, equipment, tools, materials, vehicles, supervision and other items and services necessary to provide highly reliable wired telecommunications and networked voice, video and data services, unless specified in this contract as Government Furnished Property (GFP) to support the mission of 9 CS/SCXP at Beale Air Force Base, CA. Contractor shall perform Operations and Maintenance (O&M) services and other services required to ensure the wired Base Telecommunications System (BTS) is operational 24 hours per day, 7 days per week, and 365 days per year. The BTS consists of the base telephone system switch, the outside plant (OSP), inside plant systems, and all associated equipment described in Appendix 5.2. The Contractor shall be responsible for maintaining accountable records and must maintain the ability to bill base customers via Government Purchase Card (GPC) for work orders.\n\nPlease provide Feedback and Rough Order Magnitude (ROM). ",
-      "summary": "Background\n The contract is issued by the 9th Communications Squadron (9 CS/SCXP) at Beale Air Force Base, CA. The mission of the agency is to provide reliable telecommunications and networked voice, video, and data services to support its operations. The goal of this contract is to ensure that the Base Telecommunications System (BTS) remains operational 24/7 throughout the year, thereby supporting the critical communication needs of the base.\n\nWork Details\n The contractor shall provide all personnel, equipment, tools, materials, vehicles, supervision, and other items necessary for operations ",
-      "path": "https://www.highergov.com/contract-opportunity/base-telecommunications-systems-bts-rfi1808728-o-79ed2",
-      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFI1808728?contractNumber=",
-      "contact_email": "teresa.pate.3@us.af.mil",
-      "contact_name": "Teresa Pate",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": 0,
-      "win_reasons": [
-        "Small business set-aside",
-        "OUT OF SCOPE: vehicle \u2014 not in BLN24 delivery lanes",
-        "\u26a0\ufe0f Scope gap: Cybersecurity \u2014 BLN24 has no confirmed prime delivery in these lanes"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": 2,
-      "matched_lanes": [],
-      "scope_tags": [
-        "Cybersecurity"
-      ],
-      "scope_owned": [],
-      "scope_gaps": [
-        "Cybersecurity"
-      ],
-      "capability_matrix": {
-        "tasks": [],
-        "fit": "Unclassified",
-        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
-        "avg_score": 0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 0,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFP \u2014 active solicitation, actionable now",
-            "score": 5
-          },
-          {
-            "q": "Contract Value",
-            "answer": "$5.2M \u2014 Tier 2+ (BLN24 has won at this range)",
-            "score": 4
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "Contractor shall provide all personnel, equipment, tools, materials, vehicles, supervision and other items and services necessary to provide highly reliable wired telecommunications and networked voice, video and data services, unless specified in this contract as Government Furnished Property (GFP) to support the mission of 9 CS/SCXP at Beale Air Force Base, CA. Contractor shall perform Operation",
-        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Review Needed"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Search USASpending.gov for this agency",
-            "why": "No confirmed competitor data for Air Combat Command. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
-            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-            "evidence": "Pull from USASpending before listing competitors"
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 10,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": 0,
-      "capture_score_delta": 10,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541611",
-      "title": "MCICOM Acquisition Assistance and Procuring Contracting Officer (PCO) Support",
-      "agency": "Office of the Secretary of Defense",
-      "type": "Solicitation",
-      "noticeCategory": "rfp",
-      "set_aside": "8A",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-04-22",
-      "due": "2026-05-08",
-      "val_low": null,
-      "val_high": null,
-      "description": "This requirement is to provide acquisition support services to the Marine Corps Installations Commands (MCICOMs) Contracting Office in all stages of the acquisition life cycle. Acquisition Assistance and PCO Support includes, but is not limited to, running reports, assisting with training customers, and assisting\ncontracting staff with reviewing customer requirements, conducting market research, developing solicitations, price analyses, and contract administration support as defined herein.\n\nPlease review the included documentation for full details.",
-      "summary": "Background\n The Marine Corps Installations Command (MCICOM) is seeking acquisition support services to assist its Contracting Office throughout all stages of the acquisition life cycle. The goal of this contract is to provide comprehensive assistance to the Procuring Contracting Officer (PCO) and enhance the efficiency of procurement processes.\n\nWork Details\n The Contractor will perform a variety of tasks including: running reports, assisting with training customers, reviewing customer requirements, conducting market research, developing solicitations, performing price analyses, and providing ",
-      "path": "https://www.highergov.com/contract-opportunity/mcicom-acquisition-assistance-and-procuring-contra-rfq1804972-o-77b03",
-      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFQ1804972?contractNumber=",
-      "contact_email": "lisa.bennett@usmc.mil",
-      "contact_name": "Lisa Bennett",
-      "is8a": true,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": 0,
-      "win_reasons": [
-        "8(a) set-aside \u2014 direct vehicle match for BLN24",
-        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
-        "\u26a0\ufe0f Scope gap: Training & eLearning \u2014 BLN24 has no confirmed prime delivery in these lanes"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": null,
-      "matched_lanes": [],
-      "scope_tags": [
-        "Training & eLearning"
-      ],
-      "scope_owned": [],
-      "scope_gaps": [
-        "Training & eLearning"
-      ],
-      "capability_matrix": {
-        "tasks": [],
-        "fit": "Unclassified",
-        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
-        "avg_score": 0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 0,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "8(a) \u2014 Direct vehicle match",
-            "score": 5
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFP \u2014 active solicitation, actionable now",
-            "score": 5
-          },
-          {
-            "q": "Contract Value",
-            "answer": "Value not listed \u2014 check solicitation",
-            "score": 3
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "This requirement is to provide acquisition support services to the Marine Corps Installations Commands (MCICOMs) Contracting Office in all stages of the acquisition life cycle. Acquisition Assistance and PCO Support includes, but is not limited to, running reports, assisting with training customers, and assisting\ncontracting staff with reviewing customer requirements, conducting market research, d",
-        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: 8A.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
-        "recommendation": "Review Needed"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Search USASpending.gov for this agency",
-            "why": "No confirmed competitor data for Office of the Secretary of Defense. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
-            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-            "evidence": "Pull from USASpending before listing competitors"
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly",
-        "score_delta": 10,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": 0,
-      "capture_score_delta": 10,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541611",
-      "title": "Program Analyst Support Services",
-      "agency": "U.S. Army Corps of Engineers",
-      "type": "Solicitation",
-      "noticeCategory": "rfp",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-04-30",
-      "due": "2026-05-11",
-      "val_low": 350000,
-      "val_high": 750000,
-      "description": "Provide Program Analyst Support Services in accordance with the PWS. Period of Performance start date listed in e-buy is an estimate and actual PoP start date will be set at time of award for an the base12 Month period following the initial 1 month in person On the Job training period.",
-      "summary": "Background\n The U.S. Army Corps of Engineers (USACE), Pittsburgh District, is issuing this contract to provide Program Analyst Support Services for Civil Works inland navigation waterway mega projects. \n\nThe Pittsburgh District's Civil Works program encompasses several large-scale and complex projects that require specialized program and project management analysis to ensure successful mission delivery. The need for additional support services has been identified due to the complexity and increased volume of financial and programmatic activities associated with these projects.\n\nWork Details\n T",
-      "path": "https://www.highergov.com/contract-opportunity/program-analyst-support-services-rfq1809375-o-4463e",
-      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFQ1809375?contractNumber=",
-      "contact_email": "joshua.m.higginbotham@usace.army.mil",
-      "contact_name": "Joshua Higginbotham",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": 0,
-      "win_reasons": [
-        "Small business set-aside",
-        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
-        "\u26a0\ufe0f Scope gap: Cybersecurity, Training & eLearning \u2014 BLN24 has no confirmed prime delivery in these lanes"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": 3,
-      "matched_lanes": [],
-      "scope_tags": [
-        "Cybersecurity",
-        "Training & eLearning"
-      ],
-      "scope_owned": [],
-      "scope_gaps": [
-        "Cybersecurity",
-        "Training & eLearning"
-      ],
-      "capability_matrix": {
-        "tasks": [],
-        "fit": "Unclassified",
-        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
-        "avg_score": 0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 0,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFP \u2014 active solicitation, actionable now",
-            "score": 5
-          },
-          {
-            "q": "Contract Value",
-            "answer": "$0.6M \u2014 Tier 3 (BLN24 sweet spot)",
-            "score": 5
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "Provide Program Analyst Support Services in accordance with the PWS. Period of Performance start date listed in e-buy is an estimate and actual PoP start date will be set at time of award for an the base12 Month period following the initial 1 month in person On the Job training period. Background\n The U.S. Army Corps of Engineers (USACE), Pittsburgh District, is issuing this contract to provide Pr",
-        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Review Needed"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Search USASpending.gov for this agency",
-            "why": "No confirmed competitor data for U.S. Army Corps of Engineers. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
-            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-            "evidence": "Pull from USASpending before listing competitors"
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 10,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": 0,
-      "capture_score_delta": 10,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
       "naics": "541511",
       "title": "Draft RFQ for NOAA FY26 Strategic Management Services BPA Recompete (Opt-in)",
       "agency": "National Oceanic and Atmospheric Administration",
@@ -4990,6 +3956,324 @@
     },
     {
       "naics": "541519",
+      "title": "Sole Source - Bi2 Technologies, LLC",
+      "agency": "Immigration and Customs Enforcement",
+      "type": "Synopsis Solicitation",
+      "noticeCategory": "rfp",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-05-08",
+      "due": "2026-05-12",
+      "val_low": null,
+      "val_high": null,
+      "description": "Description:\n\nThis is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with part 12. This announcement constitutes the only solicitation. Offers are being requested and a separate written solicitation will not be issued.\n\nSolicitation number 70CTD026R00000007 is issued as a streamlined request for proposal (RFP) for licenses for the Inmate Identification and Recognition System (I.R.I.S.&trade;) and the Mobile Offender Recognition &amp; Information (MORIS&trade;) for Enforcement and Removal Operations (ERO).\n\nPSC: 5865 - Electronic Countermeasures, Counter-Countermeasures and Quick Reaction Capability\n\nNAICS: 541519- Other Computer Related Services\n\nThis acquisition is set-aside for small business concerns. This solicitation incorporates provisions and clauses by reference. The full text of provisions and clauses may be accessed electronically at www.acquisition.gov.\n\nA list of line-item number(s) and items, quantities, and units of measure (including option(s), if applicable):\n\n\n\tCLIN 0001 - Inmate Recognition and Identification System (IRIS) - 1,570 Each\n\tCLIN 0002 - Mobile Offender Recognition &amp; Identification System (MORIS) - 12 Months *Not separately priced\n\tCLIN 0003 - 12-month (annual) enterprise license which includes unlimited user licenses to access and search the IRIS database using MORIS or IRIS software. - 12 Months *Not separately priced\n\tCLIN 0004 - Up to Three (3) on-site Train the Trainer sessions at locations determined by ICE and up to twenty (20) remote training sessions. - 12 Months *Not separately priced\n\tCLIN 0005 - 24/7/365 telephone and online U.S. support by our Marietta, Georgia-based technical staff. This will include providing patch and emergency fixes, and periodic and annual software upgrades including major and minor software version releases. - 12 Months *Not separately priced\n\tCLIN 0006 - One-year (12-month) warranty on all hardware, IRIS and MORIS software, mounting devices, ",
+      "summary": "Background\n This solicitation is issued by the Enforcement and Removal Operations (ERO) of the Department of Homeland Security (DHS) for licenses for the Inmate Identification and Recognition System (I.R.I.S.\u2122) and the Mobile Offender Recognition & Information (MORIS\u2122). \n\nThe contract is awarded to Bi2 Technologies, LLC as a sole source due to their unique capabilities in providing these systems. The goal of this contract is to enhance the identification and recognition processes within ERO's operations.\n\nWork Details\n The contract includes the following line items:\n- CLIN 0001: Inmate Recogni",
+      "path": "https://www.highergov.com/contract-opportunity/sole-source-bi2-technologies-llc-f2026073260-k-3a751",
+      "source_path": "https://sam.gov/opp/3a3179e66c7e4d99ad80340ae213a751/view",
+      "contact_email": "ice-ero-procurements@ice.dhs.gov",
+      "contact_name": "ICE ERO Procurements",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 0,
+      "win_reasons": [
+        "Small business set-aside",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
+        "\u26a0\ufe0f Scope gap: Training & eLearning \u2014 BLN24 has no confirmed prime delivery in these lanes"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": null,
+      "matched_lanes": [],
+      "scope_tags": [
+        "Training & eLearning"
+      ],
+      "scope_owned": [],
+      "scope_gaps": [
+        "Training & eLearning"
+      ],
+      "capability_matrix": {
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
+        "prime_count": 0,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 0,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Notice Type",
+            "answer": "RFP \u2014 active solicitation, actionable now",
+            "score": 5
+          },
+          {
+            "q": "Contract Value",
+            "answer": "Value not listed \u2014 check solicitation",
+            "score": 3
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Department of Education Institute of Education Sciences (IES) needs a contractor to evaluate the effectiveness of Workforce Pell Grants \u2014 a federal program allowing Pell Grant funding for short-term workforce-focused training. Evaluation assesses program design, implementation, and outcomes using rigorous research methodology.",
+        "rex_take": "BLN24 is stronger here than the initial score suggests. IRS SB/SE BOD Leadership Initiative ($2.7M via Clarity24) is a DIRECT workforce development / human capital reference \u2014 leadership development, culture assessment for 60+ IRS executives, organizational transformation, capacity building. That directly maps to evaluating workforce training programs. EDARMST $2.5M is same agency (IES). Fors Marsh JV covers evaluation methodology via DHRA $59M behavioral research. Teaming play: BLN24/Clarity24 leads workforce dev + data analytics, Fors Marsh JV leads evaluation design. MRAS response is low-effort. Respond now.",
+        "watch_notes": "Respond via Qualtrics form: https://feedback.gsa.gov/jfe/form/SV_8bPc93UqNaEsfIi\nHighlight: IRS SB/SE Leadership Initiative (Clarity24 $2.7M) for workforce dev, EDARMST $2.5M for same-agency IES past performance, Fors Marsh JV for evaluation methodology.",
+        "recommendation": "Respond to RFI \u2014 Strong"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Slalom Inc",
+            "why": "$128M USCIS VER Future contract \u2014 this is THE incumbent on VER program work. Slalom won the VER Future modernization. Any VER-related opp, Slalom is the primary competitor to watch.",
+            "url": "https://www.usaspending.gov/recipient/?query=Slalom+Inc&page=1",
+            "evidence": "USCIS $128.7M VER Future (USASpending confirmed \u2014 DIRECT INCUMBENT on VER work)"
+          },
+          {
+            "name": "Pluribus Digital",
+            "why": "$80.6M USCIS DevSecOps services. Active USCIS digital and tech relationship. SB competitor for USCIS digital work.",
+            "url": "https://www.usaspending.gov/recipient/?query=Pluribus+Digital&page=1",
+            "evidence": "USCIS $80.6M DevSecOps services (USASpending confirmed)"
+          }
+        ],
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": -2,
+        "score_reasons": [
+          "Strong incumbent: Slalom Inc (USCIS $128.7M VER Future (USASpending confirmed \u2014 ) \u2014 -12pts",
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": -2,
+      "capture_score_delta_reasons": [
+        "Strong incumbent: Slalom Inc (USCIS $128.7M VER Future (USASpending confirmed \u2014 ) \u2014 -12pts",
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541611",
+      "title": "Program Analyst Support Services",
+      "agency": "U.S. Army Corps of Engineers",
+      "type": "Solicitation",
+      "noticeCategory": "rfp",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-05-07",
+      "due": "2026-05-13",
+      "val_low": 350000,
+      "val_high": 750000,
+      "description": "Provide Program Analyst Support Services in accordance with the PWS. ",
+      "summary": "Background\n The U.S. Army Corps of Engineers (USACE), Pittsburgh District, is issuing this contract to provide Program Analyst Support Services for Civil Works inland navigation waterway mega projects. \n\nThe Pittsburgh District's Civil Works program encompasses several large-scale and complex projects that require specialized program and project management analysis to ensure successful mission delivery. The need for additional support services has been identified due to the complexity and increased volume of financial and programmatic activities associated with these projects.\n\nWork Details\n T",
+      "path": "https://www.highergov.com/contract-opportunity/program-analyst-support-services-rfq1809375-o-15064",
+      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFQ1809375?contractNumber=",
+      "contact_email": "joshua.m.higginbotham@usace.army.mil",
+      "contact_name": "Joshua Higginbotham",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 0,
+      "win_reasons": [
+        "Small business set-aside",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
+        "\u26a0\ufe0f Scope gap: Cybersecurity \u2014 BLN24 has no confirmed prime delivery in these lanes"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": 3,
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity"
+      ],
+      "scope_owned": [],
+      "scope_gaps": [
+        "Cybersecurity"
+      ],
+      "capability_matrix": {
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
+        "prime_count": 0,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 0,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Notice Type",
+            "answer": "RFP \u2014 active solicitation, actionable now",
+            "score": 5
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$0.6M \u2014 Tier 3 (BLN24 sweet spot)",
+            "score": 5
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Provide Program Analyst Support Services in accordance with the PWS.  Background\n The U.S. Army Corps of Engineers (USACE), Pittsburgh District, is issuing this contract to provide Program Analyst Support Services for Civil Works inland navigation waterway mega projects. \n\nThe Pittsburgh District's Civil Works program encompasses several large-scale and complex projects that require specialized pr",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for U.S. Army Corps of Engineers. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
+          }
+        ],
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541519",
+      "title": "805 Offsec Learn Enterprise Subscription",
+      "agency": "Air Combat Command",
+      "type": "Synopsis Solicitation",
+      "noticeCategory": "rfp",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-05-08",
+      "due": "2026-05-14",
+      "val_low": 12000,
+      "val_high": 25000,
+      "description": "The 805 CTS  located at Nellis AFB, NV requires access to Offensive Security&#39;s enterprise training platform and the PEN-200 course for six users for one year. The Penetration Testing with Kali Linux (PEN-200) course is a comprehensive training program offered by Offensive Security (OffSec) for aspiring penetration testers and cybersecurity professionals. This requirement is brand name only. Please see attachment for details.\n",
+      "summary": "Background\n The 805 CTS located at Nellis AFB, NV requires access to Offensive Security's enterprise training platform and the PEN-200 course for six users for one year. \n\nThe Penetration Testing with Kali Linux (PEN-200) course is a comprehensive training program offered by Offensive Security (OffSec) for aspiring penetration testers and cybersecurity professionals. This requirement is brand name only.\n\nWork Details\n The contract includes the following items: \n1. Offsec Learn Enterprise Subscription (1 yr) \n   - Quantity: 6 \n   - Description: Access to Offensive Security's enterprise training",
+      "path": "https://www.highergov.com/contract-opportunity/805-offsec-learn-enterprise-subscription-f2ft576021a001-k-7f0d4",
+      "source_path": "https://sam.gov/opp/78ae36bbb3674363b89b54ae70e7f0d4/view",
+      "contact_email": "sencere.gilbert@us.af.mil",
+      "contact_name": "Sencere T. Gilbert",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 0,
+      "win_reasons": [
+        "Small business set-aside",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
+        "\u26a0\ufe0f Scope gap: Cybersecurity, Training & eLearning \u2014 BLN24 has no confirmed prime delivery in these lanes"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": null,
+      "matched_lanes": [],
+      "scope_tags": [
+        "Cybersecurity",
+        "Training & eLearning"
+      ],
+      "scope_owned": [],
+      "scope_gaps": [
+        "Cybersecurity",
+        "Training & eLearning"
+      ],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Cybersecurity / FISMA / Zero Trust",
+            "score": 0,
+            "score_label": "0 \u2014 No Experience (Gap)",
+            "status": "gap",
+            "pp_refs": [],
+            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
+            "triggered_by": [
+              "cybersecurity",
+              "penetration testing"
+            ]
+          }
+        ],
+        "fit": "Pass",
+        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
+        "avg_score": 0.0,
+        "prime_count": 0,
+        "jv_count": 0,
+        "gap_count": 1,
+        "total_tasks": 1,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "No \u2014 primarily gap work",
+            "score": 1
+          },
+          {
+            "q": "Notice Type",
+            "answer": "RFP \u2014 active solicitation, actionable now",
+            "score": 5
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$18K \u2014 Below $500K (small win)",
+            "score": 2
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The 805 CTS  located at Nellis AFB, NV requires access to Offensive Security&#39;s enterprise training platform and the PEN-200 course for six users for one year. The Penetration Testing with Kali Linux (PEN-200) course is a comprehensive training program offered by Offensive Security (OffSec) for aspiring penetration testers and cybersecurity professionals. This requirement is brand name only. Pl",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
+          }
+        ],
+        "partners": [
+          {
+            "name": "IgniteAction LLC (Census) / ManTech (other agencies)",
+            "why": "GAP: Cybersecurity / FISMA / Zero Trust \u2014 For Census: IgniteAction won \\$557M Census OCISS BPA for cloud infrastructure + cybersecurity and zero trust \u2014 they already have the Census cyber relationship and cleared staff. For other agencies: ManTech brings cleared cyber, ATO maintenance, and FISMA expertise. Large businesses cannot prime SB set-asides, making them ideal subs \u2014 they get on the contract, BLN24 primes.",
+            "url": "https://www.highergov.com/awardee/?search=IgniteAction",
+            "relationship": "Recommended large business sub (agency-specific)",
+            "gap_filled": "Cybersecurity / FISMA / Zero Trust"
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541519",
       "title": "SolarWinds",
       "agency": "Air Combat Command",
       "type": "Synopsis Solicitation",
@@ -5067,6 +4351,117 @@
             "why": "No confirmed competitor data for Air Combat Command. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
             "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
             "evidence": "Pull from USASpending before listing competitors"
+          }
+        ],
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": 0,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541611",
+      "title": "HHS NIH - Office of AIDS Research (OAR) Professional support - MRAS",
+      "agency": "Federal Acquisition Service",
+      "type": "Sources Sought",
+      "noticeCategory": "rfi",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-05-08",
+      "due": "2026-05-15",
+      "val_low": null,
+      "val_high": null,
+      "description": "On behalf of Department of Health and Human Services (HHS), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browser.\n\nOnly responses submitted through the linked RFI will be accepted. Nothing else will be evaluated or recorded (this includes selecting 'interested' within eBuy).\n\n\nLink to RFI: https://feedback.gsa.gov/jfe/form/SV_0odOiLWGtpipeES\n\n\nAdditional Information:\nDue to the structure of contracts in GSA eBuy, you may receive multiple Sources Sought or RFI notifications for the same requirement if it falls under multiple of your company's awarded SINs. However, please note that you are only required to respond to the RFI once.\n\nBe sure to use the URL provided above to submit your response.\n\n\nAny questions regarding this RFI will be responded to by email only.  Send your inquiry to: rfi@research.gsa.gov and be sure to include the RFQ number.\n\n",
+      "summary": "Background\n The Department of Health and Human Services (HHS) through the National Institutes of Health (NIH) Office of AIDS Research (OAR) coordinates the scientific, budgetary, legislative, and policy elements of the NIH HIV/AIDS research program. The goal of this contract is to provide a broad spectrum of professional, scientific, administrative, communications, and technical support services to fulfill OAR's mission and activities. This work is authorized under the Public Health Service Act pursuant to Public Law 100-607.\n\nWork Details\n The contractor will provide various support services ",
+      "path": "https://www.highergov.com/contract-opportunity/hhs-nih-office-of-aids-research-oar-profession-rfi1810856-r-86c15",
+      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFI1810856?contractNumber=",
+      "contact_email": "rfi@research.gsa.gov",
+      "contact_name": "Jon Dewolfe",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 0,
+      "win_reasons": [
+        "Small business set-aside",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
+        "\u26a0\ufe0f Scope gap: Scientific/Technical Support \u2014 BLN24 has no confirmed prime delivery in these lanes"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": null,
+      "matched_lanes": [],
+      "scope_tags": [
+        "Scientific/Technical Support"
+      ],
+      "scope_owned": [],
+      "scope_gaps": [
+        "Scientific/Technical Support"
+      ],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Scientific / Laboratory Support",
+            "score": 0,
+            "score_label": "0 \u2014 No Experience (Gap)",
+            "status": "gap",
+            "pp_refs": [],
+            "note": "BLN24 gap \u2014 not a service lane",
+            "triggered_by": [
+              "research program"
+            ]
+          }
+        ],
+        "fit": "Pass",
+        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
+        "avg_score": 0.0,
+        "prime_count": 0,
+        "jv_count": 0,
+        "gap_count": 1,
+        "total_tasks": 1,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "No \u2014 primarily gap work",
+            "score": 1
+          },
+          {
+            "q": "Notice Type",
+            "answer": "RFI \u2014 intel gathering, position early",
+            "score": 4
+          },
+          {
+            "q": "Contract Value",
+            "answer": "Value not listed \u2014 check solicitation",
+            "score": 3
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "On behalf of Department of Health and Human Services (HHS), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the",
+        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Pass"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "N/A \u2014 Outside BLN24 lane",
+            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
+            "evidence": "Out-of-scope for BLN24 prime"
           }
         ],
         "partners": [],
@@ -5283,14 +4678,14 @@
       "noticeCategory": "rfp",
       "set_aside": "SBA",
       "searchLabel": "Brian's Search",
-      "posted": "2026-05-05",
+      "posted": "2026-05-08",
       "due": "2026-05-21",
       "val_low": null,
       "val_high": null,
       "description": "This is a combined synopsis/solicitation issued as a Request for Quotation (RFQ) for commercial services prepared in accordance with FAR Part 12. This announcement constitutes the only solicitation. Offers are being requested, and a separate written solicitation will not be issued for the following requirement.\n\nThe Government requires Commercial Solutions for Classified (CSfC) Wireless Local Area Network (WLAN) services to support SOCNORTH at Peterson Space Force Base, Colorado. The requirement includes a phased execution approach for study, design, equipment procurement, installation, testing, and final validation of the wireless network. The contractor shall ensure compliance with NSA CSfC Capabilities Package (CP), DoD Security Technical Implementation Guide (STIG), and other applicable federal security standards.\n\nThis acquisition is set aside for small business concerns under NAICS Code 541512 &ndash; Computer Systems Design Services, with a small business size standard of $34M.\n\nThis solicitation incorporates provisions and clauses by reference. The full text of provisions and clauses may be accessed electronically at https://www.acquisition.gov/far-overhaul/far-part-deviation-guide.\n\nDESCRIPTION OF REQUIREMENTS\n\nThe contractor shall perform all work in accordance with the attached Performance Work Statement (PWS). Deliverables and performance milestones are as follows:\n\nDATE(S) AND PLACE(S) OF DELIVERY AND ACCEPTANCE\n\n\n\tDelivery Location: Peterson Space Force Base, Colorado\n\tFOB Point: Destination\n\tAcceptance: Deliverables will be reviewed and accepted by the designated Government POC upon validation that all requirements are met.\n\n\nINSTRUCTIONS TO OFFERORS\n\nOfferors shall prepare and submit proposals that include the following:\n\n\n\t\n\tTechnical Approach:\n\n\t\n\t\tProvide a detailed narrative describing the approach to executing each phase of the requirement, including:\n\t\t\n\t\t\tPre-onsite assessment: Identify methods for assessing infrastructure readiness (e.g., too",
       "summary": "Background\n The Government requires Commercial Solutions for Classified (CSfC) Wireless Local Area Network (WLAN) services to support SOCNORTH at Peterson Space Force Base, Colorado. The goal of this contract is to design, develop, and implement a wireless network solution that meets NSA compliance and other federal security standards. This acquisition is set aside for small business concerns.\n\nWork Details\n The contractor shall perform all work in accordance with the Performance Work Statement (PWS). The project will be executed in three phases:\n\n1. **Study and Design (CLIN 0001)**: Conduct a",
       "path": "https://www.highergov.com/contract-opportunity/wireless-network-deployment-at-peterson-space-forc-h9229526qb001-k-f2a58",
-      "source_path": "https://sam.gov/opp/e4ef8ea2a5ec4405a9313c8ef6ac2920/view",
+      "source_path": "https://sam.gov/opp/3589edc592834256b96809817756fca4/view",
       "contact_email": "byron.s.irving.mil@socom.mil",
       "contact_name": "Capt Byron S. Irving",
       "is8a": false,
@@ -5417,14 +4812,14 @@
       "noticeCategory": "rfp",
       "set_aside": "SBA",
       "searchLabel": "Brian's Search",
-      "posted": "2026-05-06",
+      "posted": "2026-05-08",
       "due": "2026-05-29",
       "val_low": null,
       "val_high": null,
-      "description": "Updated as of 6 May 2026\n\nThe Government is still working through answering the multitude of questions that were submitted for the Final RFP.  As such, we are extending the proposal submission date to 28 May 2026.  Attached are the Q&amp;A from the Symphony Webinar that was held on 14 Apr 2026, which can be viewed at:\n\nhttps://www.youtube.com/watch?v=rSSsGdyIVOQ.\n\nA follow-up amendment will be sent this week to provide the solicitation Q&amp;A, as well as revised documents and the formal solicitation amendment SF30.\n\n&lt;&lt;BREAK&gt;&gt;\n\nUPDATED as of 10 Apr 2026\n\nOn Tuesday Apr 14, 2026 &sdot; 2:30pm &ndash; 4pm (Eastern Time - New York) a webinar will be hosted to provide a demonstration of the submission process for the Special Operations Forces Global Services Delivery solicitation (H9240026RE001) within Symphony. This includes establishing company assets, claiming them within your proposal, submitting your proposal, and submitting questions to the program office, as needed. Registration within Symphony will be covered at the end.\n\n\n\tSubmission URL: https://ussocom-sofgsd.app.cloud.gov/\n\tSymphony Support Documentation:\n\t\n\t\tPrepare Your SOFGSD Technical Proposal\n\t\tSOFGSD: Master Crosswalk &amp; Quick Reference\n\t\n\t\n\n\nMeeting Link:  meet.google.com/ztn-aoup-cez\n\nJoin by phone:  (US) +1 518-547-0014;  PIN: 276802174\n\nFor support within Symphony, contact client.support@apexlogic.com\n\nPlease note, this demonstration will be recorded and published afterwards.\n\n&lt;&lt;BREAK&gt;&gt;\n\nUPDATED as of 31 Mar 2026\n\nSF 30 H9240026RE001 Amendment 0001 is added as an attachment.  This amendment updates the proposal submission date and time on the SF 33 to read 13 May 2026, at 1:00pm Eastern.\n\n&lt;&lt;BREAK&gt;&gt;\n\n30 Mar 2026: FINAL RFP &ndash; SOF Global Services Delivery (SOFGSD) H9240026RE001\n\nThis is a formal Request for Proposal (RFP) for the United States Special Operations Command (USSOCOM) SOF Global Services Delivery (SOFGSD) Indefinite Delivery Indefinite Quantity ",
+      "description": "Updated as of 8 May 2026\n\nThis amendment incorporatate Solicitation Amendment 0002, which formalizes the change in submission date at time.\n\nAdditionally, updated versions of the following documents are included:\n\n1. A1 SOFGSD Section L (r1 20260424)\n2. A2 SOFGSD Section M (r1 20260424)\n3. Atch 01 SOFGSD IDIQ SOW (r1 20260424)\n4. Atch 02 SOFGSD HTRO Self Score Matrix (r1 20260424)\n5. Atch 03 SOFGSD LCAT Descriptions (r1 20260424)\n6. Atch 06 SOFGSD DRAFT DD FORM 254 (r1 20260424)\n\nThe Questions and Answers from the submission deadline of 24 April 2026 are included as attachment titled &quot;SOFGSD Open Questions 20260424&quot;.\n\nOfferors should note the change in Section L3.1.6 for submission of classified material.  All classified Work Samples (up to SECRET//NOFORN) must be submitted via SIPR email to the address specified in the solicitation.\n\nFinally, the SF30 Amendment H9240026RE0010002 is attached.  A conformed copy of the original solicitation is provided and should be used as your SF33 submission with your proposal.\n\n&lt;&lt;BREAK&gt;&gt;\n\nUpdated as of 6 May 2026\n\nThe Government is still working through answering the multitude of questions that were submitted for the Final RFP.  As such, we are extending the proposal submission date to 28 May 2026.  Attached are the Q&amp;A from the Symphony Webinar that was held on 14 Apr 2026, which can be viewed at:\n\nhttps://www.youtube.com/watch?v=rSSsGdyIVOQ.\n\nA follow-up amendment will be sent this week to provide the solicitation Q&amp;A, as well as revised documents and the formal solicitation amendment SF30.\n\n&lt;&lt;BREAK&gt;&gt;\n\nUPDATED as of 10 Apr 2026\n\nOn Tuesday Apr 14, 2026 &sdot; 2:30pm &ndash; 4pm (Eastern Time - New York) a webinar will be hosted to provide a demonstration of the submission process for the Special Operations Forces Global Services Delivery solicitation (H9240026RE001) within Symphony. This includes establishing company assets, claiming them within your proposal, submitting your proposal, a",
       "summary": "Background\n The United States Special Operations Command (USSOCOM) is a Unified Combatant Command of the Department of Defense (DoD) tasked with providing fully capable Special Operations Forces to defend the United States and its interests. \n\nThe SOF Global Services Delivery (SOFGSD) contract aims to support USSOCOM's mission and command priorities, which include competing and winning for the nation, preserving and growing readiness, innovating for future threats, advancing partnerships, and strengthening the force and family. This contract is a 100% Small Business Set-Aside.\n\nWork Details\n T",
       "path": "https://www.highergov.com/contract-opportunity/sof-global-services-delivery-sofgsd-h9240026re001-o-10f93",
-      "source_path": "https://sam.gov/opp/6b65850690f1403489c7cbf0ea1f8446/view",
+      "source_path": "https://sam.gov/opp/fcc9945b5e2f4ecf95b5967050f586a3/view",
       "contact_email": "sherri.ashby@socom.mil",
       "contact_name": "Sherri Ashby",
       "is8a": false,
@@ -5470,16 +4865,11 @@
             "q": "Contract Value",
             "answer": "Value not listed \u2014 check solicitation",
             "score": 3
-          },
-          {
-            "q": "Specialized Tech Gap",
-            "answer": "Warning: \"gis\" \u2014 area where BLN24 has limited PP (debrief data)",
-            "score": 1
           }
         ]
       },
       "rex_analysis": {
-        "what_they_need": "Updated as of 6 May 2026\n\nThe Government is still working through answering the multitude of questions that were submitted for the Final RFP.  As such, we are extending the proposal submission date to 28 May 2026.  Attached are the Q&amp;A from the Symphony Webinar that was held on 14 Apr 2026, which can be viewed at:\n\nhttps://www.youtube.com/watch?v=rSSsGdyIVOQ.\n\nA follow-up amendment will be sen",
+        "what_they_need": "Updated as of 8 May 2026\n\nThis amendment incorporatate Solicitation Amendment 0002, which formalizes the change in submission date at time.\n\nAdditionally, updated versions of the following documents are included:\n\n1. A1 SOFGSD Section L (r1 20260424)\n2. A2 SOFGSD Section M (r1 20260424)\n3. Atch 01 SOFGSD IDIQ SOW (r1 20260424)\n4. Atch 02 SOFGSD HTRO Self Score Matrix (r1 20260424)\n5. Atch 03 SOFGS",
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Review Needed"
@@ -6257,50 +5647,99 @@
     },
     {
       "naics": "541519",
-      "title": "7A21--Web-Based VISTA/CPRS Integrated Solution for Oncology  Brand Name for Reference: DSS Order Tracking Manager for  Oncology",
-      "agency": "VISN 4",
-      "type": "Presolicitation",
+      "title": "Replacement Notification System",
+      "agency": "Bureau of Alcohol Tobacco Firearms and Explosives",
+      "type": "Synopsis Solicitation",
       "noticeCategory": "rfp",
-      "set_aside": "SBA",
+      "set_aside": "8A",
       "searchLabel": "Brian's Search",
-      "posted": "2026-05-01",
-      "due": "2026-05-08",
-      "val_low": 150000,
-      "val_high": 400000,
-      "description": "THIS IS NOT A REQUEST FOR COMPETITIVE OFFERS\u00c2\u00a0\n\u00c2\u00a0Lebanon VA Medical Center\u00c2\u00a0\nThis is a Pre-Solicitation Notice for the Department of Veterans Affairs, Network Contracting Office (NCO) 4, to provide\u00c2\u00a0a Web-Based VISTA/CPRS Integrated Solution for Oncology. This equipment requirement is for the Lebanon VA Medical Center in support of their multiple clinics, located in Lebanon, PA 17042. The full solicitation may be posted to the NASA SEWP at www.sewp.nasa.gov on or about\u00c2\u00a0May 8th, 2026.\u00c2\u00a0\n\nThe full solicitation will be a Small Business set-aside.\u00c2\u00a0\u00c2\u00a0The North American Industry Classification System (NAICS) for this procurement is 541519 Other Computer Related Services; the size standard is\u00c2\u00a0$34.0M.\u00c2\u00a0\nPotential offerors\u00c2\u00a0are responsible for\u00c2\u00a0monitoring\u00c2\u00a0for the release of the solicitation package and any other pertinent information and for downloading their own copy of the solicitation package. Any amendments issued to this solicitation will ONLY be available on this site.\u00c2\u00a0\u00c2\u00a0Offerors are advised that they\u00c2\u00a0are responsible for\u00c2\u00a0obtaining all amendments.\u00c2\u00a0\u00c2\u00a0All questions must be\u00c2\u00a0submitted\u00c2\u00a0in writing to the Contract Specialist at\u00c2\u00a0joanne.skaff@va.gov. No telephone inquiries will be accepted.\u00c2\u00a0\n\u00c2\u00a0\nThis notice does not\u00c2\u00a0obligate\u00c2\u00a0the Government to award a contract neither does it\u00c2\u00a0obligate\u00c2\u00a0the Government to pay for any quotes or proposal preparation costs. The Government is not\u00c2\u00a0obligated\u00c2\u00a0to issue a solicitation because of this notice. No other information is available until issuance of the solicitation. All interested parties must be registered in System for Award Management (SAM)\u00c2\u00a0pursuant to\u00c2\u00a0applicable regulations and guidelines prior to award. Registration information can be found at www.sam.gov.\u00c2\u00a0\nThe point of contact is Contract Specialist, Joanne Skaff, joanne.skaff@va.gov. No phone calls. \u00c2\u00a0\nEnd of Document\n\n",
-      "summary": "Background\n This is a Pre-Solicitation Notice for the Department of Veterans Affairs, Network Contracting Office (NCO) 4, to provide a Web-Based VISTA/CPRS Integrated Solution for Oncology. \nThis equipment requirement is for the Lebanon VA Medical Center in support of their multiple clinics, located in Lebanon, PA 17042.\n\nWork Details\n The contract involves providing a Web-Based VISTA/CPRS Integrated Solution for Oncology. \nThe brand name referenced for this solution is DSS Order Tracking Manager for Oncology.\n\nPlace of Performance\n Lebanon VA Medical Center, Multiple Clinics, 1700 S. Lincoln ",
-      "path": "https://www.highergov.com/contract-opportunity/7a21-web-based-vista-cprs-integrated-solution-for-36c24426q0511-p-7cae9",
-      "source_path": "https://sam.gov/opp/6a596f4bd3f14ff9b93225edccd7cae9/view",
-      "contact_email": "joanne.skaff@va.gov",
-      "contact_name": "Joanne Skaff",
-      "is8a": false,
+      "posted": "2026-05-08",
+      "due": "2026-05-13",
+      "val_low": null,
+      "val_high": null,
+      "description": "The ATF Certification and Accreditations (C&amp;As) process is aligned with the NIST SP800-64 &ldquo;Security Consideration in the Information System Development Lifecycle&rdquo;, October 2008; it follows the five lifecycle phases of Initiation, Development and Acquisition, Implementation, Operations and Maintenance and Disposition. This five-step lifecycle is closely aligned with ATF Handbook 7200.2B ATF System Life Cycle (SLC). The table Security Artifacts and Activities Per SLC Phase below shows a high-level list of security artifacts and activities due during each SLC Phase.\n\n\n\n\n\tThe proposed system must provide a web-based system in a Federal Risk and Authorization Program (FedRAMP) approved (see below for levels) environment that provides the ability to access the system via a secure, encrypted internet connection using a US government sanctioned encryption method. from any approved computer, tablet or smart phone in order to initiate alerts and notifications via any mode supported by the system.\n\tThe proposed system shall be fully hosted by the vendor in a FedRAMP environment certified at Moderate or above and shall only require an internet connected computer to send messages and operate the system.  FedRAMP High certification may be given additional credit in solicitation evaluation provided that a risk-benefit evaluation of any features that may not operate in a high configuration determines those features are not required.  \n\tThe proposer&rsquo;s system shall have a robust hardware and a geographically dispersed components across the United States of America with failover mechanisms in place to ensure the ability to operate under all conditions and provide security and redundancy eliminating any single point of failure.  The proposal shall document how this system provides this capability and ensures continued operation in the event of computer equipment failures, loss of utility power, natural disaster or intentionally caused human physical or virtual att",
+      "summary": "Background\n The Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF) is a law enforcement organization focused on reducing violent crime, collecting revenue, and protecting the public. \n\nATF enforces federal laws related to alcohol, tobacco, firearms, explosives, and arson in cooperation with other government agencies. This procurement is for a replacement of an existing requirement for a FedRAMP Moderate software-as-a-service (SaaS) cloud-operated mass notification system to support ATF's law enforcement, regulatory, and emergency management activities. \n\nThe system will enable authorize",
+      "path": "https://www.highergov.com/contract-opportunity/replacement-notification-system-dja-26-asod-pr-0271-k-d3e7a",
+      "source_path": "https://sam.gov/opp/2b1a0dc4533942e594c5252f81f68642/view",
+      "contact_email": "david.berger@atf.gov",
+      "contact_name": "David Berger",
+      "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
-      "capture_score": -5,
+      "capture_score": -2,
       "win_reasons": [
-        "Small business set-aside",
-        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
+        "Partial cloud/modernization match \u2014 Clarity24 JV has NOAA cloud delivery experience",
+        "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
+        "8(a) set-aside \u2014 direct vehicle match for BLN24",
+        "OUT OF SCOPE: firearms \u2014 not in BLN24 delivery lanes",
+        "\u26a0\ufe0f Gap area detected: Cybersecurity \u2014 would need a teaming partner for this scope"
       ],
       "win_prob": "Very Low (<10%)",
       "tier": null,
-      "matched_lanes": [],
-      "scope_tags": [],
-      "scope_owned": [],
-      "scope_gaps": [],
+      "matched_lanes": [
+        "Cloud/App Mod (partial)"
+      ],
+      "scope_tags": [
+        "Cloud Migration",
+        "Survey & Research",
+        "Cybersecurity"
+      ],
+      "scope_owned": [
+        "Cloud Migration",
+        "Survey & Research"
+      ],
+      "scope_gaps": [
+        "Cybersecurity"
+      ],
       "capability_matrix": {
-        "tasks": [],
-        "fit": "Unclassified",
-        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
-        "avg_score": 0,
-        "prime_count": 0,
+        "tasks": [
+          {
+            "task": "Cloud Migration & Infrastructure",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "NOAA NWS IDP Cloud Transition / App Mod (Clarity24, $7M)",
+              "Census MAF/TIGER Modernization & Cloud ($4.5M)"
+            ],
+            "note": "BLN24 JV \u2014 Clarity24 delivered NOAA cloud migration $4.3M, Census MAF/TIGER",
+            "triggered_by": [
+              "aws"
+            ]
+          },
+          {
+            "task": "Cloud Engineering / Infrastructure as Code",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census MAF/TIGER Modernization & Cloud ($4.5M)",
+              "NOAA NWS IDP Cloud Transition / App Mod (Clarity24, $7M)",
+              "Census EDL Applications ($4.5M)"
+            ],
+            "note": "BLN24 prime (direct + JV) \u2014 Census MAF/TIGER cloud migration $4.5M (IaC, automated deployment), Census EDL AWS platform, NOAA cloud migration $7M via Clarity24",
+            "triggered_by": [
+              "aws"
+            ]
+          }
+        ],
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Cloud Migration & Infrastructure, Cloud Engineering / Infrastructure as Code. Some areas need partner",
+        "avg_score": 3.0,
+        "prime_count": 2,
         "jv_count": 0,
         "gap_count": 0,
-        "total_tasks": 0,
+        "total_tasks": 2,
         "qualifying": [
           {
             "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
+            "answer": "8(a) \u2014 Direct vehicle match",
+            "score": 5
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
           },
           {
             "q": "Notice Type",
@@ -6309,43 +5748,48 @@
           },
           {
             "q": "Contract Value",
-            "answer": "$275K \u2014 Below $500K (small win)",
-            "score": 2
-          },
-          {
-            "q": "Specialized Tech Gap",
-            "answer": "Warning: \"gis\" \u2014 area where BLN24 has limited PP (debrief data)",
-            "score": 1
+            "answer": "Value not listed \u2014 check solicitation",
+            "score": 3
           }
         ]
       },
       "rex_analysis": {
-        "what_they_need": "THIS IS NOT A REQUEST FOR COMPETITIVE OFFERS\u00c2\u00a0\n\u00c2\u00a0Lebanon VA Medical Center\u00c2\u00a0\nThis is a Pre-Solicitation Notice for the Department of Veterans Affairs, Network Contracting Office (NCO) 4, to provide\u00c2\u00a0a Web-Based VISTA/CPRS Integrated Solution for Oncology. This equipment requirement is for the Lebanon VA Medical Center in support of their multiple clinics, located in Lebanon, PA 17042. The full sol",
-        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Review Needed"
+        "what_they_need": "The ATF Certification and Accreditations (C&amp;As) process is aligned with the NIST SP800-64 &ldquo;Security Consideration in the Information System Development Lifecycle&rdquo;, October 2008; it follows the five lifecycle phases of Initiation, Development and Acquisition, Implementation, Operations and Maintenance and Disposition. This five-step lifecycle is closely aligned with ATF Handbook 720",
+        "rex_take": "BLN24 can cover: Cloud Migration & Infrastructure, Cloud Engineering / Infrastructure as Code. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
+        "recommendation": "Moderate"
       },
       "competitive_intel": {
         "competitors": [
           {
             "name": "Search USASpending.gov for this agency",
-            "why": "No confirmed competitor data for VISN 4. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "why": "No confirmed competitor data for Bureau of Alcohol Tobacco Firearms and Explosives. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
             "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
             "evidence": "Pull from USASpending before listing competitors"
           }
         ],
-        "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 10,
+        "partners": [
+          {
+            "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
+            "why": "GAP: cloud engineering / tech depth \u2014 STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
+            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
+            "relationship": "Active JV \u2014 Proven Census delivery together",
+            "gap_filled": "cloud engineering / tech depth"
+          }
+        ],
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly",
+        "score_delta": 18,
         "score_reasons": [
           "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": -5,
+      "capture_score_base": -2,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
         "No dominant incumbent identified \u2014 +5pts"
       ]
     },
@@ -6808,6 +6252,101 @@
         ],
         "partners": [],
         "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
+        "score_delta": 10,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+          "No dominant incumbent identified \u2014 +5pts"
+        ]
+      },
+      "capture_score_base": -5,
+      "capture_score_delta": 10,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
+        "No dominant incumbent identified \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541611",
+      "title": "NOAA OCAO Audit and Logistics Support",
+      "agency": "National Oceanic and Atmospheric Administration",
+      "type": "Solicitation",
+      "noticeCategory": "rfp",
+      "set_aside": "8A",
+      "searchLabel": "Commerce Opportunities",
+      "posted": "2026-05-07",
+      "due": "2026-05-18",
+      "val_low": null,
+      "val_high": null,
+      "description": "This acquisition is conducted under the authority of section 8(a) of the Small Business Act (15 U.S.C. 637(a)), authorized by statute, and as implemented by the Revolutionary FAR Overhaul (RFO) Federal Acquisition Regulation (FAR) Subpart 6.103-5.\n\nThe Small Business Administration (SBA) and GSA Requirement Number is GSA MAS Partnership Agreement.\n\nThis contract is awarded for commercial services in accordance with FAR Part 12, in conjunction with the 8(a) Program requirements of FAR Part 19.8.\n\nPlease refer to the attached RFQ 1305M426Q0033, OCAO Audit and Logistics Support SOW, and Attachment X for further details. ",
+      "summary": "Background\n This acquisition is conducted under the authority of section 8(a) of the Small Business Act, authorized by statute. The Small Business Administration (SBA) and GSA Requirement Number is GSA MAS Partnership Agreement. The contract is awarded for commercial services in accordance with the 8(a) Program requirements. The NOAA Office of the Chief Administrative Officer (OCAO) requires audit and logistics support to maintain accountability and controls over its assets.\n\nWork Details\n The contractor will provide comprehensive support under the following categories:\n\n1. **Administrative & ",
+      "path": "https://www.highergov.com/contract-opportunity/noaa-ocao-audit-and-logistics-support-rfq1810488-o-8036b",
+      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFQ1810488?contractNumber=",
+      "contact_email": "emi.sato@noaa.gov",
+      "contact_name": "Emi Sato",
+      "is8a": true,
+      "isFullOpen": false,
+      "ericAlso": true,
+      "capture_score": -5,
+      "win_reasons": [
+        "Agency: BLN24 has past performance here (relationship + credibility advantage)",
+        "8(a) set-aside \u2014 direct vehicle match for BLN24",
+        "OUT OF SCOPE: logistics, ship \u2014 not in BLN24 delivery lanes"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": null,
+      "matched_lanes": [],
+      "scope_tags": [],
+      "scope_owned": [],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
+        "prime_count": 0,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 0,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "8(a) \u2014 Direct vehicle match",
+            "score": 5
+          },
+          {
+            "q": "Notice Type",
+            "answer": "RFP \u2014 active solicitation, actionable now",
+            "score": 5
+          },
+          {
+            "q": "Contract Value",
+            "answer": "Value not listed \u2014 check solicitation",
+            "score": 3
+          },
+          {
+            "q": "Specialized Tech Gap",
+            "answer": "Warning: \"gis\" \u2014 area where BLN24 has limited PP (debrief data)",
+            "score": 1
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This acquisition is conducted under the authority of section 8(a) of the Small Business Act (15 U.S.C. 637(a)), authorized by statute, and as implemented by the Revolutionary FAR Overhaul (RFO) Federal Acquisition Regulation (FAR) Subpart 6.103-5.\n\nThe Small Business Administration (SBA) and GSA Requirement Number is GSA MAS Partnership Agreement.\n\nThis contract is awarded for commercial services",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: 8A.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: 8A. Notice type: RFP.",
+        "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Search USASpending.gov for this agency",
+            "why": "No confirmed competitor data for National Oceanic and Atmospheric Administration. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+            "evidence": "Pull from USASpending before listing competitors"
+          }
+        ],
+        "partners": [],
+        "set_aside_note": "Set-aside: 8A \u2014 competitor list filtered accordingly",
         "score_delta": 10,
         "score_reasons": [
           "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -7357,7 +6896,7 @@
       "path": "https://www.highergov.com/contract-opportunity/one-acquisition-solution-for-integrated-services-p-47qrca23r0002-p2-o-3c097",
       "source_path": "https://sam.gov/opp/f21eef1cba7047f09ce6e96e206b9941/view",
       "contact_email": "oasisplusopen@gsa.gov",
-      "contact_name": "Melissa Volkman",
+      "contact_name": "Valerie Ates",
       "is8a": true,
       "isFullOpen": false,
       "ericAlso": false,
@@ -7716,7 +7255,7 @@
       "path": "https://www.highergov.com/contract-opportunity/one-acquisition-solution-for-integrated-services-p-47qrca23r0001-p2-o-0c991",
       "source_path": "https://sam.gov/opp/21db2790be6a44b4aef259a961ad0af1/view",
       "contact_email": "oasisplusopen@gsa.gov",
-      "contact_name": "Melissa Volkman",
+      "contact_name": "Valerie Ates",
       "is8a": false,
       "isFullOpen": false,
       "ericAlso": false,
@@ -7847,112 +7386,6 @@
         ]
       },
       "capture_score_base": -20,
-      "capture_score_delta": 10,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541511",
-      "title": "Shipboard Automated Maintenance Management System",
-      "agency": "Department of the Navy",
-      "type": "Solicitation",
-      "noticeCategory": "rfp",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-05-05",
-      "due": "2026-05-08",
-      "val_low": null,
-      "val_high": null,
-      "description": "The Engineering Directorate of Military Sea lift Command (MSC) requires non-personal engineering services to administer its Engineering Maintenance Management Systems in order to continue support to the fleet in a cost-effective manner. The Contractor shall provide non-personal engineering, technical, and system implementation and improvement services in the performance of investigative and design efforts relating to material readiness, preventive and predictive maintenance, and condition monitoring programs. The Government requires engineering and technical services to perform the following: Maintenance engineering services; condition-based monitoring technology support services; and shipboard testing and inspection services ",
-      "summary": "Background\n The Military Sealift Command (MSC) is responsible for the maintenance, repair, alteration, and material readiness of its fleet of approximately 110 vessels. \n\nThe Engineering Directorate of MSC requires non-personal engineering services to administer its Engineering Maintenance Management Systems to support the fleet cost-effectively. The goal of this contract is to enhance operational readiness and reduce maintenance costs through effective management of engineering systems.\n\nWork Details\n The Contractor shall provide non-personal engineering, technical, and system implementation ",
-      "path": "https://www.highergov.com/contract-opportunity/shipboard-automated-maintenance-management-system-rfi1809861-o-f13bd",
-      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFI1809861?contractNumber=",
-      "contact_email": "brenton.d.mccoy.civ@us.navy.mil",
-      "contact_name": "Brenton D. McCoy Sr.",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": -30,
-      "win_reasons": [
-        "Small business set-aside",
-        "OUT OF SCOPE: vessel, ship \u2014 not in BLN24 delivery lanes"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": null,
-      "matched_lanes": [],
-      "scope_tags": [],
-      "scope_owned": [],
-      "scope_gaps": [],
-      "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Space / Defense / ITAR",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 not a service lane",
-            "triggered_by": [
-              "itar"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFP \u2014 active solicitation, actionable now",
-            "score": 5
-          },
-          {
-            "q": "Contract Value",
-            "answer": "Value not listed \u2014 check solicitation",
-            "score": 3
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "The Engineering Directorate of Military Sea lift Command (MSC) requires non-personal engineering services to administer its Engineering Maintenance Management Systems in order to continue support to the fleet in a cost-effective manner. The Contractor shall provide non-personal engineering, technical, and system implementation and improvement services in the performance of investigative and design",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Pass"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "N/A \u2014 Outside BLN24 lane",
-            "why": "This opp falls outside BLN24's confirmed delivery lanes. If pursuing as a sub, look for large integrators (SAIC, Leidos, Booz Allen) as potential prime partners.",
-            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-saic-25048/",
-            "evidence": "Out-of-scope for BLN24 prime"
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 10,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": -30,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
