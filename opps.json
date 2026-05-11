@@ -1,6 +1,6 @@
 {
-  "updated": "2026-05-10T11:03:42.137Z",
-  "count": 62,
+  "updated": "2026-05-11T11:03:27.689Z",
+  "count": 61,
   "opps": [
     {
       "naics": "541511",
@@ -22,7 +22,7 @@
       "isFullOpen": true,
       "ericAlso": false,
       "asana_task_gid": "1214150928848982",
-      "capture_score": 208,
+      "capture_score": 218,
       "win_prob": "Medium (20-40%)",
       "tier": 2,
       "rex_analysis": {
@@ -182,7 +182,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 198,
+      "capture_score_base": 208,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -2446,14 +2446,14 @@
       "noticeCategory": "rfp",
       "set_aside": "SBA",
       "searchLabel": "Brian's Search 2",
-      "posted": "2026-05-09",
+      "posted": "2026-05-11",
       "due": "2026-05-27",
       "val_low": null,
       "val_high": null,
       "description": "This is a combined synopsis/solicitation for commercial items prepared in accordance with the format in FAR Part 12.  This announcement constitutes the only solicitation.  Quotations are being requested and a separate written solicitation will not be issued. \n\nSolicitation number 12314426Q0118 is issued as a Request for Quotation (RFQ) for Technical Advisory Support Services supporting the transition of Food for Peace to the US Department of Agriculture (USDA).\n\nThis acquisition is set-aside for small business concerns.  The applicable North American Industry Classification Standard Code is NAICS 541611  The small business size standard is $24.5M  This acquisition is a Total Small Business Set-Aside.  All responsible sources may submit a quotation which will be considered by the agency. \n",
       "summary": "Background\n The USDA is seeking technical advisory support services to facilitate the transition of the Food for Peace program to its management. This initiative aims to ensure that USDA can effectively adapt its systems and processes to meet the unique requirements of the Food for Peace operating environment, thereby bridging any operational gaps during the transition.\n\nWork Details\n The contractor will provide technical advisory services that include: understanding the unique requirements of Food for Peace\u2019s operating environment; guiding USDA in adapting its systems, processes, and procedur",
       "path": "https://www.highergov.com/contract-opportunity/technical-advisory-support-services-transition-of-12314426q0118-k-5a6db",
-      "source_path": "https://sam.gov/opp/4a9d3090f78a463d8d38de29f6d5a6db/view",
+      "source_path": "https://sam.gov/opp/e12e83ee8f6148dc8df51c267cb71ab5/view",
       "contact_email": "diana.rath@usda.gov",
       "contact_name": "Diana Rath",
       "is8a": false,
@@ -5790,95 +5790,6 @@
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
         "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541519",
-      "title": "Data Migration RFI",
-      "agency": "Air Force Materiel Command",
-      "type": "Sources Sought",
-      "noticeCategory": "rfi",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-04-30",
-      "due": "2026-05-10",
-      "val_low": 750000,
-      "val_high": 2500000,
-      "description": "The United States Air Force, Air Force Life Cycle Management Center, AFLCMC/WVSS is seeking information from interested companies with the capability to deliver a data migration solution for the 3DEXPERIENCE (3DX) platform. Previous efforts configured the application code to serve as a collaboration and approval platform to support the Government&#39;s migration to a digital-based acquisition program. The application integrates data from other supporting applications including Cameo and Teamwork Cloud (TWC) and CATIA.\n",
-      "summary": "Background\n The United States Air Force, through the Air Force Life Cycle Management Center (AFLCMC/WVSS), is executing a digital engineering approach to program execution guided by the 'e-Program' Digital Engineering criteria. This initiative aligns with the goals set forth in the 2018 DoD Digital Engineering Strategy and aims to support the Government's transition to a digital-based acquisition program.\n\nThe focus of this Request for Information (RFI) is to identify companies capable of delivering a data migration solution for the 3DEXPERIENCE (3DX) platform, which integrates data from vario",
-      "path": "https://www.highergov.com/contract-opportunity/data-migration-rfi-fa283426q0001-r-a4704",
-      "source_path": "https://sam.gov/opp/5325838bec914456a6c36b27e4b87ccf/view",
-      "contact_email": "landon.smith.13@us.af.mil",
-      "contact_name": "Capt Landon Smith",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": -5,
-      "win_reasons": [
-        "Small business set-aside",
-        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": 3,
-      "matched_lanes": [],
-      "scope_tags": [],
-      "scope_owned": [],
-      "scope_gaps": [],
-      "capability_matrix": {
-        "tasks": [],
-        "fit": "Unclassified",
-        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
-        "avg_score": 0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 0,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFI \u2014 intel gathering, position early",
-            "score": 4
-          },
-          {
-            "q": "Contract Value",
-            "answer": "$1.6M \u2014 Tier 3 (BLN24 sweet spot)",
-            "score": 5
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "The United States Air Force, Air Force Life Cycle Management Center, AFLCMC/WVSS is seeking information from interested companies with the capability to deliver a data migration solution for the 3DEXPERIENCE (3DX) platform. Previous efforts configured the application code to serve as a collaboration and approval platform to support the Government&#39;s migration to a digital-based acquisition prog",
-        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
-        "recommendation": "Review Needed"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Search USASpending.gov for this agency",
-            "why": "No confirmed competitor data for Air Force Materiel Command. Go to USASpending.gov \u2192 search by awarding agency + relevant NAICS to find who actually wins work here. Do not use generic digital services firms without agency-specific evidence.",
-            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-            "evidence": "Pull from USASpending before listing competitors"
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 10,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": -5,
-      "capture_score_delta": 10,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
         "No dominant incumbent identified \u2014 +5pts"
       ]
     },
