@@ -1,6 +1,6 @@
 {
-  "updated": "2026-05-16T11:03:33.938Z",
-  "count": 63,
+  "updated": "2026-05-17T17:45:05.095Z",
+  "count": 62,
   "opps": [
     {
       "naics": "541511",
@@ -22,7 +22,7 @@
       "isFullOpen": true,
       "ericAlso": false,
       "asana_task_gid": "1214150928848982",
-      "capture_score": 248,
+      "capture_score": 258,
       "win_prob": "Medium (20-40%)",
       "tier": 2,
       "rex_analysis": {
@@ -182,7 +182,7 @@
           "No dominant incumbent identified \u2014 +5pts"
         ]
       },
-      "capture_score_base": 238,
+      "capture_score_base": 248,
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
@@ -1196,157 +1196,6 @@
       "capture_score_delta": 10,
       "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "No dominant incumbent identified \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541611",
-      "title": "Army Vantage Integration Field Service Representative (FSR)",
-      "agency": "Department of the Army",
-      "type": "Solicitation",
-      "noticeCategory": "rfp",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-05-11",
-      "due": "2026-05-16",
-      "val_low": null,
-      "val_high": null,
-      "description": "See RFI",
-      "summary": "Background\n The U.S. Army Corps of Engineers, USACE Mission Support Battalion (UMSB), is initiating a digital modernization initiative at the Humphreys Engineer Center in Alexandria, VA. The goal is to transition operational workflows from manual processes to structured, enterprise-integrated systems aligned with Army Vantage and the Microsoft ecosystem. This effort supports federal and Army digital transformation mandates aimed at improving data consolidation, automated reporting, and enterprise visibility across UMSB directorates.\n\nA firm-fixed-price contract is anticipated for a 12-month ba",
-      "path": "https://www.highergov.com/contract-opportunity/army-vantage-integration-field-service-representat-rfi1811142-o-8105d",
-      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFI1811142?contractNumber=",
-      "contact_email": "richard.c.klein@usace.army.mil",
-      "contact_name": "Richard Klein",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": 40,
-      "win_reasons": [
-        "Strong web modernization scope match \u2014 BLN24 proven prime (MBDA website $4.4M, Census DWS, Oversight.gov)",
-        "Small business set-aside"
-      ],
-      "win_prob": "Low (10-20%)",
-      "tier": null,
-      "matched_lanes": [
-        "Web/Digital Platforms (MBDA $4.4M, Census DWS, Oversight.gov \u2014 proven prime)"
-      ],
-      "scope_tags": [
-        "Digital Platform",
-        "Data Analytics"
-      ],
-      "scope_owned": [
-        "Digital Platform",
-        "Data Analytics"
-      ],
-      "scope_gaps": [],
-      "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Data Analytics & Business Intelligence",
-            "score": 4,
-            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "Census CES ADRM IT & Research Support ($7M)",
-              "Census SRQA AI/ML/Data Quality ($4.1M)",
-              "Dept of Education EDARMST Data Analytics ($2.9M)",
-              "IRS OLS (sub reference)"
-            ],
-            "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
-            "triggered_by": [
-              "reporting"
-            ]
-          },
-          {
-            "task": "Digital Platform & Portal Development",
-            "score": 3,
-            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "Census Digital Web Services III ($8.3M)",
-              "MBDA Website Redesign ($4.4M)",
-              "CBP Digital Transformation (Clarity24, $1.4M)",
-              "USDA FNS WIC Digital Services (Clarity24, $2.2M)"
-            ],
-            "note": "BLN24 prime/JV \u2014 Census DWS, MBDA, CBP digital platform (Clarity24)",
-            "triggered_by": [
-              "digital transformation"
-            ]
-          }
-        ],
-        "fit": "Strong",
-        "fit_reason": "BLN24 can prime all or most identified task areas with recent past performance",
-        "avg_score": 3.5,
-        "prime_count": 2,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 2,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "Yes \u2014 strong alignment",
-            "score": 5
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFP \u2014 active solicitation, actionable now",
-            "score": 5
-          },
-          {
-            "q": "Contract Value",
-            "answer": "Value not listed \u2014 check solicitation",
-            "score": 3
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "See RFI Background\n The U.S. Army Corps of Engineers, USACE Mission Support Battalion (UMSB), is initiating a digital modernization initiative at the Humphreys Engineer Center in Alexandria, VA. The goal is to transition operational workflows from manual processes to structured, enterprise-integrated systems aligned with Army Vantage and the Microsoft ecosystem. This effort supports federal and Ar",
-        "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Data Analytics & Business Intelligence, Digital Platform & Portal Development. Past performance backs it up. Worth a closer look.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Strong"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Softrams LLC",
-            "why": "SB Agile web dev and digital services firm, CMS and VA work. Competes directly on SB web development and digital platform contracts.",
-            "url": "https://www.highergov.com/awardee/?search=Softrams",
-            "evidence": "CMS, VA \u2014 Agile dev, digital services, SB set-asides"
-          },
-          {
-            "name": "Agile Six Applications",
-            "why": "SB federal digital services, CMS/VA web development, OASIS+ SB holder. Competes on federal web platform and digital services set-asides.",
-            "url": "https://www.highergov.com/awardee/?search=Agile+Six",
-            "evidence": "CMS, VA \u2014 web dev, digital services, OASIS+ SB"
-          }
-        ],
-        "partners": [
-          {
-            "name": "Clarity24 LLC (BLN24 Active JV) \u2014 STRONGEST FOR CENSUS",
-            "why": "GAP: cloud engineering / tech depth \u2014 STRONGEST TEAMING CHOICE for Census modernization. Three reasons: (1) BLN24 already has Census quals independently (DWS III $8.3M, SRQA $4.1M, MAF/TIGER $4.5M, EDL $4.5M, CES $7M) so BLN24 brings the Census past performance anchor; (2) Accenture Federal Services (via Clarity24) adds cloud engineering depth (AWS/Azure), DevSecOps, and large-system integration; (3) BLN24 and Accenture have already delivered together at Census (MAF/TIGER), NOAA (IDP Cloud $4.3M, AI/ML $3.6M), and CBP (Digital Transformation $4M) \u2014 proven that this team executes. Combined: BLN24 census relationship + Accenture tech depth = credible prime with technical depth.",
-            "url": "https://www.highergov.com/awardee/clarity24-llc-627966104/",
-            "relationship": "Active JV \u2014 Proven Census delivery together",
-            "gap_filled": "cloud engineering / tech depth"
-          }
-        ],
-        "set_aside_note": "Set-aside: SBA \u2014 competitor list filtered accordingly",
-        "score_delta": 18,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-          "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
-          "No dominant incumbent identified \u2014 +5pts"
-        ]
-      },
-      "capture_score_base": 30,
-      "capture_score_delta": 10,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts",
-        "Proven JV partner with agency history (Clarity24 LLC (BLN24 Active JV) \u2014 +8pts",
         "No dominant incumbent identified \u2014 +5pts"
       ]
     },
