@@ -1,6 +1,6 @@
 {
-  "updated": "2026-05-29T03:02:20.703Z",
-  "count": 72,
+  "updated": "2026-05-29T11:03:41.423Z",
+  "count": 73,
   "opps": [
     {
       "naics": "541511",
@@ -859,7 +859,7 @@
           "top_awardees_aggregated": 10,
           "incumbent_named": false,
           "naics_only_fallback": true,
-          "sub_agency_resolved": null
+          "sub_agency_resolved": "general services administration"
         }
       },
       "capture_score_base": 32,
@@ -12851,6 +12851,143 @@
       "capture_score_delta_reasons": [
         "Active agency competitor: ZEN Strategics ($52M) \u2014 -3pts",
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541990",
+      "title": "Super Typhoon Sinlaku Reef Impact Assessments",
+      "agency": "National Marine Fisheries Service",
+      "type": "Synopsis Solicitation",
+      "noticeCategory": "rfp",
+      "set_aside": "",
+      "searchLabel": "Commerce Opportunities",
+      "posted": "2026-05-29",
+      "due": "2026-06-06",
+      "val_low": 150000,
+      "val_high": 400000,
+      "description": "(i) This is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with part 12. This announcement constitutes the only solicitation. Quotes are being requested and a separate written solicitation will not be issued.\n\nSolicitation number 1333MF26Q0044 is issued as a request for quotation (RFQ), for Super Typhoon Sinlaku Reef Impact Assessments.\n\nThis acquisition is set-aside for small business concerns.  The associated NAICS code is 541990.  The small business size standard is $19.5 million. \n\nThe Government intends to award a low-priced, technically acceptable, firm fixed-price purchase order on an all or none basis with payment terms of Net 30.\n\nPlease see attached for the full combined synopsis/solicitation document.\n",
+      "summary": "Background\n The National Oceanic and Atmospheric Administration (NOAA) is issuing this solicitation for the Super Typhoon Sinlaku Reef Impact Assessments. The goal of this contract is to assess the impact of Super Typhoon Sinlaku on reef ecosystems, which aligns with NOAA's mission to understand and predict changes in the Earth's environment and conserve and manage coastal and marine resources.\n\nWork Details\n The contractor will be responsible for conducting comprehensive assessments of reef impacts caused by Super Typhoon Sinlaku. This includes:\n- Performing field surveys to collect data on r",
+      "path": "https://www.highergov.com/contract-opportunity/super-typhoon-sinlaku-reef-impact-assessments-1333mf26q0044-k-4834e",
+      "source_path": "https://sam.gov/opp/51208ef0fb6a4ebda1e134b26704834e/view",
+      "opp_key": "b2660a88518c59ada8696d78daf5e0cc",
+      "version_key": "51208ef0fb6a4ebda1e134b26704834e",
+      "source_id": "1333MF26Q0044",
+      "agency_key": 2855,
+      "contact_email": "stephanie.m.garnett@noaa.gov",
+      "contact_name": "Stephanie M Garnett",
+      "is8a": false,
+      "isFullOpen": true,
+      "ericAlso": true,
+      "capture_score": -25,
+      "win_reasons": [
+        "Full & Open \u2014 competing against all firm sizes; lower win probability without incumbent advantage",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery",
+        "\u26a0\ufe0f Gap area detected: Cybersecurity \u2014 would need a teaming partner for this scope"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": null,
+      "matched_lanes": [],
+      "scope_tags": [
+        "Survey & Research",
+        "Cybersecurity"
+      ],
+      "scope_owned": [
+        "Survey & Research"
+      ],
+      "scope_gaps": [
+        "Cybersecurity"
+      ],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Due Diligence & Technical Advisory",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "IRS Human Centered Design & Research BPA ($7M)",
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Dept of Education EDARMST Data Analytics ($2.9M)"
+            ],
+            "note": "BLN24 prime \u2014 consulting/advisory embedded in major contracts (IRS, Census, Education)",
+            "triggered_by": [
+              "sme"
+            ]
+          }
+        ],
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Due Diligence & Technical Advisory. Some areas need partner",
+        "avg_score": 3.0,
+        "prime_count": 1,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 1,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Full & Open \u2014 harder to win",
+            "score": 2
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
+          },
+          {
+            "q": "Notice Type",
+            "answer": "RFP \u2014 active solicitation, actionable now",
+            "score": 5
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$275K \u2014 Below $500K (small win)",
+            "score": 2
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "(i) This is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with part 12. This announcement constitutes the only solicitation. Quotes are being requested and a separate written solicitation will not be issued.\n\nSolicitation number 1333MF26Q0044 is issued as a request for quotation (RFQ), for Super Typhoon Sinlaku Reef Impact Assessments.\n\nThis",
+        "rex_take": "BLN24 can cover: Due Diligence & Technical Advisory. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: None listed. Notice type: RFP.",
+        "recommendation": "Moderate"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "ICF International",
+            "why": "Large HCD/comms firm with HHS/CMS anchor clients. Wins health communications, digital services, and HCD work across federal health agencies. Primary competitor on unrestricted health/HCD RFPs.",
+            "url": "https://www.highergov.com/awardee/icf-incorporated-l-l-c-73040/",
+            "evidence": "HHS, CMS, CDC, NIH \u2014 health comms and digital services",
+            "evidence_source": "lane_heuristic_fallback"
+          },
+          {
+            "name": "Booz Allen Hamilton",
+            "why": "Large cleared digital services and comms prime. Wins on full & open federal digital transformation and comms work.",
+            "url": "https://www.highergov.com/awardee/booz-allen-hamilton-inc-6455/",
+            "evidence": "DoD, federal agencies \u2014 digital transformation, comms",
+            "evidence_source": "lane_heuristic_fallback"
+          }
+        ],
+        "partners": [],
+        "set_aside_note": "Set-aside:  (full_open) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
+        "score_delta": 5,
+        "score_reasons": [
+          "No dominant incumbent identified \u2014 +5pts"
+        ],
+        "hg_grounded": false,
+        "hg_evidence_counts": {
+          "contracts_pulled": 100,
+          "set_aside_eligible": 0,
+          "top_awardees_aggregated": 0,
+          "incumbent_named": false,
+          "naics_only_fallback": false,
+          "sub_agency_resolved": null
+        }
+      },
+      "capture_score_base": -25,
+      "capture_score_delta": 5,
+      "capture_score_delta_reasons": [
+        "No dominant incumbent identified \u2014 +5pts"
       ]
     },
     {
