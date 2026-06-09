@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-07T11:09:16.992Z",
-  "count": 72,
+  "updated": "2026-06-09T19:03:01.051Z",
+  "count": 75,
   "opps": [
     {
       "naics": "541511",
@@ -216,6 +216,269 @@
       "capture_score_base": 53,
       "capture_score_delta": 5,
       "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541512",
+      "title": "Immigration Biometrics and Identity Services (IBIS)",
+      "agency": "Citizen and Immigration Services",
+      "type": "New",
+      "noticeCategory": "forecast",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-06-05",
+      "due": "2027-04-01",
+      "val_low": 100000000,
+      "val_high": 100000000000,
+      "description": "The combined USCIS Immigration Biometrics and Identity Services (IBIS) project will deliver secure, scalable, and modern IT solutions supporting data analytics, machine learning, entity resolution, biometrics and identity management, and scheduling for the nation\u00e2\u20ac\u2122s immigration system. Leveraging agile methodologies and advanced Development, Security, and Operations (DevSecOps) practices, multi-disciplinary teams develop, operate, and maintain cloud-based applications using a robust suite of open-source and commercial tools. The project emphasizes automation, continuous integration and delivery, and strict adherence to federal security, privacy, and accessibility standards. Teams are responsible for end-to-end development, operations, security, and technical support, ensuring high-quality code, rapid incident response, and comprehensive documentation. This integrated approach enables USCIS to efficiently and securely manage complex identity and biometrics systems for both internal and public-facing applications.",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1144483",
+      "source_path": "",
+      "opp_key": "a8fae1f5c64e5a988cbf13a403a052e4",
+      "version_key": "a8fae1f5c64e5a988cbf13a403a052e4",
+      "source_id": "*F2026074005",
+      "agency_key": 468,
+      "contact_email": "",
+      "contact_name": "",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 51,
+      "win_reasons": [
+        "Partial HCD/UX scope match \u2014 verify fit vs IRS/Census delivery experience",
+        "Strong data/analytics scope match \u2014 BLN24 proven prime (Census SRQA AI/ML, Education EDARMST risk analytics)",
+        "Partial cloud/modernization match \u2014 Clarity24 JV has NOAA cloud delivery experience",
+        "Small business set-aside",
+        "\u26a0\ufe0f Gap area detected: AI / Machine Learning, DevSecOps, Scientific/Technical Support \u2014 would need a teaming partner for this scope"
+      ],
+      "win_prob": "Medium (20-40%)",
+      "tier": 1,
+      "matched_lanes": [
+        "HCD/UX (partial match)",
+        "Data/Analytics (Census $4.1M SRQA, Dept of Education $2.9M \u2014 proven prime)",
+        "Cloud/App Mod (partial)"
+      ],
+      "scope_tags": [
+        "Accessibility / 508",
+        "Branding & Visual Design",
+        "Data Analytics",
+        "AI / Machine Learning",
+        "DevSecOps",
+        "Scientific/Technical Support"
+      ],
+      "scope_owned": [
+        "Accessibility / 508",
+        "Branding & Visual Design",
+        "Data Analytics"
+      ],
+      "scope_gaps": [
+        "AI / Machine Learning",
+        "DevSecOps",
+        "Scientific/Technical Support"
+      ],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Data Analytics & Business Intelligence",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census CES ADRM IT & Research Support ($7M)",
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Dept of Education EDARMST Data Analytics ($2.9M)",
+              "IRS OLS (sub reference)"
+            ],
+            "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
+            "triggered_by": [
+              "data analytics"
+            ]
+          },
+          {
+            "task": "Accessibility / Section 508 Compliance",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "IRS Human Centered Design & Research BPA ($7M)",
+              "Census Digital Web Services III ($8.3M)"
+            ],
+            "note": "BLN24 prime \u2014 IRS HCD BPA scope included 508 compliance testing",
+            "triggered_by": [
+              "accessibility"
+            ]
+          },
+          {
+            "task": "DevSecOps / CI/CD Pipelines",
+            "score": 2,
+            "score_label": "2 \u2014 Related PP, different context",
+            "status": "jv",
+            "pp_refs": [
+              "Census SRQA AI/ML/Data Quality ($4.1M)"
+            ],
+            "note": "Adjacent (2/4) \u2014 Census SRQA used agile + DevSecOps principles; IRS Forms Mod used CI/CD pipelines. Not standalone DevSecOps prime but confirmed delivery within broader contracts.",
+            "triggered_by": [
+              "devsecops",
+              "continuous integration"
+            ]
+          },
+          {
+            "task": "Cybersecurity / FISMA / Zero Trust",
+            "score": 0,
+            "score_label": "0 \u2014 No Experience (Gap)",
+            "status": "gap",
+            "pp_refs": [],
+            "note": "BLN24 gap \u2014 no confirmed prime cybersecurity delivery; would need dedicated cyber partner",
+            "triggered_by": [
+              "incident response",
+              "devsecops"
+            ]
+          }
+        ],
+        "fit": "Weak / JV",
+        "fit_reason": "Majority of task areas require teaming \u2014 may not be best lead",
+        "avg_score": 2.2,
+        "prime_count": 2,
+        "jv_count": 1,
+        "gap_count": 1,
+        "total_tasks": 4,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Partial \u2014 significant gaps",
+            "score": 2
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$50050.0M \u2014 Tier 2+ (BLN24 has won at this range)",
+            "score": 4
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The combined USCIS Immigration Biometrics and Identity Services (IBIS) project will deliver secure, scalable, and modern IT solutions supporting data analytics, machine learning, entity resolution, biometrics and identity management, and scheduling for the nation\u00e2\u20ac\u2122s immigration system. Leveraging agile methodologies and advanced Development, Security, and Operations (DevSecOps) practices, multi-d",
+        "rex_take": "BLN24 can cover: Data Analytics & Business Intelligence, Accessibility / Section 508 Compliance. Gap areas requiring teaming: Cybersecurity / FISMA / Zero Trust. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Weak / JV"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Ekagra Partners",
+            "why": "3 award(s) at this agency+NAICS in the last 24 months totaling $206.0M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"EGIS II - IT SERVICES SUPPORTING THE NATIONAL IMMIGRATION SYSTEM.\"",
+            "threat_summary": "Dominant agency relationship \u2014 $206M in this lane over the last 24 months. Likely the proposal benchmark.",
+            "url": "https://www.highergov.com/awardee/ekagra-partners-llc-10005091/",
+            "evidence": "HG: 3 awards, $206.0M, last 2026-05-21",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 206.0,
+            "awardee_key": 10005091,
+            "is_incumbent": false
+          },
+          {
+            "name": "DV United",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $162.2M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"OUTCOME-BASED DELIVERY AND DEVSECOPS SERVICES (ODOS) III\"",
+            "threat_summary": "Dominant agency relationship \u2014 $162M in this lane over the last 24 months. Likely the proposal benchmark.",
+            "url": "https://www.highergov.com/awardee/dv-united-llc-10001930/",
+            "evidence": "HG: 1 awards, $162.2M, last 2026-05-14",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 162.2,
+            "awardee_key": 10001930,
+            "is_incumbent": false
+          },
+          {
+            "name": "Alethix",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $125.5M. Set-aside history: 8(A) Competed (8A). Recent scope: \"SERVICES FOR PRODUCT ENGINEERING AND ENTERPRISE DELIVERY (SPEED). DEVSECOPS SERV\"",
+            "threat_summary": "Dominant agency relationship \u2014 $126M in this lane over the last 24 months. Likely the proposal benchmark.",
+            "url": "https://www.highergov.com/awardee/alethix-llc-10001306/",
+            "evidence": "HG: 1 awards, $125.5M, last 2026-04-29",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 125.5,
+            "awardee_key": 10001306,
+            "is_incumbent": false
+          },
+          {
+            "name": "Adg-Rei Technology Ventures",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $104.2M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"OUTCOME-BASED DELIVERY AND DEVSECOPS SERVICES (ODOS) III\"",
+            "threat_summary": "Dominant agency relationship \u2014 $104M in this lane over the last 24 months. Likely the proposal benchmark.",
+            "url": "https://www.highergov.com/awardee/adg-rei-technology-ventures-llc-10014311/",
+            "evidence": "HG: 1 awards, $104.2M, last 2026-06-04",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 104.2,
+            "awardee_key": 10014311,
+            "is_incumbent": false
+          }
+        ],
+        "partners": [
+          {
+            "name": "Clarity24",
+            "why": "Active 8(a) Mentor-Protege JV with Accenture Federal Services \u2014 cloud, DevSecOps, AWS, AI/ML, Power Platform depth.",
+            "url": "https://www.highergov.com/awardee/clarity-solutions-llc-clarity24-10086573/",
+            "relationship": "Active 8(a) JV (Mentor-Protege with Accenture Federal Services)",
+            "gap_filled": "Cloud / DevSecOps / Power Platform depth",
+            "evidence_source": "bln24_jv"
+          },
+          {
+            "name": "Accenture Federal Services",
+            "why": "Has subbed for Alethix (16 awards, $55.5M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/accenture-federal-services-llc-10109693/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10109693,
+            "amount_m": 55.5
+          },
+          {
+            "name": "Maximus Federal Services",
+            "why": "Has subbed for DV United (3 awards, $17.8M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/maximus-federal-services-inc-10118683/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10118683,
+            "amount_m": 17.8
+          },
+          {
+            "name": "Peraton",
+            "why": "Has subbed for Ekagra Partners (3 awards, $13.6M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/peraton-inc-12401841/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 12401841,
+            "amount_m": 13.6
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
+        "score_delta": -1,
+        "score_reasons": [
+          "Established agency relationship: Ekagra Partners ($206M) \u2014 -6pts",
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+        ],
+        "hg_grounded": true,
+        "hg_evidence_counts": {
+          "contracts_pulled": 100,
+          "set_aside_eligible": 53,
+          "top_awardees_aggregated": 47,
+          "incumbent_named": false,
+          "naics_only_fallback": false,
+          "sub_agency_resolved": null
+        }
+      },
+      "capture_score_base": 52,
+      "capture_score_delta": -1,
+      "capture_score_delta_reasons": [
+        "Established agency relationship: Ekagra Partners ($206M) \u2014 -6pts",
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
       ]
     },
@@ -941,22 +1204,6 @@
             }
           },
           {
-            "name": "Vets Synergetic Group",
-            "why": "2 award(s) at this agency+NAICS in the last 24 months totaling $3.7M. Set-aside history: 8(A) Competed (8A). Recent scope: \"MULTIPLE RESEARCH SCIENTISTS PROVIDING SUPPORT TO NEW AND ONGOING LABORATORY RES\"",
-            "threat_summary": "Repeat awardee in this lane (2 contracts). Small individual ticket, but agency relationship is real.",
-            "url": "https://www.highergov.com/awardee/vets-synergetic-group-llc-12449807/",
-            "evidence": "HG: 2 awards, $3.7M, last 2026-06-04",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 3.7,
-            "awardee_key": 12449807,
-            "is_incumbent": false,
-            "cert_evidence": {
-              "has_8a": false,
-              "a8_end": null,
-              "sba_certs_chip": "Certified JV"
-            }
-          },
-          {
             "name": "Agile Decision Sciences",
             "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $3.4M. Set-aside history: 8(A) Competed (8A). Recent scope: \"NATIONAL CENTRALIZED RECORDS MANAGEMENT AND DIGITIZATION CENTERS, EDISON, NJ\nINF\"",
             "threat_summary": "Recent entrant in this lane. Less of a known quantity \u2014 likely to compete on price or a niche capability angle.",
@@ -970,6 +1217,22 @@
               "has_8a": true,
               "a8_end": "2029-03-11",
               "sba_certs_chip": "8(a)"
+            }
+          },
+          {
+            "name": "Vets Synergetic Group",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $3.1M. Set-aside history: 8(A) Competed (8A). Recent scope: \"MULTIPLE RESEARCH SCIENTISTS PROVIDING SUPPORT TO NEW AND ONGOING LABORATORY RES\"",
+            "threat_summary": "Recent entrant in this lane. Less of a known quantity \u2014 likely to compete on price or a niche capability angle.",
+            "url": "https://www.highergov.com/awardee/vets-synergetic-group-llc-12449807/",
+            "evidence": "HG: 1 awards, $3.1M, last 2026-06-04",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 3.1,
+            "awardee_key": 12449807,
+            "is_incumbent": false,
+            "cert_evidence": {
+              "has_8a": false,
+              "a8_end": null,
+              "sba_certs_chip": "Certified JV"
             }
           }
         ],
@@ -1023,8 +1286,8 @@
         "hg_grounded": true,
         "hg_evidence_counts": {
           "contracts_pulled": 100,
-          "set_aside_eligible": 20,
-          "top_awardees_aggregated": 12,
+          "set_aside_eligible": 23,
+          "top_awardees_aggregated": 10,
           "incumbent_named": false,
           "naics_only_fallback": true,
           "sub_agency_resolved": null
@@ -1033,6 +1296,216 @@
       "capture_score_base": 47,
       "capture_score_delta": 5,
       "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541613",
+      "title": "HHS NIH - Drug-Free Workplace (DFWP) Awareness/Comm - MRAS",
+      "agency": "National Institutes of Health",
+      "type": "Sources Sought",
+      "noticeCategory": "rfi",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-06-08",
+      "due": "2026-06-18",
+      "val_low": 150000,
+      "val_high": 750000,
+      "description": "On behalf of Department of Health and Human Services (HHS), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browser.\n\nOnly responses submitted through the linked RFI will be accepted. Nothing else will be evaluated or recorded (this includes selecting 'interested' within eBuy).\n\n\nLink to RFI: https://feedback.gsa.gov/jfe/form/SV_1FB7G0QXCW5JWNU\n\n\nAdditional Information:\nDue to the structure of contracts in GSA eBuy, you may receive multiple Sources Sought or RFI notifications for the same requirement if it falls under multiple of your company's awarded SINs. However, please note that you are only required to respond to the RFI once.\n\nBe sure to use the URL provided above to submit your response.\n\n\nAny questions regarding this RFI will be responded to by email only.  Send your inquiry to: rfi@research.gsa.gov and be sure to include the RFQ number.\n\n",
+      "summary": "Background\n The National Institutes of Health (NIH) is the nation's premier biomedical research agency, committed to maintaining a safe, healthy, respectful, and productive work environment. The NIH Drug-Free Federal Workplace (DFWP) Program promotes workforce awareness, employee accountability, supervisor readiness, and access to support resources that contribute to a safe and productive workplace. The goal of this contract is to strengthen awareness, education, outreach, engagement, and communications activities related to the DFWP Program across the NIH community.\n\nWork Details\n The Contrac",
+      "path": "https://www.highergov.com/contract-opportunity/hhs-nih-drug-free-workplace-dfwp-awareness-com-rfi1816518-r-2d892",
+      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFI1816518?contractNumber=",
+      "opp_key": "c1059b5864ae5707ad5e7fdeb42fcd41",
+      "version_key": "8ef6016e3d1456f4b751c334b932d892",
+      "source_id": "RFI1816518",
+      "agency_key": 437,
+      "contact_email": "rfi@research.gsa.gov",
+      "contact_name": "Jon Dewolfe",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 39,
+      "win_reasons": [
+        "Agency: BLN24 has past performance here (relationship + credibility advantage)",
+        "Partial comms scope match \u2014 verify fit vs CMS/CDC/HUD delivery experience",
+        "Small business set-aside"
+      ],
+      "win_prob": "Medium (20-40%)",
+      "tier": null,
+      "matched_lanes": [
+        "Strategic Comms (partial)"
+      ],
+      "scope_tags": [
+        "Outreach & Engagement"
+      ],
+      "scope_owned": [
+        "Outreach & Engagement"
+      ],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Public Outreach & Stakeholder Engagement",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "HUD FHEO Communications & Outreach ($2M)",
+              "HHS OIDP Comprehensive Communications ($10.3M, Fors Marsh JV)",
+              "CDC Communications (DDT $138K, NAC $250K)",
+              "CMS Marketplace Notice Production Services ($16M)"
+            ],
+            "note": "BLN24 prime \u2014 HUD FHEO, HRSA, USCIS outreach work",
+            "triggered_by": [
+              "outreach"
+            ]
+          }
+        ],
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Public Outreach & Stakeholder Engagement. Some areas need partner",
+        "avg_score": 3.0,
+        "prime_count": 1,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 1,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
+          },
+          {
+            "q": "Notice Type",
+            "answer": "RFI \u2014 intel gathering, position early",
+            "score": 4
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$450K \u2014 Below $500K (small win)",
+            "score": 2
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "On behalf of Department of Health and Human Services (HHS), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the",
+        "rex_take": "BLN24 can cover: Public Outreach & Stakeholder Engagement. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Moderate"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Aptive Resources",
+            "why": "3 award(s) at this agency+NAICS in the last 24 months totaling $59.8M. Set-aside history: Women Owned Small Business (WOSB). Recent scope: \"OPM HRS RB BPA CALL 20 SFS JOB FAIR SUPPORTS THE ORGANIZATION AND EXECUTION OF A\"",
+            "threat_summary": "Established in this lane \u2014 $59.8M recent. Treat as a primary competitor; needs a sharp discriminator.",
+            "url": "https://www.highergov.com/awardee/aptive-resources-llc-10001627/",
+            "evidence": "HG: 3 awards, $59.8M, last 2026-05-19",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 59.8,
+            "awardee_key": 10001627,
+            "is_incumbent": false
+          },
+          {
+            "name": "MB Solutions",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $36.5M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"HQAMC MEDICAL LOGISTICS LABOR BASE PLUS 4 OPTIONS. THE CONTRACTOR ANALYZES, REVI\"",
+            "threat_summary": "Established in this lane \u2014 $36.5M recent. Treat as a primary competitor; needs a sharp discriminator.",
+            "url": "https://www.highergov.com/awardee/mb-solutions-inc-10006830/",
+            "evidence": "HG: 1 awards, $36.5M, last 2026-03-06",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 36.5,
+            "awardee_key": 10006830,
+            "is_incumbent": false
+          },
+          {
+            "name": "Arrow Arc",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $24.8M. Set-aside history: Service Disabled Veteran Owned Small Business Set-Aside (SDVOSBC). Recent scope: \"VHA RECRUITMENT MARKETING & ADVERTISING CAMPAIGN. THE CONTRACTOR IS RESPONSIBLE \"",
+            "threat_summary": "Established in this lane \u2014 $24.8M recent. Treat as a primary competitor; needs a sharp discriminator.",
+            "url": "https://www.highergov.com/awardee/arrow-arc-llc-264822615/",
+            "evidence": "HG: 1 awards, $24.8M, last 2026-05-18",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 24.8,
+            "awardee_key": 264822615,
+            "is_incumbent": false
+          },
+          {
+            "name": "RED Carrot",
+            "why": "3 award(s) at this agency+NAICS in the last 24 months totaling $10.3M. Set-aside history: 8(A) Competed (8A), 8(A) Sole Source  (8AN), Small Business Set Aside - Total (S. Recent scope: \"BROADCASTING, WEBCASTING AND SATELLITE SERVICES PROVIDED FOR THE DEPARTMENT. INC\"",
+            "threat_summary": "Active in the lane \u2014 $10.3M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/red-carrot-inc-10011907/",
+            "evidence": "HG: 3 awards, $10.3M, last 2026-04-22",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 10.3,
+            "awardee_key": 10011907,
+            "is_incumbent": false
+          }
+        ],
+        "partners": [
+          {
+            "name": "Marcom Group",
+            "why": "Has subbed for Aptive Resources (8 awards, $37.4M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/marcom-group-inc-10006963/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10006963,
+            "amount_m": 37.4
+          },
+          {
+            "name": "Artemis Arc",
+            "why": "Has subbed for Aptive Resources, Arrow Arc (18 awards, $8.1M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/artemis-arc-llc-12765808/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 12765808,
+            "amount_m": 8.1
+          },
+          {
+            "name": "CFI Group Usa",
+            "why": "Has subbed for Aptive Resources (7 awards, $6.4M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/cfi-group-usa-l-l-c-10120027/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10120027,
+            "amount_m": 6.4
+          },
+          {
+            "name": "Duty First Consulting",
+            "why": "Has subbed for Aptive Resources (6 awards, $5.6M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/duty-first-consulting-llc-10003494/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10003494,
+            "amount_m": 5.6
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
+        "score_delta": 2,
+        "score_reasons": [
+          "Active agency competitor: Aptive Resources ($60M) \u2014 -3pts",
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+        ],
+        "hg_grounded": true,
+        "hg_evidence_counts": {
+          "contracts_pulled": 100,
+          "set_aside_eligible": 22,
+          "top_awardees_aggregated": 15,
+          "incumbent_named": false,
+          "naics_only_fallback": true,
+          "sub_agency_resolved": null
+        }
+      },
+      "capture_score_base": 37,
+      "capture_score_delta": 2,
+      "capture_score_delta_reasons": [
+        "Active agency competitor: Aptive Resources ($60M) \u2014 -3pts",
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
       ]
     },
@@ -1811,6 +2284,229 @@
       "capture_score_delta": 2,
       "capture_score_delta_reasons": [
         "Active agency competitor: Spatial Front ($77M) \u2014 -3pts",
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541519",
+      "title": "TRANSCOM Reference Data Management (TRDM)",
+      "agency": "United States Transportation Command",
+      "type": "Recompete",
+      "noticeCategory": "forecast",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-06-04",
+      "due": "2026-10-01",
+      "val_low": 5000000,
+      "val_high": 25000000,
+      "description": "Provides software development, IT security, administration and expert services for TRDM.",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1144414",
+      "source_path": "",
+      "opp_key": "792bc2f732605e12a70570269e9c8144",
+      "version_key": "792bc2f732605e12a70570269e9c8144",
+      "source_id": "TCJ6",
+      "agency_key": 352,
+      "contact_email": "chad.s.lindauer.civ@mail.mil",
+      "contact_name": "Chad Lindauer",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": 32,
+      "win_reasons": [
+        "Agency: BLN24 has past performance here (relationship + credibility advantage)",
+        "Partial data/analytics scope match \u2014 verify fit vs Census/Education delivery experience",
+        "Small business set-aside"
+      ],
+      "win_prob": "Medium (20-40%)",
+      "tier": 2,
+      "matched_lanes": [
+        "Data/Analytics (partial)"
+      ],
+      "scope_tags": [
+        "Data Engineering"
+      ],
+      "scope_owned": [
+        "Data Engineering"
+      ],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Data Engineering & ETL",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Census MAF/TIGER Modernization & Cloud ($4.5M)",
+              "Census EDL Applications ($4.5M)"
+            ],
+            "note": "BLN24 prime \u2014 Census SRQA, MAF/TIGER, EDL all heavy data engineering",
+            "triggered_by": [
+              "data management"
+            ]
+          },
+          {
+            "task": "Software Development / SDLC",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census CES ADRM IT & Research Support ($7M)",
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Census EDL Applications ($4.5M)",
+              "Census Digital Web Services III ($8.3M)"
+            ],
+            "note": "BLN24 prime \u2014 Census CES $7M (OnTheMap, QWI Explorer, Job-to-Job Flows \u2014 real federal web applications with coders), Census SRQA full SDLC, Census EDL AWS platform, Census DWS AEM (largest federal AEM deployment), IRS Forms CI/CD",
+            "triggered_by": [
+              "software development"
+            ]
+          }
+        ],
+        "fit": "Strong",
+        "fit_reason": "BLN24 can prime all or most identified task areas with recent past performance",
+        "avg_score": 4.0,
+        "prime_count": 2,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 2,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Yes \u2014 strong alignment",
+            "score": 5
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$15.0M \u2014 Tier 2+ (BLN24 has won at this range)",
+            "score": 4
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "Provides software development, IT security, administration and expert services for TRDM.",
+        "rex_take": "BLN24 has strong capability alignment on this opp. Key areas: Data Engineering & ETL, Software Development / SDLC. Past performance backs it up. Worth a closer look.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Strong"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "FedTec",
+            "why": "Named incumbent on the HigherGov opp page. 1 award(s) at this agency+NAICS in the last 24 months totaling $5.9M. Recent scope: \"TRANSCOM REFERENCE DATA MANAGEMENT (TRDM)\"",
+            "threat_summary": "Named incumbent on the HG opp page. Hardest to dislodge \u2014 beat them on a discriminator (JV depth, mission alignment, or a specific CPARS-level performance gap).",
+            "url": "https://www.highergov.com/awardee/fedtec-10002435/",
+            "evidence": "HG: 1 awards, $5.9M, last 2025-12-10",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 5.9,
+            "awardee_key": 10002435,
+            "is_incumbent": true
+          },
+          {
+            "name": "Paragon Technology Group",
+            "why": "3 award(s) at this agency+NAICS in the last 24 months totaling $62.9M. Set-aside history: Service Disabled Veteran Owned Small Business Set-Aside (SDVOSBC), Small Busines. Recent scope: \"THIS REQUIREMENT IS TO PROVIDE A BROAD RANGE OF C5S TO THE JECC MISSIONS, USTRAN\"",
+            "threat_summary": "Established in this lane \u2014 $62.9M recent. Treat as a primary competitor; needs a sharp discriminator.",
+            "url": "https://www.highergov.com/awardee/paragon-technology-group-inc-10006143/",
+            "evidence": "HG: 3 awards, $62.9M, last 2026-01-30",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 62.9,
+            "awardee_key": 10006143,
+            "is_incumbent": false
+          },
+          {
+            "name": "Affigent",
+            "why": "7 award(s) at this agency+NAICS in the last 24 months totaling $26.9M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"DEFENSE PERSONAL PROPERTY SYSTEM (DPS) ORACLE DATA INTEGRATOR (ODI) SOFTWARE SUP\"",
+            "threat_summary": "Established in this lane \u2014 $26.9M recent. Treat as a primary competitor; needs a sharp discriminator.",
+            "url": "https://www.highergov.com/awardee/affigent-llc-10113631/",
+            "evidence": "HG: 7 awards, $26.9M, last 2026-02-26",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 26.9,
+            "awardee_key": 10113631,
+            "is_incumbent": false
+          },
+          {
+            "name": "CMA Technology",
+            "why": "2 award(s) at this agency+NAICS in the last 24 months totaling $24.5M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"HSP/HSA - INTELLIFLEX. THIS AWARD INCORPORATES AN UPDATED PERFORMANCE WORK STATE\"",
+            "threat_summary": "Established in this lane \u2014 $24.5M recent. Treat as a primary competitor; needs a sharp discriminator.",
+            "url": "https://www.highergov.com/awardee/cma-technology-inc-10001201/",
+            "evidence": "HG: 2 awards, $24.5M, last 2025-10-07",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 24.5,
+            "awardee_key": 10001201,
+            "is_incumbent": false
+          }
+        ],
+        "partners": [
+          {
+            "name": "Clarity24",
+            "why": "Active 8(a) Mentor-Protege JV with Accenture Federal Services \u2014 cloud, DevSecOps, AWS, AI/ML, Power Platform depth.",
+            "url": "https://www.highergov.com/awardee/clarity-solutions-llc-clarity24-10086573/",
+            "relationship": "Active 8(a) JV (Mentor-Protege with Accenture Federal Services)",
+            "gap_filled": "Cloud / DevSecOps / Power Platform depth",
+            "evidence_source": "bln24_jv"
+          },
+          {
+            "name": "Creoal Consulting",
+            "why": "Has subbed for Affigent (5 awards, $13.6M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/creoal-consulting-llc-10002051/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10002051,
+            "amount_m": 13.6
+          },
+          {
+            "name": "Oracle America",
+            "why": "Has subbed for Affigent (7 awards, $4.6M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/oracle-america-inc-10112460/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10112460,
+            "amount_m": 4.6
+          },
+          {
+            "name": "Obxtek",
+            "why": "Has subbed for Paragon Technology Group (3 awards, $3.9M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/obxtek-inc-10000492/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10000492,
+            "amount_m": 3.9
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
+        "score_delta": -3,
+        "score_reasons": [
+          "Named incumbent on HG opp page: FedTec \u2014 -8pts",
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+        ],
+        "hg_grounded": true,
+        "hg_evidence_counts": {
+          "contracts_pulled": 100,
+          "set_aside_eligible": 84,
+          "top_awardees_aggregated": 39,
+          "incumbent_named": true,
+          "naics_only_fallback": false,
+          "sub_agency_resolved": null
+        }
+      },
+      "capture_score_base": 35,
+      "capture_score_delta": -3,
+      "capture_score_delta_reasons": [
+        "Named incumbent on HG opp page: FedTec \u2014 -8pts",
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
       ]
     },
@@ -3876,7 +4572,7 @@
             "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $45.0M. Set-aside history: 8(A) Competed (8A). Recent scope: \"WOMEN, INFANTS, AND CHILDREN (WIC) OVERSEAS PROGRAM SUPPORT SERVICES PROVIDED IN\"",
             "threat_summary": "Established in this lane \u2014 $45.0M recent. Treat as a primary competitor; needs a sharp discriminator.",
             "url": "https://www.highergov.com/awardee/cherokee-nation-aerospace-and-defense-l-l-c-10003271/",
-            "evidence": "HG: 1 awards, $45.0M, last 2026-02-05",
+            "evidence": "HG: 1 awards, $45.0M, last 2026-03-09",
             "evidence_source": "highergov_contracts",
             "amount_m": 45.0,
             "awardee_key": 10003271,
@@ -3945,8 +4641,8 @@
         "hg_grounded": true,
         "hg_evidence_counts": {
           "contracts_pulled": 100,
-          "set_aside_eligible": 60,
-          "top_awardees_aggregated": 53,
+          "set_aside_eligible": 61,
+          "top_awardees_aggregated": 54,
           "incumbent_named": false,
           "naics_only_fallback": false,
           "sub_agency_resolved": null
@@ -3956,252 +4652,6 @@
       "capture_score_delta": 2,
       "capture_score_delta_reasons": [
         "Active agency competitor: Allied Technologies And Consulting ($89M) \u2014 -3pts",
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541611",
-      "title": "Program Management and Data Analysis (PMDA)",
-      "agency": "Department of Homeland Security",
-      "type": "Recompete",
-      "noticeCategory": "forecast",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-05-21",
-      "due": "2026-09-25",
-      "val_low": 20000000,
-      "val_high": 50000000,
-      "description": "To meet Department of Homeland Security, U.S. Customs and Border Protection, Office of Professional Responsibility (OPR) leadership expectations, OPR requires management analysts, data analysts and industry subject matter expertise support to enhance the current OPR operations that exist within the office and assist with building future capabilities and functions under the program umbrellas of criminal and administrative investigations, risk management in a security environment, business transformation, advanced data analytics, communications, SharePoint content management, and training development for law enforcement and support programs that requires rapid turnaround of accurate and defensible written products and deliverables.to support federal resources by acquiring the subject matter expertise and technical capabilities of the investigative and security industries to advise on and promote proven best practices, new methods for developing effective investigation programs and implementing risk-based security capabilities\u00e2\u20ac\u201dall driven by sound data analysis.\n\nAcquisition Strategy: Oasis + small business set-aside.",
-      "summary": "",
-      "path": "https://www.highergov.com/contract-forecast/1142600",
-      "source_path": "",
-      "opp_key": "94907562e5cd562abc2f62c2248cdf41",
-      "version_key": "94907562e5cd562abc2f62c2248cdf41",
-      "source_id": "*F2026072841",
-      "agency_key": 100,
-      "contact_email": "n.valentine@cbp.dhs.gov",
-      "contact_name": "Natarsha Velentine",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": 15,
-      "win_reasons": [
-        "Agency: BLN24 has past performance here (relationship + credibility advantage)",
-        "Strong data/analytics scope match \u2014 BLN24 proven prime (Census SRQA AI/ML, Education EDARMST risk analytics)",
-        "Partial web/digital scope match \u2014 verify fit vs MBDA/Census delivery experience",
-        "Small business set-aside",
-        "OUT OF SCOPE: ship \u2014 not in BLN24 delivery lanes",
-        "\u26a0\ufe0f Gap area detected: Training & eLearning \u2014 would need a teaming partner for this scope"
-      ],
-      "win_prob": "Low (10-20%)",
-      "tier": 1,
-      "matched_lanes": [
-        "Data/Analytics (Census $4.1M SRQA, Dept of Education $2.9M \u2014 proven prime)",
-        "Web/Digital (partial)"
-      ],
-      "scope_tags": [
-        "Data Analytics",
-        "Training & eLearning"
-      ],
-      "scope_owned": [
-        "Data Analytics"
-      ],
-      "scope_gaps": [
-        "Training & eLearning"
-      ],
-      "is_vehicle": true,
-      "vehicle_note": "Contract VEHICLE (IDIQ/GWAC/on-ramp): award is by self-scoring qualification thresholds, not head-to-head competition. Win-prob %, competitor lists, and listed value are not meaningful here \u2014 the real question is whether BLN24 clears the domain scorecard.",
-      "capability_matrix": {
-        "tasks": [
-          {
-            "task": "Data Analytics & Business Intelligence",
-            "score": 4,
-            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "Census CES ADRM IT & Research Support ($7M)",
-              "Census SRQA AI/ML/Data Quality ($4.1M)",
-              "Dept of Education EDARMST Data Analytics ($2.9M)",
-              "IRS OLS (sub reference)"
-            ],
-            "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
-            "triggered_by": [
-              "data analytics",
-              "data analysis"
-            ]
-          },
-          {
-            "task": "Due Diligence & Technical Advisory",
-            "score": 3,
-            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
-            "status": "prime",
-            "pp_refs": [
-              "IRS Human Centered Design & Research BPA ($7M)",
-              "Census SRQA AI/ML/Data Quality ($4.1M)",
-              "Dept of Education EDARMST Data Analytics ($2.9M)"
-            ],
-            "note": "BLN24 prime \u2014 consulting/advisory embedded in major contracts (IRS, Census, Education)",
-            "triggered_by": [
-              "subject matter expert"
-            ]
-          },
-          {
-            "task": "Training & eLearning Development",
-            "score": 1,
-            "score_label": "1 \u2014 Limited / Adjacent Experience",
-            "status": "jv",
-            "pp_refs": [],
-            "note": "BLN24 adjacent \u2014 HHS/CDC knowledge transfer work exists but no standalone eLearning prime",
-            "triggered_by": [
-              "training development"
-            ]
-          }
-        ],
-        "fit": "Moderate",
-        "fit_reason": "Can prime most: Data Analytics & Business Intelligence, Due Diligence & Technical Advisory. Some areas need partner",
-        "avg_score": 2.7,
-        "prime_count": 2,
-        "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 3,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "Mostly \u2014 some gap areas",
-            "score": 3
-          },
-          {
-            "q": "Notice Type",
-            "answer": "Forecast \u2014 early awareness, shape before RFP",
-            "score": 3
-          },
-          {
-            "q": "Contract Value",
-            "answer": "$35.0M \u2014 Tier 2+ (BLN24 has won at this range)",
-            "score": 4
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "To meet Department of Homeland Security, U.S. Customs and Border Protection, Office of Professional Responsibility (OPR) leadership expectations, OPR requires management analysts, data analysts and industry subject matter expertise support to enhance the current OPR operations that exist within the office and assist with building future capabilities and functions under the program umbrellas of cri",
-        "rex_take": "BLN24 can cover: Data Analytics & Business Intelligence, Due Diligence & Technical Advisory. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
-        "recommendation": "Moderate"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "Constellation",
-            "why": "Named incumbent on the HigherGov opp page.",
-            "threat_summary": "Named incumbent on the HG opp page. Hardest to dislodge \u2014 beat them on a discriminator (JV depth, mission alignment, or a specific CPARS-level performance gap).",
-            "url": "https://www.highergov.com/awardee/constellation-inc-10004338/",
-            "evidence": "HG: 0 awards, $0.0M, last ",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 0,
-            "awardee_key": 10004338,
-            "is_incumbent": true
-          },
-          {
-            "name": "All Native Synergies Company",
-            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $20.8M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"PMOD-ISSO SUPPORT. THIS AWARD PROVIDES INFORMATION SYSTEM SECURITY OFFICER (ISSO\"",
-            "threat_summary": "Established in this lane \u2014 $20.8M recent. Treat as a primary competitor; needs a sharp discriminator.",
-            "url": "https://www.highergov.com/awardee/all-native-synergies-company-10001257/",
-            "evidence": "HG: 1 awards, $20.8M, last 2026-03-23",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 20.8,
-            "awardee_key": 10001257,
-            "is_incumbent": false
-          },
-          {
-            "name": "Amivero",
-            "why": "5 award(s) at this agency+NAICS in the last 24 months totaling $8.6M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"OFFICE OF TRADE WORKFORCE PLANNING TASK ORDER\"",
-            "threat_summary": "Active in the lane \u2014 $8.6M recent. Competitive on price and capability fit; watch their team.",
-            "url": "https://www.highergov.com/awardee/amivero-llc-10055353/",
-            "evidence": "HG: 5 awards, $8.6M, last 2025-09-14",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 8.6,
-            "awardee_key": 10055353,
-            "is_incumbent": false
-          },
-          {
-            "name": "Wits Solutions",
-            "why": "2 award(s) at this agency+NAICS in the last 24 months totaling $8.0M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"FOIA AND PRIVACY SUPPORT SERVICES\"",
-            "threat_summary": "Active in the lane \u2014 $8.0M recent. Competitive on price and capability fit; watch their team.",
-            "url": "https://www.highergov.com/awardee/wits-solutions-inc-10003796/",
-            "evidence": "HG: 2 awards, $8.0M, last 2025-09-26",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 8.0,
-            "awardee_key": 10003796,
-            "is_incumbent": false
-          }
-        ],
-        "partners": [
-          {
-            "name": "Deloitte Financial Advisory Services",
-            "why": "Has subbed for Wits Solutions (16 awards, $20.2M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/deloitte-financial-advisory-services-llp-10116662/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10116662,
-            "amount_m": 20.2
-          },
-          {
-            "name": "Guidehouse",
-            "why": "Has subbed for Amivero, Constellation (11 awards, $8.3M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/guidehouse-inc-10015805/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10015805,
-            "amount_m": 8.3
-          },
-          {
-            "name": "J Terry & Associates",
-            "why": "Has subbed for All Native Synergies Company (3 awards, $4.9M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/j-terry-associates-inc-10011279/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10011279,
-            "amount_m": 4.9
-          },
-          {
-            "name": "Alesig Consulting",
-            "why": "Has subbed for All Native Synergies Company (2 awards, $4.5M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/alesig-consulting-llc-10010518/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10010518,
-            "amount_m": 4.5
-          }
-        ],
-        "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
-        "score_delta": -3,
-        "score_reasons": [
-          "Named incumbent on HG opp page: Constellation \u2014 -8pts",
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
-        ],
-        "hg_grounded": true,
-        "hg_evidence_counts": {
-          "contracts_pulled": 100,
-          "set_aside_eligible": 39,
-          "top_awardees_aggregated": 20,
-          "incumbent_named": true,
-          "naics_only_fallback": false,
-          "sub_agency_resolved": "customs and border protection"
-        }
-      },
-      "capture_score_base": 15,
-      "capture_score_delta": -3,
-      "capture_score_delta_reasons": [
-        "Named incumbent on HG opp page: Constellation \u2014 -8pts",
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
       ]
     },
@@ -5179,57 +5629,57 @@
             "is_incumbent": false
           },
           {
-            "name": "Vets Synergetic Group",
-            "why": "2 award(s) at this agency+NAICS in the last 24 months totaling $3.7M. Set-aside history: 8(A) Competed (8A). Recent scope: \"MULTIPLE RESEARCH SCIENTISTS PROVIDING SUPPORT TO NEW AND ONGOING LABORATORY RES\"",
-            "threat_summary": "Repeat awardee in this lane (2 contracts). Small individual ticket, but agency relationship is real.",
-            "url": "https://www.highergov.com/awardee/vets-synergetic-group-llc-12449807/",
-            "evidence": "HG: 2 awards, $3.7M, last 2026-06-04",
+            "name": "Agile Decision Sciences",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $3.4M. Set-aside history: 8(A) Competed (8A). Recent scope: \"NATIONAL CENTRALIZED RECORDS MANAGEMENT AND DIGITIZATION CENTERS, EDISON, NJ\nINF\"",
+            "threat_summary": "Recent entrant in this lane. Less of a known quantity \u2014 likely to compete on price or a niche capability angle.",
+            "url": "https://www.highergov.com/awardee/agile-decision-sciences-llc-10005368/",
+            "evidence": "HG: 1 awards, $3.4M, last 2026-06-03",
             "evidence_source": "highergov_contracts",
-            "amount_m": 3.7,
-            "awardee_key": 12449807,
+            "amount_m": 3.4,
+            "awardee_key": 10005368,
             "is_incumbent": false
           }
         ],
         "partners": [
           {
-            "name": "Aims Locum Tenens",
-            "why": "Has subbed for Akima Global Logistics (1 awards, $11.2M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/aims-locum-tenens-llc-10037334/",
+            "name": "Teltrium",
+            "why": "Has subbed for Agile Decision Sciences (21 awards, $35.5M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/teltrium-inc-10087201/",
             "relationship": "Documented sub on this agency+NAICS lane",
             "gap_filled": "capability depth \u2014 sub history with current primes",
             "evidence_source": "highergov_partnerships",
-            "awardee_key": 10037334,
-            "amount_m": 11.2
+            "awardee_key": 10087201,
+            "amount_m": 35.5
           },
           {
-            "name": "ESI Acquisition",
-            "why": "Has subbed for Arch Systems (7 awards, $7.5M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/esi-acquisition-inc-10114203/",
+            "name": "Global Science & Technology",
+            "why": "Has subbed for Agile Decision Sciences (14 awards, $14.4M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/global-science-technology-llc-10002650/",
             "relationship": "Documented sub on this agency+NAICS lane",
             "gap_filled": "capability depth \u2014 sub history with current primes",
             "evidence_source": "highergov_partnerships",
-            "awardee_key": 10114203,
-            "amount_m": 7.5
+            "awardee_key": 10002650,
+            "amount_m": 14.4
           },
           {
-            "name": "The H.A.B.I.T.S Group",
-            "why": "Has subbed for Akima Global Logistics (1 awards, $2.1M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/the-h-a-b-i-t-s-group-llc-10087704/",
+            "name": "Comprehensive Research Solutions",
+            "why": "Has subbed for Agile Decision Sciences (4 awards, $13.6M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/comprehensive-research-solutions-llc-10018205/",
             "relationship": "Documented sub on this agency+NAICS lane",
             "gap_filled": "capability depth \u2014 sub history with current primes",
             "evidence_source": "highergov_partnerships",
-            "awardee_key": 10087704,
-            "amount_m": 2.1
+            "awardee_key": 10018205,
+            "amount_m": 13.6
           },
           {
-            "name": "Technical Frontiers",
-            "why": "Has subbed for Arch Systems (3 awards, $2.0M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/technical-frontiers-inc-10104996/",
+            "name": "Blackwood Associates",
+            "why": "Has subbed for Agile Decision Sciences (7 awards, $11.7M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/blackwood-associates-inc-10015385/",
             "relationship": "Documented sub on this agency+NAICS lane",
             "gap_filled": "capability depth \u2014 sub history with current primes",
             "evidence_source": "highergov_partnerships",
-            "awardee_key": 10104996,
-            "amount_m": 2.0
+            "awardee_key": 10015385,
+            "amount_m": 11.7
           }
         ],
         "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
@@ -5240,8 +5690,8 @@
         "hg_grounded": true,
         "hg_evidence_counts": {
           "contracts_pulled": 100,
-          "set_aside_eligible": 42,
-          "top_awardees_aggregated": 34,
+          "set_aside_eligible": 45,
+          "top_awardees_aggregated": 32,
           "incumbent_named": false,
           "naics_only_fallback": true,
           "sub_agency_resolved": null
@@ -6024,16 +6474,16 @@
       "noticeCategory": "rfp",
       "set_aside": "SBA",
       "searchLabel": "Brian's Search",
-      "posted": "2026-06-05",
-      "due": "2026-06-09",
+      "posted": "2026-06-09",
+      "due": "2026-06-11",
       "val_low": 75000,
       "val_high": 250000,
-      "description": "***Solicitation Amendment-002: 05 June 2026***  This solicitation is being amended to extend the response deadline to on or before 09 June 2026 at 11:00AM ET. \n\n\n\n***Solicitation Amendment -001: 04 June 2026***  This solicitation is being amended to incorporate Attachment 1a- U.S. Coast Guard Sites_ 06.04.2026 UPDATED. This attachment provides the specifications for the required product numbers to include the Account Names , Activation Keys, and quantities associatd with each product number. \n\n\n\nThis is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with FAR Part 12 and FAR Class Deviation (Number 25-21). This announcement constitutes the only solicitation. Offers are being requested and a separate written solicitation will not be issued.\n\n\n\nSolicitation number 52800PR260007579 is issued as a Request for Quotation (RFQ) for the United States Coast Guard (USCG)&rsquo;s requirement for brand name INVS Gold Service FLIR Latitude software license maintenance support for FY26.\n\n\n\nThis acquisition is set-aside for small business concerns. This solicitation incorporates provisions and clauses by reference. The full text of provisions and clauses may be accessed electronically at https://www.acquisition.gov/far-overhaul.\n\n\n\nThe attached document &ldquo;Request for Quotation- INVS Gold Service Software License Support&rdquo; contains the required product information, instruction to offerors and the evaluation criteria. This is a brand-name requirement. No substitutes will be accepted.\n\n\n\nThe following documents are also attached to support the RFQ:\n\n\n\tAttachment 1- Requirements Document\n\tAttachment 2- Provisions and Clauses\n\tAttachment 3- Brand Name Justification\n\tAttachment 4- Electronic Submission of payments\n\n\nAttachment 2 includes all provisions and clauses that apply to this acquisition.\n\n\n\nResponses to this solicitation are due on or before 05 June 2026 at 11:00AM ET. Responses must be submitted electronically, vi",
+      "description": "***Solicitation Amendment-003: 09 June 2026***  This solicitation is being amended to extend the response deadline to on or before 11 June 2026 at 12:00PM ET. All responses must confirm with the specifications as indicated Attachment 1- Requirements Document and Attachment 1a- U.S. Coast Guard Sites_ 06.04.2026 UPDATED. \n\n\n\n***Solicitation Amendment-002: 05 June 2026***  This solicitation is being amended to extend the response deadline to on or before 09 June 2026 at 11:00AM ET. \n\n\n\n***Solicitation Amendment -001: 04 June 2026***  This solicitation is being amended to incorporate Attachment 1a- U.S. Coast Guard Sites_ 06.04.2026 UPDATED. This attachment provides the specifications for the required product numbers to include the Account Names , Activation Keys, and quantities associatd with each product number. \n\n\n\nThis is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with FAR Part 12 and FAR Class Deviation (Number 25-21). This announcement constitutes the only solicitation. Offers are being requested and a separate written solicitation will not be issued.\n\n\n\nSolicitation number 52800PR260007579 is issued as a Request for Quotation (RFQ) for the United States Coast Guard (USCG)&rsquo;s requirement for brand name INVS Gold Service FLIR Latitude software license maintenance support for FY26.\n\n\n\nThis acquisition is set-aside for small business concerns. This solicitation incorporates provisions and clauses by reference. The full text of provisions and clauses may be accessed electronically at https://www.acquisition.gov/far-overhaul.\n\n\n\nThe attached document &ldquo;Request for Quotation- INVS Gold Service Software License Support&rdquo; contains the required product information, instruction to offerors and the evaluation criteria. This is a brand-name requirement. No substitutes will be accepted.\n\n\n\nThe following documents are also attached to support the RFQ:\n\n\n\tAttachment 1- Requirements Document\n\tAttachment 2",
       "summary": "Background\n The United States Coast Guard (USCG) is issuing a Request for Quotation (RFQ) under solicitation number 52800PR260007579 for brand name INVS Gold Service FLIR Latitude software license maintenance support for Fiscal Year 2026. This acquisition is specifically set aside for small business concerns, emphasizing the agency's commitment to supporting small businesses in fulfilling its mission.\n\nWork Details\n The contract requires the provision of maintenance support for the INVS Gold Service FLIR Latitude software license. This is a brand-name requirement, and no substitutes will be ac",
       "path": "https://www.highergov.com/contract-opportunity/uscg-request-for-quotation-for-fy26-teledyne-invs-52800pr260007579-k-26e5d",
-      "source_path": "https://sam.gov/opp/aec88d506c284887802d5227d3323e21/view",
+      "source_path": "https://sam.gov/opp/8f102348937c451cab8f79000579a91c/view",
       "opp_key": "5bc6c367b30a5a5589b132be8b84f43b",
-      "version_key": "aec88d506c284887802d5227d3323e21",
+      "version_key": "8f102348937c451cab8f79000579a91c",
       "source_id": "52800PR260007579",
       "agency_key": 466,
       "contact_email": "ann.m.leuters@uscg.mil",
@@ -6089,7 +6539,7 @@
         ]
       },
       "rex_analysis": {
-        "what_they_need": "***Solicitation Amendment-002: 05 June 2026***  This solicitation is being amended to extend the response deadline to on or before 09 June 2026 at 11:00AM ET. \n\n\n\n***Solicitation Amendment -001: 04 June 2026***  This solicitation is being amended to incorporate Attachment 1a- U.S. Coast Guard Sites_ 06.04.2026 UPDATED. This attachment provides the specifications for the required product numbers to",
+        "what_they_need": "***Solicitation Amendment-003: 09 June 2026***  This solicitation is being amended to extend the response deadline to on or before 11 June 2026 at 12:00PM ET. All responses must confirm with the specifications as indicated Attachment 1- Requirements Document and Attachment 1a- U.S. Coast Guard Sites_ 06.04.2026 UPDATED. \n\n\n\n***Solicitation Amendment-002: 05 June 2026***  This solicitation is being",
         "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
         "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
         "recommendation": "Review Needed"
@@ -6203,195 +6653,6 @@
       "capture_score_delta": 2,
       "capture_score_delta_reasons": [
         "Active agency competitor: Akima Systems Engineering ($21M) \u2014 -3pts",
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
-      ]
-    },
-    {
-      "naics": "541990",
-      "title": "Fort Peck Test Flow Cultural Resource Monitoring Survey",
-      "agency": "USACE Omaha District",
-      "type": "Presolicitation",
-      "noticeCategory": "rfp",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-05-22",
-      "due": "2026-06-11",
-      "val_low": 250000,
-      "val_high": 900000,
-      "description": "Pre-Solicitation Notice\n\nW9128F26QA058\n\n\n\n\n\nFt. Peck Test Flow Cultural Monitoring Survey\n\n\n\nOn or about 22 May 2026, this office will issue Request for Quote (RFQ) to provide cultural resource services downstream of Fort Peck Lake, Montana, between River Miles 1771 and c. 1577.\n\nThe solicitation will close on or about 11 June 2026. This solicitation is restricted to SMALL BUSINESSES ONLY.\n\n\n\nProject Description:\n\nThe contractor will execute a pedestrian cultural resource monitoring and evaluation of sites along the Missouri River between the Fort Peck Dam (Rive Mile 1771) and River Mile 1577. A boat will be required to access some of these locations. All fieldwork must be executed under the direct supervision of a crew chief meeting the Secretary of Interior&#39;s qualifications for the appropriate resource type (archaeology and/or historic architecture). Work within the Fort Peck Reservation will require Tribal Cultural Specialists approved by the Tribal Historic Preservation Office. Fieldwork standards will meet or exceed the published requirements of the state and land managing agency where it occurs. The contractor will be required to obtain permissions from private landowners and necessary permits and field work authorizations from other agencies, including the Bureau of Land Management and the North Dakota State Historic Preservation Office. Following completion of field work, the contractor must complete a cultural resource report meeting the Montana and North Dakota State Historic Preservation offices and all evaluations must meet these guidelines, the Secretary of the Interiors Guidelines and Standards for evaluation, and National Register Bulletin 15.\n\n\n\nPeriod of Performance:\n\nThe period of performance will be a 15-month (457 day) period.\n\n\n\nThe above project description is for information only. Project scope of work is subject to change.\n\n\n\nNAICS Code:\n\nThe Primary North American Industry Classification System (NAICS) code anticipated for solicitation i",
-      "summary": "",
-      "path": "https://www.highergov.com/contract-opportunity/fort-peck-test-flow-cultural-resource-monitoring-s-w9128f26qa058-p-891a3",
-      "source_path": "https://sam.gov/opp/cfbbc7489353484ca8dc3e173e4c9837/view",
-      "opp_key": "d6309d11aa7d55ba8857b8be647ba1ff",
-      "version_key": "cfbbc7489353484ca8dc3e173e4c9837",
-      "source_id": "W9128F26QA058",
-      "agency_key": 2661,
-      "contact_email": "karen.l.caskey@usace.army.mil",
-      "contact_name": "Karen Caskey",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": 3,
-      "win_reasons": [
-        "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
-        "Small business set-aside",
-        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": 3,
-      "matched_lanes": [],
-      "scope_tags": [
-        "Survey & Research"
-      ],
-      "scope_owned": [
-        "Survey & Research"
-      ],
-      "scope_gaps": [],
-      "capability_matrix": {
-        "tasks": [],
-        "fit": "Unclassified",
-        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
-        "avg_score": 0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 0,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFP \u2014 active solicitation, actionable now",
-            "score": 5
-          },
-          {
-            "q": "Contract Value",
-            "answer": "$0.6M \u2014 Tier 3 (BLN24 sweet spot)",
-            "score": 5
-          },
-          {
-            "q": "Specialized Tech Gap",
-            "answer": "Warning: \"gis\" \u2014 area where BLN24 has limited PP (debrief data)",
-            "score": 1
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "Pre-Solicitation Notice\n\nW9128F26QA058\n\n\n\n\n\nFt. Peck Test Flow Cultural Monitoring Survey\n\n\n\nOn or about 22 May 2026, this office will issue Request for Quote (RFQ) to provide cultural resource services downstream of Fort Peck Lake, Montana, between River Miles 1771 and c. 1577.\n\nThe solicitation will close on or about 11 June 2026. This solicitation is restricted to SMALL BUSINESSES ONLY.\n\n\n\nProj",
-        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Review Needed"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "GSI North America",
-            "why": "3 award(s) at this agency+NAICS in the last 24 months totaling $19.2M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"STATE SPECIFIC DRAFT SECAPS & SECAP WORK\"",
-            "threat_summary": "Active in the lane \u2014 $19.2M recent. Competitive on price and capability fit; watch their team.",
-            "url": "https://www.highergov.com/awardee/gsi-north-america-inc-10113073/",
-            "evidence": "HG: 3 awards, $19.2M, last 2025-09-26",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 19.2,
-            "awardee_key": 10113073,
-            "is_incumbent": false
-          },
-          {
-            "name": "Real Model Solutions",
-            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $4.1M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"REMOVE AND DISPOSE OF FUEL FROM AN UNUSED OFF-BASE TRANSFER PIPELINES SERVING TR\"",
-            "threat_summary": "Recent entrant in this lane. Less of a known quantity \u2014 likely to compete on price or a niche capability angle.",
-            "url": "https://www.highergov.com/awardee/real-model-solutions-inc-45310887/",
-            "evidence": "HG: 1 awards, $4.1M, last 2026-02-20",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 4.1,
-            "awardee_key": 45310887,
-            "is_incumbent": false
-          },
-          {
-            "name": "Interspec",
-            "why": "33 award(s) at this agency+NAICS in the last 24 months totaling $3.7M. Set-aside history: Service Disabled Veteran Owned Small Business Set-Aside (SDVOSBC), Small Busines. Recent scope: \"API TANK INSPECTION AND WIPER SEAL REPLACEMENT\"",
-            "threat_summary": "Repeat awardee in this lane (33 contracts). Small individual ticket, but agency relationship is real.",
-            "url": "https://www.highergov.com/awardee/interspec-llc-10037398/",
-            "evidence": "HG: 33 awards, $3.7M, last 2026-03-05",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 3.7,
-            "awardee_key": 10037398,
-            "is_incumbent": false
-          },
-          {
-            "name": "JBW Group",
-            "why": "2 award(s) at this agency+NAICS in the last 24 months totaling $3.3M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"INCLUDES ALL WORK REQUIRED TO PERFORM AN IN-LINE INSPECTION OF THE TRANSFER LINE\"",
-            "threat_summary": "Repeat awardee in this lane (2 contracts). Small individual ticket, but agency relationship is real.",
-            "url": "https://www.highergov.com/awardee/jbw-group-llc-12161498/",
-            "evidence": "HG: 2 awards, $3.3M, last 2026-01-27",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 3.3,
-            "awardee_key": 12161498,
-            "is_incumbent": false
-          }
-        ],
-        "partners": [
-          {
-            "name": "General Dynamics Information Technology",
-            "why": "Has subbed for GSI North America (2 awards, $0.3M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/general-dynamics-information-technology-inc-10115071/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10115071,
-            "amount_m": 0.3
-          },
-          {
-            "name": "L.P Cascade Drilling",
-            "why": "Has subbed for GSI North America (1 awards, $0.1M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/l-p-cascade-drilling-10434690/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10434690,
-            "amount_m": 0.1
-          },
-          {
-            "name": "Environmental Consultants",
-            "why": "Has subbed for GSI North America (1 awards, $0.1M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/environmental-consultants-inc-598543110/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 598543110,
-            "amount_m": 0.1
-          },
-          {
-            "name": "Leidos",
-            "why": "Has subbed for GSI North America (1 awards, $0.0M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/leidos-inc-10111650/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10111650,
-            "amount_m": 0.0
-          }
-        ],
-        "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
-        "score_delta": 5,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
-        ],
-        "hg_grounded": true,
-        "hg_evidence_counts": {
-          "contracts_pulled": 100,
-          "set_aside_eligible": 79,
-          "top_awardees_aggregated": 18,
-          "incumbent_named": false,
-          "naics_only_fallback": false,
-          "sub_agency_resolved": null
-        }
-      },
-      "capture_score_base": 3,
-      "capture_score_delta": 5,
-      "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
       ]
     },
@@ -7215,112 +7476,110 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "ITC Federal",
-            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $37.0M. Set-aside history: Service Disabled Veteran Owned Small Business Set-Aside (SDVOSBC). Recent scope: \"BUSINESS OPERATIONS SUPPORT SERVICES FOR ACCOUNTING AND BUSINESS FUNCTIONS\"",
-            "threat_summary": "Established in this lane \u2014 $37.0M recent. Treat as a primary competitor; needs a sharp discriminator.",
-            "url": "https://www.highergov.com/awardee/itc-federal-llc-10000800/",
-            "evidence": "HG: 1 awards, $37.0M, last 2026-03-17",
+            "name": "Hunatek System Solutions",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $12.1M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"BUREAU OF AFRICAN AFFAIRS- ADMIN SUPPORT\"",
+            "threat_summary": "Active in the lane \u2014 $12.1M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/hunatek-system-solutions-llc-12488229/",
+            "evidence": "HG: 1 awards, $12.1M, last 2026-06-05",
             "evidence_source": "highergov_contracts",
-            "amount_m": 37.0,
-            "awardee_key": 10000800,
+            "amount_m": 12.1,
+            "awardee_key": 12488229,
             "is_incumbent": false
           },
           {
-            "name": "Insight Technology Solutions",
-            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $13.0M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"ON-SITE SUPPORT SERVICES FOR THE NATIONAL MARITIME CENTER (NMC) CONTACT CENTER P\"",
-            "threat_summary": "Active in the lane \u2014 $13.0M recent. Competitive on price and capability fit; watch their team.",
-            "url": "https://www.highergov.com/awardee/insight-technology-solutions-llc-10003957/",
-            "evidence": "HG: 1 awards, $13.0M, last 2025-12-05",
+            "name": "MEC Energy Services",
+            "why": "3 award(s) at this agency+NAICS in the last 24 months totaling $10.3M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"STAFFING SUPPORT SERVICES FOR NEA-SCA/EX\"",
+            "threat_summary": "Active in the lane \u2014 $10.3M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/mec-energy-services-llc-10002772/",
+            "evidence": "HG: 3 awards, $10.3M, last 2026-06-04",
             "evidence_source": "highergov_contracts",
-            "amount_m": 13.0,
-            "awardee_key": 10003957,
+            "amount_m": 10.3,
+            "awardee_key": 10002772,
             "is_incumbent": false
           },
           {
-            "name": "Archimedes Global",
-            "why": "2 award(s) at this agency+NAICS in the last 24 months totaling $10.0M. Set-aside history: Service Disabled Veteran Owned Small Business Set-Aside (SDVOSBC), Small Busines. Recent scope: \"CONTRACTOR PROGRAM MANAGEMENT SUPPORT SERVICES FOR THE UNITED STATES COAST GUARD\"",
-            "threat_summary": "Active in the lane \u2014 $10.0M recent. Competitive on price and capability fit; watch their team.",
-            "url": "https://www.highergov.com/awardee/archimedes-global-inc-10006583/",
-            "evidence": "HG: 2 awards, $10.0M, last 2026-03-11",
+            "name": "SOL Consulting Group",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $10.1M. Set-aside history: 8(A) Competed (8A). Recent scope: \"OCFO CONTROL DESK PACS BPA CALL\"",
+            "threat_summary": "Active in the lane \u2014 $10.1M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/sol-consulting-group-llc-10011568/",
+            "evidence": "HG: 1 awards, $10.1M, last 2026-06-05",
             "evidence_source": "highergov_contracts",
-            "amount_m": 10.0,
-            "awardee_key": 10006583,
+            "amount_m": 10.1,
+            "awardee_key": 10011568,
             "is_incumbent": false
           },
           {
-            "name": "Sunstone Technical Solutions",
-            "why": "9 award(s) at this agency+NAICS in the last 24 months totaling $9.9M. Set-aside history: Women Owned Small Business (WOSB). Recent scope: \"MODIFY POP START TO 6/1/2022\"",
-            "threat_summary": "Active in the lane \u2014 $9.9M recent. Competitive on price and capability fit; watch their team.",
-            "url": "https://www.highergov.com/awardee/sunstone-technical-solutions-llc-12698248/",
-            "evidence": "HG: 9 awards, $9.9M, last 2026-05-29",
+            "name": "Muscogee Staffing Solutions",
+            "why": "2 award(s) at this agency+NAICS in the last 24 months totaling $8.9M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"A NON PERSONAL SERVICES TASK ORDER TO PROVIDE THE SOUTH AND CENTRAL ASIAN AFFAIR\"",
+            "threat_summary": "Active in the lane \u2014 $8.9M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/muscogee-staffing-solutions-llc-10016273/",
+            "evidence": "HG: 2 awards, $8.9M, last 2026-06-05",
             "evidence_source": "highergov_contracts",
-            "amount_m": 9.9,
-            "awardee_key": 12698248,
+            "amount_m": 8.9,
+            "awardee_key": 10016273,
             "is_incumbent": false
           }
         ],
         "partners": [
           {
-            "name": "DTSV",
-            "why": "Has subbed for ITC Federal (2 awards, $43.8M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/dtsv-10001686/",
+            "name": "Raventek Solution Partners",
+            "why": "Has subbed for Hunatek System Solutions, MEC Energy Services (11 awards, $5.4M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/raventek-solution-partners-llc-10002857/",
             "relationship": "Documented sub on this agency+NAICS lane",
             "gap_filled": "capability depth \u2014 sub history with current primes",
             "evidence_source": "highergov_partnerships",
-            "awardee_key": 10001686,
-            "amount_m": 43.8
+            "awardee_key": 10002857,
+            "amount_m": 5.4
           },
           {
-            "name": "Peraton",
-            "why": "Has subbed for ITC Federal (4 awards, $11.9M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/peraton-inc-10107910/",
+            "name": "Managenet",
+            "why": "Has subbed for Hunatek System Solutions (2 awards, $4.5M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/managenet-inc-10146034/",
             "relationship": "Documented sub on this agency+NAICS lane",
             "gap_filled": "capability depth \u2014 sub history with current primes",
             "evidence_source": "highergov_partnerships",
-            "awardee_key": 10107910,
-            "amount_m": 11.9
+            "awardee_key": 10146034,
+            "amount_m": 4.5
           },
           {
-            "name": "The Mchenry Management Group",
-            "why": "Has subbed for Insight Technology Solutions (27 awards, $10.6M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/the-mchenry-management-group-llc-10002577/",
+            "name": "Culmen International",
+            "why": "Has subbed for Hunatek System Solutions (1 awards, $4.1M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/culmen-international-llc-10001004/",
             "relationship": "Documented sub on this agency+NAICS lane",
             "gap_filled": "capability depth \u2014 sub history with current primes",
             "evidence_source": "highergov_partnerships",
-            "awardee_key": 10002577,
-            "amount_m": 10.6
+            "awardee_key": 10001004,
+            "amount_m": 4.1
           },
           {
-            "name": "Acel - Agile Consulting Experts",
-            "why": "Has subbed for Archimedes Global (6 awards, $9.4M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/acel-agile-consulting-experts-llc-12413518/",
+            "name": "Novacoast Federal",
+            "why": "Has subbed for MEC Energy Services (10 awards, $3.8M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/novacoast-federal-inc-10121841/",
             "relationship": "Documented sub on this agency+NAICS lane",
             "gap_filled": "capability depth \u2014 sub history with current primes",
             "evidence_source": "highergov_partnerships",
-            "awardee_key": 12413518,
-            "amount_m": 9.4
+            "awardee_key": 10121841,
+            "amount_m": 3.8
           }
         ],
         "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
-        "score_delta": 2,
+        "score_delta": 5,
         "score_reasons": [
-          "Active agency competitor: ITC Federal ($37M) \u2014 -3pts",
           "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
         ],
         "hg_grounded": true,
         "hg_evidence_counts": {
           "contracts_pulled": 100,
-          "set_aside_eligible": 59,
-          "top_awardees_aggregated": 27,
+          "set_aside_eligible": 39,
+          "top_awardees_aggregated": 24,
           "incumbent_named": false,
-          "naics_only_fallback": false,
-          "sub_agency_resolved": null
+          "naics_only_fallback": true,
+          "sub_agency_resolved": "department of homeland security"
         }
       },
       "capture_score_base": 0,
-      "capture_score_delta": 2,
+      "capture_score_delta": 5,
       "capture_score_delta_reasons": [
-        "Active agency competitor: ITC Federal ($37M) \u2014 -3pts",
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
       ]
     },
@@ -8458,6 +8717,16 @@
             "amount_m": 38.9
           },
           {
+            "name": "Science Applications International Corporation",
+            "why": "Has subbed for Alpha Omega Integration, Lynker Corporation (4 awards, $36.6M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-12421785/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 12421785,
+            "amount_m": 36.6
+          },
+          {
             "name": "Customer Value Partners",
             "why": "Has subbed for Alpha Omega Integration (9 awards, $35.2M total) \u2014 proven plug-in for this lane.",
             "url": "https://www.highergov.com/awardee/customer-value-partners-llc-10000669/",
@@ -8476,16 +8745,6 @@
             "evidence_source": "highergov_partnerships",
             "awardee_key": 10002419,
             "amount_m": 20.7
-          },
-          {
-            "name": "K3 Solutions",
-            "why": "Has subbed for Alpha Omega Integration (3 awards, $20.4M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/k3-solutions-llc-10094742/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10094742,
-            "amount_m": 20.4
           }
         ],
         "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
@@ -8607,17 +8866,6 @@
       "competitive_intel": {
         "competitors": [
           {
-            "name": "Minburn Technology Group",
-            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $90.5M. Set-aside history: Service Disabled Veteran Owned Small Business Set-Aside (SDVOSBC). Recent scope: \"ENDPOINTS 2.0 - PERSONAL COMPUTERS (PC) (I.E. LAPTOPS AND DESKTOPS), DOCKING STA\"",
-            "threat_summary": "Established in this lane \u2014 $90.5M recent. Treat as a primary competitor; needs a sharp discriminator.",
-            "url": "https://www.highergov.com/awardee/minburn-technology-group-llc-10000169/",
-            "evidence": "HG: 1 awards, $90.5M, last 2026-06-05",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 90.5,
-            "awardee_key": 10000169,
-            "is_incumbent": false
-          },
-          {
             "name": "Thundercat Technology",
             "why": "6 award(s) at this agency+NAICS in the last 24 months totaling $48.8M. Set-aside history: Service Disabled Veteran Owned Small Business Set-Aside (SDVOSBC), Small Busines. Recent scope: \"VARONIS DATADVANTAGE RENEWAL FOR NTIA\"",
             "threat_summary": "Established in this lane \u2014 $48.8M recent. Treat as a primary competitor; needs a sharp discriminator.",
@@ -8630,12 +8878,12 @@
           },
           {
             "name": "New Tech Solutions",
-            "why": "8 award(s) at this agency+NAICS in the last 24 months totaling $14.4M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"ARUBA WIRELESS\"",
-            "threat_summary": "Active in the lane \u2014 $14.4M recent. Competitive on price and capability fit; watch their team.",
+            "why": "10 award(s) at this agency+NAICS in the last 24 months totaling $14.5M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"DIGICERT\"",
+            "threat_summary": "Active in the lane \u2014 $14.5M recent. Competitive on price and capability fit; watch their team.",
             "url": "https://www.highergov.com/awardee/new-tech-solutions-inc-10000198/",
-            "evidence": "HG: 8 awards, $14.4M, last 2026-06-05",
+            "evidence": "HG: 10 awards, $14.5M, last 2026-06-07",
             "evidence_source": "highergov_contracts",
-            "amount_m": 14.4,
+            "amount_m": 14.5,
             "awardee_key": 10000198,
             "is_incumbent": false
           },
@@ -8648,6 +8896,17 @@
             "evidence_source": "highergov_contracts",
             "amount_m": 13.6,
             "awardee_key": 10001909,
+            "is_incumbent": false
+          },
+          {
+            "name": "Savvee",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $10.6M. Set-aside history: Service Disabled Veteran Owned Small Business Set-Aside (SDVOSBC). Recent scope: \"FY23 STRATEGIC MANAGEMENT SERVICES (SMS) FOR NOAA/OCIO/SERVICE DELIVERY DIVISION\"",
+            "threat_summary": "Active in the lane \u2014 $10.6M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/savvee-inc-10002642/",
+            "evidence": "HG: 1 awards, $10.6M, last 2026-06-05",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 10.6,
+            "awardee_key": 10002642,
             "is_incumbent": false
           }
         ],
@@ -8663,6 +8922,26 @@
             "amount_m": 19.4
           },
           {
+            "name": "Science Applications International Corporation",
+            "why": "Has subbed for Savvee (25 awards, $6.7M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/science-applications-international-corporation-10117683/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10117683,
+            "amount_m": 6.7
+          },
+          {
+            "name": "Ambit Group",
+            "why": "Has subbed for Savvee (15 awards, $5.5M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/ambit-group-llc-10002159/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10002159,
+            "amount_m": 5.5
+          },
+          {
             "name": "Kearney & Company",
             "why": "Has subbed for Definitive Logic Corporation (9 awards, $5.0M total) \u2014 proven plug-in for this lane.",
             "url": "https://www.highergov.com/awardee/kearney-company-p-c-10000411/",
@@ -8671,39 +8950,19 @@
             "evidence_source": "highergov_partnerships",
             "awardee_key": 10000411,
             "amount_m": 5.0
-          },
-          {
-            "name": "Starry Associates",
-            "why": "Has subbed for Definitive Logic Corporation (1 awards, $3.9M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/starry-associates-llc-10003360/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10003360,
-            "amount_m": 3.9
-          },
-          {
-            "name": "CACI",
-            "why": "Has subbed for Definitive Logic Corporation (3 awards, $2.8M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/caci-10119724/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10119724,
-            "amount_m": 2.8
           }
         ],
         "set_aside_note": "Set-aside: TBD (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
         "score_delta": 2,
         "score_reasons": [
-          "Active agency competitor: Minburn Technology Group ($90M) \u2014 -3pts",
+          "Active agency competitor: Thundercat Technology ($49M) \u2014 -3pts",
           "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
         ],
         "hg_grounded": true,
         "hg_evidence_counts": {
           "contracts_pulled": 100,
-          "set_aside_eligible": 67,
-          "top_awardees_aggregated": 36,
+          "set_aside_eligible": 64,
+          "top_awardees_aggregated": 35,
           "incumbent_named": false,
           "naics_only_fallback": true,
           "sub_agency_resolved": null
@@ -8712,7 +8971,7 @@
       "capture_score_base": 0,
       "capture_score_delta": 2,
       "capture_score_delta_reasons": [
-        "Active agency competitor: Minburn Technology Group ($90M) \u2014 -3pts",
+        "Active agency competitor: Thundercat Technology ($49M) \u2014 -3pts",
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
       ]
     },
@@ -9751,185 +10010,6 @@
       ]
     },
     {
-      "naics": "512110",
-      "title": "T006--Whole Healthcare Channel System Brand Name or Equal to the  C.A.R.E. Channel",
-      "agency": "VISN 20:\u00a0Northwest Network",
-      "type": "Synopsis Solicitation",
-      "noticeCategory": "rfp",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-06-03",
-      "due": "2026-06-09",
-      "val_low": 50000,
-      "val_high": 200000,
-      "description": ".\n",
-      "summary": "Background\n The VA Puget Sound Healthcare System, part of the Department of Veterans Affairs, is seeking to procure a Whole Healthcare Channel System, specifically the brand name or an equivalent to the C.A.R.E. Channel. \n\nThis procurement is intended to enhance healthcare delivery at their Tacoma and Seattle locations. The solicitation is set aside for small businesses and follows the guidelines outlined in the Revolutionary Federal Acquisition Regulation Overhaul (RFO) Subpart 12.212(b)(1).\n\nWork Details\n The contractor will provide a Whole Healthcare Channel System that meets or exceeds the",
-      "path": "https://www.highergov.com/contract-opportunity/t006-whole-healthcare-channel-system-brand-name-o-36c26026q0617-k-8f18c",
-      "source_path": "https://sam.gov/opp/b1b7c217b15c4a7683012f9cf5c6e8a1/view",
-      "opp_key": "807b753f02225eaa9731362f8ad0a570",
-      "version_key": "b1b7c217b15c4a7683012f9cf5c6e8a1",
-      "source_id": "36C26026Q0617",
-      "agency_key": 2045,
-      "contact_email": "jennifer.robles1@va.gov",
-      "contact_name": "Jennifer Robles",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": -5,
-      "win_reasons": [
-        "Small business set-aside",
-        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": null,
-      "matched_lanes": [],
-      "scope_tags": [],
-      "scope_owned": [],
-      "scope_gaps": [],
-      "capability_matrix": {
-        "tasks": [],
-        "fit": "Unclassified",
-        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
-        "avg_score": 0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 0,
-        "total_tasks": 0,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFP \u2014 active solicitation, actionable now",
-            "score": 5
-          },
-          {
-            "q": "Contract Value",
-            "answer": "$125K \u2014 Below $500K (small win)",
-            "score": 2
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": ".\n Background\n The VA Puget Sound Healthcare System, part of the Department of Veterans Affairs, is seeking to procure a Whole Healthcare Channel System, specifically the brand name or an equivalent to the C.A.R.E. Channel. \n\nThis procurement is intended to enhance healthcare delivery at their Tacoma and Seattle locations. The solicitation is set aside for small businesses and follows the guidelin",
-        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Review Needed"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "PCI Productions",
-            "why": "3 award(s) at this agency+NAICS in the last 24 months totaling $16.5M. Set-aside history: 8(A) Competed (8A), 8(A) Sole Source  (8AN). Recent scope: \"SERVICES PROVIDED INCLUDE PHOTOGRAPHY, VIDEOGRAPHY, AND MULTIMEDIA SHOT IN DIGIT\"",
-            "threat_summary": "Active in the lane \u2014 $16.5M recent. Competitive on price and capability fit; watch their team.",
-            "url": "https://www.highergov.com/awardee/pci-productions-llc-10116749/",
-            "evidence": "HG: 3 awards, $16.5M, last 2026-02-26",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 16.5,
-            "awardee_key": 10116749,
-            "is_incumbent": false
-          },
-          {
-            "name": "Alexander & Tom",
-            "why": "4 award(s) at this agency+NAICS in the last 24 months totaling $10.7M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"THE FISCAL SERVICE NEEDS TO MAKE SURE THAT OUR 508 POLICIES, PROCEDURES AND WEB \"",
-            "threat_summary": "Active in the lane \u2014 $10.7M recent. Competitive on price and capability fit; watch their team.",
-            "url": "https://www.highergov.com/awardee/alexander-tom-inc-10009408/",
-            "evidence": "HG: 4 awards, $10.7M, last 2026-05-04",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 10.7,
-            "awardee_key": 10009408,
-            "is_incumbent": false
-          },
-          {
-            "name": "National Capitol Contracting",
-            "why": "6 award(s) at this agency+NAICS in the last 24 months totaling $5.1M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"BLANKET PURCHASE AGREEMENT (BPA) CALL ORDER FOR REAL-TIME REMOTE CAPTIONING THRO\"",
-            "threat_summary": "Active in the lane \u2014 $5.1M recent. Competitive on price and capability fit; watch their team.",
-            "url": "https://www.highergov.com/awardee/national-capitol-contracting-llc-10112463/",
-            "evidence": "HG: 6 awards, $5.1M, last 2026-05-19",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 5.1,
-            "awardee_key": 10112463,
-            "is_incumbent": false
-          },
-          {
-            "name": "BLN",
-            "why": "4 award(s) at this agency+NAICS in the last 24 months totaling $4.7M. Set-aside history: 8(A) Competed (8A), Small Business Set Aside - Total (SBA). Recent scope: \"CENTER FOR ECONOMIC STUDIES AWARD.\"",
-            "threat_summary": "Repeat awardee in this lane (4 contracts). Small individual ticket, but agency relationship is real.",
-            "url": "https://www.highergov.com/awardee/bln-llc-10088397/",
-            "evidence": "HG: 4 awards, $4.7M, last 2026-05-13",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 4.7,
-            "awardee_key": 10088397,
-            "is_incumbent": false
-          }
-        ],
-        "partners": [
-          {
-            "name": "Futron",
-            "why": "Has subbed for National Capitol Contracting (1 awards, $4.3M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/futron-inc-10004074/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10004074,
-            "amount_m": 4.3
-          },
-          {
-            "name": "Emagine IT",
-            "why": "Has subbed for National Capitol Contracting (2 awards, $3.7M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/emagine-it-10013535/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10013535,
-            "amount_m": 3.7
-          },
-          {
-            "name": "Accenture Federal Services",
-            "why": "Has subbed for BLN (5 awards, $2.4M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/accenture-federal-services-llc-10109693/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10109693,
-            "amount_m": 2.4
-          },
-          {
-            "name": "Alutiiq Career Ventures",
-            "why": "Has subbed for PCI Productions (1 awards, $1.6M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/alutiiq-career-ventures-llc-10119857/",
-            "relationship": "Documented sub on this agency+NAICS lane",
-            "gap_filled": "capability depth \u2014 sub history with current primes",
-            "evidence_source": "highergov_partnerships",
-            "awardee_key": 10119857,
-            "amount_m": 1.6
-          }
-        ],
-        "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
-        "score_delta": 5,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
-        ],
-        "hg_grounded": true,
-        "hg_evidence_counts": {
-          "contracts_pulled": 100,
-          "set_aside_eligible": 60,
-          "top_awardees_aggregated": 28,
-          "incumbent_named": false,
-          "naics_only_fallback": true,
-          "sub_agency_resolved": null
-        }
-      },
-      "capture_score_base": -5,
-      "capture_score_delta": 5,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
-      ]
-    },
-    {
       "naics": "541511",
       "title": "OIG Data Scientist & Engineering Support Svcs",
       "agency": "Small Business Administration",
@@ -10345,6 +10425,386 @@
       ]
     },
     {
+      "naics": "512110",
+      "title": "T006--Whole Healthcare Channel System Brand Name or Equal to  C.A.R.E. Channel",
+      "agency": "VISN 20:\u00a0Northwest Network",
+      "type": "Synopsis Solicitation",
+      "noticeCategory": "rfp",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-06-09",
+      "due": "2026-06-15",
+      "val_low": 50000,
+      "val_high": 200000,
+      "description": ".\n",
+      "summary": "Background\n The VA Puget Sound Healthcare System, part of the Department of Veterans Affairs, is seeking to procure a Whole Healthcare Channel System, specifically the brand name or an equivalent to the C.A.R.E. Channel. \n\nThis procurement is intended to enhance healthcare delivery at their Tacoma and Seattle locations. The solicitation is set aside for small businesses and follows the guidelines outlined in the Revolutionary Federal Acquisition Regulation Overhaul (RFO) Subpart 12.212(b)(1).\n\nWork Details\n The contractor will provide a Whole Healthcare Channel System that meets or exceeds the",
+      "path": "https://www.highergov.com/contract-opportunity/t006-whole-healthcare-channel-system-brand-name-o-36c26026q0617-k-8f18c",
+      "source_path": "https://sam.gov/opp/b0af21f2225946b192c5761bcd816f63/view",
+      "opp_key": "807b753f02225eaa9731362f8ad0a570",
+      "version_key": "b0af21f2225946b192c5761bcd816f63",
+      "source_id": "36C26026Q0617",
+      "agency_key": 2045,
+      "contact_email": "jennifer.robles1@va.gov",
+      "contact_name": "Jennifer Robles",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": -5,
+      "win_reasons": [
+        "Small business set-aside",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": null,
+      "matched_lanes": [],
+      "scope_tags": [],
+      "scope_owned": [],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [],
+        "fit": "Unclassified",
+        "fit_reason": "No task areas identified in scope text \u2014 review solicitation directly",
+        "avg_score": 0,
+        "prime_count": 0,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 0,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Notice Type",
+            "answer": "RFP \u2014 active solicitation, actionable now",
+            "score": 5
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$125K \u2014 Below $500K (small win)",
+            "score": 2
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": ".\n Background\n The VA Puget Sound Healthcare System, part of the Department of Veterans Affairs, is seeking to procure a Whole Healthcare Channel System, specifically the brand name or an equivalent to the C.A.R.E. Channel. \n\nThis procurement is intended to enhance healthcare delivery at their Tacoma and Seattle locations. The solicitation is set aside for small businesses and follows the guidelin",
+        "rex_take": "Limited scope data available. Review full solicitation before evaluating. Set-aside: SBA.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Review Needed"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "PCI Productions",
+            "why": "3 award(s) at this agency+NAICS in the last 24 months totaling $16.5M. Set-aside history: 8(A) Competed (8A), 8(A) Sole Source  (8AN). Recent scope: \"SERVICES PROVIDED INCLUDE PHOTOGRAPHY, VIDEOGRAPHY, AND MULTIMEDIA SHOT IN DIGIT\"",
+            "threat_summary": "Active in the lane \u2014 $16.5M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/pci-productions-llc-10116749/",
+            "evidence": "HG: 3 awards, $16.5M, last 2026-02-26",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 16.5,
+            "awardee_key": 10116749,
+            "is_incumbent": false
+          },
+          {
+            "name": "Alexander & Tom",
+            "why": "4 award(s) at this agency+NAICS in the last 24 months totaling $10.7M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"THE FISCAL SERVICE NEEDS TO MAKE SURE THAT OUR 508 POLICIES, PROCEDURES AND WEB \"",
+            "threat_summary": "Active in the lane \u2014 $10.7M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/alexander-tom-inc-10009408/",
+            "evidence": "HG: 4 awards, $10.7M, last 2026-05-04",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 10.7,
+            "awardee_key": 10009408,
+            "is_incumbent": false
+          },
+          {
+            "name": "National Capitol Contracting",
+            "why": "6 award(s) at this agency+NAICS in the last 24 months totaling $5.1M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"BLANKET PURCHASE AGREEMENT (BPA) CALL ORDER FOR REAL-TIME REMOTE CAPTIONING THRO\"",
+            "threat_summary": "Active in the lane \u2014 $5.1M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/national-capitol-contracting-llc-10112463/",
+            "evidence": "HG: 6 awards, $5.1M, last 2026-05-19",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 5.1,
+            "awardee_key": 10112463,
+            "is_incumbent": false
+          },
+          {
+            "name": "BLN",
+            "why": "4 award(s) at this agency+NAICS in the last 24 months totaling $4.7M. Set-aside history: 8(A) Competed (8A), Small Business Set Aside - Total (SBA). Recent scope: \"CENTER FOR ECONOMIC STUDIES AWARD.\"",
+            "threat_summary": "Repeat awardee in this lane (4 contracts). Small individual ticket, but agency relationship is real.",
+            "url": "https://www.highergov.com/awardee/bln-llc-10088397/",
+            "evidence": "HG: 4 awards, $4.7M, last 2026-05-13",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 4.7,
+            "awardee_key": 10088397,
+            "is_incumbent": false
+          }
+        ],
+        "partners": [
+          {
+            "name": "Futron",
+            "why": "Has subbed for National Capitol Contracting (1 awards, $4.3M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/futron-inc-10004074/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10004074,
+            "amount_m": 4.3
+          },
+          {
+            "name": "Emagine IT",
+            "why": "Has subbed for National Capitol Contracting (2 awards, $3.7M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/emagine-it-10013535/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10013535,
+            "amount_m": 3.7
+          },
+          {
+            "name": "Accenture Federal Services",
+            "why": "Has subbed for BLN (5 awards, $2.4M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/accenture-federal-services-llc-10109693/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10109693,
+            "amount_m": 2.4
+          },
+          {
+            "name": "Alutiiq Career Ventures",
+            "why": "Has subbed for PCI Productions (1 awards, $1.6M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/alutiiq-career-ventures-llc-10119857/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10119857,
+            "amount_m": 1.6
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
+        "score_delta": 5,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+        ],
+        "hg_grounded": true,
+        "hg_evidence_counts": {
+          "contracts_pulled": 100,
+          "set_aside_eligible": 60,
+          "top_awardees_aggregated": 28,
+          "incumbent_named": false,
+          "naics_only_fallback": true,
+          "sub_agency_resolved": null
+        }
+      },
+      "capture_score_base": -5,
+      "capture_score_delta": 5,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541611",
+      "title": "Quality Assurance Review Subject Matter Experts",
+      "agency": "U.S. Marshals Service",
+      "type": "Solicitation",
+      "noticeCategory": "rfp",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-06-08",
+      "due": "2026-06-15",
+      "val_low": 40000,
+      "val_high": 120000,
+      "description": "The U.S. Marshals Service's (USMS), Prisoner Operations Division (POD), Office of Detention Standards and Compliance (ODS&C) proposes to obtain subject matter experts to participate as members of the Quality Assurance Review (QAR) team to review detention facilities that house USMS detainees.",
+      "summary": "Background\n The U.S. Marshals Service (USMS), specifically the Prisoner Operations Division (POD) and the Office of Detention Standards and Compliance (ODS&C), is seeking to engage subject matter experts to serve on a Quality Assurance Review (QAR) team. The goal of this contract is to review detention facilities that house USMS detainees, ensuring compliance with federal standards and the humane treatment of detainees.\n\nWork Details\n The contractor will provide Subject Matter Experts (SMEs) for various functional areas including Administrative Management, Health Care, Security and Control, Fo",
+      "path": "https://www.highergov.com/contract-opportunity/quality-assurance-review-subject-matter-experts-rfq1816326-o-d64c9",
+      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFQ1816326?contractNumber=",
+      "opp_key": "5d220ad5f3ac5cfebd42b85ab6a9581a",
+      "version_key": "d887ba4c9303564fb071ccc3297d64c9",
+      "source_id": "RFQ1816326",
+      "agency_key": 549,
+      "contact_email": "tara.gray@usdoj.gov",
+      "contact_name": "Tara Gray",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": -5,
+      "win_reasons": [
+        "Small business set-aside",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": null,
+      "matched_lanes": [],
+      "scope_tags": [],
+      "scope_owned": [],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Due Diligence & Technical Advisory",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "IRS Human Centered Design & Research BPA ($7M)",
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Dept of Education EDARMST Data Analytics ($2.9M)"
+            ],
+            "note": "BLN24 prime \u2014 consulting/advisory embedded in major contracts (IRS, Census, Education)",
+            "triggered_by": [
+              "subject matter expert",
+              "sme"
+            ]
+          }
+        ],
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Due Diligence & Technical Advisory. Some areas need partner",
+        "avg_score": 3.0,
+        "prime_count": 1,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 1,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
+          },
+          {
+            "q": "Notice Type",
+            "answer": "RFP \u2014 active solicitation, actionable now",
+            "score": 5
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$80K \u2014 Below $500K (small win)",
+            "score": 2
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "The U.S. Marshals Service's (USMS), Prisoner Operations Division (POD), Office of Detention Standards and Compliance (ODS&C) proposes to obtain subject matter experts to participate as members of the Quality Assurance Review (QAR) team to review detention facilities that house USMS detainees. Background\n The U.S. Marshals Service (USMS), specifically the Prisoner Operations Division (POD) and the",
+        "rex_take": "BLN24 can cover: Due Diligence & Technical Advisory. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
+        "recommendation": "Moderate"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Hunatek System Solutions",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $12.1M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"BUREAU OF AFRICAN AFFAIRS- ADMIN SUPPORT\"",
+            "threat_summary": "Active in the lane \u2014 $12.1M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/hunatek-system-solutions-llc-12488229/",
+            "evidence": "HG: 1 awards, $12.1M, last 2026-06-05",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 12.1,
+            "awardee_key": 12488229,
+            "is_incumbent": false
+          },
+          {
+            "name": "MEC Energy Services",
+            "why": "3 award(s) at this agency+NAICS in the last 24 months totaling $10.3M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"STAFFING SUPPORT SERVICES FOR NEA-SCA/EX\"",
+            "threat_summary": "Active in the lane \u2014 $10.3M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/mec-energy-services-llc-10002772/",
+            "evidence": "HG: 3 awards, $10.3M, last 2026-06-04",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 10.3,
+            "awardee_key": 10002772,
+            "is_incumbent": false
+          },
+          {
+            "name": "SOL Consulting Group",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $10.1M. Set-aside history: 8(A) Competed (8A). Recent scope: \"OCFO CONTROL DESK PACS BPA CALL\"",
+            "threat_summary": "Active in the lane \u2014 $10.1M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/sol-consulting-group-llc-10011568/",
+            "evidence": "HG: 1 awards, $10.1M, last 2026-06-05",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 10.1,
+            "awardee_key": 10011568,
+            "is_incumbent": false
+          },
+          {
+            "name": "Muscogee Staffing Solutions",
+            "why": "2 award(s) at this agency+NAICS in the last 24 months totaling $8.9M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"A NON PERSONAL SERVICES TASK ORDER TO PROVIDE THE SOUTH AND CENTRAL ASIAN AFFAIR\"",
+            "threat_summary": "Active in the lane \u2014 $8.9M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/muscogee-staffing-solutions-llc-10016273/",
+            "evidence": "HG: 2 awards, $8.9M, last 2026-06-05",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 8.9,
+            "awardee_key": 10016273,
+            "is_incumbent": false
+          }
+        ],
+        "partners": [
+          {
+            "name": "Raventek Solution Partners",
+            "why": "Has subbed for Hunatek System Solutions, MEC Energy Services (11 awards, $5.4M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/raventek-solution-partners-llc-10002857/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10002857,
+            "amount_m": 5.4
+          },
+          {
+            "name": "Managenet",
+            "why": "Has subbed for Hunatek System Solutions (2 awards, $4.5M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/managenet-inc-10146034/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10146034,
+            "amount_m": 4.5
+          },
+          {
+            "name": "Culmen International",
+            "why": "Has subbed for Hunatek System Solutions (1 awards, $4.1M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/culmen-international-llc-10001004/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10001004,
+            "amount_m": 4.1
+          },
+          {
+            "name": "Novacoast Federal",
+            "why": "Has subbed for MEC Energy Services (10 awards, $3.8M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/novacoast-federal-inc-10121841/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10121841,
+            "amount_m": 3.8
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
+        "score_delta": 5,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+        ],
+        "hg_grounded": true,
+        "hg_evidence_counts": {
+          "contracts_pulled": 100,
+          "set_aside_eligible": 39,
+          "top_awardees_aggregated": 24,
+          "incumbent_named": false,
+          "naics_only_fallback": true,
+          "sub_agency_resolved": null
+        }
+      },
+      "capture_score_base": -5,
+      "capture_score_delta": 5,
+      "capture_score_delta_reasons": [
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+      ]
+    },
+    {
       "naics": "541511",
       "title": "DOJ FBI - Data Sharing Services Unit Program Support - MRAS",
       "agency": "Federal Bureau of Investigation",
@@ -10682,7 +11142,7 @@
         "competitors": [
           {
             "name": "Alutiiq Solutions",
-            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $114.6M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"ATA SPEAR STAFFING PROVIDES NECESSARY PERSONNEL, MANAGEMENT AND OVERSIGHT, TRAVE\"",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $114.6M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"ATA SPEAR STAFFING. PROVIDES NECESSARY PERSONNEL, MANAGEMENT AND OVERSIGHT, TRAV\"",
             "threat_summary": "Dominant agency relationship \u2014 $115M in this lane over the last 24 months. Likely the proposal benchmark.",
             "url": "https://www.highergov.com/awardee/alutiiq-solutions-llc-10119272/",
             "evidence": "HG: 1 awards, $114.6M, last 2026-04-24",
@@ -10787,6 +11247,132 @@
       "capture_score_delta": -1,
       "capture_score_delta_reasons": [
         "Established agency relationship: Alutiiq Solutions ($115M) \u2014 -6pts",
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541990",
+      "title": "USAF - DAF Damage Assessment Management Office (DAMO) - MRAS",
+      "agency": "Department of the Air Force",
+      "type": "Sources Sought",
+      "noticeCategory": "rfi",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-06-08",
+      "due": "2026-06-22",
+      "val_low": 1500000,
+      "val_high": 6000000,
+      "description": "On behalf of Air Force (USAF), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browser.\n\nOnly responses submitted through the linked RFI will be accepted. Nothing else will be evaluated or recorded (this includes selecting 'interested' within eBuy).\n\n\nLink to RFI: https://feedback.gsa.gov/jfe/form/SV_eWAKR8jjEsYg4Xc\n\n\nAdditional Information:\nDue to the structure of contracts in GSA eBuy, you may receive multiple Sources Sought or RFI notifications for the same requirement if it falls under multiple of your company's awarded SINs. However, please note that you are only required to respond to the RFI once.\n\nBe sure to use the URL provided above to submit your response.\n\n\nAny questions regarding this RFI will be responded to by email only.  Send your inquiry to: rfi@research.gsa.gov and be sure to include the RFQ number.\n\n",
+      "summary": "Background\n The Department of the Air Force Damage Assessment Management Office (DAF DAMO) is tasked with conducting comprehensive analyses of compromised Air Force data due to cyber incidents involving Defense Industrial Base (DIB) partner networks. The office evaluates the damage to Air Force warfighting capabilities, acquisition programs, and technology initiatives. \n\nTo fulfill its mission, DAF DAMO seeks contractual support that encompasses a broad range of expertise in operations, intelligence, policy, and cyber intrusion damage assessment.\n\nWork Details\n The contractor shall provide all",
+      "path": "https://www.highergov.com/contract-opportunity/usaf-daf-damage-assessment-management-office-da-rfi1816491-r-ad559",
+      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFI1816491?contractNumber=",
+      "opp_key": "ba3d3383c74b546f958e16f06022d180",
+      "version_key": "fbdd86005fe25fa7b2fc222a510ad559",
+      "source_id": "RFI1816491",
+      "agency_key": 332,
+      "contact_email": "rfi@research.gsa.gov",
+      "contact_name": "Jon Dewolfe",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": -5,
+      "win_reasons": [
+        "Small business set-aside",
+        "No direct capability lane match found \u2014 scope may not align with BLN24 proven delivery"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": 3,
+      "matched_lanes": [],
+      "scope_tags": [],
+      "scope_owned": [],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Due Diligence & Technical Advisory",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "IRS Human Centered Design & Research BPA ($7M)",
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Dept of Education EDARMST Data Analytics ($2.9M)"
+            ],
+            "note": "BLN24 prime \u2014 consulting/advisory embedded in major contracts (IRS, Census, Education)",
+            "triggered_by": [
+              "sme"
+            ]
+          }
+        ],
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Due Diligence & Technical Advisory. Some areas need partner",
+        "avg_score": 3.0,
+        "prime_count": 1,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 1,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
+          },
+          {
+            "q": "Notice Type",
+            "answer": "RFI \u2014 intel gathering, position early",
+            "score": 4
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$3.8M \u2014 Tier 3 (BLN24 sweet spot)",
+            "score": 5
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "On behalf of Air Force (USAF), GSA is conducting market research.\n\nDO NOT submit your response in eBuy. Your response will not be included in the report that is provided to the customer. NOTE: If the link does not work, try clearing your browser history (cache) and then copying and pasting the link into a new browser. To respond to this RFI, you MUST copy and paste the below link into a new browse",
+        "rex_take": "BLN24 can cover: Due Diligence & Technical Advisory. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFI.",
+        "recommendation": "Moderate"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "Care Weather Technologies",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $3.0M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"THE OVERALL SCOPE OF THIS CONTRACT IS FOR VEERY: FLAT-PANEL SCATTEROMETER FOR HO\"",
+            "threat_summary": "Recent entrant in this lane. Less of a known quantity \u2014 likely to compete on price or a niche capability angle.",
+            "url": "https://www.highergov.com/awardee/care-weather-technologies-inc-12674608/",
+            "evidence": "HG: 1 awards, $3.0M, last 2024-11-26",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 3.0,
+            "awardee_key": 12674608,
+            "is_incumbent": false
+          }
+        ],
+        "partners": [],
+        "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
+        "score_delta": 5,
+        "score_reasons": [
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+        ],
+        "hg_grounded": true,
+        "hg_evidence_counts": {
+          "contracts_pulled": 100,
+          "set_aside_eligible": 1,
+          "top_awardees_aggregated": 1,
+          "incumbent_named": false,
+          "naics_only_fallback": false,
+          "sub_agency_resolved": null
+        }
+      },
+      "capture_score_base": -5,
+      "capture_score_delta": 5,
+      "capture_score_delta_reasons": [
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
       ]
     },
@@ -11003,11 +11589,11 @@
           {
             "name": "Guidehouse",
             "why": "Has subbed for Metaphase Consulting (6 awards, $6.7M total) \u2014 proven plug-in for this lane.",
-            "url": "https://www.highergov.com/awardee/guidehouse-inc-10015805/",
+            "url": "https://www.highergov.com/awardee/guidehouse-llp-10117480/",
             "relationship": "Documented sub on this agency+NAICS lane",
             "gap_filled": "capability depth \u2014 sub history with current primes",
             "evidence_source": "highergov_partnerships",
-            "awardee_key": 10015805,
+            "awardee_key": 10117480,
             "amount_m": 6.7
           },
           {
@@ -12489,174 +13075,6 @@
       ]
     },
     {
-      "naics": "541511",
-      "title": "Enterprise Cloud Customer Relationship Management Platform (ECCRMP) Services",
-      "agency": "Customs and Border Protection",
-      "type": "Solicitation",
-      "noticeCategory": "rfp",
-      "set_aside": "SBA",
-      "searchLabel": "Brian's Search",
-      "posted": "2026-05-21",
-      "due": "2026-06-19",
-      "val_low": null,
-      "val_high": null,
-      "description": "The subject RFQ is issued to Small Business vendors for Enterprise Cloud Customer Relationship Management Platform (ECCRMP) Services. The period of performance (PoP) for the task order for a seven (7) month transition in/base period, seven (7) month option period 1, and four (4) twelve (12) month option periods.\n\nCBP contemplates the issuance of a Firm Fixed Price (FFP) task order (TO) with in-scope Surge Support addressed through optional Labor-Hour (LH) CLIN resulting from this solicitation.  Please note that in addition to the terms and conditions of the GSA MAS IDIQ, the order will be subject to the terms and conditions in Attachment 5, Additional Provisions, Clauses, and Terms and Conditions. The basis for award will be to arrive at a best value decision, evaluating both the technical response and price quote.\n\nFor additional information on quote submission requirements, the quote evaluation process, including the factors and evaluation criteria, and quote documentation, please refer to the \"Instructions to Quoters\" document attached herein.\n\nQuestions/Clarifications: Any questions or clarification requests regarding any aspect of this RFQ shall be submitted by 1pm ET, Wednesday, May 06, 2026 via GSA MAS.\n\nQuotes: Quote responses are to be submitted NLT 1pm ET, Tuesday, May 26, 2026 via GSA MAS.\n\nPlease note, funding is currently not available, and award is contingent upon funding availability.",
-      "summary": "Background\n The U.S. Customs and Border Protection (CBP) is issuing this Request for Quotation (RFQ) to Small Business vendors for Enterprise Cloud Customer Relationship Management Platform (ECCRMP) Services. \n\nThe goal of this contract is to provide a systematic method to evaluate performance for the stated contract, ensuring that the required performance standards or service levels are achieved by the contractor. \n\nThe CBP's mission includes enhancing operational efficiency through effective cloud-based solutions.\n\nWork Details\n The contractor will be responsible for delivering acceptable se",
-      "path": "https://www.highergov.com/contract-opportunity/enterprise-cloud-customer-relationship-management-rfq1808684-o-8db63",
-      "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFQ1808684?contractNumber=",
-      "opp_key": "e2f49a99e5f9564c830db23b319e940f",
-      "version_key": "bc25a5af562a512ea5bff4e256e8db63",
-      "source_id": "RFQ1808684",
-      "agency_key": 464,
-      "contact_email": "jaime.n.reed@cbp.dhs.gov",
-      "contact_name": "Jaime Reed",
-      "is8a": false,
-      "isFullOpen": false,
-      "ericAlso": false,
-      "capture_score": -10,
-      "win_reasons": [
-        "Agency: Clarity24 JV (BLN24 + Accenture) has past performance here",
-        "Partial behavioral/research match \u2014 BLN Fors Marsh JV has delivery experience",
-        "Small business set-aside",
-        "OUT OF SCOPE: ship \u2014 not in BLN24 delivery lanes",
-        "\u26a0\ufe0f Gap area detected: CRM / Salesforce \u2014 would need a teaming partner for this scope"
-      ],
-      "win_prob": "Very Low (<10%)",
-      "tier": null,
-      "matched_lanes": [],
-      "scope_tags": [
-        "Survey & Research",
-        "CRM / Salesforce"
-      ],
-      "scope_owned": [
-        "Survey & Research"
-      ],
-      "scope_gaps": [
-        "CRM / Salesforce"
-      ],
-      "is_vehicle": true,
-      "vehicle_note": "Contract VEHICLE (IDIQ/GWAC/on-ramp): award is by self-scoring qualification thresholds, not head-to-head competition. Win-prob %, competitor lists, and listed value are not meaningful here \u2014 the real question is whether BLN24 clears the domain scorecard.",
-      "capability_matrix": {
-        "tasks": [
-          {
-            "task": "CRM / Salesforce Implementation",
-            "score": 0,
-            "score_label": "0 \u2014 No Experience (Gap)",
-            "status": "gap",
-            "pp_refs": [],
-            "note": "BLN24 gap \u2014 no CRM implementation prime on record",
-            "triggered_by": [
-              "crm",
-              "customer relationship management"
-            ]
-          }
-        ],
-        "fit": "Pass",
-        "fit_reason": "All identified task areas fall outside BLN24's proven delivery lanes",
-        "avg_score": 0.0,
-        "prime_count": 0,
-        "jv_count": 0,
-        "gap_count": 1,
-        "total_tasks": 1,
-        "qualifying": [
-          {
-            "q": "Set-Aside",
-            "answer": "Small Business set-aside",
-            "score": 4
-          },
-          {
-            "q": "Do we have the capabilities needed?",
-            "answer": "No \u2014 primarily gap work",
-            "score": 1
-          },
-          {
-            "q": "Notice Type",
-            "answer": "RFP \u2014 active solicitation, actionable now",
-            "score": 5
-          },
-          {
-            "q": "Contract Value",
-            "answer": "Value not listed \u2014 check solicitation",
-            "score": 3
-          }
-        ]
-      },
-      "rex_analysis": {
-        "what_they_need": "The subject RFQ is issued to Small Business vendors for Enterprise Cloud Customer Relationship Management Platform (ECCRMP) Services. The period of performance (PoP) for the task order for a seven (7) month transition in/base period, seven (7) month option period 1, and four (4) twelve (12) month option periods.\n\nCBP contemplates the issuance of a Firm Fixed Price (FFP) task order (TO) with in-sco",
-        "rex_take": "Scope falls outside BLN24 proven delivery lanes. Pass unless a specific sub opportunity exists.",
-        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: RFP.",
-        "recommendation": "Pass"
-      },
-      "competitive_intel": {
-        "competitors": [
-          {
-            "name": "C Speed",
-            "why": "3 award(s) at this agency+NAICS in the last 24 months totaling $17.2M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"AWARD-L88 RADAR REPAIR AND SUSTAINMENT. ADDITIONAL WORK INCLUDES REPAIR AND SUST\"",
-            "threat_summary": "Active in the lane \u2014 $17.2M recent. Competitive on price and capability fit; watch their team.",
-            "url": "https://www.highergov.com/awardee/c-speed-llc-10013380/",
-            "evidence": "HG: 3 awards, $17.2M, last 2025-09-23",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 17.2,
-            "awardee_key": 10013380,
-            "is_incumbent": false
-          },
-          {
-            "name": "Matroid",
-            "why": "2 award(s) at this agency+NAICS in the last 24 months totaling $7.9M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"OBJECT DETECTION SOFTWARE LICENSES.\"",
-            "threat_summary": "Active in the lane \u2014 $7.9M recent. Competitive on price and capability fit; watch their team.",
-            "url": "https://www.highergov.com/awardee/matroid-inc-10049686/",
-            "evidence": "HG: 2 awards, $7.9M, last 2025-06-25",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 7.9,
-            "awardee_key": 10049686,
-            "is_incumbent": false
-          },
-          {
-            "name": "Starlo Innovation",
-            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $0.7M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"THIS IS AN 8(A) DIRECT AWARD PURCHASE ORDER FOR THE DEVELOPMENT OF A LLM.\"",
-            "threat_summary": "Recent entrant in this lane. Less of a known quantity \u2014 likely to compete on price or a niche capability angle.",
-            "url": "https://www.highergov.com/awardee/starlo-innovation-llc-401228103/",
-            "evidence": "HG: 1 awards, $0.7M, last 2025-02-25",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 0.7,
-            "awardee_key": 401228103,
-            "is_incumbent": false
-          },
-          {
-            "name": "OSI Federal Technologies",
-            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $0.4M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"TABLEAU SERVER SOFTWARE\"",
-            "threat_summary": "Recent entrant in this lane. Less of a known quantity \u2014 likely to compete on price or a niche capability angle.",
-            "url": "https://www.highergov.com/awardee/osi-federal-technologies-inc-10002355/",
-            "evidence": "HG: 1 awards, $0.4M, last 2024-06-25",
-            "evidence_source": "highergov_contracts",
-            "amount_m": 0.4,
-            "awardee_key": 10002355,
-            "is_incumbent": false
-          }
-        ],
-        "partners": [],
-        "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
-        "score_delta": 5,
-        "score_reasons": [
-          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
-        ],
-        "hg_grounded": true,
-        "hg_evidence_counts": {
-          "contracts_pulled": 100,
-          "set_aside_eligible": 12,
-          "top_awardees_aggregated": 7,
-          "incumbent_named": false,
-          "naics_only_fallback": false,
-          "sub_agency_resolved": null
-        }
-      },
-      "capture_score_base": -10,
-      "capture_score_delta": 5,
-      "capture_score_delta_reasons": [
-        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
-      ]
-    },
-    {
       "naics": "541512",
       "title": "NIIS-2 Follow-on",
       "agency": "National Oceanic and Atmospheric Administration",
@@ -12967,16 +13385,16 @@
       "noticeCategory": "rfp",
       "set_aside": "8A",
       "searchLabel": "Brian's Search",
-      "posted": "2026-06-05",
-      "due": "2026-06-09",
+      "posted": "2026-06-08",
+      "due": "2026-06-10",
       "val_low": null,
       "val_high": null,
       "description": "Airfield Management Services, see attachments PWS and Eval Criteria.   ",
       "summary": "Background\n The contract is issued by the Commander, Camp Lemonnier, Djibouti (CLDJ), which serves as the primary base of operations for U.S. Africa Command in the Horn of Africa. The mission of CLDJ is to provide, operate, and sustain superior service in support of combat readiness and security for ships, aircraft, detachments, and personnel.\n\nThe goal of this contract is to ensure effective airfield management services that support operational missions while fostering positive relations with African nations.\n\nWork Details\n The contractor shall provide comprehensive Airfield Management Servic",
-      "path": "https://www.highergov.com/contract-opportunity/airfield-management-services-rfq1815676-o-4ac6f",
+      "path": "https://www.highergov.com/contract-opportunity/airfield-management-services-rfq1815676-o-27e99",
       "source_path": "https://www.ebuy.gsa.gov/ebuy/seller/prepare-quote/RFQ1815676?contractNumber=",
       "opp_key": "443ed84763bd5e6eaf7f603973dde1ea",
-      "version_key": "65bff84116065522a89dda171834ac6f",
+      "version_key": "7e6654f8c8525e86990896b1e6c27e99",
       "source_id": "RFQ1815676",
       "agency_key": 1034,
       "contact_email": "thomas.vitale.civ@us.navy.mil",
@@ -13241,8 +13659,8 @@
         "hg_grounded": true,
         "hg_evidence_counts": {
           "contracts_pulled": 100,
-          "set_aside_eligible": 37,
-          "top_awardees_aggregated": 22,
+          "set_aside_eligible": 36,
+          "top_awardees_aggregated": 21,
           "incumbent_named": false,
           "naics_only_fallback": false,
           "sub_agency_resolved": null
@@ -13252,6 +13670,250 @@
       "capture_score_delta": 2,
       "capture_score_delta_reasons": [
         "Active agency competitor: Rivet Operations Company ($72M) \u2014 -3pts",
+        "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+      ]
+    },
+    {
+      "naics": "541519",
+      "title": "Google Workspace Enterprise Plus",
+      "agency": "Cybersecurity and Infrastructure Security Agency",
+      "type": "Recompete",
+      "noticeCategory": "forecast",
+      "set_aside": "SBA",
+      "searchLabel": "Brian's Search",
+      "posted": "2026-06-02",
+      "due": "2026-08-15",
+      "val_low": 500000,
+      "val_high": 1000000,
+      "description": "This procurement, supporting the Office of the Chief Information Officer (OCIO), is for the use of Google Workspace Enterprise Plus Apps to support CISA\u00e2\u20ac\u2122s IT Operations performance functions. The Enterprise Plus apps are a cloud-based browser with built-in controls that provide encryption and verification which enables work from anywhere and eliminates the need for VPNs. The apps have the ability to operate on a global scale while protecting information from phishing, malware, ransomware, and supply chain attacks. And the apps have secure endpoints that do not require patching and strong account takeover protections.\n\nThe software will be used to analyze CISA datasets to enhance leadership awareness of trends and organizational performance. The software procured must be capable of conducting real- time analysis; be relatively easy to use; allow data to flow easily into and out of the software; have forecasting capabilities that can predict values based on trends in the dataset; utilize user- friendly dashboards to format visualizations; and support professional reporting formats and data visualizations suitable for executive-level presentations.\n\n The contractor shall provide the CISA Office of the Chief Information Officer (OCIO) with the following: \n1. Google Workspace Enterprise Plus; New \u00e2\u20ac\u201c Quantity: 1,300, \n2. Google Workspace Enterprise Plus; Archived \u00e2\u20ac\u201c Quantity: 1,300, \n3. G Suite Support Base Fee; - Quantity: 1, \n4. G Suite Support Variable Fee; - Quantity: 1,\n5. Cloud Platform \u00e2\u20ac\u201c Support G Suite; Quantity: 50,000",
+      "summary": "",
+      "path": "https://www.highergov.com/contract-forecast/1144443",
+      "source_path": "",
+      "opp_key": "3321e5a9efac5f1ab6f1e04fd1627956",
+      "version_key": "3321e5a9efac5f1ab6f1e04fd1627956",
+      "source_id": "F2026073124",
+      "agency_key": 479,
+      "contact_email": "cisaapfsvendorinquiries@cisa.dhs.gov",
+      "contact_name": "Morgan Skaggs",
+      "is8a": false,
+      "isFullOpen": false,
+      "ericAlso": false,
+      "capture_score": -22,
+      "win_reasons": [
+        "Partial multimedia scope match \u2014 verify fit vs CDC/USDA visual delivery experience",
+        "Small business set-aside",
+        "OUT OF SCOPE: supply chain, ship \u2014 not in BLN24 delivery lanes"
+      ],
+      "win_prob": "Very Low (<10%)",
+      "tier": 3,
+      "matched_lanes": [
+        "Multimedia (partial)"
+      ],
+      "scope_tags": [
+        "Cloud Migration",
+        "Data Analytics"
+      ],
+      "scope_owned": [
+        "Cloud Migration",
+        "Data Analytics"
+      ],
+      "scope_gaps": [],
+      "capability_matrix": {
+        "tasks": [
+          {
+            "task": "Data Analytics & Business Intelligence",
+            "score": 4,
+            "score_label": "4 \u2014 Highly Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census CES ADRM IT & Research Support ($7M)",
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Dept of Education EDARMST Data Analytics ($2.9M)",
+              "IRS OLS (sub reference)"
+            ],
+            "note": "BLN24 prime \u2014 Census SRQA $4.1M (AI/ML/data), Education EDARMST $2.9M",
+            "triggered_by": [
+              "reporting"
+            ]
+          },
+          {
+            "task": "Data Visualization",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census SRQA AI/ML/Data Quality ($4.1M)",
+              "Dept of Education EDARMST Data Analytics ($2.9M)",
+              "CDC NCHS Visual Communications ($3.6M)"
+            ],
+            "note": "BLN24 prime \u2014 Census SRQA, Education data analytics, CDC NCHS visual data",
+            "triggered_by": [
+              "data visualization",
+              "visualization"
+            ]
+          },
+          {
+            "task": "Cloud Migration & Infrastructure",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "NOAA NWS IDP Cloud Transition / App Mod (Clarity24, $7M)",
+              "Census MAF/TIGER Modernization & Cloud ($4.5M)"
+            ],
+            "note": "BLN24 JV \u2014 Clarity24 delivered NOAA cloud migration $4.3M, Census MAF/TIGER",
+            "triggered_by": [
+              "cloud platform"
+            ]
+          },
+          {
+            "task": "Cloud Engineering / Infrastructure as Code",
+            "score": 3,
+            "score_label": "3 \u2014 Similar PP (\u22643 yrs)",
+            "status": "prime",
+            "pp_refs": [
+              "Census MAF/TIGER Modernization & Cloud ($4.5M)",
+              "NOAA NWS IDP Cloud Transition / App Mod (Clarity24, $7M)",
+              "Census EDL Applications ($4.5M)"
+            ],
+            "note": "BLN24 prime (direct + JV) \u2014 Census MAF/TIGER cloud migration $4.5M (IaC, automated deployment), Census EDL AWS platform, NOAA cloud migration $7M via Clarity24",
+            "triggered_by": [
+              "cloud platform"
+            ]
+          }
+        ],
+        "fit": "Moderate",
+        "fit_reason": "Can prime most: Data Analytics & Business Intelligence, Data Visualization. Some areas need partner",
+        "avg_score": 3.2,
+        "prime_count": 4,
+        "jv_count": 0,
+        "gap_count": 0,
+        "total_tasks": 4,
+        "qualifying": [
+          {
+            "q": "Set-Aside",
+            "answer": "Small Business set-aside",
+            "score": 4
+          },
+          {
+            "q": "Do we have the capabilities needed?",
+            "answer": "Mostly \u2014 some gap areas",
+            "score": 3
+          },
+          {
+            "q": "Notice Type",
+            "answer": "Forecast \u2014 early awareness, shape before RFP",
+            "score": 3
+          },
+          {
+            "q": "Contract Value",
+            "answer": "$0.8M \u2014 Tier 3 (BLN24 sweet spot)",
+            "score": 5
+          }
+        ]
+      },
+      "rex_analysis": {
+        "what_they_need": "This procurement, supporting the Office of the Chief Information Officer (OCIO), is for the use of Google Workspace Enterprise Plus Apps to support CISA\u00e2\u20ac\u2122s IT Operations performance functions. The Enterprise Plus apps are a cloud-based browser with built-in controls that provide encryption and verification which enables work from anywhere and eliminates the need for VPNs. The apps have the abilit",
+        "rex_take": "BLN24 can cover: Data Analytics & Business Intelligence, Data Visualization. Gap areas requiring teaming: none. Evaluate whether the BLN24 scope is large enough to prime.",
+        "watch_notes": "Review the full solicitation at source. Set-aside: SBA. Notice type: FORECAST.",
+        "recommendation": "Moderate"
+      },
+      "competitive_intel": {
+        "competitors": [
+          {
+            "name": "DH Technologies",
+            "why": "Named incumbent on the HigherGov opp page.",
+            "threat_summary": "Named incumbent on the HG opp page. Hardest to dislodge \u2014 beat them on a discriminator (JV depth, mission alignment, or a specific CPARS-level performance gap).",
+            "url": "https://www.highergov.com/awardee/dh-technologies-inc-10001294/",
+            "evidence": "HG: 0 awards, $0.0M, last ",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 0,
+            "awardee_key": 10001294,
+            "is_incumbent": true
+          },
+          {
+            "name": "FCN",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $13.3M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"TO PROCURE TIBCO SOFTWARE MAINTENANCE FOR EXISTING PERPECTUAL LICENSES.\"",
+            "threat_summary": "Active in the lane \u2014 $13.3M recent. Competitive on price and capability fit; watch their team.",
+            "url": "https://www.highergov.com/awardee/fcn-inc-10000133/",
+            "evidence": "HG: 1 awards, $13.3M, last 2025-07-18",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 13.3,
+            "awardee_key": 10000133,
+            "is_incumbent": false
+          },
+          {
+            "name": "Tharros Defense",
+            "why": "1 award(s) at this agency+NAICS in the last 24 months totaling $4.4M. Set-aside history: 8(A) Sole Source  (8AN). Recent scope: \"CONTRACT FOR VULNERABILITY ANALYSIS AND COORDINATED VULNERABILITY DISCLOSURE SUP\"",
+            "threat_summary": "Recent entrant in this lane. Less of a known quantity \u2014 likely to compete on price or a niche capability angle.",
+            "url": "https://www.highergov.com/awardee/tharros-defense-inc-10007597/",
+            "evidence": "HG: 1 awards, $4.4M, last 2024-06-25",
+            "evidence_source": "highergov_contracts",
+            "amount_m": 4.4,
+            "awardee_key": 10007597,
+            "is_incumbent": false
+          }
+        ],
+        "partners": [
+          {
+            "name": "Clarity24",
+            "why": "Active 8(a) Mentor-Protege JV with Accenture Federal Services \u2014 cloud, DevSecOps, AWS, AI/ML, Power Platform depth.",
+            "url": "https://www.highergov.com/awardee/clarity-solutions-llc-clarity24-10086573/",
+            "relationship": "Active 8(a) JV (Mentor-Protege with Accenture Federal Services)",
+            "gap_filled": "Cloud / DevSecOps / Power Platform depth",
+            "evidence_source": "bln24_jv"
+          },
+          {
+            "name": "KENTRO",
+            "why": "Has subbed for Tharros Defense (1 awards, $0.1M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/kentro-10002599/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10002599,
+            "amount_m": 0.1
+          },
+          {
+            "name": "Security Engineered Machinery",
+            "why": "Has subbed for Tharros Defense (1 awards, $0.1M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/security-engineered-machinery-co-inc-10015736/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 10015736,
+            "amount_m": 0.1
+          },
+          {
+            "name": "Aries Defense",
+            "why": "Has subbed for FCN (1 awards, $0.0M total) \u2014 proven plug-in for this lane.",
+            "url": "https://www.highergov.com/awardee/aries-defense-llc-12488526/",
+            "relationship": "Documented sub on this agency+NAICS lane",
+            "gap_filled": "capability depth \u2014 sub history with current primes",
+            "evidence_source": "highergov_partnerships",
+            "awardee_key": 12488526,
+            "amount_m": 0.0
+          }
+        ],
+        "set_aside_note": "Set-aside: SBA (sb) \u2014 competitors filtered to eligible awardees from HG /contract/ over the last 24 months",
+        "score_delta": -3,
+        "score_reasons": [
+          "Named incumbent on HG opp page: DH Technologies \u2014 -8pts",
+          "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
+        ],
+        "hg_grounded": true,
+        "hg_evidence_counts": {
+          "contracts_pulled": 100,
+          "set_aside_eligible": 2,
+          "top_awardees_aggregated": 2,
+          "incumbent_named": true,
+          "naics_only_fallback": false,
+          "sub_agency_resolved": null
+        }
+      },
+      "capture_score_base": -22,
+      "capture_score_delta": -3,
+      "capture_score_delta_reasons": [
+        "Named incumbent on HG opp page: DH Technologies \u2014 -8pts",
         "SB/8(a) set-aside: large prime competition eliminated \u2014 +5pts"
       ]
     },
@@ -13740,12 +14402,12 @@
           },
           {
             "name": "Nexight Group",
-            "why": "7 award(s) at this agency+NAICS in the last 24 months totaling $3.4M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"OU49-FY26-001-NEW\nOFFICE OF ADVANCED MANUFACTURING/MANUFACTURING USA STAKEHOLDER\"",
-            "threat_summary": "Repeat awardee in this lane (7 contracts). Small individual ticket, but agency relationship is real.",
+            "why": "6 award(s) at this agency+NAICS in the last 24 months totaling $2.9M. Set-aside history: Small Business Set Aside - Total (SBA). Recent scope: \"OU49-FY26-001-NEW\nOFFICE OF ADVANCED MANUFACTURING/MANUFACTURING USA STAKEHOLDER\"",
+            "threat_summary": "Repeat awardee in this lane (6 contracts). Small individual ticket, but agency relationship is real.",
             "url": "https://www.highergov.com/awardee/nexight-group-llc-10006553/",
-            "evidence": "HG: 7 awards, $3.4M, last 2026-04-08",
+            "evidence": "HG: 6 awards, $2.9M, last 2026-04-08",
             "evidence_source": "highergov_contracts",
-            "amount_m": 3.4,
+            "amount_m": 2.9,
             "awardee_key": 10006553,
             "is_incumbent": false
           }
@@ -13801,7 +14463,7 @@
         "hg_grounded": true,
         "hg_evidence_counts": {
           "contracts_pulled": 100,
-          "set_aside_eligible": 61,
+          "set_aside_eligible": 60,
           "top_awardees_aggregated": 16,
           "incumbent_named": false,
           "naics_only_fallback": false,
